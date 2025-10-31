@@ -1,12 +1,44 @@
-python -m venv venv
+## Repository Structure
 
-for windows:
-source venv/script/activate 
+```
+data/
+notebooks/
+pipeline/
+	config/
+	logs/
+.gitignore
+LICENSE
+README.md
+requirements.txt
+```
 
-for mac/linux: 
-source venv/bin/activate
 
-pip install -r requirements.txt
+## Setup Instructions
 
-when introducing new libraries, don't forget to add to requirements! 
-pip list => copy to requirements.txt
+1. **Create a virtual environment:**
+	```sh
+	python -m venv venv
+	```
+
+2. **Activate the virtual environment:**
+	- **Windows:**
+	  ```sh
+	  venv\Scripts\activate
+	  ```
+	- **Mac/Linux:**
+	  ```sh
+	  source venv/bin/activate
+	  ```
+
+3. **Install dependencies:**
+	```sh
+	pip install -r requirements.txt
+	```
+
+4. **Add new libraries:**
+	- When introducing new libraries, add them to `requirements.txt`.
+	- To list installed packages:
+	  ```sh
+	  pip list
+	  ```
+	- Copy any new packages to `requirements.txt`.
