@@ -35,10 +35,17 @@ requirements.txt
 	pip install -r requirements.txt
 	```
 
+
+## Environment Variables (.env)
+
+For sensitive information (API keys, database credentials, etc.), create a `.env` file in the root directory.
+
+
 4. **Add new libraries:**
-	- When introducing new libraries, add them to `requirements.txt`.
-	- To list installed packages:
-	  ```sh
-	  pip list
-	  ```
-	- Copy any new packages to `requirements.txt`.
+	 - When introducing new libraries, add them to `requirements.txt`.
+	 - To list installed packages:
+		 ```sh
+		 pip freeze
+		 ```
+	 - Copy any new packages to `requirements.txt`.
+
