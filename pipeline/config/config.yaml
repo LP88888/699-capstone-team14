@@ -2,7 +2,7 @@ data:
   input_path: "./data/raw/wilmerarltstrmberg_data.csv"
   ner_col: "NER"
   chunksize: 200000
-  test: true
+  test: false
 
 output:
   vocab_json: "./data/normalized/ingredient_vocab_stats.json"
