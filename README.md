@@ -2,10 +2,16 @@
 
 ```
 data/
+	encoded/
+	normalized/
+	raw/
 notebooks/
 pipeline/
+	common
 	config/
+	ingrnorm/ cosdedupe.py encoder.py multidataset.py parquet_utils.py spellmap.py stats_normalizer.py
 	logs/
+	run_ingnorm.py
 .gitignore
 LICENSE
 README.md
@@ -49,3 +55,8 @@ For sensitive information (API keys, database credentials, etc.), create a `.env
 		 ```
 	 - Copy any new packages to `requirements.txt`.
 
+5. **Run cleaning pipeline:**
+	Configure settings in config/config.yaml then run in CLI:
+	```sh
+	python run_ingrnorm.py
+	```

@@ -1,0 +1,71 @@
+data:
+  input_path: "./data/raw/wilmerarltstrmberg_data.csv" # Full dataset for production
+  # input_path: "./data/raw/sample_data.csv"  # Use smaller sample for testing
+  ner_col: "NER"
+  chunksize: 200000
+  test: false
+
+simple_clean:
+  enabled: true                 # turn the stage on/off
+  lexicon_sources:              # any combination of JSON/TXT/CSV
+    - data/ingredient_id_to_token.json
+  max_edit_distance: 2          # SymSpell distance (2 is a good default)
+  use_semantic_backstop: true  # set true to enable MiniLM mapping
+  semantic_threshold: 0.86      # similarity cutoff if backstop is enabled
+  drop_if_unmapped: true        # drop tokens that don't map to lexicon
+  out_parquet: data/recipes_data_clean_simple.parquet
+
+output:
+  vocab_json: "./data/normalized/ingredient_vocab_stats.json"
+  baseline_parquet: "./data/normalized/recipes_data_clean.parquet"
+  spell_map_path: "./data/normalized/ner_spell_map.jsonl"
+  cosine_map_path: "./data/normalized/cosine_dedupe_map.jsonl"
+  dedup_parquet: "./data/normalized/recipes_data_clean_spell_dedup.parquet"
+  list_col_for_vocab: "NER_clean"
+
+  # Encoder outputs
+  unified_parquet: "./data/encoded/datasets_unified.parquet"
+  ingredient_id_to_token: "./data/encoded/ingredient_id_to_token.json"
+  ingredient_token_to_id: "./data/encoded/ingredient_token_to_id.json"
+
+normalizer:
+  min_freq: 5
+  max_ngram: 4
+  min_unigram: 50
+  min_bigram: 30
+  min_trigram: 20
+  pmi_bigram: 2.6
+  pmi_trigram: 1.8
+  min_child_share: 0.06
+  max_right_entropy: 1.3
+
+cosine:
+  threshold: 0.88
+  topk: 50
+
+stages:
+  build_vocab: true
+  build_spell_map: true
+  write_parquet: true
+  cosine_dedupe: true
+  apply_cosine_map: true
+  encode_ids: true   
+
+encoder:
+  min_freq: 1
+  dataset_id: 1
+  ingredients_col: "NER_clean"
+
+spellmap:
+  score_cutoff: 92
+  near_perfect: 96
+
+logging:
+  level: INFO            # DEBUG | INFO | WARNING | ERROR
+  console: true
+  file: pipeline/logs/ingrnorm.log
+  rotate:
+    max_bytes: 10_485_760   # 10 MB
+    backup_count: 5
+  fmt: "[%(asctime)s] %(levelname)s %(name)s: %(message)s"
+  datefmt: "%Y-%m-%d %H:%M:%S"
