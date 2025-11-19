@@ -7,11 +7,12 @@ data/
 	raw/
 notebooks/
 pipeline/
-	common
+	common/
 	config/
-	ingrnorm/ cosdedupe.py encoder.py multidataset.py parquet_utils.py spellmap.py stats_normalizer.py
+	ingrnorm/
+	ingredient_ner/
 	logs/
-	run_ingnorm.py
+	scripts/
 .gitignore
 LICENSE
 README.md
@@ -55,8 +56,13 @@ For sensitive information (API keys, database credentials, etc.), create a `.env
 		 ```
 	 - Copy any new packages to `requirements.txt`.
 
-5. **Run cleaning pipeline:**
-	Configure settings in config/config.yaml then run in CLI:
-	```sh
-	python run_ingrnorm.py
-	```
+5. **Run pipelines:**
+	Configure settings in the respective config files:
+	- **Ingredient normalization pipeline:**
+		- Config: `pipeline/config/ingrnorm.yaml`
+		- Run: `python pipeline/scripts/run_ingrnorm.py`
+	- **NER training:**
+		- Config: `pipeline/config/ingredient_ner.yaml`
+		- Run: `python pipeline/scripts/run_ingredient_ner.py`
+	
+	Note: Run the normalization pipeline first to create the artifacts (dedupe map, encoder maps) that the NER training pipeline needs.
