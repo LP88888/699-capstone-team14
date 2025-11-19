@@ -1,4 +1,4 @@
-# pipeline/common/logging_setup.py
+
 from __future__ import annotations
 import logging
 import logging.handlers
@@ -6,9 +6,7 @@ from pathlib import Path
 from typing import Optional, Dict, Any
 
 def setup_logging(cfg: Optional[Dict[str, Any]] = None, *, force: bool = False) -> None:
-    """
-    Initialize root logging once. Safe to call multiple times if force=False.
-    """
+    """Initialize root logging once. Safe to call multiple times if force=False."""
     if logging.getLogger().handlers and not force:
         return
 
@@ -48,7 +46,7 @@ def setup_logging(cfg: Optional[Dict[str, Any]] = None, *, force: bool = False) 
 
     logging.basicConfig(level=level, handlers=handlers)
 
-    # Nice default for noisy deps:
+    # Quiet noisy deps
     logging.getLogger("urllib3").setLevel(logging.WARNING)
     logging.getLogger("botocore").setLevel(logging.WARNING)
     logging.getLogger("s3transfer").setLevel(logging.WARNING)

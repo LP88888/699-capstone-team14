@@ -1,5 +1,5 @@
 data:
-  # Canonical raw data input (used by both ingrnorm + NER unless overridden)
+  # Canonical raw data input
   input_path: "./data/raw/wilmerarltstrmberg_data.csv" # main dataset
   # input_path: "./data/raw/sample_data.csv" # for quick local testing
   ner_col: "NER"           # list-like column if present
@@ -25,9 +25,6 @@ output:
   unified_parquet: "./data/encoded/datasets_unified.parquet"
   ingredient_id_to_token: "./data/encoded/ingredient_id_to_token.json"
   ingredient_token_to_id: "./data/encoded/ingredient_token_to_id.json"
-
-  # NER prediction outputs (single source of truth)
-  ner_preds_base: "./data/training/predictions.parquet"   # we can derive *_wide / *_tall from this
 
 stages:
   write_parquet: true
@@ -67,42 +64,6 @@ encoder:
   dataset_id: 1
   ingredients_col: "NER_clean"
 
-ner:
-  enabled: true
-
-  train_path: "./data/normalized/recipes_data_clean.parquet"
-  data_is_parquet: true
-  max_rows: null  # Set to a number (e.g., 10000) for debug mode
-
-  # IMPORTANT: Use original NER column (messy) for training, not NER_clean (normalized)
-  # The model should learn to handle messy input, then normalization happens via dedupe map
-  text_col: null
-  ner_list_col: "NER"  # Original messy column - model learns to recognize these
-  lexicon_json: null
-
-  # Debug mode options (for faster iteration during development)
-  use_tok2vec_debug: false  # If true, use tok2vec instead of transformers (faster, CPU-friendly)
-  max_train_docs: 5000      # Limit training docs for quick experiments (null = use all)
-
-  random_seed: 42
-  valid_fraction: 0.2
-  shard_size: 2000
-  n_epochs: 20
-  lr: 5e-5
-  dropout: 0.1
-  transformer_model: "distilbert-base-uncased"
-  window: 64
-  stride: 48
-  freeze_layers: 2
-  use_amp: true
-  early_stopping_patience: 3
-  batch_size: 256
-
-  out_dir: "./models/ingredient_ner_trf"
-  model_dir: "./models/ingredient_ner_trf/model-best"
-  # NOTE: dedupe map & encoder maps are **not duplicated here**;
-  # ingredient_ner.py will read them from `output.cosine_map_path` & `output.ingredient_*`
-
 logging:
   level: INFO
   console: true
@@ -112,3 +73,4 @@ logging:
     backup_count: 5
   fmt: "[%(asctime)s] %(levelname)s %(name)s: %(message)s"
   datefmt: "%Y-%m-%d %H:%M:%S"
+
