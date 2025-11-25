@@ -1,0 +1,156 @@
+# Cuisine Normalization Configuration
+
+# This config is used by run_cuisine_norm.py for normalizing and encoding cuisines
+
+# All artifacts are separate from ingredient normalization to avoid conflicts
+
+
+
+data:
+
+  # Input dataset with cuisine column
+
+  train_path: "./data/combined_raw_datasets_with_cuisine_encoded.parquet"
+
+  input_path: "./data/combined_raw_datasets_with_cuisine_encoded.parquet"
+
+  cuisine_col: "cuisine"  # Column name containing cuisine data
+
+  chunksize: 200000
+
+
+
+cleanup:
+
+  enabled: true  # Cleanup intermediate parquet files, keep JSON artifacts
+
+  paths:
+
+    - "./data/cuisine_normalized/*.parquet"
+
+    - "./data/cuisine_encoded/*.parquet"
+
+    - "./data/cuisine_normalized/*.jsonl"
+
+    - "./data/cuisine_encoded/*.json"
+
+   
+
+    # Note: JSON files are automatically preserved
+
+
+
+output:
+
+  # Cuisine normalization artifacts (separate from ingredient artifacts)
+
+  baseline_parquet: "./data/cuisine_normalized/cuisine_baseline.parquet"
+
+  dedup_parquet: "./data/cuisine_normalized/cuisine_deduped.parquet"
+
+  cosine_map_path: "./data/cuisine_normalized/cuisine_dedupe_map.jsonl"
+
+  list_col_for_vocab: "cuisine_clean"
+
+
+
+  # Cuisine encoding artifacts (separate from ingredient encoding)
+
+  unified_parquet: "./data/cuisine_encoded/cuisine_unified.parquet"
+
+  cuisine_id_to_token: "./data/cuisine_encoded/cuisine_id_to_token.json"
+
+  cuisine_token_to_id: "./data/cuisine_encoded/cuisine_token_to_id.json"
+
+
+
+stages:
+
+  write_parquet: true
+
+  sbert_dedupe: true
+
+  w2v_dedupe: false  # Use SBERT for cuisine deduplication
+
+  apply_cosine_map: true
+
+  encode_ids: true
+
+
+
+sbert:
+
+  model: "all-MiniLM-L6-v2"
+
+  threshold: 0.88
+
+  topk: 25
+
+  min_len: 2
+
+  require_token_overlap: true
+
+  block_generic_as_canon: true
+
+  min_freq_for_vocab: 1  # Lower threshold for cuisines (fewer unique values)
+
+  spacy_model: "en_core_web_sm"
+
+  # Performance tuning for spaCy normalization
+
+  spacy_batch_size: 512
+
+  spacy_n_process: 1  # Keep at 1 for Windows compatibility
+
+
+
+w2v:
+
+  vector_size: 100
+
+  window: 5
+
+  min_count: 1
+
+  workers: 4
+
+  sg: 1
+
+  epochs: 8
+
+  threshold: 0.85
+
+  topk: 25
+
+  min_freq_for_vocab: 1
+
+
+
+encoder:
+
+  min_freq: 1
+
+  dataset_id: 1
+
+  ingredients_col: "cuisine_clean"  # Reusing column name for consistency with pipeline
+
+
+
+logging:
+
+  level: INFO
+
+  console: true
+
+  file: pipeline/logs/cuisnorm.log
+
+  rotate:
+
+    max_bytes: 10485760
+
+    backup_count: 5
+
+  fmt: "[%(asctime)s] %(levelname)s %(name)s: %(message)s"
+
+  datefmt: "%Y-%m-%d %H:%M:%S"
+

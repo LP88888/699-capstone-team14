@@ -1,0 +1,56 @@
+# Ingredient NER Training Configuration
+# This config is used by run_ingredient_ner.py for training the NER model
+
+# Optional: fallback input path (if train_path is not set)
+data:
+  # input_path: "./data/raw/wilmerarltstrmberg_data.csv"  # main dataset
+  input_path: "./data/raw/sample_data.csv"  # Fallback if ner.train_path is not set
+  ner_col: "NER_clean"  # Used for fallback column name
+
+# Output paths for artifacts created by ingrnorm pipeline
+# These are READ by the NER pipeline (dedupe map, encoder maps)
+output:
+  cosine_map_path: "./data/normalized/cosine_dedupe_map.jsonl"
+  ingredient_id_to_token: "./data/encoded/ingredient_id_to_token.json"
+  ingredient_token_to_id: "./data/encoded/ingredient_token_to_id.json"
+  ner_preds_base: "./data/training/predictions.parquet"   # NER prediction outputs
+
+ner:
+  enabled: true
+
+  train_path: "./data/normalized/recipes_data_clean.parquet"
+  data_is_parquet: true
+  max_rows: null # set to null for all rows - otherwise set to a number of rows to load
+  # Use the column that exists in the parquet
+  text_col: null
+  ner_list_col: "NER_clean"   # <- CHANGE THIS FROM "NER" TO "NER_clean"
+  lexicon_json: null
+
+  random_seed: 42
+  valid_fraction: 0.2
+  shard_size: 2000
+  n_epochs: 2
+  lr: 5e-5
+  dropout: 0.1
+  transformer_model: "distilbert-base-uncased"
+  window: 64
+  stride: 48
+  freeze_layers: 2
+  use_amp: true
+  early_stopping_patience: 3
+  batch_size: 1024
+
+  out_dir: "./models/ingredient_ner_trf"
+  model_dir: "./models/ingredient_ner_trf/model-best"
+
+
+logging:
+  level: INFO
+  console: true
+  file: preprocess_pipeline/logs/ingredient_ner.log
+  rotate:
+    max_bytes: 10485760
+    backup_count: 5
+  fmt: "[%(asctime)s] %(levelname)s %(name)s: %(message)s"
+  datefmt: "%Y-%m-%d %H:%M:%S"
+

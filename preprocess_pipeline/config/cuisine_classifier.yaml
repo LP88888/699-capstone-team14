@@ -1,0 +1,62 @@
+# Cuisine Classifier Training Configuration
+# This config is used by train_cuisine_classifier.py for training the cuisine classification model
+
+# Optional: fallback input path (if train_path is not set)
+data:
+  input_path: "./data/combined_raw_datasets_with_cuisine_encoded.parquet"  # Fallback if cuisine_classifier.train_path is not set
+  text_col: "ingredients"  # Column containing text to classify (ingredients list)
+  cuisine_col: "cuisine"  # Column containing cuisine labels
+
+# Output paths for artifacts
+output:
+  preds_base: "./data/training/cuisine_predictions.parquet"   # Cuisine prediction outputs
+
+cuisine_classifier:
+  enabled: true
+
+  train_path: "./data/combined_raw_datasets_with_cuisine_encoded.parquet"
+  data_is_parquet: true
+  max_rows: null # set to null for all rows - otherwise set to a number of rows to load
+  
+  # Column names
+  text_col: "ingredients"  # Column with text to classify (e.g., ingredients list)
+  cuisine_col: "cuisine"   # Column with cuisine labels
+  
+  # Training parameters
+  random_seed: 42
+  valid_fraction: 0.2
+  shard_size: 2000
+  n_epochs: 1
+  lr: 5e-5
+  dropout: 0.1
+  transformer_model: "distilbert-base-uncased"
+  window: 64
+  stride: 48
+  freeze_layers: 2
+  use_amp: true
+  early_stopping_patience: 3
+  batch_size: 256
+  eval_snapshot_max: 1500
+  clear_cache_every: 200
+  
+  # Debug mode options (for faster iteration during development)
+  use_tok2vec_debug: false  # If true, use tok2vec instead of transformers (faster, CPU-friendly)
+  max_train_docs: null      # Limit training docs for quick experiments (null = use all)
+  
+  # Model output paths
+  out_dir: "./models/cuisine_classifier_trf"
+  model_dir: "./models/cuisine_classifier_trf/model-best"
+  
+  # Cleanup options
+  cleanup_docbins: true  # Remove intermediate docbins after training
+
+logging:
+  level: INFO
+  console: true
+  file: preprocess_pipeline/logs/cuisine_classifier.log
+  rotate:
+    max_bytes: 10485760
+    backup_count: 5
+  fmt: "[%(asctime)s] %(levelname)s %(name)s: %(message)s"
+  datefmt: "%Y-%m-%d %H:%M:%S"
+

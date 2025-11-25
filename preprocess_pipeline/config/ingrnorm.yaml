@@ -1,0 +1,76 @@
+data:
+  # Canonical raw data input
+  # input_path: "./data/raw/wilmerarltstrmberg_data.csv" # main dataset
+  input_path: "./data/raw/sample_data.csv" # for quick local testing
+  ner_col: "NER"           # list-like column if present
+  chunksize: 200000
+
+cleanup:
+  enabled: true
+  paths:
+    - "./data/normalized/recipes_data_clean.parquet"
+    - "./data/normalized/cosine_dedupe_map.jsonl"
+    - "./data/normalized/recipes_data_clean_spell_dedup.parquet"
+    - "./data/encoded/datasets_unified.parquet"
+    - "./data/encoded/ingredient_id_to_token.json"
+    - "./data/encoded/ingredient_token_to_id.json"
+
+output:
+  # ingrnorm artifacts
+  baseline_parquet: "./data/normalized/recipes_data_clean.parquet"
+  dedup_parquet: "./data/normalized/recipes_data_clean_spell_dedup.parquet"
+  cosine_map_path: "./data/normalized/cosine_dedupe_map.jsonl"
+  list_col_for_vocab: "NER_clean"
+
+  unified_parquet: "./data/encoded/datasets_unified.parquet"
+  ingredient_id_to_token: "./data/encoded/ingredient_id_to_token.json"
+  ingredient_token_to_id: "./data/encoded/ingredient_token_to_id.json"
+
+stages:
+  write_parquet: true
+  sbert_dedupe: true
+  w2v_dedupe: false
+  apply_cosine_map: true
+  encode_ids: true
+
+sbert:
+  model: "all-MiniLM-L6-v2"
+  threshold: 0.88
+  topk: 25
+  min_len: 2
+  require_token_overlap: true
+  block_generic_as_canon: true
+  min_freq_for_vocab: 2
+  spacy_model: "en_core_web_sm"
+  # Performance tuning for spaCy normalization
+  spacy_batch_size: 1024  # Larger batches = better throughput (try 512-1024 for large datasets)
+  spacy_n_process: 4     # 1=single-threaded (safe, works on Windows)
+                         # >1=multiprocess (faster but may not work on Windows due to spawn method)
+                         # If CPU usage is low, try increasing spacy_batch_size first
+
+w2v:
+  vector_size: 100
+  window: 5
+  min_count: 1
+  workers: 4
+  sg: 1
+  epochs: 8
+  threshold: 0.85
+  topk: 25
+  min_freq_for_vocab: 2
+
+encoder:
+  min_freq: 1
+  dataset_id: 1
+  ingredients_col: "NER_clean"
+
+logging:
+  level: INFO
+  console: true
+  file: preprocess_pipeline/logs/ingrnorm.log
+  rotate:
+    max_bytes: 10485760
+    backup_count: 5
+  fmt: "[%(asctime)s] %(levelname)s %(name)s: %(message)s"
+  datefmt: "%Y-%m-%d %H:%M:%S"
+
