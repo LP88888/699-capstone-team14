@@ -49,6 +49,40 @@ def main() -> None:
     set_global_seed(TRAIN.RANDOM_SEED)
     prepare_docbins_from_config()
     train_ner_from_docbins()
+    
+    # Cleanup: Remove intermediate docbins after training (keep only the final model)
+    import logging
+    import shutil
+    logger = logging.getLogger(__name__)
+    
+    cleanup_docbins = cfg.get("ner", {}).get("cleanup_docbins", True)
+    if cleanup_docbins:
+        logger.info("=" * 60)
+        logger.info("Cleaning up intermediate training artifacts (docbins)")
+        logger.info("=" * 60)
+        
+        docbin_dirs = [OUT.TRAIN_DIR, OUT.VALID_DIR]
+        for docbin_dir in docbin_dirs:
+            if docbin_dir.exists():
+                try:
+                    # Count files before deletion
+                    spacy_files = list(docbin_dir.glob("*.spacy"))
+                    if spacy_files:
+                        logger.info(f"Removing {len(spacy_files)} docbin shard(s) from {docbin_dir}")
+                        shutil.rmtree(docbin_dir)
+                        logger.info(f"Deleted {docbin_dir}")
+                    else:
+                        logger.debug(f"No docbin files found in {docbin_dir}")
+                except Exception as e:
+                    logger.warning(f"Failed to delete {docbin_dir}: {e}")
+        
+        logger.info("Training complete. Final model saved at:")
+        logger.info(f"  - {OUT.MODEL_DIR}")
+        logger.info("Intermediate docbins have been cleaned up.")
+    else:
+        logger.info("Training complete. Final model saved at:")
+        logger.info(f"  - {OUT.MODEL_DIR}")
+        logger.info("Docbins preserved (cleanup_docbins=false in config)")
 
 
 if __name__ == "__main__":

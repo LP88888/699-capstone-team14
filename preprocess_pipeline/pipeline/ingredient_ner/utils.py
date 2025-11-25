@@ -87,6 +87,32 @@ def load_data(path: Path, is_parquet: bool, col: str, max_rows: Optional[int] = 
         col: Column name to extract
         max_rows: Optional limit on number of rows to load (None = load all)
     """
+    def read_csv_with_fallback(path,dtype=str, nrows=None):
+        """
+        Tries to read CSV using UTF-8, then cp1252 (windows-1252), then latin-1.
+        Returns a DataFrame and the encoding used (string).
+        """
+        tried = []
+        encodings = ["utf-8", "cp1252", "latin-1"]
+        for enc in encodings:
+            try:
+                logger.info(f"Attempting to read CSV with encoding={enc}")
+                df = pd.read_csv(path, dtype=dtype, encoding=enc, nrows=nrows)
+                logger.info(f"Successfully read CSV with encoding={enc}")
+                return df, enc
+            except UnicodeDecodeError as e:
+                tried.append((enc, str(e)))
+                logger.warning(f"Failed with encoding={enc}: {e}")
+            except Exception as e:
+                # Non-encoding errors should be raised
+                logger.exception(f"Unexpected error reading CSV with encoding={enc}: {e}")
+                raise
+
+        # Last resort: read with errors='replace' so no exception but some characters may be lost
+        logger.warning("All standard encodings failed. Trying utf-8 with errors='replace'.")
+        df = pd.read_csv(path, dtype=dtype, encoding="utf-8", engine="python", error_bad_lines=False, warn_bad_lines=True)
+        return df, "utf-8 (errors=replace)"
+
     if is_parquet:
         if not _HAS_PA:
             raise RuntimeError("pyarrow is required to read Parquet files. Please install pyarrow.")
@@ -105,7 +131,8 @@ def load_data(path: Path, is_parquet: bool, col: str, max_rows: Optional[int] = 
             frames.append(frame)
         df = pd.concat(frames, ignore_index=True) if frames else pd.DataFrame()
     else:
-        df = pd.read_csv(path, dtype=str, nrows=max_rows)
+        df, used_encoding = read_csv_with_fallback(path, dtype=str, nrows=max_rows)
+        logger.info(f"Loaded CSV using encoding: {used_encoding}")
     if col not in df.columns:
         raise KeyError(f"Column '{col}' not found in {list(df.columns)[:20]}...")
     return df[[col]].dropna().reset_index(drop=True)
