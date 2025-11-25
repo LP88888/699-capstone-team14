@@ -1,0 +1,39 @@
+# Network Construction Configuration
+
+data:
+  # Input from preprocessing pipeline"C:\Users\georg.DESKTOP-2FS9VF1\source\repos\699-capstone-team14\preprocess_pipeline\data\combined_raw_datasets_with_cuisine_encoded.parquet"
+  input_path: "../../preprocess_pipeline/data/combined_raw_datasets_with_cuisine_encoded.parquet"
+  ingredients_col: "encoded_ingredients"  # Column with list of ingredient IDs
+  cuisine_col: "cuisine_encoded"          # Column with list of cuisine IDs
+  recipe_id_col: "index"                  # Unique recipe identifier
+
+network:
+  # Edge weight computation
+  min_cooccurrence: 1        # Minimum co-occurrence count for edge inclusion
+  weight_method: "frequency" # Options: "frequency", "jaccard", "cosine"
+  normalize_weights: true    # Normalize edge weights to [0, 1]
+  
+  # Network filtering
+  min_ingredient_freq: 2     # Minimum recipe count for ingredient to be included
+  max_ingredients_per_recipe: 50  # Cap on ingredients per recipe (for performance)
+  
+  # Output paths
+  graph_output: "./data/ingredient_network.graphml"  # GraphML format
+  edge_list_output: "./data/ingredient_network_edges.csv"
+  node_metadata_output: "./data/ingredient_metadata.json"
+
+inference:
+  # Infusion suggestion parameters
+  max_suggestions: 10
+  min_cuisine_overlap: 0.1   # Minimum ingredient overlap between cuisines
+  max_ingredients_per_suggestion: 15
+  
+  # Classification parameters
+  train_test_split: 0.2
+  classification_method: "network_features"  # Options: "network_features", "embedding", "graph_neural_network"
+
+logging:
+  level: INFO
+  console: true
+  file: "./logs/network.log"
+
