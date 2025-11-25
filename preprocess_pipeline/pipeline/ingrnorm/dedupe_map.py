@@ -3,6 +3,7 @@ from __future__ import annotations
 import json
 from pathlib import Path
 from typing import Dict, Union
+import numpy as np
 import pyarrow as pa
 import pyarrow.parquet as pq
 
@@ -46,8 +47,11 @@ def apply_map_to_parquet_streaming(
     for rg in range(pf.num_row_groups):
         df = pf.read_row_group(rg).to_pandas()
         if list_col in df.columns:
+            # Handle numpy arrays and other list-like types
             df[list_col] = [
-                [mapping.get(tok, tok) for tok in lst] if isinstance(lst, (list, tuple)) else lst
+                [mapping.get(str(tok), str(tok)) for tok in (lst if isinstance(lst, (list, tuple)) else list(lst))]
+                if isinstance(lst, (list, tuple, np.ndarray)) and len(lst) > 0
+                else (lst if isinstance(lst, (list, tuple)) else [])
                 for lst in df[list_col]
             ]
         table = pa.Table.from_pandas(df, preserve_index=False).replace_schema_metadata(None)

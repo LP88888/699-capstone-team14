@@ -178,6 +178,10 @@ Examples:
     if not in_path.exists():
         raise FileNotFoundError(f"Input data not found: {in_path}")
     
+    # Get normalization settings (CLI overrides config)
+    use_spacy_normalizer = inference_cfg.get("use_spacy_normalizer", True)
+    spacy_model = inference_cfg.get("spacy_model", "en_core_web_sm")
+    
     # Get performance settings (CLI overrides config)
     # Use CLI args if provided, otherwise use config values
     batch_size = args.batch_size if args.batch_size != 256 else inference_cfg.get("batch_size", 256)
@@ -194,7 +198,7 @@ Examples:
         configure_device()
     else:
         import spacy
-        spacy.prefer_cpu()
+        spacy.prefer_gpu()
         logger.info("Using CPU (set inference.use_gpu: true in config or use --use-gpu to attempt GPU acceleration)")
     
     logger.info(f"Input: {in_path}")
@@ -230,8 +234,11 @@ Examples:
             head_n=head_n,
             batch_size=batch_size,
             n_process=n_process,
+            use_spacy_normalizer=use_spacy_normalizer,
+            spacy_model=spacy_model,
         )
-        
+        print(df_wide.head())
+        print(df_tall.head())
         logger.info("=" * 60)
         logger.info("Inference Complete")
         logger.info("=" * 60)
@@ -248,4 +255,3 @@ Examples:
 
 if __name__ == "__main__":
     main()
-

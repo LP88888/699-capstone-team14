@@ -24,6 +24,12 @@ ALNUM = re.compile(r"[a-z0-9]+")
 logger = logging.getLogger(__name__)
 logger.setLevel(logging.INFO)
 
+# Regex patterns for bronze layer cleaning
+PARENTHESES_PATTERN = re.compile(r'\([^)]*\)')
+COMMERCIAL_SYMBOLS_PATTERN = re.compile(r'[®™©]')
+BRAND_ARTIFACTS_PATTERN = re.compile(r'\b(Inc\.|LLC|Ltd\.|Corp\.|Corporation|Company|Co\.)\b', re.IGNORECASE)
+MULTISPACE_PATTERN = re.compile(r'\s+')
+
 
 @dataclass
 class SpacyIngredientNormalizer:
@@ -41,6 +47,40 @@ class SpacyIngredientNormalizer:
         # Optimize for speed: disable unnecessary pipeline components
         # We only need tokenizer and parser for dependency analysis
         Token.set_extension("keep", default=True, force=True)
+    
+    @staticmethod
+    def clean_raw_text(text: str) -> str:
+        """
+        Bronze layer cleaner: Remove artifacts from raw ingredient text.
+        
+        Removes:
+        - Text inside parentheses (e.g., "Spinach (frozen)" -> "Spinach")
+        - Commercial symbols: ®, ™, ©
+        - Brand artifacts: Inc., LLC, Ltd., Corp., etc.
+        - Collapses multiple spaces to one
+        
+        Args:
+            text: Raw ingredient text
+            
+        Returns:
+            Cleaned text
+        """
+        if not text or not isinstance(text, str):
+            return text if text else ""
+        
+        # Remove text inside parentheses
+        cleaned = PARENTHESES_PATTERN.sub('', text)
+        
+        # Remove commercial symbols
+        cleaned = COMMERCIAL_SYMBOLS_PATTERN.sub('', cleaned)
+        
+        # Remove brand artifacts
+        cleaned = BRAND_ARTIFACTS_PATTERN.sub('', cleaned)
+        
+        # Collapse multiple spaces to one
+        cleaned = MULTISPACE_PATTERN.sub(' ', cleaned)
+        
+        return cleaned.strip()
 
     def _basic_tokens(self, s: str) -> List[str]:
         return ALNUM.findall(s.lower())
@@ -50,6 +90,8 @@ class SpacyIngredientNormalizer:
 
     def _normalize_doc(self, doc: Doc, raw: str) -> Optional[str]:
         """Core normalize logic, reusing an existing Doc."""
+        # Apply bronze layer cleaning first
+        raw = self.clean_raw_text(raw)
         s = raw.strip().lower()
         if not s:
             return None
@@ -96,6 +138,8 @@ class SpacyIngredientNormalizer:
 
     def _normalize_phrase(self, s: str) -> Optional[str]:
         """Single-phrase wrapper; still used by normalize_list."""
+        # Apply bronze layer cleaning first
+        s = self.clean_raw_text(s)
         s = s.strip()
         if not s:
             return None
@@ -134,7 +178,9 @@ class SpacyIngredientNormalizer:
                 continue
             start = len(flat_phrases)
             for x in lst:
-                flat_phrases.append(str(x))
+                # Apply bronze layer cleaning before processing
+                cleaned = SpacyIngredientNormalizer.clean_raw_text(str(x))
+                flat_phrases.append(cleaned)
             end = len(flat_phrases)
             boundaries.append((start, end))
 

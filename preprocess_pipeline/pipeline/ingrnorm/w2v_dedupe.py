@@ -1,4 +1,5 @@
 
+
 from __future__ import annotations
 import json
 from pathlib import Path
@@ -10,6 +11,7 @@ import pyarrow as pa
 import pyarrow.parquet as pq
 from gensim.models import Word2Vec
 from gensim.utils import simple_preprocess
+from rapidfuzz.distance import Levenshtein
 
 def _iter_parquet_tokenized_docs(parquet_path: Union[str, Path], list_col: str = "NER_clean") -> Iterable[List[str]]:
     pf = pq.ParquetFile(str(parquet_path))
@@ -70,6 +72,58 @@ def train_or_load_w2v(
 
 def _tokenize_phrase(phrase: str) -> List[str]:
     return simple_preprocess(str(phrase), deacc=True, min_len=2)
+
+# Stop words to exclude from token overlap check
+STOP_WORDS = {"salt", "water", "oil", "sugar", "pepper", "flour", "butter", "garlic", "onion"}
+
+def _tokenize_excluding_stops(phrase: str) -> set:
+    """Tokenize phrase and return set of tokens excluding stop words."""
+    tokens = _tokenize_phrase(phrase)
+    return {t for t in tokens if t not in STOP_WORDS}
+
+def _has_token_overlap(phrase_a: str, phrase_b: str) -> bool:
+    """Check if two phrases share at least one non-stop-word token."""
+    tokens_a = _tokenize_excluding_stops(phrase_a)
+    tokens_b = _tokenize_excluding_stops(phrase_b)
+    return bool(tokens_a & tokens_b)
+
+def _levenshtein_ratio(phrase_a: str, phrase_b: str) -> float:
+    """Compute normalized Levenshtein similarity ratio (0-1, higher = more similar)."""
+    if not phrase_a or not phrase_b:
+        return 0.0
+    # Use rapidfuzz for normalized similarity (0-1 scale)
+    distance = Levenshtein.distance(phrase_a.lower(), phrase_b.lower())
+    max_len = max(len(phrase_a), len(phrase_b))
+    if max_len == 0:
+        return 1.0
+    return 1.0 - (distance / max_len)
+
+def _should_merge(phrase_a: str, phrase_b: str, levenshtein_threshold: float = 0.7) -> bool:
+    """
+    Determine if two phrases should be merged based on lexical guardrails.
+    
+    Merges if:
+    - They share at least one non-stop-word token, OR
+    - Their Levenshtein similarity is above threshold
+    
+    Args:
+        phrase_a: First phrase
+        phrase_b: Second phrase
+        levenshtein_threshold: Minimum Levenshtein similarity ratio (0-1)
+        
+    Returns:
+        True if phrases should be merged
+    """
+    # Check token overlap
+    if _has_token_overlap(phrase_a, phrase_b):
+        return True
+    
+    # Check Levenshtein distance
+    lev_ratio = _levenshtein_ratio(phrase_a, phrase_b)
+    if lev_ratio >= levenshtein_threshold:
+        return True
+    
+    return False
 
 def phrase_vector(model: Word2Vec, phrase: str, oov_policy: str = "skip") -> Optional[np.ndarray]:
     toks = _tokenize_phrase(phrase)
@@ -139,28 +193,65 @@ def w2v_dedupe(
 
     M = np.stack(vecs, 0).astype(np.float32)
     nbr_idx, nbr_sc = _topk_similar_indices(M, k=topk, self_exclude=True, chunk_size=2048)
-    p = _uf_build(len(kept))
-    for i in range(len(kept)):
-        for jpos, score in zip(nbr_idx[i], nbr_sc[i]):
-            if score >= threshold:
-                _uf_union(p, i, jpos)
-    groups = {}
-    for i in range(len(kept)):
-        r = _uf_find(p, i)
-        groups.setdefault(r, []).append(i)
-
+    
+    # Centroid-based clustering: avoid union-find chaining
+    # Sort phrases by frequency (descending) to process most common first
     freqs = vocab_counter
-    def _canon_idx(cands):
-        def _key(i):
-            ph = kept[i]; freq = freqs.get(ph, 0)
-            return (-freq, len(ph), ph)
-        return min(cands, key=_key)
-    idx2canon = {g: _canon_idx(idxs) for g, idxs in groups.items()}
+    phrase_indices = list(range(len(kept)))
+    phrase_indices.sort(key=lambda i: (-freqs.get(kept[i], 0), len(kept[i]), kept[i]))
+    
+    clusters: Dict[int, List[int]] = {}  # cluster_id -> list of phrase indices
+    cluster_centroids: Dict[int, int] = {}  # cluster_id -> centroid phrase index
+    cluster_vectors: Dict[int, np.ndarray] = {}  # cluster_id -> centroid vector
+    next_cluster_id = 0
+    
+    # Levenshtein threshold for lexical guardrails (0.7 = 70% similarity)
+    levenshtein_threshold = 0.7
+    # Verification threshold: members must be within this distance of centroid
+    centroid_verification_threshold = threshold * 0.95  # Slightly stricter than merge threshold
+    
+    for i in phrase_indices:
+        assigned = False
+        phrase_i = kept[i]
+        vec_i = M[i]
+        
+        # Check if phrase_i can join an existing cluster
+        for cluster_id, centroid_idx in cluster_centroids.items():
+            centroid_vec = cluster_vectors[cluster_id]
+            centroid_phrase = kept[centroid_idx]
+            
+            # Check similarity to centroid
+            cos_sim = float(np.dot(vec_i, centroid_vec))
+            if cos_sim < threshold:
+                continue
+            
+            # Lexical guardrail: check token overlap or Levenshtein distance
+            if not _should_merge(phrase_i, centroid_phrase, levenshtein_threshold):
+                continue
+            
+            # Verify member is actually close to centroid (not just a neighbor)
+            if cos_sim >= centroid_verification_threshold:
+                clusters[cluster_id].append(i)
+                assigned = True
+                break
+        
+        # If not assigned, create new cluster with this phrase as centroid
+        if not assigned:
+            cluster_id = next_cluster_id
+            next_cluster_id += 1
+            clusters[cluster_id] = [i]
+            cluster_centroids[cluster_id] = i
+            cluster_vectors[cluster_id] = vec_i
+    
+    # Build mapping: all members map to their cluster centroid
     mapping = {}
-    for g, idxs in groups.items():
-        canon = kept[idx2canon[g]]
-        for i in idxs:
+    for cluster_id, members in clusters.items():
+        centroid_idx = cluster_centroids[cluster_id]
+        canon = kept[centroid_idx]
+        for i in members:
             mapping[kept[i]] = canon
+    
+    # Ensure all phrases have a mapping (even if not clustered)
     for ph in phrases:
         mapping.setdefault(ph, ph)
 

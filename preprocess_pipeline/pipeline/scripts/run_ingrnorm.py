@@ -23,24 +23,79 @@ from ingrnorm.encoder import IngredientEncoder
 
 logger = logging.getLogger("ingrnorm")
 
-def _cleanup_paths(cfg: dict, logger: logging.Logger):
+def _cleanup_paths(cfg: dict, logger: logging.Logger, preserve_files: list[str] = None):
+    """
+    Clean up old artifacts if cleanup is enabled in config.
+    By default, deletes parquet files but keeps JSON/JSONL files.
+    
+    Args:
+        cfg: Configuration dict
+        logger: Logger instance
+        preserve_files: List of file paths/patterns to preserve (e.g., main datasets)
+    """
     cleanup_cfg = cfg.get("cleanup", {})
     if not cleanup_cfg.get("enabled", False):
         logger.info("Cleanup disabled – skipping file deletions.")
         return
+    
+    preserve_files = preserve_files or []
+    preserve_patterns = []
+    for p in preserve_files:
+        try:
+            if Path(p).exists():
+                preserve_patterns.append(Path(p).resolve())
+            else:
+                # If path doesn't exist, store as string for pattern matching
+                preserve_patterns.append(p)
+        except (OSError, ValueError):
+            preserve_patterns.append(p)
+    
     paths = cleanup_cfg.get("paths", [])
     if not paths:
         logger.info("Cleanup enabled but no paths specified.")
         return
+    
+    deleted_count = 0
     for pattern in paths:
         for f in glob.glob(pattern):
-            try:
-                os.remove(f)
-                logger.info(f"[cleanup] Deleted {f}")
-            except FileNotFoundError:
-                pass
-            except Exception as e:
-                logger.warning(f"[cleanup] Failed to delete {f}: {e}")
+            f_path = Path(f).resolve()
+            
+            # Skip if file should be preserved
+            should_preserve = False
+            for preserve in preserve_patterns:
+                if isinstance(preserve, Path):
+                    if preserve.exists() and f_path.samefile(preserve):
+                        should_preserve = True
+                        break
+                    # Also check if preserve is a pattern that matches
+                    if str(f_path).endswith(str(preserve)) or str(preserve) in str(f_path):
+                        should_preserve = True
+                        break
+                else:
+                    # String pattern matching
+                    if str(preserve) in str(f_path) or str(f_path).endswith(str(preserve)):
+                        should_preserve = True
+                        break
+            
+            if should_preserve:
+                logger.debug(f"[cleanup] Preserving {f}")
+                continue
+            
+            # Only delete parquet files, keep JSON/JSONL files
+            if f.endswith('.parquet'):
+                try:
+                    os.remove(f)
+                    logger.info(f"[cleanup] Deleted {f}")
+                    deleted_count += 1
+                except FileNotFoundError:
+                    pass
+                except Exception as e:
+                    logger.warning(f"[cleanup] Failed to delete {f}: {e}")
+            else:
+                logger.debug(f"[cleanup] Keeping non-parquet file: {f}")
+    
+    if deleted_count > 0:
+        logger.info(f"[cleanup] Cleaned up {deleted_count} parquet file(s)")
 
 def _as_path(d: dict, key: str) -> Path:
     v = d.get(key)
@@ -259,7 +314,12 @@ def main():
     setup_logging(cfg)
     logger = logging.getLogger("ingrnorm")
     _validate_config(cfg, logger)
-    _cleanup_paths(cfg, logger)
+    
+    # Cleanup old artifacts (preserve main input dataset)
+    data_cfg = cfg.get("data", {})
+    input_path = Path(data_cfg.get("input_path", ""))
+    preserve_files = [str(input_path)] if input_path.exists() else []
+    _cleanup_paths(cfg, logger, preserve_files=preserve_files)
 
     data_cfg   = cfg.get("data", {})
     out_cfg    = cfg.get("output", {})
@@ -341,7 +401,26 @@ def main():
         enc_cfg, do_encode_ids, args, logger
     )
 
+    # Final cleanup: Remove intermediate parquet files, keep JSON files
+    logger.info("=" * 60)
+    logger.info("Final cleanup: Removing intermediate parquet files")
+    logger.info("=" * 60)
+    preserve_files = [str(input_path)] if input_path.exists() else []
+    
+    # Also clean up temporary raw source file if it exists
+    tmp_raw_parquet = baseline_parquet.with_name("_raw_source_for_spacy.parquet")
+    if tmp_raw_parquet.exists():
+        try:
+            tmp_raw_parquet.unlink()
+            logger.info(f"[cleanup] Deleted temporary file: {tmp_raw_parquet}")
+        except Exception as e:
+            logger.warning(f"[cleanup] Failed to delete {tmp_raw_parquet}: {e}")
+    
+    _cleanup_paths(cfg, logger, preserve_files=preserve_files)
+    
+    logger.info("=" * 60)
     logger.info("Workflow complete.")
+    logger.info(f"Kept JSON artifacts: {dedupe_map_path}, {ing_token_to_id}, {ing_id_to_token}")
 
 if __name__ == "__main__":
     main()
