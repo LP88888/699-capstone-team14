@@ -234,6 +234,48 @@ class ProcessingTaskConfig(BaseModel):
         return str(v)
 
 
+class HPOSettings(BaseModel):
+    """Hyperparameter Optimization settings."""
+    enabled: bool = False
+    search_backend: str = "optuna"  # Options: "optuna", "random", "grid"
+    n_trials: int = 10
+    metric: str = "f1"  # Options: "f1", "precision", "recall", "loss"
+    direction: str = "maximize"  # Options: "maximize", "minimize"
+    search_space: Dict[str, Any] = Field(default_factory=dict)
+    # Common search_space keys:
+    # - learning_rate: {"type": "float", "low": 1e-5, "high": 1e-3, "log": True}
+    # - batch_size: {"type": "int", "low": 8, "high": 64}
+    # - epochs: {"type": "int", "low": 5, "high": 20}
+    # - dropout: {"type": "float", "low": 0.0, "high": 0.5}
+    
+    @field_validator("search_backend")
+    @classmethod
+    def validate_backend(cls, v: str) -> str:
+        """Validate search backend."""
+        allowed = ["optuna", "random", "grid"]
+        if v not in allowed:
+            raise ValueError(f"search_backend must be one of {allowed}, got {v}")
+        return v
+    
+    @field_validator("metric")
+    @classmethod
+    def validate_metric(cls, v: str) -> str:
+        """Validate metric."""
+        allowed = ["f1", "precision", "recall", "loss"]
+        if v not in allowed:
+            raise ValueError(f"metric must be one of {allowed}, got {v}")
+        return v
+    
+    @field_validator("direction")
+    @classmethod
+    def validate_direction(cls, v: str) -> str:
+        """Validate direction."""
+        allowed = ["maximize", "minimize"]
+        if v not in allowed:
+            raise ValueError(f"direction must be one of {allowed}, got {v}")
+        return v
+
+
 class TrainingTaskConfig(BaseModel):
     """Configuration for a training task (e.g., ingredient_ner_model, cuisine_classification_model)."""
     name: str
@@ -254,6 +296,30 @@ class TrainingTaskConfig(BaseModel):
     def validate_paths(cls, v: str) -> str:
         """Validate that paths are strings (existence checked at runtime)."""
         return str(v)
+    
+    @classmethod
+    def from_dict(cls, data: Dict[str, Any]) -> "TrainingTaskConfig":
+        """
+        Create TrainingTaskConfig from dict, handling hpo at task level or in params.
+        
+        If 'hpo' is at the task level (sibling of 'params'), move it into 'params'.
+        """
+        data = data.copy()
+        # If hpo is at task level, move it into params
+        if "hpo" in data and "hpo" not in data.get("params", {}):
+            if "params" not in data:
+                data["params"] = {}
+            data["params"]["hpo"] = data.pop("hpo")
+        return cls(**data)
+    
+    def get_hpo_settings(self) -> Optional[HPOSettings]:
+        """Extract and validate HPO settings from params dict."""
+        hpo_dict = self.params.get("hpo")
+        if hpo_dict is None:
+            return None
+        if isinstance(hpo_dict, dict):
+            return HPOSettings(**hpo_dict)
+        return None
 
 
 class LegacyPipelineConfig(BaseModel):
@@ -369,6 +435,19 @@ class PipelineConfig(BaseModel):
         # Handle 'global' key (rename to 'global_settings' for internal use)
         if 'global' in cfg_dict and 'global_settings' not in cfg_dict:
             cfg_dict['global_settings'] = cfg_dict.pop('global')
+        
+        # Handle training_tasks: convert dicts to TrainingTaskConfig objects
+        # This ensures hpo is moved into params if it's at task level
+        if 'training_tasks' in cfg_dict:
+            training_tasks = []
+            for task_dict in cfg_dict['training_tasks']:
+                # If hpo is at task level (sibling of params), move it into params
+                if 'hpo' in task_dict and 'hpo' not in task_dict.get('params', {}):
+                    if 'params' not in task_dict:
+                        task_dict['params'] = {}
+                    task_dict['params']['hpo'] = task_dict.pop('hpo')
+                training_tasks.append(TrainingTaskConfig(**task_dict))
+            cfg_dict['training_tasks'] = training_tasks
         
         return cls(**cfg_dict)
     

@@ -93,7 +93,7 @@ def sbert_dedupe(
             members_sorted = sorted(members, key=lambda m: (-freqs[m], len(phrases[m]), phrases[m]))
             alt = next((phrases[m] for m in members_sorted if phrases[m] not in GENERIC), canon)
             canon = alt
-        
+            
         # Map all members to canonical form
         for m in members:
             mapping[phrases[m]] = canon

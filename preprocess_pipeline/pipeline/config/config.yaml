@@ -9,12 +9,12 @@ global:
 # This replaces "combine_raw_datasets.py"
 ingestion:
   enabled: true
-  input_dir: "./data/raw"
+  input_dir: "../data/raw/set_1"
   output_file: "./data/intermediate/combined_raw.parquet"
   # Rename your messy CSV columns to standard names here
   column_mapping:
     "NER": "ingredients_raw"       # The list-like column
-    "ingredients": "ingredients_text" # The string column (if needed)
+    "ingredients": "ingredients" # The string column (if needed)
     "cuisine": "cuisine_raw"
 
 # 3. PROCESSING TASKS (Run sequentially)
@@ -88,8 +88,9 @@ training_tasks:
     task_type: "token_classification" 
     
     # Input/Output paths
-    input_path: "./data/intermediate/combined_raw.parquet"
-    target_column: "ingredients_text"     # Input text column
+    # input_path: "./data/raw/set_2/wilmerarltstrmberg_data.csv"
+    input_path: "./data/raw/set_2/sample_data.csv"
+    target_column: "ingredients"     # Input text column
     label_column: "ingredients_raw"       # Label/NER list column
     model_dir: "./models/ingredient_ner_trf/model-best"
     
@@ -99,7 +100,15 @@ training_tasks:
       batch_size: 256
       valid_fraction: 0.2
       # ... (rest of the NER params) ...
-
+    hpo:
+          enabled: false
+          search_backend: "optuna"       # Use Optuna
+          n_trials: 50                   # Number of configurations to test
+          metric: "f1"                   # Optimization target
+          search_space:
+          learning_rate: [1e-5, 5e-5, 1e-4]
+          batch_size: [16, 32, 64]
+          dropout: [0.1, 0.2]
   # TASK 2: CUISINE CLASSIFICATION 
   - name: "cuisine_classification_model"
     enabled: true
@@ -109,7 +118,7 @@ training_tasks:
     # Input/Output paths
     # Use the encoded dataset which contains the clean labels
     input_path: "./data/processed/cuisine_encoded.parquet" 
-    text_column: "ingredients_text"       # Feature text (e.g., Recipe Text)
+    text_column: "ingredients"       # Feature text (e.g., Recipe Text)
     label_column: "cuisine_clean"         # Target label column from Task B
     model_dir: "./models/cuisine_cls_trf/model-best"
     
@@ -118,4 +127,16 @@ training_tasks:
       epochs: 10
       batch_size: 64                      # Smaller batch size often better for classification
       valid_fraction: 0.2
-      learning_rate: 5e-5
+      learning_rate: 5e-5 
+
+    hpo:
+        enabled: false
+        search_backend: "optuna"       # Use Optuna
+        n_trials: 50                   # Number of configurations to test
+        metric: "f1"                   # Optimization target
+        
+        # Define the search space for parameters
+        search_space:
+          learning_rate: [1e-5, 5e-5, 1e-4]
+          batch_size: [16, 32, 64]
+          dropout: [0.1, 0.2]

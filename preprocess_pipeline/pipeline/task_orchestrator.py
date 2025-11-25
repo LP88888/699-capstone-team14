@@ -184,177 +184,365 @@ class TaskBasedOrchestrator:
         """Instantiate pipeline steps based on task configuration."""
         self.logger.info("Setting up task-based pipeline steps...")
         
-        # Step 0: Data Ingestion (if enabled)
-        if self.config.ingestion and self.config.ingestion.enabled:
-            ingestion = self.config.ingestion
-            self.logger.info(f"Setting up ingestion: {ingestion.input_dir} -> {ingestion.output_file}")
-            
-            combiner = RawDataCombinerStep(
-                input_path=Path(ingestion.input_dir),
-                output_path=Path(ingestion.output_file),
-                config={
-                    "ingredients_col": ingestion.column_mapping.get("ingredients"),
-                    "cuisine_col": ingestion.column_mapping.get("cuisine"),
-                    "run_ner_inference": False,
-                },
-                data_dir=Path(ingestion.input_dir),
-            )
-            self.steps.append(combiner)
+        # Separate tasks into training and inference phases
+        # Training phase: process ingredients for training -> train ingredient model
+        # Inference phase: process ingredients with NER -> process cuisine -> train cuisine -> encode
         
-        # Step 1: Process each task
-        for task in self.config.tasks:
-            if not task.enabled:
-                self.logger.info(f"Skipping disabled task: {task.name}")
-                continue
-            
-            self.logger.info(f"Setting up task: {task.name}")
-            self.logger.info(f"  Input: {task.input_path}")
-            self.logger.info(f"  Output: {task.output_path}")
-            self.logger.info(f"  Target column: {task.target_column} -> {task.output_column}")
-            
-            # Track current input/output for this task
-            current_input = Path(task.input_path)
-            current_output_column = task.target_column  # Starts with target, updates as steps process
-            
-            # Process each step in the task
-            for step_idx, step_config in enumerate(task.steps):
-                # Determine intermediate output path
-                if step_idx == len(task.steps) - 1:
-                    # Last step: use final output path
-                    step_output = Path(task.output_path)
-                else:
-                    # Intermediate step: create temporary output
-                    step_output = Path(task.output_path).parent / f"{task.name}_step_{step_idx}_{step_config.name}.parquet"
-                
-                # Determine input/output columns
-                # First step reads target_column, subsequent steps read previous output_column
-                # Important: We preserve the original column and add new columns
-                step_input_col = task.target_column if step_idx == 0 else current_output_column
-                
-                # Determine output column based on step type
-                # For normalization: adds new column (preserves original)
-                # For deduplication: modifies column in place (preserves original, modifies processed column)
-                # For encoding: creates new format (typically final)
-                if step_idx == len(task.steps) - 1:
-                    # Final step: use the task's output_column
-                    step_output_col = task.output_column
-                else:
-                    # Intermediate step: create temporary column name
-                    if step_config.type in ("spacy", "normalization"):
-                        # Normalization adds a new column (e.g., 'NER' -> 'NER_clean')
-                        step_output_col = f"{step_input_col}_normalized"
-                    elif step_config.type in ("sbert", "w2v"):
-                        # Deduplication modifies the column in place
-                        # But we want to track it, so use a descriptive name
-                        step_output_col = f"{step_input_col}_deduped"
-                    elif step_config.type in ("list_splitter", "preprocessing"):
-                        step_output_col = f"{step_input_col}_preprocessed"
-                    else:
-                        step_output_col = f"{step_input_col}_processed"
-                
-                # Special handling: For deduplication, if we want to write to a new column,
-                # we need to adjust. But currently deduplication modifies in place.
-                # For now, we'll use the same column name for deduplication output
-                # (it modifies the input column in place, preserving other columns)
-                if step_config.type in ("sbert", "w2v"):
-                    # Deduplication modifies the column in place, so output_col = input_col
-                    # But we track it as _deduped for clarity in the pipeline
-                    actual_dedup_col = step_input_col  # The column that gets modified
-                    step_output_col = step_output_col  # The name we use for tracking
-                
-                # Create step
-                # For deduplication, we need to handle the column name correctly
-                # since it modifies the column in place (via apply_map_to_parquet_streaming)
-                if step_config.type in ("sbert", "w2v"):
-                    # Deduplication modifies the input column in place
-                    # So the output column is the same as input (but modified)
-                    dedup_col = step_input_col
-                    step = self._create_step_from_config(
-                        step_config=step_config,
-                        input_path=current_input,
-                        output_path=step_output,
-                        target_column=dedup_col,
-                        output_column=dedup_col,  # Modified in place, same name
-                        task_name=task.name,
-                    )
-                    # After deduplication, the column name is unchanged (but content is modified)
-                    # For next step, we continue using the same column name
-                    current_output_column = step_input_col
-                else:
-                    # Other steps (normalization, preprocessing, encoding) add new columns
-                    step = self._create_step_from_config(
-                        step_config=step_config,
-                        input_path=current_input,
-                        output_path=step_output,
-                        target_column=step_input_col,
-                        output_column=step_output_col,
-                        task_name=task.name,
-                    )
-                    # Update to use the new output column for next step
-                    current_output_column = step_output_col
-                
-                if step is None:
-                    self.logger.warning(f"Step '{step_config.name}' could not be created, skipping")
-                    continue
-                
-                self.steps.append(step)
-                
-                # Update for next step
-                current_input = step_output
-                # current_output_column already updated above based on step type
-        
-        # Step 2: Training Tasks (iterate through training_tasks list)
+        # Find ingredient training task (if any)
+        ingredient_training_task = None
         for training_task in self.config.training_tasks:
-            if not training_task.enabled:
-                self.logger.info(f"Skipping disabled training task: {training_task.name}")
-                continue
+            if training_task.enabled and training_task.task_type == "token_classification":
+                # Check if it's for ingredients (by name or label_column)
+                if "ingredient" in training_task.name.lower() or training_task.label_column == "ingredients_raw":
+                    ingredient_training_task = training_task
+                    break
+        
+        # Find cuisine training task (if any)
+        cuisine_training_task = None
+        for training_task in self.config.training_tasks:
+            if training_task.enabled and training_task.task_type == "text_classification":
+                if "cuisine" in training_task.name.lower():
+                    cuisine_training_task = training_task
+                    break
+        
+        # Separate processing tasks by type
+        ingredient_task = None
+        cuisine_task = None
+        for task in self.config.tasks:
+            if "ingredient" in task.name.lower():
+                ingredient_task = task
+            elif "cuisine" in task.name.lower():
+                cuisine_task = task
+        
+        # ============================================
+        # PHASE 1: TRAINING DATA PREPARATION
+        # ============================================
+        if ingredient_training_task:
+            self.logger.info("=" * 60)
+            self.logger.info("PHASE 1: Training Data Preparation")
+            self.logger.info("=" * 60)
             
-            self.logger.info(f"Setting up training task: {training_task.name}")
-            self.logger.info(f"  Task type: {training_task.task_type}")
-            self.logger.info(f"  Input: {training_task.input_path}")
-            self.logger.info(f"  Model output: {training_task.model_dir}")
+            # Step 1.1: Load training data (if training task has different input)
+            training_input = Path(ingredient_training_task.input_path)
+            if not training_input.exists():
+                # If training input doesn't exist, use ingestion
+                if self.config.ingestion and self.config.ingestion.enabled:
+                    ingestion = self.config.ingestion
+                    self.logger.info(f"Loading training data via ingestion: {ingestion.input_dir}")
+                    combiner = RawDataCombinerStep(
+                        input_path=Path(ingestion.input_dir),
+                        output_path=Path(ingestion.output_file),
+                        config={
+                            "ingredients_col": ingestion.column_mapping.get("ingredients"),
+                            "cuisine_col": ingestion.column_mapping.get("cuisine"),
+                            "run_ner_inference": False,
+                        },
+                        data_dir=Path(ingestion.input_dir),
+                    )
+                    self.steps.append(combiner)
+                    training_input = Path(ingestion.output_file)
             
-            # Determine target column based on task_type
-            # NERModelTrainerStep expects the column with labeled entities (list format)
-            if training_task.task_type == "token_classification":
-                # For NER: use label_column (the list of entities/labels)
-                target_col = training_task.label_column
-                if target_col is None:
-                    self.logger.warning(f"Training task '{training_task.name}' missing label_column for token_classification, skipping")
-                    continue
-            elif training_task.task_type == "text_classification":
-                # For classification: use label_column (the target labels)
-                # Note: NERModelTrainerStep is designed for NER, so text_classification
-                # would need a different trainer step (not yet implemented)
-                self.logger.warning(f"Training task '{training_task.name}' uses text_classification which is not yet supported by NERModelTrainerStep, skipping")
-                continue
-            else:
-                self.logger.warning(f"Unknown task_type '{training_task.task_type}' for training task '{training_task.name}', skipping")
-                continue
+            # Step 1.2: Process ingredients for training (normalization + deduplication, NO encoding)
+            if ingredient_task:
+                self.logger.info("Processing ingredients for training (no encoding)...")
+                training_steps = [s for s in ingredient_task.steps if s.type != "encoder"]
+                if training_steps:
+                    current_input = training_input
+                    current_output_column = ingredient_task.target_column
+                    
+                    for step_idx, step_config in enumerate(training_steps):
+                        # Use temporary output path for training processing
+                        step_output = training_input.parent / f"ingredients_training_step_{step_idx}_{step_config.name}.parquet"
+                        
+                        step_input_col = ingredient_task.target_column if step_idx == 0 else current_output_column
+                        
+                        if step_idx == len(training_steps) - 1:
+                            step_output_col = f"{ingredient_task.output_column}_training"
+                        else:
+                            if step_config.type in ("spacy", "normalization"):
+                                step_output_col = f"{step_input_col}_normalized"
+                            elif step_config.type in ("sbert", "w2v"):
+                                step_output_col = f"{step_input_col}_deduped"
+                            else:
+                                step_output_col = f"{step_input_col}_processed"
+                        
+                        if step_config.type in ("sbert", "w2v"):
+                            dedup_col = step_input_col
+                            step = self._create_step_from_config(
+                                step_config=step_config,
+                                input_path=current_input,
+                                output_path=step_output,
+                                target_column=dedup_col,
+                                output_column=dedup_col,
+                                task_name=f"{ingredient_task.name}_training",
+                            )
+                            current_output_column = step_input_col
+                        else:
+                            step = self._create_step_from_config(
+                                step_config=step_config,
+                                input_path=current_input,
+                                output_path=step_output,
+                                target_column=step_input_col,
+                                output_column=step_output_col,
+                                task_name=f"{ingredient_task.name}_training",
+                            )
+                            current_output_column = step_output_col
+                        
+                        if step is not None:
+                            self.steps.append(step)
+                            current_input = step_output
+                    
+                    # Update training task input to use processed training data
+                    training_input = current_input
             
-            training_input = Path(training_task.input_path)
-            model_dir = Path(training_task.model_dir)
+            # Step 1.3: Train ingredient transformer
+            self.logger.info("Training ingredient NER model...")
+            target_col = ingredient_training_task.label_column
+            training_params = ingredient_training_task.params or {}
+            hpo_settings = training_params.pop("hpo", None) if "hpo" in training_params else None
             
-            # Extract training parameters from params dict
-            training_params = training_task.params or {}
+            trainer_config = {
+                "target_column": target_col,
+                "base_model": training_params.get("base_model", "roberta-base"),
+                "epochs": training_params.get("epochs", 10),
+                "batch_size": training_params.get("batch_size", 16),
+                "train_split": training_params.get("train_split", 0.8),
+                "random_seed": training_params.get("random_seed", 42),
+                "training": training_params,
+            }
+            if hpo_settings:
+                trainer_config["hpo"] = hpo_settings
             
-            # Create trainer step
             trainer = NERModelTrainerStep(
                 input_path=training_input,
-                output_path=model_dir,
-                config={
-                    "target_column": target_col,
-                    "base_model": training_params.get("base_model", "roberta-base"),
-                    "epochs": training_params.get("epochs", 10),
-                    "batch_size": training_params.get("batch_size", 16),
-                    "train_split": training_params.get("train_split", 0.8),
-                    "random_seed": training_params.get("random_seed", 42),
-                    "training": training_params,
-                },
-                model_dir=model_dir,
+                output_path=Path(ingredient_training_task.model_dir),
+                config=trainer_config,
+                model_dir=Path(ingredient_training_task.model_dir),
             )
             self.steps.append(trainer)
         
+        # ============================================
+        # PHASE 2: INFERENCE DATA PROCESSING
+        # ============================================
+        self.logger.info("=" * 60)
+        self.logger.info("PHASE 2: Inference Data Processing")
+        self.logger.info("=" * 60)
+        
+        # Step 2.1: Load combined_raw for inference
+        if self.config.ingestion and self.config.ingestion.enabled:
+            ingestion = self.config.ingestion
+            inference_input = Path(ingestion.output_file)
+            
+            # Only add ingestion step if it wasn't already added in training phase
+            if not ingredient_training_task or Path(ingredient_training_task.input_path).exists():
+                self.logger.info(f"Loading inference data via ingestion: {ingestion.input_dir}")
+                combiner = RawDataCombinerStep(
+                    input_path=Path(ingestion.input_dir),
+                    output_path=Path(ingestion.output_file),
+                    config={
+                        "ingredients_col": ingestion.column_mapping.get("ingredients"),
+                        "cuisine_col": ingestion.column_mapping.get("cuisine"),
+                        "run_ner_inference": True,  # Enable NER inference now that model is trained
+                        "ner_model_path": str(Path(ingredient_training_task.model_dir)) if ingredient_training_task else None,
+                    },
+                    data_dir=Path(ingestion.input_dir),
+                )
+                self.steps.append(combiner)
+        
+        # Step 2.2: Process ingredients with inference (normalization with NER + deduplication, NO encoding)
+        if ingredient_task:
+            self.logger.info("Processing ingredients with NER inference (no encoding)...")
+            inference_steps = [s for s in ingredient_task.steps if s.type != "encoder"]
+            if inference_steps:
+                current_input = inference_input
+                current_output_column = ingredient_task.target_column
+                
+                for step_idx, step_config in enumerate(inference_steps):
+                    step_output = Path(ingredient_task.output_path).parent / f"ingredients_inference_step_{step_idx}_{step_config.name}.parquet"
+                    
+                    step_input_col = ingredient_task.target_column if step_idx == 0 else current_output_column
+                    
+                    if step_idx == len(inference_steps) - 1:
+                        step_output_col = f"{ingredient_task.output_column}_inference"
+                    else:
+                        if step_config.type in ("spacy", "normalization"):
+                            step_output_col = f"{step_input_col}_normalized"
+                        elif step_config.type in ("sbert", "w2v"):
+                            step_output_col = f"{step_input_col}_deduped"
+                        else:
+                            step_output_col = f"{step_input_col}_processed"
+                    
+                    if step_config.type in ("sbert", "w2v"):
+                        dedup_col = step_input_col
+                        step = self._create_step_from_config(
+                            step_config=step_config,
+                            input_path=current_input,
+                            output_path=step_output,
+                            target_column=dedup_col,
+                            output_column=dedup_col,
+                            task_name=f"{ingredient_task.name}_inference",
+                        )
+                        current_output_column = step_input_col
+                    else:
+                        step = self._create_step_from_config(
+                            step_config=step_config,
+                            input_path=current_input,
+                            output_path=step_output,
+                            target_column=step_input_col,
+                            output_column=step_output_col,
+                            task_name=f"{ingredient_task.name}_inference",
+                        )
+                        current_output_column = step_output_col
+                    
+                    if step is not None:
+                        self.steps.append(step)
+                        current_input = step_output
+                
+                # Store inference output for later encoding
+                ingredient_inference_output = current_input
+                ingredient_inference_column = current_output_column
+        
+        # Step 2.3: Process cuisine (normalization + deduplication, NO encoding)
+        if cuisine_task:
+            self.logger.info("Processing cuisine (no encoding)...")
+            cuisine_steps = [s for s in cuisine_task.steps if s.type != "encoder"]
+            if cuisine_steps:
+                # Use combined_raw as input for cuisine
+                current_input = inference_input
+                current_output_column = cuisine_task.target_column
+                
+                for step_idx, step_config in enumerate(cuisine_steps):
+                    step_output = Path(cuisine_task.output_path).parent / f"cuisine_step_{step_idx}_{step_config.name}.parquet"
+                    
+                    step_input_col = cuisine_task.target_column if step_idx == 0 else current_output_column
+                    
+                    if step_idx == len(cuisine_steps) - 1:
+                        step_output_col = f"{cuisine_task.output_column}_no_encode"
+                    else:
+                        if step_config.type in ("spacy", "normalization"):
+                            step_output_col = f"{step_input_col}_normalized"
+                        elif step_config.type in ("sbert", "w2v"):
+                            step_output_col = f"{step_input_col}_deduped"
+                        elif step_config.type in ("list_splitter", "preprocessing"):
+                            step_output_col = f"{step_input_col}_preprocessed"
+                        else:
+                            step_output_col = f"{step_input_col}_processed"
+                    
+                    if step_config.type in ("sbert", "w2v"):
+                        dedup_col = step_input_col
+                        step = self._create_step_from_config(
+                            step_config=step_config,
+                            input_path=current_input,
+                            output_path=step_output,
+                            target_column=dedup_col,
+                            output_column=dedup_col,
+                            task_name=cuisine_task.name,
+                        )
+                        current_output_column = step_input_col
+                    else:
+                        step = self._create_step_from_config(
+                            step_config=step_config,
+                            input_path=current_input,
+                            output_path=step_output,
+                            target_column=step_input_col,
+                            output_column=step_output_col,
+                            task_name=cuisine_task.name,
+                        )
+                        current_output_column = step_output_col
+                    
+                    if step is not None:
+                        self.steps.append(step)
+                        current_input = step_output
+                
+                # Store processed output for later encoding
+                cuisine_processed_output = current_input
+                cuisine_processed_column = current_output_column
+        
+        # Step 2.4: Train cuisine transformer (if enabled)
+        if cuisine_training_task:
+            self.logger.info("Training cuisine classification model...")
+            # Use processed cuisine data as input
+            cuisine_training_input = cuisine_processed_output if cuisine_task else Path(cuisine_training_task.input_path)
+            target_col = cuisine_training_task.label_column
+            training_params = cuisine_training_task.params or {}
+            hpo_settings = training_params.pop("hpo", None) if "hpo" in training_params else None
+            
+            trainer_config = {
+                "target_column": target_col,
+                "base_model": training_params.get("base_model", "roberta-base"),
+                "epochs": training_params.get("epochs", 10),
+                "batch_size": training_params.get("batch_size", 16),
+                "train_split": training_params.get("train_split", 0.8),
+                "random_seed": training_params.get("random_seed", 42),
+                "training": training_params,
+            }
+            if hpo_settings:
+                trainer_config["hpo"] = hpo_settings
+            
+            trainer = NERModelTrainerStep(
+                input_path=cuisine_training_input,
+                output_path=Path(cuisine_training_task.model_dir),
+                config=trainer_config,
+                model_dir=Path(cuisine_training_task.model_dir),
+            )
+            self.steps.append(trainer)
+        
+        # ============================================
+        # PHASE 3: ENCODING (Final step)
+        # ============================================
+        self.logger.info("=" * 60)
+        self.logger.info("PHASE 3: Encoding")
+        self.logger.info("=" * 60)
+        
+        # Step 3.1: Encode ingredients
+        if ingredient_task:
+            encoding_step = [s for s in ingredient_task.steps if s.type == "encoder"]
+            if encoding_step:
+                encoding_config = encoding_step[0]
+                # Use inference output as input for encoding
+                if 'ingredient_inference_output' in locals():
+                    encoding_input = ingredient_inference_output
+                    encoding_column = ingredient_inference_column
+                else:
+                    encoding_input = inference_input
+                    encoding_column = ingredient_task.target_column
+                
+                step = self._create_step_from_config(
+                    step_config=encoding_config,
+                    input_path=encoding_input,
+                    output_path=Path(ingredient_task.output_path),
+                    target_column=encoding_column,
+                    output_column=ingredient_task.output_column,
+                    task_name=ingredient_task.name,
+                )
+                if step is not None:
+                    self.steps.append(step)
+        
+        # Step 3.2: Encode cuisine
+        if cuisine_task:
+            encoding_step = [s for s in cuisine_task.steps if s.type == "encoder"]
+            if encoding_step:
+                encoding_config = encoding_step[0]
+                # Use processed cuisine output as input for encoding
+                if 'cuisine_processed_output' in locals():
+                    encoding_input = cuisine_processed_output
+                    encoding_column = cuisine_processed_column
+                else:
+                    encoding_input = inference_input
+                    encoding_column = cuisine_task.target_column
+                
+                step = self._create_step_from_config(
+                    step_config=encoding_config,
+                    input_path=encoding_input,
+                    output_path=Path(cuisine_task.output_path),
+                    target_column=encoding_column,
+                    output_column=cuisine_task.output_column,
+                    task_name=cuisine_task.name,
+                )
+                if step is not None:
+                    self.steps.append(step)
+        
+        # All steps have been configured in the phases above
         self.logger.info(f"Setup complete: {len(self.steps)} step(s) configured")
     
     def run(self, force: bool = False) -> None:

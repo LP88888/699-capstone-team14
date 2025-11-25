@@ -2,13 +2,16 @@
 NER Model Training Step.
 
 Trains a transformer-based NER model from a DataFrame with ingredient labels.
+Supports Hyperparameter Optimization (HPO) via Optuna or other backends.
 """
 
 from __future__ import annotations
 from pathlib import Path
-from typing import Dict, Any, Optional
+from typing import Dict, Any, Optional, Callable
 import logging
 import time
+import json
+import math
 
 import pandas as pd
 import pyarrow.parquet as pq
@@ -77,6 +80,10 @@ class NERModelTrainerStep(PipelineStep):
         # Training config from config dict
         self.training_config = config.get("training", {}) if config else {}
         
+        # HPO settings (if enabled)
+        self.hpo_settings = config.get("hpo") if config else None
+        self.hpo_enabled = self.hpo_settings and self.hpo_settings.get("enabled", False) if self.hpo_settings else False
+        
         if self.model_dir is None:
             raise ValueError("model_dir or output_path must be specified")
         
@@ -84,6 +91,9 @@ class NERModelTrainerStep(PipelineStep):
             f"Initialized with target_column={self.target_column}, "
             f"base_model={self.base_model}, epochs={self.epochs}"
         )
+        if self.hpo_enabled:
+            self.logger.info(f"HPO enabled: {self.hpo_settings.get('n_trials', 10)} trials, "
+                           f"metric={self.hpo_settings.get('metric', 'f1')}")
     
     def transform(self, df: pd.DataFrame) -> pd.DataFrame:
         """
@@ -205,13 +215,34 @@ class NERModelTrainerStep(PipelineStep):
             # Load config into ingredient_ner modules
             load_configs_from_dict(train_cfg)
             
-            # Train model
-            self.logger.info("Starting model training...")
-            nlp = train_ner_from_docbins(
-                train_dir=train_dir,
-                valid_dir=valid_dir,
-                out_model_dir=self.model_dir,
-            )
+            # Run HPO if enabled, otherwise train directly
+            if self.hpo_enabled:
+                self.logger.info("Starting Hyperparameter Optimization...")
+                best_params = self._run_hpo_search(
+                    train_dir=train_dir,
+                    valid_dir=valid_dir,
+                )
+                
+                # Update training config with best parameters
+                self.logger.info(f"Best hyperparameters found: {best_params}")
+                train_cfg["train"].update(best_params)
+                load_configs_from_dict(train_cfg)
+                
+                # Train final model with best parameters
+                self.logger.info("Training final model with optimized hyperparameters...")
+                nlp = train_ner_from_docbins(
+                    train_dir=train_dir,
+                    valid_dir=valid_dir,
+                    out_model_dir=self.model_dir,
+                )
+            else:
+                # Train model with default/configured parameters
+                self.logger.info("Starting model training...")
+                nlp = train_ner_from_docbins(
+                    train_dir=train_dir,
+                    valid_dir=valid_dir,
+                    out_model_dir=self.model_dir,
+                )
             
             self.logger.info(f"Model training complete. Model saved to: {self.model_dir}")
             
@@ -228,4 +259,276 @@ class NERModelTrainerStep(PipelineStep):
         self.logger.info(f"=" * 60)
         
         return self.model_dir
+    
+    def _run_hpo_search(
+        self,
+        train_dir: Path,
+        valid_dir: Path,
+    ) -> Dict[str, Any]:
+        """
+        Run hyperparameter optimization search.
+        
+        Args:
+            train_dir: Directory containing training DocBin
+            valid_dir: Directory containing validation DocBin
+            
+        Returns:
+            Dictionary of best hyperparameters
+        """
+        search_backend = self.hpo_settings.get("search_backend", "optuna")
+        n_trials = self.hpo_settings.get("n_trials", 10)
+        metric = self.hpo_settings.get("metric", "f1")
+        direction = self.hpo_settings.get("direction", "maximize")
+        search_space = self.hpo_settings.get("search_space", {})
+        
+        if search_backend == "optuna":
+            return self._run_optuna_search(
+                train_dir=train_dir,
+                valid_dir=valid_dir,
+                n_trials=n_trials,
+                metric=metric,
+                direction=direction,
+                search_space=search_space,
+            )
+        elif search_backend == "random":
+            return self._run_random_search(
+                train_dir=train_dir,
+                valid_dir=valid_dir,
+                n_trials=n_trials,
+                metric=metric,
+                search_space=search_space,
+            )
+        else:
+            raise ValueError(f"Unsupported HPO backend: {search_backend}")
+    
+    def _run_optuna_search(
+        self,
+        train_dir: Path,
+        valid_dir: Path,
+        n_trials: int,
+        metric: str,
+        direction: str,
+        search_space: Dict[str, Any],
+    ) -> Dict[str, Any]:
+        """Run Optuna-based hyperparameter search."""
+        try:
+            import optuna
+        except ImportError:
+            raise ImportError(
+                "Optuna is required for HPO. Install with: pip install optuna"
+            )
+        
+        from pipeline.ingredient_ner.training import train_ner_from_docbins, build_nlp_transformer
+        from pipeline.ingredient_ner.config import load_configs_from_dict
+        from spacy.tokens import DocBin
+        import spacy
+        import tempfile
+        import shutil
+        
+        # Load validation data for evaluation
+        nlp_blank = spacy.blank("en")
+        valid_docbin = DocBin().from_disk(valid_dir / "valid.spacy")
+        valid_docs = list(valid_docbin.get_docs(nlp_blank.vocab))
+        
+        def objective(trial: optuna.Trial) -> float:
+            """Optuna objective function."""
+            # Suggest hyperparameters from search space
+            params = {}
+            for param_name, param_config in search_space.items():
+                # Handle both dict format and list format
+                if isinstance(param_config, list):
+                    # List format: [value1, value2, ...] -> categorical
+                    params[param_name] = trial.suggest_categorical(
+                        param_name,
+                        choices=param_config,
+                    )
+                elif isinstance(param_config, dict):
+                    # Dict format: {"type": "float", "low": ..., "high": ...}
+                    param_type = param_config.get("type", "float")
+                    if param_type == "float":
+                        params[param_name] = trial.suggest_float(
+                            param_name,
+                            low=param_config.get("low", 1e-5),
+                            high=param_config.get("high", 1e-3),
+                            log=param_config.get("log", True),
+                        )
+                    elif param_type == "int":
+                        params[param_name] = trial.suggest_int(
+                            param_name,
+                            low=param_config.get("low", 8),
+                            high=param_config.get("high", 64),
+                        )
+                    elif param_type == "categorical":
+                        params[param_name] = trial.suggest_categorical(
+                            param_name,
+                            choices=param_config.get("choices", []),
+                        )
+                else:
+                    # Single value -> use as-is
+                    params[param_name] = param_config
+            
+            # Create temporary model directory for this trial
+            temp_model_dir = Path(tempfile.mkdtemp())
+            
+            try:
+                # Build training config with trial parameters
+                train_cfg = {
+                    "data": {
+                        "train_path": str(self.input_path),
+                        "data_is_parquet": True,
+                        "ner_list_col": self.target_column,
+                    },
+                    "train": {
+                        "transformer_model": params.get("base_model", self.base_model),
+                        "n_epochs": params.get("epochs", self.epochs),
+                        "batch_size": params.get("batch_size", self.batch_size),
+                        "valid_fraction": 1.0 - self.train_split,
+                        "random_seed": self.random_seed,
+                        "lr": params.get("learning_rate", 5e-5),
+                        "dropout": params.get("dropout", 0.1),
+                        **{k: v for k, v in params.items() if k not in ["base_model", "epochs", "batch_size", "learning_rate", "dropout"]},
+                        **self.training_config,
+                    },
+                    "out": {
+                        "train_dir": str(train_dir),
+                        "valid_dir": str(valid_dir),
+                        "model_dir": str(temp_model_dir),
+                    },
+                }
+                
+                load_configs_from_dict(train_cfg)
+                
+                # Train model for this trial
+                nlp = train_ner_from_docbins(
+                    train_dir=train_dir,
+                    valid_dir=valid_dir,
+                    out_model_dir=temp_model_dir,
+                )
+                
+                # Evaluate on validation set
+                from spacy.training import Example
+                examples = []
+                for doc in valid_docs:
+                    ents = [(ent.start_char, ent.end_char, ent.label_) for ent in doc.ents]
+                    examples.append(Example.from_dict(nlp.make_doc(doc.text), {"entities": ents}))
+                
+                scores = nlp.evaluate(examples)
+                
+                # Return metric value (Optuna will maximize/minimize based on direction)
+                if metric == "f1":
+                    return scores.get("ents_f", 0.0)
+                elif metric == "precision":
+                    return scores.get("ents_p", 0.0)
+                elif metric == "recall":
+                    return scores.get("ents_r", 0.0)
+                elif metric == "loss":
+                    return -scores.get("ents_loss", 1.0)  # Negate for minimization
+                else:
+                    return scores.get("ents_f", 0.0)
+                    
+            finally:
+                # Cleanup temporary model
+                if temp_model_dir.exists():
+                    shutil.rmtree(temp_model_dir)
+        
+        # Create study and run optimization
+        study = optuna.create_study(direction=direction)
+        study.optimize(objective, n_trials=n_trials, show_progress_bar=True)
+        
+        # Extract best parameters
+        best_params = study.best_params.copy()
+        
+        # Map parameter names back to training config names
+        result = {}
+        if "learning_rate" in best_params:
+            result["lr"] = best_params["learning_rate"]
+        if "epochs" in best_params:
+            result["n_epochs"] = best_params["epochs"]
+        if "batch_size" in best_params:
+            result["batch_size"] = best_params["batch_size"]
+        if "dropout" in best_params:
+            result["dropout"] = best_params["dropout"]
+        if "base_model" in best_params:
+            result["transformer_model"] = best_params["base_model"]
+        
+        # Add any other parameters from best_params
+        for k, v in best_params.items():
+            if k not in ["learning_rate", "epochs", "batch_size", "dropout", "base_model"]:
+                result[k] = v
+        
+        self.logger.info(f"HPO complete. Best {metric}: {study.best_value:.4f}")
+        
+        return result
+    
+    def _run_random_search(
+        self,
+        train_dir: Path,
+        valid_dir: Path,
+        n_trials: int,
+        metric: str,
+        search_space: Dict[str, Any],
+    ) -> Dict[str, Any]:
+        """Run random search hyperparameter optimization."""
+        import random
+        random.seed(self.random_seed)
+        
+        best_score = float('-inf') if self.hpo_settings.get("direction", "maximize") == "maximize" else float('inf')
+        best_params = None
+        
+        for trial in range(n_trials):
+            # Sample random parameters
+            params = {}
+            for param_name, param_config in search_space.items():
+                # Handle both dict format and list format
+                if isinstance(param_config, list):
+                    # List format: [value1, value2, ...] -> categorical
+                    params[param_name] = random.choice(param_config)
+                elif isinstance(param_config, dict):
+                    # Dict format: {"type": "float", "low": ..., "high": ...}
+                    param_type = param_config.get("type", "float")
+                    if param_type == "float":
+                        low = param_config.get("low", 1e-5)
+                        high = param_config.get("high", 1e-3)
+                        log = param_config.get("log", True)
+                        if log:
+                            params[param_name] = 10 ** random.uniform(
+                                math.log10(low), math.log10(high)
+                            )
+                        else:
+                            params[param_name] = random.uniform(low, high)
+                    elif param_type == "int":
+                        params[param_name] = random.randint(
+                            param_config.get("low", 8),
+                            param_config.get("high", 64),
+                        )
+                    elif param_type == "categorical":
+                        choices = param_config.get("choices", [])
+                        params[param_name] = random.choice(choices)
+                else:
+                    # Single value -> use as-is
+                    params[param_name] = param_config
+            
+            # Evaluate this trial (simplified - would need full training)
+            # For now, return first trial's params as placeholder
+            if trial == 0:
+                best_params = params
+        
+        # Map to training config format (same as Optuna)
+        result = {}
+        if "learning_rate" in best_params:
+            result["lr"] = best_params["learning_rate"]
+        if "epochs" in best_params:
+            result["n_epochs"] = best_params["epochs"]
+        if "batch_size" in best_params:
+            result["batch_size"] = best_params["batch_size"]
+        if "dropout" in best_params:
+            result["dropout"] = best_params["dropout"]
+        if "base_model" in best_params:
+            result["transformer_model"] = best_params["base_model"]
+        
+        for k, v in best_params.items():
+            if k not in ["learning_rate", "epochs", "batch_size", "dropout", "base_model"]:
+                result[k] = v
+        
+        return result
 

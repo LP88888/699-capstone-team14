@@ -60,7 +60,7 @@ def find_ingredients_column(df: pd.DataFrame, logger: logging.Logger) -> Optiona
 def find_cuisine_column(df: pd.DataFrame, logger: logging.Logger) -> Optional[str]:
     """Find cuisine column (case-insensitive)."""
     cols_lower = {col.lower(): col for col in df.columns}
-    candidates = ["cuisine", "cuisines", "cuisine_type", "type"]
+    candidates = ["cuisine", "cuisines", "cuisine_type", "type", "country", "countries", "region", "regions"]
     for candidate in candidates:
         if candidate in cols_lower:
             actual_col = cols_lower[candidate]
@@ -204,27 +204,19 @@ class RawDataCombinerStep(PipelineStep):
                     self.logger.warning(f"Skipping empty file: {file_path.name}")
                     continue
                 
-                # Auto-detect columns if not specified
-                ing_col = self.ingredients_col or find_ingredients_column(df, self.logger)
-                cui_col = self.cuisine_col or find_cuisine_column(df, self.logger)
-                
-                if ing_col is None:
-                    self.logger.warning(f"No ingredients column found in {file_path.name}, skipping")
-                    continue
-                
-                # Extract ingredients
+                def auto_detect(col_name: str) -> str:
+                    if self.ingredients_col not in df.columns:
+                        self.ingredients_col = find_ingredients_column(df, self.logger)
+                    return self.ingredients_col
+
+                self.ingredients_col = auto_detect(self.ingredients_col)
+                ing_col = self.ingredients_col
+                self.cuisine_col = auto_detect(self.cuisine_col)
+                cui_col = self.cuisine_col
+
+                # Extract ingredients and cuisine
                 ingredients_series = df[ing_col].astype(str)
-                
-                # Extract cuisine
-                if cui_col and cui_col in df.columns:
-                    cuisine_series = df[cui_col].astype(str)
-                else:
-                    # Try to extract from text columns
-                    text_cols = [col for col in df.columns if col.lower() in ["text", "description", "instructions", "recipe"]]
-                    if text_cols:
-                        cuisine_series = df[text_cols[0]].apply(lambda x: extract_cuisine_from_text(x, self.cuisine_default))
-                    else:
-                        cuisine_series = pd.Series([self.cuisine_default] * len(df))
+                cuisine_series = df[cui_col].astype(str)
                 
                 # Create result DataFrame
                 result = pd.DataFrame({
