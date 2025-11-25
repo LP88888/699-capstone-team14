@@ -20,7 +20,7 @@ from pyvis.network import Network
 # -------------------------
 # Paths
 # -------------------------
-BASE_DIR = Path(__file__).resolve().parents[2]  # adjust if needed
+BASE_DIR = Path(__file__).resolve().parents[1]  # adjust if needed
 REPORTS_DIR = BASE_DIR / "reports" / "phase2"
 VIZ_DIR = BASE_DIR / "reports" / "viz"
 VIZ_DIR.mkdir(parents=True, exist_ok=True)
