@@ -171,7 +171,7 @@ pipeline:
         early_stopping_patience: 2
         batch_size: 1024
         data_loader_workers: 0
-        max_train_docs: 2000000
+        max_train_docs: null
         out_dir: "./models/ingredient_ner_trf"
         model_dir: *ingredient_model_dir
     inference:

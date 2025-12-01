@@ -51,12 +51,16 @@ class PipelineRunner:
         overrides: Optional[Mapping[StageName, Mapping[str, object]]] = None,
         stop_on_failure: bool = True,
     ) -> List[StageResult]:
+        
+        # if stages is None, run all stages in default order
+        stages = stages or PIPELINE_ORDER 
+        
         order = self._resolve_order(stages)
         overrides = overrides or {}
 
         results: List[StageResult] = []
         for name in order:
-            stage_fn = STAGES.get(name)
+            stage_fn = STAGES.get(name) 
             if not stage_fn:
                 results.append(
                     StageResult(
