@@ -15,9 +15,11 @@ dependencies = [
     "spacy",
     "networkx",
     "pyarrow",
-    "tqdm"
+    "tqdm",
+    "gensim",
+    "rapidfuzz",
+    "sentence-transformers"
 ]
 
 [project.scripts]
 recipe-pipeline = "recipe_pipeline.__main__:main"
-
