@@ -8,7 +8,7 @@
 │   └── raw/
 ├── notebooks/
 ├── src/
-│   └── preprocess_pipeline/
+│   └── recipe_pipeline/
 │       ├── common/
 │       ├── config/          # All YAML lives here (see pipeline.yaml)
 │       ├── pipeline/
@@ -60,13 +60,13 @@ For sensitive information (API keys, database credentials, etc.), create a `.env
 
 ## Unified Preprocess Pipeline
 
-All stage configuration now lives in `src/preprocess_pipeline/config/pipeline.yaml`.  
+All stage configuration now lives in `src/recipe_pipeline/config/pipeline.yaml`.  
 The new runner wires those settings into the individual stage modules, so you no longer have to juggle per‑script YAMLs.
 
 ### Discover available stages
 
 ```sh
-python -m preprocess_pipeline.pipeline --list
+python -m recipe_pipeline.pipeline --list
 ```
 
 Default execution order (can be overridden):
@@ -82,29 +82,29 @@ Default execution order (can be overridden):
 ### Run the whole pipeline
 
 ```sh
-python -m preprocess_pipeline.pipeline
+python -m recipe_pipeline.pipeline
 ```
 
 Use `--keep-going` if you want later stages to run even when one fails:
 
 ```sh
-python -m preprocess_pipeline.pipeline --keep-going
+python -m recipe_pipeline.pipeline --keep-going
 ```
 
 ### Run specific stages
 
 ```sh
 # Re-run just ingestion and normalization
-python -m preprocess_pipeline.pipeline --stages combine_raw ingredient_normalization
+python -m recipe_pipeline.pipeline --stages combine_raw ingredient_normalization
 
 # Train the classifiers only
-python -m preprocess_pipeline.pipeline --stages ingredient_ner_train cuisine_classifier
+python -m recipe_pipeline.pipeline --stages ingredient_ner_train cuisine_classifier
 ```
 
 ### Use an alternate config or working directory
 
 ```sh
-python -m preprocess_pipeline.pipeline \
+python -m recipe_pipeline.pipeline \
   --config my_configs/pipeline.local.yaml \
   --workdir /tmp/preprocess-run
 ```
@@ -115,7 +115,7 @@ Stage functions accept keyword overrides (see `pipeline/runner.py`). Example: re
 
 ```py
 from pathlib import Path
-from preprocess_pipeline.pipeline.runner import PipelineRunner
+from recipe_pipeline.runner import PipelineRunner
 
 runner = PipelineRunner.from_file()
 runner.run(

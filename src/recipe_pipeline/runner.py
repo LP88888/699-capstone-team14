@@ -3,10 +3,10 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Dict, Iterable, List, Mapping, MutableSequence, Optional, Sequence, TypedDict
 
-from preprocess_pipeline.config import PipelineConfig, load_config
+from recipe_pipeline.config import PipelineConfig, load_config
 
 from .core import PipelineContext, StageResult
-from .stages import STAGES, StageFn
+from .registry import STAGES, StageFn
 
 StageName = str
 
@@ -18,6 +18,8 @@ PIPELINE_ORDER: List[StageName] = [
     "ingredient_encoding",
     "cuisine_normalization",
     "cuisine_classifier",
+    "analysis_baseline",
+    "analysis_graph",
 ]
 
 
