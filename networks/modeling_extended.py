@@ -256,7 +256,7 @@ def main():
     y_nz  = y[nz_mask]
 
 
-        # ----------------------
+    # ----------------------
     # Agglomerative clustering (subset to avoid O(n^2) memory blowup)
     # ----------------------
     from sklearn.cluster import AgglomerativeClustering
@@ -404,6 +404,460 @@ def main():
 
     json.dump(summary, open(OUT / "summary.json", "w"), indent=2)
     print("Phase-2 artifacts written to:", OUT.resolve())
+
+
+# ----------------------
+# CuisineRecommender Class
+# ----------------------
+class CuisineRecommender:
+    """
+    Recommender for fusion cuisine suggestions based on ingredient co-occurrence graph
+    and TF-IDF vectors.
+    
+    Identifies bridge ingredients (shared between cuisines) and novel ingredients
+    (new flavor pairings) for fusion recipe development.
+    """
+    
+    def __init__(
+        self, 
+        graph: nx.Graph, 
+        tfidf_matrix, 
+        tfidf_vectorizer: TfidfVectorizer,
+        cuisine_ingredient_map: dict,
+        ingredient_counts: Counter,
+        centrality_dict: dict = None
+    ):
+        """
+        Initialize the CuisineRecommender.
+        
+        Args:
+            graph: NetworkX graph of ingredient co-occurrences
+            tfidf_matrix: Fitted TF-IDF sparse matrix
+            tfidf_vectorizer: Fitted TfidfVectorizer
+            cuisine_ingredient_map: Dict mapping cuisine -> Counter of ingredients
+            ingredient_counts: Global Counter of ingredient occurrences
+            centrality_dict: Optional dict of ingredient -> betweenness centrality
+        """
+        self.G = graph
+        self.tfidf_matrix = tfidf_matrix
+        self.tfidf_vectorizer = tfidf_vectorizer
+        self.cuisine_ingredients = cuisine_ingredient_map
+        self.ingredient_counts = ingredient_counts
+        
+        # Compute centrality if not provided
+        if centrality_dict is None:
+            print("[CuisineRecommender] Computing betweenness centrality...")
+            self.centrality = nx.betweenness_centrality(
+                self.G, k=min(500, len(self.G)), seed=RANDOM_STATE
+            )
+        else:
+            self.centrality = centrality_dict
+        
+        # Precompute degree for each node
+        self.degree = dict(self.G.degree())
+        
+        # Get all cuisines
+        self.cuisines = list(self.cuisine_ingredients.keys())
+    
+    def get_top_ingredients(self, cuisine: str, n: int = 50) -> list:
+        """
+        Get top N ingredients for a cuisine based on frequency.
+        
+        Args:
+            cuisine: Cuisine name (case-insensitive)
+            n: Number of top ingredients to return
+            
+        Returns:
+            List of (ingredient, count) tuples sorted by frequency
+        """
+        cuisine_lower = cuisine.lower().strip()
+        
+        # Find matching cuisine
+        matched_cuisine = None
+        for c in self.cuisines:
+            if c.lower() == cuisine_lower:
+                matched_cuisine = c
+                break
+        
+        if matched_cuisine is None:
+            available = ", ".join(self.cuisines[:10])
+            raise ValueError(
+                f"Cuisine '{cuisine}' not found. Available cuisines: {available}..."
+            )
+        
+        counter = self.cuisine_ingredients[matched_cuisine]
+        return counter.most_common(n)
+    
+    def get_top_ingredients_by_centrality(self, cuisine: str, n: int = 50) -> list:
+        """
+        Get top N ingredients for a cuisine ranked by centrality in the graph.
+        
+        Args:
+            cuisine: Cuisine name
+            n: Number of top ingredients to return
+            
+        Returns:
+            List of (ingredient, centrality) tuples sorted by centrality
+        """
+        top_freq = self.get_top_ingredients(cuisine, n=n*2)  # Get more, then filter
+        top_ingredients = [ing for ing, _ in top_freq]
+        
+        # Filter to those in graph and sort by centrality
+        in_graph = [(ing, self.centrality.get(ing, 0)) for ing in top_ingredients if ing in self.G]
+        in_graph.sort(key=lambda x: x[1], reverse=True)
+        
+        return in_graph[:n]
+    
+    def find_bridge_ingredients(
+        self, 
+        cuisine_a: str, 
+        cuisine_b: str, 
+        top_n: int = 50
+    ) -> list:
+        """
+        Find bridge ingredients: nodes that have edges connecting to both 
+        cuisine_a's and cuisine_b's top ingredients.
+        
+        Args:
+            cuisine_a: First cuisine name
+            cuisine_b: Second cuisine name
+            top_n: Number of top ingredients to consider per cuisine
+            
+        Returns:
+            List of (ingredient, bridge_score, edges_to_a, edges_to_b) tuples
+        """
+        # Get top ingredients for each cuisine
+        top_a = set(ing for ing, _ in self.get_top_ingredients(cuisine_a, top_n))
+        top_b = set(ing for ing, _ in self.get_top_ingredients(cuisine_b, top_n))
+        
+        # Find ingredients with edges to both sets
+        bridges = []
+        all_nodes = set(self.G.nodes())
+        
+        for node in all_nodes:
+            if node not in self.G:
+                continue
+            
+            neighbors = set(self.G.neighbors(node))
+            edges_to_a = neighbors & top_a
+            edges_to_b = neighbors & top_b
+            
+            if edges_to_a and edges_to_b:
+                # Bridge score: product of connection counts, weighted by centrality
+                bridge_score = (
+                    len(edges_to_a) * len(edges_to_b) * 
+                    (1 + self.centrality.get(node, 0))
+                )
+                bridges.append((
+                    node, 
+                    bridge_score, 
+                    list(edges_to_a), 
+                    list(edges_to_b)
+                ))
+        
+        # Sort by bridge score descending
+        bridges.sort(key=lambda x: x[1], reverse=True)
+        return bridges
+    
+    def find_novel_ingredients(
+        self, 
+        cuisine_a: str, 
+        cuisine_b: str, 
+        top_n: int = 50,
+        centrality_threshold: float = 0.5
+    ) -> list:
+        """
+        Find novel ingredients: ingredients in cuisine_a that have never appeared 
+        in cuisine_b but share an edge with a high-centrality ingredient in cuisine_b.
+        
+        These suggest new flavor pairings that would work well.
+        
+        Args:
+            cuisine_a: Source cuisine (ingredients to suggest FROM)
+            cuisine_b: Target cuisine (ingredients to suggest TO)
+            top_n: Number of top ingredients to consider
+            centrality_threshold: Percentile threshold for "high centrality" (0-1)
+            
+        Returns:
+            List of (ingredient, partner_in_b, partner_centrality, edge_weight) tuples
+        """
+        # Get all ingredients for each cuisine (not just top N)
+        all_a = set(self.cuisine_ingredients.get(cuisine_a.lower(), {}).keys())
+        all_b = set(self.cuisine_ingredients.get(cuisine_b.lower(), {}).keys())
+        
+        # Also try case-insensitive matching
+        for c in self.cuisines:
+            if c.lower() == cuisine_a.lower():
+                all_a = set(self.cuisine_ingredients[c].keys())
+            if c.lower() == cuisine_b.lower():
+                all_b = set(self.cuisine_ingredients[c].keys())
+        
+        # Ingredients in A but not in B
+        novel_candidates = all_a - all_b
+        
+        # Get high-centrality ingredients in B
+        top_b_by_centrality = self.get_top_ingredients_by_centrality(cuisine_b, top_n)
+        if not top_b_by_centrality:
+            return []
+        
+        # Determine centrality threshold
+        centrality_values = [c for _, c in top_b_by_centrality]
+        threshold_value = np.percentile(centrality_values, centrality_threshold * 100)
+        
+        high_centrality_b = {
+            ing for ing, cent in top_b_by_centrality 
+            if cent >= threshold_value
+        }
+        
+        # Find novel ingredients that share edges with high-centrality B ingredients
+        novel_suggestions = []
+        
+        for novel_ing in novel_candidates:
+            if novel_ing not in self.G:
+                continue
+            
+            neighbors = set(self.G.neighbors(novel_ing))
+            high_cent_partners = neighbors & high_centrality_b
+            
+            for partner in high_cent_partners:
+                edge_weight = self.G[novel_ing][partner].get("weight", 1)
+                partner_centrality = self.centrality.get(partner, 0)
+                
+                novel_suggestions.append((
+                    novel_ing,
+                    partner,
+                    partner_centrality,
+                    edge_weight
+                ))
+        
+        # Sort by partner centrality * edge weight
+        novel_suggestions.sort(
+            key=lambda x: x[2] * x[3], 
+            reverse=True
+        )
+        
+        return novel_suggestions
+    
+    def suggest_fusion(
+        self, 
+        cuisine_a: str, 
+        cuisine_b: str, 
+        strictness: float = 0.5
+    ) -> dict:
+        """
+        Suggest fusion ingredients for combining two cuisines.
+        
+        Args:
+            cuisine_a: First cuisine name
+            cuisine_b: Second cuisine name
+            strictness: Controls filtering threshold (0=lenient, 1=strict)
+                - Lower values return more suggestions
+                - Higher values return only strongest connections
+                
+        Returns:
+            Dictionary with:
+            - 'cuisine_a': Name of first cuisine
+            - 'cuisine_b': Name of second cuisine
+            - 'top_a': Top 50 ingredients of cuisine_a
+            - 'top_b': Top 50 ingredients of cuisine_b
+            - 'bridge_ingredients': Ingredients connecting both cuisines
+            - 'novel_from_a': Novel ingredients from A that pair well with B
+            - 'novel_from_b': Novel ingredients from B that pair well with A
+            - 'shared_ingredients': Ingredients common to both top-50 sets
+        """
+        # Adjust top_n based on strictness (stricter = fewer ingredients considered)
+        top_n = int(50 * (1 - strictness * 0.5))  # Range: 25-50
+        top_n = max(25, top_n)
+        
+        # Centrality threshold based on strictness
+        centrality_threshold = strictness * 0.3 + 0.3  # Range: 0.3-0.6
+        
+        # Get top ingredients
+        top_a = self.get_top_ingredients(cuisine_a, top_n)
+        top_b = self.get_top_ingredients(cuisine_b, top_n)
+        
+        top_a_set = set(ing for ing, _ in top_a)
+        top_b_set = set(ing for ing, _ in top_b)
+        
+        # Find shared ingredients
+        shared = top_a_set & top_b_set
+        
+        # Find bridge ingredients
+        bridges = self.find_bridge_ingredients(cuisine_a, cuisine_b, top_n)
+        
+        # Filter bridges based on strictness
+        min_bridge_score = strictness * max(b[1] for b in bridges) if bridges else 0
+        bridges_filtered = [
+            b for b in bridges 
+            if b[1] >= min_bridge_score * 0.1
+        ]
+        
+        # Find novel ingredients in both directions
+        novel_from_a = self.find_novel_ingredients(
+            cuisine_a, cuisine_b, top_n, centrality_threshold
+        )
+        novel_from_b = self.find_novel_ingredients(
+            cuisine_b, cuisine_a, top_n, centrality_threshold
+        )
+        
+        # Limit results based on strictness
+        max_results = int(20 * (1 - strictness * 0.5))  # Range: 10-20
+        max_results = max(10, max_results)
+        
+        return {
+            "cuisine_a": cuisine_a,
+            "cuisine_b": cuisine_b,
+            "top_a": top_a[:top_n],
+            "top_b": top_b[:top_n],
+            "bridge_ingredients": [
+                {
+                    "ingredient": b[0],
+                    "bridge_score": b[1],
+                    "connects_to_a": b[2][:5],  # Limit for readability
+                    "connects_to_b": b[3][:5]
+                }
+                for b in bridges_filtered[:max_results]
+            ],
+            "novel_from_a": [
+                {
+                    "ingredient": n[0],
+                    "pairs_well_with": n[1],
+                    "partner_centrality": n[2],
+                    "edge_strength": n[3]
+                }
+                for n in novel_from_a[:max_results]
+            ],
+            "novel_from_b": [
+                {
+                    "ingredient": n[0],
+                    "pairs_well_with": n[1],
+                    "partner_centrality": n[2],
+                    "edge_strength": n[3]
+                }
+                for n in novel_from_b[:max_results]
+            ],
+            "shared_ingredients": list(shared),
+            "parameters": {
+                "strictness": strictness,
+                "top_n_used": top_n,
+                "centrality_threshold": centrality_threshold
+            }
+        }
+    
+    def save_fusion_report(
+        self, 
+        cuisine_a: str, 
+        cuisine_b: str, 
+        strictness: float = 0.5,
+        output_path: Path = None
+    ) -> Path:
+        """
+        Generate and save a fusion report to JSON.
+        
+        Args:
+            cuisine_a: First cuisine
+            cuisine_b: Second cuisine
+            strictness: Filtering strictness (0-1)
+            output_path: Optional output path (defaults to reports/fusion/)
+            
+        Returns:
+            Path to saved report
+        """
+        result = self.suggest_fusion(cuisine_a, cuisine_b, strictness)
+        
+        if output_path is None:
+            fusion_dir = OUT / "fusion"
+            fusion_dir.mkdir(parents=True, exist_ok=True)
+            output_path = fusion_dir / f"fusion_{cuisine_a}_{cuisine_b}.json"
+        
+        with open(output_path, "w", encoding="utf-8") as f:
+            json.dump(result, f, indent=2, ensure_ascii=False)
+        
+        print(f"Fusion report saved to: {output_path}")
+        return output_path
+
+
+def build_cuisine_recommender_from_data(data_path: str = DATA) -> CuisineRecommender:
+    """
+    Build a CuisineRecommender from scratch using the standard data pipeline.
+    
+    Args:
+        data_path: Path to the parquet data file
+        
+    Returns:
+        Initialized CuisineRecommender instance
+    """
+    print("[build_cuisine_recommender] Loading data...")
+    df = pd.read_parquet(data_path)
+    df = df.dropna(subset=["ingredients", "cuisine"]).copy()
+    df["ingredients_clean"] = df["ingredients"].astype(str).map(norm_ingredients)
+    df["cuisine"] = df["cuisine"].map(preprocess_cuisine)
+    
+    # Keep only cuisines with minimal support
+    vc = df["cuisine"].value_counts()
+    keep = vc[vc >= 100].index
+    if len(keep) < 6:
+        keep = vc.head(15).index
+    df = df[df["cuisine"].isin(keep)].copy()
+    df.reset_index(drop=True, inplace=True)
+    
+    print(f"[build_cuisine_recommender] Data loaded: {len(df)} recipes, {df['cuisine'].nunique()} cuisines")
+    
+    # Build TF-IDF
+    print("[build_cuisine_recommender] Building TF-IDF...")
+    tfidf = TfidfVectorizer(
+        analyzer="word", ngram_range=(1,2), 
+        min_df=5, max_df=0.7, 
+        stop_words="english", max_features=40000
+    )
+    X_tfidf = tfidf.fit_transform(df["ingredients_clean"])
+    
+    # Build ingredient graph
+    print("[build_cuisine_recommender] Building ingredient graph...")
+    token_lists = [t.split() for t in df["ingredients_clean"].tolist()]
+    
+    ing_counts = Counter()
+    co_counts = Counter()
+    for toks in token_lists:
+        uniq = sorted(set(toks))
+        ing_counts.update(uniq)
+        for a, b in combinations(uniq, 2):
+            co_counts[(a, b)] += 1
+    
+    EDGE_MIN = max(3, int(0.0005 * len(df)))
+    edges = [(a, b, w) for (a, b), w in co_counts.items() if w >= EDGE_MIN]
+    
+    G = nx.Graph()
+    G.add_nodes_from(ing_counts.keys())
+    for a, b, w in edges:
+        G.add_edge(a, b, weight=int(w))
+    
+    print(f"[build_cuisine_recommender] Graph: {len(G.nodes())} nodes, {len(G.edges())} edges")
+    
+    # Build cuisine -> ingredient map
+    print("[build_cuisine_recommender] Building cuisine-ingredient map...")
+    cui_ing = defaultdict(Counter)
+    for toks, lab in zip(token_lists, df["cuisine"].tolist()):
+        for t in set(toks):
+            cui_ing[lab][t] += 1
+    
+    # Compute centrality
+    print("[build_cuisine_recommender] Computing centrality...")
+    centrality = nx.betweenness_centrality(G, k=min(500, len(G)), seed=RANDOM_STATE)
+    
+    # Create recommender
+    recommender = CuisineRecommender(
+        graph=G,
+        tfidf_matrix=X_tfidf,
+        tfidf_vectorizer=tfidf,
+        cuisine_ingredient_map=dict(cui_ing),
+        ingredient_counts=ing_counts,
+        centrality_dict=centrality
+    )
+    
+    print("[build_cuisine_recommender] CuisineRecommender ready!")
+    return recommender
+
 
 if __name__ == "__main__":
     main()
