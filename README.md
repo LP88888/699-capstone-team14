@@ -1,26 +1,28 @@
 ## Repository Structure
 
 ```
-data/
-	encoded/
-	normalized/
-	raw/
-notebooks/
-pipeline/
-	common/
-	config/
-	ingrnorm/
-	ingredient_ner/
-	logs/
-	scripts/
-.gitignore
-LICENSE
-README.md
-requirements.txt
+.
+├── data/
+│   ├── encoded/
+│   ├── normalized/
+│   └── raw/
+├── notebooks/
+├── src/
+│   └── preprocess_pipeline/
+│       ├── common/
+│       ├── config/          # All YAML lives here (see pipeline.yaml)
+│       ├── pipeline/
+│       │   ├── core.py
+│       │   ├── runner.py    # Orchestration entry point
+│       │   └── stages/      # Stage implementations
+│       └── ...
+├── README.md
+├── requirements.txt
+└── ...
 ```
 
 
-## Setup Instructions
+## Setup
 
 1. **Create a virtual environment:**
 	```sh
@@ -56,13 +58,80 @@ For sensitive information (API keys, database credentials, etc.), create a `.env
 		 ```
 	 - Copy any new packages to `requirements.txt`.
 
-5. **Run pipelines:**
-	Configure settings in the respective config files:
-	- **Ingredient normalization pipeline:**
-		- Config: `pipeline/config/ingrnorm.yaml`
-		- Run: `python pipeline/scripts/run_ingrnorm.py`
-	- **NER training:**
-		- Config: `pipeline/config/ingredient_ner.yaml`
-		- Run: `python pipeline/scripts/run_ingredient_ner.py`
-	
-	Note: Run the normalization pipeline first to create the artifacts (dedupe map, encoder maps) that the NER training pipeline needs.
+## Unified Preprocess Pipeline
+
+All stage configuration now lives in `src/preprocess_pipeline/config/pipeline.yaml`.  
+The new runner wires those settings into the individual stage modules, so you no longer have to juggle per‑script YAMLs.
+
+### Discover available stages
+
+```sh
+python -m preprocess_pipeline.pipeline --list
+```
+
+Default execution order (can be overridden):
+
+1. `combine_raw`
+2. `ingredient_normalization`
+3. `ingredient_ner_train`
+4. `ingredient_ner_infer`
+5. `ingredient_encoding`
+6. `cuisine_normalization`
+7. `cuisine_classifier`
+
+### Run the whole pipeline
+
+```sh
+python -m preprocess_pipeline.pipeline
+```
+
+Use `--keep-going` if you want later stages to run even when one fails:
+
+```sh
+python -m preprocess_pipeline.pipeline --keep-going
+```
+
+### Run specific stages
+
+```sh
+# Re-run just ingestion and normalization
+python -m preprocess_pipeline.pipeline --stages combine_raw ingredient_normalization
+
+# Train the classifiers only
+python -m preprocess_pipeline.pipeline --stages ingredient_ner_train cuisine_classifier
+```
+
+### Use an alternate config or working directory
+
+```sh
+python -m preprocess_pipeline.pipeline \
+  --config my_configs/pipeline.local.yaml \
+  --workdir /tmp/preprocess-run
+```
+
+### Per-stage overrides
+
+Stage functions accept keyword overrides (see `pipeline/runner.py`). Example: reusing an exported dataset for encoding only.
+
+```py
+from pathlib import Path
+from preprocess_pipeline.pipeline.runner import PipelineRunner
+
+runner = PipelineRunner.from_file()
+runner.run(
+    stages=["ingredient_encoding"],
+    overrides={
+        "ingredient_encoding": {
+            "input_path": Path("data/combined_raw_datasets_with_inference.parquet"),
+            "output_path": Path("data/combined_raw_datasets_with_cuisine_encoded.parquet"),
+        }
+    },
+)
+```
+
+### Logging & artifacts
+
+Logging targets (files + levels) are configured under the `logging` section of `pipeline.yaml`.  
+Each stage writes intermediate and final artifacts to the locations defined in the same file (e.g., encoded parquet, dedupe maps, model directories).
+
+> **Tip:** If you want to keep old artifacts for debugging, disable the relevant cleanup flags in `pipeline.yaml` (`cleanup.enabled`, `stages.apply_cosine_map`, etc.).
