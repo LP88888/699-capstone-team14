@@ -9,15 +9,8 @@ from pathlib import Path
 from typing import List, Optional
 
 import pandas as pd
-
-from preprocess_pipeline.ingredient_ner.config import (
-    OUT as INFER_OUT,
-    load_inference_configs_from_dict,
-)
-from preprocess_pipeline.ingredient_ner.inference import (
-    load_dedupe_and_maps_from_config,
-    predict_normalize_encode_structured,
-)
+import pyarrow as pa
+import pyarrow.parquet as pq
 
 from ..core import PipelineContext, StageResult
 from ..utils import stage_logger
@@ -188,88 +181,6 @@ def process_dataset(
         return None
 
 
-def _build_inference_payload(
-    inference_cfg: dict,
-    temp_path: Path,
-    text_col: str,
-) -> dict:
-    model_dir = inference_cfg.get("model_dir", "./models/ingredient_ner_trf/model-best")
-    out_base = inference_cfg.get("out_base")
-    if not out_base:
-        out_base = str(temp_path.with_suffix("").with_name(temp_path.stem + "_ner"))
-
-    artifacts_cfg = {
-        "cosine_map_path": inference_cfg.get("cosine_map_path"),
-        "ingredient_id_to_token": inference_cfg.get("ingredient_id_to_token"),
-        "ingredient_token_to_id": inference_cfg.get("ingredient_token_to_id"),
-    }
-
-    if not all(artifacts_cfg.values()):
-        missing = [k for k, v in artifacts_cfg.items() if not v]
-        raise ValueError(f"Inference artifacts missing values for {missing}")
-
-    return {
-        "model": {"model_dir": model_dir},
-        "data": {"input_path": str(temp_path), "data_is_parquet": True},
-        "output": {"out_base": out_base},
-        "artifacts": artifacts_cfg,
-        "inference": {
-            "text_col": text_col,
-            "batch_size": int(inference_cfg.get("batch_size", 256)),
-            "n_process": int(inference_cfg.get("n_process", 1)),
-            "use_gpu": bool(inference_cfg.get("use_gpu", False)),
-            "use_spacy_normalizer": bool(inference_cfg.get("use_spacy_normalizer", True)),
-            "spacy_model": inference_cfg.get("spacy_model", "en_core_web_sm"),
-            "sample_n": inference_cfg.get("sample_n"),
-            "sample_frac": inference_cfg.get("sample_frac"),
-            "head_n": inference_cfg.get("head_n"),
-        },
-    }
-
-
-def _run_inference(
-    df: pd.DataFrame,
-    inference_cfg: dict,
-    output_path: Path,
-    logger: logging.Logger,
-) -> dict:
-    text_col = inference_cfg.get("text_col", "ingredients")
-    temp_path = output_path.with_suffix(".temp.parquet")
-    temp_path.parent.mkdir(parents=True, exist_ok=True)
-    df.to_parquet(temp_path, index=False, compression="zstd")
-
-    payload = _build_inference_payload(inference_cfg, temp_path, text_col)
-    load_inference_configs_from_dict(payload)
-    dedupe_map, tok2id = load_dedupe_and_maps_from_config()
-    df_wide, df_tall = predict_normalize_encode_structured(
-        nlp_dir=INFER_OUT.MODEL_DIR,
-        data_path=temp_path,
-        is_parquet=True,
-        text_col=text_col,
-        dedupe=dedupe_map,
-        tok2id=tok2id,
-        out_path=None,
-        batch_size=int(payload["inference"]["batch_size"]),
-        n_process=int(payload["inference"]["n_process"]),
-        use_spacy_normalizer=bool(payload["inference"]["use_spacy_normalizer"]),
-        spacy_model=payload["inference"]["spacy_model"],
-    )
-
-    if temp_path.exists():
-        temp_path.unlink()
-
-    if len(df_wide) == len(df):
-        df["inferred_ingredients"] = df_wide["NER_clean"].tolist()
-        if "Ingredients" in df_wide:
-            df["encoded_ingredients"] = df_wide["Ingredients"].tolist()
-
-    logger.info("Inference complete for %s rows", len(df_wide))
-    return {
-        "inferred_rows": len(df_wide),
-        "inferred_entities": len(df_tall),
-    }
-
-
 def run(
     context: PipelineContext,
     *,
@@ -294,7 +205,8 @@ def run(
     csv_files = sorted([f for f in data_dir.glob("*.csv") if f.name not in excluded])
     logger.info("Found %s CSV files to process", len(csv_files))
 
-    all_dfs: List[pd.DataFrame] = []
+    writer: Optional[pq.ParquetWriter] = None
+    total_rows = 0
     for dataset_id, csv_path in enumerate(csv_files, start=1):
         logger.info("[%s/%s] Processing %s", dataset_id, len(csv_files), csv_path.name)
         df_processed = process_dataset(
@@ -304,50 +216,32 @@ def run(
             cuisine_default=cuisine_default,
             cuisine_vocab_path=Path(cuisine_vocab_path) if cuisine_vocab_path else None,
         )
-        if df_processed is not None:
-            all_dfs.append(df_processed)
+        if df_processed is not None and not df_processed.empty:
+            table = pa.Table.from_pandas(df_processed, preserve_index=False)
+            if writer is None:
+                output_path.parent.mkdir(parents=True, exist_ok=True)
+                writer = pq.ParquetWriter(str(output_path), table.schema, compression="zstd")
+            writer.write_table(table)
+            total_rows += len(df_processed)
 
-    if not all_dfs:
+    if writer is None:
         details = "No datasets successfully processed."
         logger.error(details)
         return StageResult(name="combine_raw", status="failed", details=details)
 
-    combined = pd.concat(all_dfs, ignore_index=True)
-    before_final_drop = len(combined)
-    empty_mask_final = (
-        (combined["cuisine"] == cuisine_default)
-        | (combined["cuisine"].astype(str).str.strip().isin(["", "[]", "nan", "None", "null"]))
-    )
-    combined = combined[~empty_mask_final].copy()
-    dropped = before_final_drop - len(combined)
-    if dropped > 0:
-        logger.warning("Dropped %s rows without cuisine labels", dropped)
+    writer.close()
+    logger.info("Saved combined dataset to %s (%s rows)", output_path, total_rows)
 
-    combined["inferred_ingredients"] = None
-    combined["encoded_ingredients"] = None
-
-    outputs = {
-        "combined_path": str(output_path),
-        "rows": len(combined),
-    }
-    details = None
+    outputs = {"combined_path": str(output_path), "rows": total_rows}
 
     inference_cfg = cfg.get("inference", {}) or {}
-    should_infer = bool(inference_cfg.get("enabled", True))
+    should_infer = bool(inference_cfg.get("enabled", False))
     if run_inference is not None:
         should_infer = bool(run_inference)
 
     if should_infer:
-        try:
-            inference_outputs = _run_inference(combined, inference_cfg, output_path, logger)
-            outputs.update(inference_outputs)
-        except Exception as exc:
-            details = f"Inference failed: {exc}"
-            logger.exception(details)
+        logger.warning(
+            "combine_raw inference is deprecated. Please run the dedicated ingredient_ner_infer stage instead."
+        )
 
-    output_path.parent.mkdir(parents=True, exist_ok=True)
-    combined.to_parquet(output_path, index=False, compression="zstd")
-    logger.info("Saved combined dataset to %s", output_path)
-
-    status = "success" if details is None else "partial"
-    return StageResult(name="combine_raw", status=status, outputs=outputs, details=details)
+    return StageResult(name="combine_raw", status="success", outputs=outputs)
