@@ -333,6 +333,7 @@ def run(context: PipelineContext, *, force: bool = False) -> StageResult:
             use_w2v = False
 
         preserve_files = [str(input_path)] if input_path.exists() else []
+        # Run cleanup BEFORE processing to clear old artifacts, not after
         _cleanup_paths(cfg, logger, preserve_files=preserve_files)
 
         _run_stage1_spacy_normalization(
@@ -426,7 +427,9 @@ def run(context: PipelineContext, *, force: bool = False) -> StageResult:
             except Exception as exc:
                 logger.warning("[cleanup] Failed to delete %s: %s", tmp_raw_parquet, exc)
 
-        _cleanup_paths(cfg, logger, preserve_files=preserve_files)
+        # Do NOT run general cleanup at the end; it deletes the outputs we just created!
+        # _cleanup_paths(cfg, logger, preserve_files=preserve_files) 
+        
         logger.info("Workflow complete. Kept JSON artifacts: %s, %s, %s", dedupe_map_path, ing_token_to_id, ing_id_to_token)
 
         return StageResult(

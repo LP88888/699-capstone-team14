@@ -321,6 +321,8 @@ def run(
         enc_cfg = cfg.get("encoder", {})
 
         combined_dataset_path = Path(data_cfg.get("input_path", "./data/encoded_combined_datasets.parquet"))
+        
+        # Run cleanup BEFORE processing to clear old artifacts, not after
         _cleanup_paths(cfg, logger, preserve_files=[str(combined_dataset_path)])
 
         input_path = Path(input_path or data_cfg.get("input_path", "./data/encoded_combined_datasets.parquet"))
@@ -548,7 +550,8 @@ def run(
             except Exception as exc:
                 logger.warning("[cleanup] Failed to delete %s: %s", prepared_parquet, exc)
 
-        _cleanup_paths(cfg, logger, preserve_files=preserve_files)
+        # Do NOT run general cleanup at the end; it deletes the outputs we just created!
+        # _cleanup_paths(cfg, logger, preserve_files=preserve_files)
 
         outputs = {
             "baseline_parquet": str(baseline_parquet),

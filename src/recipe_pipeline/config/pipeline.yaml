@@ -98,7 +98,7 @@ pipeline:
       ner_col: "NER"
       chunksize: 50000
     cleanup:
-      enabled: true
+      enabled: false
       paths:
         - *normalized_baseline
         - *cosine_map
@@ -217,7 +217,7 @@ pipeline:
       cuisine_col: "cuisine"
       chunksize: 200000
     cleanup:
-      enabled: true
+      enabled: false
       paths:
         - "./data/cuisine_normalized/*.parquet"
         - "./data/cuisine_normalized/*.jsonl"
