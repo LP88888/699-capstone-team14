@@ -34,6 +34,12 @@ logging:
   ingredient_encoding:
     <<: *logging_defaults
     file: logs/ingredient_encoding.log
+  analysis_baseline:
+    <<: *logging_defaults
+    file: logs/analysis_baseline.log
+  analysis_graph:
+    <<: *logging_defaults
+    file: logs/analysis_graph.log
 
 paths:
   raw_data_dir: "./data/raw"
@@ -63,6 +69,7 @@ artifacts:
   cuisine_predictions: &cuisine_predictions "./data/training/cuisine_predictions.parquet"
   ingredient_model_dir: &ingredient_model_dir "./models/ingredient_ner_trf/model-best"
   cuisine_classifier_model_dir: &cuisine_classifier_model_dir "./models/cuisine_classifier_trf/model-best"
+  encoded_dataset: &encoded_dataset "./data/combined_raw_datasets_with_cuisine_encoded.parquet"
 
 pipeline:
   combine_raw:
@@ -182,6 +189,7 @@ pipeline:
         data_is_parquet: true
       output:
         out_base: "./data/inference_output"
+        combined_dataset: "./data/combined_raw_datasets_with_inference.parquet"
       artifacts:
         cosine_map_path: *cosine_map
         ingredient_id_to_token: *ingredient_id_to_token
@@ -197,7 +205,7 @@ pipeline:
 
   ingredient_encoding:
     input_path: "./data/combined_raw_datasets_with_inference.parquet"
-    output_path: "./data/combined_raw_datasets_with_cuisine_encoded.parquet"
+    output_path: *encoded_dataset
     inferred_column: "inferred_ingredients"
     encoded_column: "encoded_ingredients"
     ingredient_id_to_token: *ingredient_id_to_token
@@ -205,7 +213,7 @@ pipeline:
 
   cuisine_normalization:
     data:
-      input_path: "./data/combined_raw_datasets_with_cuisine_encoded.parquet"
+      input_path: *encoded_dataset
       cuisine_col: "cuisine"
       chunksize: 200000
     cleanup:
@@ -258,14 +266,14 @@ pipeline:
   cuisine_classifier:
     training:
       data:
-        input_path: "./data/combined_raw_datasets_with_cuisine_encoded.parquet"
+        input_path: *encoded_dataset
         text_col: null
         cuisine_col: "cuisine"
       output:
         preds_base: *cuisine_predictions
       cuisine_classifier:
         enabled: true
-        train_path: "./data/combined_raw_datasets_with_cuisine_encoded.parquet"
+        train_path: *encoded_dataset
         data_is_parquet: true
         max_rows: null
         text_col: null
@@ -291,3 +299,16 @@ pipeline:
         out_dir: "./models/cuisine_classifier_trf"
         model_dir: *cuisine_classifier_model_dir
 
+  analysis:
+    baseline:
+      input_path: *encoded_dataset
+      output_dir: "./reports/baseline"
+      min_support: 100
+      tfidf:
+        max_features: 40000
+        ngram_range: [1, 2]
+    graph:
+      input_path: *encoded_dataset
+      output_dir: "./reports/graph"
+      edge_min_support: 3
+      edge_percentile: 0.0005

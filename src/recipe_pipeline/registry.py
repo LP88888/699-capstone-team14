@@ -1,10 +1,11 @@
-"""Individual pipeline stage implementations."""
+"""Pipeline stage registry."""
 
 from __future__ import annotations
 
 from typing import Callable, Dict
 
-from . import (
+from .core import PipelineContext, StageResult
+from .preprocessing import (
     combine_raw,
     cuisine_classifier,
     cuisine_normalization,
@@ -13,7 +14,7 @@ from . import (
     ingredient_ner_train,
     ingredient_normalization,
 )
-from ..core import PipelineContext, StageResult
+from .analysis import baseline, graph
 
 StageFn = Callable[[PipelineContext], StageResult]
 
@@ -25,6 +26,8 @@ STAGES: Dict[str, StageFn] = {
     "ingredient_encoding": ingredient_encoding.run,
     "cuisine_normalization": cuisine_normalization.run,
     "cuisine_classifier": cuisine_classifier.run,
+    "analysis_baseline": baseline.run,
+    "analysis_graph": graph.run,
 }
 
 __all__ = ["STAGES", "StageFn"]

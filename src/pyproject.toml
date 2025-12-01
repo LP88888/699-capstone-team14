@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "recipe_pipeline"
+version = "0.1.0"
+description = "Recipe preprocessing and analysis pipeline"
+requires-python = ">=3.8"
+dependencies = [
+    "numpy",
+    "pandas",
+    "pyyaml",
+    "scikit-learn",
+    "spacy",
+    "networkx",
+    "pyarrow",
+    "tqdm"
+]
+
+[project.scripts]
+recipe-pipeline = "recipe_pipeline.__main__:main"
+

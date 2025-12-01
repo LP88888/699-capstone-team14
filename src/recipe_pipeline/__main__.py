@@ -13,7 +13,7 @@ def parse_args() -> argparse.Namespace:
         "--config",
         type=Path,
         default=None,
-        help="Path to consolidated pipeline YAML (default: preprocess_pipeline/config/pipeline.yaml)",
+        help="Path to consolidated pipeline YAML (default: recipe_pipeline/config/pipeline.yaml)",
     )
     parser.add_argument(
         "--stages",
