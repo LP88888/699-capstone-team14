@@ -7,6 +7,7 @@ from pathlib import Path
 from typing import List, Optional
 
 import pandas as pd
+import pyarrow as pa
 import pyarrow.parquet as pq
 
 from ..core import PipelineContext, StageResult
@@ -121,29 +122,44 @@ def run(
         if inferred_column not in [field.name for field in pf.schema_arrow]:
             raise KeyError(f"Column '{inferred_column}' not found in {input_path}")
 
-        frames = [pf.read_row_group(rg).to_pandas() for rg in range(pf.num_row_groups)]
-        df = pd.concat(frames, ignore_index=True)
-        logger.info("Loaded %s rows", len(df))
-
-        encoded_lists = []
+        writer: Optional[pq.ParquetWriter] = None
+        total_rows = 0
         zero_count = 0
         total_ingredients = 0
 
-        for idx, ing_list in enumerate(df[inferred_column]):
-            encoded = encode_ingredient_list(ing_list, tok2id)
-            encoded_lists.append(encoded)
-            zero_count += sum(1 for token in encoded if token == 0)
-            total_ingredients += len(encoded)
-            if idx and idx % 10000 == 0:
-                logger.info("Encoded %s / %s rows", idx, len(df))
+        for rg_idx in range(pf.num_row_groups):
+            df_chunk = pf.read_row_group(rg_idx).to_pandas()
+            encoded_lists = []
+            for ing_list in df_chunk[inferred_column]:
+                encoded = encode_ingredient_list(ing_list, tok2id)
+                encoded_lists.append(encoded)
+                zero_count += sum(1 for token in encoded if token == 0)
+                total_ingredients += len(encoded)
+            df_chunk[encoded_column] = encoded_lists
 
-        df[encoded_column] = encoded_lists
-        output_path.parent.mkdir(parents=True, exist_ok=True)
-        df.to_parquet(output_path, index=False, compression="zstd")
+            table = pa.Table.from_pandas(df_chunk, preserve_index=False)
+            if writer is None:
+                output_path.parent.mkdir(parents=True, exist_ok=True)
+                writer = pq.ParquetWriter(str(output_path), table.schema, compression="zstd")
+            writer.write_table(table)
+            total_rows += len(df_chunk)
+
+            if rg_idx % 5 == 0:
+                logger.info(
+                    "Encoded chunks %s/%s (%s rows so far)",
+                    rg_idx + 1,
+                    pf.num_row_groups,
+                    total_rows,
+                )
+
+        if writer:
+            writer.close()
+        else:
+            raise ValueError(f"No row groups found in {input_path}")
 
         logger.info(
             "Encoding complete: %s rows, %s ingredients, %s unknown tokens",
-            len(df),
+            total_rows,
             total_ingredients,
             zero_count,
         )
@@ -154,7 +170,7 @@ def run(
             status="success",
             outputs={
                 "encoded_path": str(output_path),
-                "rows": len(df),
+                "rows": total_rows,
                 "total_ingredients": total_ingredients,
                 "unknown_tokens": zero_count,
             },
