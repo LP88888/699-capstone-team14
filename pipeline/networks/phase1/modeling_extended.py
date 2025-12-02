@@ -1,24 +1,9 @@
-#!/usr/bin/env python
-"""
-Lightweight modeling_extended.py for large recipe+cuisine dataset.
 
-What it does:
-- Loads a combined recipes CSV with columns: cuisine, ingredients or ingredients_clean
-- Builds a TF-IDF representation of ingredients
-- Trains a logistic regression classifier (TF-IDF only)
-- Evaluates with classification_report + macro F1
-- Runs a single MiniBatchKMeans clustering on TF-IDF
-- Saves:
-    - classification_report_tfidf_only.csv
-    - clustering_quality_kmeans.csv
-    - top_features_per_cuisine.csv
-    - ingredient_counts.csv
-    - summary.json
-"""
-
-import json
 from pathlib import Path
+import config as cfg
 from collections import Counter
+import json
+import warnings
 
 import numpy as np
 import pandas as pd
@@ -35,61 +20,42 @@ from sklearn.metrics import (
 )
 from sklearn.cluster import MiniBatchKMeans
 from sklearn.exceptions import ConvergenceWarning
-import warnings
 
 
-# =========================
-# CONFIG
-# =========================
+
 RANDOM_STATE = 42
 
-# Path to your merged dataset (update this!)
-INPUT_CSV = Path("data/encoded/combined_raw_datasets_with_cuisine_encoded.parquet")
+# CHANGE THIS IF YOUR FILE IS DIFFERENT
+INPUT_CSV = cfg.CLEANED_DATA_PATH
 
-# Where to write modeling outputs
-OUT = Path("../../reports/phase2")
+OUT = cfg.PHASE_1_REPORTS_PATH
 OUT.mkdir(parents=True, exist_ok=True)
 
-# Runtime controls
-FAST_MODE = True
+# Maximum number of rows used for modeling/clustering.
+# Full dataset is ~80k; we cap at 40k for speed & stability.
+MAX_RECIPES_FOR_MODELING = 40000
 
-# Max rows to use (for both classification and clustering)
-MAX_RECIPES = 40000
-
-# TF-IDF config
-TFIDF_MAX_FEATURES = 20000
+TFIDF_MAX_FEATURES = 15000
 MIN_SAMPLES_PER_CLASS = 10  # drop extremely rare cuisines
 
-# Clustering config
-KMEANS_K = 40
-MAX_SAMPLES_FOR_CLUSTERING = 40000  # can be <= MAX_RECIPES
+# KMeans config
+KMEANS_K = 40               # a reasonable number of clusters
+MAX_SAMPLES_FOR_CLUSTERING = 40000  # can be <= MAX_RECIPES_FOR_MODELING
 
-
-# =========================
-# HELPERS
-# =========================
 def choose_text_column(df: pd.DataFrame) -> str:
-    """
-    Choose which column to use as ingredient text.
-    Prefers 'ingredients_clean', falls back to 'ingredients'.
-    """
-    if "ingredients_clean" in df.columns:
-        return "ingredients_clean"
+    if "ingredients_text" in df.columns:
+        return "ingredients_text"
     elif "ingredients" in df.columns:
         return "ingredients"
     else:
         raise ValueError(
-            "Expected a column named 'ingredients_clean' or 'ingredients' in the input CSV."
+            "Expected a column named 'ingredients_text' or 'ingredients' in the input CSV."
         )
 
 
 def compute_top_features_per_cuisine(
-    X_tfidf, feature_names, cuisines, top_n=25
+    X_tfidf, feature_names, cuisines, top_n: int = 25
 ) -> pd.DataFrame:
-    """
-    For each cuisine, compute mean TF-IDF and take top_n features.
-    Returns a long-format DataFrame.
-    """
     cuisines = np.array(cuisines)
     rows = []
     unique_cuis = np.unique(cuisines)
@@ -100,7 +66,6 @@ def compute_top_features_per_cuisine(
             continue
         mean_vec = X_tfidf[mask].mean(axis=0)
         mean_vec = np.asarray(mean_vec).ravel()
-        # top indices
         top_idx = np.argsort(mean_vec)[::-1][:top_n]
         for rank, j in enumerate(top_idx, start=1):
             rows.append(
@@ -118,27 +83,24 @@ def compute_top_features_per_cuisine(
 def safe_macro_f1(report_path: Path) -> float | None:
     """
     Read a classification_report CSV and pull out macro avg F1 if present.
-    Handles both 'label' as column or index.
+    Handles different shapes (label as col or index).
     """
     if not report_path.exists():
         return None
 
     df = pd.read_csv(report_path)
 
-    # common pattern: label column = 'label'
     if "label" in df.columns:
         row = df.loc[df["label"] == "macro avg"]
         if not row.empty and "f1-score" in row.columns:
             return float(row["f1-score"].iloc[0])
 
-    # sometimes first column is unnamed index
     if "Unnamed: 0" in df.columns:
         df = df.rename(columns={"Unnamed: 0": "label"})
         row = df.loc[df["label"] == "macro avg"]
         if not row.empty and "f1-score" in row.columns:
             return float(row["f1-score"].iloc[0])
 
-    # last fallback: try using index
     df_idx = pd.read_csv(report_path, index_col=0)
     if "macro avg" in df_idx.index and "f1-score" in df_idx.columns:
         return float(df_idx.loc["macro avg", "f1-score"])
@@ -150,44 +112,53 @@ def safe_macro_f1(report_path: Path) -> float | None:
 # MAIN
 # =========================
 def main():
-    print(f"Loading data from {INPUT_CSV.resolve()}")
+    print(f"[INFO] Loading data from {INPUT_CSV.resolve()}")
+    if not INPUT_CSV.exists():
+        raise FileNotFoundError(f"Cannot find input CSV: {INPUT_CSV}")
+
     df = pd.read_parquet(INPUT_CSV)
 
-    # Basic checks
     if "cuisine" not in df.columns:
         raise ValueError("Input CSV must contain a 'cuisine' column.")
 
     text_col = choose_text_column(df)
-    print(f"Using text column: {text_col}")
+    print(f"[INFO] Using text column: {text_col}")
 
     # Drop rows with missing text or cuisine
     df = df.dropna(subset=[text_col, "cuisine"]).copy()
 
-    # Optional downsample for speed
-    if FAST_MODE and len(df) > MAX_RECIPES:
-        df = df.sample(MAX_RECIPES, random_state=RANDOM_STATE).reset_index(drop=True)
-        print(f"[FAST_MODE] Downsampled to {len(df)} recipes.")
-
     # Normalize cuisine labels
     df["cuisine"] = df["cuisine"].astype(str).str.strip().str.lower()
 
-    # Drop extremely rare cuisines so stratified split doesn't blow up
+    
+    # Drop extremely rare cuisines so stratified split won't choke
     counts = df["cuisine"].value_counts()
     keep_cuis = counts[counts >= MIN_SAMPLES_PER_CLASS].index
     dropped = set(counts.index) - set(keep_cuis)
     if dropped:
+        dropped_rows = len(df) - len(df[df["cuisine"].isin(keep_cuis)])
         print(
-            f"Dropping {len(dropped)} cuisines with < {MIN_SAMPLES_PER_CLASS} samples "
-            f"(total dropped rows: {len(df) - len(df[df['cuisine'].isin(keep_cuis)])})"
+            f"[INFO] Dropping {len(dropped)} cuisines with < {MIN_SAMPLES_PER_CLASS} samples "
+            f"(total dropped rows: {dropped_rows})"
         )
         df = df[df["cuisine"].isin(keep_cuis)].copy()
 
-    print(f"Final dataset size for modeling: {len(df)} rows, {df['cuisine'].nunique()} cuisines")
+    # If still very large, downsample to a manageable modeling set
+    if len(df) > MAX_RECIPES_FOR_MODELING:
+        df = df.sample(MAX_RECIPES_FOR_MODELING, random_state=RANDOM_STATE).reset_index(
+            drop=True
+        )
+        print(f"[INFO] Downsampled to {len(df)} recipes for modeling.")
+
+    print(
+        f"[INFO] Final dataset for modeling: {len(df)} rows, "
+        f"{df['cuisine'].nunique()} cuisines"
+    )
 
     # =========================
     # TF-IDF
     # =========================
-    print("Vectorizing ingredients with TF-IDF...")
+    print("[INFO] Vectorizing ingredients with TF-IDF ...")
     tfidf = TfidfVectorizer(
         analyzer="word",
         ngram_range=(1, 2),
@@ -199,35 +170,39 @@ def main():
 
     X_tfidf = tfidf.fit_transform(df[text_col].astype(str))
     feature_names = np.array(tfidf.get_feature_names_out())
-    y = df["cuisine"].values
+    y_raw = df["cuisine"].values
 
-    # Only keep non-zero rows (should be all, but safe)
+    # Filter out rows with zero vectors (just in case)
     nonzero = X_tfidf.getnnz(axis=1) > 0
     X_tfidf = X_tfidf[nonzero]
-    y = y[nonzero]
+    y_raw = y_raw[nonzero]
     df = df.loc[nonzero].reset_index(drop=True)
 
-    # Encode labels
-    le = LabelEncoder()
-    y_encoded = le.fit_transform(y)
+    print(
+        f"[INFO] TF-IDF matrix shape: {X_tfidf.shape[0]} rows x {X_tfidf.shape[1]} features"
+    )
 
-    # Split train/test
+    # Label encoding
+    le = LabelEncoder()
+    y = le.fit_transform(y_raw)
+
+    # Train/test split
     X_train, X_test, y_train, y_test = train_test_split(
         X_tfidf,
-        y_encoded,
+        y,
         test_size=0.2,
         random_state=RANDOM_STATE,
-        stratify=y_encoded,
+        stratify=y,
     )
 
     # =========================
     # Logistic Regression classifier
     # =========================
-    print("Training Logistic Regression (TF-IDF only)...")
+    print("[INFO] Training Logistic Regression (TF-IDF only) ...")
     warnings.filterwarnings("ignore", category=ConvergenceWarning)
 
     clf = LogisticRegression(
-        max_iter=200,
+        max_iter=150,
         n_jobs=-1,
         solver="saga",
         multi_class="multinomial",
@@ -237,12 +212,12 @@ def main():
     clf.fit(X_train, y_train)
 
     y_pred = clf.predict(X_test)
-    macro_f1 = f1_score(y_test, y_pred, average="macro")
     acc = (y_pred == y_test).mean()
+    macro_f1 = f1_score(y_test, y_pred, average="macro")
 
-    print(f"LogReg TF-IDF only: accuracy={acc:.4f}, macro_F1={macro_f1:.4f}")
+    print(f"[RESULT] LogReg TF-IDF: accuracy={acc:.4f}, macro_F1={macro_f1:.4f}")
 
-    # classification report -> CSV
+    # Save classification report
     report_dict = classification_report(
         y_test,
         y_pred,
@@ -252,29 +227,32 @@ def main():
     )
     report_df = pd.DataFrame(report_dict).T
     report_df.insert(0, "label", report_df.index)
-    report_df.to_csv(OUT / "classification_report_tfidf_only.csv", index=False)
+    report_path = OUT / "classification_report_tfidf_only.csv"
+    report_df.to_csv(report_path, index=False)
+    print(f"[INFO] Saved classification report to {report_path}")
 
     # =========================
-    # KMeans clustering (MiniBatch) on TF-IDF
+    # MiniBatchKMeans clustering on TF-IDF
     # =========================
-    print("Running MiniBatchKMeans clustering...")
-
-    # optionally downsample for clustering if very large
+    print("[INFO] Running MiniBatchKMeans clustering ...")
     n_samples = X_tfidf.shape[0]
+
     if n_samples > MAX_SAMPLES_FOR_CLUSTERING:
         rng = np.random.RandomState(RANDOM_STATE)
-        idx_cluster = rng.choice(n_samples, size=MAX_SAMPLES_FOR_CLUSTERING, replace=False)
+        idx_cluster = rng.choice(
+            n_samples, size=MAX_SAMPLES_FOR_CLUSTERING, replace=False
+        )
         X_cluster = X_tfidf[idx_cluster]
-        y_cluster = y_encoded[idx_cluster]
+        y_cluster = y[idx_cluster]
         print(
-            f"[FAST_MODE] Clustering on subset of {MAX_SAMPLES_FOR_CLUSTERING} / {n_samples} recipes."
+            f"[INFO] Clustering on subset of {MAX_SAMPLES_FOR_CLUSTERING} / {n_samples} recipes."
         )
     else:
         idx_cluster = np.arange(n_samples)
         X_cluster = X_tfidf
-        y_cluster = y_encoded
+        y_cluster = y
 
-    # normalize rows for cosine-like geometry
+    # Normalize rows for cosine-like geometry
     X_cluster_norm = normalize(X_cluster, norm="l2")
 
     km = MiniBatchKMeans(
@@ -288,47 +266,55 @@ def main():
     sil_kmeans = silhouette_score(X_cluster_norm, km_labels, metric="cosine")
     ari_kmeans = adjusted_rand_score(y_cluster, km_labels)
 
-    print(f"KMeans (k={KMEANS_K}) silhouette={sil_kmeans:.4f}, ARI vs cuisine={ari_kmeans:.4f}")
+    print(
+        f"[RESULT] KMeans (k={KMEANS_K}): silhouette={sil_kmeans:.4f}, "
+        f"ARI vs cuisines={ari_kmeans:.4f}"
+    )
 
+    kmeans_qual_path = OUT / "clustering_quality_kmeans.csv"
     pd.DataFrame(
-    [
-        {
-            "k": KMEANS_K,
-            "n_samples_used": X_cluster.shape[0],
-            "silhouette": float(sil_kmeans),
-            "ari_vs_labels": float(ari_kmeans),
-        }
-    ]
-    ).to_csv(OUT / "clustering_quality_kmeans.csv", index=False)
+        [
+            {
+                "k": KMEANS_K,
+                "n_samples_used": int(X_cluster.shape[0]),
+                "silhouette": float(sil_kmeans),
+                "ari_vs_labels": float(ari_kmeans),
+            }
+        ]
+    ).to_csv(kmeans_qual_path, index=False)
+    print(f"[INFO] Saved clustering quality to {kmeans_qual_path}")
 
     # =========================
     # Top features per cuisine
     # =========================
-    print("Computing top TF-IDF features per cuisine...")
+    print("[INFO] Computing top TF-IDF features per cuisine ...")
     top_feat_df = compute_top_features_per_cuisine(
-        X_tfidf, feature_names, y, top_n=25
+        X_tfidf, feature_names, y_raw, top_n=25
     )
-    top_feat_df.to_csv(OUT / "top_features_per_cuisine.csv", index=False)
+    top_feat_path = OUT / "top_features_per_cuisine.csv"
+    top_feat_df.to_csv(top_feat_path, index=False)
+    print(f"[INFO] Saved top features per cuisine to {top_feat_path}")
 
     # =========================
-    # Ingredient counts (very rough, string-based)
+    # Ingredient frequency counts (simple string-based)
     # =========================
-    print("Computing ingredient frequency counts...")
-    counts = Counter()
+    print("[INFO] Computing ingredient frequency counts ...")
+    counts_ing = Counter()
     for txt in df[text_col].astype(str):
-        # naive split on comma, strip
         parts = [p.strip().lower() for p in txt.split(",") if p.strip()]
-        counts.update(parts)
+        counts_ing.update(parts)
 
     ing_rows = [
-        {"ingredient": ing, "count": cnt} for ing, cnt in counts.most_common()
+        {"ingredient": ing, "count": cnt} for ing, cnt in counts_ing.most_common()
     ]
-    pd.DataFrame(ing_rows).to_csv(OUT / "ingredient_counts.csv", index=False)
+    ing_counts_path = OUT / "ingredient_counts.csv"
+    pd.DataFrame(ing_rows).to_csv(ing_counts_path, index=False)
+    print(f"[INFO] Saved ingredient counts to {ing_counts_path}")
 
     # =========================
     # Summary JSON
     # =========================
-    print("Writing summary.json ...")
+    print("[INFO] Writing summary.json ...")
     summary = {
         "logreg_tfidf_accuracy": float(acc),
         "logreg_tfidf_macro_f1": safe_macro_f1(
@@ -337,8 +323,9 @@ def main():
         "kmeans_k": int(KMEANS_K),
         "kmeans_silhouette": float(sil_kmeans),
         "kmeans_ari_vs_labels": float(ari_kmeans),
-        "n_recipes_used": int(len(df)),
-        "n_cuisines": int(df["cuisine"].nunique()),
+        "n_recipes_modeled": int(len(df)),
+        "n_cuisines_modeled": int(df["cuisine"].nunique()),
+        "tfidf_max_features": int(TFIDF_MAX_FEATURES),
         "artifacts": [
             "classification_report_tfidf_only.csv",
             "clustering_quality_kmeans.csv",
@@ -350,7 +337,7 @@ def main():
     with open(OUT / "summary.json", "w", encoding="utf-8") as f:
         json.dump(summary, f, indent=2)
 
-    print("Done. Phase-2 artifacts written to:", OUT.resolve())
+    print("[INFO] Phase-2 artifacts written to:", OUT.resolve())
 
 
 if __name__ == "__main__":

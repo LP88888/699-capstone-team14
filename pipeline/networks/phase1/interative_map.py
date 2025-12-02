@@ -1,38 +1,21 @@
-#!/usr/bin/env python
-"""
-Build an interactive cuisine network HTML where:
-- Nodes = cuisines
-- Edges = shared top ingredients between cuisines
 
-Reads:
-    reports/phase2/top_features_per_cuisine.csv
 
-Writes:
-    reports/viz/cuisine_network_pyvis.html
-"""
-
-from pathlib import Path
+import config as cfg
 import numpy as np
 import pandas as pd
 
 from pyvis.network import Network
 
-# -------------------------
-# Paths
-# -------------------------
-BASE_DIR = Path(__file__).resolve().parents[2]  # adjust if needed
-REPORTS_DIR = BASE_DIR / "reports" / "phase2"
-VIZ_DIR = BASE_DIR / "reports" / "viz"
-VIZ_DIR.mkdir(parents=True, exist_ok=True)
+
+REPORTS_DIR = cfg.PHASE_1_REPORTS_PATH
+VIZ_DIR = cfg.PHASE_1_VIZ_PATH
 
 TOP_FEAT_PATH = REPORTS_DIR / "top_features_per_cuisine.csv"
 OUT_HTML = VIZ_DIR / "cuisine_network_pyvis.html"
 
 RANDOM_STATE = 42
 
-# -------------------------
-# Parameters
-# -------------------------
+
 N_CUISINES = 25           # how many cuisines to include (top by frequency in top_features file)
 TOP_TERMS_PER_CUISINE = 40
 MIN_SHARED_TERMS = 5      # create an edge only if at least this many shared top ingredients
