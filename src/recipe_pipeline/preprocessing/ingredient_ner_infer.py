@@ -5,9 +5,9 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Optional
 
-from src.recipe_pipeline.ingredient_ner.config import load_inference_configs_from_dict, DATA, OUT
-from src.recipe_pipeline.ingredient_ner.inference import run_full_inference_from_config
-from src.recipe_pipeline.ingredient_ner.utils import configure_device
+from recipe_pipeline.ingredient_ner.config import load_inference_configs_from_dict, DATA, OUT
+from recipe_pipeline.ingredient_ner.inference import run_full_inference_from_config
+from recipe_pipeline.ingredient_ner.utils import configure_device
 
 from ..core import PipelineContext, StageResult
 from ..utils import stage_logger

@@ -3,10 +3,10 @@ from __future__ import annotations
 from pathlib import Path
 from typing import Optional
 
-from src.recipe_pipeline.cuisine_classifier.config import load_configs_from_dict, OUT, TRAIN
-from src.recipe_pipeline.cuisine_classifier.utils import set_global_seed
-from src.recipe_pipeline.cuisine_classifier.data_prep import prepare_docbins_from_config
-from src.recipe_pipeline.cuisine_classifier.training import train_classifier_from_docbins
+from recipe_pipeline.cuisine_classifier.config import load_configs_from_dict, OUT, TRAIN
+from recipe_pipeline.cuisine_classifier.utils import set_global_seed
+from recipe_pipeline.cuisine_classifier.data_prep import prepare_docbins_from_config
+from recipe_pipeline.cuisine_classifier.training import train_classifier_from_docbins
 
 from ..core import PipelineContext, StageResult
 from ..utils import stage_logger

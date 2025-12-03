@@ -17,13 +17,13 @@ import pyarrow.parquet as pq
 import pandas as pd
 import numpy as np
 
-from src.recipe_pipeline.ingrnorm.io import materialize_parquet_source
-from src.recipe_pipeline.ingrnorm.parquet_utils import vocab_from_parquet_listcol
-from src.recipe_pipeline.ingrnorm.spacy_normalizer import apply_spacy_normalizer_to_parquet
-from src.recipe_pipeline.ingrnorm.sbert_dedupe import sbert_dedupe
-from src.recipe_pipeline.ingrnorm.w2v_dedupe import w2v_dedupe
-from src.recipe_pipeline.ingrnorm.dedupe_map import apply_map_to_parquet_streaming, write_jsonl_map
-from src.recipe_pipeline.ingrnorm.encoder import IngredientEncoder
+from recipe_pipeline.ingrnorm.io import materialize_parquet_source
+from recipe_pipeline.ingrnorm.parquet_utils import vocab_from_parquet_listcol
+from recipe_pipeline.ingrnorm.spacy_normalizer import apply_spacy_normalizer_to_parquet
+from recipe_pipeline.ingrnorm.sbert_dedupe import sbert_dedupe
+from recipe_pipeline.ingrnorm.w2v_dedupe import w2v_dedupe
+from recipe_pipeline.ingrnorm.dedupe_map import apply_map_to_parquet_streaming, write_jsonl_map
+from recipe_pipeline.ingrnorm.encoder import IngredientEncoder
 
 from ..core import PipelineContext, StageResult
 from ..utils import stage_logger
