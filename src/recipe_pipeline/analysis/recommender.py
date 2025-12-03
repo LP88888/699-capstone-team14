@@ -60,27 +60,16 @@ class CuisineRecommender:
         self.cuisines = list(self.cuisine_ingredients.keys())
     
     def get_top_ingredients(self, cuisine: str, n: int = 50) -> List[Tuple[str, int]]:
-        """
-        Get top N ingredients for a cuisine based on frequency.
-        """
-        cuisine_lower = cuisine.lower().strip()
+        """Get top N ingredients for a cuisine based on frequency."""
+        # Case-insensitive lookup
+        c_map = {k.lower(): k for k in self.cuisines}
+        key = c_map.get(cuisine.lower().strip())
         
-        # Find matching cuisine
-        matched_cuisine = None
-        for c in self.cuisines:
-            if c.lower() == cuisine_lower:
-                matched_cuisine = c
-                break
+        if not key:
+            raise ValueError(f"Cuisine '{cuisine}' not found.")
+                
+        return self.cuisine_ingredients[key].most_common(n)
         
-        if matched_cuisine is None:
-            available = ", ".join(self.cuisines[:10])
-            raise ValueError(
-                f"Cuisine '{cuisine}' not found. Available cuisines: {available}..."
-            )
-        
-        counter = self.cuisine_ingredients[matched_cuisine]
-        return counter.most_common(n)
-    
     def get_top_ingredients_by_centrality(self, cuisine: str, n: int = 50) -> List[Tuple[str, float]]:
         """
         Get top N ingredients for a cuisine ranked by centrality in the graph.
@@ -105,34 +94,36 @@ class CuisineRecommender:
         cuisine_a's and cuisine_b's top ingredients.
         """
         # Get top ingredients for each cuisine
-        top_a = set(ing for ing, _ in self.get_top_ingredients(cuisine_a, top_n))
-        top_b = set(ing for ing, _ in self.get_top_ingredients(cuisine_b, top_n))
+        top_a_ings = {ing for ing, _ in self.get_top_ingredients(cuisine_a, top_n)}
+        top_b_ings = {ing for ing, _ in self.get_top_ingredients(cuisine_b, top_n)}
+        
+        # 1. Get neighbors of Cuisine A's top ingredients
+        # 2. Get neighbors of Cuisine B's top ingredients
+        # 3. The intersection is the set of potential bridges
+        neighbors_a = set()
+        for ing in top_a_ings:
+            if ing in self.G:
+                neighbors_a.update(self.G.neighbors(ing))
+                
+        neighbors_b = set()
+        for ing in top_b_ings:
+            if ing in self.G:
+                neighbors_b.update(self.G.neighbors(ing))
+                
+        candidates = neighbors_a.intersection(neighbors_b)
         
         bridges = []
-        all_nodes = set(self.G.nodes())
-        
-        for node in all_nodes:
-            if node not in self.G:
-                continue
-            
-            neighbors = set(self.G.neighbors(node))
-            edges_to_a = neighbors & top_a
-            edges_to_b = neighbors & top_b
+        for node in candidates:
+            # Re-verify connections to specific top lists for scoring
+            node_neighbors = set(self.G.neighbors(node))
+            edges_to_a = node_neighbors & top_a_ings
+            edges_to_b = node_neighbors & top_b_ings
             
             if edges_to_a and edges_to_b:
-                # Bridge score: product of connection counts, weighted by centrality
-                bridge_score = (
-                    len(edges_to_a) * len(edges_to_b) * 
-                    (1 + self.centrality.get(node, 0))
-                )
-                bridges.append((
-                    node, 
-                    bridge_score, 
-                    list(edges_to_a), 
-                    list(edges_to_b)
-                ))
+                # Score = Connectivity * Centrality
+                score = len(edges_to_a) * len(edges_to_b) * (1 + self.centrality.get(node, 0))
+                bridges.append((node, score, list(edges_to_a), list(edges_to_b)))
         
-        # Sort by bridge score descending
         bridges.sort(key=lambda x: x[1], reverse=True)
         return bridges
     
@@ -152,65 +143,42 @@ class CuisineRecommender:
         all_b = set(self.cuisine_ingredients.get(cuisine_b.lower(), {}).keys())
         
         # Also try case-insensitive matching if direct lookup failed
-        if not all_a:
-            for c in self.cuisines:
-                 if c.lower() == cuisine_a.lower():
-                     all_a = set(self.cuisine_ingredients[c].keys())
-                     break
-        if not all_b:
-            for c in self.cuisines:
-                 if c.lower() == cuisine_b.lower():
-                     all_b = set(self.cuisine_ingredients[c].keys())
-                     break
-
-        # Ingredients in A but not in B
+        c_map = {k.lower(): k for k in self.cuisines}
+        dict_a = self.cuisine_ingredients.get(c_map.get(cuisine_a.lower(), ""), {})
+        dict_b = self.cuisine_ingredients.get(c_map.get(cuisine_b.lower(), ""), {})
+        
+        all_a = set(dict_a.keys())
+        all_b = set(dict_b.keys())
+        
+        # Ingredients unique to A
         novel_candidates = all_a - all_b
         
-        # Get high-centrality ingredients in B
-        top_b_by_centrality = self.get_top_ingredients_by_centrality(cuisine_b, top_n)
-        if not top_b_by_centrality:
-            return []
+        # High centrality items in B
+        top_b_freq = [i[0] for i in self.cuisine_ingredients[c_map[cuisine_b.lower()]].most_common(top_n)]
+        top_b_cent = [(i, self.centrality.get(i, 0)) for i in top_b_freq if i in self.G]
         
-        # Determine centrality threshold
-        centrality_values = [c for _, c in top_b_by_centrality]
-        if not centrality_values:
-             return []
-             
-        threshold_value = np.percentile(centrality_values, centrality_threshold * 100)
+        if not top_b_cent: return []
         
-        high_centrality_b = {
-            ing for ing, cent in top_b_by_centrality 
-            if cent >= threshold_value
-        }
+        # Percentile threshold
+        vals = [v for k, v in top_b_cent]
+        thresh = np.percentile(vals, centrality_threshold * 100)
+        high_cent_b = {k for k, v in top_b_cent if v >= thresh}
         
-        # Find novel ingredients that share edges with high-centrality B ingredients
-        novel_suggestions = []
-        
-        for novel_ing in novel_candidates:
-            if novel_ing not in self.G:
-                continue
+        suggestions = []
+        for novel in novel_candidates:
+            if novel not in self.G: continue
             
-            neighbors = set(self.G.neighbors(novel_ing))
-            high_cent_partners = neighbors & high_centrality_b
+            # Fast neighbor check
+            neighbors = set(self.G.neighbors(novel))
+            matches = neighbors.intersection(high_cent_b)
             
-            for partner in high_cent_partners:
-                edge_weight = self.G[novel_ing][partner].get("weight", 1)
-                partner_centrality = self.centrality.get(partner, 0)
+            for partner in matches:
+                weight = self.G[novel][partner].get("weight", 1)
+                cent = self.centrality.get(partner, 0)
+                suggestions.append((novel, partner, cent, weight))
                 
-                novel_suggestions.append((
-                    novel_ing,
-                    partner,
-                    partner_centrality,
-                    edge_weight
-                ))
-        
-        # Sort by partner centrality * edge weight
-        novel_suggestions.sort(
-            key=lambda x: x[2] * x[3], 
-            reverse=True
-        )
-        
-        return novel_suggestions
+        suggestions.sort(key=lambda x: x[2] * x[3], reverse=True)
+        return suggestions
     
     def suggest_fusion(
         self, 
@@ -223,84 +191,25 @@ class CuisineRecommender:
         """
         # Adjust top_n based on strictness (stricter = fewer ingredients considered)
         top_n = int(50 * (1 - strictness * 0.5))  # Range: 25-50
-        top_n = max(25, top_n)
-        
-        # Centrality threshold based on strictness
-        centrality_threshold = strictness * 0.3 + 0.3  # Range: 0.3-0.6
-        
-        # Get top ingredients
-        try:
-            top_a = self.get_top_ingredients(cuisine_a, top_n)
-            top_b = self.get_top_ingredients(cuisine_b, top_n)
-        except ValueError as e:
-            return {"error": str(e)}
-        
-        top_a_set = set(ing for ing, _ in top_a)
-        top_b_set = set(ing for ing, _ in top_b)
-        
-        # Find shared ingredients
-        shared = top_a_set & top_b_set
-        
-        # Find bridge ingredients
+        top_n = max(25, int(50 * (1 - strictness * 0.5)))
         bridges = self.find_bridge_ingredients(cuisine_a, cuisine_b, top_n)
-        
-        # Filter bridges based on strictness
-        min_bridge_score = strictness * max(b[1] for b in bridges) if bridges else 0
-        bridges_filtered = [
-            b for b in bridges 
-            if b[1] >= min_bridge_score * 0.1
-        ]
-        
-        # Find novel ingredients in both directions
-        novel_from_a = self.find_novel_ingredients(
-            cuisine_a, cuisine_b, top_n, centrality_threshold
-        )
-        novel_from_b = self.find_novel_ingredients(
-            cuisine_b, cuisine_a, top_n, centrality_threshold
-        )
-        
-        # Limit results based on strictness
-        max_results = int(20 * (1 - strictness * 0.5))  # Range: 10-20
-        max_results = max(10, max_results)
+        novel_a = self.find_novel_ingredients(cuisine_a, cuisine_b, top_n)
+        novel_b = self.find_novel_ingredients(cuisine_b, cuisine_a, top_n)
         
         return {
-            "cuisine_a": cuisine_a,
-            "cuisine_b": cuisine_b,
-            "top_a": top_a[:top_n],
-            "top_b": top_b[:top_n],
-            "bridge_ingredients": [
-                {
-                    "ingredient": b[0],
-                    "bridge_score": b[1],
-                    "connects_to_a": b[2][:5],  # Limit for readability
-                    "connects_to_b": b[3][:5]
-                }
-                for b in bridges_filtered[:max_results]
+            "pair": f"{cuisine_a} + {cuisine_b}",
+            "bridges": [
+                {"name": b[0], "score": b[1], "connects_a": b[2][:3], "connects_b": b[3][:3]}
+                for b in bridges[:10]
             ],
             "novel_from_a": [
-                {
-                    "ingredient": n[0],
-                    "pairs_well_with": n[1],
-                    "partner_centrality": n[2],
-                    "edge_strength": n[3]
-                }
-                for n in novel_from_a[:max_results]
+                {"name": n[0], "pairs_with": n[1], "strength": n[3]}
+                for n in novel_a[:10]
             ],
             "novel_from_b": [
-                {
-                    "ingredient": n[0],
-                    "pairs_well_with": n[1],
-                    "partner_centrality": n[2],
-                    "edge_strength": n[3]
-                }
-                for n in novel_from_b[:max_results]
-            ],
-            "shared_ingredients": list(shared),
-            "parameters": {
-                "strictness": strictness,
-                "top_n_used": top_n,
-                "centrality_threshold": centrality_threshold
-            }
+                {"name": n[0], "pairs_with": n[1], "strength": n[3]}
+                for n in novel_b[:10]
+            ]
         }
 
     def save_fusion_report(

@@ -4,6 +4,8 @@ from __future__ import annotations
 
 from typing import Callable, Dict
 
+from recipe_pipeline.analysis import pmi, recommender_stage, viz
+
 from .core import PipelineContext, StageResult
 from .preprocessing import (
     combine_raw,
@@ -27,7 +29,11 @@ STAGES: Dict[str, StageFn] = {
     "cuisine_normalization": cuisine_normalization.run,
     "cuisine_classifier": cuisine_classifier.run,
     "analysis_baseline": baseline.run,
+    "analysis_pmi": pmi.run,           # <--- NEW
+    "analysis_baseline": baseline.run, # <--- UPDATED
+    "analysis_viz": viz.run,           # <--- REPLACES analysis_graph
     "analysis_graph": graph.run,
+    "analysis_recommender": recommender_stage.run,
 }
 
 __all__ = ["STAGES", "StageFn"]

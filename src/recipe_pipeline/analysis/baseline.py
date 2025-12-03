@@ -1,283 +1,161 @@
-import re
+"""
+Baseline analysis stage: Statistics, Modeling (LogReg/RF), and Clustering.
+"""
+from __future__ import annotations
+
 import json
 import numpy as np
 import pandas as pd
 from pathlib import Path
-from collections import Counter, defaultdict
-from typing import Dict, Any
-
 from sklearn.feature_extraction.text import TfidfVectorizer
-from sklearn.preprocessing import LabelEncoder, normalize
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
-from sklearn.metrics import classification_report, confusion_matrix, silhouette_score
-from sklearn.cluster import MiniBatchKMeans
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.cluster import KMeans
+from sklearn.metrics import classification_report, f1_score, silhouette_score, adjusted_rand_score
 
 from ..core import PipelineContext, StageResult
 from ..utils import stage_logger
 
-# ----------------------------
-# Constants & Config Defaults
-# ----------------------------
-TEST_SIZE = 0.2
-RANDOM_STATE = 42
-K_GRID = [8, 12, 16, 20, 25, 30]
+def compute_top_features_per_cuisine(X_tfidf, feature_names, cuisines, top_n=25):
+    """Extract top TF-IDF terms per cuisine."""
+    cuisines = np.array(cuisines)
+    rows = []
+    unique_cuis = np.unique(cuisines)
 
-BASIC_PARENT_MAP = {
-    r".*\b(usa|american)\b.*": "american",
-    r".*\brit(alian|alian recipes)\b.*": "italian",
-    r".*\bind(ian|ian recipes)\b.*": "indian",
-    r".*\bmex(ic|ican)\b.*": "mexican",
-    r".*\bchin(ese)?\b.*": "chinese",
-    r".*\bgreek\b.*": "greek",
-    r".*\bfrench\b.*": "french",
-    r".*\bkorean\b.*": "korean",
-    r".*\bthai\b.*": "thai",
-    r".*\bjapan(ese)?\b.*": "japanese",
-    r".*\bgerman\b.*": "german",
-    r".*\barab(ic)?\b.*": "arabic",
-    r".*\bpakistan(i)?\b.*": "pakistani",
-    r".*\bcar(r)?ibbean\b.*": "caribbean",
-    r".*\bbrit(ish|ain|unitedkingdom)\b.*": "british",
-    r".*\bcontinental\b.*": "continental",
-    r".*\bmediterranean\b.*": "mediterranean",
-}
-
-DROP_LABEL_PATTERNS = [
-    r"kid[-\s]?friendly",
-    r"recipes?$",
-    r"^other$",
-    r"^fusion$",
-    r"^asian$"
-]
-
-def normalize_ingredients(s: str) -> str:
-    s = str(s).lower()
-    s = re.sub(r"\d+([\/\.\d]*)?", " ", s)
-    s = re.sub(r"\b(oz|ounce|ounces|cup|cups|tsp|teaspoon|teaspoons|tbsp|tablespoon|tablespoons|g|kg|ml|l|pound|lb|lbs)\b", " ", s)
-    s = re.sub(r"[^a-z\s]", " ", s)
-    s = re.sub(r"\s+", " ", s).strip()
-    return s
-
-def preprocess_cuisine(raw: str) -> str:
-    c = str(raw).lower().strip()
-    c = re.sub(r"\s*,\s*", ",", c)
-    c = re.sub(r"\s+", " ", c).strip()
-    if "," in c:
-        c = c.split(",")[0]
-    c = re.sub(r"\brecipes?\b", "", c).strip()
-    for pat in DROP_LABEL_PATTERNS:
-        if re.search(pat, c):
-            return "drop_me"
-    return c
-
-def suggest_parent_label(cuisine: str) -> str:
-    for pat, parent in BASIC_PARENT_MAP.items():
-        if re.match(pat, cuisine):
-            return parent
-    return cuisine
-
-def top_n_tokens(X, vectorizer, n=100):
-    counts = np.asarray(X.sum(axis=0)).ravel()
-    idx = np.argsort(counts)[::-1][:n]
-    terms = vectorizer.get_feature_names_out()[idx]
-    vals = counts[idx]
-    return pd.DataFrame({"token": terms, "count": vals})
-
-def class_report_table(y_true, y_pred, classes):
-    rep = classification_report(y_true, y_pred, target_names=classes, output_dict=True, zero_division=0)
-    df_rep = pd.DataFrame(rep).T.reset_index().rename(columns={"index": "label"})
-    return df_rep
-
-def cm_long(cm, classes):
-    cm_df = pd.DataFrame(cm, index=classes, columns=classes)
-    cm_long = (cm_df.stack()
-               .reset_index(name="count")
-               .rename(columns={"level_0": "true", "level_1": "pred"}))
-    cm_long = cm_long[cm_long["count"] > 0].sort_values("count", ascending=False)
-    return cm_long
-
-def cluster_majority_labels(df_with_clusters, cluster_col="cluster", label_col="cuisine", top_k=1):
-    out = []
-    for cid, sub in df_with_clusters.groupby(cluster_col):
-        counts = sub[label_col].value_counts()
-        top = counts.head(top_k)
-        for lab, cnt in top.items():
-            out.append({"cluster": cid, "label": lab, "count": int(cnt), "support": int(len(sub))})
-    return pd.DataFrame(out).sort_values(["cluster", "count"], ascending=[True, False])
-
-def run(context: PipelineContext, **kwargs) -> StageResult:
-    logger = stage_logger(context, "analysis_baseline")
-    config = context.stage("analysis").get("baseline", {})
-    
-    # Overrides
-    input_path = kwargs.get("input_path", config.get("input_path"))
-    output_dir = Path(kwargs.get("output_dir", config.get("output_dir", "./reports/baseline")))
-    min_support = kwargs.get("min_support", config.get("min_support", 100))
-    
-    if not input_path:
-        raise ValueError("Input path not specified for analysis_baseline")
-
-    output_dir.mkdir(parents=True, exist_ok=True)
-    logger.info(f"Loading data from {input_path}")
-    
-    # Load data (Parquet)
-    if str(input_path).endswith(".csv"):
-         df = pd.read_csv(input_path) # Fallback if user provides csv
-    else:
-         df = pd.read_parquet(input_path)
-
-    cols_needed = {"ingredients", "cuisine"}
-    if not cols_needed.issubset(df.columns):
-        # try fallback cols
-        if "encoded_ingredients" in df.columns: # Assuming we might run on encoded data but we need text
-            # If ingredients is encoded list of ints, this analysis (TFIDF) won't work directly on it
-            # unless we decode it. But the config points to encoded_dataset which usually has text too?
-            # Checking combine_raw_datasets_with_cuisine_encoded.parquet... usually it retains text columns.
-            pass
-            
-        if not cols_needed.issubset(df.columns):
-             logger.warning(f"Columns {cols_needed} not found. Available: {df.columns}")
-             # Attempt to find alternates
-             if "cuisine_clean" in df.columns:
-                 df["cuisine"] = df["cuisine_clean"]
-    
-    if not cols_needed.issubset(df.columns):
-         raise ValueError(f"Expected columns {cols_needed} in dataset")
-
-    logger.info(f"Loaded {len(df)} rows. Cleaning...")
-    
-    df = df.dropna(subset=["ingredients", "cuisine"]).copy()
-    
-    # Check if ingredients is list or string
-    if not df.empty and isinstance(df["ingredients"].iloc[0], (list, np.ndarray)):
-         df["ingredients"] = df["ingredients"].apply(lambda x: " ".join(map(str, x)))
-
-    df["ingredients_clean"] = df["ingredients"].map(normalize_ingredients)
-    df["cuisine_raw"] = df["cuisine"]
-    df["cuisine"] = df["cuisine"].map(preprocess_cuisine)
-    df = df[df["cuisine"] != "drop_me"].copy()
-    
-    df["cuisine_suggested"] = df["cuisine"].map(suggest_parent_label)
-    
-    logger.info("Computing TF-IDF...")
-    tfidf_config = config.get("tfidf", {})
-    vec = TfidfVectorizer(
-        analyzer="word",
-        ngram_range=tuple(tfidf_config.get("ngram_range", [1, 2])),
-        min_df=5,
-        max_df=0.7,
-        stop_words="english",
-        max_features=tfidf_config.get("max_features", 40000)
-    )
-    X = vec.fit_transform(df["ingredients_clean"])
-    
-    le = LabelEncoder()
-    # Fit on all suggested cuisines first
-    le.fit(df["cuisine_suggested"])
-    
-    label_series = df["cuisine_suggested"]
-    vc = label_series.value_counts()
-    keep_labels = vc[vc >= min_support].index
-    
-    if len(keep_labels) == 0:
-        logger.warning(f"No classes met min_support={min_support}. Keeping top 20.")
-        keep_labels = vc.head(20).index
+    for c in unique_cuis:
+        mask = cuisines == c
+        if mask.sum() == 0: continue
         
-    keep_mask = df["cuisine_suggested"].isin(keep_labels)
-    df_kee = df.loc[keep_mask].copy()
-    X_kee = X[keep_mask.to_numpy()]
+        # Average TF-IDF vector for this cuisine
+        mean_vec = X_tfidf[mask].mean(axis=0)
+        mean_vec = np.asarray(mean_vec).ravel()
+        top_idx = np.argsort(mean_vec)[::-1][:top_n]
+        
+        for rank, j in enumerate(top_idx, start=1):
+            rows.append({
+                "cuisine": c,
+                "feature": feature_names[j],
+                "mean_tfidf": float(mean_vec[j]),
+                "rank": rank,
+            })
+    return pd.DataFrame(rows)
+
+"""
+Baseline Modeling Stage: TF-IDF, Logistic Regression, Random Forest, KMeans.
+"""
+from __future__ import annotations
+
+import json
+import numpy as np
+import pandas as pd
+from pathlib import Path
+from sklearn.feature_extraction.text import TfidfVectorizer
+from sklearn.model_selection import train_test_split
+from sklearn.linear_model import LogisticRegression
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.cluster import KMeans
+from sklearn.metrics import classification_report, f1_score, silhouette_score, adjusted_rand_score
+
+from ...core import PipelineContext, StageResult
+from ...utils import stage_logger
+
+def extract_top_features(model, vectorizer, class_labels, top_n=20):
+    """Extract top features from Logistic Regression coefficients."""
+    feature_names = vectorizer.get_feature_names_out()
+    rows = []
+    for class_idx, label in enumerate(class_labels):
+        coefs = model.coef_[class_idx]
+        top_indices = np.argsort(coefs)[-top_n:][::-1]
+        for rank, idx in enumerate(top_indices):
+            rows.append({
+                "cuisine": label,
+                "rank": rank + 1,
+                "feature": feature_names[idx],
+                "weight": float(coefs[idx])
+            })
+    return pd.DataFrame(rows)
+
+def run(context: PipelineContext, *, force: bool = False) -> StageResult:
+    cfg = context.stage("analysis_baseline")
+    logger = stage_logger(context, "analysis_baseline", force=force)
     
-    le = LabelEncoder()
-    y_kee = le.fit_transform(df_kee["cuisine_suggested"])
+    # Config
+    data_cfg = cfg.get("data", {})
+    params = cfg.get("params", {})
+    output_cfg = cfg.get("output", {})
     
-    logger.info(f"Training baseline model on {len(df_kee)} samples, {len(le.classes_)} classes...")
+    input_path = Path(data_cfg.get("input_path"))
+    out_dir = Path(output_cfg.get("reports_dir"))
+    out_dir.mkdir(parents=True, exist_ok=True)
+
+    # Load Data
+    logger.info(f"Loading {input_path}...")
+    df = pd.read_parquet(input_path)
     
-    X_train, X_test, y_train, y_test = train_test_split(
-        X_kee, y_kee, test_size=TEST_SIZE, random_state=RANDOM_STATE, stratify=y_kee
-    )
+    # Prepare text
+    ing_col = data_cfg.get("ingredients_col", "inferred_ingredients")
+    if not isinstance(df[ing_col].iloc[0], str):
+        df["text"] = df[ing_col].apply(lambda x: " ".join(x) if isinstance(x, list) else str(x))
+    else:
+        df["text"] = df[ing_col]
+        
+    y = df[data_cfg.get("cuisine_col", "cuisine_deduped")]
     
-    clf = LogisticRegression(
-        max_iter=2000,
-        n_jobs=-1,
-        solver="saga",
-        penalty="l2",
-        class_weight="balanced",
-        multi_class="multinomial",
-        random_state=RANDOM_STATE,
-    )
+    # TF-IDF
+    logger.info("Vectorizing...")
+    tfidf = TfidfVectorizer(max_features=params.get("max_features", 5000), min_df=5)
+    X = tfidf.fit_transform(df["text"])
+    
+    # Split
+    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+    
+    # 1. Logistic Regression
+    logger.info("Training Logistic Regression...")
+    clf = LogisticRegression(max_iter=500, n_jobs=-1)
     clf.fit(X_train, y_train)
     y_pred = clf.predict(X_test)
     
-    classes = le.classes_
-    rep_df = class_report_table(y_test, y_pred, classes)
-    rep_df.to_csv(output_dir / "classification_report.csv", index=False)
+    # Save Preds
+    preds_df = pd.DataFrame({"y_true": y_test, "y_pred": y_pred})
+    preds_df.to_csv(out_dir / "y_pred_logreg.csv", index=False)
     
-    cm = confusion_matrix(y_test, y_pred)
-    pd.DataFrame(cm, index=classes, columns=classes).to_csv(output_dir / "confusion_matrix_wide.csv")
-    cm_long(cm, classes).to_csv(output_dir / "confusion_matrix_long.csv", index=False)
+    # Save Report
+    report = classification_report(y_test, y_pred, output_dict=True)
+    pd.DataFrame(report).T.to_csv(out_dir / "classification_report_logreg.csv")
     
-    top_tokens_df = top_n_tokens(X_kee, vec, n=200)
-    top_tokens_df.to_csv(output_dir / "top_tokens.csv", index=False)
+    # Top Features
+    top_feat = extract_top_features(clf, tfidf, clf.classes_)
+    top_feat.to_csv(out_dir / "top_features_logreg.csv", index=False)
     
-    summary = {
-        "macro_f1": float(rep_df.loc[rep_df["label"] == "macro avg", "f1-score"].values[0]),
-        "accuracy": float(rep_df.loc[rep_df["label"] == "accuracy", "precision"].values[0]),
-        "classes_kept": classes.tolist(),
-        "min_support_for_class": min_support,
-    }
-    json.dump(summary, open(output_dir / "summary.json", "w"), indent=2)
-    
-    logger.info("Running Clustering Sweep...")
-    Xn = normalize(X_kee, norm="l2", copy=False)
-    k_sweep = []
-    for k in K_GRID:
-        km = MiniBatchKMeans(n_clusters=k, random_state=RANDOM_STATE, n_init=10, batch_size=4096)
-        lab = km.fit_predict(Xn)
-        sil = silhouette_score(Xn, lab)
-        k_sweep.append({"k": k, "silhouette": float(sil)})
-    pd.DataFrame(k_sweep).to_csv(output_dir / "k_sweep.csv", index=False)
-    
-    best_k = sorted(k_sweep, key=lambda d: d["silhouette"], reverse=True)[0]["k"]
-    logger.info(f"Best K: {best_k}")
-    
-    km_final = MiniBatchKMeans(n_clusters=best_k, random_state=RANDOM_STATE, n_init=10, batch_size=4096)
-    clusters = km_final.fit_predict(Xn)
-    
-    df_kee = df_kee.copy()
-    df_kee["cluster"] = clusters
-    cluster_map = cluster_majority_labels(df_kee, "cluster", "cuisine_suggested", top_k=1)
-    cluster_map.to_csv(output_dir / "cluster_label_map.csv", index=False)
-    
-    # Taxonomy suggestions
-    raw_counts = df["cuisine"].value_counts()
-    rows = []
-    for lab, count in raw_counts.items():
-        parent = suggest_parent_label(lab)
-        if count >= min_support:
-            suggested = parent
-        else:
-            suggested = parent if parent != lab else "other"
-        rows.append({
-            "raw_cuisine": lab,
-            "count": int(count),
-            "suggested_super_cuisine": suggested
-        })
-    taxo = pd.DataFrame(rows).sort_values(["suggested_super_cuisine", "count"], ascending=[True, False])
-    taxo.to_csv(output_dir / "taxonomy_suggestions.csv", index=False)
-    
-    with open(output_dir / "README.txt", "w", encoding="utf-8") as f:
-        f.write(
-            "Baseline artifacts generated.\n"
-            "- classification_report.csv: per-class precision/recall/f1\n"
-            "- confusion_matrix_wide.csv / confusion_matrix_long.csv\n"
-            "- top_tokens.csv: most frequent tokens in TF-IDF\n"
-            "- k_sweep.csv: silhouette by K\n"
-            "- cluster_label_map.csv: majority label per cluster (editable)\n"
-            "- taxonomy_suggestions.csv: suggested cuisine→super-cuisine mapping (editable)\n"
-            "- summary.json: macro-F1, accuracy, kept classes, thresholds\n"
-        )
+    # 2. Random Forest (Subsampled)
+    logger.info("Training Random Forest (Subsampled)...")
+    max_samples = params.get("rf_max_samples", 15000)
+    if X_train.shape[0] > max_samples:
+        # Subsample for speed
+        idx = np.random.choice(X_train.shape[0], max_samples, replace=False)
+        X_rf, y_rf = X_train[idx], y_train.iloc[idx]
+    else:
+        X_rf, y_rf = X_train, y_train
         
-    logger.info(f"Analysis baseline completed. Artifacts in {output_dir}")
-    return StageResult(name="analysis_baseline", status="success", artifacts={"output_dir": str(output_dir)})
+    rf = RandomForestClassifier(n_estimators=50, max_depth=20, n_jobs=-1)
+    rf.fit(X_rf, y_rf)
+    
+    # 3. Clustering (KMeans)
+    logger.info("Running KMeans...")
+    k = params.get("kmeans_k", 20)
+    kmeans = KMeans(n_clusters=k, n_init=5, random_state=42)
+    clusters = kmeans.fit_predict(X)
+    
+    # Save Cluster Assignments
+    df_clusters = pd.DataFrame({
+        "cuisine": y,
+        "cluster": clusters
+    })
+    df_clusters.to_csv(out_dir / "cluster_assignments.csv", index=False)
 
+    return StageResult(name="analysis_baseline", status="success", outputs={
+        "report": str(out_dir / "classification_report_logreg.csv"),
+        "preds": str(out_dir / "y_pred_logreg.csv"),
+        "clusters": str(out_dir / "cluster_assignments.csv")
+    })
