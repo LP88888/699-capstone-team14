@@ -91,6 +91,20 @@ Use `--keep-going` if you want later stages to run even when one fails:
 python -m recipe_pipeline.pipeline --keep-going
 ```
 
+### Run pipeline via CLI
+
+If you have installed the package and have the `recipe-pipeline` command available, you can run the pipeline directly:
+
+```sh
+recipe-pipeline --config recipe_pipeline/config/pipeline.yaml
+```
+
+This is equivalent to:
+
+```sh
+python -m recipe_pipeline.pipeline --config recipe_pipeline/config/pipeline.yaml
+```
+
 ### Run specific stages
 
 ```sh

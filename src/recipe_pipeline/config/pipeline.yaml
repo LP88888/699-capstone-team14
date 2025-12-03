@@ -42,34 +42,34 @@ logging:
     file: logs/analysis_graph.log
 
 paths:
-  raw_data_dir: "./data/raw"
-  normalized_dir: "./data/normalized"
-  encoded_dir: "./data/encoded"
-  cuisine_normalized_dir: "./data/cuisine_normalized"
-  cuisine_encoded_dir: "./data/cuisine_encoded"
-  training_dir: "./data/training"
-  models_dir: "./models"
+  raw_data_dir: "../data/raw"
+  normalized_dir: "../data/normalized"
+  encoded_dir: "../data/encoded"
+  cuisine_normalized_dir: "../data/cuisine_normalized"
+  cuisine_encoded_dir: "../data/cuisine_encoded"
+  training_dir: "../data/training"
+  models_dir: "../models"
 
 artifacts:
-  normalized_baseline: &normalized_baseline "./data/normalized/recipes_data_clean.parquet"
-  normalized_deduped: &normalized_deduped "./data/normalized/recipes_data_clean_spell_dedup.parquet"
-  cosine_map: &cosine_map "./data/normalized/cosine_dedupe_map.jsonl"
+  normalized_baseline: &normalized_baseline "../data/normalized/recipes_data_clean.parquet"
+  normalized_deduped: &normalized_deduped "../data/normalized/recipes_data_clean_spell_dedup.parquet"
+  cosine_map: &cosine_map "../data/normalized/cosine_dedupe_map.jsonl"
   ner_vocab_column: &ner_vocab_column "NER_clean"
-  unified_ingredients: &unified_ingredients "./data/encoded/datasets_unified.parquet"
-  ingredient_id_to_token: &ingredient_id_to_token "./data/encoded/ingredient_id_to_token.json"
-  ingredient_token_to_id: &ingredient_token_to_id "./data/encoded/ingredient_token_to_id.json"
-  ner_predictions: &ner_predictions "./data/training/predictions.parquet"
-  cuisine_baseline: &cuisine_baseline "./data/cuisine_normalized/cuisine_baseline.parquet"
-  cuisine_deduped: &cuisine_deduped "./data/cuisine_normalized/cuisine_deduped.parquet"
-  cuisine_map: &cuisine_map "./data/cuisine_normalized/cuisine_dedupe_map.jsonl"
+  unified_ingredients: &unified_ingredients "../data/encoded/datasets_unified.parquet"
+  ingredient_id_to_token: &ingredient_id_to_token "../data/encoded/ingredient_id_to_token.json"
+  ingredient_token_to_id: &ingredient_token_to_id "../data/encoded/ingredient_token_to_id.json"
+  ner_predictions: &ner_predictions "../data/training/predictions.parquet"
+  cuisine_baseline: &cuisine_baseline "../data/cuisine_normalized/cuisine_baseline.parquet"
+  cuisine_deduped: &cuisine_deduped "../data/cuisine_normalized/cuisine_deduped.parquet"
+  cuisine_map: &cuisine_map "../data/cuisine_normalized/cuisine_dedupe_map.jsonl"
   cuisine_vocab_column: &cuisine_vocab_column "cuisine_clean"
-  cuisine_unified: &cuisine_unified "./data/cuisine_encoded/cuisine_unified.parquet"
-  cuisine_id_to_token: &cuisine_id_to_token "./data/cuisine_encoded/cuisine_id_to_token.json"
-  cuisine_token_to_id: &cuisine_token_to_id "./data/cuisine_encoded/cuisine_token_to_id.json"
-  cuisine_predictions: &cuisine_predictions "./data/training/cuisine_predictions.parquet"
-  ingredient_model_dir: &ingredient_model_dir "./models/ingredient_ner_trf/model-best"
-  cuisine_classifier_model_dir: &cuisine_classifier_model_dir "./models/cuisine_classifier_trf/model-best"
-  encoded_dataset: &encoded_dataset "./data/combined_raw_datasets_with_cuisine_encoded.parquet"
+  cuisine_unified: &cuisine_unified "../data/cuisine_encoded/cuisine_unified.parquet"
+  cuisine_id_to_token: &cuisine_id_to_token "../data/cuisine_encoded/cuisine_id_to_token.json"
+  cuisine_token_to_id: &cuisine_token_to_id "../data/cuisine_encoded/cuisine_token_to_id.json"
+  cuisine_predictions: &cuisine_predictions "../data/training/cuisine_predictions.parquet"
+  ingredient_model_dir: &ingredient_model_dir "../models/ingredient_ner_trf/model-best"
+  cuisine_classifier_model_dir: &cuisine_classifier_model_dir "../models/cuisine_classifier_trf/model-best"
+  encoded_dataset: &encoded_dataset "../data/combined_raw_datasets_with_cuisine_encoded.parquet"
 
 pipeline:
   combine_raw:
@@ -94,7 +94,7 @@ pipeline:
 
   ingredient_normalization:
     data:
-      input_path: "./data/raw/wilmerarltstrmberg_data.csv"
+      input_path: "../data/raw/wilmerarltstrmberg_data.csv"
       ner_col: "NER"
       chunksize: 50000
     cleanup:
@@ -149,7 +149,7 @@ pipeline:
   ingredient_ner:
     training:
       data:
-        input_path: "./data/raw/wilmerarltstrmberg_data.csv"
+        input_path: "../data/raw/wilmerarltstrmberg_data.csv"
         ner_col: "NER_clean"
       output:
         cosine_map_path: *cosine_map
@@ -160,7 +160,7 @@ pipeline:
         enabled: true
         train_path: *normalized_baseline
         data_is_parquet: true
-        max_rows: null
+        max_rows: 500000
         text_col: null
         ner_list_col: "NER_clean"
         lexicon_json: null
@@ -179,17 +179,17 @@ pipeline:
         batch_size: 1024
         data_loader_workers: 0
         max_train_docs: null
-        out_dir: "./models/ingredient_ner_trf"
+        out_dir: "../models/ingredient_ner_trf"
         model_dir: *ingredient_model_dir
     inference:
       model:
         model_dir: *ingredient_model_dir
       data:
-        input_path: "./data/combined_raw_datasets.parquet"
+        input_path: "../data/combined_raw_datasets.parquet"
         data_is_parquet: true
       output:
-        out_base: "./data/inference_output"
-        combined_dataset: "./data/combined_raw_datasets_with_inference.parquet"
+        out_base: "../data/inference_output"
+        combined_dataset: "../data/combined_raw_datasets_with_inference.parquet"
       artifacts:
         cosine_map_path: *cosine_map
         ingredient_id_to_token: *ingredient_id_to_token
@@ -204,7 +204,7 @@ pipeline:
         head_n: null
 
   ingredient_encoding:
-    input_path: "./data/combined_raw_datasets_with_inference.parquet"
+    input_path: "../data/combined_raw_datasets_with_inference.parquet"
     output_path: *encoded_dataset
     inferred_column: "inferred_ingredients"
     encoded_column: "encoded_ingredients"
@@ -219,10 +219,10 @@ pipeline:
     cleanup:
       enabled: false
       paths:
-        - "./data/cuisine_normalized/*.parquet"
-        - "./data/cuisine_normalized/*.jsonl"
-        - "./data/cuisine_encoded/*.parquet"
-        - "./data/cuisine_encoded/*.json"
+        - "../data/cuisine_normalized/*.parquet"
+        - "../data/cuisine_normalized/*.jsonl"
+        - "../data/cuisine_encoded/*.parquet"
+        - "../data/cuisine_encoded/*.json"
     output:
       baseline_parquet: *cuisine_baseline
       dedup_parquet: *cuisine_deduped
@@ -296,19 +296,19 @@ pipeline:
         data_loader_workers: 0
         use_tok2vec_debug: false
         max_train_docs: null
-        out_dir: "./models/cuisine_classifier_trf"
+        out_dir: "../models/cuisine_classifier_trf"
         model_dir: *cuisine_classifier_model_dir
 
   analysis:
     baseline:
       input_path: *encoded_dataset
-      output_dir: "./reports/baseline"
+      output_dir: "../reports/baseline"
       min_support: 100
       tfidf:
         max_features: 40000
         ngram_range: [1, 2]
     graph:
       input_path: *encoded_dataset
-      output_dir: "./reports/graph"
+      output_dir: "../reports/graph"
       edge_min_support: 3
       edge_percentile: 0.0005
