@@ -9,6 +9,7 @@ import json
 import logging
 import os
 import glob
+import re
 from pathlib import Path
 from typing import Optional
 
@@ -29,6 +30,37 @@ from ..core import PipelineContext, StageResult
 from ..utils import stage_logger
 
 
+def clean_cuisine_name(text: str) -> str:
+    """
+    Normalize a single cuisine string.
+    1. Removes 'recipe' or 'recipes'.
+    2. Removes directional terms (North, South, etc.).
+    3. Standardizes whitespace and capitalization.
+    
+    Example: 
+      "South Indian Recipes" -> "Indian"
+      "Northern-Style Thai" -> "Style Thai" (Hyphens replaced by space)
+    """
+    if not text:
+        return ""
+    
+    # 1. Lowercase and replace hyphens with spaces (e.g. "south-indian")
+    s = str(text).lower().replace("-", " ").strip()
+    
+    # 2. Remove "recipe" or "recipes" (whole words)
+    s = re.sub(r"\brecipes?\b", " ", s)
+    
+    # 3. Remove directional terms
+    # Matches "north", "northern", "south", "southern", etc.
+    directions = r"\b(north|south|east|west|northern|southern|eastern|western)\b"
+    s = re.sub(directions, " ", s)
+    
+    # 4. Collapse multiple spaces and strip
+    s = " ".join(s.split())
+    
+    return s.title()
+
+
 def _filter_and_normalize_cuisine_mapping(mapping: dict[str, str]) -> dict[str, str]:
     """
     Post-process cuisine deduplication mapping to:
@@ -44,37 +76,20 @@ def _filter_and_normalize_cuisine_mapping(mapping: dict[str, str]) -> dict[str, 
     # Non-cuisine terms to exclude
     NON_CUISINES = {"friendly", "kid friendly"}
     
-    # Normalization rules: patterns to clean up
-    def normalize_cuisine(cuisine: str) -> str:
-        """Normalize cuisine name by removing common suffixes."""
-        cuisine_lower = cuisine.lower().strip()
-        
-        # Remove "recipe(s)" suffix
-        if cuisine_lower.endswith(" recipes"):
-            cuisine_lower = cuisine_lower[:-8]  # Remove " recipes"
-        elif cuisine_lower.endswith(" recipe"):
-            cuisine_lower = cuisine_lower[:-7]  # Remove " recipe"
-        
-        return cuisine_lower.strip()
-    
     filtered_mapping = {}
     for src, tgt in mapping.items():
-        src_lower = src.lower().strip()
-        tgt_lower = tgt.lower().strip()
+        src_clean = clean_cuisine_name(src)
+        tgt_clean = clean_cuisine_name(tgt)
         
-        # Skip non-cuisines
-        if src_lower in NON_CUISINES or tgt_lower in NON_CUISINES:
+        # Skip if either normalized term is in blocklist or empty
+        if not src_clean or not tgt_clean:
+            continue
+        if src_clean.lower() in NON_CUISINES or tgt_clean.lower() in NON_CUISINES:
             continue
         
-        # Normalize target (canonical form)
-        tgt_norm = normalize_cuisine(tgt)
-        
-        # Normalize source, but keep original if normalization doesn't change it
-        src_norm = normalize_cuisine(src)
-        
-        # Only add mapping if source and target are different (after normalization)
-        if src_norm != tgt_norm:
-            filtered_mapping[src_norm] = tgt_norm
+        # Only add mapping if source and target are different
+        if src_clean != tgt_clean:
+            filtered_mapping[src_clean] = tgt_clean
     
     return filtered_mapping
 
@@ -174,12 +189,14 @@ def split_cuisine_entries(cuisine_value: str) -> list[str]:
     - "American & Italian" -> ["American", "Italian"]
     - "American" -> ["American"]
     - "Goan recipes" -> ["Goan"] (removes "recipes" suffix)
+    - "South Indian" -> "Indian" (removes direction)
     """
     if pd.isna(cuisine_value) or not str(cuisine_value).strip():
         return []
     
     s = str(cuisine_value).strip()
-    
+    cuisines = []
+
     # Try parsing as list/JSON first
     if s.startswith("[") and s.endswith("]"):
         try:
@@ -219,18 +236,15 @@ def split_cuisine_entries(cuisine_value: str) -> list[str]:
                 # Single value
                 cuisines = [s] if s else []
     
-    # Clean up each cuisine: remove "recipes" suffix (case-insensitive)
+    # Clean up each cuisine using the strict normalization logic
     cleaned = []
     for cuisine in cuisines:
         if not cuisine:
             continue
-        # Remove "recipes" from the end (case-insensitive, with optional whitespace)
-        cuisine_clean = cuisine.strip()
-        # Remove trailing "recipes" or " recipe" (singular or plural)
-        for suffix in [" recipes", " recipe", "Recipes", "Recipe"]:
-            if cuisine_clean.lower().endswith(suffix.lower()):
-                cuisine_clean = cuisine_clean[:-len(suffix)].strip()
-                break
+        
+        # Apply strict cleaning (removes directions and "recipes")
+        cuisine_clean = clean_cuisine_name(cuisine)
+        
         if cuisine_clean:
             cleaned.append(cuisine_clean)
     
@@ -285,7 +299,6 @@ def prepare_cuisine_list_column(
         })
         
         # Convert to PyArrow table
-        import pyarrow as pa
         table = pa.Table.from_pandas(df_output, preserve_index=False)
         
         # Set schema (list of strings)
@@ -481,7 +494,7 @@ def run(
             logger.info("Step 6: Applying dedupe and encoding to combined dataset")
             logger.info("=" * 60)
 
-            from ingrnorm.dedupe_map import load_jsonl_map
+            from recipe_pipeline.ingrnorm.dedupe_map import load_jsonl_map
 
             dedupe_map = load_jsonl_map(dedupe_map_path) if dedupe_map_path.exists() else {}
             if cuisine_token_to_id.exists():
@@ -512,14 +525,14 @@ def run(
                     cuisine_lists = df_rg[cuisine_col].apply(normalize_cuisine_to_list)
                     cuisine_deduped = cuisine_lists.apply(
                         lambda lst: [
-                            dedupe_map.get(str(tok).lower().strip(), str(tok).lower().strip())
+                            dedupe_map.get(clean_cuisine_name(str(tok)), clean_cuisine_name(str(tok)))
                             for tok in lst
                             if str(tok).strip()
                         ]
                     )
                     df_rg[f"{cuisine_col}_deduped"] = cuisine_deduped
                     cuisine_encoded = cuisine_deduped.apply(
-                        lambda lst: [token_to_id.get(tok.lower().strip(), 0) for tok in lst]
+                        lambda lst: [token_to_id.get(tok.title(), 0) for tok in lst]
                     )
                     df_rg[f"{cuisine_col}_encoded"] = cuisine_encoded
                 else:
@@ -549,9 +562,6 @@ def run(
                 logger.info("[cleanup] Deleted temporary file: %s", prepared_parquet)
             except Exception as exc:
                 logger.warning("[cleanup] Failed to delete %s: %s", prepared_parquet, exc)
-
-        # Do NOT run general cleanup at the end; it deletes the outputs we just created!
-        # _cleanup_paths(cfg, logger, preserve_files=preserve_files)
 
         outputs = {
             "baseline_parquet": str(baseline_parquet),
