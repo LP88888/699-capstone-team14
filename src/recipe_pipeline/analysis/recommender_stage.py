@@ -9,9 +9,9 @@ import networkx as nx
 from pathlib import Path
 from collections import Counter, defaultdict
 
-from ...core import PipelineContext, StageResult
-from ...utils import stage_logger
-from .recommender import CuisineRecommender # Import the class above
+from ..core import PipelineContext, StageResult
+from ..utils import stage_logger
+from .recommender import CuisineRecommender 
 
 def run(context: PipelineContext, *, force: bool = False) -> StageResult:
     cfg = context.stage("analysis_recommender")
@@ -22,7 +22,7 @@ def run(context: PipelineContext, *, force: bool = False) -> StageResult:
     norm_cfg = context.stage("cuisine_normalization").get("output", {})
     
     pmi_path = Path(pmi_cfg.get("pmi_pairs", "reports/pmi/pairings_pmi_global.csv"))
-    data_path = Path(cfg.get("data", {}).get("input_path", "data/combined_ingredients_encoded_with_cuisine_encoded.parquet"))
+    data_path = Path(cfg.get("data", {}).get("input_path", "data/combined_raw_datasets_with_inference_with_cuisine_encoded.parquet"))
     
     out_dir = Path(cfg.get("output", {}).get("reports_dir", "reports/fusion"))
     out_dir.mkdir(parents=True, exist_ok=True)

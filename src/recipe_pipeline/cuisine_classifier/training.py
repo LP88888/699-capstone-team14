@@ -3,7 +3,7 @@ import random
 import warnings
 import time
 from pathlib import Path
-from typing import Iterable, List, Optional, Tuple
+from typing import Iterable, List, Optional, Sequence, Tuple
 
 import spacy
 from spacy.language import Language
@@ -144,25 +144,31 @@ class ShardedIterableDataset(IterableDataset if IterableDataset is not None else
             
             try:
                 db = DocBin().from_disk(shard_path)
-                docs = list(db.get_docs(self.vocab))
-                
+                cached_examples: List = []
+                for doc in db.get_docs(self.vocab):
+                    if self.task_type == "textcat":
+                        cached_examples.append((doc.text, dict(doc.cats)))
+                    else:
+                        ents = [(e.start_char, e.end_char, e.label_) for e in doc.ents]
+                        cached_examples.append((doc.text, ents))
+
                 if self.shuffle:
-                    local_rng.shuffle(docs)
+                    local_rng.shuffle(cached_examples)
                 
-                for doc in docs:
+                for payload in cached_examples:
                     if self.max_docs is not None and docs_yielded >= self.max_docs:
                         break
                     
-                    # Convert doc to Example based on task type
                     if self.task_type == "textcat":
+                        text, cats = payload
                         example = Example.from_dict(
-                            self.blank_nlp.make_doc(doc.text), 
-                            {"cats": doc.cats}
+                            self.blank_nlp.make_doc(text), 
+                            {"cats": cats}
                         )
                     else:  # NER
-                        ents = [(e.start_char, e.end_char, e.label_) for e in doc.ents]
+                        text, ents = payload
                         example = Example.from_dict(
-                            self.blank_nlp.make_doc(doc.text), 
+                            self.blank_nlp.make_doc(text), 
                             {"entities": ents}
                         )
                     
@@ -213,8 +219,11 @@ def build_nlp_transformer(all_labels: List[str]) -> spacy.language.Language:
         "set_extra_annotations": {
             "@annotation_setters": "spacy-transformers.null_annotation_setter.v1"
         },
-        "max_batch_items": 4096,
     }
+    max_batch_items = getattr(_TRAIN, "MAX_BATCH_ITEMS", None)
+    if max_batch_items is None:
+        max_batch_items = min(1024, 8 * max(1, int(_TRAIN.BATCH_SIZE)))
+    trf_cfg["max_batch_items"] = int(max_batch_items)
     nlp.add_pipe("transformer", config=trf_cfg)
     
     # Add textcat component for multi-class classification (single label per example)
@@ -321,31 +330,30 @@ def compounding_batch(epoch: int, total_epochs: int, start: int = 128, end: int 
     return max(1, int(round(start * ((end / start) ** r))))
 
 
-def count_examples_in_docbins(nlp: Language, dir_path: Path) -> int:
-    total = 0
+def gather_train_metadata(
+    dir_path: Path,
+    *,
+    warm_limit: int = 256,
+) -> Tuple[List[str], List[Tuple[str, dict]], int]:
+    """Scan training docbins once to collect labels, warmup samples, and counts."""
     shard_paths = sorted(p for p in dir_path.glob("*.spacy"))
-    logger.debug(f"Counting examples in {dir_path}, found {len(shard_paths)} shard(s)")
-    for sp_i, sp_path in enumerate(shard_paths, start=1):
-        db = DocBin().from_disk(sp_path)
-        n_docs = sum(1 for _ in db.get_docs(nlp.vocab))
-        total += n_docs
-        logger.debug(f"  shard #{sp_i}: {sp_path.name} has {n_docs} docs")
-    logger.debug(f"Total train examples in {dir_path}: {total}")
-    return total
+    if not shard_paths:
+        raise RuntimeError(f"No .spacy shards found in {dir_path}")
 
-
-def get_all_labels_from_docbins(dir_path: Path) -> List[str]:
-    """Extract all unique cuisine labels from docbins."""
-    all_labels = set()
-    shard_paths = sorted(p for p in dir_path.glob("*.spacy"))
     blank = spacy.blank("en")
-    
+    labels = set()
+    warm_samples: List[Tuple[str, dict]] = []
+    total_docs = 0
+
     for sp_path in shard_paths:
         db = DocBin().from_disk(sp_path)
-        for d in db.get_docs(blank.vocab):
-            all_labels.update(d.cats.keys())
-    
-    return sorted(list(all_labels))
+        for doc in db.get_docs(blank.vocab):
+            labels.update(doc.cats.keys())
+            if len(warm_samples) < warm_limit:
+                warm_samples.append((doc.text, dict(doc.cats)))
+            total_docs += 1
+
+    return sorted(labels), warm_samples, total_docs
 
 
 def train_classifier_from_docbins(
@@ -364,10 +372,19 @@ def train_classifier_from_docbins(
     logger.debug(f"valid_dir={valid_dir}")
     logger.debug(f"out_model_dir={out_model_dir}")
 
-    # Get all labels from training data
-    logger.info("Extracting all cuisine labels from training data...")
-    all_labels = get_all_labels_from_docbins(train_dir)
-    logger.info(f"Found {len(all_labels)} unique cuisine labels: {all_labels[:10]}{'...' if len(all_labels) > 10 else ''}")
+    warm_cap = min(256, max(16, 100))
+
+    logger.info("Scanning training docbins for labels and warm-up samples (single pass)...")
+    t_scan = time.time()
+    all_labels, warm_samples, total_train_docs = gather_train_metadata(train_dir, warm_limit=warm_cap)
+    logger.info(
+        "Found %s canonical cuisine labels and %s training docs (scan %.1fs)",
+        len(all_labels),
+        f"{total_train_docs:,}",
+        time.time() - t_scan,
+    )
+    if len(all_labels) > 10:
+        logger.debug("Label sample: %s", all_labels[:10])
 
     # Configure device FIRST (before creating pipeline)
     configure_device()
@@ -412,20 +429,12 @@ def train_classifier_from_docbins(
     if hasattr(_TRAIN, 'MAX_TRAIN_DOCS') and _TRAIN.MAX_TRAIN_DOCS is not None:
         logger.info(f"Debug mode: max_train_docs={_TRAIN.MAX_TRAIN_DOCS}")
 
-    # Warm init
-    logger.debug("Collecting warm-up examples...")
-    t0 = time.time()
+    # Warm init using cached samples
+    logger.debug("Building warm-up examples from cached samples...")
     warm: List[Example] = []
-    for eg_i, eg in enumerate(
-        iter_examples_from_docbins(nlp, train_dir, shuffle=True),
-        start=1,
-    ):
-        warm.append(eg)
-        if eg_i % 50 == 0:
-            logger.debug(f"warm example #{eg_i}")
-        if eg_i >= min(256, max(16, 100)):
-            break
-    logger.debug(f"Collected {len(warm)} warm examples in {time.time() - t0:.1f}s")
+    for text, cats in warm_samples:
+        warm.append(Example.from_dict(nlp.make_doc(text), {"cats": cats}))
+    logger.debug("Prepared %s warm examples", len(warm))
 
     logger.debug("Calling nlp.initialize(...)")
     t0 = time.time()
@@ -444,9 +453,6 @@ def train_classifier_from_docbins(
 
     best_f1 = -1.0
     bad_epochs = 0
-
-    logger.debug("Sanity-checking training set size...")
-    _ = count_examples_in_docbins(nlp, train_dir)
 
     # Determine whether to use multi-worker DataLoader
     num_workers = getattr(_TRAIN, 'DATA_LOADER_WORKERS', 0)
@@ -482,21 +488,38 @@ def train_classifier_from_docbins(
             yield buf
     
     # Create reusable dataset (used for both single and multi-threaded loading)
+    max_docs_limit = getattr(_TRAIN, 'MAX_TRAIN_DOCS', None)
+    effective_train_docs = min(total_train_docs, max_docs_limit) if max_docs_limit else total_train_docs
     train_dataset = ShardedIterableDataset(
         vocab=nlp.vocab,
         dir_path=train_dir,
         shuffle=True,
-        max_docs=getattr(_TRAIN, 'MAX_TRAIN_DOCS', None),
+        max_docs=max_docs_limit,
         seed=_TRAIN.RANDOM_SEED,
         task_type="textcat"
     )
-    logger.info(f"Using ShardedIterableDataset with {len(train_dataset.all_shard_paths)} shards")
+    limit_msg = f", limited to {max_docs_limit:,} docs" if max_docs_limit else ""
+    logger.info(
+        "Using ShardedIterableDataset with %s shards (%s docs)%s",
+        len(train_dataset.all_shard_paths),
+        f"{total_train_docs:,}",
+        limit_msg,
+    )
+    logger.info(
+        "Effective training docs after cap: %s (raw=%s); labels=%s; batch_size=%s",
+        f"{effective_train_docs:,}",
+        f"{total_train_docs:,}",
+        len(all_labels),
+        getattr(_TRAIN, "BATCH_SIZE", "unset"),
+    )
+    
+    configured_batch = max(1, int(getattr(_TRAIN, "BATCH_SIZE", 64)))
     
     for epoch in range(_TRAIN.N_EPOCHS):
         logger.info(f"===== Epoch {epoch + 1}/{_TRAIN.N_EPOCHS} =====")
         losses: dict = {}
-        micro_bs = compounding_batch(epoch, _TRAIN.N_EPOCHS, start=128, end=256)
-        logger.debug(f"micro-batch size (μbs) = {micro_bs}")
+        micro_bs = configured_batch
+        logger.info("Using micro-batch size (μbs) = %s", micro_bs)
         updates = 0
         examples_seen = 0
 
@@ -524,35 +547,24 @@ def train_classifier_from_docbins(
             data_source = batch_iter(train_dataset, micro_bs)
             
         for batch in data_source:
-                nlp.update(batch, sgd=optimizer, drop=_TRAIN.DROPOUT, losses=losses)
-                updates += 1
-                examples_seen += len(batch)
+            nlp.update(batch, sgd=optimizer, drop=_TRAIN.DROPOUT, losses=losses)
+            updates += 1
+            examples_seen += len(batch)
 
-                if updates % 20 == 0:
-                    elapsed = time.time() - t_epoch
-                    logger.info(f"  Epoch {epoch+1} | Updates: {updates} | Examples: {examples_seen} | "
-                          f"Loss: {losses.get('textcat', 0):.2f} | Time: {elapsed:.1f}s")
+            if updates % 20 == 0:
+                elapsed = time.time() - t_epoch
+                logger.info(
+                    f"  Epoch {epoch+1} | Updates: {updates} | Examples: {examples_seen} | "
+                    f"Loss: {losses.get('textcat', 0):.2f} | Time: {elapsed:.1f}s"
+                )
 
-                if (torch is not None) and torch.cuda.is_available() \
-                        and updates % _TRAIN.CLEAR_CACHE_EVERY == 0:
-                    logger.debug("emptying CUDA cache...")
-                    torch.cuda.empty_cache()
-        else:
-            # Single-threaded: Direct iteration without DataLoader overhead
-            for batch in batch_iter(iter_examples_from_docbins(nlp, train_dir, shuffle=True), micro_bs):
-                nlp.update(batch, sgd=optimizer, drop=_TRAIN.DROPOUT, losses=losses)
-                updates += 1
-                examples_seen += len(batch)
-
-                if updates % 50 == 0:
-                    elapsed = time.time() - t_epoch
-                    logger.info(f"  Epoch {epoch+1} | Updates: {updates} | Examples: {examples_seen} | "
-                          f"Loss: {losses.get('textcat', 0):.2f} | Time: {elapsed:.1f}s")
-
-                if (torch is not None) and torch.cuda.is_available() \
-                        and updates % _TRAIN.CLEAR_CACHE_EVERY == 0:
-                    logger.debug("emptying CUDA cache...")
-                    torch.cuda.empty_cache()
+            if (
+                torch is not None
+                and torch.cuda.is_available()
+                and updates % _TRAIN.CLEAR_CACHE_EVERY == 0
+            ):
+                logger.debug("emptying CUDA cache...")
+                torch.cuda.empty_cache()
 
         logger.debug(f"Finished epoch {epoch+1} updates={updates} "
               f"in {time.time() - t_epoch:.1f}s")
@@ -593,9 +605,7 @@ __all__ = [
     "iter_examples_from_docbins",
     "sample_validation",
     "compounding_batch",
-    "get_all_labels_from_docbins",
     "train_classifier_from_docbins",
     "ShardedIterableDataset",
     "sharded_worker_init_fn",
 ]
-

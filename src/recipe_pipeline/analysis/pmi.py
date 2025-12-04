@@ -12,8 +12,8 @@ from itertools import combinations
 from collections import Counter
 from pathlib import Path
 
-from ...core import PipelineContext, StageResult
-from ...utils import stage_logger
+from ..core import PipelineContext, StageResult
+from ..utils import stage_logger
 
 def calculate_pmi(df, ingredients_col, min_count=5, min_pmi=1.0):
     """Calculate PMI for all ingredient pairs."""

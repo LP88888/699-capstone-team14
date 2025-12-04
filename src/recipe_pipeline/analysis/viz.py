@@ -9,8 +9,8 @@ import plotly.express as px
 import plotly.graph_objects as go
 from sklearn.metrics import confusion_matrix
 from pathlib import Path
-from ...core import PipelineContext, StageResult
-from ...utils import stage_logger
+from ..core import PipelineContext, StageResult
+from ..utils import stage_logger
 
 def plot_ingredient_network(pmi_path: Path, centrality_path: Path, out_path: Path, title="Ingredient PMI Network"):
     """

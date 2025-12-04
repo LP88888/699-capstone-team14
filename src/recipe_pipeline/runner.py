@@ -17,9 +17,11 @@ PIPELINE_ORDER: List[StageName] = [
     "ingredient_ner_infer",
     "ingredient_encoding",
     "cuisine_normalization",
-    "cuisine_classifier",
+    "ingredients_summary",
+    # "cuisine_classifier",
     "analysis_baseline",
     "analysis_graph",
+    "analysis_viz",
 ]
 
 
@@ -88,4 +90,3 @@ class PipelineRunner:
 
 
 __all__ = ["PipelineRunner", "PIPELINE_ORDER", "StageName"]
-

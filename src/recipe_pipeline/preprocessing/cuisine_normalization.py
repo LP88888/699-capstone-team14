@@ -149,8 +149,12 @@ def _cleanup_paths(cfg: dict, logger: logging.Logger, preserve_files: list[str] 
                 logger.debug(f"[cleanup] Preserving {f}")
                 continue
             
-            # Only delete parquet files, keep JSON/JSONL files
-            if f.endswith('.parquet'):
+            # Skip preserving parent map if present
+            if "cuisine_parent_map" in f:
+                logger.debug(f"[cleanup] Preserving parent map: {f}")
+                continue
+            # Delete parquet and json/jsonl artifacts
+            if f.endswith('.parquet') or f.endswith('.json') or f.endswith('.jsonl'):
                 try:
                     os.remove(f)
                     logger.info(f"[cleanup] Deleted {f}")
