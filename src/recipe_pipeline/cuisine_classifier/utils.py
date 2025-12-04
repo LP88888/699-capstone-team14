@@ -172,10 +172,16 @@ def parse_listlike(v: Any) -> List[str]:
 
 def normalize_cuisine_label(cuisine: Any) -> str:
     """Normalize cuisine label to a clean string."""
-    if pd.isna(cuisine):
+    if cuisine is None or (isinstance(cuisine, float) and pd.isna(cuisine)):
         return ""
-    
-    s = str(cuisine).strip()
+
+    s = (
+        str(cuisine)
+        .replace("\xa0", " ")
+        .replace("\u200b", "")
+        .replace("\ufeff", "")
+        .strip()
+    )
     if not s or s.lower() in ["nan", "none", "", "[]"]:
         return ""
     
@@ -190,4 +196,3 @@ def normalize_cuisine_label(cuisine: Any) -> str:
             pass
     
     return s
-

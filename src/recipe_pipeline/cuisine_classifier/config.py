@@ -57,12 +57,10 @@ def _build_data_ns(cfg: Dict[str, Any]) -> SimpleNamespace:
     # 1) training file path
     # Prefer cuisine_classifier.train_path, fallback to data.input_path, then default
     train_path_str = classifier_cfg.get("train_path")
-    print(train_path_str)
     if not train_path_str:
         train_path_str = data_cfg.get("input_path")
     if not train_path_str:
-        print(data_cfg)
-        train_path_str = "./data/combined_raw_datasets_with_cuisine_encoded.parquet"
+        train_path_str = "./data/combined_raw_datasets_with_inference_with_cuisine_encoded.parquet"
     train_path = Path(train_path_str)
 
     # 2) parquet vs csv
@@ -76,8 +74,8 @@ def _build_data_ns(cfg: Dict[str, Any]) -> SimpleNamespace:
     max_rows = int(max_rows_raw) if max_rows_raw is not None else None
 
     # 4) Column names
-    text_col = classifier_cfg.get("text_col") or data_cfg.get("text_col") or "ingredients"
-    cuisine_col = classifier_cfg.get("cuisine_col") or data_cfg.get("cuisine_col") or "cuisine"
+    text_col = classifier_cfg.get("text_col") or data_cfg.get("text_col") or "inferred_ingredients"
+    cuisine_col = classifier_cfg.get("cuisine_col") or data_cfg.get("cuisine_col") or "cuisine_deduped"
 
     return SimpleNamespace(
         DATA_IS_PARQUET=data_is_parquet,
@@ -104,7 +102,7 @@ def _build_train_ns(cfg: Dict[str, Any]) -> SimpleNamespace:
         RANDOM_SEED=int(classifier_cfg.get("random_seed", 42)),
         VALID_FRACTION=float(classifier_cfg.get("valid_fraction", 0.2)),
         SHARD_SIZE=int(classifier_cfg.get("shard_size", 2000)),
-        BATCH_SIZE=int(classifier_cfg.get("batch_size", 256)),
+        BATCH_SIZE=int(classifier_cfg.get("batch_size", 64)),
         TRANSFORMER_MODEL=str(classifier_cfg.get("transformer_model", "distilbert-base-uncased")),
         WINDOW=int(classifier_cfg.get("window", 64)),
         STRIDE=int(classifier_cfg.get("stride", 48)),
@@ -118,6 +116,10 @@ def _build_train_ns(cfg: Dict[str, Any]) -> SimpleNamespace:
         CLEAR_CACHE_EVERY=int(classifier_cfg.get("clear_cache_every", 200)),
         DATA_LOADER_WORKERS=int(classifier_cfg.get("data_loader_workers", 0)),
         USE_TOK2VEC_DEBUG=use_tok2vec_debug,
+        MIN_LABEL_FREQ=int(classifier_cfg.get("min_label_freq", 1)),
+        ALLOWED_LABELS_PATH=classifier_cfg.get("allowed_labels_path"),
+        PARENT_MAP_PATH=classifier_cfg.get("parent_map_path"),
+        MAX_BATCH_ITEMS=int(classifier_cfg.get("max_batch_items", 1024)),
         MAX_TRAIN_DOCS=int(classifier_cfg.get("max_train_docs")) if classifier_cfg.get("max_train_docs") is not None else None,
     )
 
@@ -182,4 +184,3 @@ def print_configs() -> None:
     pprint(vars(TRAIN))
     print("\nOUT:")
     pprint(vars(OUT))
-

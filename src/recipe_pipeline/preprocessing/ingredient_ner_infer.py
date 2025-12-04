@@ -2,15 +2,80 @@
 
 from __future__ import annotations
 
+import logging
 from pathlib import Path
 from typing import Optional
 
-from recipe_pipeline.ingredient_ner.config import load_inference_configs_from_dict, DATA, OUT
+import pandas as pd
+
+from recipe_pipeline.ingredient_ner.config import DATA, OUT, load_inference_configs_from_dict
 from recipe_pipeline.ingredient_ner.inference import run_full_inference_from_config
 from recipe_pipeline.ingredient_ner.utils import configure_device
 
 from ..core import PipelineContext, StageResult
 from ..utils import stage_logger
+
+
+INFERRED_COL = "inferred_ingredients"
+ENCODED_COL = "encoded_ingredients"
+
+
+def _load_full_dataset(path: Path, *, logger: logging.Logger) -> pd.DataFrame:
+    if path.suffix.lower() == ".parquet":
+        logger.debug("Reading parquet dataset: %s", path)
+        return pd.read_parquet(path)
+    logger.debug("Reading CSV dataset: %s", path)
+    return pd.read_csv(path)
+
+
+def _write_combined_dataset(
+    source_path: Path,
+    combined_path: Path,
+    df_wide: pd.DataFrame,
+    *,
+    logger: logging.Logger,
+) -> str:
+    if "NER_clean" not in df_wide.columns:
+        raise KeyError("NER_clean column missing from inference output; cannot map results back to dataset")
+
+    logger.info("Loading source dataset to attach inference columns")
+    df_source = _load_full_dataset(source_path, logger=logger)
+    source_rows = len(df_source)
+    infer_rows = len(df_wide)
+
+    if source_rows != infer_rows:
+        logger.warning(
+            "Row count mismatch between source (%s) and inference results (%s). Using min rows for alignment.",
+            source_rows,
+            infer_rows,
+        )
+
+    rows_to_assign = min(source_rows, infer_rows)
+    if rows_to_assign == 0:
+        raise ValueError("No rows available to merge inference outputs into dataset")
+
+    inferred_lists = df_wide["NER_clean"].tolist()
+    encoded_lists = df_wide["Ingredients"].tolist() if "Ingredients" in df_wide.columns else None
+
+    df_source = df_source.copy()
+    df_source[INFERRED_COL] = None
+    df_source[ENCODED_COL] = None
+    df_source.loc[: rows_to_assign - 1, INFERRED_COL] = inferred_lists[:rows_to_assign]
+    if encoded_lists is not None:
+        df_source.loc[: rows_to_assign - 1, ENCODED_COL] = encoded_lists[:rows_to_assign]
+
+    combined_path.parent.mkdir(parents=True, exist_ok=True)
+    if combined_path.suffix.lower() == ".parquet":
+        df_source.to_parquet(combined_path, index=False, compression="zstd")
+    else:
+        df_source.to_csv(combined_path, index=False)
+
+    logger.info(
+        "Saved combined dataset with inference columns to %s (%s rows mapped)",
+        combined_path,
+        rows_to_assign,
+    )
+    return str(combined_path)
 
 
 def run(
@@ -33,7 +98,10 @@ def run(
     if not text_col:
         raise ValueError("inference.text_col must be provided in the config or via run() override.")
 
-    out_base = Path(out_base or inference_cfg.get("output", {}).get("out_base") or OUT.PRED_OUT)
+    outputs_cfg = inference_cfg.get("output", {})
+    out_base = Path(out_base or outputs_cfg.get("out_base") or OUT.PRED_OUT)
+    combined_dataset_path = outputs_cfg.get("combined_dataset")
+    combined_dataset = Path(combined_dataset_path) if combined_dataset_path else None
 
     if data_path:
         input_path = Path(data_path)
@@ -97,6 +165,20 @@ def run(
         logger.info("Wide output: %s", wide_path)
         logger.info("Tall output: %s", tall_path)
 
+        combined_written: Optional[str] = None
+        if combined_dataset:
+            if sampling_count > 0:
+                logger.warning(
+                    "Skipping combined dataset write because sampling options were used (sample_n/sample_frac/head_n)."
+                )
+            else:
+                combined_written = _write_combined_dataset(
+                    input_path,
+                    combined_dataset,
+                    df_wide,
+                    logger=logger,
+                )
+
         return StageResult(
             name="ingredient_ner_infer",
             status="success",
@@ -105,9 +187,9 @@ def run(
                 "tall_path": str(tall_path),
                 "rows": len(df_wide),
                 "entities": len(df_tall),
+                "combined_dataset": combined_written,
             },
         )
     except Exception as exc:  # pragma: no cover
         logger.exception("Inference failed: %s", exc)
         return StageResult(name="ingredient_ner_infer", status="failed", details=str(exc))
-

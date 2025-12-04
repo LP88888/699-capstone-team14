@@ -22,27 +22,17 @@
 ```
 
 
-## Setup
+## Quickstart
 
-1. **Create a virtual environment:**
-	```sh
-	python -m venv venv
-	```
-
-2. **Activate the virtual environment:**
-	- **Windows:**
-	  ```sh
-	  venv\Scripts\activate
-	  ```
-	- **Mac/Linux:**
-	  ```sh
-	  source venv/bin/activate
-	  ```
-
-3. **Install dependencies:**
-	```sh
-	pip install -r requirements.txt
-	```
+1) Create/activate a virtualenv (or your preferred env).
+2) Install the project in editable mode:
+   ```sh
+   pip install -e .
+   ```
+3) Run the pipeline:
+   ```sh
+   python -m recipe_pipeline
+   ```
 
 
 ## Environment Variables (.env)

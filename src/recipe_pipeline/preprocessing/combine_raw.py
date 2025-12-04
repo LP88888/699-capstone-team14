@@ -190,8 +190,8 @@ def run(
     logger = stage_logger(context, "combine_raw", force=force)
     cfg = context.stage("combine_raw")
 
-    data_dir = Path(cfg.get("data_dir", "./data/raw"))
-    output_path = Path(cfg.get("output_path", "./data/combined_raw_datasets.parquet"))
+    data_dir = Path(str(cfg.get("data_dir", "/data/raw")))
+    output_path = Path(str(cfg.get("output_path", "/data/combined_raw_datasets.parquet")))
     cuisine_default = cfg.get("cuisine_default", "unknown")
     excluded = set(cfg.get("excluded_files", []))
     cuisine_vocab_path = cfg.get("cuisine_vocab_path")
