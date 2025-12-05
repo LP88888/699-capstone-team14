@@ -8,6 +8,33 @@ import pyarrow as pa
 import pyarrow.parquet as pq
 
 
+_DROP_TOKENS = {
+    # Prep words / measurements that add noise
+    "chopped",
+    "finely",
+    "tablespoon",
+    "tablespoons",
+    "teaspoon",
+    "teaspoons",
+    "tbsp",
+    "tsp",
+    "spoon",
+    "spoons",
+    "to",
+    "cut",
+    "pinch",
+    "ounce",
+    "ounces",
+    "pound",
+    "pounds",
+    "toasted",
+    "whole",
+    "all",
+    "sauce",
+}
+_DROP_SUBSTRINGS = {"spoon"}
+
+
 def _dedupe_preserve_order(tokens):
     seen = set()
     deduped = []
@@ -62,6 +89,22 @@ def apply_map_to_parquet_streaming(
     if not isinstance(mapping, dict):
         mapping = load_jsonl_map(mapping)
 
+    def _normalize_token(tok):
+        raw = canonicalizer(str(tok), mapping) if canonicalizer else str(tok)
+        mapped = mapping.get(
+            raw,
+            _collapse_duplicate_words(raw) if collapse_duplicate_words else raw,
+        )
+        mapped = str(mapped).strip()
+        lower = mapped.lower()
+        if not mapped:
+            return None
+        if lower in _DROP_TOKENS:
+            return None
+        if any(substr in lower for substr in _DROP_SUBSTRINGS):
+            return None
+        return mapped
+
     pf = pq.ParquetFile(str(in_path))
     writer = None
     out_path = Path(out_path)
@@ -70,39 +113,21 @@ def apply_map_to_parquet_streaming(
     for rg in range(pf.num_row_groups):
         df = pf.read_row_group(rg).to_pandas()
         if list_col in df.columns:
-            # Handle numpy arrays and other list-like types
-            df[list_col] = [
-                (
-                    _dedupe_preserve_order(
-                        [
-                            mapping.get(
-                                canonicalizer(str(tok), mapping) if canonicalizer else str(tok),
-                                _collapse_duplicate_words(
-                                    canonicalizer(str(tok), mapping) if canonicalizer else str(tok)
-                                )
-                                if collapse_duplicate_words
-                                else (canonicalizer(str(tok), mapping) if canonicalizer else str(tok)),
-                            )
-                            for tok in (lst if isinstance(lst, (list, tuple)) else list(lst))
-                        ]
-                    )
-                    if dedupe_tokens
-                    else [
-                        mapping.get(
-                            canonicalizer(str(tok), mapping) if canonicalizer else str(tok),
-                            _collapse_duplicate_words(
-                                canonicalizer(str(tok), mapping) if canonicalizer else str(tok)
-                            )
-                            if collapse_duplicate_words
-                            else (canonicalizer(str(tok), mapping) if canonicalizer else str(tok)),
-                        )
-                        for tok in (lst if isinstance(lst, (list, tuple)) else list(lst))
-                    ]
-                )
-                if isinstance(lst, (list, tuple, np.ndarray)) and len(lst) > 0
-                else (lst if isinstance(lst, (list, tuple)) else [])
-                for lst in df[list_col]
-            ]
+            cleaned_col = []
+            for lst in df[list_col]:
+                if not (isinstance(lst, (list, tuple, np.ndarray)) and len(lst) > 0):
+                    cleaned_col.append([] if not isinstance(lst, (list, tuple)) else list(lst))
+                    continue
+                tokens_in = list(lst) if not isinstance(lst, np.ndarray) else lst.tolist()
+                mapped_tokens = []
+                for tok in tokens_in:
+                    mapped = _normalize_token(tok)
+                    if mapped:
+                        mapped_tokens.append(mapped)
+                if dedupe_tokens:
+                    mapped_tokens = _dedupe_preserve_order(mapped_tokens)
+                cleaned_col.append(mapped_tokens)
+            df[list_col] = cleaned_col
         table = pa.Table.from_pandas(df, preserve_index=False).replace_schema_metadata(None)
         if writer is None:
             writer = pq.ParquetWriter(str(out_path), table.schema, compression=compression)
