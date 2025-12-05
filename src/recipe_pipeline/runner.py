@@ -11,10 +11,11 @@ from .registry import STAGES, StageFn
 StageName = str
 
 PIPELINE_ORDER: List[StageName] = [
-    "ingredient_normalization",
-    "ingredient_ner_train",
-    "combine_raw",
+    # "ingredient_normalization",
+    # "ingredient_ner_train",
+    # "combine_raw",
     "ingredient_ner_infer",
+    "ingredient_post_map",
     "ingredient_encoding",
     "cuisine_normalization",
     "ingredients_summary",

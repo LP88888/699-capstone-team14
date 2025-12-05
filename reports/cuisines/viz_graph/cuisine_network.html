@@ -1,0 +1,163 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+            <script src="lib/bindings/utils.js"></script>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/dist/vis-network.min.css" integrity="sha512-WgxfT5LWjfszlPHXRmBWHkV2eceiWTOBvrKCNbdgDYTHrT2AeLCGbF4sZlZw3UMN3WtL0tGUoIAKsu8mllg/XA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/vis-network/9.1.2/dist/vis-network.min.js" integrity="sha512-LnvoEWDFrqGHlHmDD2101OrLcbsfkrzoSpvtSQtxK3RMnRV0eOkhhBN2dXHKRrUU8p2DGRTk35n4O8nWSVe1mQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            
+        
+<center>
+<h1></h1>
+</center>
+
+<!-- <link rel="stylesheet" href="../node_modules/vis/dist/vis.min.css" type="text/css" />
+<script type="text/javascript" src="../node_modules/vis/dist/vis.js"> </script>-->
+        <link
+          href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+          crossorigin="anonymous"
+        />
+        <script
+          src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+          crossorigin="anonymous"
+        ></script>
+
+
+        <center>
+          <h1></h1>
+        </center>
+        <style type="text/css">
+
+             #mynetwork {
+                 width: 100%;
+                 height: 800px;
+                 background-color: #ffffff;
+                 border: 1px solid lightgray;
+                 position: relative;
+                 float: left;
+             }
+
+             
+
+             
+
+             
+        </style>
+    </head>
+
+
+    <body>
+        <div class="card" style="width: 100%">
+            
+            
+            <div id="mynetwork" class="card-body"></div>
+        </div>
+
+        
+        
+
+        <script type="text/javascript">
+
+              // initialize global variables.
+              var edges;
+              var nodes;
+              var allNodes;
+              var allEdges;
+              var nodeColors;
+              var originalNodes;
+              var network;
+              var container;
+              var options, data;
+              var filter = {
+                  item : '',
+                  property : '',
+                  value : []
+              };
+
+              
+
+              
+
+              // This method is responsible for drawing the graph, returns the drawn network
+              function drawGraph() {
+                  var container = document.getElementById('mynetwork');
+
+                  
+
+                  // parsing and collecting nodes and edges from the python
+                  nodes = new vis.DataSet([{"color": "#97c2fc", "font": {"color": "#222222"}, "id": "African", "label": "African", "shape": "dot", "title": "African: 32 recipes", "value": 3.4965075614664802}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "American", "label": "American", "shape": "dot", "title": "American: 1 recipes", "value": 0.6931471805599453}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "Arabic", "label": "Arabic", "shape": "dot", "title": "Arabic: 1 recipes", "value": 0.6931471805599453}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "Asian", "label": "Asian", "shape": "dot", "title": "Asian: 741 recipes", "value": 6.60934924316738}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "Bengali", "label": "Bengali", "shape": "dot", "title": "Bengali: 1 recipes", "value": 0.6931471805599453}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "British", "label": "British", "shape": "dot", "title": "British: 1 recipes", "value": 0.6931471805599453}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "Cajun", "label": "Cajun", "shape": "dot", "title": "Cajun: 1 recipes", "value": 0.6931471805599453}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "Caribbean", "label": "Caribbean", "shape": "dot", "title": "Caribbean: 1 recipes", "value": 0.6931471805599453}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "Chinese", "label": "Chinese", "shape": "dot", "title": "Chinese: 1 recipes", "value": 0.6931471805599453}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "Continental", "label": "Continental", "shape": "dot", "title": "Continental: 1630 recipes", "value": 7.396948602621014}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "Creole", "label": "Creole", "shape": "dot", "title": "Creole: 1 recipes", "value": 0.6931471805599453}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "Cuban", "label": "Cuban", "shape": "dot", "title": "Cuban: 1 recipes", "value": 0.6931471805599453}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "French", "label": "French", "shape": "dot", "title": "French: 1 recipes", "value": 0.6931471805599453}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "Fusion", "label": "Fusion", "shape": "dot", "title": "Fusion: 1 recipes", "value": 0.6931471805599453}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "Greek", "label": "Greek", "shape": "dot", "title": "Greek: 1 recipes", "value": 0.6931471805599453}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "Gujarati", "label": "Gujarati", "shape": "dot", "title": "Gujarati: 1 recipes", "value": 0.6931471805599453}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "Indian", "label": "Indian", "shape": "dot", "title": "Indian: 641 recipes", "value": 6.464588303689961}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "Irish", "label": "Irish", "shape": "dot", "title": "Irish: 1 recipes", "value": 0.6931471805599453}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "Italian", "label": "Italian", "shape": "dot", "title": "Italian: 1 recipes", "value": 0.6931471805599453}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "Karnataka", "label": "Karnataka", "shape": "dot", "title": "Karnataka: 1 recipes", "value": 0.6931471805599453}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "Kerala", "label": "Kerala", "shape": "dot", "title": "Kerala: 1 recipes", "value": 0.6931471805599453}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "Maharashtrian", "label": "Maharashtrian", "shape": "dot", "title": "Maharashtrian: 1 recipes", "value": 0.6931471805599453}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "Mexican", "label": "Mexican", "shape": "dot", "title": "Mexican: 1 recipes", "value": 0.6931471805599453}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "Middle Eastern", "label": "Middle Eastern", "shape": "dot", "title": "Middle Eastern: 93 recipes", "value": 4.543294782270004}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "Pakistan", "label": "Pakistan", "shape": "dot", "title": "Pakistan: 1 recipes", "value": 0.6931471805599453}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "Spanish", "label": "Spanish", "shape": "dot", "title": "Spanish: 1 recipes", "value": 0.6931471805599453}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "Tamil Nadu", "label": "Tamil Nadu", "shape": "dot", "title": "Tamil Nadu: 1 recipes", "value": 0.6931471805599453}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "Thai", "label": "Thai", "shape": "dot", "title": "Thai: 1 recipes", "value": 0.6931471805599453}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "[American]", "label": "[American]", "shape": "dot", "title": "[American]: 1 recipes", "value": 0.6931471805599453}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "[Asian]", "label": "[Asian]", "shape": "dot", "title": "[Asian]: 1 recipes", "value": 0.6931471805599453}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "[Barbecue]", "label": "[Barbecue]", "shape": "dot", "title": "[Barbecue]: 1 recipes", "value": 0.6931471805599453}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "[Cajun \u0026 Creole]", "label": "[Cajun \u0026 Creole]", "shape": "dot", "title": "[Cajun \u0026 Creole]: 1 recipes", "value": 0.6931471805599453}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "[Chinese, Asian]", "label": "[Chinese, Asian]", "shape": "dot", "title": "[Chinese, Asian]: 1 recipes", "value": 0.6931471805599453}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "[Cuban]", "label": "[Cuban]", "shape": "dot", "title": "[Cuban]: 1 recipes", "value": 0.6931471805599453}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "[French]", "label": "[French]", "shape": "dot", "title": "[French]: 1 recipes", "value": 0.6931471805599453}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "[German]", "label": "[German]", "shape": "dot", "title": "[German]: 1 recipes", "value": 0.6931471805599453}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "[Greek]", "label": "[Greek]", "shape": "dot", "title": "[Greek]: 1 recipes", "value": 0.6931471805599453}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "[Hungarian]", "label": "[Hungarian]", "shape": "dot", "title": "[Hungarian]: 1 recipes", "value": 0.6931471805599453}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "[Indian]", "label": "[Indian]", "shape": "dot", "title": "[Indian]: 1 recipes", "value": 0.6931471805599453}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "[Irish]", "label": "[Irish]", "shape": "dot", "title": "[Irish]: 1 recipes", "value": 0.6931471805599453}, {"color": "#97c2fc", "font": {"color": "#222222"}, "id": "[Italian]", "label": "[Italian]", "shape": "dot", "title": "[Italian]: 1 recipes", "value": 0.6931471805599453}]);
+                  edges = new vis.DataSet([{"from": "American", "title": "Shared (3): tablespoons, kosher, to", "to": "Cajun", "value": 3}, {"from": "American", "title": "Shared (3): peeled, to, ounce", "to": "Caribbean", "value": 3}, {"from": "American", "title": "Shared (3): to, slices, butter", "to": "French", "value": 3}, {"from": "American", "title": "Shared (3): ounce, to, diced", "to": "Irish", "value": 3}, {"from": "Arabic", "title": "Shared (3): yogurt, olive, lemon", "to": "Greek", "value": 3}, {"from": "Arabic", "title": "Shared (4): yogurt, olive, cumin, tahini", "to": "Middle Eastern", "value": 4}, {"from": "Arabic", "title": "Shared (3): yogurt, water, cumin", "to": "Pakistan", "value": 3}, {"from": "Arabic", "title": "Shared (3): tomato, olive, egg", "to": "Spanish", "value": 3}, {"from": "Arabic", "title": "Shared (3): mint, garlic, cumin", "to": "[Cuban]", "value": 3}, {"from": "Arabic", "title": "Shared (5): yogurt, garlic, lamb, olive, lemon", "to": "[Greek]", "value": 5}, {"from": "Arabic", "title": "Shared (3): yogurt, water, cumin", "to": "[Indian]", "value": 3}, {"from": "Asian", "title": "Shared (3): for, cut, tablespoon", "to": "Cajun", "value": 3}, {"from": "Asian", "title": "Shared (6): sauce, scallions, rice, sesame, soy, ginger", "to": "Chinese", "value": 6}, {"from": "Asian", "title": "Shared (3): for, peeled, tablespoon", "to": "Creole", "value": 3}, {"from": "Asian", "title": "Shared (4): for, canola, cut, finely", "to": "Cuban", "value": 4}, {"from": "Asian", "title": "Shared (3): sauce, thinly, fish", "to": "Thai", "value": 3}, {"from": "Asian", "title": "Shared (8): sauce, fish, scallions, toasted, rice, sesame, soy, ginger", "to": "[Asian]", "value": 8}, {"from": "Asian", "title": "Shared (5): sauce, rice, sesame, soy, ginger", "to": "[Chinese, Asian]", "value": 5}, {"from": "Bengali", "title": "Shared (4): \u0909\u0921\u0930, haldi, powder, red", "to": "Gujarati", "value": 4}, {"from": "Bengali", "title": "Shared (5): green, cardamom, powder, \u0909\u0921\u0930, red", "to": "Indian", "value": 5}, {"from": "Bengali", "title": "Shared (5): pods, green, powder, \u0909\u0921\u0930, red", "to": "Kerala", "value": 5}, {"from": "Bengali", "title": "Shared (4): green, haldi, powder, red", "to": "Maharashtrian", "value": 4}, {"from": "British", "title": "Shared (3): potatoes, beef, cream", "to": "[Hungarian]", "value": 3}, {"from": "British", "title": "Shared (4): potatoes, cream, beef, baking", "to": "[Irish]", "value": 4}, {"from": "Cajun", "title": "Shared (10): shrimp, cup, seasoning, tablespoon, celery, tablespoons, teaspoons, for, teaspoon, cayenne", "to": "Creole", "value": 10}, {"from": "Cajun", "title": "Shared (3): for, to, cut", "to": "French", "value": 3}, {"from": "Cajun", "title": "Shared (3): cup, to, for", "to": "Irish", "value": 3}, {"from": "Cajun", "title": "Shared (3): tablespoons, cup, for", "to": "Italian", "value": 3}, {"from": "Cajun", "title": "Shared (7): shrimp, seasoning, cajun, celery, sausage, hot, cayenne", "to": "[Cajun \u0026 Creole]", "value": 7}, {"from": "Caribbean", "title": "Shared (3): peeled, plantains, thyme", "to": "Creole", "value": 3}, {"from": "Caribbean", "title": "Shared (4): rum, cilantro, plantains, cut", "to": "Cuban", "value": 4}, {"from": "Caribbean", "title": "Shared (3): to, cut, thyme", "to": "French", "value": 3}, {"from": "Caribbean", "title": "Shared (3): rum, cilantro, plantains", "to": "[Cuban]", "value": 3}, {"from": "Chinese", "title": "Shared (8): vinegar, sauce, scallions, rice, sesame, starch, soy, ginger", "to": "[Asian]", "value": 8}, {"from": "Chinese", "title": "Shared (8): sauce, hoisin, spice, rice, sesame, starch, soy, ginger", "to": "[Chinese, Asian]", "value": 8}, {"from": "Continental", "title": "Shared (3): whole, curd, all", "to": "Fusion", "value": 3}, {"from": "Creole", "title": "Shared (3): cup, follows, for", "to": "Irish", "value": 3}, {"from": "Creole", "title": "Shared (3): tablespoons, cup, for", "to": "Italian", "value": 3}, {"from": "Creole", "title": "Shared (8): shrimp, seasoning, oregano, celery, creole, andouille, thyme, cayenne", "to": "[Cajun \u0026 Creole]", "value": 8}, {"from": "Cuban", "title": "Shared (3): for, slices, cut", "to": "French", "value": 3}, {"from": "Cuban", "title": "Shared (3): cilantro, lime, limes", "to": "Thai", "value": 3}, {"from": "Cuban", "title": "Shared (9): pork, cilantro, orange, plantains, cumin, rum, lime, swiss, ham", "to": "[Cuban]", "value": 9}, {"from": "French", "title": "Shared (6): gruyere, baguette, butter, yolks, thyme, egg", "to": "[French]", "value": 6}, {"from": "Fusion", "title": "Shared (3): masala, red, whole", "to": "Indian", "value": 3}, {"from": "Fusion", "title": "Shared (3): red, chilli, whole", "to": "Kerala", "value": 3}, {"from": "Fusion", "title": "Shared (3): masala, strands, red", "to": "Maharashtrian", "value": 3}, {"from": "Greek", "title": "Shared (6): minced, yogurt, finely, crumbled, pita, olive", "to": "Middle Eastern", "value": 6}, {"from": "Greek", "title": "Shared (10): oregano, yogurt, dough, phyllo, greek, feta, olive, dill, kalamata, lemon", "to": "[Greek]", "value": 10}, {"from": "Gujarati", "title": "Shared (6): seeds, dhania, powder, fenugreek, \u0909\u0921\u0930, red", "to": "Indian", "value": 6}, {"from": "Gujarati", "title": "Shared (4): gram, seeds, dhania, red", "to": "Karnataka", "value": 4}, {"from": "Gujarati", "title": "Shared (4): \u0909\u0921\u0930, seeds, powder, red", "to": "Kerala", "value": 4}, {"from": "Gujarati", "title": "Shared (8): hing, seeds, dhania, \u0939\u0932, haldi, powder, wheat, red", "to": "Maharashtrian", "value": 8}, {"from": "Gujarati", "title": "Shared (3): split, seeds, dhania", "to": "Tamil Nadu", "value": 3}, {"from": "Indian", "title": "Shared (5): cardamom, dal, seeds, dhania, red", "to": "Karnataka", "value": 5}, {"from": "Indian", "title": "Shared (6): green, whole, seeds, powder, \u0909\u0921\u0930, red", "to": "Kerala", "value": 6}, {"from": "Indian", "title": "Shared (7): green, seeds, dhania, powder, masala, \u0939\u0930, red", "to": "Maharashtrian", "value": 7}, {"from": "Indian", "title": "Shared (5): yogurt, cardamom, garam, turmeric, masala", "to": "Pakistan", "value": 5}, {"from": "Indian", "title": "Shared (3): dal, seeds, dhania", "to": "Tamil Nadu", "value": 3}, {"from": "Indian", "title": "Shared (6): yogurt, cardamom, seeds, garam, turmeric, masala", "to": "[Indian]", "value": 6}, {"from": "Irish", "title": "Shared (3): cup, for, ounce", "to": "Italian", "value": 3}, {"from": "Irish", "title": "Shared (7): potatoes, guinness, cream, whiskey, liqueur, stout, irish", "to": "[Irish]", "value": 7}, {"from": "Italian", "title": "Shared (8): mascarpone, spaghetti, prosciutto, reggiano, cheese, pasta, olive, mozzarella", "to": "[Italian]", "value": 8}, {"from": "Karnataka", "title": "Shared (3): \u092f\u0932, seeds, red", "to": "Kerala", "value": 3}, {"from": "Karnataka", "title": "Shared (4): sooji, seeds, dhania, red", "to": "Maharashtrian", "value": 4}, {"from": "Karnataka", "title": "Shared (6): \u0915\u095d, dal, seeds, dhania, rai, jaggery", "to": "Tamil Nadu", "value": 6}, {"from": "Kerala", "title": "Shared (4): green, seeds, powder, red", "to": "Maharashtrian", "value": 4}, {"from": "Kerala", "title": "Shared (3): \u092a\u0924, sambar, seeds", "to": "Tamil Nadu", "value": 3}, {"from": "Maharashtrian", "title": "Shared (3): asafoetida, seeds, dhania", "to": "Tamil Nadu", "value": 3}, {"from": "Mexican", "title": "Shared (3): cilantro, lime, dhania", "to": "Thai", "value": 3}, {"from": "Pakistan", "title": "Shared (14): coriander, curry, tumeric, yogurt, cardamom, cumin, garam, turmeric, ghee, water", "to": "[Indian]", "value": 14}, {"from": "Spanish", "title": "Shared (3): tomato, paprika, egg", "to": "[Hungarian]", "value": 3}, {"from": "Thai", "title": "Shared (3): sauce, thai, fish", "to": "[Asian]", "value": 3}, {"from": "Thai", "title": "Shared (3): bell, cilantro, lime", "to": "[Cuban]", "value": 3}, {"from": "[American]", "title": "Shared (3): purpose, bacon, sugar", "to": "[German]", "value": 3}, {"from": "[Asian]", "title": "Shared (3): soy, sauce, garlic", "to": "[Barbecue]", "value": 3}, {"from": "[Asian]", "title": "Shared (3): sauce, garlic, rice", "to": "[Cajun \u0026 Creole]", "value": 3}, {"from": "[Asian]", "title": "Shared (9): sauce, chili, oil, rice, sesame, starch, soy, corn, ginger", "to": "[Chinese, Asian]", "value": 9}, {"from": "[Barbecue]", "title": "Shared (3): sauce, garlic, pepper", "to": "[Cajun \u0026 Creole]", "value": 3}, {"from": "[Barbecue]", "title": "Shared (3): olive, garlic, cheese", "to": "[Greek]", "value": 3}, {"from": "[Cajun \u0026 Creole]", "title": "Shared (4): bell, garlic, oregano, onion", "to": "[Cuban]", "value": 4}, {"from": "[Cajun \u0026 Creole]", "title": "Shared (3): garlic, oregano, tomatoes", "to": "[Greek]", "value": 3}, {"from": "[Cajun \u0026 Creole]", "title": "Shared (3): onion, paprika, tomatoes", "to": "[Hungarian]", "value": 3}, {"from": "[French]", "title": "Shared (4): beef, cream, egg, broth", "to": "[Hungarian]", "value": 4}, {"from": "[French]", "title": "Shared (4): cream, beef, broth, butter", "to": "[Irish]", "value": 4}, {"from": "[German]", "title": "Shared (5): potatoes, flour, onion, caraway, egg", "to": "[Hungarian]", "value": 5}, {"from": "[German]", "title": "Shared (3): potatoes, flour, cabbage", "to": "[Irish]", "value": 3}, {"from": "[Greek]", "title": "Shared (4): cheese, olive, oregano, tomatoes", "to": "[Italian]", "value": 4}, {"from": "[Hungarian]", "title": "Shared (5): potatoes, cream, beef, broth, flour", "to": "[Irish]", "value": 5}]);
+
+                  nodeColors = {};
+                  allNodes = nodes.get({ returnType: "Object" });
+                  for (nodeId in allNodes) {
+                    nodeColors[nodeId] = allNodes[nodeId].color;
+                  }
+                  allEdges = edges.get({ returnType: "Object" });
+                  // adding nodes and edges to the graph
+                  data = {nodes: nodes, edges: edges};
+
+                  var options = {
+    "configure": {
+        "enabled": false
+    },
+    "edges": {
+        "color": {
+            "inherit": true
+        },
+        "smooth": {
+            "enabled": true,
+            "type": "dynamic"
+        }
+    },
+    "interaction": {
+        "dragNodes": true,
+        "hideEdgesOnDrag": false,
+        "hideNodesOnDrag": false
+    },
+    "physics": {
+        "barnesHut": {
+            "avoidOverlap": 0,
+            "centralGravity": 0.3,
+            "damping": 0.09,
+            "gravitationalConstant": -20000,
+            "springConstant": 0.001,
+            "springLength": 150
+        },
+        "enabled": true,
+        "stabilization": {
+            "enabled": true,
+            "fit": true,
+            "iterations": 1000,
+            "onlyDynamicEdges": false,
+            "updateInterval": 50
+        }
+    }
+};
+
+                  
+
+
+                  
+
+                  network = new vis.Network(container, data, options);
+
+                  
+
+                  
+
+                  
+
+
+                  
+
+                  return network;
+
+              }
+              drawGraph();
+        </script>
+    </body>
+</html>

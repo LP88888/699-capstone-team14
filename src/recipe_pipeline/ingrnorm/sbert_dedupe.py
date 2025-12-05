@@ -7,7 +7,7 @@ import numpy as np
 from sentence_transformers import SentenceTransformer
 from sklearn.neighbors import NearestNeighbors
 
-GENERIC = {"salt", "water", "oil", "sugar"}
+GENERIC = {"salt", "sea salt", "water", "oil", "sugar", "pepper"}
 def _tokset(s: str) -> set:
     return set(s.split())
 
@@ -96,7 +96,13 @@ def sbert_dedupe(
         
         # Map all members to canonical form
         for m in members:
-            mapping[phrases[m]] = canon
+            src = phrases[m]
+            # Skip identities and generic-as-canon
+            if not src or src == canon:
+                continue
+            if block_generic_as_canon and canon in GENERIC:
+                continue
+            mapping[src] = canon
 
     out_path = Path(out_path)
     out_path.parent.mkdir(parents=True, exist_ok=True)

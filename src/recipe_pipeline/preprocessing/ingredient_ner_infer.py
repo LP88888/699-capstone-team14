@@ -58,11 +58,16 @@ def _write_combined_dataset(
     encoded_lists = df_wide["Ingredients"].tolist() if "Ingredients" in df_wide.columns else None
 
     df_source = df_source.copy()
-    df_source[INFERRED_COL] = None
-    df_source[ENCODED_COL] = None
-    df_source.loc[: rows_to_assign - 1, INFERRED_COL] = inferred_lists[:rows_to_assign]
+    # ensure object dtype to safely hold lists
+    df_source[INFERRED_COL] = pd.Series([None] * source_rows, dtype=object)
+    df_source[ENCODED_COL] = pd.Series([None] * source_rows, dtype=object)
+    df_source.loc[: rows_to_assign - 1, INFERRED_COL] = pd.Series(
+        inferred_lists[:rows_to_assign], dtype=object
+    )
     if encoded_lists is not None:
-        df_source.loc[: rows_to_assign - 1, ENCODED_COL] = encoded_lists[:rows_to_assign]
+        df_source.loc[: rows_to_assign - 1, ENCODED_COL] = pd.Series(
+            encoded_lists[:rows_to_assign], dtype=object
+        )
 
     combined_path.parent.mkdir(parents=True, exist_ok=True)
     if combined_path.suffix.lower() == ".parquet":
@@ -146,24 +151,27 @@ def run(
     logger.info("Batch size: %s  | Processes: %s", batch_size, n_process)
 
     try:
-        df_wide, df_tall = run_full_inference_from_config(
-            text_col=text_col,
-            out_base=out_base,
-            data_path=input_path,
-            sample_n=sample_n,
-            sample_frac=sample_frac,
-            head_n=head_n,
-            batch_size=batch_size,
-            n_process=n_process,
-            use_spacy_normalizer=use_spacy_normalizer,
-            spacy_model=spacy_model,
-        )
+        # df_wide, df_tall = run_full_inference_from_config(
+        #     text_col=text_col,
+        #     out_base=out_base,
+        #     data_path=input_path,
+        #     sample_n=sample_n,
+        #     sample_frac=sample_frac,
+        #     head_n=head_n,
+        #     batch_size=batch_size,
+        #     n_process=n_process,
+        #     use_spacy_normalizer=use_spacy_normalizer,
+        #     spacy_model=spacy_model,
+        # )
         wide_path = Path(out_base).with_name(Path(out_base).stem + "_wide.parquet")
         tall_path = Path(out_base).with_name(Path(out_base).stem + "_tall.parquet")
 
-        logger.info("Inference complete. Processed %s rows / %s entities.", len(df_wide), len(df_tall))
-        logger.info("Wide output: %s", wide_path)
-        logger.info("Tall output: %s", tall_path)
+        # Load wide_path
+        df_wide = pd.read_parquet(wide_path)
+        df_tall = pd.read_parquet(tall_path)
+        # logger.info("Inference complete. Processed %s rows / %s entities.", len(df_wide), len(df_tall))
+        # logger.info("Wide output: %s", wide_path)
+        # logger.info("Tall output: %s", tall_path)
 
         combined_written: Optional[str] = None
         if combined_dataset:

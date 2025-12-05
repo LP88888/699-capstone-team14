@@ -7,6 +7,26 @@ import numpy as np
 import pyarrow as pa
 import pyarrow.parquet as pq
 
+
+def _dedupe_preserve_order(tokens):
+    seen = set()
+    deduped = []
+    for tok in tokens:
+        key = str(tok)
+        if key in seen:
+            continue
+        seen.add(key)
+        deduped.append(tok)
+    return deduped
+
+
+def _collapse_duplicate_words(text: str) -> str:
+    parts = str(text).split()
+    if len(parts) > 1 and len(set(parts)) == 1:
+        return parts[0]
+    return text
+
+
 def load_jsonl_map(path: Union[str, Path]) -> Dict[str, str]:
     mapping: Dict[str, str] = {}
     p = Path(path)
@@ -35,6 +55,9 @@ def apply_map_to_parquet_streaming(
     mapping: Union[Dict[str, str], str, Path],
     list_col: str = "NER_clean",
     compression: str = "zstd",
+    dedupe_tokens: bool = False,
+    collapse_duplicate_words: bool = False,
+    canonicalizer=None,
 ) -> None:
     if not isinstance(mapping, dict):
         mapping = load_jsonl_map(mapping)
@@ -49,7 +72,33 @@ def apply_map_to_parquet_streaming(
         if list_col in df.columns:
             # Handle numpy arrays and other list-like types
             df[list_col] = [
-                [mapping.get(str(tok), str(tok)) for tok in (lst if isinstance(lst, (list, tuple)) else list(lst))]
+                (
+                    _dedupe_preserve_order(
+                        [
+                            mapping.get(
+                                canonicalizer(str(tok), mapping) if canonicalizer else str(tok),
+                                _collapse_duplicate_words(
+                                    canonicalizer(str(tok), mapping) if canonicalizer else str(tok)
+                                )
+                                if collapse_duplicate_words
+                                else (canonicalizer(str(tok), mapping) if canonicalizer else str(tok)),
+                            )
+                            for tok in (lst if isinstance(lst, (list, tuple)) else list(lst))
+                        ]
+                    )
+                    if dedupe_tokens
+                    else [
+                        mapping.get(
+                            canonicalizer(str(tok), mapping) if canonicalizer else str(tok),
+                            _collapse_duplicate_words(
+                                canonicalizer(str(tok), mapping) if canonicalizer else str(tok)
+                            )
+                            if collapse_duplicate_words
+                            else (canonicalizer(str(tok), mapping) if canonicalizer else str(tok)),
+                        )
+                        for tok in (lst if isinstance(lst, (list, tuple)) else list(lst))
+                    ]
+                )
                 if isinstance(lst, (list, tuple, np.ndarray)) and len(lst) > 0
                 else (lst if isinstance(lst, (list, tuple)) else [])
                 for lst in df[list_col]
