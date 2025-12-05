@@ -17,7 +17,7 @@ def run(context: PipelineContext, *, force: bool = False) -> StageResult:
     cfg = context.stage("ingredients_summary")
     logger = stage_logger(context, "ingredients_summary", force=force)
 
-    map_path = Path(cfg.get("data", {}).get("map_path", "data/normalized/cosine_dedupe_map.jsonl"))
+    map_path = Path(cfg.get("data", {}).get("map_path", "data/ingr_normalized/dedupe_map.jsonl"))
     out_dir = Path(cfg.get("output", {}).get("reports_dir", "./reports/ingredients"))
     out_dir.mkdir(parents=True, exist_ok=True)
 
@@ -69,4 +69,3 @@ def run(context: PipelineContext, *, force: bool = False) -> StageResult:
 
     logger.info("Ingredient dedupe summary written to %s", out_dir)
     return StageResult(name="ingredients_summary", status="success", outputs={"reports_dir": str(out_dir)})
-

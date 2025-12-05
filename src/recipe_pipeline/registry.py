@@ -12,6 +12,7 @@ from .preprocessing import (
     cuisine_classifier,
     cuisine_normalization,
     ingredient_encoding,
+    ingredient_post_map,
     ingredient_ner_infer,
     ingredient_ner_train,
     ingredient_normalization,
@@ -23,6 +24,7 @@ StageFn = Callable[[PipelineContext], StageResult]
 STAGES: Dict[str, StageFn] = {
     "combine_raw": combine_raw.run,
     "ingredient_normalization": ingredient_normalization.run,
+    "ingredient_post_map": ingredient_post_map.run,
     "ingredient_ner_train": ingredient_ner_train.run,
     "ingredient_ner_infer": ingredient_ner_infer.run,
     "ingredient_encoding": ingredient_encoding.run,
