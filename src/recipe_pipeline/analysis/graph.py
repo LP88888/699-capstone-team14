@@ -17,7 +17,7 @@ from ..core import PipelineContext, StageResult
 from ..utils import stage_logger
 
 
-def _lighten(hex_color: str, factor: float = 0.5) -> str:
+def _lighten(hex_color: str, factor: float = 0.35) -> str:
     """Lighten a hex color by blending toward white."""
     if not hex_color:
         return hex_color
@@ -87,7 +87,7 @@ def plot_cuisine_network(df_top, cuisine_counts, out_path, *, min_shared=2, top_
     for child, parent in cuisine_parents.items():
         parent_to_children.setdefault(parent, []).append(child)
 
-    net = Network(height="780px", width="1200px", bgcolor="#f8f9fb", font_color="#1b1b1b", notebook=False, cdn_resources="in_line")
+    net = Network(height="720px", width="1080px", bgcolor="#f8f9fb", font_color="#1b1b1b", notebook=False, cdn_resources="in_line")
     net.force_atlas_2based(gravity=-40, central_gravity=0.03, spring_length=180, damping=0.68, overlap=0.6)
 
     # Color palette for nodes (parent-aware if available)
@@ -102,6 +102,8 @@ def plot_cuisine_network(df_top, cuisine_counts, out_path, *, min_shared=2, top_
         palette = sns.color_palette("cubehelix", len(keep_cuisines)).as_hex()
         parent_colors = {}
         cuisine_colors = {c: palette[i % len(palette)] for i, c in enumerate(sorted(keep_cuisines))}
+    # Fallback palette if anything is missing
+    fallback_palette = sns.color_palette("husl", max(12, len(keep_cuisines))).as_hex()
 
     # Optional parent-level feature aggregation for cross-parent edges
     parent_term_weights = {}
@@ -125,7 +127,7 @@ def plot_cuisine_network(df_top, cuisine_counts, out_path, *, min_shared=2, top_
                 label=parent,
                 value=float(np.log1p(support)),
                 title=f"{parent}: {support} recipes<br>Children: {len(children)}<br>{preview}{' …' if len(children) > 12 else ''}",
-                color=parent_colors.get(parent),
+                color=parent_colors.get(parent, fallback_palette[hash(parent) % len(fallback_palette)]),
                 shape="diamond",
                 borderWidth=3,
                 physics=True,
@@ -139,15 +141,25 @@ def plot_cuisine_network(df_top, cuisine_counts, out_path, *, min_shared=2, top_
         top_terms = sorted(weights.items(), key=lambda kv: -kv[1])[:8]
         top_terms_txt = "<br>".join(f"{t}: {w:.2f}" for t, w in top_terms)
         parent = cuisine_parents.get(c)
+        node_color = cuisine_colors.get(c)
+        if not node_color:
+            # fallback to parent color or a deterministic palette entry
+            if parent and parent in parent_colors:
+                node_color = _lighten(parent_colors[parent], factor=0.35)
+            else:
+                node_color = fallback_palette[hash(c) % len(fallback_palette)]
         net.add_node(
             c,
             label=c,
             value=float(np.log1p(count)),
             title=f"{c}: {count} recipes" + (f"<br>Parent: {parent}" if parent else "") + (f"<br>Top terms:<br>{top_terms_txt}" if top_terms else ""),
-            color=cuisine_colors.get(c),
-            group=parent or c,
+            color=node_color,
             font={"size": 14},
         )
+        # Manually store group to keep color applied (pyvis ignores color when group kwarg is passed)
+        if parent:
+            net.nodes[-1]["group"] = parent
+            net.node_map[c]["group"] = parent
 
     # Add edges based on shared features (count + summed weight)
     cuisines = list(keep_cuisines)
