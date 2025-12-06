@@ -5,112 +5,112 @@
       "name": "garam masala",
       "score": 99.55963796526933,
       "connects_a": [
-        "yogurt",
-        "greek yogurt",
-        "chicken breasts"
+        "spinach",
+        "onion",
+        "greek yogurt"
       ],
       "connects_b": [
         "tomato paste",
-        "chicken breasts",
-        "bay leaf"
+        "onion",
+        "tomatoes"
       ]
     },
     {
       "name": "tomato paste",
       "score": 96.619466550109,
       "connects_a": [
-        "oregano",
         "cloves",
+        "onion",
         "parsley"
       ],
       "connects_b": [
-        "worcestershire sauce",
-        "chuck",
-        "bay leaf"
+        "thyme",
+        "cloves",
+        "chuck"
       ]
     },
     {
       "name": "oregano",
       "score": 84.4705531178084,
       "connects_a": [
-        "greek yogurt",
-        "wine vinegar",
-        "feta cheese"
+        "cheese crumbles",
+        "kalamata olives",
+        "kalamata"
       ],
       "connects_b": [
         "tomato paste",
-        "bay leaf",
-        "thyme"
+        "thyme",
+        "bell pepper"
       ]
     },
     {
       "name": "celery",
       "score": 84.20850838539597,
       "connects_a": [
-        "oregano",
+        "onion",
         "parsley",
-        "garlic"
+        "oregano"
       ],
       "connects_b": [
+        "chicken broth",
         "tomato paste",
-        "worcestershire sauce",
-        "bay leaf"
+        "thyme"
       ]
     },
     {
       "name": "can tomatoes",
       "score": 78.4591008381325,
       "connects_a": [
-        "oregano",
         "cloves",
+        "onion",
         "parsley"
       ],
       "connects_b": [
-        "tomato paste",
-        "worcestershire sauce",
-        "bay leaf"
+        "chicken broth",
+        "cloves",
+        "tomato paste"
       ]
     },
     {
       "name": "andouille sausage",
       "score": 78.10324205434303,
       "connects_a": [
-        "chicken breasts",
+        "onion",
         "oregano",
-        "garlic"
+        "bell pepper"
       ],
       "connects_b": [
+        "chicken broth",
         "tomato paste",
-        "worcestershire sauce",
-        "bay leaf"
+        "thyme"
       ]
     },
     {
       "name": "ribs celery",
       "score": 48.34981875812026,
       "connects_a": [
-        "parsley",
-        "bell pepper",
-        "onion"
+        "cloves",
+        "onion",
+        "parsley"
       ],
       "connects_b": [
-        "tomato paste",
-        "worcestershire sauce",
-        "bay leaf"
+        "chicken broth",
+        "cloves",
+        "tomato paste"
       ]
     },
     {
       "name": "file powder",
       "score": 48.09748638367046,
       "connects_a": [
-        "garlic",
+        "onion",
         "tomatoes",
         "bell pepper"
       ],
       "connects_b": [
-        "vegetable oil",
-        "garlic",
-        "tomatoes"
+        "thyme",
+        "onion",
+        "bell pepper"
       ]
     },
     {
@@ -119,67 +119,32 @@
       "connects_a": [
         "cloves",
         "parsley",
-        "olive oil"
+        "bell pepper"
       ],
       "connects_b": [
-        "bay leaf",
         "cloves",
-        "parsley"
+        "parsley",
+        "wine"
       ]
     },
     {
       "name": "celery ribs",
       "score": 48.03672617094407,
       "connects_a": [
+        "onion",
         "parsley",
-        "bell pepper",
-        "onion"
+        "bell pepper"
       ],
       "connects_b": [
+        "chicken broth",
         "tomato paste",
-        "worcestershire sauce",
-        "bay leaf"
+        "thyme"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "petite",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pinenuts",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "sherry vinegar",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "fennel bulb",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "squid",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "porcini mushrooms",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "crusty bread",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "kalamata olives",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -189,7 +154,42 @@
       "strength": 1
     },
     {
-      "name": "grape tomatoes",
+      "name": "artichokes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "romano cheese",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "some",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "parmigiano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "sherry vinegar",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pinenuts",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "couscous",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "heads garlic",
       "pairs_with": "olive oil",
       "strength": 1
     }
@@ -211,22 +211,12 @@
       "strength": 1
     },
     {
+      "name": "chicken base",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
       "name": "beef shoulder",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "ham hocks",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "stewing",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "catsup",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -236,12 +226,22 @@
       "strength": 1
     },
     {
-      "name": "chicken base",
+      "name": "catsup",
       "pairs_with": "onion",
       "strength": 1
     },
     {
       "name": "navy beans",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "stewing",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "tomato soup",
       "pairs_with": "onion",
       "strength": 1
     }

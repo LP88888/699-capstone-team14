@@ -6,49 +6,49 @@
       "score": 56.5974312966968,
       "connects_a": [
         "hoisin sauce",
-        "ginger",
-        "soy sauce"
+        "corn starch",
+        "rice vinegar"
       ],
       "connects_b": [
-        "gram",
         "rai",
-        "dal"
+        "dal",
+        "gram"
       ]
     },
     {
       "name": "oil",
       "score": 30.14505747846478,
       "connects_a": [
-        "soy sauce",
         "rice wine",
+        "corn starch",
         "oyster sauce"
       ],
       "connects_b": [
+        "channa dal",
         "gram",
-        "urad dal",
-        "finger"
+        "dal"
       ]
     },
     {
       "name": "wheat",
-      "score": 24.074030033193484,
+      "score": 22.067860863760693,
       "connects_a": [
-        "oil",
-        "flour"
+        "flour",
+        "oil"
       ],
       "connects_b": [
-        "powder",
-        "seeds",
-        "flour"
+        "chilli",
+        "flour",
+        "oil salt"
       ]
     },
     {
       "name": "oyster sauce",
       "score": 22.014144226869455,
       "connects_a": [
-        "cabbage",
-        "corn starch",
-        "sodium soy sauce"
+        "chicken broth",
+        "rice wine",
+        "soy sauce"
       ],
       "connects_b": [
         "oil"
@@ -58,9 +58,9 @@
       "name": "corn starch",
       "score": 20.03969984589309,
       "connects_a": [
-        "cabbage",
-        "sodium soy sauce",
-        "shaoxing"
+        "chicken broth",
+        "rice wine",
+        "soy sauce"
       ],
       "connects_b": [
         "oil"
@@ -70,88 +70,69 @@
       "name": "soy sauce",
       "score": 19.524073755401215,
       "connects_a": [
-        "cabbage",
-        "corn starch",
-        "shaoxing"
+        "rice wine",
+        "honey",
+        "peanut oil"
       ],
       "connects_b": [
         "oil"
-      ]
-    },
-    {
-      "name": "dal",
-      "score": 18.013338228510946,
-      "connects_a": [
-        "oil"
-      ],
-      "connects_b": [
-        "gram",
-        "powder",
-        "seeds"
-      ]
-    },
-    {
-      "name": "carom",
-      "score": 16.02707393891867,
-      "connects_a": [
-        "oil",
-        "flour"
-      ],
-      "connects_b": [
-        "powder",
-        "seeds",
-        "flour"
       ]
     },
     {
       "name": "finger",
       "score": 16.01637290387976,
       "connects_a": [
-        "oil",
-        "flour"
+        "flour",
+        "oil"
       ],
       "connects_b": [
-        "powder",
-        "seeds",
-        "flour"
+        "chilli",
+        "flour",
+        "oil salt"
+      ]
+    },
+    {
+      "name": "dal",
+      "score": 16.011856203120843,
+      "connects_a": [
+        "oil"
+      ],
+      "connects_b": [
+        "chilli",
+        "chillies",
+        "gram"
       ]
     },
     {
       "name": "rice wine",
       "score": 16.00412717405789,
       "connects_a": [
+        "honey",
         "hoisin sauce",
-        "ginger",
-        "pork"
+        "corn starch"
       ],
       "connects_b": [
+        "oil"
+      ]
+    },
+    {
+      "name": "coriander powder",
+      "score": 15.029290356626463,
+      "connects_a": [
+        "onion",
+        "ginger",
+        "garlic"
+      ],
+      "connects_b": [
+        "onion",
+        "leaves",
         "oil"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "brown",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "virgin",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
       "name": "green bell",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "fruit",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "button",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -161,17 +142,37 @@
       "strength": 1
     },
     {
+      "name": "virgin",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
       "name": "masala",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "petite",
+      "name": "button",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "fruit",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "brown",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "celery",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "celery ribs",
+      "name": "stalks celery",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -188,23 +189,13 @@
       "strength": 1
     },
     {
-      "name": "finger",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
       "name": "carom",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "pudina",
-      "pairs_with": "leaves",
-      "strength": 1
-    },
-    {
-      "name": "moringa",
-      "pairs_with": "leaves",
+      "name": "finger",
+      "pairs_with": "flour",
       "strength": 1
     },
     {
@@ -219,6 +210,16 @@
     },
     {
       "name": "cloves cardamom",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
+      "name": "pudina",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
+      "name": "moringa",
       "pairs_with": "leaves",
       "strength": 1
     },

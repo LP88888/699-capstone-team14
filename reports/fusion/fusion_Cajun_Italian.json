@@ -5,140 +5,140 @@
       "name": "can tomatoes",
       "score": 126.74162443082943,
       "connects_a": [
-        "hot sauce",
-        "worcestershire sauce",
-        "oregano"
+        "cloves",
+        "celery",
+        "onion"
       ],
       "connects_b": [
-        "oregano",
-        "basil",
-        "cloves"
+        "cloves",
+        "optional",
+        "pepper flakes"
       ]
     },
     {
       "name": "tomato paste",
       "score": 120.77433318763623,
       "connects_a": [
-        "worcestershire sauce",
-        "oregano",
-        "cloves"
+        "thyme",
+        "cloves",
+        "celery"
       ],
       "connects_b": [
-        "oregano",
-        "basil",
-        "cloves"
+        "cloves",
+        "onion",
+        "parsley"
       ]
     },
     {
       "name": "celery",
       "score": 112.27801118052795,
       "connects_a": [
-        "hot sauce",
-        "worcestershire sauce",
-        "onion powder"
+        "thyme",
+        "onion",
+        "parsley"
       ],
       "connects_b": [
-        "oregano",
+        "onion",
         "parsley",
-        "garlic"
+        "oregano"
       ]
     },
     {
       "name": "yellow onions",
       "score": 104.1436940496258,
       "connects_a": [
-        "worcestershire sauce",
-        "onion powder",
-        "chicken stock"
+        "kosher sea salt",
+        "thyme",
+        "celery"
       ],
       "connects_b": [
-        "oregano",
         "parsley",
-        "garlic"
+        "pepper flakes",
+        "oregano"
       ]
     },
     {
       "name": "ribs celery",
       "score": 100.7287890794172,
       "connects_a": [
-        "hot sauce",
-        "worcestershire sauce",
-        "scallions"
+        "thyme",
+        "cloves",
+        "onion"
       ],
       "connects_b": [
         "cloves",
-        "parsley",
-        "wine"
+        "optional",
+        "pepper flakes"
       ]
     },
     {
       "name": "andouille sausage",
       "score": 85.11250736691227,
       "connects_a": [
-        "hot sauce",
-        "worcestershire sauce",
-        "onion powder"
+        "thyme",
+        "celery",
+        "onion"
       ],
       "connects_b": [
+        "onion",
         "oregano",
-        "garlic",
-        "tomatoes"
+        "bell pepper"
       ]
     },
     {
       "name": "cornmeal",
       "score": 84.34465246000889,
       "connects_a": [
-        "hot sauce",
+        "thyme",
         "mayonnaise",
-        "onion powder"
+        "flour"
       ],
       "connects_b": [
         "flour",
-        "kosher sea salt",
-        "egg"
+        "egg",
+        "milk"
       ]
     },
     {
       "name": "grits",
       "score": 84.32862900795467,
       "connects_a": [
-        "hot sauce",
-        "onion powder",
-        "scallions"
+        "cream",
+        "more",
+        "parsley"
       ],
       "connects_b": [
-        "butter",
-        "parsley",
-        "cream"
+        "cream",
+        "more",
+        "parsley"
       ]
     },
     {
       "name": "yellow onion",
       "score": 84.04854467470854,
       "connects_a": [
-        "hot sauce",
-        "worcestershire sauce",
-        "onion powder"
+        "kosher sea salt",
+        "thyme",
+        "celery"
       ],
       "connects_b": [
+        "pepper flakes",
         "oregano",
-        "garlic",
-        "kosher sea salt"
+        "wine"
       ]
     },
     {
       "name": "sausage",
       "score": 80.1155435328746,
       "connects_a": [
-        "chicken stock",
-        "oregano",
-        "celery"
+        "thyme",
+        "celery",
+        "cajun seasoning"
       ],
       "connects_b": [
+        "pepper flakes",
         "oregano",
-        "basil",
-        "seasoning"
+        "parmesan cheese"
       ]
     }
   ],
@@ -154,17 +154,7 @@
       "strength": 1
     },
     {
-      "name": "crawfish tail",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
       "name": "crawfish",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "pecan halves",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -175,7 +165,12 @@
     },
     {
       "name": "crawfish tail",
-      "pairs_with": "onion",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "pecan halves",
+      "pairs_with": "butter",
       "strength": 1
     },
     {
@@ -184,7 +179,7 @@
       "strength": 1
     },
     {
-      "name": "pinto",
+      "name": "scotch bonnet peppers",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -192,21 +187,36 @@
       "name": "zatarain",
       "pairs_with": "onion",
       "strength": 1
+    },
+    {
+      "name": "crawfish tail",
+      "pairs_with": "onion",
+      "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "giardiniera",
+      "name": "finely oregano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "petite",
+      "name": "artichokes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pinenuts",
+      "name": "romano cheese",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "some",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pancetta",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -216,32 +226,22 @@
       "strength": 1
     },
     {
-      "name": "squid",
+      "name": "cannellini",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "porcini mushrooms",
+      "name": "[extra",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "kalamata olives",
+      "name": "ricotta salata",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "finely oregano",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "chianti",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "risotto",
+      "name": "pinenuts",
       "pairs_with": "olive oil",
       "strength": 1
     }

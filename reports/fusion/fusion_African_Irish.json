@@ -5,14 +5,14 @@
       "name": "tomato paste",
       "score": 72.46459991258175,
       "connects_a": [
-        "cumin",
-        "turmeric",
-        "cloves"
+        "cloves",
+        "onion",
+        "parsley"
       ],
       "connects_b": [
-        "russet potatoes",
+        "thyme",
         "cloves",
-        "parsley"
+        "onion"
       ]
     },
     {
@@ -20,13 +20,13 @@
       "score": 60.5399728795616,
       "connects_a": [
         "tomato paste",
-        "cumin",
-        "chicken stock"
+        "onion",
+        "parsley"
       ],
       "connects_b": [
-        "russet potatoes",
-        "parsley",
-        "thyme"
+        "thyme",
+        "onion",
+        "parsley"
       ]
     },
     {
@@ -34,13 +34,13 @@
       "score": 56.31656288944528,
       "connects_a": [
         "tomato paste",
-        "ginger",
-        "cumin"
+        "cumin seeds",
+        "onion"
       ],
       "connects_b": [
-        "vegetable oil",
+        "onion",
         "garlic",
-        "onion"
+        "potatoes"
       ]
     },
     {
@@ -48,13 +48,13 @@
       "score": 48.06632033059652,
       "connects_a": [
         "tomato paste",
-        "chicken stock",
-        "parsley"
+        "parsley",
+        "paprika"
       ],
       "connects_b": [
+        "thyme",
         "parsley",
-        "garlic",
-        "kosher sea salt"
+        "2"
       ]
     },
     {
@@ -62,26 +62,26 @@
       "score": 45.32795508573774,
       "connects_a": [
         "tomato paste",
-        "chicken stock",
-        "scallions"
+        "cloves",
+        "onion"
       ],
       "connects_b": [
+        "thyme",
         "cloves",
-        "parsley",
-        "thyme"
+        "onion"
       ]
     },
     {
       "name": "allspice",
       "score": 45.200493238408555,
       "connects_a": [
-        "ginger",
-        "cumin",
-        "cloves"
+        "cloves",
+        "coriander",
+        "paprika"
       ],
       "connects_b": [
+        "thyme",
         "cloves",
-        "kosher sea salt",
         "raisins"
       ]
     },
@@ -89,13 +89,13 @@
       "name": "palm",
       "score": 44.169308678586994,
       "connects_a": [
-        "cumin",
-        "chicken stock",
-        "scallions"
+        "cloves",
+        "onion",
+        "parsley"
       ],
       "connects_b": [
-        "parsley",
         "olive oil",
+        "cloves",
         "onion"
       ]
     },
@@ -103,28 +103,28 @@
       "name": "chiles",
       "score": 42.20045181617278,
       "connects_a": [
-        "cilantro leaves",
-        "ginger",
-        "cumin"
+        "cloves",
+        "cumin seeds",
+        "cilantro leaves"
       ],
       "connects_b": [
-        "vegetable oil",
+        "cloves",
         "2",
-        "cloves"
+        "vegetable oil"
       ]
     },
     {
       "name": "grits",
       "score": 42.16431450397734,
       "connects_a": [
-        "chicken stock",
-        "scallions",
-        "butter"
+        "parsley",
+        "paprika",
+        "2"
       ],
       "connects_b": [
-        "butter",
-        "parsley",
-        "cream"
+        "cream",
+        "more",
+        "parsley"
       ]
     },
     {
@@ -132,29 +132,29 @@
       "score": 40.099289707331415,
       "connects_a": [
         "tomato paste",
-        "chicken stock",
+        "onion",
         "parsley"
       ],
       "connects_b": [
-        "parsley",
-        "garlic",
-        "thyme"
+        "thyme",
+        "onion",
+        "parsley"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "cans chickpeas",
+      "name": "handful pine nuts",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "montreal steak",
+      "name": "brussels sprouts",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pinch saffron",
+      "name": "kalamata olives",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -164,22 +164,12 @@
       "strength": 1
     },
     {
-      "name": "beefsteak tomatoes",
+      "name": "montreal steak",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "handful pine nuts",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "fennel bulb",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "squid",
+      "name": "canned tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -189,24 +179,24 @@
       "strength": 1
     },
     {
-      "name": "mussels",
+      "name": "chorizo",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pinch saffron",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cans chickpeas",
       "pairs_with": "olive oil",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "bunch kale",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "head fennel",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "sherry vinegar",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -216,7 +206,27 @@
       "strength": 1
     },
     {
-      "name": "inch piece",
+      "name": "bunch kale",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "sherry vinegar",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "head fennel",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "sirloin",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "allspice berries",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -226,22 +236,12 @@
       "strength": 1
     },
     {
-      "name": "head fennel",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "beef chuck",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
       "name": "hair pasta",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "allspice berries",
+      "name": "inch piece",
       "pairs_with": "cloves",
       "strength": 1
     }

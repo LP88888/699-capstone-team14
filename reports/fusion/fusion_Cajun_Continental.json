@@ -2,147 +2,159 @@
   "pair": "Cajun + Continental",
   "bridges": [
     {
-      "name": "file powder",
-      "score": 52.10561024897633,
-      "connects_a": [
-        "onion powder",
-        "vegetable oil",
-        "celery"
-      ],
-      "connects_b": [
-        "bell pepper",
-        "onion",
-        "leaves"
-      ]
-    },
-    {
       "name": "andouille sausage",
-      "score": 51.06750442014736,
+      "score": 68.09000589352982,
       "connects_a": [
-        "hot sauce",
-        "worcestershire sauce",
-        "onion powder"
+        "thyme",
+        "celery",
+        "onion"
       ],
       "connects_b": [
-        "bell pepper",
+        "thyme",
         "onion",
-        "thyme"
+        "bell pepper"
       ]
     },
     {
       "name": "celery",
-      "score": 48.11914764879769,
+      "score": 64.15886353173026,
       "connects_a": [
-        "hot sauce",
-        "worcestershire sauce",
-        "onion powder"
+        "thyme",
+        "onion",
+        "parsley"
       ],
       "connects_b": [
-        "bell pepper",
+        "thyme",
         "onion",
-        "thyme"
+        "bell pepper"
+      ]
+    },
+    {
+      "name": "file powder",
+      "score": 52.10561024897633,
+      "connects_a": [
+        "thyme",
+        "celery",
+        "onion"
+      ],
+      "connects_b": [
+        "thyme",
+        "onion",
+        "bell pepper"
+      ]
+    },
+    {
+      "name": "tomato paste",
+      "score": 48.3097332750545,
+      "connects_a": [
+        "thyme",
+        "cloves",
+        "celery"
+      ],
+      "connects_b": [
+        "thyme",
+        "onion",
+        "bell pepper"
+      ]
+    },
+    {
+      "name": "creole seasoning",
+      "score": 48.025926383675284,
+      "connects_a": [
+        "thyme",
+        "mayonnaise",
+        "celery"
+      ],
+      "connects_b": [
+        "thyme",
+        "bell pepper",
+        "oregano"
       ]
     },
     {
       "name": "okra",
       "score": 45.06149959943336,
       "connects_a": [
-        "hot sauce",
-        "worcestershire sauce",
-        "chicken stock"
-      ],
-      "connects_b": [
-        "bell pepper",
-        "onion",
-        "thyme"
-      ]
-    },
-    {
-      "name": "tomato paste",
-      "score": 36.23229995629087,
-      "connects_a": [
-        "worcestershire sauce",
-        "oregano",
-        "cloves"
-      ],
-      "connects_b": [
-        "bell pepper",
-        "onion",
-        "thyme"
-      ]
-    },
-    {
-      "name": "creole seasoning",
-      "score": 32.01728425578352,
-      "connects_a": [
-        "hot sauce",
-        "worcestershire sauce",
-        "mayonnaise"
-      ],
-      "connects_b": [
-        "bell pepper",
-        "thyme"
-      ]
-    },
-    {
-      "name": "ribs celery",
-      "score": 30.21863672382516,
-      "connects_a": [
-        "hot sauce",
-        "worcestershire sauce",
-        "scallions"
-      ],
-      "connects_b": [
-        "bell pepper",
-        "onion",
-        "thyme"
-      ]
-    },
-    {
-      "name": "celery ribs",
-      "score": 30.022953856840044,
-      "connects_a": [
-        "worcestershire sauce",
-        "mayonnaise",
-        "parsley"
-      ],
-      "connects_b": [
-        "bell pepper",
-        "onion",
-        "thyme"
-      ]
-    },
-    {
-      "name": "grits",
-      "score": 28.109543002651556,
-      "connects_a": [
-        "hot sauce",
-        "onion powder",
-        "scallions"
-      ],
-      "connects_b": [
-        "bell pepper",
-        "cream"
-      ]
-    },
-    {
-      "name": "beef stock",
-      "score": 28.103084519201673,
-      "connects_a": [
-        "worcestershire sauce",
-        "onion powder",
-        "flour"
-      ],
-      "connects_b": [
-        "flour",
-        "potatoes",
+        "thyme",
+        "celery",
         "onion"
+      ],
+      "connects_b": [
+        "thyme",
+        "onion",
+        "bell pepper"
+      ]
+    },
+    {
+      "name": "yellow onion",
+      "score": 42.02427233735427,
+      "connects_a": [
+        "kosher sea salt",
+        "thyme",
+        "celery"
+      ],
+      "connects_b": [
+        "thyme",
+        "bell pepper",
+        "oregano"
+      ]
+    },
+    {
+      "name": "yellow onions",
+      "score": 39.05388526860967,
+      "connects_a": [
+        "kosher sea salt",
+        "thyme",
+        "celery"
+      ],
+      "connects_b": [
+        "thyme",
+        "bell pepper",
+        "oregano"
+      ]
+    },
+    {
+      "name": "bay leaf",
+      "score": 36.323983727736966,
+      "connects_a": [
+        "thyme",
+        "celery",
+        "onion"
+      ],
+      "connects_b": [
+        "thyme",
+        "onion",
+        "beans"
+      ]
+    },
+    {
+      "name": "cayenne pepper",
+      "score": 36.235345680098845,
+      "connects_a": [
+        "thyme",
+        "mayonnaise",
+        "celery"
+      ],
+      "connects_b": [
+        "thyme",
+        "bell pepper",
+        "oregano"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "bunch kale",
+      "name": "roma",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "anchovy paste",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pepperoncini peppers",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -152,42 +164,32 @@
       "strength": 1
     },
     {
-      "name": "orzo pasta",
+      "name": "oregano leaves",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "baby arugula",
+      "name": "capers",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "fettuccine",
+      "name": "canned tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "radicchio",
+      "name": "olives",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "roma",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "beefsteak tomatoes",
+      "name": "plum tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
       "name": "roasted tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "anchovies",
       "pairs_with": "olive oil",
       "strength": 1
     }
@@ -201,6 +203,16 @@
     {
       "name": "vanilla extract",
       "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "ricotta",
+      "pairs_with": "egg",
+      "strength": 1
+    },
+    {
+      "name": "chocolate chips",
+      "pairs_with": "egg",
       "strength": 1
     },
     {
@@ -219,27 +231,17 @@
       "strength": 1
     },
     {
-      "name": "ricotta",
-      "pairs_with": "egg",
-      "strength": 1
-    },
-    {
-      "name": "chocolate chips",
-      "pairs_with": "egg",
-      "strength": 1
-    },
-    {
-      "name": "food",
-      "pairs_with": "bell pepper",
-      "strength": 1
-    },
-    {
       "name": "bell",
       "pairs_with": "bell pepper",
       "strength": 1
     },
     {
-      "name": "carom",
+      "name": "sugar whole",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "chocolate chips",
       "pairs_with": "flour",
       "strength": 1
     }

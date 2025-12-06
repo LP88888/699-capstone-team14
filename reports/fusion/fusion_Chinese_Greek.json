@@ -5,13 +5,13 @@
       "name": "hoisin sauce",
       "score": 88.06728046331145,
       "connects_a": [
-        "cabbage",
-        "corn starch",
-        "sodium soy sauce"
+        "rice wine",
+        "honey",
+        "soy sauce"
       ],
       "connects_b": [
-        "garlic",
         "cucumber",
+        "chicken breasts",
         "honey"
       ]
     },
@@ -19,107 +19,107 @@
       "name": "sesame oil",
       "score": 63.24913970622727,
       "connects_a": [
-        "cabbage",
-        "corn starch",
-        "sodium soy sauce"
+        "rice wine",
+        "honey",
+        "soy sauce"
       ],
       "connects_b": [
-        "garlic",
+        "chicken breasts",
         "honey",
-        "chicken breasts"
+        "garlic"
       ]
     },
     {
       "name": "rice vinegar",
       "score": 57.13067301597252,
       "connects_a": [
-        "cabbage",
-        "corn starch",
-        "sodium soy sauce"
+        "rice wine",
+        "honey",
+        "soy sauce"
       ],
       "connects_b": [
         "cucumber",
-        "honey",
-        "chicken breasts"
+        "chicken breasts",
+        "honey"
       ]
     },
     {
       "name": "ginger",
       "score": 54.99126384553375,
       "connects_a": [
+        "rice wine",
         "hoisin sauce",
-        "pork",
-        "soy sauce"
+        "corn starch"
       ],
       "connects_b": [
+        "chicken breasts",
         "yogurt",
-        "garlic",
-        "chicken breasts"
+        "garlic"
       ]
     },
     {
       "name": "fish sauce",
       "score": 54.53091368938329,
       "connects_a": [
+        "shrimp",
         "hoisin sauce",
-        "ginger",
-        "pork"
+        "rice vinegar"
       ],
       "connects_b": [
+        "chicken breasts",
         "cucumber",
-        "mint",
-        "chicken breasts"
+        "mint"
       ]
     },
     {
       "name": "garam masala",
       "score": 54.30525707196509,
       "connects_a": [
-        "ginger",
-        "chicken breasts",
-        "vegetable oil"
+        "onion",
+        "oil",
+        "ginger"
       ],
       "connects_b": [
-        "yogurt",
-        "greek yogurt",
-        "chicken breasts"
+        "spinach",
+        "onion",
+        "greek yogurt"
       ]
     },
     {
       "name": "sriracha",
       "score": 54.06390205151831,
       "connects_a": [
+        "honey",
         "hoisin sauce",
-        "ginger",
-        "soy sauce"
+        "corn starch"
       ],
       "connects_b": [
-        "garlic",
+        "chicken breasts",
         "honey",
-        "chicken breasts"
+        "garlic"
       ]
     },
     {
       "name": "inch piece",
       "score": 52.15555698632034,
       "connects_a": [
+        "cloves",
         "hoisin sauce",
-        "soy sauce",
-        "mushrooms"
+        "canola oil"
       ],
       "connects_b": [
-        "grain sea salt",
         "more",
-        "wine vinegar"
+        "wine vinegar",
+        "grain sea salt"
       ]
     },
     {
       "name": "bean sprouts",
       "score": 51.10822705394702,
       "connects_a": [
+        "shrimp",
         "hoisin sauce",
-        "ginger",
-        "mushrooms"
+        "canola oil"
       ],
       "connects_b": [
         "cucumber",
@@ -132,17 +132,27 @@
       "score": 48.0635335719034,
       "connects_a": [
         "chicken broth",
-        "chicken breasts",
-        "garlic"
+        "onion",
+        "bell pepper"
       ],
       "connects_b": [
-        "chicken breasts",
+        "onion",
         "oregano",
-        "garlic"
+        "bell pepper"
       ]
     }
   ],
   "novel_from_a": [
+    {
+      "name": "cremini",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "turkey sausage",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
     {
       "name": "radicchio",
       "pairs_with": "olive oil",
@@ -154,13 +164,23 @@
       "strength": 1
     },
     {
-      "name": "turkey sausage",
-      "pairs_with": "olive oil",
+      "name": "sauvignon",
+      "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "cremini",
-      "pairs_with": "olive oil",
+      "name": "sea bass",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "handfuls",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "piece ginger",
+      "pairs_with": "cloves",
       "strength": 1
     },
     {
@@ -172,36 +192,11 @@
       "name": "depending",
       "pairs_with": "cloves",
       "strength": 1
-    },
-    {
-      "name": "broth",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "sodium",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "fresno",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "snapper fillets",
-      "pairs_with": "cloves",
-      "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "pine",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "montreal steak",
+      "name": "crusty bread",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -211,37 +206,42 @@
       "strength": 1
     },
     {
-      "name": "beef chuck",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "thighs",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "roasted tomatoes",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
       "name": "anchovy paste",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
+      "name": "beef lean",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "evoo",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "escarole",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "porcini mushrooms",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "oregano leaves",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "montreal steak",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
       "name": "allspice berries",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "san marzano",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "rigate",
       "pairs_with": "cloves",
       "strength": 1
     }

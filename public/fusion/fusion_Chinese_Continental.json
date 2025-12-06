@@ -2,93 +2,121 @@
   "pair": "Chinese + Continental",
   "bridges": [
     {
-      "name": "wheat",
-      "score": 32.098706710924645,
+      "name": "andouille sausage",
+      "score": 32.042355714602266,
       "connects_a": [
-        "oil",
-        "flour"
+        "chicken broth",
+        "onion",
+        "bell pepper"
       ],
       "connects_b": [
-        "powder",
-        "seeds",
+        "thyme",
+        "onion",
+        "bell pepper"
+      ]
+    },
+    {
+      "name": "wheat",
+      "score": 30.092537541491854,
+      "connects_a": [
+        "flour",
+        "oil"
+      ],
+      "connects_b": [
+        "oats",
+        "chilli",
         "flour"
+      ]
+    },
+    {
+      "name": "celery",
+      "score": 28.06950279513199,
+      "connects_a": [
+        "chicken broth",
+        "onion",
+        "bell pepper"
+      ],
+      "connects_b": [
+        "thyme",
+        "onion",
+        "bell pepper"
       ]
     },
     {
       "name": "ribs celery",
       "score": 24.17490937906013,
       "connects_a": [
-        "scallions",
         "chicken broth",
-        "cloves"
+        "cloves",
+        "onion"
       ],
       "connects_b": [
-        "bell pepper",
+        "thyme",
         "onion",
-        "thyme"
+        "bell pepper"
       ]
     },
     {
       "name": "file powder",
       "score": 24.04874319183523,
       "connects_a": [
-        "vegetable oil",
-        "garlic",
-        "bell pepper"
-      ],
-      "connects_b": [
-        "bell pepper",
         "onion",
-        "leaves"
-      ]
-    },
-    {
-      "name": "andouille sausage",
-      "score": 24.0317667859517,
-      "connects_a": [
-        "chicken broth",
-        "chicken breasts",
+        "bell pepper",
         "garlic"
       ],
       "connects_b": [
-        "bell pepper",
+        "thyme",
         "onion",
-        "thyme"
+        "bell pepper"
       ]
     },
     {
       "name": "oyster sauce",
       "score": 22.014144226869455,
       "connects_a": [
-        "cabbage",
-        "corn starch",
-        "sodium soy sauce"
+        "chicken broth",
+        "rice wine",
+        "soy sauce"
       ],
       "connects_b": [
         "oil"
       ]
     },
     {
-      "name": "celery",
-      "score": 21.052127096348993,
+      "name": "tomato paste",
+      "score": 20.129055531272705,
       "connects_a": [
-        "chicken broth",
-        "garlic",
+        "cloves",
+        "onion",
         "bell pepper"
       ],
       "connects_b": [
-        "bell pepper",
+        "thyme",
         "onion",
-        "thyme"
+        "bell pepper"
+      ]
+    },
+    {
+      "name": "cans tomatoes",
+      "score": 20.044428318272463,
+      "connects_a": [
+        "cloves",
+        "onion",
+        "pepper flakes"
+      ],
+      "connects_b": [
+        "olive oil",
+        "onion",
+        "leaves"
       ]
     },
     {
       "name": "corn starch",
       "score": 20.03969984589309,
       "connects_a": [
-        "cabbage",
-        "sodium soy sauce",
-        "shaoxing"
+        "chicken broth",
+        "rice wine",
+        "soy sauce"
       ],
       "connects_b": [
         "oil"
@@ -98,46 +126,43 @@
       "name": "soy sauce",
       "score": 19.524073755401215,
       "connects_a": [
-        "cabbage",
-        "corn starch",
-        "shaoxing"
+        "rice wine",
+        "honey",
+        "peanut oil"
       ],
       "connects_b": [
         "oil"
-      ]
-    },
-    {
-      "name": "garam masala",
-      "score": 18.101752357321697,
-      "connects_a": [
-        "ginger",
-        "chicken breasts",
-        "vegetable oil"
-      ],
-      "connects_b": [
-        "oil",
-        "potatoes",
-        "onion"
-      ]
-    },
-    {
-      "name": "okra",
-      "score": 18.024599839773344,
-      "connects_a": [
-        "chicken breasts",
-        "vegetable oil",
-        "bell pepper"
-      ],
-      "connects_b": [
-        "bell pepper",
-        "onion",
-        "thyme"
       ]
     }
   ],
   "novel_from_a": [
     {
+      "name": "plum tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "heads garlic",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "baby arugula",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "radicchio",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "mussels",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "spaghetti",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -152,32 +177,7 @@
       "strength": 1
     },
     {
-      "name": "squid",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "heads garlic",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cremini",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "eyeball",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "mussels",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "plum tomatoes",
+      "name": "turkey sausage",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -204,6 +204,11 @@
       "strength": 1
     },
     {
+      "name": "ricotta",
+      "pairs_with": "egg",
+      "strength": 1
+    },
+    {
       "name": "cocoa",
       "pairs_with": "egg",
       "strength": 1
@@ -214,17 +219,12 @@
       "strength": 1
     },
     {
-      "name": "vanilla",
-      "pairs_with": "egg",
-      "strength": 1
-    },
-    {
       "name": "margarine",
       "pairs_with": "egg",
       "strength": 1
     },
     {
-      "name": "ricotta",
+      "name": "vanilla",
       "pairs_with": "egg",
       "strength": 1
     },
@@ -234,8 +234,8 @@
       "strength": 1
     },
     {
-      "name": "food",
-      "pairs_with": "bell pepper",
+      "name": "papaya",
+      "pairs_with": "ginger",
       "strength": 1
     }
   ]

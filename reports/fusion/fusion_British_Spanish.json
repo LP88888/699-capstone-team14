@@ -6,26 +6,26 @@
       "score": 90.12435061986847,
       "connects_a": [
         "tomato paste",
-        "worcestershire sauce",
-        "parsley"
+        "parsley",
+        "2"
       ],
       "connects_b": [
-        "chicken stock",
         "parsley",
-        "garlic"
+        "paprika",
+        "2"
       ]
     },
     {
       "name": "tomato paste",
       "score": 81.52267490165445,
       "connects_a": [
-        "worcestershire sauce",
-        "russet potatoes",
-        "cloves"
+        "cloves",
+        "onion",
+        "parsley"
       ],
       "connects_b": [
-        "cumin",
         "cloves",
+        "onion",
         "parsley"
       ]
     },
@@ -34,27 +34,27 @@
       "score": 70.17375698782998,
       "connects_a": [
         "tomato paste",
-        "worcestershire sauce",
+        "onion",
         "parsley"
       ],
       "connects_b": [
-        "chicken stock",
+        "onion",
         "parsley",
-        "garlic"
+        "paprika"
       ]
     },
     {
       "name": "confectioners",
       "score": 66.34424863774137,
       "connects_a": [
-        "nutmeg",
-        "butter",
-        "egg yolks"
+        "cream",
+        "more",
+        "1"
       ],
       "connects_b": [
-        "butter",
-        "egg",
-        "1"
+        "1",
+        "more",
+        "egg"
       ]
     },
     {
@@ -62,13 +62,13 @@
       "score": 64.04896822792543,
       "connects_a": [
         "tomato paste",
-        "worcestershire sauce",
+        "onion",
         "parsley"
       ],
       "connects_b": [
+        "onion",
         "parsley",
-        "wine",
-        "tomatoes"
+        "carrot"
       ]
     },
     {
@@ -76,13 +76,13 @@
       "score": 63.566971523539685,
       "connects_a": [
         "tomato paste",
-        "russet potatoes",
+        "onion",
         "parsley"
       ],
       "connects_b": [
-        "chicken stock",
-        "cumin",
-        "parsley"
+        "onion",
+        "parsley",
+        "paprika"
       ]
     },
     {
@@ -96,7 +96,7 @@
       "connects_b": [
         "cloves",
         "parsley",
-        "wine"
+        "egg"
       ]
     },
     {
@@ -105,12 +105,12 @@
       "connects_a": [
         "cloves",
         "parsley",
-        "olive oil"
+        "wine"
       ],
       "connects_b": [
-        "chicken stock",
         "cloves",
-        "parsley"
+        "parsley",
+        "paprika"
       ]
     },
     {
@@ -118,12 +118,12 @@
       "score": 56.40812188447363,
       "connects_a": [
         "tomato paste",
-        "worcestershire sauce",
-        "cloves"
+        "cloves",
+        "onion"
       ],
       "connects_b": [
-        "chicken stock",
         "cloves",
+        "onion",
         "parsley"
       ]
     },
@@ -132,24 +132,29 @@
       "score": 56.32961085814641,
       "connects_a": [
         "tomato paste",
-        "worcestershire sauce",
-        "cloves"
+        "cloves",
+        "onion"
       ],
       "connects_b": [
-        "cumin",
         "cloves",
+        "onion",
         "parsley"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "spun",
+      "name": "head fennel",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "head fennel",
+      "name": "cremini",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "spun",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -159,16 +164,6 @@
       "strength": 1
     },
     {
-      "name": "cremini",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "sodium",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
       "name": "head fennel",
       "pairs_with": "cloves",
       "strength": 1
@@ -179,8 +174,8 @@
       "strength": 1
     },
     {
-      "name": "pecans",
-      "pairs_with": "butter",
+      "name": "sodium",
+      "pairs_with": "cloves",
       "strength": 1
     },
     {
@@ -189,14 +184,49 @@
       "strength": 1
     },
     {
-      "name": "slices brioche",
+      "name": "pecans",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "chocolate hazelnut spread",
       "pairs_with": "butter",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
+      "name": "finely oregano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "artichokes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "bunch kale",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "romano cheese",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "some",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pancetta",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "parmigiano",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -206,42 +236,12 @@
       "strength": 1
     },
     {
-      "name": "fennel bulb",
+      "name": "crusty rolls",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "squid",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "kalamata olives",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "finely oregano",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "chianti",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "risotto",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "grape tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "heads garlic",
+      "name": "cannellini",
       "pairs_with": "olive oil",
       "strength": 1
     }

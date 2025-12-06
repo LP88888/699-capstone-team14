@@ -5,97 +5,97 @@
       "name": "celery",
       "score": 160.39715882932566,
       "connects_a": [
-        "hot sauce",
-        "worcestershire sauce",
-        "onion powder"
+        "thyme",
+        "onion",
+        "parsley"
       ],
       "connects_b": [
-        "chicken stock",
+        "onion",
         "parsley",
-        "garlic"
+        "paprika"
       ]
     },
     {
       "name": "andouille sausage",
       "score": 153.2025132604421,
       "connects_a": [
-        "hot sauce",
-        "worcestershire sauce",
-        "onion powder"
+        "thyme",
+        "celery",
+        "onion"
       ],
       "connects_b": [
-        "chicken stock",
-        "garlic",
-        "tomatoes"
+        "onion",
+        "paprika",
+        "bell pepper"
       ]
     },
     {
       "name": "creole seasoning",
       "score": 128.0691370231341,
       "connects_a": [
-        "hot sauce",
-        "worcestershire sauce",
-        "mayonnaise"
+        "thyme",
+        "mayonnaise",
+        "celery"
       ],
       "connects_b": [
-        "chicken stock",
         "parsley",
-        "garlic"
+        "paprika",
+        "bell pepper"
       ]
     },
     {
       "name": "yellow onions",
       "score": 117.16165580582901,
       "connects_a": [
-        "worcestershire sauce",
-        "onion powder",
-        "chicken stock"
+        "kosher sea salt",
+        "thyme",
+        "celery"
       ],
       "connects_b": [
-        "chicken stock",
         "parsley",
-        "garlic"
+        "paprika",
+        "2"
       ]
     },
     {
       "name": "grits",
       "score": 112.43817201060622,
       "connects_a": [
-        "hot sauce",
-        "onion powder",
-        "scallions"
+        "cream",
+        "more",
+        "parsley"
       ],
       "connects_b": [
-        "chicken stock",
-        "butter",
-        "parsley"
+        "more",
+        "parsley",
+        "paprika"
       ]
     },
     {
       "name": "yellow onion",
       "score": 112.06472623294471,
       "connects_a": [
-        "hot sauce",
-        "worcestershire sauce",
-        "onion powder"
+        "kosher sea salt",
+        "thyme",
+        "celery"
       ],
       "connects_b": [
-        "chicken stock",
-        "garlic",
-        "kosher sea salt"
+        "paprika",
+        "2",
+        "wine"
       ]
     },
     {
       "name": "tomato paste",
       "score": 108.6968998688726,
       "connects_a": [
-        "worcestershire sauce",
-        "oregano",
-        "cloves"
+        "thyme",
+        "cloves",
+        "celery"
       ],
       "connects_b": [
-        "cumin",
         "cloves",
+        "onion",
         "parsley"
       ]
     },
@@ -103,26 +103,26 @@
       "name": "chorizo",
       "score": 108.19932230162934,
       "connects_a": [
-        "chicken stock",
         "cloves",
-        "parsley"
+        "parsley",
+        "paprika"
       ],
       "connects_b": [
-        "chicken stock",
         "cloves",
-        "parsley"
+        "parsley",
+        "paprika"
       ]
     },
     {
       "name": "file powder",
       "score": 91.18481793570858,
       "connects_a": [
-        "onion powder",
-        "vegetable oil",
-        "celery"
+        "thyme",
+        "celery",
+        "onion"
       ],
       "connects_b": [
-        "garlic",
+        "onion",
         "tomatoes",
         "bell pepper"
       ]
@@ -131,50 +131,20 @@
       "name": "okra",
       "score": 90.12299919886672,
       "connects_a": [
-        "hot sauce",
-        "worcestershire sauce",
-        "chicken stock"
+        "thyme",
+        "celery",
+        "onion"
       ],
       "connects_b": [
-        "chicken stock",
-        "tomatoes",
-        "bell pepper"
+        "onion",
+        "bell pepper",
+        "rice"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "chipotle puree",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "orzo pasta",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "fettuccine",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "radicchio",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "roma",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "linguine",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "penne pasta",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -184,49 +154,54 @@
       "strength": 1
     },
     {
+      "name": "chipotle puree",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "pasta",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "cannellini beans",
+      "name": "penne pasta",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "by hand",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "linguine",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "radicchio",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "fettuccine",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "orzo pasta",
       "pairs_with": "olive oil",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "cans chickpeas",
+      "name": "pizza",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "cannellini",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "montreal steak",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pinch saffron",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "spaghetti",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "parma",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "eyeball",
+      "name": "heads garlic",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -236,12 +211,37 @@
       "strength": 1
     },
     {
+      "name": "kalamata olives",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "anchovy fillets",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "montreal steak",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "center cut",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "head escarole",
+      "name": "finely oregano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "artichokes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "chorizo",
       "pairs_with": "olive oil",
       "strength": 1
     }

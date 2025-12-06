@@ -5,110 +5,110 @@
       "name": "can tomatoes",
       "score": 140.82402714536605,
       "connects_a": [
-        "hot sauce",
-        "worcestershire sauce",
-        "oregano"
+        "cloves",
+        "celery",
+        "onion"
       ],
       "connects_b": [
-        "oregano",
-        "basil",
-        "cloves"
+        "cloves",
+        "optional",
+        "pepper flakes"
       ]
     },
     {
       "name": "tomato paste",
       "score": 130.8388609532726,
       "connects_a": [
-        "worcestershire sauce",
-        "oregano",
-        "cloves"
+        "thyme",
+        "cloves",
+        "celery"
       ],
       "connects_b": [
-        "oregano",
-        "basil",
-        "cloves"
+        "cloves",
+        "onion",
+        "parsley"
       ]
     },
     {
       "name": "celery",
       "score": 119.29538687931095,
       "connects_a": [
-        "hot sauce",
-        "worcestershire sauce",
-        "onion powder"
+        "thyme",
+        "onion",
+        "andouille sausage"
       ],
       "connects_b": [
-        "oregano",
+        "onion",
         "parsley",
-        "garlic"
+        "oregano"
       ]
     },
     {
       "name": "yellow onions",
       "score": 104.1436940496258,
       "connects_a": [
-        "worcestershire sauce",
-        "onion powder",
-        "chicken stock"
+        "kosher sea salt",
+        "thyme",
+        "celery"
       ],
       "connects_b": [
-        "oregano",
         "parsley",
-        "garlic"
+        "pepper flakes",
+        "oregano"
       ]
     },
     {
       "name": "ribs celery",
       "score": 90.65591017147548,
       "connects_a": [
-        "hot sauce",
-        "worcestershire sauce",
-        "chicken stock"
+        "thyme",
+        "cloves",
+        "onion"
       ],
       "connects_b": [
         "cloves",
-        "parsley",
-        "wine"
+        "optional",
+        "pepper flakes"
       ]
     },
     {
       "name": "andouille sausage",
       "score": 85.11250736691227,
       "connects_a": [
-        "hot sauce",
-        "worcestershire sauce",
-        "onion powder"
+        "thyme",
+        "celery",
+        "onion"
       ],
       "connects_b": [
+        "onion",
         "oregano",
-        "garlic",
-        "tomatoes"
+        "bell pepper"
       ]
     },
     {
       "name": "creole seasoning",
       "score": 85.04591130442498,
       "connects_a": [
-        "hot sauce",
-        "worcestershire sauce",
-        "mayonnaise"
+        "thyme",
+        "mayonnaise",
+        "celery"
       ],
       "connects_b": [
-        "oregano",
         "parsley",
-        "garlic"
+        "oregano",
+        "bell pepper"
       ]
     },
     {
       "name": "file powder",
       "score": 84.1706011714233,
       "connects_a": [
-        "onion powder",
-        "vegetable oil",
-        "andouille sausage"
+        "thyme",
+        "celery",
+        "onion"
       ],
       "connects_b": [
-        "garlic",
+        "onion",
         "tomatoes",
         "bell pepper"
       ]
@@ -117,28 +117,28 @@
       "name": "yellow onion",
       "score": 84.04854467470854,
       "connects_a": [
-        "hot sauce",
-        "worcestershire sauce",
-        "onion powder"
+        "kosher sea salt",
+        "thyme",
+        "celery"
       ],
       "connects_b": [
+        "pepper flakes",
         "oregano",
-        "garlic",
-        "kosher sea salt"
+        "wine"
       ]
     },
     {
       "name": "cornmeal",
       "score": 77.31593142167482,
       "connects_a": [
-        "hot sauce",
+        "thyme",
         "mayonnaise",
-        "onion powder"
+        "flour"
       ],
       "connects_b": [
         "flour",
-        "kosher sea salt",
-        "egg"
+        "egg",
+        "milk"
       ]
     }
   ],
@@ -149,23 +149,13 @@
       "strength": 1
     },
     {
-      "name": "crawfish tail",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
       "name": "crawfish",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "zatarain",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
       "name": "crawfish tail",
-      "pairs_with": "onion",
+      "pairs_with": "butter",
       "strength": 1
     },
     {
@@ -179,49 +169,59 @@
       "strength": 1
     },
     {
+      "name": "crawfish tail",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
       "name": "pinto beans",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "pepper jack cheese",
+      "name": "zatarain",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "file powder",
       "pairs_with": "bell pepper",
       "strength": 1
     },
     {
-      "name": "plantains",
+      "name": "crawfish",
       "pairs_with": "bell pepper",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
+      "name": "crusty bread",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "finely oregano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "bunch kale",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "chipotle puree",
+      "name": "pasta",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "giardiniera",
+      "name": "some",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "radicchio",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "petite",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pinenuts",
+      "name": "pancetta",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -231,17 +231,17 @@
       "strength": 1
     },
     {
-      "name": "fennel bulb",
+      "name": "crusty rolls",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "squid",
+      "name": "[extra",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "porcini mushrooms",
+      "name": "ricotta salata",
       "pairs_with": "olive oil",
       "strength": 1
     }

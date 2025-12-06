@@ -6,80 +6,52 @@
       "score": 35.1978518059033,
       "connects_a": [
         "tomato paste",
-        "vegetable oil",
-        "garlic"
+        "onion",
+        "cayenne pepper"
       ],
       "connects_b": [
         "turmeric",
-        "oil",
-        "chili powder"
+        "chili powder",
+        "oil"
       ]
     },
     {
       "name": "dhania",
-      "score": 25.996864356228812,
+      "score": 27.036738930477963,
       "connects_a": [
         "peas"
       ],
       "connects_b": [
+        "gram flour",
         "powder",
-        "split",
-        "wheat"
-      ]
-    },
-    {
-      "name": "sprigs thyme",
-      "score": 24.051058789723786,
-      "connects_a": [
-        "tomato paste",
-        "cloves",
-        "wine"
-      ],
-      "connects_b": [
-        "potatoes",
-        "split",
-        "leaves"
-      ]
-    },
-    {
-      "name": "mustard seeds",
-      "score": 21.016355711547316,
-      "connects_a": [
-        "vegetable oil",
-        "potatoes",
-        "peas"
-      ],
-      "connects_b": [
-        "turmeric",
-        "oil",
-        "split"
-      ]
-    },
-    {
-      "name": "cardamom",
-      "score": 20.29931202144538,
-      "connects_a": [
-        "nutmeg",
-        "peas"
-      ],
-      "connects_b": [
-        "powder",
-        "seeds",
-        "turmeric"
+        "carom"
       ]
     },
     {
       "name": "tumeric",
       "score": 20.056614520993726,
       "connects_a": [
-        "garlic",
+        "onion",
         "cayenne pepper",
-        "onion"
+        "garlic"
       ],
       "connects_b": [
-        "oil",
-        "potatoes",
-        "chili powder"
+        "chili powder",
+        "peas",
+        "potatoes"
+      ]
+    },
+    {
+      "name": "cardamom",
+      "score": 18.269380819300842,
+      "connects_a": [
+        "peas",
+        "nutmeg"
+      ],
+      "connects_b": [
+        "carom",
+        "chilli",
+        "turmeric"
       ]
     },
     {
@@ -87,24 +59,51 @@
       "score": 18.06626861948679,
       "connects_a": [
         "tomato paste",
-        "worcestershire sauce",
-        "mushrooms"
+        "flour",
+        "onion"
       ],
       "connects_b": [
+        "flour",
+        "potatoes"
+      ]
+    },
+    {
+      "name": "mustard seeds",
+      "score": 18.014019181326272,
+      "connects_a": [
+        "peas",
         "potatoes",
-        "flour"
+        "vegetable oil"
+      ],
+      "connects_b": [
+        "turmeric",
+        "chili powder",
+        "oil"
+      ]
+    },
+    {
+      "name": "sprigs thyme",
+      "score": 16.03403919314919,
+      "connects_a": [
+        "tomato paste",
+        "cloves",
+        "grain sea salt"
+      ],
+      "connects_b": [
+        "leaves",
+        "potatoes"
       ]
     },
     {
       "name": "powder red",
-      "score": 17.007554366285202,
+      "score": 16.007109991797837,
       "connects_a": [
         "peas"
       ],
       "connects_b": [
-        "powder",
-        "seeds",
-        "rai"
+        "carom",
+        "chilli",
+        "chillies coriander"
       ]
     },
     {
@@ -112,8 +111,8 @@
       "score": 14.082402714536602,
       "connects_a": [
         "tomato paste",
-        "worcestershire sauce",
-        "cloves"
+        "cloves",
+        "onion"
       ],
       "connects_b": [
         "chili powder",
@@ -122,13 +121,13 @@
     },
     {
       "name": "wheat",
-      "score": 14.043184186029531,
+      "score": 13.040099601313138,
       "connects_a": [
         "flour"
       ],
       "connects_b": [
-        "powder",
-        "seeds",
+        "carom",
+        "chilli",
         "flour"
       ]
     }
@@ -145,22 +144,22 @@
       "strength": 1
     },
     {
-      "name": "biscuits",
+      "name": "chocolate chips",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "dry yeast",
+      "name": "cold",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "self",
+      "name": "buttermilk",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "lard",
+      "name": "cod",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -170,12 +169,12 @@
       "strength": 1
     },
     {
-      "name": "shortening",
+      "name": "biscuits",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "buttermilk",
+      "name": "soda",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -197,27 +196,12 @@
       "strength": 1
     },
     {
-      "name": "finger",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "carom",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "flour all",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
       "name": "pearl",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "demerara",
+      "name": "wheat",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -227,12 +211,27 @@
       "strength": 1
     },
     {
-      "name": "maida sooji",
+      "name": "flour all",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "wheat",
+      "name": "carom",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "finger",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "demerara",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "maida sooji",
       "pairs_with": "flour",
       "strength": 1
     }

@@ -5,27 +5,27 @@
       "name": "andouille sausage",
       "score": 168.2223675016619,
       "connects_a": [
-        "worcestershire sauce",
-        "tomatoes",
-        "okra"
+        "chicken broth",
+        "cajun seasoning",
+        "oregano"
       ],
       "connects_b": [
         "chicken broth",
-        "chicken breasts",
-        "garlic"
+        "onion",
+        "bell pepper"
       ]
     },
     {
       "name": "celery",
       "score": 161.39964107200893,
       "connects_a": [
-        "worcestershire sauce",
-        "tomatoes",
-        "okra"
+        "chicken broth",
+        "cajun seasoning",
+        "oregano"
       ],
       "connects_b": [
         "chicken broth",
-        "garlic",
+        "onion",
         "bell pepper"
       ]
     },
@@ -33,28 +33,28 @@
       "name": "oyster sauce",
       "score": 132.0848653612167,
       "connects_a": [
+        "chicken broth",
         "chili sauce",
-        "chicken breasts",
-        "chicken broth"
+        "chicken breasts"
       ],
       "connects_b": [
-        "cabbage",
-        "corn starch",
-        "sodium soy sauce"
+        "chicken broth",
+        "rice wine",
+        "soy sauce"
       ]
     },
     {
       "name": "chili sauce",
       "score": 120.21171734570844,
       "connects_a": [
-        "worcestershire sauce",
-        "onion powder",
-        "celery"
+        "celery",
+        "andouille sausage",
+        "cajun seasoning"
       ],
       "connects_b": [
         "hoisin sauce",
-        "soy sauce",
-        "scallions"
+        "corn starch",
+        "rice vinegar"
       ]
     },
     {
@@ -62,83 +62,83 @@
       "score": 110.31594394453099,
       "connects_a": [
         "chicken broth",
-        "chicken stock",
-        "celery"
+        "celery",
+        "andouille sausage"
       ],
       "connects_b": [
+        "chicken broth",
         "hoisin sauce",
-        "soy sauce",
-        "chicken broth"
+        "corn starch"
       ]
     },
     {
       "name": "okra",
       "score": 102.13939909204896,
       "connects_a": [
-        "hot sauce",
-        "worcestershire sauce",
-        "chili sauce"
+        "thyme",
+        "celery",
+        "onion"
       ],
       "connects_b": [
-        "chicken breasts",
-        "vegetable oil",
-        "bell pepper"
+        "onion",
+        "bell pepper",
+        "chicken breasts"
       ]
     },
     {
       "name": "shiitake",
       "score": 102.07561619275421,
       "connects_a": [
-        "chicken breasts",
         "chicken broth",
-        "chicken stock"
+        "thyme",
+        "celery"
       ],
       "connects_b": [
-        "hoisin sauce",
-        "ginger",
-        "mushrooms"
+        "chicken broth",
+        "shrimp",
+        "hoisin sauce"
       ]
     },
     {
       "name": "noodles",
       "score": 102.06479571980205,
       "connects_a": [
+        "chicken broth",
         "chili sauce",
-        "chicken breasts",
-        "chicken broth"
+        "chicken breasts"
       ],
       "connects_b": [
-        "hoisin sauce",
-        "ginger",
-        "pork"
+        "chicken broth",
+        "shrimp",
+        "hoisin sauce"
       ]
     },
     {
       "name": "corn starch",
       "score": 100.19849922946544,
       "connects_a": [
-        "chili sauce",
         "chicken broth",
-        "chicken breasts"
+        "chili sauce",
+        "rice"
       ],
       "connects_b": [
-        "cabbage",
-        "sodium soy sauce",
-        "shaoxing"
+        "chicken broth",
+        "rice wine",
+        "soy sauce"
       ]
     },
     {
       "name": "creole seasoning",
       "score": 95.05131263435733,
       "connects_a": [
-        "worcestershire sauce",
-        "tomatoes",
-        "shrimp"
+        "chicken broth",
+        "oregano",
+        "hot sauce"
       ],
       "connects_b": [
         "chicken broth",
-        "garlic",
-        "bell pepper"
+        "bell pepper",
+        "rice"
       ]
     }
   ],
@@ -149,32 +149,27 @@
       "strength": 1
     },
     {
-      "name": "chorizo sausage",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
       "name": "chorizo",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "ham hocks",
+      "name": "chorizo sausage",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "file powder",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "shrimp stock",
+      "name": "chicken base",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "kidney beans",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "roux",
+      "name": "crawfish",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -184,19 +179,39 @@
       "strength": 1
     },
     {
-      "name": "in juice",
+      "name": "navy beans",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "okra",
+      "name": "pinto beans",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "oxtails",
       "pairs_with": "onion",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
+      "name": "heads garlic",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "baby arugula",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "radicchio",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "mussels",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -211,12 +226,12 @@
       "strength": 1
     },
     {
-      "name": "squid",
+      "name": "spun",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "heads garlic",
+      "name": "palm",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -226,22 +241,7 @@
       "strength": 1
     },
     {
-      "name": "eyeball",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "mussels",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "spun",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "baby arugula",
+      "name": "squid",
       "pairs_with": "olive oil",
       "strength": 1
     }

@@ -5,14 +5,14 @@
       "name": "ribs celery",
       "score": 80.58303126353377,
       "connects_a": [
-        "scallions",
         "chicken broth",
-        "cloves"
+        "cloves",
+        "onion"
       ],
       "connects_b": [
         "cloves",
-        "parsley",
-        "wine"
+        "optional",
+        "pepper flakes"
       ]
     },
     {
@@ -21,21 +21,21 @@
       "connects_a": [
         "chicken broth",
         "cloves",
-        "pepper flakes"
+        "onion"
       ],
       "connects_b": [
-        "oregano",
-        "basil",
-        "cloves"
+        "cloves",
+        "optional",
+        "pepper flakes"
       ]
     },
     {
       "name": "hoisin sauce",
       "score": 66.05046034748358,
       "connects_a": [
-        "cabbage",
-        "corn starch",
-        "sodium soy sauce"
+        "rice wine",
+        "honey",
+        "soy sauce"
       ],
       "connects_b": [
         "pepper flakes",
@@ -47,28 +47,28 @@
       "name": "inch piece",
       "score": 65.19444623290042,
       "connects_a": [
+        "cloves",
         "hoisin sauce",
-        "soy sauce",
-        "mushrooms"
+        "canola oil"
       ],
       "connects_b": [
+        "more",
         "cloves",
-        "grain sea salt",
-        "more"
+        "grain sea salt"
       ]
     },
     {
       "name": "tomato paste",
       "score": 50.322638828181766,
       "connects_a": [
-        "pork",
         "cloves",
+        "onion",
         "bell pepper"
       ],
       "connects_b": [
-        "oregano",
-        "basil",
-        "cloves"
+        "cloves",
+        "onion",
+        "parsley"
       ]
     },
     {
@@ -76,13 +76,13 @@
       "score": 50.11107079568116,
       "connects_a": [
         "cloves",
-        "pepper flakes",
-        "onion"
+        "onion",
+        "pepper flakes"
       ],
       "connects_b": [
-        "oregano",
         "cloves",
-        "olive oil"
+        "optional",
+        "pepper flakes"
       ]
     },
     {
@@ -90,36 +90,36 @@
       "score": 49.12162989148098,
       "connects_a": [
         "chicken broth",
-        "garlic",
+        "onion",
         "bell pepper"
       ],
       "connects_b": [
-        "oregano",
+        "onion",
         "parsley",
-        "garlic"
+        "oregano"
       ]
     },
     {
       "name": "veal",
       "score": 44.11992110271641,
       "connects_a": [
-        "carrot",
+        "cloves",
         "pork",
-        "egg"
+        "carrot"
       ],
       "connects_b": [
-        "oregano",
         "cloves",
-        "parsley"
+        "parsley",
+        "oregano"
       ]
     },
     {
       "name": "sesame oil",
       "score": 42.16609313748484,
       "connects_a": [
-        "cabbage",
-        "corn starch",
-        "sodium soy sauce"
+        "rice wine",
+        "honey",
+        "soy sauce"
       ],
       "connects_b": [
         "pepper flakes",
@@ -130,9 +130,9 @@
       "name": "corn starch",
       "score": 40.07939969178618,
       "connects_a": [
-        "cabbage",
-        "sodium soy sauce",
-        "shaoxing"
+        "chicken broth",
+        "rice wine",
+        "soy sauce"
       ],
       "connects_b": [
         "pepper flakes",
@@ -147,38 +147,18 @@
       "strength": 1
     },
     {
-      "name": "tomatillos",
+      "name": "lentil",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "lentil",
+      "name": "tomatillos",
       "pairs_with": "onion",
       "strength": 1
     },
     {
       "name": "beansprouts",
       "pairs_with": "egg",
-      "strength": 1
-    },
-    {
-      "name": "thai basil",
-      "pairs_with": "carrot",
-      "strength": 1
-    },
-    {
-      "name": "spring roll wrappers",
-      "pairs_with": "carrot",
-      "strength": 1
-    },
-    {
-      "name": "wrappers",
-      "pairs_with": "carrot",
-      "strength": 1
-    },
-    {
-      "name": "hoisin sauce",
-      "pairs_with": "carrot",
       "strength": 1
     },
     {
@@ -190,56 +170,76 @@
       "name": "water chestnuts",
       "pairs_with": "carrot",
       "strength": 1
+    },
+    {
+      "name": "hoisin sauce",
+      "pairs_with": "carrot",
+      "strength": 1
+    },
+    {
+      "name": "beansprouts",
+      "pairs_with": "carrot",
+      "strength": 1
+    },
+    {
+      "name": "thai basil",
+      "pairs_with": "carrot",
+      "strength": 1
+    },
+    {
+      "name": "miso",
+      "pairs_with": "carrot",
+      "strength": 1
     }
   ],
   "novel_from_b": [
+    {
+      "name": "crusty bread",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "pecorino cheese",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "escarole",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "finely oregano",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "serrano chili",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "bunch cilantro",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
     {
       "name": "bunch kale",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "chipotle puree",
+      "name": "some",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "herbes",
+      "name": "parmigiano",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "thighs",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "hair pasta",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "jalapeno chile",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "rigate",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "evoo",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "porcini mushrooms",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "crusty bread",
+      "name": "slab bacon",
       "pairs_with": "cloves",
       "strength": 1
     }

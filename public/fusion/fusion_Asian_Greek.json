@@ -5,13 +5,13 @@
       "name": "hoisin sauce",
       "score": 80.06116405755586,
       "connects_a": [
-        "cabbage",
-        "sodium soy sauce",
-        "fish sauce"
+        "honey",
+        "cilantro",
+        "soy sauce"
       ],
       "connects_b": [
-        "garlic",
         "cucumber",
+        "chicken breasts",
         "honey"
       ]
     },
@@ -19,23 +19,23 @@
       "name": "cucumber",
       "score": 70.10528927213454,
       "connects_a": [
+        "fish sauce",
         "hoisin sauce",
-        "lime",
-        "wine vinegar"
+        "rice vinegar"
       ],
       "connects_b": [
-        "yogurt",
-        "greek yogurt",
-        "oregano"
+        "cheese crumbles",
+        "oregano",
+        "kalamata"
       ]
     },
     {
       "name": "bean sprouts",
       "score": 69.14642483769302,
       "connects_a": [
-        "cabbage",
-        "sodium soy sauce",
-        "fish sauce"
+        "cilantro",
+        "soy sauce",
+        "peanut oil"
       ],
       "connects_b": [
         "cucumber",
@@ -47,98 +47,98 @@
       "name": "inch piece",
       "score": 68.20342067441891,
       "connects_a": [
-        "hoisin sauce",
-        "soy sauce",
-        "mushrooms"
+        "fish sauce",
+        "cloves",
+        "hoisin sauce"
       ],
       "connects_b": [
-        "grain sea salt",
         "more",
-        "wine vinegar"
+        "wine vinegar",
+        "grain sea salt"
       ]
     },
     {
       "name": "chile",
       "score": 60.258699054335445,
       "connects_a": [
-        "lime",
-        "soy sauce",
-        "cloves"
+        "fish sauce",
+        "cloves",
+        "oyster sauce"
       ],
       "connects_b": [
-        "yogurt",
         "cloves",
-        "grain sea salt"
+        "grain sea salt",
+        "mint"
       ]
     },
     {
       "name": "sriracha",
       "score": 60.07100227946479,
       "connects_a": [
-        "cabbage",
-        "sodium soy sauce",
-        "fish sauce"
+        "honey",
+        "cilantro",
+        "soy sauce"
       ],
       "connects_b": [
-        "garlic",
+        "chicken breasts",
         "honey",
-        "chicken breasts"
+        "garlic"
       ]
     },
     {
       "name": "fish sauce",
       "score": 57.56040889434903,
       "connects_a": [
-        "cabbage",
-        "sodium soy sauce",
-        "shrimp"
+        "cilantro",
+        "soy sauce",
+        "peanut oil"
       ],
       "connects_b": [
+        "chicken breasts",
         "cucumber",
-        "mint",
-        "chicken breasts"
+        "mint"
       ]
     },
     {
       "name": "rice vinegar",
       "score": 57.13067301597252,
       "connects_a": [
-        "cabbage",
-        "sodium soy sauce",
-        "fish sauce"
+        "honey",
+        "cilantro",
+        "soy sauce"
       ],
       "connects_b": [
         "cucumber",
-        "honey",
-        "chicken breasts"
+        "chicken breasts",
+        "honey"
       ]
     },
     {
       "name": "garam masala",
       "score": 54.30525707196509,
       "connects_a": [
+        "onion",
         "ginger",
-        "chicken breasts",
-        "vegetable oil"
+        "chicken breasts"
       ],
       "connects_b": [
-        "yogurt",
-        "greek yogurt",
-        "chicken breasts"
+        "spinach",
+        "onion",
+        "greek yogurt"
       ]
     },
     {
       "name": "sesame oil",
       "score": 54.21354831962337,
       "connects_a": [
-        "hoisin sauce",
-        "ginger",
-        "mushrooms"
+        "fish sauce",
+        "pepper flakes",
+        "honey"
       ],
       "connects_b": [
-        "garlic",
+        "chicken breasts",
         "honey",
-        "chicken breasts"
+        "garlic"
       ]
     }
   ],
@@ -149,37 +149,12 @@
       "strength": 1
     },
     {
-      "name": "chipotle puree",
+      "name": "pancetta",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "radicchio",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "basil chiffonade",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cremini",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pass",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "mussels",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "brussels sprouts",
+      "name": "crusty rolls",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -189,19 +164,44 @@
       "strength": 1
     },
     {
-      "name": "crusty rolls",
+      "name": "chorizo",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "chorizo sausage",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pass",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "radicchio",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "mussels",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "chipotle puree",
       "pairs_with": "olive oil",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "orzo pasta",
+      "name": "pizza",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "cubanelle peppers",
+      "name": "crusty bread",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -211,37 +211,37 @@
       "strength": 1
     },
     {
-      "name": "roasted tomatoes",
+      "name": "reggiano cheese",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "petite",
+      "name": "kalamata olives",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pinenuts",
+      "name": "pepperoncini peppers",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "penne pasta",
+      "name": "cubanelle peppers",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pecorino",
+      "name": "porcini mushrooms",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "san marzano",
+      "name": "capers",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "arugula leaves",
+      "name": "finely oregano",
       "pairs_with": "olive oil",
       "strength": 1
     }

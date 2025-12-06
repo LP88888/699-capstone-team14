@@ -5,69 +5,69 @@
       "name": "tomato paste",
       "score": 104.67108876261807,
       "connects_a": [
-        "worcestershire sauce",
-        "oregano",
-        "cloves"
+        "thyme",
+        "cloves",
+        "celery"
       ],
       "connects_b": [
-        "russet potatoes",
+        "thyme",
         "cloves",
-        "parsley"
+        "onion"
       ]
     },
     {
       "name": "celery",
       "score": 85.21099062807926,
       "connects_a": [
-        "hot sauce",
-        "worcestershire sauce",
-        "onion powder"
+        "thyme",
+        "onion",
+        "andouille sausage"
       ],
       "connects_b": [
-        "parsley",
-        "garlic",
-        "thyme"
+        "thyme",
+        "onion",
+        "parsley"
       ]
     },
     {
       "name": "file powder",
       "score": 84.1706011714233,
       "connects_a": [
-        "onion powder",
-        "vegetable oil",
-        "andouille sausage"
+        "thyme",
+        "celery",
+        "onion"
       ],
       "connects_b": [
-        "vegetable oil",
-        "garlic",
-        "thyme"
+        "thyme",
+        "onion",
+        "garlic"
       ]
     },
     {
       "name": "yellow onions",
       "score": 78.10777053721934,
       "connects_a": [
-        "worcestershire sauce",
-        "onion powder",
-        "chicken stock"
+        "kosher sea salt",
+        "thyme",
+        "celery"
       ],
       "connects_b": [
+        "thyme",
         "parsley",
-        "garlic",
-        "kosher sea salt"
+        "2"
       ]
     },
     {
       "name": "cornmeal",
       "score": 77.31593142167482,
       "connects_a": [
-        "hot sauce",
+        "thyme",
         "mayonnaise",
-        "onion powder"
+        "flour"
       ],
       "connects_b": [
+        "thyme",
         "flour",
-        "kosher sea salt",
         "egg"
       ]
     },
@@ -75,68 +75,68 @@
       "name": "grits",
       "score": 72.28168200681829,
       "connects_a": [
-        "hot sauce",
-        "onion powder",
-        "chicken stock"
+        "cream",
+        "andouille sausage",
+        "parsley"
       ],
       "connects_b": [
-        "butter",
-        "parsley",
-        "cream"
+        "cream",
+        "more",
+        "parsley"
       ]
     },
     {
       "name": "onion powder",
       "score": 65.2293656134977,
       "connects_a": [
-        "hot sauce",
-        "worcestershire sauce",
-        "mayonnaise"
+        "thyme",
+        "mayonnaise",
+        "celery"
       ],
       "connects_b": [
-        "kosher sea salt",
         "thyme",
-        "buttermilk"
+        "buttermilk",
+        "2"
       ]
     },
     {
       "name": "bay leaf",
       "score": 60.5399728795616,
       "connects_a": [
-        "chicken stock",
-        "oregano",
-        "parsley"
+        "thyme",
+        "celery",
+        "onion"
       ],
       "connects_b": [
-        "russet potatoes",
-        "parsley",
-        "thyme"
+        "thyme",
+        "onion",
+        "parsley"
       ]
     },
     {
       "name": "okra",
       "score": 60.08199946591115,
       "connects_a": [
-        "hot sauce",
-        "worcestershire sauce",
-        "chicken stock"
+        "thyme",
+        "celery",
+        "onion"
       ],
       "connects_b": [
-        "vegetable oil",
-        "onion",
-        "purpose flour"
+        "thyme",
+        "purpose flour",
+        "onion"
       ]
     },
     {
       "name": "yellow onion",
       "score": 56.032363116472354,
       "connects_a": [
-        "hot sauce",
-        "worcestershire sauce",
-        "onion powder"
+        "kosher sea salt",
+        "thyme",
+        "celery"
       ],
       "connects_b": [
-        "garlic",
+        "thyme",
         "kosher sea salt",
         "2"
       ]
@@ -144,17 +144,12 @@
   ],
   "novel_from_a": [
     {
-      "name": "cannellini",
+      "name": "basil chiffonade",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "fettuccine",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "spaghetti",
+      "name": "heads garlic",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -164,12 +159,12 @@
       "strength": 1
     },
     {
-      "name": "beefsteak tomatoes",
+      "name": "oregano leaves",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "roasted tomatoes",
+      "name": "canned tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -179,24 +174,29 @@
       "strength": 1
     },
     {
-      "name": "parmigiano",
+      "name": "chorizo",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "mussels",
+      "name": "roasted tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "eggplants",
+      "name": "chorizo sausage",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "romano cheese",
       "pairs_with": "olive oil",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "bunch kale",
+      "name": "palm",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -206,7 +206,7 @@
       "strength": 1
     },
     {
-      "name": "palm",
+      "name": "bunch kale",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -216,7 +216,7 @@
       "strength": 1
     },
     {
-      "name": "bunch kale",
+      "name": "palm",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -226,22 +226,22 @@
       "strength": 1
     },
     {
-      "name": "palm",
+      "name": "sirloin",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "hair pasta",
+      "name": "finely parsley",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "slab bacon",
+      "name": "bunch kale",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "chipotles",
+      "name": "leg",
       "pairs_with": "cloves",
       "strength": 1
     }

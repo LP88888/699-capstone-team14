@@ -5,28 +5,28 @@
       "name": "confectioners",
       "score": 66.34424863774137,
       "connects_a": [
-        "nutmeg",
-        "butter",
-        "egg yolks"
+        "cream",
+        "more",
+        "1"
       ],
       "connects_b": [
-        "butter",
         "cream",
-        "cinnamon"
+        "more",
+        "1"
       ]
     },
     {
       "name": "tomato paste",
       "score": 63.406524923509025,
       "connects_a": [
-        "worcestershire sauce",
-        "russet potatoes",
-        "cloves"
+        "cloves",
+        "onion",
+        "parsley"
       ],
       "connects_b": [
-        "cumin",
-        "oregano",
-        "cloves"
+        "cloves",
+        "onion",
+        "oregano"
       ]
     },
     {
@@ -34,54 +34,54 @@
       "score": 63.35613325062594,
       "connects_a": [
         "tomato paste",
-        "vegetable oil",
-        "garlic"
+        "onion",
+        "cayenne pepper"
       ],
       "connects_b": [
-        "chicken breasts",
+        "onion",
         "cumin",
-        "vegetable oil"
+        "chicken breasts"
       ]
     },
     {
       "name": "at",
       "score": 60.23898775750824,
       "connects_a": [
-        "butter",
-        "egg yolks",
-        "cream"
+        "cream",
+        "more",
+        "1"
       ],
       "connects_b": [
-        "butter",
         "cream",
-        "kosher sea salt"
+        "more",
+        "1"
       ]
     },
     {
       "name": "corn tortillas",
       "score": 51.17903409034358,
       "connects_a": [
-        "vegetable oil",
+        "more",
         "onion",
-        "more"
+        "vegetable oil"
       ],
       "connects_b": [
-        "cilantro leaves",
-        "lime",
-        "tomatillos"
+        "jalapeno",
+        "more",
+        "cilantro leaves"
       ]
     },
     {
       "name": "ice water",
       "score": 50.25488102290018,
       "connects_a": [
-        "nutmeg",
-        "flour",
-        "butter"
+        "1",
+        "more",
+        "flour"
       ],
       "connects_b": [
-        "butter",
-        "cinnamon",
+        "1",
+        "more",
         "egg"
       ]
     },
@@ -89,14 +89,14 @@
       "name": "whole milk",
       "score": 50.14642586573099,
       "connects_a": [
-        "nutmeg",
-        "butter",
-        "egg yolks"
+        "more",
+        "egg yolks",
+        "egg"
       ],
       "connects_b": [
-        "butter",
-        "kosher sea salt",
-        "cinnamon"
+        "more",
+        "egg",
+        "butter"
       ]
     },
     {
@@ -104,12 +104,12 @@
       "score": 50.069083677704704,
       "connects_a": [
         "tomato paste",
-        "worcestershire sauce",
-        "parsley"
+        "parsley",
+        "2"
       ],
       "connects_b": [
-        "chicken stock",
         "oregano",
+        "bell pepper",
         "garlic"
       ]
     },
@@ -118,33 +118,33 @@
       "score": 49.12162989148098,
       "connects_a": [
         "tomato paste",
-        "worcestershire sauce",
+        "onion",
         "parsley"
       ],
       "connects_b": [
-        "chicken stock",
+        "onion",
         "oregano",
-        "garlic"
+        "bell pepper"
       ]
     },
     {
       "name": "sticks",
       "score": 45.15915269433451,
       "connects_a": [
-        "nutmeg",
-        "butter",
+        "1",
+        "more",
         "egg yolks"
       ],
       "connects_b": [
-        "butter",
-        "cinnamon",
+        "1",
+        "more",
         "egg"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "spun",
+      "name": "crusty bread",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -155,16 +155,6 @@
     },
     {
       "name": "for drizzling",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "crusty bread",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "prosciutto",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -174,6 +164,21 @@
       "strength": 1
     },
     {
+      "name": "spun",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "prosciutto",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "crusty bread",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
       "name": "head fennel",
       "pairs_with": "cloves",
       "strength": 1
@@ -184,24 +189,34 @@
       "strength": 1
     },
     {
-      "name": "leaves finely",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "ribs celery",
+      "name": "cremini",
       "pairs_with": "cloves",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "chipotle puree",
+      "name": "finely oregano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "petite",
+      "name": "artichokes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "romano cheese",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "some",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "parmigiano",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -211,27 +226,7 @@
       "strength": 1
     },
     {
-      "name": "fennel bulb",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "squid",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "porcini mushrooms",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "finely oregano",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "grape tomatoes",
+      "name": "couscous",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -241,7 +236,12 @@
       "strength": 1
     },
     {
-      "name": "romano",
+      "name": "chorizo",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "roasted tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     }

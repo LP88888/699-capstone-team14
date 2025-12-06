@@ -5,12 +5,12 @@
       "name": "garam masala",
       "score": 64.36178615936603,
       "connects_a": [
+        "onion",
         "cumin",
-        "vegetable oil",
-        "garlic"
+        "lemon juice"
       ],
       "connects_b": [
-        "coconut milk",
+        "onion",
         "ginger",
         "cumin"
       ]
@@ -19,28 +19,28 @@
       "name": "confectioners",
       "score": 60.31295330703761,
       "connects_a": [
-        "butter",
         "cream",
-        "cinnamon"
+        "more",
+        "1"
       ],
       "connects_b": [
-        "butter",
         "cream",
-        "cinnamon"
+        "1",
+        "egg"
       ]
     },
     {
       "name": "at",
       "score": 54.21508898175742,
       "connects_a": [
-        "butter",
         "cream",
-        "kosher sea salt"
+        "more",
+        "1"
       ],
       "connects_b": [
-        "butter",
         "cream",
-        "kosher sea salt"
+        "1",
+        "egg"
       ]
     },
     {
@@ -48,41 +48,41 @@
       "score": 49.35710664891443,
       "connects_a": [
         "cloves",
-        "parsley",
-        "optional"
+        "optional",
+        "parsley"
       ],
       "connects_b": [
-        "scallions",
+        "thyme",
         "cloves",
-        "parsley"
+        "onion"
       ]
     },
     {
       "name": "tomato paste",
       "score": 49.31618605161813,
       "connects_a": [
-        "cumin",
         "cloves",
+        "onion",
         "parsley"
       ],
       "connects_b": [
-        "cumin",
+        "thyme",
         "cloves",
-        "parsley"
+        "onion"
       ]
     },
     {
       "name": "palm",
       "score": 49.188548301153695,
       "connects_a": [
-        "cumin",
         "cloves",
+        "onion",
         "parsley"
       ],
       "connects_b": [
-        "cumin",
-        "scallions",
-        "cloves"
+        "cloves",
+        "onion",
+        "parsley"
       ]
     },
     {
@@ -90,26 +90,26 @@
       "score": 48.043752199700364,
       "connects_a": [
         "mayonnaise",
-        "dijon mustard",
+        "honey",
         "cumin"
       ],
       "connects_b": [
         "cilantro leaves",
-        "lime",
-        "cumin"
+        "honey",
+        "lime juice"
       ]
     },
     {
       "name": "chiles",
       "score": 45.214769803042266,
       "connects_a": [
-        "cumin",
         "cloves",
-        "vegetable oil"
+        "taste",
+        "2"
       ],
       "connects_b": [
+        "cloves",
         "cilantro leaves",
-        "lime",
         "ginger"
       ]
     },
@@ -117,13 +117,13 @@
       "name": "chile powder",
       "score": 45.03870649936307,
       "connects_a": [
-        "dijon mustard",
+        "honey",
         "cumin",
-        "wine vinegar"
+        "dijon mustard"
       ],
       "connects_b": [
         "cilantro leaves",
-        "lime",
+        "honey",
         "cumin"
       ]
     },
@@ -131,65 +131,65 @@
       "name": "vanilla extract",
       "score": 42.67388452352743,
       "connects_a": [
-        "butter",
         "cream",
-        "cinnamon"
+        "1",
+        "egg"
       ],
       "connects_b": [
-        "butter",
         "cream",
-        "cinnamon"
+        "1",
+        "egg"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "crusty bread",
+      "name": "[extra",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "heads garlic",
+      "name": "ricotta salata",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "romano",
+      "name": "head fennel",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "arugula",
+      "name": "pizza",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "penne pasta",
+      "name": "marzano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pass",
+      "name": "morel mushrooms",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "mortadella",
+      "name": "pecorino",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "cannellini",
+      "name": "prosciutto",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pasta",
+      "name": "palm",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "crusty rolls",
+      "name": "center cut",
       "pairs_with": "olive oil",
       "strength": 1
     }

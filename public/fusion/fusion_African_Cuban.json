@@ -5,14 +5,14 @@
       "name": "cumin",
       "score": 122.06191225274358,
       "connects_a": [
-        "cilantro leaves",
         "tomato paste",
-        "turmeric"
+        "cilantro leaves",
+        "cumin seeds"
       ],
       "connects_b": [
-        "lime",
-        "bay leaf",
-        "oregano"
+        "oregano",
+        "bell pepper",
+        "bay leaf"
       ]
     },
     {
@@ -20,40 +20,40 @@
       "score": 98.55398505652924,
       "connects_a": [
         "tomato paste",
-        "ginger",
-        "cumin"
+        "cumin seeds",
+        "onion"
       ],
       "connects_b": [
+        "onion",
         "bay leaf",
-        "cumin",
-        "vegetable oil"
+        "cumin"
       ]
     },
     {
       "name": "chiles",
       "score": 84.40090363234556,
       "connects_a": [
-        "cilantro leaves",
-        "ginger",
-        "cumin"
+        "cloves",
+        "cumin seeds",
+        "cilantro leaves"
       ],
       "connects_b": [
-        "lime",
+        "cloves",
         "cumin",
-        "cloves"
+        "lime"
       ]
     },
     {
       "name": "tomato paste",
       "score": 81.52267490165445,
       "connects_a": [
-        "cumin",
-        "turmeric",
-        "cloves"
+        "cloves",
+        "onion",
+        "parsley"
       ],
       "connects_b": [
-        "pork",
-        "bay leaf",
+        "cloves",
+        "onion",
         "oregano"
       ]
     },
@@ -62,41 +62,41 @@
       "score": 72.25275400989682,
       "connects_a": [
         "cilantro leaves",
-        "cumin",
-        "chicken stock"
+        "onion",
+        "roughly"
       ],
       "connects_b": [
-        "lime",
-        "cumin",
-        "oregano"
+        "onion",
+        "oregano",
+        "cumin"
       ]
     },
     {
       "name": "jalapeno peppers",
       "score": 72.07043171261796,
       "connects_a": [
-        "cilantro leaves",
         "tomato paste",
-        "cumin"
+        "cilantro leaves",
+        "cumin seeds"
       ],
       "connects_b": [
-        "lime",
+        "bell pepper",
         "cumin",
-        "lime juice"
+        "lime"
       ]
     },
     {
       "name": "chile",
       "score": 70.30181556339134,
       "connects_a": [
-        "cilantro leaves",
-        "cumin",
-        "turmeric"
+        "cloves",
+        "cumin seeds",
+        "cilantro leaves"
       ],
       "connects_b": [
-        "lime",
+        "cloves",
         "cumin",
-        "cloves"
+        "lime"
       ]
     },
     {
@@ -104,27 +104,27 @@
       "score": 64.3766981235959,
       "connects_a": [
         "tomato paste",
-        "cumin",
-        "cloves"
+        "cloves",
+        "onion"
       ],
       "connects_b": [
-        "bay leaf",
-        "oregano",
-        "cumin"
+        "cloves",
+        "onion",
+        "oregano"
       ]
     },
     {
       "name": "allspice",
       "score": 63.28069053377198,
       "connects_a": [
-        "ginger",
-        "cumin",
-        "cloves"
+        "cloves",
+        "coriander",
+        "paprika"
       ],
       "connects_b": [
-        "cumin",
-        "bay leaf",
-        "cloves"
+        "cloves",
+        "mustard",
+        "orange"
       ]
     },
     {
@@ -132,11 +132,11 @@
       "score": 60.5399728795616,
       "connects_a": [
         "tomato paste",
-        "cumin",
-        "chicken stock"
+        "onion",
+        "parsley"
       ],
       "connects_b": [
-        "cumin",
+        "onion",
         "oregano",
         "wine"
       ]
@@ -144,37 +144,12 @@
   ],
   "novel_from_a": [
     {
-      "name": "cans chickpeas",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pinch saffron",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "palm",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "fennel bulb",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "squid",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "artichokes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "eggplants",
+      "name": "brussels sprouts",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -184,17 +159,47 @@
       "strength": 1
     },
     {
-      "name": "turkey sausage",
+      "name": "artichokes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "brussels sprouts",
+      "name": "pinch saffron",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cans chickpeas",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "squid",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "fennel bulb",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "eggplants",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "turkey sausage",
       "pairs_with": "olive oil",
       "strength": 1
     }
   ],
   "novel_from_b": [
+    {
+      "name": "crusty bread",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
     {
       "name": "chipotle puree",
       "pairs_with": "olive oil",
@@ -206,22 +211,12 @@
       "strength": 1
     },
     {
-      "name": "sherry vinegar",
+      "name": "oregano leaves",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "crusty bread",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "[extra",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "crusty rolls",
+      "name": "capers",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -236,12 +231,17 @@
       "strength": 1
     },
     {
-      "name": "oregano leaves",
+      "name": "arugula",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "capers",
+      "name": "hearts",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "sherry vinegar",
       "pairs_with": "olive oil",
       "strength": 1
     }

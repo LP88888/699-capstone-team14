@@ -5,9 +5,9 @@
       "name": "file powder",
       "score": 28.0568670571411,
       "connects_a": [
-        "onion powder",
-        "vegetable oil",
-        "andouille sausage"
+        "thyme",
+        "celery",
+        "onion"
       ],
       "connects_b": [
         "onion",
@@ -18,9 +18,9 @@
       "name": "bay leaf",
       "score": 20.179990959853868,
       "connects_a": [
-        "chicken stock",
-        "oregano",
-        "parsley"
+        "thyme",
+        "celery",
+        "onion"
       ],
       "connects_b": [
         "onion",
@@ -31,9 +31,9 @@
       "name": "can tomatoes",
       "score": 20.11771816362372,
       "connects_a": [
-        "hot sauce",
-        "worcestershire sauce",
-        "oregano"
+        "cloves",
+        "celery",
+        "onion"
       ],
       "connects_b": [
         "onion",
@@ -41,25 +41,12 @@
       ]
     },
     {
-      "name": "palm",
-      "score": 18.069262641240133,
-      "connects_a": [
-        "hot sauce",
-        "chicken stock",
-        "cloves"
-      ],
-      "connects_b": [
-        "split",
-        "onion"
-      ]
-    },
-    {
       "name": "celery",
       "score": 17.04219812561585,
       "connects_a": [
-        "hot sauce",
-        "worcestershire sauce",
-        "onion powder"
+        "thyme",
+        "onion",
+        "andouille sausage"
       ],
       "connects_b": [
         "onion"
@@ -69,9 +56,9 @@
       "name": "andouille sausage",
       "score": 17.022501473382455,
       "connects_a": [
-        "hot sauce",
-        "worcestershire sauce",
-        "onion powder"
+        "thyme",
+        "celery",
+        "onion"
       ],
       "connects_b": [
         "onion"
@@ -81,9 +68,9 @@
       "name": "okra",
       "score": 15.020499866477788,
       "connects_a": [
-        "hot sauce",
-        "worcestershire sauce",
-        "chicken stock"
+        "thyme",
+        "celery",
+        "onion"
       ],
       "connects_b": [
         "onion"
@@ -93,21 +80,21 @@
       "name": "garam masala",
       "score": 14.07914072236132,
       "connects_a": [
-        "vegetable oil",
-        "garlic",
-        "cayenne pepper"
+        "onion",
+        "cayenne pepper",
+        "garlic"
       ],
       "connects_b": [
-        "oil",
-        "onion"
+        "onion",
+        "oil"
       ]
     },
     {
       "name": "beef stock",
       "score": 14.051542259600836,
       "connects_a": [
-        "worcestershire sauce",
-        "onion powder",
+        "thyme",
+        "celery",
         "flour"
       ],
       "connects_b": [
@@ -119,48 +106,37 @@
       "name": "tomato paste",
       "score": 13.083886095327259,
       "connects_a": [
-        "worcestershire sauce",
-        "oregano",
-        "cloves"
+        "thyme",
+        "cloves",
+        "celery"
       ],
       "connects_b": [
         "onion"
+      ]
+    },
+    {
+      "name": "chili powder",
+      "score": 12.139657548428893,
+      "connects_a": [
+        "worcestershire sauce",
+        "paprika",
+        "cayenne pepper"
+      ],
+      "connects_b": [
+        "gram",
+        "dhania",
+        "oil"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "ham hocks",
+      "name": "celery",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "tomato puree",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "corn tortillas",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "okra",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "beef chuck",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "beef",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "crawfish tail",
+      "name": "tomato paste",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -170,12 +146,37 @@
       "strength": 1
     },
     {
-      "name": "pinto beans",
+      "name": "tomato soup",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "chicken livers",
+      "name": "zatarain",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "okra",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "andouille",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "ham hocks",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "roasted tomatoes",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "chorizo sausage",
       "pairs_with": "onion",
       "strength": 1
     }
@@ -192,12 +193,7 @@
       "strength": 1
     },
     {
-      "name": "finger",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "carom",
+      "name": "wheat",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -207,12 +203,12 @@
       "strength": 1
     },
     {
-      "name": "purpose",
+      "name": "carom",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "wheat",
+      "name": "finger",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -227,7 +223,12 @@
       "strength": 1
     },
     {
-      "name": "pudina",
+      "name": "salt coriander",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
+      "name": "leaves mint",
       "pairs_with": "leaves",
       "strength": 1
     }

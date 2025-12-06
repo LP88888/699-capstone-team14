@@ -5,83 +5,83 @@
       "name": "tomato paste",
       "score": 161.03244425018164,
       "connects_a": [
-        "worcestershire sauce",
-        "cumin",
+        "cloves",
+        "onion",
         "oregano"
       ],
       "connects_b": [
-        "worcestershire sauce",
-        "chuck",
-        "bay leaf"
+        "thyme",
+        "cloves",
+        "chuck"
       ]
     },
     {
       "name": "celery",
       "score": 140.34751397565995,
       "connects_a": [
-        "worcestershire sauce",
-        "onion powder",
-        "oregano"
+        "onion",
+        "oregano",
+        "bell pepper"
       ],
       "connects_b": [
+        "chicken broth",
         "tomato paste",
-        "worcestershire sauce",
-        "bay leaf"
+        "thyme"
       ]
     },
     {
       "name": "andouille sausage",
       "score": 130.1720700905717,
       "connects_a": [
-        "worcestershire sauce",
-        "onion powder",
-        "chicken breasts"
+        "onion",
+        "oregano",
+        "bell pepper"
       ],
       "connects_b": [
+        "chicken broth",
         "tomato paste",
-        "worcestershire sauce",
-        "bay leaf"
+        "thyme"
       ]
     },
     {
       "name": "garam masala",
       "score": 121.6840019575514,
       "connects_a": [
+        "onion",
         "ginger",
-        "chicken breasts",
         "cumin"
       ],
       "connects_b": [
         "tomato paste",
-        "chicken breasts",
-        "bay leaf"
+        "onion",
+        "tomatoes"
       ]
     },
     {
       "name": "can tomatoes",
       "score": 104.61213445084334,
       "connects_a": [
-        "worcestershire sauce",
-        "cumin",
-        "oregano"
+        "cloves",
+        "onion",
+        "pepper flakes"
       ],
       "connects_b": [
-        "tomato paste",
-        "worcestershire sauce",
-        "bay leaf"
+        "chicken broth",
+        "cloves",
+        "tomato paste"
       ]
     },
     {
       "name": "creole seasoning",
       "score": 90.04861196939116,
       "connects_a": [
-        "worcestershire sauce",
         "mayonnaise",
-        "onion powder"
+        "oregano",
+        "bell pepper"
       ],
       "connects_b": [
-        "worcestershire sauce",
         "chicken broth",
+        "thyme",
         "parsley"
       ]
     },
@@ -89,41 +89,41 @@
       "name": "celery ribs",
       "score": 84.06427079915213,
       "connects_a": [
-        "worcestershire sauce",
         "mayonnaise",
-        "rosemary"
+        "onion",
+        "bell pepper"
       ],
       "connects_b": [
+        "chicken broth",
         "tomato paste",
-        "worcestershire sauce",
-        "bay leaf"
+        "thyme"
       ]
     },
     {
       "name": "file powder",
       "score": 72.14622957550569,
       "connects_a": [
-        "onion powder",
-        "vegetable oil",
-        "garlic"
+        "onion",
+        "tomatoes",
+        "bell pepper"
       ],
       "connects_b": [
-        "vegetable oil",
-        "garlic",
-        "tomatoes"
+        "thyme",
+        "onion",
+        "bell pepper"
       ]
     },
     {
       "name": "yellow onions",
       "score": 72.09948049589478,
       "connects_a": [
-        "worcestershire sauce",
-        "onion powder",
-        "oregano"
+        "pepper flakes",
+        "oregano",
+        "bell pepper"
       ],
       "connects_b": [
         "tomato paste",
-        "worcestershire sauce",
+        "thyme",
         "parsley"
       ]
     },
@@ -131,18 +131,23 @@
       "name": "tomato sauce",
       "score": 70.09661733580093,
       "connects_a": [
-        "worcestershire sauce",
-        "onion powder",
+        "oregano",
+        "bell pepper",
         "cumin"
       ],
       "connects_b": [
         "tomato paste",
-        "worcestershire sauce",
-        "bay leaf"
+        "beef broth",
+        "bell pepper"
       ]
     }
   ],
   "novel_from_a": [
+    {
+      "name": "cherry tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
     {
       "name": "oregano leaves",
       "pairs_with": "olive oil",
@@ -154,8 +159,8 @@
       "strength": 1
     },
     {
-      "name": "cherry tomatoes",
-      "pairs_with": "olive oil",
+      "name": "allspice",
+      "pairs_with": "cloves",
       "strength": 1
     },
     {
@@ -169,22 +174,17 @@
       "strength": 1
     },
     {
-      "name": "allspice",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
       "name": "gruyere cheese",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "sandwich rolls",
+      "name": "lentil",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "lentil",
+      "name": "coriander powder",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -196,7 +196,17 @@
   ],
   "novel_from_b": [
     {
+      "name": "pasta",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "anchovy fillets",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "piquillo peppers",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -211,17 +221,12 @@
       "strength": 1
     },
     {
-      "name": "pasta",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "piquillo peppers",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "chile",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "stock",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -231,17 +236,12 @@
       "strength": 1
     },
     {
-      "name": "allspice berries",
+      "name": "chiles",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "veal",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "beef chuck",
+      "name": "piquillo peppers",
       "pairs_with": "cloves",
       "strength": 1
     }

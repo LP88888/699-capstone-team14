@@ -2,143 +2,143 @@
   "pair": "Kerala + Pakistan",
   "bridges": [
     {
-      "name": "cardamom",
-      "score": 146.15504655440674,
-      "connects_a": [
-        "powder",
-        "seeds",
-        "oil"
-      ],
-      "connects_b": [
-        "yogurt",
-        "yoghurt",
-        "ginger"
-      ]
-    },
-    {
       "name": "garam masala",
       "score": 135.76314267991273,
       "connects_a": [
-        "oil",
-        "chili powder",
-        "onion"
+        "cumin seeds",
+        "onion",
+        "chili powder"
       ],
       "connects_b": [
-        "yogurt",
-        "tomatoes",
-        "peas"
+        "cardamom",
+        "basmati rice",
+        "yogurt"
+      ]
+    },
+    {
+      "name": "cardamom",
+      "score": 129.91559693725043,
+      "connects_a": [
+        "cumin seeds",
+        "chilli",
+        "seeds"
+      ],
+      "connects_b": [
+        "cumin seeds",
+        "tumeric",
+        "turmeric"
       ]
     },
     {
       "name": "tumeric",
       "score": 90.25476534447176,
       "connects_a": [
-        "oil",
-        "chili powder",
-        "onion"
+        "cumin seeds",
+        "onion",
+        "chili powder"
       ],
       "connects_b": [
-        "cardamom",
-        "ginger",
-        "cumin"
+        "mustard seeds",
+        "cumin seeds",
+        "onion"
       ]
     },
     {
       "name": "coriander powder",
       "score": 80.15621523534114,
       "connects_a": [
-        "oil",
-        "chili powder",
-        "onion"
+        "cumin seeds",
+        "onion",
+        "chili powder"
       ],
       "connects_b": [
-        "yoghurt",
-        "cardamom",
-        "ginger"
+        "cumin seeds",
+        "tumeric",
+        "onion"
       ]
     },
     {
       "name": "turmeric",
       "score": 80.15507929482553,
       "connects_a": [
-        "oil",
         "chili powder",
+        "cumin seeds",
         "peas"
       ],
       "connects_b": [
-        "yogurt",
-        "tomatoes",
-        "peas"
+        "cardamom",
+        "basmati rice",
+        "yogurt"
       ]
     },
     {
       "name": "mustard seeds",
       "score": 76.05919209893314,
       "connects_a": [
-        "oil",
         "chili powder",
+        "cumin seeds",
         "peas"
       ],
       "connects_b": [
         "yogurt",
-        "tomatoes",
-        "peas"
+        "chilies",
+        "cilantro"
       ]
     },
     {
       "name": "chilies",
       "score": 76.042251508117,
       "connects_a": [
-        "oil",
         "chili powder",
+        "cumin seeds",
         "peas"
       ],
       "connects_b": [
-        "tomatoes",
-        "peas",
-        "yoghurt"
+        "cardamom",
+        "cilantro",
+        "potatoes"
       ]
     },
     {
       "name": "oil",
       "score": 70.33846744975115,
       "connects_a": [
-        "urad dal",
-        "wheat",
-        "finger"
+        "cumin seeds",
+        "dal",
+        "chili powder"
       ],
       "connects_b": [
-        "yoghurt",
-        "cardamom",
-        "garam masala"
-      ]
-    },
-    {
-      "name": "dhania",
-      "score": 65.5120981776966,
-      "connects_a": [
-        "bhindi",
-        "powder",
-        "mango"
-      ],
-      "connects_b": [
-        "cardamom",
-        "chili powder",
-        "peas"
+        "cumin seeds",
+        "tumeric",
+        "cardamom"
       ]
     },
     {
       "name": "cumin seeds",
       "score": 63.077732247350276,
       "connects_a": [
-        "oil",
         "chili powder",
-        "peas"
+        "peas",
+        "oil"
       ],
       "connects_b": [
-        "yogurt",
-        "tomatoes",
-        "peas"
+        "cardamom",
+        "basmati rice",
+        "yogurt"
+      ]
+    },
+    {
+      "name": "dhania",
+      "score": 62.392474454949145,
+      "connects_a": [
+        "powder",
+        "leaves green",
+        "oil salt"
+      ],
+      "connects_b": [
+        "chili powder",
+        "peas",
+        "cardamom"
       ]
     }
   ],
@@ -149,22 +149,22 @@
       "strength": 1
     },
     {
-      "name": "oats",
-      "pairs_with": "cinnamon",
-      "strength": 1
-    },
-    {
       "name": "banana",
       "pairs_with": "cinnamon",
       "strength": 1
     },
     {
-      "name": "chili oil",
-      "pairs_with": "ginger",
+      "name": "oats",
+      "pairs_with": "cinnamon",
       "strength": 1
     },
     {
       "name": "noodles",
+      "pairs_with": "ginger",
+      "strength": 1
+    },
+    {
+      "name": "chili oil",
       "pairs_with": "ginger",
       "strength": 1
     },
@@ -174,7 +174,7 @@
       "strength": 1
     },
     {
-      "name": "leaf",
+      "name": "dhania",
       "pairs_with": "cardamom",
       "strength": 1
     },
@@ -184,19 +184,19 @@
       "strength": 1
     },
     {
-      "name": "laung whole",
+      "name": "leaf",
       "pairs_with": "cardamom",
       "strength": 1
     },
     {
-      "name": "pods",
+      "name": "laung whole",
       "pairs_with": "cardamom",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "rajma",
+      "name": "masala",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -206,17 +206,7 @@
       "strength": 1
     },
     {
-      "name": "masala",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "gram flour",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "cardamom",
+      "name": "rajma",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -226,22 +216,32 @@
       "strength": 1
     },
     {
-      "name": "corn tortillas",
+      "name": "cardamom",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "gram flour",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "celery",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "capsicum",
+      "name": "chicken bouillon",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "lamb shanks",
+      "name": "tomato paste",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "okra",
+      "name": "lamb shoulder",
       "pairs_with": "onion",
       "strength": 1
     }

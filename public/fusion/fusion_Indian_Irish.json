@@ -5,69 +5,69 @@
       "name": "garam masala",
       "score": 68.38439779432642,
       "connects_a": [
-        "yogurt",
-        "cardamom",
-        "ginger"
+        "mustard seeds",
+        "cumin seeds",
+        "onion"
       ],
       "connects_b": [
-        "vegetable oil",
+        "onion",
         "garlic",
-        "onion"
+        "potatoes"
       ]
     },
     {
       "name": "tomato paste",
       "score": 48.3097332750545,
       "connects_a": [
-        "cumin",
-        "garam masala",
+        "cloves",
+        "onion",
         "turmeric"
       ],
       "connects_b": [
-        "russet potatoes",
+        "thyme",
         "cloves",
-        "parsley"
+        "onion"
       ]
     },
     {
       "name": "tumeric",
       "score": 45.12738267223588,
       "connects_a": [
-        "cardamom",
-        "ginger",
-        "cumin"
+        "mustard seeds",
+        "cumin seeds",
+        "onion"
       ],
       "connects_b": [
-        "potatoes",
+        "onion",
         "garlic",
-        "onion"
+        "potatoes"
       ]
     },
     {
       "name": "bay leaf",
       "score": 36.323983727736966,
       "connects_a": [
+        "onion",
         "cardamom",
-        "cumin",
-        "garam masala"
+        "turmeric"
       ],
       "connects_b": [
-        "russet potatoes",
-        "parsley",
-        "thyme"
+        "thyme",
+        "onion",
+        "parsley"
       ]
     },
     {
       "name": "coriander powder",
       "score": 36.07029685590351,
       "connects_a": [
-        "cardamom",
-        "ginger",
-        "cumin"
+        "cumin seeds",
+        "onion",
+        "cardamom"
       ],
       "connects_b": [
-        "garlic",
         "onion",
+        "garlic",
         "leaves"
       ]
     },
@@ -75,13 +75,13 @@
       "name": "allspice",
       "score": 35.15593918542888,
       "connects_a": [
+        "cloves",
         "cardamom",
-        "ginger",
-        "cumin"
+        "coriander"
       ],
       "connects_b": [
+        "thyme",
         "cloves",
-        "kosher sea salt",
         "raisins"
       ]
     },
@@ -89,75 +89,60 @@
       "name": "chiles",
       "score": 33.15749785556433,
       "connects_a": [
-        "yogurt",
-        "ginger",
-        "cumin"
+        "mustard seeds",
+        "cloves",
+        "cumin seeds"
       ],
       "connects_b": [
-        "vegetable oil",
+        "cloves",
         "2",
-        "cloves"
+        "vegetable oil"
       ]
     },
     {
       "name": "cardamom pods",
       "score": 33.06782684016484,
       "connects_a": [
-        "yogurt",
-        "ginger",
-        "cumin"
+        "cloves",
+        "cumin seeds",
+        "turmeric"
       ],
       "connects_b": [
-        "vegetable oil",
+        "cloves",
         "raisins",
-        "cloves"
+        "vegetable oil"
       ]
     },
     {
       "name": "file powder",
       "score": 30.06092898979404,
       "connects_a": [
-        "vegetable oil",
-        "garlic",
-        "tomatoes"
+        "onion",
+        "leaves",
+        "garlic"
       ],
       "connects_b": [
-        "vegetable oil",
-        "garlic",
-        "thyme"
+        "thyme",
+        "onion",
+        "garlic"
       ]
     },
     {
       "name": "curry powder",
       "score": 30.014359424774288,
       "connects_a": [
-        "yogurt",
-        "ginger",
-        "cumin"
+        "mustard seeds",
+        "cumin seeds",
+        "turmeric"
       ],
       "connects_b": [
-        "potatoes",
         "carrot",
-        "raisins"
+        "raisins",
+        "potatoes"
       ]
     }
   ],
   "novel_from_a": [
-    {
-      "name": "chipotle puree",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "petite",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "fennel bulb",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
     {
       "name": "crusty bread",
       "pairs_with": "olive oil",
@@ -165,6 +150,21 @@
     },
     {
       "name": "finely oregano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pasta",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "[extra",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "couscous",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -179,34 +179,39 @@
       "strength": 1
     },
     {
-      "name": "cherry tomatoes",
+      "name": "lamb shanks",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pizza",
+      "name": "spaghetti",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "handful pine nuts",
+      "name": "petite",
       "pairs_with": "olive oil",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "bunch kale",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
       "name": "head fennel",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "beef chuck",
+      "name": "sirloin",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "finely parsley",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "bunch kale",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -221,27 +226,22 @@
       "strength": 1
     },
     {
-      "name": "finely parsley",
+      "name": "beef chuck",
       "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "sirloin",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "veal stock",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "almond flour",
-      "pairs_with": "butter",
       "strength": 1
     },
     {
       "name": "smith",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "rutabaga",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "corn syrup",
       "pairs_with": "butter",
       "strength": 1
     }

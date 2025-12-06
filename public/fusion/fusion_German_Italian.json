@@ -5,13 +5,13 @@
       "name": "confectioners",
       "score": 91.47464584900705,
       "connects_a": [
-        "cocoa powder",
-        "nutmeg",
-        "butter"
+        "cream",
+        "egg yolks",
+        "purpose flour"
       ],
       "connects_b": [
-        "butter",
         "cream",
+        "more",
         "1"
       ]
     },
@@ -21,109 +21,109 @@
       "connects_a": [
         "cloves",
         "parsley",
-        "wine"
+        "egg"
       ],
       "connects_b": [
-        "oregano",
         "cloves",
-        "parsley"
+        "parsley",
+        "oregano"
       ]
     },
     {
       "name": "vanilla extract",
       "score": 73.15523061176131,
       "connects_a": [
-        "cocoa powder",
-        "nutmeg",
-        "butter"
+        "cream",
+        "egg yolks",
+        "purpose flour"
       ],
       "connects_b": [
-        "butter",
         "cream",
-        "1"
+        "1",
+        "egg"
       ]
     },
     {
       "name": "at",
       "score": 72.28678530900989,
       "connects_a": [
-        "cocoa powder",
-        "butter",
-        "egg yolks"
+        "cream",
+        "egg yolks",
+        "purpose flour"
       ],
       "connects_b": [
-        "butter",
         "cream",
-        "kosher sea salt"
+        "more",
+        "1"
       ]
     },
     {
       "name": "tomato paste",
       "score": 70.45169435945446,
       "connects_a": [
-        "bay leaf",
         "cloves",
+        "onion",
         "parsley"
       ],
       "connects_b": [
-        "oregano",
-        "basil",
-        "cloves"
+        "cloves",
+        "onion",
+        "parsley"
       ]
     },
     {
       "name": "can tomatoes",
       "score": 70.41201357268302,
       "connects_a": [
-        "bay leaf",
         "cloves",
+        "onion",
         "parsley"
       ],
       "connects_b": [
-        "oregano",
-        "basil",
-        "cloves"
+        "cloves",
+        "optional",
+        "pepper flakes"
       ]
     },
     {
       "name": "whole milk",
       "score": 63.18449659082105,
       "connects_a": [
-        "cocoa powder",
-        "nutmeg",
-        "butter"
+        "egg yolks",
+        "egg",
+        "2"
       ],
       "connects_b": [
-        "butter",
-        "kosher sea salt",
-        "egg"
+        "more",
+        "egg",
+        "mozzarella cheese"
       ]
     },
     {
       "name": "ribs celery",
       "score": 60.43727344765032,
       "connects_a": [
-        "bay leaf",
         "cloves",
+        "onion",
         "parsley"
       ],
       "connects_b": [
         "cloves",
-        "parsley",
-        "wine"
+        "optional",
+        "pepper flakes"
       ]
     },
     {
       "name": "sticks",
       "score": 55.19451995974218,
       "connects_a": [
-        "cocoa powder",
-        "nutmeg",
-        "butter"
+        "egg yolks",
+        "egg",
+        "2"
       ],
       "connects_b": [
-        "butter",
         "1",
+        "more",
         "egg"
       ]
     },
@@ -131,35 +131,20 @@
       "name": "pancetta",
       "score": 55.07096094000667,
       "connects_a": [
-        "bay leaf",
         "parsley",
-        "olive oil"
+        "wine",
+        "bay leaf"
       ],
       "connects_b": [
-        "parsley",
-        "olive oil",
-        "wine"
+        "more",
+        "pepper flakes",
+        "parsley"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "cooking apples",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
       "name": "dutch process",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "mcintosh apples",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "graham cracker crumbs",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -170,6 +155,21 @@
     },
     {
       "name": "muscovado sugar",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "graham cracker crumbs",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "mcintosh apples",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "cooking apples",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -196,52 +196,52 @@
   ],
   "novel_from_b": [
     {
-      "name": "radicchio",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "sherry vinegar",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "crusty bread",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "heads garlic",
+      "name": "finely oregano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "romano",
+      "name": "plum tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "arugula",
+      "name": "artichokes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "penne pasta",
+      "name": "bunch kale",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pass",
+      "name": "pasta",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "mortadella",
+      "name": "romano cheese",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "cannellini",
+      "name": "some",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pancetta",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "parmigiano",
       "pairs_with": "olive oil",
       "strength": 1
     }

@@ -5,28 +5,28 @@
       "name": "tomato paste",
       "score": 72.46459991258175,
       "connects_a": [
-        "pork",
-        "bay leaf",
+        "cloves",
+        "onion",
         "oregano"
       ],
       "connects_b": [
-        "russet potatoes",
+        "thyme",
         "cloves",
-        "parsley"
+        "onion"
       ]
     },
     {
       "name": "bay leaf",
       "score": 36.323983727736966,
       "connects_a": [
-        "cumin",
+        "onion",
         "oregano",
         "wine"
       ],
       "connects_b": [
-        "russet potatoes",
-        "parsley",
-        "thyme"
+        "thyme",
+        "onion",
+        "parsley"
       ]
     },
     {
@@ -38,50 +38,50 @@
         "orange"
       ],
       "connects_b": [
-        "butter",
-        "egg yolks",
-        "cream"
+        "cream",
+        "more",
+        "egg yolks"
       ]
     },
     {
       "name": "corn tortillas",
       "score": 36.12637700494841,
       "connects_a": [
-        "lime",
-        "cumin",
-        "oregano"
+        "onion",
+        "oregano",
+        "cumin"
       ],
       "connects_b": [
-        "vegetable oil",
-        "cabbage",
-        "more"
+        "more",
+        "onion",
+        "cabbage"
       ]
     },
     {
       "name": "file powder",
       "score": 36.07311478775284,
       "connects_a": [
-        "vegetable oil",
-        "garlic",
-        "tomatoes"
+        "onion",
+        "tomatoes",
+        "bell pepper"
       ],
       "connects_b": [
-        "vegetable oil",
-        "garlic",
-        "thyme"
+        "thyme",
+        "onion",
+        "garlic"
       ]
     },
     {
       "name": "allspice",
       "score": 35.15593918542888,
       "connects_a": [
-        "cumin",
-        "bay leaf",
-        "cloves"
+        "cloves",
+        "mustard",
+        "orange"
       ],
       "connects_b": [
+        "thyme",
         "cloves",
-        "kosher sea salt",
         "raisins"
       ]
     },
@@ -89,9 +89,9 @@
       "name": "veal",
       "score": 35.09539178625169,
       "connects_a": [
-        "pork",
-        "oregano",
-        "cloves"
+        "cloves",
+        "egg",
+        "oregano"
       ],
       "connects_b": [
         "cloves",
@@ -103,14 +103,14 @@
       "name": "celery",
       "score": 35.08687849391499,
       "connects_a": [
-        "bay leaf",
+        "onion",
         "oregano",
-        "garlic"
+        "bell pepper"
       ],
       "connects_b": [
-        "parsley",
-        "garlic",
-        "thyme"
+        "thyme",
+        "onion",
+        "parsley"
       ]
     },
     {
@@ -118,53 +118,33 @@
       "score": 35.02677949964672,
       "connects_a": [
         "mayonnaise",
-        "bay leaf",
+        "onion",
         "wine"
       ],
       "connects_b": [
-        "parsley",
         "thyme",
-        "onion"
+        "onion",
+        "parsley"
       ]
     },
     {
       "name": "can tomatoes",
       "score": 32.18834906179795,
       "connects_a": [
-        "bay leaf",
-        "oregano",
-        "cumin"
+        "cloves",
+        "onion",
+        "oregano"
       ],
       "connects_b": [
-        "parsley",
-        "beef",
-        "onion"
+        "cloves",
+        "onion",
+        "parsley"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "chipotle puree",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "montreal steak",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cubanelle peppers",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cherry tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "beefsteak tomatoes",
+      "name": "crusty bread",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -174,29 +154,49 @@
       "strength": 1
     },
     {
-      "name": "crusty bread",
+      "name": "cherry tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "mussels",
+      "name": "chipotle puree",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "[extra",
+      "name": "cubanelle peppers",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "crusty rolls",
+      "name": "oregano leaves",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "montreal steak",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "canned tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "finely oregano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "chorizo",
       "pairs_with": "olive oil",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "bunch kale",
+      "name": "palm",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -206,32 +206,17 @@
       "strength": 1
     },
     {
-      "name": "palm",
+      "name": "bunch kale",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "bunch kale",
+      "name": "palm",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
       "name": "head fennel",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "palm",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "hair pasta",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "leg",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -241,7 +226,22 @@
       "strength": 1
     },
     {
-      "name": "!®",
+      "name": "bunch kale",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "leg",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "hair pasta",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "and half",
       "pairs_with": "butter",
       "strength": 1
     }

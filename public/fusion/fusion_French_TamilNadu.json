@@ -3,14 +3,14 @@
   "bridges": [
     {
       "name": "cardamom",
-      "score": 18.269380819300842,
+      "score": 15.224484016084034,
       "connects_a": [
         "nutmeg",
         "cinnamon",
         "bay leaf"
       ],
       "connects_b": [
-        "powder",
+        "chilli",
         "seeds",
         "oil"
       ]
@@ -19,60 +19,35 @@
       "name": "beef stock",
       "score": 14.051542259600836,
       "connects_a": [
+        "thyme",
         "flour",
-        "bay leaf",
-        "bread"
+        "onion"
       ],
       "connects_b": [
         "flour",
         "onion"
-      ]
-    },
-    {
-      "name": "sprigs thyme",
-      "score": 14.029784294005541,
-      "connects_a": [
-        "bay leaf",
-        "cloves",
-        "wine"
-      ],
-      "connects_b": [
-        "split",
-        "leaves"
       ]
     },
     {
       "name": "garam masala",
       "score": 12.067834904881131,
       "connects_a": [
+        "onion",
         "bay leaf",
-        "vegetable oil",
-        "garlic"
+        "lemon juice"
       ],
       "connects_b": [
-        "oil",
-        "onion"
-      ]
-    },
-    {
-      "name": "wheat",
-      "score": 12.037015016596742,
-      "connects_a": [
-        "flour"
-      ],
-      "connects_b": [
-        "powder",
-        "seeds",
-        "flour"
+        "onion",
+        "oil"
       ]
     },
     {
       "name": "file powder",
       "score": 12.024371595917614,
       "connects_a": [
-        "vegetable oil",
-        "garlic",
-        "thyme"
+        "thyme",
+        "onion",
+        "garlic"
       ],
       "connects_b": [
         "onion",
@@ -83,23 +58,23 @@
       "name": "coriander powder",
       "score": 12.023432285301169,
       "connects_a": [
-        "garlic",
         "cinnamon",
-        "onion"
+        "onion",
+        "garlic"
       ],
       "connects_b": [
-        "oil",
         "onion",
-        "leaves"
+        "leaves",
+        "oil"
       ]
     },
     {
       "name": "evoo",
       "score": 12.009743217517157,
       "connects_a": [
-        "bay leaf",
         "cloves",
-        "wine"
+        "onion",
+        "lemon"
       ],
       "connects_b": [
         "onion",
@@ -107,12 +82,24 @@
       ]
     },
     {
+      "name": "wheat",
+      "score": 11.033930431880346,
+      "connects_a": [
+        "flour"
+      ],
+      "connects_b": [
+        "chilli",
+        "flour",
+        "oil salt"
+      ]
+    },
+    {
       "name": "bay leaf",
       "score": 10.089995479926934,
       "connects_a": [
-        "parsley",
-        "wine",
-        "thyme"
+        "thyme",
+        "onion",
+        "parsley"
       ],
       "connects_b": [
         "onion",
@@ -123,32 +110,29 @@
       "name": "can tomatoes",
       "score": 10.05885908181186,
       "connects_a": [
-        "bay leaf",
         "cloves",
+        "onion",
         "parsley"
       ],
       "connects_b": [
         "onion",
         "("
       ]
+    },
+    {
+      "name": "ice water",
+      "score": 10.050976204580035,
+      "connects_a": [
+        "1",
+        "more",
+        "flour"
+      ],
+      "connects_b": [
+        "flour"
+      ]
     }
   ],
   "novel_from_a": [
-    {
-      "name": "brown",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "fruit",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "button",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
     {
       "name": "olive",
       "pairs_with": "dhania",
@@ -160,7 +144,22 @@
       "strength": 1
     },
     {
-      "name": "in juice",
+      "name": "button",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "fruit",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "brown",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "celery",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -170,17 +169,17 @@
       "strength": 1
     },
     {
-      "name": "salt pork",
+      "name": "stalks celery",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "stewing",
+      "name": "green pepper",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "petite",
+      "name": "beef stock",
       "pairs_with": "onion",
       "strength": 1
     }
@@ -197,7 +196,12 @@
       "strength": 1
     },
     {
-      "name": "moringa",
+      "name": "salt coriander",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
+      "name": "leaves mint",
       "pairs_with": "leaves",
       "strength": 1
     },
@@ -212,22 +216,17 @@
       "strength": 1
     },
     {
-      "name": "leaves mint",
-      "pairs_with": "leaves",
-      "strength": 1
-    },
-    {
-      "name": "salt coriander",
-      "pairs_with": "leaves",
-      "strength": 1
-    },
-    {
       "name": "murungai",
       "pairs_with": "leaves",
       "strength": 1
     },
     {
       "name": "cloves cardamom",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
+      "name": "moringa",
       "pairs_with": "leaves",
       "strength": 1
     }

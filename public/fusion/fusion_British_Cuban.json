@@ -5,13 +5,13 @@
       "name": "tomato paste",
       "score": 81.52267490165445,
       "connects_a": [
-        "worcestershire sauce",
-        "russet potatoes",
-        "cloves"
+        "cloves",
+        "onion",
+        "parsley"
       ],
       "connects_b": [
-        "pork",
-        "bay leaf",
+        "cloves",
+        "onion",
         "oregano"
       ]
     },
@@ -20,13 +20,13 @@
       "score": 56.32961085814641,
       "connects_a": [
         "tomato paste",
-        "worcestershire sauce",
-        "cloves"
+        "cloves",
+        "onion"
       ],
       "connects_b": [
-        "bay leaf",
-        "oregano",
-        "cumin"
+        "cloves",
+        "onion",
+        "oregano"
       ]
     },
     {
@@ -34,12 +34,12 @@
       "score": 56.042847199434746,
       "connects_a": [
         "tomato paste",
-        "worcestershire sauce",
+        "onion",
         "parsley"
       ],
       "connects_b": [
         "mayonnaise",
-        "bay leaf",
+        "onion",
         "wine"
       ]
     },
@@ -52,9 +52,9 @@
         "parsley"
       ],
       "connects_b": [
-        "pork",
-        "oregano",
-        "cloves"
+        "cloves",
+        "egg",
+        "oregano"
       ]
     },
     {
@@ -62,13 +62,13 @@
       "score": 49.27699252826462,
       "connects_a": [
         "tomato paste",
-        "vegetable oil",
-        "garlic"
+        "onion",
+        "cayenne pepper"
       ],
       "connects_b": [
+        "onion",
         "bay leaf",
-        "cumin",
-        "vegetable oil"
+        "cumin"
       ]
     },
     {
@@ -76,22 +76,22 @@
       "score": 49.12162989148098,
       "connects_a": [
         "tomato paste",
-        "worcestershire sauce",
+        "onion",
         "parsley"
       ],
       "connects_b": [
-        "bay leaf",
+        "onion",
         "oregano",
-        "garlic"
+        "bell pepper"
       ]
     },
     {
       "name": "confectioners",
       "score": 44.22949909182758,
       "connects_a": [
-        "nutmeg",
-        "butter",
-        "egg yolks"
+        "cream",
+        "more",
+        "1"
       ],
       "connects_b": [
         "rum",
@@ -104,11 +104,11 @@
       "score": 42.37798101569312,
       "connects_a": [
         "tomato paste",
-        "russet potatoes",
+        "onion",
         "parsley"
       ],
       "connects_b": [
-        "cumin",
+        "onion",
         "oregano",
         "wine"
       ]
@@ -119,12 +119,12 @@
       "connects_a": [
         "cloves",
         "parsley",
-        "olive oil"
+        "wine"
       ],
       "connects_b": [
-        "bay leaf",
         "cloves",
-        "olive oil"
+        "wine",
+        "bell pepper"
       ]
     },
     {
@@ -132,13 +132,13 @@
       "score": 40.05526694216377,
       "connects_a": [
         "tomato paste",
-        "worcestershire sauce",
-        "parsley"
+        "parsley",
+        "2"
       ],
       "connects_b": [
-        "bell pepper",
         "garlic",
-        "wine"
+        "wine",
+        "bell pepper"
       ]
     }
   ],
@@ -149,17 +149,17 @@
       "strength": 1
     },
     {
-      "name": "spun",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "arugula leaves",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "for drizzling",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cremini",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "spun",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -174,7 +174,7 @@
       "strength": 1
     },
     {
-      "name": "cremini",
+      "name": "arugula leaves",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -189,24 +189,14 @@
       "strength": 1
     },
     {
-      "name": "leaves finely",
+      "name": "cremini",
       "pairs_with": "cloves",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "chipotle puree",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "montreal steak",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cubanelle peppers",
+      "name": "handful pine nuts",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -216,32 +206,42 @@
       "strength": 1
     },
     {
-      "name": "eyeball",
+      "name": "chipotle puree",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "beefsteak tomatoes",
+      "name": "cubanelle peppers",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "handful pine nuts",
+      "name": "oregano leaves",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "sherry vinegar",
+      "name": "montreal steak",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "[extra",
+      "name": "olives",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "crusty rolls",
+      "name": "finely oregano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "chorizo",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "chorizo sausage",
       "pairs_with": "olive oil",
       "strength": 1
     }

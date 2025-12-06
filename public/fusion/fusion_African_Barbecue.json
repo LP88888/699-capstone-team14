@@ -6,12 +6,12 @@
       "score": 154.87054794597452,
       "connects_a": [
         "tomato paste",
-        "ginger",
-        "cumin"
+        "cumin seeds",
+        "onion"
       ],
       "connects_b": [
+        "onion",
         "ginger",
-        "chicken breasts",
         "cumin"
       ]
     },
@@ -19,41 +19,41 @@
       "name": "chiles",
       "score": 98.46772090440315,
       "connects_a": [
-        "cilantro leaves",
-        "ginger",
-        "cumin"
+        "cloves",
+        "cumin seeds",
+        "cilantro leaves"
       ],
       "connects_b": [
-        "lime",
+        "cloves",
         "ginger",
-        "chicken breasts"
+        "cumin"
       ]
     },
     {
       "name": "cumin",
       "score": 91.54643418955769,
       "connects_a": [
-        "cilantro leaves",
         "tomato paste",
-        "turmeric"
+        "cilantro leaves",
+        "cumin seeds"
       ],
       "connects_b": [
-        "lime",
-        "onion powder",
-        "oregano"
+        "oregano",
+        "bell pepper",
+        "lime"
       ]
     },
     {
       "name": "tomato paste",
       "score": 90.58074989072718,
       "connects_a": [
-        "cumin",
-        "turmeric",
-        "cloves"
+        "cloves",
+        "onion",
+        "parsley"
       ],
       "connects_b": [
-        "worcestershire sauce",
-        "cumin",
+        "cloves",
+        "onion",
         "oregano"
       ]
     },
@@ -62,36 +62,36 @@
       "score": 80.19857941466283,
       "connects_a": [
         "tomato paste",
-        "chicken stock",
+        "onion",
         "parsley"
       ],
       "connects_b": [
-        "worcestershire sauce",
-        "onion powder",
-        "oregano"
+        "onion",
+        "oregano",
+        "bell pepper"
       ]
     },
     {
       "name": "chili powder",
       "score": 72.83794529057336,
       "connects_a": [
-        "cumin",
+        "cumin seeds",
         "turmeric",
         "coriander"
       ],
       "connects_b": [
+        "cumin",
         "worcestershire sauce",
-        "onion powder",
-        "cumin"
+        "barbecue sauce"
       ]
     },
     {
       "name": "turmeric",
       "score": 72.13957136534297,
       "connects_a": [
-        "cilantro leaves",
         "tomato paste",
-        "ginger"
+        "cilantro leaves",
+        "cumin seeds"
       ],
       "connects_b": [
         "ginger",
@@ -103,13 +103,13 @@
       "name": "chile",
       "score": 70.30181556339134,
       "connects_a": [
-        "cilantro leaves",
-        "cumin",
-        "turmeric"
+        "cloves",
+        "cumin seeds",
+        "cilantro leaves"
       ],
       "connects_b": [
-        "lime",
-        "soy sauce",
+        "cloves",
+        "grain sea salt",
         "cumin"
       ]
     },
@@ -118,13 +118,13 @@
       "score": 70.1809173254804,
       "connects_a": [
         "cilantro leaves",
-        "ginger",
-        "cumin"
+        "cumin seeds",
+        "turmeric"
       ],
       "connects_b": [
         "ginger",
         "cumin",
-        "cayenne pepper"
+        "garlic powder"
       ]
     },
     {
@@ -132,44 +132,19 @@
       "score": 70.09265312569245,
       "connects_a": [
         "tomato paste",
-        "chicken stock",
-        "chicken"
+        "onion",
+        "paprika"
       ],
       "connects_b": [
-        "worcestershire sauce",
-        "onion powder",
-        "chicken breasts"
+        "onion",
+        "oregano",
+        "bell pepper"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "cans chickpeas",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "montreal steak",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pinch saffron",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "eyeball",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "palm",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "beefsteak tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -179,12 +154,27 @@
       "strength": 1
     },
     {
-      "name": "fennel bulb",
+      "name": "brussels sprouts",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "squid",
+      "name": "kalamata olives",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "montreal steak",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "canned tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "olives",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -192,16 +182,26 @@
       "name": "artichokes",
       "pairs_with": "olive oil",
       "strength": 1
-    }
-  ],
-  "novel_from_b": [
+    },
     {
-      "name": "oregano leaves",
+      "name": "chorizo",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
+      "name": "pinch saffron",
+      "pairs_with": "olive oil",
+      "strength": 1
+    }
+  ],
+  "novel_from_b": [
+    {
       "name": "[extra",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "oregano leaves",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -226,17 +226,17 @@
       "strength": 1
     },
     {
-      "name": "nutmeg",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
       "name": "pecans",
       "pairs_with": "butter",
       "strength": 1
     },
     {
       "name": "gruyere cheese",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "nutmeg",
       "pairs_with": "butter",
       "strength": 1
     },

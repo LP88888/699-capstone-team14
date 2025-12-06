@@ -5,41 +5,41 @@
       "name": "garam masala",
       "score": 190.06839975187782,
       "connects_a": [
+        "onion",
         "chicken breasts",
-        "vegetable oil",
-        "garlic"
+        "cayenne pepper"
       ],
       "connects_b": [
-        "yogurt",
-        "tomatoes",
-        "peas"
+        "cardamom",
+        "basmati rice",
+        "yogurt"
       ]
     },
     {
       "name": "cumin",
       "score": 121.04472965063738,
       "connects_a": [
-        "onion powder",
         "oregano",
-        "cayenne pepper"
+        "bell pepper",
+        "garlic powder"
       ],
       "connects_b": [
-        "yogurt",
-        "yoghurt",
-        "cardamom"
+        "mustard seeds",
+        "cumin seeds",
+        "tumeric"
       ]
     },
     {
       "name": "tomato paste",
       "score": 98.63237210323626,
       "connects_a": [
-        "worcestershire sauce",
-        "oregano",
-        "cloves"
+        "thyme",
+        "cloves",
+        "celery"
       ],
       "connects_b": [
-        "cumin",
-        "garam masala",
+        "cloves",
+        "onion",
         "turmeric"
       ]
     },
@@ -47,28 +47,28 @@
       "name": "cayenne",
       "score": 96.07329867996094,
       "connects_a": [
-        "hot sauce",
-        "worcestershire sauce",
-        "onion powder"
+        "thyme",
+        "celery",
+        "oregano"
       ],
       "connects_b": [
-        "yogurt",
-        "cumin",
-        "garam masala"
+        "cumin seeds",
+        "turmeric",
+        "coriander"
       ]
     },
     {
       "name": "celery",
       "score": 92.22836632686226,
       "connects_a": [
-        "worcestershire sauce",
-        "tomatoes",
-        "okra"
+        "chicken broth",
+        "cajun seasoning",
+        "oregano"
       ],
       "connects_b": [
-        "garlic",
+        "onion",
         "cayenne pepper",
-        "onion"
+        "garlic"
       ]
     },
     {
@@ -76,40 +76,40 @@
       "score": 90.80995931934241,
       "connects_a": [
         "chicken broth",
-        "oregano",
-        "chicken stock"
+        "thyme",
+        "celery"
       ],
       "connects_b": [
+        "onion",
         "cardamom",
-        "cumin",
-        "garam masala"
+        "turmeric"
       ]
     },
     {
       "name": "tumeric",
       "score": 90.25476534447176,
       "connects_a": [
+        "onion",
         "chicken breasts",
-        "garlic",
         "cayenne pepper"
       ],
       "connects_b": [
-        "cardamom",
-        "ginger",
-        "cumin"
+        "mustard seeds",
+        "cumin seeds",
+        "onion"
       ]
     },
     {
       "name": "file powder",
       "score": 90.18278696938211,
       "connects_a": [
-        "onion powder",
-        "vegetable oil",
-        "andouille sausage"
+        "thyme",
+        "celery",
+        "onion"
       ],
       "connects_b": [
-        "vegetable oil",
-        "garlic",
+        "onion",
+        "tomatoes",
         "cayenne pepper"
       ]
     },
@@ -117,39 +117,64 @@
       "name": "andouille sausage",
       "score": 84.11118375083095,
       "connects_a": [
-        "worcestershire sauce",
-        "tomatoes",
-        "okra"
+        "chicken broth",
+        "cajun seasoning",
+        "oregano"
       ],
       "connects_b": [
-        "garlic",
+        "onion",
         "cayenne pepper",
-        "onion"
+        "garlic"
       ]
     },
     {
       "name": "paprika",
       "score": 80.7627230635194,
       "connects_a": [
-        "hot sauce",
-        "worcestershire sauce",
-        "onion powder"
+        "thyme",
+        "celery",
+        "andouille sausage"
       ],
       "connects_b": [
-        "yogurt",
-        "cumin",
-        "garam masala"
+        "cumin seeds",
+        "turmeric",
+        "coriander"
       ]
     }
   ],
   "novel_from_a": [
+    {
+      "name": "pasta",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "romano cheese",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "spaghetti",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "reggiano cheese",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
     {
       "name": "linguine",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "oregano leaves",
+      "name": "cherry tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "grape tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -159,17 +184,7 @@
       "strength": 1
     },
     {
-      "name": "penne pasta",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "fettuccine",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "capers",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -177,46 +192,21 @@
       "name": "turkey sausage",
       "pairs_with": "olive oil",
       "strength": 1
-    },
-    {
-      "name": "pasta",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "chorizo sausage",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "spaghetti",
-      "pairs_with": "olive oil",
-      "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "petite",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "lamb shanks",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "serrano",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
       "name": "petite",
-      "pairs_with": "cloves",
+      "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "lamb shanks",
+      "name": "cardamom pods",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -226,17 +216,27 @@
       "strength": 1
     },
     {
+      "name": "saffron threads",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
       "name": "leg",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "cardamom pods",
+      "name": "serrano",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "saffron threads",
+      "name": "lamb shanks",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "petite",
       "pairs_with": "cloves",
       "strength": 1
     },

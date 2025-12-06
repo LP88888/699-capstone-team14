@@ -5,14 +5,14 @@
       "name": "chicken thighs",
       "score": 110.30559578041265,
       "connects_a": [
-        "cilantro leaves",
         "tomato paste",
-        "chicken stock"
+        "cilantro leaves",
+        "turmeric"
       ],
       "connects_b": [
-        "soy sauce",
         "chicken broth",
-        "scallions"
+        "oyster sauce",
+        "rice vinegar"
       ]
     },
     {
@@ -20,13 +20,13 @@
       "score": 109.06182737876658,
       "connects_a": [
         "cilantro leaves",
-        "ginger",
-        "scallions"
+        "roughly",
+        "ginger"
       ],
       "connects_b": [
+        "shrimp",
         "hoisin sauce",
-        "ginger",
-        "pork"
+        "rice vinegar"
       ]
     },
     {
@@ -34,41 +34,41 @@
       "score": 102.21645410789404,
       "connects_a": [
         "cilantro leaves",
-        "ginger",
-        "scallions"
+        "taste",
+        "ginger"
       ],
       "connects_b": [
+        "shrimp",
         "hoisin sauce",
-        "ginger",
-        "mushrooms"
+        "canola oil"
       ]
     },
     {
       "name": "ginger",
       "score": 91.65210640922292,
       "connects_a": [
-        "scallions",
+        "cumin seeds",
         "turmeric",
         "coriander"
       ],
       "connects_b": [
+        "rice wine",
         "hoisin sauce",
-        "pork",
-        "soy sauce"
+        "corn starch"
       ]
     },
     {
       "name": "hoisin sauce",
       "score": 88.06728046331145,
       "connects_a": [
+        "scallions",
         "chicken",
-        "carrot",
-        "ginger"
+        "carrot"
       ],
       "connects_b": [
-        "cabbage",
-        "corn starch",
-        "sodium soy sauce"
+        "rice wine",
+        "honey",
+        "soy sauce"
       ]
     },
     {
@@ -80,9 +80,9 @@
         "vegetable oil"
       ],
       "connects_b": [
-        "hoisin sauce",
-        "ginger",
-        "pork"
+        "chicken broth",
+        "shrimp",
+        "hoisin sauce"
       ]
     },
     {
@@ -90,40 +90,40 @@
       "score": 84.47484433416793,
       "connects_a": [
         "tomato paste",
-        "ginger",
-        "cumin"
+        "cumin seeds",
+        "onion"
       ],
       "connects_b": [
-        "ginger",
-        "chicken breasts",
-        "vegetable oil"
+        "onion",
+        "oil",
+        "ginger"
       ]
     },
     {
       "name": "chiles",
       "score": 84.40090363234556,
       "connects_a": [
-        "cilantro leaves",
-        "ginger",
-        "cumin"
+        "cloves",
+        "cumin seeds",
+        "cilantro leaves"
       ],
       "connects_b": [
-        "ginger",
-        "chicken breasts",
-        "cloves"
+        "cloves",
+        "rice vinegar",
+        "ginger"
       ]
     },
     {
       "name": "chile",
       "score": 80.34493207244725,
       "connects_a": [
-        "cilantro leaves",
-        "cumin",
-        "turmeric"
+        "cloves",
+        "cumin seeds",
+        "cilantro leaves"
       ],
       "connects_b": [
-        "soy sauce",
         "cloves",
+        "rice vinegar",
         "vegetable oil"
       ]
     },
@@ -131,50 +131,40 @@
       "name": "snow peas",
       "score": 80.03683622855938,
       "connects_a": [
+        "bell pepper",
         "ginger",
-        "scallions",
-        "vegetable oil"
+        "scallions"
       ],
       "connects_b": [
-        "ginger",
-        "mushrooms",
-        "chicken breasts"
+        "shrimp",
+        "corn starch",
+        "rice vinegar"
       ]
     }
   ],
   "novel_from_a": [
+    {
+      "name": "fire",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
     {
       "name": "eggplants",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "serrano",
+      "name": "evoo",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "finely parsley",
+      "name": "saffron threads",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "pine",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "montreal steak",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "pinch saffron",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "scotch bonnet",
+      "name": "leg",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -184,24 +174,29 @@
       "strength": 1
     },
     {
-      "name": "harissa",
+      "name": "herbes",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "leg",
+      "name": "montreal steak",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "scotch bonnet peppers",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "finely parsley",
       "pairs_with": "cloves",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "radicchio",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "petite",
+      "name": "pasta",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -211,22 +206,12 @@
       "strength": 1
     },
     {
-      "name": "cremini",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "spun",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pasta",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "baby arugula",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "radicchio",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -236,12 +221,27 @@
       "strength": 1
     },
     {
+      "name": "petite",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "spun",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cremini",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "anchovies",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "inch piece",
+      "name": "sirloin",
       "pairs_with": "cloves",
       "strength": 1
     }

@@ -2,140 +2,141 @@
   "pair": "Continental + Thai",
   "bridges": [
     {
+      "name": "salsa",
+      "score": 32.09376320403048,
+      "connects_a": [
+        "cream",
+        "beans",
+        "bell pepper"
+      ],
+      "connects_b": [
+        "cilantro leaves",
+        "bell pepper",
+        "juice"
+      ]
+    },
+    {
       "name": "mango",
       "score": 25.17561520058016,
       "connects_a": [
-        "powder",
+        "chilli",
         "seeds",
-        "wheat"
+        "dhania"
       ],
       "connects_b": [
-        "coconut milk",
         "lime",
-        "limes"
+        "limes",
+        "cilantro"
+      ]
+    },
+    {
+      "name": "cumin",
+      "score": 24.412382450548716,
+      "connects_a": [
+        "beans",
+        "bell pepper",
+        "oregano"
+      ],
+      "connects_b": [
+        "cilantro leaves",
+        "chiles",
+        "bell pepper"
       ]
     },
     {
       "name": "garam masala",
       "score": 24.135669809762263,
       "connects_a": [
-        "oil",
+        "onion",
         "potatoes",
-        "onion"
+        "oil"
       ],
       "connects_b": [
-        "coconut milk",
-        "ginger",
-        "chiles"
+        "onion",
+        "chiles",
+        "ginger"
       ]
     },
     {
-      "name": "salsa",
-      "score": 24.07032240302286,
+      "name": "corn tortillas",
+      "score": 24.08425133663227,
       "connects_a": [
-        "bell pepper",
-        "cream",
-        "beans"
+        "onion",
+        "oregano"
       ],
       "connects_b": [
+        "more",
         "cilantro leaves",
-        "lime",
-        "chicken breasts"
+        "onion"
       ]
     },
     {
       "name": "file powder",
       "score": 24.04874319183523,
       "connects_a": [
+        "thyme",
+        "onion",
+        "bell pepper"
+      ],
+      "connects_b": [
+        "onion",
         "bell pepper",
+        "garlic"
+      ]
+    },
+    {
+      "name": "andouille sausage",
+      "score": 24.0317667859517,
+      "connects_a": [
+        "thyme",
+        "onion",
+        "bell pepper"
+      ],
+      "connects_b": [
+        "onion",
+        "bell pepper",
+        "chicken breasts"
+      ]
+    },
+    {
+      "name": "celery",
+      "score": 20.049644853665708,
+      "connects_a": [
+        "thyme",
+        "onion",
+        "bell pepper"
+      ],
+      "connects_b": [
+        "onion",
+        "bell pepper",
+        "garlic"
+      ]
+    },
+    {
+      "name": "cans tomatoes",
+      "score": 20.044428318272463,
+      "connects_a": [
+        "olive oil",
         "onion",
         "leaves"
       ],
       "connects_b": [
-        "vegetable oil",
-        "garlic",
-        "bell pepper"
+        "cloves",
+        "onion",
+        "leaves"
       ]
     },
     {
       "name": "jalapeno peppers",
       "score": 20.019564364616098,
       "connects_a": [
-        "bell pepper",
-        "beans"
-      ],
-      "connects_b": [
-        "cilantro leaves",
-        "lime",
-        "scallions"
-      ]
-    },
-    {
-      "name": "shrimp",
-      "score": 18.16559457066445,
-      "connects_a": [
-        "bell pepper",
-        "thyme"
-      ],
-      "connects_b": [
-        "coconut milk",
-        "scallions",
-        "peanut oil"
-      ]
-    },
-    {
-      "name": "ribs celery",
-      "score": 18.131182034295097,
-      "connects_a": [
-        "bell pepper",
-        "onion",
-        "thyme"
-      ],
-      "connects_b": [
-        "scallions",
-        "cloves",
+        "beans",
         "bell pepper"
-      ]
-    },
-    {
-      "name": "tortilla chips",
-      "score": 18.043542140541007,
-      "connects_a": [
-        "bell pepper",
-        "cream",
-        "beans"
       ],
       "connects_b": [
+        "fish sauce",
         "cilantro leaves",
-        "lime",
-        "vegetable oil"
-      ]
-    },
-    {
-      "name": "andouille sausage",
-      "score": 18.023825089463774,
-      "connects_a": [
-        "bell pepper",
-        "onion",
-        "thyme"
-      ],
-      "connects_b": [
-        "chicken breasts",
-        "garlic",
-        "canola oil"
-      ]
-    },
-    {
-      "name": "cumin",
-      "score": 16.274921633699144,
-      "connects_a": [
-        "bell pepper",
-        "beans"
-      ],
-      "connects_b": [
-        "cilantro leaves",
-        "lime",
-        "coconut milk"
+        "shrimp"
       ]
     }
   ],
@@ -161,12 +162,17 @@
       "strength": 1
     },
     {
-      "name": "cocoa",
+      "name": "ricotta",
       "pairs_with": "egg",
       "strength": 1
     },
     {
-      "name": "cocoa powder",
+      "name": "chocolate chips",
+      "pairs_with": "egg",
+      "strength": 1
+    },
+    {
+      "name": "cocoa",
       "pairs_with": "egg",
       "strength": 1
     },
@@ -176,39 +182,29 @@
       "strength": 1
     },
     {
-      "name": "soda",
-      "pairs_with": "egg",
-      "strength": 1
-    },
-    {
-      "name": "vanilla",
-      "pairs_with": "egg",
-      "strength": 1
-    },
-    {
       "name": "margarine",
+      "pairs_with": "egg",
+      "strength": 1
+    },
+    {
+      "name": "cream cheese",
       "pairs_with": "egg",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "fennel bulb",
+      "name": "plum tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "porcini mushrooms",
+      "name": "parmigiano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "kalamata olives",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "grape tomatoes",
+      "name": "couscous",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -218,12 +214,22 @@
       "strength": 1
     },
     {
-      "name": "cremini",
+      "name": "anchovy fillets",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "eyeball",
+      "name": "hearts",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "grape tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "linguini",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -233,12 +239,7 @@
       "strength": 1
     },
     {
-      "name": "plum tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "al dente",
+      "name": "spaghetti",
       "pairs_with": "olive oil",
       "strength": 1
     }

@@ -3,142 +3,142 @@
   "bridges": [
     {
       "name": "cardamom",
-      "score": 178.63394578871933,
+      "score": 162.39449617156305,
       "connects_a": [
-        "powder",
-        "seeds",
+        "chilli",
+        "leaf",
         "seeds cloves"
       ],
       "connects_b": [
-        "yogurt",
-        "yoghurt",
-        "ginger"
+        "cumin seeds",
+        "tumeric",
+        "turmeric"
       ]
     },
     {
       "name": "garam masala",
       "score": 108.61051414393017,
       "connects_a": [
-        "potatoes",
-        "oil",
-        "chili powder"
+        "chili powder",
+        "peas",
+        "potatoes"
       ],
       "connects_b": [
-        "yogurt",
-        "tomatoes",
-        "peas"
+        "cardamom",
+        "basmati rice",
+        "yogurt"
       ]
     },
     {
       "name": "cumin seeds",
       "score": 84.10364299646703,
       "connects_a": [
-        "potatoes",
-        "oil",
-        "chili powder"
+        "chili powder",
+        "peas",
+        "potatoes"
       ],
       "connects_b": [
-        "yogurt",
-        "tomatoes",
-        "peas"
+        "cardamom",
+        "basmati rice",
+        "yogurt"
       ]
     },
     {
       "name": "mustard seeds",
       "score": 76.05919209893314,
       "connects_a": [
-        "potatoes",
-        "oil",
-        "chili powder"
+        "chili powder",
+        "peas",
+        "potatoes"
       ],
       "connects_b": [
         "yogurt",
-        "tomatoes",
-        "peas"
+        "chilies",
+        "cilantro"
       ]
     },
     {
       "name": "chilies",
       "score": 76.042251508117,
       "connects_a": [
-        "oil",
-        "potatoes",
-        "chili powder"
+        "chili powder",
+        "peas",
+        "potatoes"
       ],
       "connects_b": [
-        "tomatoes",
-        "peas",
-        "yoghurt"
+        "cardamom",
+        "cilantro",
+        "potatoes"
       ]
     },
     {
       "name": "tumeric",
       "score": 72.2038122755774,
       "connects_a": [
-        "oil",
-        "potatoes",
-        "chili powder"
+        "chili powder",
+        "peas",
+        "potatoes"
       ],
       "connects_b": [
-        "cardamom",
-        "ginger",
-        "cumin"
+        "mustard seeds",
+        "cumin seeds",
+        "onion"
       ]
     },
     {
       "name": "chili powder",
       "score": 65.75647838732317,
       "connects_a": [
-        "oil",
-        "methi",
-        "leaf"
+        "leaf",
+        "jeera coriander",
+        "methi"
       ],
       "connects_b": [
-        "yoghurt",
-        "cardamom",
-        "cumin"
+        "mustard seeds",
+        "cumin seeds",
+        "tumeric"
       ]
     },
     {
       "name": "dhania",
       "score": 65.5120981776966,
       "connects_a": [
-        "powder",
-        "yellow",
-        "wheat"
+        "powder salt",
+        "leaf",
+        "yellow"
       ],
       "connects_b": [
-        "cardamom",
         "chili powder",
-        "peas"
+        "peas",
+        "cardamom"
       ]
     },
     {
       "name": "turmeric",
       "score": 60.116309471119145,
       "connects_a": [
-        "oil",
         "chili powder",
-        "peas"
+        "peas",
+        "oil"
       ],
       "connects_b": [
-        "yogurt",
-        "tomatoes",
-        "peas"
+        "cardamom",
+        "basmati rice",
+        "yogurt"
       ]
     },
     {
       "name": "coriander powder",
       "score": 48.093729141204676,
       "connects_a": [
-        "oil",
         "chili powder",
-        "leaves"
+        "leaves",
+        "oil"
       ],
       "connects_b": [
-        "yoghurt",
-        "cardamom",
-        "ginger"
+        "cumin seeds",
+        "tumeric",
+        "onion"
       ]
     }
   ],
@@ -189,7 +189,7 @@
       "strength": 1
     },
     {
-      "name": "carom",
+      "name": "dhania",
       "pairs_with": "cardamom",
       "strength": 1
     }
@@ -211,12 +211,7 @@
       "strength": 1
     },
     {
-      "name": "shortening",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "buttermilk",
+      "name": "yeast",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -226,7 +221,12 @@
       "strength": 1
     },
     {
-      "name": "yeast",
+      "name": "pastry flour",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "buttermilk",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -236,12 +236,12 @@
       "strength": 1
     },
     {
-      "name": "pastry flour",
+      "name": "shortening",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "pomegranate",
+      "name": "gram flour",
       "pairs_with": "seeds",
       "strength": 1
     }

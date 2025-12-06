@@ -5,27 +5,27 @@
       "name": "celery",
       "score": 102.2531887536951,
       "connects_a": [
-        "hot sauce",
-        "worcestershire sauce",
-        "onion powder"
+        "thyme",
+        "onion",
+        "andouille sausage"
       ],
       "connects_b": [
-        "bacon",
-        "bay leaf",
-        "parsley"
+        "onion",
+        "parsley",
+        "bacon"
       ]
     },
     {
       "name": "tomato paste",
       "score": 91.58720266729081,
       "connects_a": [
-        "worcestershire sauce",
-        "oregano",
-        "cloves"
+        "thyme",
+        "cloves",
+        "celery"
       ],
       "connects_b": [
-        "bay leaf",
         "cloves",
+        "onion",
         "parsley"
       ]
     },
@@ -33,55 +33,55 @@
       "name": "thyme",
       "score": 70.36519638344016,
       "connects_a": [
-        "hot sauce",
-        "worcestershire sauce",
-        "onion powder"
+        "celery",
+        "andouille sausage",
+        "parsley"
       ],
       "connects_b": [
+        "parsley",
         "bacon",
-        "bay leaf",
-        "parsley"
+        "2"
       ]
     },
     {
       "name": "file powder",
       "score": 70.14216764285275,
       "connects_a": [
-        "onion powder",
-        "vegetable oil",
-        "andouille sausage"
+        "thyme",
+        "celery",
+        "onion"
       ],
       "connects_b": [
-        "vegetable oil",
+        "onion",
         "garlic",
-        "onion"
+        "vegetable oil"
       ]
     },
     {
       "name": "confectioners",
       "score": 65.33903274929074,
       "connects_a": [
-        "butter",
         "cream",
-        "egg"
+        "egg",
+        "2"
       ],
       "connects_b": [
-        "cocoa powder",
-        "nutmeg",
-        "butter"
+        "cream",
+        "egg yolks",
+        "purpose flour"
       ]
     },
     {
       "name": "yellow onions",
       "score": 65.08980878101612,
       "connects_a": [
-        "worcestershire sauce",
-        "onion powder",
-        "chicken stock"
+        "kosher sea salt",
+        "thyme",
+        "celery"
       ],
       "connects_b": [
         "parsley",
-        "garlic",
+        "2",
         "wine"
       ]
     },
@@ -89,41 +89,41 @@
       "name": "grits",
       "score": 60.234735005681905,
       "connects_a": [
-        "hot sauce",
-        "onion powder",
-        "chicken stock"
+        "cream",
+        "andouille sausage",
+        "parsley"
       ],
       "connects_b": [
-        "butter",
+        "cream",
         "parsley",
-        "cream"
+        "milk"
       ]
     },
     {
       "name": "cornmeal",
       "score": 55.225665301196294,
       "connects_a": [
-        "hot sauce",
+        "thyme",
         "mayonnaise",
-        "onion powder"
+        "flour"
       ],
       "connects_b": [
         "flour",
-        "yeast",
-        "egg"
+        "egg",
+        "milk"
       ]
     },
     {
       "name": "ribs celery",
       "score": 54.39354610288529,
       "connects_a": [
-        "hot sauce",
-        "worcestershire sauce",
-        "chicken stock"
+        "thyme",
+        "cloves",
+        "onion"
       ],
       "connects_b": [
-        "bay leaf",
         "cloves",
+        "onion",
         "parsley"
       ]
     },
@@ -131,30 +131,25 @@
       "name": "andouille sausage",
       "score": 51.06750442014736,
       "connects_a": [
-        "hot sauce",
-        "worcestershire sauce",
-        "onion powder"
+        "thyme",
+        "celery",
+        "onion"
       ],
       "connects_b": [
+        "onion",
         "garlic",
-        "bay leaf",
-        "onion"
+        "bay leaf"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "cannellini",
+      "name": "basil chiffonade",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "fettuccine",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "spaghetti",
+      "name": "heads garlic",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -164,17 +159,22 @@
       "strength": 1
     },
     {
-      "name": "eyeball",
+      "name": "oregano leaves",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "beefsteak tomatoes",
+      "name": "canned tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "roasted tomatoes",
+      "name": "olives",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "plum tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -184,12 +184,12 @@
       "strength": 1
     },
     {
-      "name": "parmigiano",
+      "name": "chorizo",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "mussels",
+      "name": "roasted tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     }
@@ -201,37 +201,32 @@
       "strength": 1
     },
     {
-      "name": "montreal steak",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
       "name": "escarole",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "mcintosh apples",
+      "name": "montreal steak",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "bosc pears",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "almond flour",
+      "name": "corn syrup",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "ca",
+      "name": "muscovado sugar",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "almond extract",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "percent milk",
+      "name": "delicious apples",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -241,7 +236,12 @@
       "strength": 1
     },
     {
-      "name": "graham cracker crumbs",
+      "name": "confectioners",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "cake flour",
       "pairs_with": "butter",
       "strength": 1
     }

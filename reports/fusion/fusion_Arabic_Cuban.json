@@ -5,41 +5,41 @@
       "name": "cumin",
       "score": 146.4742947032923,
       "connects_a": [
-        "yogurt",
         "tomato paste",
-        "lamb"
+        "cayenne",
+        "coriander"
       ],
       "connects_b": [
-        "lime",
-        "bay leaf",
-        "oregano"
+        "oregano",
+        "bell pepper",
+        "bay leaf"
       ]
     },
     {
       "name": "garam masala",
       "score": 98.55398505652924,
       "connects_a": [
-        "yogurt",
         "tomato paste",
-        "cumin"
+        "onion",
+        "cayenne"
       ],
       "connects_b": [
+        "onion",
         "bay leaf",
-        "cumin",
-        "vegetable oil"
+        "cumin"
       ]
     },
     {
       "name": "tomato paste",
       "score": 63.406524923509025,
       "connects_a": [
-        "cumin",
+        "onion",
         "parsley",
-        "onion"
+        "cayenne"
       ],
       "connects_b": [
-        "pork",
-        "bay leaf",
+        "cloves",
+        "onion",
         "oregano"
       ]
     },
@@ -47,14 +47,14 @@
       "name": "chile",
       "score": 63.271634007052214,
       "connects_a": [
-        "yogurt",
-        "cumin",
-        "vegetable oil"
+        "vinegar",
+        "cayenne",
+        "coriander"
       ],
       "connects_b": [
-        "lime",
+        "cloves",
         "cumin",
-        "cloves"
+        "lime"
       ]
     },
     {
@@ -62,26 +62,26 @@
       "score": 56.31370207853893,
       "connects_a": [
         "tomato paste",
-        "cumin",
-        "cucumber"
+        "cayenne",
+        "mint"
       ],
       "connects_b": [
+        "bell pepper",
         "bay leaf",
-        "wine vinegar",
-        "cumin"
+        "pork shoulder"
       ]
     },
     {
       "name": "turmeric",
       "score": 55.10661701519255,
       "connects_a": [
-        "yogurt",
         "tomato paste",
-        "cumin"
+        "cayenne",
+        "coriander"
       ],
       "connects_b": [
-        "cumin",
         "bay leaf",
+        "cumin",
         "vegetable oil"
       ]
     },
@@ -90,27 +90,27 @@
       "score": 49.12162989148098,
       "connects_a": [
         "tomato paste",
-        "parsley",
-        "garlic"
+        "onion",
+        "parsley"
       ],
       "connects_b": [
-        "bay leaf",
+        "onion",
         "oregano",
-        "garlic"
+        "bell pepper"
       ]
     },
     {
       "name": "corn tortillas",
       "score": 45.157971256185505,
       "connects_a": [
+        "onion",
         "cumin",
-        "vegetable oil",
-        "onion"
+        "vegetable oil"
       ],
       "connects_b": [
-        "lime",
-        "cumin",
-        "oregano"
+        "onion",
+        "oregano",
+        "cumin"
       ]
     },
     {
@@ -118,11 +118,11 @@
       "score": 42.37798101569312,
       "connects_a": [
         "tomato paste",
-        "cumin",
+        "onion",
         "parsley"
       ],
       "connects_b": [
-        "cumin",
+        "onion",
         "oregano",
         "wine"
       ]
@@ -132,13 +132,13 @@
       "score": 40.23543632724744,
       "connects_a": [
         "tomato paste",
-        "cumin",
+        "onion",
         "parsley"
       ],
       "connects_b": [
-        "bay leaf",
-        "oregano",
-        "cumin"
+        "cloves",
+        "onion",
+        "oregano"
       ]
     }
   ],
@@ -149,12 +149,12 @@
       "strength": 1
     },
     {
-      "name": "pine",
+      "name": "harissa",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "harissa",
+      "name": "pine",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -174,7 +174,12 @@
       "strength": 1
     },
     {
-      "name": "nutmeg",
+      "name": "pastry",
+      "pairs_with": "egg",
+      "strength": 1
+    },
+    {
+      "name": "puff",
       "pairs_with": "egg",
       "strength": 1
     },
@@ -184,44 +189,19 @@
       "strength": 1
     },
     {
-      "name": "applesauce",
-      "pairs_with": "egg",
-      "strength": 1
-    },
-    {
-      "name": "pastry",
+      "name": "nutmeg",
       "pairs_with": "egg",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "banana liqueur",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "at",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "almond extract",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
       "name": "pecans",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "1 cup (",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "peeled and",
+      "name": "banana liqueur",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -231,17 +211,37 @@
       "strength": 1
     },
     {
-      "name": "sticks",
+      "name": "arborio rice",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "room temp",
+      "name": "confectioners",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "cake flour",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "at",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "peeled and",
       "pairs_with": "butter",
       "strength": 1
     },
     {
       "name": "whole milk",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "room temp",
       "pairs_with": "butter",
       "strength": 1
     }

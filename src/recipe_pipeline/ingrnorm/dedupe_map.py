@@ -60,10 +60,31 @@ _DROP_TOKENS = {
     "turns",
     "28-ounce",
     "sugar",
-    "wrappers "
+    "wrappers ",
+    "purpose",
+    "all",
+    "degrees",
+    "one",
+    "two",
+    "see"
+    "disclaimer",
+    "note",
+    "ingredient",
+    "ingredient note",
+    "network",
+    "eyeball",
+    "split",
+    "legs",
+    "thighs",
+    "food",
+    "inspirations",
+    "hellman",
+    "kitchen",
+    "pods"
+    
 
 }
-_DROP_SUBSTRINGS = {"spoon", "baking"}
+_DROP_SUBSTRINGS = {"spoon", "baking", "ounce", "pound", "cup", "slice",}
 
 
 def _dedupe_preserve_order(tokens):

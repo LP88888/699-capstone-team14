@@ -5,112 +5,112 @@
       "name": "tomato paste",
       "score": 112.72271097512716,
       "connects_a": [
-        "cumin",
+        "thyme",
         "cloves",
-        "parsley"
+        "onion"
       ],
       "connects_b": [
-        "worcestershire sauce",
-        "chuck",
-        "bay leaf"
+        "thyme",
+        "cloves",
+        "chuck"
       ]
     },
     {
       "name": "celery",
       "score": 98.24325978296196,
       "connects_a": [
-        "parsley",
-        "garlic",
-        "thyme"
+        "thyme",
+        "onion",
+        "parsley"
       ],
       "connects_b": [
+        "chicken broth",
         "tomato paste",
-        "worcestershire sauce",
-        "bay leaf"
+        "thyme"
       ]
     },
     {
       "name": "garam masala",
       "score": 88.4974559691283,
       "connects_a": [
-        "coconut milk",
+        "onion",
         "ginger",
         "cumin"
       ],
       "connects_b": [
         "tomato paste",
-        "chicken breasts",
-        "bay leaf"
+        "onion",
+        "tomatoes"
       ]
     },
     {
       "name": "ribs celery",
       "score": 84.61218282671045,
       "connects_a": [
-        "scallions",
+        "thyme",
         "cloves",
-        "parsley"
+        "onion"
       ],
       "connects_b": [
-        "tomato paste",
-        "worcestershire sauce",
-        "bay leaf"
+        "chicken broth",
+        "cloves",
+        "tomato paste"
       ]
     },
     {
       "name": "andouille sausage",
       "score": 78.10324205434303,
       "connects_a": [
-        "garlic",
         "thyme",
+        "onion",
         "bell pepper"
       ],
       "connects_b": [
+        "chicken broth",
         "tomato paste",
-        "worcestershire sauce",
-        "bay leaf"
+        "thyme"
       ]
     },
     {
       "name": "celery ribs",
       "score": 72.05508925641611,
       "connects_a": [
-        "parsley",
         "thyme",
-        "bell pepper"
+        "onion",
+        "parsley"
       ],
       "connects_b": [
+        "chicken broth",
         "tomato paste",
-        "worcestershire sauce",
-        "bay leaf"
+        "thyme"
       ]
     },
     {
       "name": "bay leaf",
       "score": 66.59397016751777,
       "connects_a": [
-        "cumin",
-        "parsley",
-        "thyme"
+        "thyme",
+        "onion",
+        "parsley"
       ],
       "connects_b": [
-        "tomato paste",
         "chicken broth",
-        "parsley"
+        "tomato paste",
+        "thyme"
       ]
     },
     {
       "name": "can tomatoes",
       "score": 65.38258403177709,
       "connects_a": [
-        "cumin",
         "cloves",
+        "onion",
         "parsley"
       ],
       "connects_b": [
-        "tomato paste",
-        "worcestershire sauce",
-        "bay leaf"
+        "chicken broth",
+        "cloves",
+        "tomato paste"
       ]
     },
     {
@@ -118,13 +118,13 @@
       "score": 64.17780118133099,
       "connects_a": [
         "cilantro leaves",
-        "coconut milk",
-        "scallions"
+        "bell pepper",
+        "rice"
       ],
       "connects_b": [
+        "chicken broth",
         "tomato paste",
-        "bay leaf",
-        "chicken broth"
+        "bell pepper"
       ]
     },
     {
@@ -132,44 +132,19 @@
       "score": 64.08250393269037,
       "connects_a": [
         "cilantro leaves",
-        "lime",
-        "coconut milk"
+        "coconut milk",
+        "bell pepper"
       ],
       "connects_b": [
         "tomato paste",
-        "bay leaf",
+        "bell pepper",
         "chicken"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "bunch kale",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "chipotle puree",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cans chickpeas",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pinch saffron",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "radicchio",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cubanelle peppers",
+      "name": "basil chiffonade",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -179,24 +154,49 @@
       "strength": 1
     },
     {
+      "name": "chipotle puree",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cubanelle peppers",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "oregano leaves",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "canned tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "olives",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "chorizo",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "roasted tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "sherry vinegar",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "fennel bulb",
+      "name": "pinch saffron",
       "pairs_with": "olive oil",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "[extra",
+      "name": "pasta",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -206,28 +206,18 @@
       "strength": 1
     },
     {
-      "name": "fettuccine",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pasta",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "piquillo peppers",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "veal",
-      "pairs_with": "cloves",
+      "name": "[extra",
+      "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "rigatoni",
-      "pairs_with": "cloves",
+      "name": "fettuccine",
+      "pairs_with": "olive oil",
       "strength": 1
     },
     {
@@ -237,6 +227,16 @@
     },
     {
       "name": "sirloin",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "veal",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "rigatoni",
       "pairs_with": "cloves",
       "strength": 1
     },

@@ -3,16 +3,16 @@
   "bridges": [
     {
       "name": "cardamom",
-      "score": 162.39449617156305,
+      "score": 146.15504655440674,
       "connects_a": [
-        "powder",
-        "seeds",
+        "carom",
+        "chilli",
         "turmeric"
       ],
       "connects_b": [
-        "yogurt",
-        "yoghurt",
-        "ginger"
+        "cumin seeds",
+        "tumeric",
+        "turmeric"
       ]
     },
     {
@@ -20,27 +20,13 @@
       "score": 135.76314267991273,
       "connects_a": [
         "turmeric",
-        "oil",
-        "chili powder"
+        "chili powder",
+        "oil"
       ],
       "connects_b": [
-        "yogurt",
-        "tomatoes",
-        "peas"
-      ]
-    },
-    {
-      "name": "mustard seeds",
-      "score": 133.103586173133,
-      "connects_a": [
-        "turmeric",
-        "oil",
-        "split"
-      ],
-      "connects_b": [
-        "yogurt",
-        "tomatoes",
-        "peas"
+        "cardamom",
+        "basmati rice",
+        "yogurt"
       ]
     },
     {
@@ -48,13 +34,27 @@
       "score": 126.15546449470055,
       "connects_a": [
         "turmeric",
-        "oil",
-        "coconut"
+        "chili powder",
+        "oil"
+      ],
+      "connects_b": [
+        "cardamom",
+        "basmati rice",
+        "yogurt"
+      ]
+    },
+    {
+      "name": "mustard seeds",
+      "score": 114.08878814839971,
+      "connects_a": [
+        "turmeric",
+        "chili powder",
+        "oil"
       ],
       "connects_b": [
         "yogurt",
-        "tomatoes",
-        "peas"
+        "chilies",
+        "cilantro"
       ]
     },
     {
@@ -62,69 +62,69 @@
       "score": 95.05281438514625,
       "connects_a": [
         "turmeric",
-        "oil",
-        "chili powder"
+        "chili powder",
+        "oil"
       ],
       "connects_b": [
-        "tomatoes",
+        "cardamom",
+        "cilantro",
+        "potatoes"
+      ]
+    },
+    {
+      "name": "dhania",
+      "score": 81.11021679143388,
+      "connects_a": [
+        "gram flour",
+        "powder",
+        "carom"
+      ],
+      "connects_b": [
+        "chili powder",
         "peas",
-        "yoghurt"
+        "cardamom"
       ]
     },
     {
       "name": "turmeric",
       "score": 80.15507929482553,
       "connects_a": [
-        "oil",
         "coconut",
+        "peas",
         "chili powder"
       ],
       "connects_b": [
-        "yogurt",
-        "tomatoes",
-        "peas"
-      ]
-    },
-    {
-      "name": "dhania",
-      "score": 77.99059306868644,
-      "connects_a": [
-        "powder",
-        "split",
-        "wheat"
-      ],
-      "connects_b": [
         "cardamom",
-        "chili powder",
-        "peas"
+        "basmati rice",
+        "yogurt"
       ]
     },
     {
       "name": "tumeric",
       "score": 72.2038122755774,
       "connects_a": [
-        "oil",
-        "potatoes",
-        "chili powder"
+        "chili powder",
+        "peas",
+        "potatoes"
       ],
       "connects_b": [
-        "cardamom",
-        "ginger",
-        "cumin"
+        "mustard seeds",
+        "cumin seeds",
+        "onion"
       ]
     },
     {
       "name": "oil",
       "score": 70.33846744975115,
       "connects_a": [
+        "carom",
         "gram",
-        "turmeric",
-        "wheat"
+        "turmeric"
       ],
       "connects_b": [
-        "yoghurt",
-        "cardamom",
-        "garam masala"
+        "cumin seeds",
+        "tumeric",
+        "cardamom"
       ]
     },
     {
@@ -133,12 +133,12 @@
       "connects_a": [
         "gram",
         "turmeric",
-        "oil"
+        "jeera coriander"
       ],
       "connects_b": [
-        "yoghurt",
-        "cardamom",
-        "cumin"
+        "mustard seeds",
+        "cumin seeds",
+        "tumeric"
       ]
     }
   ],
@@ -149,17 +149,7 @@
       "strength": 1
     },
     {
-      "name": "carom",
-      "pairs_with": "cardamom",
-      "strength": 1
-    },
-    {
-      "name": "leaf",
-      "pairs_with": "cardamom",
-      "strength": 1
-    },
-    {
-      "name": "badi",
+      "name": "dhania",
       "pairs_with": "cardamom",
       "strength": 1
     },
@@ -169,12 +159,27 @@
       "strength": 1
     },
     {
+      "name": "leaf",
+      "pairs_with": "cardamom",
+      "strength": 1
+    },
+    {
       "name": "laung whole",
       "pairs_with": "cardamom",
       "strength": 1
     },
     {
-      "name": "pods",
+      "name": "powder",
+      "pairs_with": "cardamom",
+      "strength": 1
+    },
+    {
+      "name": "carom",
+      "pairs_with": "cardamom",
+      "strength": 1
+    },
+    {
+      "name": "badi",
       "pairs_with": "cardamom",
       "strength": 1
     },
@@ -184,13 +189,8 @@
       "strength": 1
     },
     {
-      "name": "dhania",
-      "pairs_with": "cardamom",
-      "strength": 1
-    },
-    {
-      "name": "powder",
-      "pairs_with": "cardamom",
+      "name": "salt coriander",
+      "pairs_with": "leaves",
       "strength": 1
     }
   ],
@@ -201,12 +201,7 @@
       "strength": 1
     },
     {
-      "name": "shortening",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "buttermilk",
+      "name": "yeast",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -216,7 +211,12 @@
       "strength": 1
     },
     {
-      "name": "yeast",
+      "name": "pastry flour",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "buttermilk",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -226,7 +226,7 @@
       "strength": 1
     },
     {
-      "name": "pastry flour",
+      "name": "shortening",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -236,13 +236,13 @@
       "strength": 1
     },
     {
-      "name": "potato chips",
-      "pairs_with": "split",
+      "name": "asafoetida",
+      "pairs_with": "leaves",
       "strength": 1
     },
     {
-      "name": "mustard seeds",
-      "pairs_with": "split",
+      "name": "fenugreek seeds",
+      "pairs_with": "leaves",
       "strength": 1
     }
   ]

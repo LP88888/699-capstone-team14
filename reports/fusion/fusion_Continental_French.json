@@ -9,23 +9,37 @@
         "almonds"
       ],
       "connects_b": [
-        "nutmeg",
-        "maple syrup",
-        "butter"
+        "cream",
+        "more",
+        "1"
+      ]
+    },
+    {
+      "name": "tomato paste",
+      "score": 28.18067774378179,
+      "connects_a": [
+        "thyme",
+        "onion",
+        "bell pepper"
+      ],
+      "connects_b": [
+        "thyme",
+        "cloves",
+        "onion"
       ]
     },
     {
       "name": "beef stock",
       "score": 28.103084519201673,
       "connects_a": [
+        "thyme",
         "flour",
-        "potatoes",
         "onion"
       ],
       "connects_b": [
+        "thyme",
         "flour",
-        "bay leaf",
-        "bread"
+        "onion"
       ]
     },
     {
@@ -36,105 +50,93 @@
         "almonds"
       ],
       "connects_b": [
-        "nutmeg",
-        "maple syrup",
-        "butter"
+        "cream",
+        "1",
+        "maple syrup"
+      ]
+    },
+    {
+      "name": "celery",
+      "score": 24.059573824398846,
+      "connects_a": [
+        "thyme",
+        "onion",
+        "bell pepper"
+      ],
+      "connects_b": [
+        "thyme",
+        "onion",
+        "parsley"
       ]
     },
     {
       "name": "file powder",
       "score": 24.04874319183523,
       "connects_a": [
-        "bell pepper",
+        "thyme",
         "onion",
-        "leaves"
+        "bell pepper"
       ],
       "connects_b": [
-        "vegetable oil",
-        "garlic",
-        "thyme"
+        "thyme",
+        "onion",
+        "garlic"
       ]
     },
     {
       "name": "ribs celery",
       "score": 21.153045706677613,
       "connects_a": [
-        "bell pepper",
+        "thyme",
         "onion",
-        "thyme"
+        "bell pepper"
       ],
       "connects_b": [
-        "bay leaf",
+        "thyme",
         "cloves",
-        "parsley"
-      ]
-    },
-    {
-      "name": "tomato paste",
-      "score": 21.135508307836343,
-      "connects_a": [
-        "bell pepper",
-        "onion",
-        "thyme"
-      ],
-      "connects_b": [
-        "bay leaf",
-        "cloves",
-        "parsley"
-      ]
-    },
-    {
-      "name": "vanilla",
-      "score": 20.026153542582716,
-      "connects_a": [
-        "cream",
-        "flour"
-      ],
-      "connects_b": [
-        "nutmeg",
-        "flour",
-        "maple syrup"
-      ]
-    },
-    {
-      "name": "garam masala",
-      "score": 18.101752357321697,
-      "connects_a": [
-        "oil",
-        "potatoes",
         "onion"
-      ],
-      "connects_b": [
-        "bay leaf",
-        "vegetable oil",
-        "garlic"
       ]
     },
     {
-      "name": "celery",
-      "score": 18.044680368299137,
+      "name": "yellow onions",
+      "score": 21.029015144635977,
       "connects_a": [
+        "thyme",
         "bell pepper",
-        "onion",
-        "thyme"
+        "oregano"
       ],
       "connects_b": [
-        "bay leaf",
+        "thyme",
         "parsley",
-        "garlic"
+        "2"
       ]
     },
     {
-      "name": "filling",
-      "score": 18.027647686029177,
+      "name": "bay leaf",
+      "score": 20.179990959853868,
       "connects_a": [
-        "cream",
-        "flour"
+        "thyme",
+        "onion",
+        "beans"
       ],
       "connects_b": [
-        "flour",
-        "butter",
-        "egg yolks"
+        "thyme",
+        "onion",
+        "parsley"
+      ]
+    },
+    {
+      "name": "cans tomatoes",
+      "score": 20.044428318272463,
+      "connects_a": [
+        "olive oil",
+        "onion",
+        "leaves"
+      ],
+      "connects_b": [
+        "cloves",
+        "onion",
+        "leaves"
       ]
     }
   ],
@@ -150,17 +152,12 @@
       "strength": 1
     },
     {
-      "name": "carom",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
       "name": "pearl",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "maida sooji",
+      "name": "carom",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -170,13 +167,13 @@
       "strength": 1
     },
     {
-      "name": "irish",
-      "pairs_with": "cream",
+      "name": "maida sooji",
+      "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "essence",
-      "pairs_with": "garlic",
+      "name": "irish",
+      "pairs_with": "cream",
       "strength": 1
     },
     {
@@ -185,24 +182,44 @@
       "strength": 1
     },
     {
-      "name": "water coriander",
+      "name": "essence",
+      "pairs_with": "garlic",
+      "strength": 1
+    },
+    {
+      "name": "salt coriander",
       "pairs_with": "leaves",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "giardiniera",
+      "name": "plum tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "radicchio",
+      "name": "artichokes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "petite",
+      "name": "romano cheese",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "some",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pancetta",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "parmigiano",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -212,32 +229,17 @@
       "strength": 1
     },
     {
-      "name": "fennel bulb",
+      "name": "crusty rolls",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "porcini mushrooms",
+      "name": "cannellini",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "kalamata olives",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "chianti",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "grape tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "heads garlic",
+      "name": "[extra",
       "pairs_with": "olive oil",
       "strength": 1
     }

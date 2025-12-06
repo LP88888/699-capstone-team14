@@ -5,41 +5,41 @@
       "name": "fish sauce",
       "score": 145.41576983835546,
       "connects_a": [
+        "shrimp",
         "hoisin sauce",
-        "ginger",
-        "pork"
+        "rice vinegar"
       ],
       "connects_b": [
+        "jalapeno",
         "cilantro leaves",
-        "lime",
-        "jalapeno"
+        "lime"
       ]
     },
     {
       "name": "scallions",
       "score": 120.4417684405765,
       "connects_a": [
+        "rice wine",
         "hoisin sauce",
-        "ginger",
-        "pork"
+        "corn starch"
       ],
       "connects_b": [
+        "jalapeno",
         "cilantro leaves",
-        "lime",
-        "jalapeno"
+        "lime"
       ]
     },
     {
       "name": "hoisin sauce",
       "score": 110.0841005791393,
       "connects_a": [
-        "cabbage",
-        "corn starch",
-        "sodium soy sauce"
+        "rice wine",
+        "honey",
+        "soy sauce"
       ],
       "connects_b": [
+        "rice",
         "chicken breasts",
-        "jalapeno peppers",
         "garlic"
       ]
     },
@@ -47,9 +47,9 @@
       "name": "sriracha",
       "score": 108.12780410303662,
       "connects_a": [
+        "honey",
         "hoisin sauce",
-        "ginger",
-        "soy sauce"
+        "corn starch"
       ],
       "connects_b": [
         "cilantro leaves",
@@ -61,37 +61,37 @@
       "name": "cabbage",
       "score": 105.40842967877491,
       "connects_a": [
+        "rice wine",
         "hoisin sauce",
-        "ginger",
-        "pork"
+        "corn starch"
       ],
       "connects_b": [
         "cilantro leaves",
-        "lime",
-        "jalapeno peppers"
+        "corn tortillas",
+        "lime"
       ]
     },
     {
       "name": "corn tortillas",
       "score": 102.35806818068716,
       "connects_a": [
-        "chicken breasts",
         "chicken broth",
-        "vegetable oil"
+        "onion",
+        "chicken breasts"
       ],
       "connects_b": [
-        "cilantro leaves",
-        "lime",
-        "tomatillos"
+        "jalapeno",
+        "more",
+        "cilantro leaves"
       ]
     },
     {
       "name": "bean sprouts",
       "score": 102.21645410789404,
       "connects_a": [
+        "shrimp",
         "hoisin sauce",
-        "ginger",
-        "mushrooms"
+        "canola oil"
       ],
       "connects_b": [
         "cilantro leaves",
@@ -104,47 +104,62 @@
       "score": 98.09586538661888,
       "connects_a": [
         "hoisin sauce",
-        "scallions",
-        "peanut oil"
+        "bell pepper",
+        "rice"
       ],
       "connects_b": [
         "cilantro leaves",
-        "lime",
-        "cumin"
+        "corn",
+        "corn tortillas"
       ]
     },
     {
       "name": "peanut oil",
       "score": 96.21696927350456,
       "connects_a": [
-        "hoisin sauce",
-        "ginger",
-        "mushrooms"
+        "rice wine",
+        "shrimp",
+        "hoisin sauce"
       ],
       "connects_b": [
+        "jalapeno",
         "cilantro leaves",
-        "lime",
-        "jalapeno"
+        "lime"
       ]
     },
     {
       "name": "rice vinegar",
       "score": 95.2177883599542,
       "connects_a": [
-        "cabbage",
-        "corn starch",
-        "sodium soy sauce"
+        "rice wine",
+        "honey",
+        "soy sauce"
       ],
       "connects_b": [
+        "rice",
         "chicken breasts",
-        "lime juice",
         "avocado"
       ]
     }
   ],
   "novel_from_a": [
     {
+      "name": "pasta",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cremini",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "baby arugula",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "turkey sausage",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -159,69 +174,44 @@
       "strength": 1
     },
     {
-      "name": "anchovies",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "spun",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pasta",
+      "name": "anchovies",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "turkey sausage",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cremini",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "inch piece",
+      "name": "handfuls",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "pinch sugar",
+      "name": "sirloin",
       "pairs_with": "cloves",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
+      "name": "evoo",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "tuttorosso",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
       "name": "chipotle puree",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "herbes",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "thighs",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "hair pasta",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "jalapeno chile",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "evoo",
+      "name": "cotija cheese",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -231,17 +221,27 @@
       "strength": 1
     },
     {
-      "name": "shells",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "chipotles",
+      "name": "allspice berries",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
       "name": "finely oregano",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "serrano chili",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "jalapeno chile",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "have",
       "pairs_with": "cloves",
       "strength": 1
     }

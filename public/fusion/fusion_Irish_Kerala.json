@@ -5,51 +5,51 @@
       "name": "garam masala",
       "score": 20.113058174801886,
       "connects_a": [
-        "vegetable oil",
+        "onion",
         "garlic",
-        "onion"
+        "potatoes"
       ],
       "connects_b": [
-        "oil",
-        "chili powder",
-        "onion"
+        "cumin seeds",
+        "onion",
+        "chili powder"
       ]
     },
     {
       "name": "tumeric",
       "score": 15.042460890745295,
       "connects_a": [
-        "potatoes",
+        "onion",
         "garlic",
-        "onion"
+        "potatoes"
       ],
       "connects_b": [
-        "oil",
-        "chili powder",
-        "onion"
+        "cumin seeds",
+        "onion",
+        "chili powder"
       ]
     },
     {
       "name": "coriander powder",
       "score": 15.029290356626463,
       "connects_a": [
-        "garlic",
         "onion",
+        "garlic",
         "leaves"
       ],
       "connects_b": [
-        "oil",
-        "chili powder",
-        "onion"
+        "cumin seeds",
+        "onion",
+        "chili powder"
       ]
     },
     {
       "name": "bay leaf",
       "score": 12.107994575912322,
       "connects_a": [
-        "russet potatoes",
-        "parsley",
-        "thyme"
+        "thyme",
+        "onion",
+        "parsley"
       ],
       "connects_b": [
         "onion",
@@ -60,34 +60,22 @@
       "name": "beef stock",
       "score": 12.04417907965786,
       "connects_a": [
-        "flour",
         "thyme",
+        "flour",
         "onion"
       ],
       "connects_b": [
         "flour",
         "onion"
-      ]
-    },
-    {
-      "name": "wheat",
-      "score": 12.037015016596742,
-      "connects_a": [
-        "flour"
-      ],
-      "connects_b": [
-        "powder",
-        "seeds",
-        "mango"
       ]
     },
     {
       "name": "file powder",
       "score": 12.024371595917614,
       "connects_a": [
-        "vegetable oil",
-        "garlic",
-        "thyme"
+        "thyme",
+        "onion",
+        "garlic"
       ],
       "connects_b": [
         "onion",
@@ -95,16 +83,41 @@
       ]
     },
     {
+      "name": "vanilla",
+      "score": 12.01569212554963,
+      "connects_a": [
+        "cream",
+        "flour",
+        "egg yolks"
+      ],
+      "connects_b": [
+        "banana",
+        "flour"
+      ]
+    },
+    {
+      "name": "wheat",
+      "score": 11.033930431880346,
+      "connects_a": [
+        "flour"
+      ],
+      "connects_b": [
+        "chilli",
+        "flour",
+        "oil salt"
+      ]
+    },
+    {
       "name": "celery",
       "score": 10.024822426832854,
       "connects_a": [
-        "parsley",
-        "garlic",
-        "thyme"
+        "thyme",
+        "onion",
+        "parsley"
       ],
       "connects_b": [
-        "onion",
-        "rice"
+        "rice",
+        "onion"
       ]
     },
     {
@@ -112,50 +125,23 @@
       "score": 10.022214159136231,
       "connects_a": [
         "cloves",
-        "olive oil",
-        "onion"
+        "onion",
+        "leaves"
       ],
       "connects_b": [
         "onion",
         "leaves"
       ]
-    },
-    {
-      "name": "finger",
-      "score": 10.010233064924849,
-      "connects_a": [
-        "flour"
-      ],
-      "connects_b": [
-        "bhindi",
-        "powder",
-        "seeds"
-      ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "ham hocks",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "in juice",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "beef chuck",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "beef",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
       "name": "celery",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "chicken bouillon",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -165,17 +151,32 @@
       "strength": 1
     },
     {
+      "name": "tomato paste",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "lamb shoulder",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "bay leaf",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "ham hocks",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
       "name": "stalks celery",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "stewing",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "celery ribs",
+      "name": "green pepper",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -197,7 +198,7 @@
       "strength": 1
     },
     {
-      "name": "finger",
+      "name": "ragi",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -207,7 +208,7 @@
       "strength": 1
     },
     {
-      "name": "ragi",
+      "name": "finger",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -222,12 +223,12 @@
       "strength": 1
     },
     {
-      "name": "pudina",
+      "name": "salt coriander",
       "pairs_with": "leaves",
       "strength": 1
     },
     {
-      "name": "moringa",
+      "name": "leaves mint",
       "pairs_with": "leaves",
       "strength": 1
     },

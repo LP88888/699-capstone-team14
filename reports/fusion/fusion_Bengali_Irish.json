@@ -5,26 +5,26 @@
       "name": "garam masala",
       "score": 16.09044653984151,
       "connects_a": [
-        "potatoes",
-        "oil",
-        "chili powder"
+        "chili powder",
+        "peas",
+        "potatoes"
       ],
       "connects_b": [
-        "vegetable oil",
+        "onion",
         "garlic",
-        "onion"
+        "potatoes"
       ]
     },
     {
       "name": "beef stock",
       "score": 12.04417907965786,
       "connects_a": [
-        "potatoes",
-        "flour"
+        "flour",
+        "potatoes"
       ],
       "connects_b": [
-        "flour",
         "thyme",
+        "flour",
         "onion"
       ]
     },
@@ -32,34 +32,22 @@
       "name": "tumeric",
       "score": 12.033968712596234,
       "connects_a": [
-        "oil",
-        "potatoes",
-        "chili powder"
+        "chili powder",
+        "peas",
+        "potatoes"
       ],
       "connects_b": [
-        "potatoes",
+        "onion",
         "garlic",
-        "onion"
-      ]
-    },
-    {
-      "name": "carom",
-      "score": 12.020305454189002,
-      "connects_a": [
-        "powder",
-        "seeds",
-        "flour"
-      ],
-      "connects_b": [
-        "flour"
+        "potatoes"
       ]
     },
     {
       "name": "cardamom",
-      "score": 11.164621611794958,
+      "score": 10.14965601072269,
       "connects_a": [
-        "powder",
-        "seeds",
+        "chilli",
+        "leaf",
         "seeds cloves"
       ],
       "connects_b": [
@@ -67,27 +55,15 @@
       ]
     },
     {
-      "name": "wheat",
-      "score": 11.033930431880346,
-      "connects_a": [
-        "powder",
-        "seeds",
-        "flour"
-      ],
-      "connects_b": [
-        "flour"
-      ]
-    },
-    {
       "name": "allspice",
       "score": 10.044554052979679,
       "connects_a": [
-        "mustard",
-        "chili powder"
+        "chili powder",
+        "mustard"
       ],
       "connects_b": [
+        "thyme",
         "cloves",
-        "kosher sea salt",
         "raisins"
       ]
     },
@@ -95,26 +71,50 @@
       "name": "onion powder",
       "score": 10.035287017461185,
       "connects_a": [
-        "mustard",
-        "chili powder"
+        "chili powder",
+        "mustard"
       ],
       "connects_b": [
-        "kosher sea salt",
         "thyme",
-        "buttermilk"
+        "buttermilk",
+        "2"
+      ]
+    },
+    {
+      "name": "carom",
+      "score": 10.016921211824169,
+      "connects_a": [
+        "chilli",
+        "flour",
+        "jeera coriander"
+      ],
+      "connects_b": [
+        "flour"
+      ]
+    },
+    {
+      "name": "wheat",
+      "score": 9.027761262447557,
+      "connects_a": [
+        "chilli",
+        "flour",
+        "oil salt"
+      ],
+      "connects_b": [
+        "flour"
       ]
     },
     {
       "name": "coriander powder",
       "score": 9.017574213975877,
       "connects_a": [
-        "oil",
         "chili powder",
-        "leaves"
+        "leaves",
+        "oil"
       ],
       "connects_b": [
-        "garlic",
         "onion",
+        "garlic",
         "leaves"
       ]
     },
@@ -122,9 +122,9 @@
       "name": "finger",
       "score": 9.009209758432364,
       "connects_a": [
-        "powder",
-        "seeds",
-        "flour"
+        "chilli",
+        "flour",
+        "oil salt"
       ],
       "connects_b": [
         "flour"
@@ -138,7 +138,7 @@
       "strength": 1
     },
     {
-      "name": "finger",
+      "name": "sugar whole",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -148,7 +148,7 @@
       "strength": 1
     },
     {
-      "name": "sugar whole",
+      "name": "finger",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -163,12 +163,12 @@
       "strength": 1
     },
     {
-      "name": "cocoa",
+      "name": "coconut",
       "pairs_with": "vanilla extract",
       "strength": 1
     },
     {
-      "name": "coconut",
+      "name": "cocoa",
       "pairs_with": "vanilla extract",
       "strength": 1
     },
@@ -190,27 +190,12 @@
       "strength": 1
     },
     {
-      "name": "biscuits",
+      "name": "chocolate chips",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "egg wash",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "beef stock",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "shortening",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "buttermilk",
+      "name": "yeast",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -220,17 +205,32 @@
       "strength": 1
     },
     {
-      "name": "applesauce",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
       "name": "cold",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "yeast",
+      "name": "applesauce",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "pastry flour",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "buttermilk",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "vanilla",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "beef stock",
       "pairs_with": "flour",
       "strength": 1
     }

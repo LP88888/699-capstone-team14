@@ -10,9 +10,9 @@
         "parsley"
       ],
       "connects_b": [
-        "oregano",
         "cloves",
-        "parsley"
+        "parsley",
+        "oregano"
       ]
     },
     {
@@ -20,27 +20,27 @@
       "score": 98.57681900175622,
       "connects_a": [
         "tomato paste",
-        "worcestershire sauce",
-        "cloves"
+        "cloves",
+        "onion"
       ],
       "connects_b": [
-        "oregano",
-        "basil",
-        "cloves"
+        "cloves",
+        "optional",
+        "pepper flakes"
       ]
     },
     {
       "name": "tomato paste",
       "score": 90.58074989072718,
       "connects_a": [
-        "worcestershire sauce",
-        "russet potatoes",
-        "cloves"
+        "cloves",
+        "onion",
+        "parsley"
       ],
       "connects_b": [
-        "oregano",
-        "basil",
-        "cloves"
+        "cloves",
+        "onion",
+        "parsley"
       ]
     },
     {
@@ -48,27 +48,27 @@
       "score": 88.11353750401068,
       "connects_a": [
         "tomato paste",
-        "mushrooms",
+        "more",
         "parsley"
       ],
       "connects_b": [
-        "parsley",
-        "olive oil",
-        "wine"
+        "more",
+        "pepper flakes",
+        "parsley"
       ]
     },
     {
       "name": "at",
       "score": 80.31865034334432,
       "connects_a": [
-        "butter",
-        "egg yolks",
-        "cream"
+        "cream",
+        "more",
+        "1"
       ],
       "connects_b": [
-        "butter",
         "cream",
-        "kosher sea salt"
+        "more",
+        "1"
       ]
     },
     {
@@ -76,26 +76,26 @@
       "score": 80.11053388432754,
       "connects_a": [
         "tomato paste",
-        "worcestershire sauce",
-        "parsley"
+        "parsley",
+        "2"
       ],
       "connects_b": [
-        "oregano",
         "parsley",
-        "garlic"
+        "pepper flakes",
+        "oregano"
       ]
     },
     {
       "name": "confectioners",
       "score": 77.40162341069826,
       "connects_a": [
-        "nutmeg",
-        "butter",
-        "egg yolks"
+        "cream",
+        "more",
+        "1"
       ],
       "connects_b": [
-        "butter",
         "cream",
+        "more",
         "1"
       ]
     },
@@ -104,27 +104,27 @@
       "score": 70.51015235559204,
       "connects_a": [
         "tomato paste",
-        "worcestershire sauce",
-        "cloves"
+        "cloves",
+        "onion"
       ],
       "connects_b": [
         "cloves",
-        "parsley",
-        "wine"
+        "optional",
+        "pepper flakes"
       ]
     },
     {
       "name": "whole milk",
       "score": 70.20499621202339,
       "connects_a": [
-        "nutmeg",
-        "butter",
-        "egg yolks"
+        "more",
+        "egg yolks",
+        "egg"
       ],
       "connects_b": [
-        "butter",
-        "kosher sea salt",
-        "egg"
+        "more",
+        "egg",
+        "mozzarella cheese"
       ]
     },
     {
@@ -133,12 +133,12 @@
       "connects_a": [
         "tomato paste",
         "cloves",
-        "olive oil"
+        "onion"
       ],
       "connects_b": [
-        "oregano",
         "cloves",
-        "olive oil"
+        "optional",
+        "pepper flakes"
       ]
     }
   ],
@@ -154,19 +154,54 @@
       "strength": 1
     },
     {
-      "name": "graham cracker crumbs",
+      "name": "guacamole",
       "pairs_with": "cream",
       "strength": 1
     },
     {
-      "name": "guacamole",
+      "name": "graham cracker crumbs",
       "pairs_with": "cream",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "radicchio",
+      "name": "finely oregano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "artichokes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "bunch kale",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pasta",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "romano cheese",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "some",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pancetta",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "parmigiano",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -176,42 +211,7 @@
       "strength": 1
     },
     {
-      "name": "heads garlic",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "romano",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "arugula",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "penne pasta",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pass",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "mortadella",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cannellini",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pasta",
+      "name": "crusty rolls",
       "pairs_with": "olive oil",
       "strength": 1
     }

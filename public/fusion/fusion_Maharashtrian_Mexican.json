@@ -2,58 +2,86 @@
   "pair": "Maharashtrian + Mexican",
   "bridges": [
     {
+      "name": "cilantro",
+      "score": 52.301477902125065,
+      "connects_a": [
+        "turmeric",
+        "chili powder",
+        "peanuts"
+      ],
+      "connects_b": [
+        "jalapeno",
+        "corn",
+        "corn tortillas"
+      ]
+    },
+    {
       "name": "garam masala",
       "score": 45.254380893304244,
       "connects_a": [
         "turmeric",
-        "oil",
-        "chili powder"
+        "chili powder",
+        "oil"
       ],
       "connects_b": [
-        "chicken breasts",
+        "onion",
         "cumin",
-        "vegetable oil"
+        "chicken breasts"
       ]
     },
     {
       "name": "mango",
       "score": 42.29503353697467,
       "connects_a": [
-        "powder",
+        "chilli",
         "seeds",
         "wheat"
       ],
       "connects_b": [
-        "lime",
         "jalapeno",
+        "lime",
         "jalapeno peppers"
       ]
     },
     {
-      "name": "cilantro",
-      "score": 39.2261084265938,
+      "name": "jalapeno peppers",
+      "score": 42.04108516569381,
       "connects_a": [
+        "turmeric",
         "chili powder",
-        "peanuts",
-        "turmeric"
+        "mango"
       ],
       "connects_b": [
-        "lime",
-        "tomatillos",
-        "jalapeno"
+        "cilantro leaves",
+        "corn",
+        "corn tortillas"
+      ]
+    },
+    {
+      "name": "lime juice",
+      "score": 33.18366656505576,
+      "connects_a": [
+        "coconut",
+        "peanuts",
+        "mango"
+      ],
+      "connects_b": [
+        "jalapeno",
+        "cilantro leaves",
+        "corn tortillas"
       ]
     },
     {
       "name": "cumin",
       "score": 30.515478063185896,
       "connects_a": [
-        "chili powder",
-        "turmeric"
+        "turmeric",
+        "chili powder"
       ],
       "connects_b": [
+        "jalapeno",
         "cilantro leaves",
-        "lime",
-        "tomatillos"
+        "oregano"
       ]
     },
     {
@@ -62,12 +90,26 @@
       "connects_a": [
         "gram",
         "turmeric",
-        "oil"
+        "jeera coriander"
       ],
       "connects_b": [
         "jalapeno",
         "cumin",
-        "jalapeno peppers"
+        "salsa"
+      ]
+    },
+    {
+      "name": "lime",
+      "score": 30.078153242042895,
+      "connects_a": [
+        "coconut",
+        "peanuts",
+        "mango"
+      ],
+      "connects_b": [
+        "jalapeno",
+        "cilantro leaves",
+        "corn tortillas"
       ]
     },
     {
@@ -75,67 +117,27 @@
       "score": 30.03701535588108,
       "connects_a": [
         "turmeric",
-        "oil",
-        "coconut"
+        "chili powder",
+        "oil"
       ],
       "connects_b": [
         "cilantro leaves",
-        "cumin",
-        "jalapeno peppers"
+        "tomatoes",
+        "cumin"
       ]
     },
     {
       "name": "tumeric",
       "score": 28.079260329391214,
       "connects_a": [
-        "oil",
-        "potatoes",
-        "chili powder"
-      ],
-      "connects_b": [
-        "cumin",
-        "chicken breasts",
-        "garlic"
-      ]
-    },
-    {
-      "name": "jalapeno peppers",
-      "score": 28.027390110462537,
-      "connects_a": [
         "chili powder",
-        "turmeric"
+        "peas",
+        "potatoes"
       ],
       "connects_b": [
-        "cilantro leaves",
-        "lime",
-        "cumin"
-      ]
-    },
-    {
-      "name": "mustard seeds",
-      "score": 28.021807615396423,
-      "connects_a": [
-        "turmeric",
-        "oil",
-        "split"
-      ],
-      "connects_b": [
-        "vegetable oil",
+        "onion",
         "cumin",
-        "cilantro"
-      ]
-    },
-    {
-      "name": "chiles",
-      "score": 26.12408921953553,
-      "connects_a": [
-        "coconut",
-        "turmeric"
-      ],
-      "connects_b": [
-        "cilantro leaves",
-        "lime",
-        "tomatillos"
+        "chicken breasts"
       ]
     }
   ],
@@ -146,22 +148,22 @@
       "strength": 1
     },
     {
-      "name": "cardamom",
-      "pairs_with": "cinnamon",
-      "strength": 1
-    },
-    {
       "name": "coriander powder",
       "pairs_with": "cinnamon",
       "strength": 1
     },
     {
       "name": "cardamom",
+      "pairs_with": "cinnamon",
+      "strength": 1
+    },
+    {
+      "name": "coriander powder",
       "pairs_with": "cumin",
       "strength": 1
     },
     {
-      "name": "coriander powder",
+      "name": "cardamom",
       "pairs_with": "cumin",
       "strength": 1
     },
@@ -186,29 +188,14 @@
       "strength": 1
     },
     {
-      "name": "hing",
+      "name": "asafoetida hing",
       "pairs_with": ")",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "kabuli",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
       "name": "virgin",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "onion coriander",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "jeera whole",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -218,7 +205,7 @@
       "strength": 1
     },
     {
-      "name": "rajma",
+      "name": "onion coriander",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -228,7 +215,22 @@
       "strength": 1
     },
     {
+      "name": "jeera whole",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
       "name": "kabuli",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "rajma",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "parangikai",
       "pairs_with": "powder",
       "strength": 1
     },
@@ -238,7 +240,7 @@
       "strength": 1
     },
     {
-      "name": "parangikai",
+      "name": "virgin",
       "pairs_with": "powder",
       "strength": 1
     }

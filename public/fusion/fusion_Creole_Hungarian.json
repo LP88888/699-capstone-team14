@@ -5,55 +5,55 @@
       "name": "celery",
       "score": 238.5907737586219,
       "connects_a": [
-        "hot sauce",
-        "worcestershire sauce",
-        "onion powder"
+        "thyme",
+        "onion",
+        "andouille sausage"
       ],
       "connects_b": [
+        "chicken broth",
         "tomato paste",
-        "worcestershire sauce",
-        "bay leaf"
+        "thyme"
       ]
     },
     {
       "name": "andouille sausage",
       "score": 221.2925191539719,
       "connects_a": [
-        "hot sauce",
-        "worcestershire sauce",
-        "onion powder"
+        "thyme",
+        "celery",
+        "onion"
       ],
       "connects_b": [
+        "chicken broth",
         "tomato paste",
-        "worcestershire sauce",
-        "bay leaf"
+        "thyme"
       ]
     },
     {
       "name": "tomato paste",
       "score": 209.34217752523614,
       "connects_a": [
-        "worcestershire sauce",
-        "oregano",
-        "cloves"
+        "thyme",
+        "cloves",
+        "celery"
       ],
       "connects_b": [
-        "worcestershire sauce",
-        "chuck",
-        "bay leaf"
+        "thyme",
+        "cloves",
+        "chuck"
       ]
     },
     {
       "name": "creole seasoning",
       "score": 153.08264034796497,
       "connects_a": [
-        "hot sauce",
-        "worcestershire sauce",
-        "mayonnaise"
+        "thyme",
+        "mayonnaise",
+        "celery"
       ],
       "connects_b": [
-        "worcestershire sauce",
         "chicken broth",
+        "thyme",
         "parsley"
       ]
     },
@@ -61,55 +61,55 @@
       "name": "okra",
       "score": 135.1844987983001,
       "connects_a": [
-        "hot sauce",
-        "worcestershire sauce",
-        "chicken stock"
+        "thyme",
+        "celery",
+        "onion"
       ],
       "connects_b": [
         "tomato paste",
-        "worcestershire sauce",
-        "chicken breasts"
+        "thyme",
+        "onion"
       ]
     },
     {
       "name": "can tomatoes",
       "score": 130.76516806355417,
       "connects_a": [
-        "hot sauce",
-        "worcestershire sauce",
-        "oregano"
+        "cloves",
+        "celery",
+        "onion"
       ],
       "connects_b": [
-        "tomato paste",
-        "worcestershire sauce",
-        "bay leaf"
+        "chicken broth",
+        "cloves",
+        "tomato paste"
       ]
     },
     {
       "name": "celery ribs",
       "score": 120.09181542736017,
       "connects_a": [
-        "worcestershire sauce",
+        "thyme",
         "mayonnaise",
-        "parsley"
+        "onion"
       ],
       "connects_b": [
+        "chicken broth",
         "tomato paste",
-        "worcestershire sauce",
-        "bay leaf"
+        "thyme"
       ]
     },
     {
       "name": "yellow onions",
       "score": 117.16165580582901,
       "connects_a": [
-        "worcestershire sauce",
-        "onion powder",
-        "chicken stock"
+        "kosher sea salt",
+        "thyme",
+        "celery"
       ],
       "connects_b": [
         "tomato paste",
-        "worcestershire sauce",
+        "thyme",
         "parsley"
       ]
     },
@@ -117,39 +117,39 @@
       "name": "thyme",
       "score": 112.58431421350427,
       "connects_a": [
-        "hot sauce",
-        "worcestershire sauce",
-        "onion powder"
+        "celery",
+        "andouille sausage",
+        "parsley"
       ],
       "connects_b": [
         "tomato paste",
-        "worcestershire sauce",
-        "bay leaf"
+        "beef broth",
+        "parsley"
       ]
     },
     {
       "name": "file powder",
       "score": 112.2274682285644,
       "connects_a": [
-        "onion powder",
-        "vegetable oil",
-        "andouille sausage"
+        "thyme",
+        "celery",
+        "onion"
       ],
       "connects_b": [
-        "vegetable oil",
-        "garlic",
-        "tomatoes"
+        "thyme",
+        "onion",
+        "bell pepper"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "cannellini",
+      "name": "basil chiffonade",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "spaghetti",
+      "name": "heads garlic",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -159,17 +159,17 @@
       "strength": 1
     },
     {
-      "name": "eyeball",
+      "name": "oregano leaves",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "beefsteak tomatoes",
+      "name": "canned tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "roasted tomatoes",
+      "name": "olives",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -179,24 +179,24 @@
       "strength": 1
     },
     {
-      "name": "parmigiano",
+      "name": "chorizo",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "mussels",
+      "name": "roasted tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "eggplants",
+      "name": "chorizo sausage",
       "pairs_with": "olive oil",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "[extra",
+      "name": "pasta",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -206,18 +206,13 @@
       "strength": 1
     },
     {
-      "name": "pasta",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "piquillo peppers",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "rigatoni",
-      "pairs_with": "cloves",
+      "name": "[extra",
+      "pairs_with": "olive oil",
       "strength": 1
     },
     {
@@ -231,8 +226,8 @@
       "strength": 1
     },
     {
-      "name": "filling",
-      "pairs_with": "butter",
+      "name": "rigatoni",
+      "pairs_with": "cloves",
       "strength": 1
     },
     {
@@ -241,7 +236,12 @@
       "strength": 1
     },
     {
-      "name": "beef shoulder",
+      "name": "filling",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "capsicum",
       "pairs_with": "onion",
       "strength": 1
     }

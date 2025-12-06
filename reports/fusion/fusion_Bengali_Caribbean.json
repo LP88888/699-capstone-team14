@@ -3,42 +3,42 @@
   "bridges": [
     {
       "name": "cardamom",
-      "score": 44.65848644717983,
+      "score": 40.59862404289076,
       "connects_a": [
-        "powder",
-        "seeds",
+        "chilli",
+        "leaf",
         "seeds cloves"
       ],
       "connects_b": [
-        "ginger",
-        "cinnamon",
-        "cumin"
+        "cumin",
+        "allspice",
+        "cinnamon"
       ]
     },
     {
       "name": "mango",
       "score": 36.25288588883543,
       "connects_a": [
-        "powder",
+        "chilli",
         "seeds",
-        "wheat"
+        "dhania"
       ],
       "connects_b": [
-        "lime",
+        "pineapple",
         "coconut milk",
-        "orange juice"
+        "lime"
       ]
     },
     {
       "name": "garam masala",
       "score": 32.18089307968302,
       "connects_a": [
-        "potatoes",
-        "oil",
-        "chili powder"
+        "chili powder",
+        "peas",
+        "potatoes"
       ],
       "connects_b": [
-        "coconut milk",
+        "onion",
         "ginger",
         "cumin"
       ]
@@ -47,56 +47,56 @@
       "name": "tumeric",
       "score": 24.06793742519247,
       "connects_a": [
-        "oil",
-        "potatoes",
-        "chili powder"
+        "chili powder",
+        "peas",
+        "potatoes"
       ],
       "connects_b": [
+        "onion",
         "ginger",
-        "cumin",
-        "garlic"
+        "cumin"
       ]
     },
     {
       "name": "mustard seeds",
       "score": 24.018692241768363,
       "connects_a": [
-        "potatoes",
-        "oil",
-        "chili powder"
+        "chili powder",
+        "peas",
+        "potatoes"
       ],
       "connects_b": [
-        "coconut milk",
         "ginger",
-        "cumin"
+        "cumin",
+        "vegetable oil"
       ]
     },
     {
       "name": "cumin seeds",
       "score": 20.02467690392072,
       "connects_a": [
-        "potatoes",
-        "oil",
-        "chili powder"
+        "chili powder",
+        "peas",
+        "potatoes"
       ],
       "connects_b": [
         "cilantro leaves",
-        "coconut milk",
-        "ginger"
+        "ginger",
+        "cumin"
       ]
     },
     {
       "name": "chilies",
       "score": 20.011118817925528,
       "connects_a": [
-        "oil",
-        "potatoes",
-        "chili powder"
+        "chili powder",
+        "peas",
+        "potatoes"
       ],
       "connects_b": [
-        "coconut milk",
         "ginger",
-        "cumin"
+        "cumin",
+        "cilantro"
       ]
     },
     {
@@ -108,36 +108,36 @@
       ],
       "connects_b": [
         "cilantro leaves",
-        "lime",
-        "coconut milk"
+        "coconut milk",
+        "bell pepper"
       ]
     },
     {
       "name": "coriander powder",
       "score": 18.035148427951754,
       "connects_a": [
-        "oil",
         "chili powder",
-        "leaves"
+        "leaves",
+        "oil"
       ],
       "connects_b": [
-        "ginger",
-        "cumin",
-        "garlic"
+        "onion",
+        "leaves",
+        "ginger"
       ]
     },
     {
       "name": "turmeric",
       "score": 18.034892841335743,
       "connects_a": [
-        "oil",
         "chili powder",
-        "peas"
+        "peas",
+        "oil"
       ],
       "connects_b": [
         "cilantro leaves",
-        "coconut milk",
-        "ginger"
+        "ginger",
+        "cumin"
       ]
     }
   ],
@@ -205,27 +205,17 @@
       "strength": 1
     },
     {
-      "name": "leaves salt",
-      "pairs_with": "powder",
-      "strength": 1
-    },
-    {
       "name": "black",
       "pairs_with": "powder",
       "strength": 1
     },
     {
-      "name": "beef stock",
-      "pairs_with": "flour",
+      "name": "leaves salt",
+      "pairs_with": "powder",
       "strength": 1
     },
     {
-      "name": "filling",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "cod",
+      "name": "white sugar",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -235,12 +225,22 @@
       "strength": 1
     },
     {
-      "name": "vanilla",
+      "name": "cornmeal",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "white sugar",
+      "name": "buttermilk",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "cod",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "vanilla",
       "pairs_with": "flour",
       "strength": 1
     }

@@ -3,15 +3,15 @@
   "bridges": [
     {
       "name": "cardamom",
-      "score": 81.19724808578152,
+      "score": 73.07752327720337,
       "connects_a": [
-        "powder",
-        "ginger",
-        "cumin"
+        "cumin seeds",
+        "turmeric",
+        "coriander"
       ],
       "connects_b": [
-        "powder",
-        "seeds",
+        "carom",
+        "chilli",
         "turmeric"
       ]
     },
@@ -20,27 +20,13 @@
       "score": 70.3957036118066,
       "connects_a": [
         "tomato paste",
-        "ginger",
-        "cumin"
+        "cumin seeds",
+        "onion"
       ],
       "connects_b": [
         "turmeric",
-        "oil",
-        "chili powder"
-      ]
-    },
-    {
-      "name": "mustard seeds",
-      "score": 56.043615230792845,
-      "connects_a": [
-        "ginger",
-        "cumin",
-        "turmeric"
-      ],
-      "connects_b": [
-        "turmeric",
-        "oil",
-        "split"
+        "chili powder",
+        "oil"
       ]
     },
     {
@@ -48,105 +34,114 @@
       "score": 54.06662764058595,
       "connects_a": [
         "cilantro leaves",
-        "ginger",
-        "cumin"
+        "turmeric",
+        "coriander"
       ],
       "connects_b": [
         "turmeric",
-        "oil",
-        "coconut"
+        "chili powder",
+        "oil"
       ]
     },
     {
       "name": "turmeric",
       "score": 48.093047576895316,
       "connects_a": [
-        "cilantro leaves",
         "tomato paste",
-        "ginger"
+        "cilantro leaves",
+        "cumin seeds"
       ],
       "connects_b": [
-        "oil",
         "coconut",
+        "peas",
         "chili powder"
+      ]
+    },
+    {
+      "name": "mustard seeds",
+      "score": 48.03738448353673,
+      "connects_a": [
+        "cumin seeds",
+        "turmeric",
+        "coriander"
+      ],
+      "connects_b": [
+        "turmeric",
+        "chili powder",
+        "oil"
       ]
     },
     {
       "name": "seeds",
       "score": 42.64488183476473,
       "connects_a": [
-        "powder",
-        "dhania"
+        "dhania",
+        "powder"
       ],
       "connects_b": [
-        "powder",
-        "split",
-        "wheat"
+        "gram flour",
+        "dhania",
+        "powder"
       ]
     },
     {
       "name": "chili powder",
       "score": 40.46552516142964,
       "connects_a": [
-        "cumin",
+        "cumin seeds",
         "turmeric",
         "coriander"
       ],
       "connects_b": [
         "gram",
         "turmeric",
-        "oil"
+        "jeera coriander"
       ]
     },
     {
       "name": "chilies",
       "score": 40.022237635851056,
       "connects_a": [
-        "ginger",
-        "cumin",
-        "turmeric"
+        "cumin seeds",
+        "turmeric",
+        "coriander"
       ],
       "connects_b": [
         "turmeric",
-        "oil",
-        "chili powder"
+        "chili powder",
+        "oil"
       ]
     },
     {
       "name": "chilli",
       "score": 36.34704379069697,
       "connects_a": [
-        "powder",
-        "dhania"
+        "dhania",
+        "powder"
       ],
       "connects_b": [
-        "gram",
-        "powder",
-        "seeds"
+        "carom",
+        "chillies coriander",
+        "gram"
       ]
     },
     {
       "name": "red",
       "score": 34.125214087084004,
       "connects_a": [
-        "powder",
-        "dhania"
+        "dhania",
+        "powder"
       ],
       "connects_b": [
-        "gram",
-        "powder",
-        "seeds"
+        "carom",
+        "chilli",
+        "chillies coriander"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "kabuli",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "pepper powder",
+      "name": "virgin",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -156,12 +151,12 @@
       "strength": 1
     },
     {
-      "name": "virgin",
+      "name": "leaves whole",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "leaves whole",
+      "name": "kabuli",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -176,8 +171,8 @@
       "strength": 1
     },
     {
-      "name": "kabuli",
-      "pairs_with": "powder",
+      "name": "pepper powder",
+      "pairs_with": "dhania",
       "strength": 1
     },
     {
@@ -186,7 +181,12 @@
       "strength": 1
     },
     {
-      "name": "onion coriander",
+      "name": "parangikai",
+      "pairs_with": "powder",
+      "strength": 1
+    },
+    {
+      "name": "kabuli",
       "pairs_with": "powder",
       "strength": 1
     }
@@ -198,47 +198,47 @@
       "strength": 1
     },
     {
-      "name": "finger",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "chillies coriander",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "leaves coriander",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "carom",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "semolina",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "mullangi",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "kala",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
       "name": "chili powder",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "hing",
+      "name": "wheat",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "til",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "seeds cloves",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "chillies",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "onions green",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "haldi green",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "urad dal",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "rai",
       "pairs_with": "dhania",
       "strength": 1
     }

@@ -6,13 +6,13 @@
       "score": 188.05709393439764,
       "connects_a": [
         "tomato paste",
-        "chicken breasts",
-        "bay leaf"
+        "onion",
+        "tomatoes"
       ],
       "connects_b": [
-        "yogurt",
-        "cardamom",
-        "ginger"
+        "mustard seeds",
+        "cumin seeds",
+        "onion"
       ]
     },
     {
@@ -20,26 +20,26 @@
       "score": 98.18997213616127,
       "connects_a": [
         "tomato paste",
-        "bay leaf",
-        "vegetable oil"
+        "chicken",
+        "oil"
       ],
       "connects_b": [
-        "yogurt",
-        "cardamom",
-        "ginger"
+        "mustard seeds",
+        "cumin seeds",
+        "cardamom"
       ]
     },
     {
       "name": "tomato paste",
       "score": 96.619466550109,
       "connects_a": [
-        "worcestershire sauce",
-        "chuck",
-        "bay leaf"
+        "thyme",
+        "cloves",
+        "chuck"
       ],
       "connects_b": [
-        "cumin",
-        "garam masala",
+        "cloves",
+        "onion",
         "turmeric"
       ]
     },
@@ -47,14 +47,14 @@
       "name": "tumeric",
       "score": 90.25476534447176,
       "connects_a": [
+        "onion",
         "chicken breasts",
-        "oil",
         "garlic"
       ],
       "connects_b": [
-        "cardamom",
-        "ginger",
-        "cumin"
+        "mustard seeds",
+        "cumin seeds",
+        "onion"
       ]
     },
     {
@@ -62,55 +62,55 @@
       "score": 71.20278214743375,
       "connects_a": [
         "tomato paste",
-        "bay leaf",
+        "bell pepper",
         "chicken"
       ],
       "connects_b": [
-        "yogurt",
-        "cardamom",
-        "garam masala"
+        "mustard seeds",
+        "cumin seeds",
+        "cardamom"
       ]
     },
     {
       "name": "cumin seeds",
       "score": 70.08636916372252,
       "connects_a": [
-        "oil",
         "chicken",
-        "tomatoes"
+        "oil",
+        "paprika"
       ],
       "connects_b": [
-        "yogurt",
+        "mustard seeds",
         "cardamom",
-        "ginger"
+        "tomatoes"
       ]
     },
     {
       "name": "chilies",
       "score": 70.03891586273934,
       "connects_a": [
+        "chicken",
         "bay leaf",
-        "oil",
-        "chicken"
+        "oil"
       ],
       "connects_b": [
-        "cardamom",
-        "ginger",
-        "cumin"
+        "mustard seeds",
+        "cumin seeds",
+        "cardamom"
       ]
     },
     {
       "name": "bay leaf",
       "score": 66.59397016751777,
       "connects_a": [
-        "tomato paste",
         "chicken broth",
-        "parsley"
+        "tomato paste",
+        "thyme"
       ],
       "connects_b": [
+        "onion",
         "cardamom",
-        "cumin",
-        "garam masala"
+        "turmeric"
       ]
     },
     {
@@ -118,31 +118,41 @@
       "score": 56.533906144463586,
       "connects_a": [
         "tomato paste",
-        "worcestershire sauce",
-        "bay leaf"
+        "thyme",
+        "chuck"
       ],
       "connects_b": [
-        "yogurt",
-        "cumin",
-        "garam masala"
+        "cumin seeds",
+        "turmeric",
+        "coriander"
       ]
     },
     {
       "name": "mustard seeds",
       "score": 56.043615230792845,
       "connects_a": [
-        "vegetable oil",
-        "potatoes",
-        "oil"
+        "oil",
+        "tomatoes",
+        "potatoes"
       ],
       "connects_b": [
-        "yogurt",
-        "ginger",
-        "cumin"
+        "cumin seeds",
+        "tomatoes",
+        "turmeric"
       ]
     }
   ],
   "novel_from_a": [
+    {
+      "name": "piquillo peppers",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "sirloin",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
     {
       "name": "veal",
       "pairs_with": "cloves",
@@ -159,17 +169,7 @@
       "strength": 1
     },
     {
-      "name": "piquillo peppers",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "sirloin",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "filling",
+      "name": "glace",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -179,37 +179,22 @@
       "strength": 1
     },
     {
-      "name": "glace",
+      "name": "filling",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "beef shoulder",
+      "name": "chicken base",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "ham hocks",
+      "name": "chicken livers",
       "pairs_with": "onion",
       "strength": 1
     }
   ],
   "novel_from_b": [
-    {
-      "name": "chipotle puree",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "petite",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "fennel bulb",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
     {
       "name": "crusty bread",
       "pairs_with": "olive oil",
@@ -217,6 +202,11 @@
     },
     {
       "name": "finely oregano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "couscous",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -231,7 +221,17 @@
       "strength": 1
     },
     {
-      "name": "cherry tomatoes",
+      "name": "lamb shanks",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "spaghetti",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "petite",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -241,7 +241,7 @@
       "strength": 1
     },
     {
-      "name": "olives",
+      "name": "handful pine nuts",
       "pairs_with": "olive oil",
       "strength": 1
     }

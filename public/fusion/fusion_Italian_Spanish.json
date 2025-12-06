@@ -5,13 +5,13 @@
       "name": "can tomatoes",
       "score": 112.65922171629282,
       "connects_a": [
-        "oregano",
-        "basil",
-        "cloves"
+        "cloves",
+        "optional",
+        "pepper flakes"
       ],
       "connects_b": [
-        "cumin",
         "cloves",
+        "onion",
         "parsley"
       ]
     },
@@ -19,13 +19,13 @@
       "name": "tomato paste",
       "score": 90.58074989072718,
       "connects_a": [
-        "oregano",
-        "basil",
-        "cloves"
+        "cloves",
+        "onion",
+        "parsley"
       ],
       "connects_b": [
-        "cumin",
         "cloves",
+        "onion",
         "parsley"
       ]
     },
@@ -34,12 +34,12 @@
       "score": 80.58303126353377,
       "connects_a": [
         "cloves",
-        "parsley",
-        "wine"
+        "optional",
+        "pepper flakes"
       ],
       "connects_b": [
-        "chicken stock",
         "cloves",
+        "onion",
         "parsley"
       ]
     },
@@ -49,117 +49,112 @@
       "connects_a": [
         "cloves",
         "parsley",
-        "olive oil"
+        "wine"
       ],
       "connects_b": [
-        "chicken stock",
         "cloves",
-        "parsley"
+        "parsley",
+        "paprika"
       ]
     },
     {
       "name": "yellow onions",
       "score": 72.09948049589478,
       "connects_a": [
-        "oregano",
         "parsley",
-        "garlic"
+        "pepper flakes",
+        "oregano"
       ],
       "connects_b": [
-        "chicken stock",
         "parsley",
-        "garlic"
+        "paprika",
+        "2"
       ]
     },
     {
       "name": "celery",
       "score": 70.17375698782998,
       "connects_a": [
-        "oregano",
+        "onion",
         "parsley",
-        "garlic"
+        "oregano"
       ],
       "connects_b": [
-        "chicken stock",
+        "onion",
         "parsley",
-        "garlic"
+        "paprika"
       ]
     },
     {
       "name": "veal",
       "score": 66.17988165407462,
       "connects_a": [
-        "oregano",
         "cloves",
-        "parsley"
+        "parsley",
+        "oregano"
       ],
       "connects_b": [
         "cloves",
         "parsley",
-        "wine"
+        "egg"
       ]
     },
     {
       "name": "pancetta",
       "score": 66.085153128008,
       "connects_a": [
-        "parsley",
-        "olive oil",
-        "wine"
+        "more",
+        "pepper flakes",
+        "parsley"
       ],
       "connects_b": [
-        "chicken stock",
+        "more",
         "parsley",
-        "olive oil"
+        "wine"
       ]
     },
     {
       "name": "capers",
       "score": 64.12477944832308,
       "connects_a": [
-        "oregano",
+        "pepper flakes",
         "parsley",
-        "olive oil"
+        "oregano"
       ],
       "connects_b": [
-        "wine vinegar",
         "parsley",
-        "olive oil"
+        "lemon",
+        "lemon juice"
       ]
     },
     {
-      "name": "eyeball",
-      "score": 63.67909639177942,
+      "name": "mussels",
+      "score": 60.361348180289006,
       "connects_a": [
-        "parsley",
-        "olive oil",
-        "wine"
+        "cloves",
+        "pepper flakes",
+        "parsley"
       ],
       "connects_b": [
-        "chicken stock",
-        "wine vinegar",
-        "parsley"
+        "cloves",
+        "parsley",
+        "wine"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "chipotle puree",
+      "name": "pasta",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "giardiniera",
+      "name": "[extra",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "radicchio",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "petite",
+      "name": "ricotta salata",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -169,27 +164,32 @@
       "strength": 1
     },
     {
-      "name": "porcini mushrooms",
+      "name": "of handfuls",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "2 cups extra",
+      "name": "sandwich rolls",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "basil chiffonade",
+      "name": "head fennel",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "cremini",
+      "name": "reggiano cheese",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "roma",
+      "name": "chunk",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "lamb shanks",
       "pairs_with": "olive oil",
       "strength": 1
     }
@@ -211,22 +211,17 @@
       "strength": 1
     },
     {
-      "name": "pecan halves",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
       "name": "calvados",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "masa harina",
-      "pairs_with": "onion",
+      "name": "pecan halves",
+      "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "bouquet garni",
+      "name": "masa harina",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -237,6 +232,11 @@
     },
     {
       "name": "tomatillos",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "bouquet garni",
       "pairs_with": "onion",
       "strength": 1
     },

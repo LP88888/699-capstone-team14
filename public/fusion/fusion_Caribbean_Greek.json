@@ -5,14 +5,14 @@
       "name": "garam masala",
       "score": 72.40700942928679,
       "connects_a": [
-        "coconut milk",
+        "onion",
         "ginger",
         "cumin"
       ],
       "connects_b": [
-        "yogurt",
-        "greek yogurt",
-        "chicken breasts"
+        "spinach",
+        "onion",
+        "greek yogurt"
       ]
     },
     {
@@ -20,13 +20,13 @@
       "score": 54.92786051373461,
       "connects_a": [
         "cilantro leaves",
-        "lime",
-        "coconut milk"
+        "coconut milk",
+        "bell pepper"
       ],
       "connects_b": [
-        "yogurt",
+        "oregano",
         "greek yogurt",
-        "oregano"
+        "bell pepper"
       ]
     },
     {
@@ -35,39 +35,39 @@
       "connects_a": [
         "plantains",
         "bell pepper",
-        "cumin"
+        "thyme"
       ],
       "connects_b": [
-        "greek yogurt",
-        "wine vinegar",
-        "feta cheese"
+        "cheese crumbles",
+        "kalamata olives",
+        "kalamata"
       ]
     },
     {
       "name": "chile",
       "score": 45.194024290751585,
       "connects_a": [
+        "cloves",
         "cilantro leaves",
-        "lime",
         "cumin"
       ],
       "connects_b": [
-        "yogurt",
         "cloves",
-        "grain sea salt"
+        "grain sea salt",
+        "mint"
       ]
     },
     {
       "name": "tomato paste",
       "score": 42.271016615672686,
       "connects_a": [
-        "cumin",
+        "thyme",
         "cloves",
-        "parsley"
+        "onion"
       ],
       "connects_b": [
-        "oregano",
         "cloves",
+        "onion",
         "parsley"
       ]
     },
@@ -75,42 +75,42 @@
       "name": "confectioners",
       "score": 42.21906731492633,
       "connects_a": [
-        "butter",
         "cream",
-        "cinnamon"
+        "1",
+        "egg"
       ],
       "connects_b": [
-        "butter",
-        "cinnamon",
-        "1"
+        "1",
+        "more",
+        "egg"
       ]
     },
     {
       "name": "palm",
       "score": 42.16161282956031,
       "connects_a": [
-        "cumin",
-        "scallions",
-        "cloves"
+        "cloves",
+        "onion",
+        "parsley"
       ],
       "connects_b": [
         "cloves",
-        "parsley",
-        "olive oil"
+        "onion",
+        "parsley"
       ]
     },
     {
       "name": "celery",
       "score": 42.10425419269799,
       "connects_a": [
-        "parsley",
-        "garlic",
-        "thyme"
+        "thyme",
+        "onion",
+        "parsley"
       ],
       "connects_b": [
-        "oregano",
+        "onion",
         "parsley",
-        "garlic"
+        "oregano"
       ]
     },
     {
@@ -118,33 +118,33 @@
       "score": 40.14041889438712,
       "connects_a": [
         "cilantro leaves",
-        "lime",
+        "onion",
         "cumin"
       ],
       "connects_b": [
-        "chicken breasts",
-        "oregano",
-        "tomatoes"
+        "more",
+        "onion",
+        "oregano"
       ]
     },
     {
       "name": "vanilla extract",
       "score": 36.577615305880656,
       "connects_a": [
-        "butter",
         "cream",
-        "cinnamon"
+        "1",
+        "egg"
       ],
       "connects_b": [
-        "butter",
-        "cinnamon",
-        "1"
+        "1",
+        "egg",
+        "milk"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "bunch kale",
+      "name": "basil chiffonade",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -154,7 +154,7 @@
       "strength": 1
     },
     {
-      "name": "cans chickpeas",
+      "name": "chorizo",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -164,17 +164,7 @@
       "strength": 1
     },
     {
-      "name": "radicchio",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "by hand",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "mussels",
+      "name": "bunch kale",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -184,49 +174,39 @@
       "strength": 1
     },
     {
-      "name": "basil chiffonade",
+      "name": "cans chickpeas",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "chorizo",
+      "name": "by hand",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "radicchio",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "mussels",
       "pairs_with": "olive oil",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "orzo pasta",
+      "name": "pizza",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "baby arugula",
+      "name": "crusty bread",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "montreal steak",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "head fennel",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "spaghetti",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "parma",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "eyeball",
+      "name": "heads garlic",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -236,12 +216,32 @@
       "strength": 1
     },
     {
-      "name": "beefsteak tomatoes",
+      "name": "head fennel",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
       "name": "handful pine nuts",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "anchovy paste",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "reggiano cheese",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "kalamata olives",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pepperoncini peppers",
       "pairs_with": "olive oil",
       "strength": 1
     }

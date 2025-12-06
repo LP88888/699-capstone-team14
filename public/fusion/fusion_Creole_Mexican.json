@@ -5,151 +5,156 @@
       "name": "andouille sausage",
       "score": 136.18001178705964,
       "connects_a": [
-        "hot sauce",
-        "worcestershire sauce",
-        "onion powder"
+        "thyme",
+        "celery",
+        "onion"
       ],
       "connects_b": [
-        "chicken breasts",
+        "onion",
         "oregano",
-        "chicken stock"
+        "bell pepper"
       ]
     },
     {
       "name": "celery",
       "score": 119.29538687931095,
       "connects_a": [
-        "hot sauce",
-        "worcestershire sauce",
-        "onion powder"
+        "thyme",
+        "onion",
+        "andouille sausage"
       ],
       "connects_b": [
-        "chicken stock",
+        "onion",
         "oregano",
-        "garlic"
+        "bell pepper"
       ]
     },
     {
       "name": "okra",
       "score": 105.14349906534451,
       "connects_a": [
-        "hot sauce",
-        "worcestershire sauce",
-        "chicken stock"
+        "thyme",
+        "celery",
+        "onion"
       ],
       "connects_b": [
-        "chicken breasts",
-        "chicken stock",
-        "vegetable oil"
+        "onion",
+        "bell pepper",
+        "rice"
       ]
     },
     {
       "name": "creole seasoning",
       "score": 102.05509356530997,
       "connects_a": [
-        "hot sauce",
-        "worcestershire sauce",
-        "mayonnaise"
+        "thyme",
+        "mayonnaise",
+        "celery"
       ],
       "connects_b": [
-        "chicken stock",
         "oregano",
-        "garlic"
+        "bell pepper",
+        "rice"
       ]
     },
     {
       "name": "tomato paste",
       "score": 91.58720266729081,
       "connects_a": [
-        "worcestershire sauce",
-        "oregano",
-        "cloves"
+        "thyme",
+        "cloves",
+        "celery"
       ],
       "connects_b": [
-        "cumin",
-        "oregano",
-        "cloves"
+        "cloves",
+        "onion",
+        "oregano"
       ]
     },
     {
       "name": "cumin",
       "score": 91.54643418955769,
       "connects_a": [
-        "onion powder",
         "oregano",
+        "bell pepper",
         "cayenne pepper"
       ],
       "connects_b": [
+        "jalapeno",
         "cilantro leaves",
-        "lime",
-        "tomatillos"
+        "oregano"
       ]
     },
     {
       "name": "corn tortillas",
       "score": 85.29839015057263,
       "connects_a": [
-        "chicken stock",
+        "onion",
         "oregano",
         "vegetable oil"
       ],
       "connects_b": [
-        "cilantro leaves",
-        "lime",
-        "tomatillos"
+        "jalapeno",
+        "more",
+        "cilantro leaves"
       ]
     },
     {
       "name": "file powder",
       "score": 84.1706011714233,
       "connects_a": [
-        "onion powder",
-        "vegetable oil",
-        "andouille sausage"
+        "thyme",
+        "celery",
+        "onion"
       ],
       "connects_b": [
-        "vegetable oil",
-        "garlic",
-        "tomatoes"
+        "onion",
+        "tomatoes",
+        "bell pepper"
       ]
     },
     {
       "name": "salsa",
       "score": 80.23440801007621,
       "connects_a": [
-        "hot sauce",
+        "cream",
         "oregano",
-        "cream"
+        "hot sauce"
       ],
       "connects_b": [
-        "cilantro leaves",
-        "lime",
-        "jalapeno"
+        "jalapeno",
+        "cream",
+        "cilantro leaves"
       ]
     },
     {
       "name": "tortilla chips",
       "score": 70.16933054654835,
       "connects_a": [
-        "chicken stock",
-        "vegetable oil",
-        "cream"
+        "cream",
+        "bell pepper",
+        "vegetable oil"
       ],
       "connects_b": [
-        "cilantro leaves",
-        "lime",
-        "jalapeno"
+        "jalapeno",
+        "cream",
+        "cilantro leaves"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "cannellini",
+      "name": "basil chiffonade",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "fettuccine",
+      "name": "oregano leaves",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cannellini",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -164,44 +169,39 @@
       "strength": 1
     },
     {
-      "name": "oregano leaves",
+      "name": "fettuccine",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
       "name": "basil chiffonade",
-      "pairs_with": "olive oil",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "oregano leaves",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "saffron threads",
+      "pairs_with": "cloves",
       "strength": 1
     },
     {
       "name": "inch piece",
       "pairs_with": "cloves",
       "strength": 1
-    },
-    {
-      "name": "cannellini",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "veal",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "spaghetti",
-      "pairs_with": "cloves",
-      "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "chipotle puree",
+      "name": "finely oregano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "petite",
+      "name": "some",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -211,22 +211,12 @@
       "strength": 1
     },
     {
-      "name": "fennel bulb",
+      "name": "couscous",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "squid",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "porcini mushrooms",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "finely oregano",
+      "name": "pass",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -236,12 +226,22 @@
       "strength": 1
     },
     {
-      "name": "romano",
+      "name": "for seasoning",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pass",
+      "name": "petite",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pizza",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "handful pine nuts",
       "pairs_with": "olive oil",
       "strength": 1
     }

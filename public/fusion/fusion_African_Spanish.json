@@ -5,14 +5,14 @@
       "name": "palm",
       "score": 99.38094452682073,
       "connects_a": [
-        "cumin",
-        "chicken stock",
-        "scallions"
+        "cloves",
+        "onion",
+        "parsley"
       ],
       "connects_b": [
-        "cumin",
-        "chicken stock",
-        "cloves"
+        "cloves",
+        "onion",
+        "parsley"
       ]
     },
     {
@@ -20,13 +20,13 @@
       "score": 98.55398505652924,
       "connects_a": [
         "tomato paste",
-        "ginger",
-        "cumin"
+        "cumin seeds",
+        "onion"
       ],
       "connects_b": [
-        "cumin",
-        "garlic",
-        "tomatoes"
+        "onion",
+        "paprika",
+        "cumin"
       ]
     },
     {
@@ -34,54 +34,54 @@
       "score": 90.80995931934241,
       "connects_a": [
         "tomato paste",
-        "cumin",
-        "chicken stock"
+        "onion",
+        "parsley"
       ],
       "connects_b": [
-        "chicken stock",
-        "cumin",
-        "parsley"
+        "onion",
+        "parsley",
+        "paprika"
       ]
     },
     {
       "name": "chiles",
       "score": 84.40090363234556,
       "connects_a": [
-        "cilantro leaves",
-        "ginger",
-        "cumin"
+        "cloves",
+        "cumin seeds",
+        "cilantro leaves"
       ],
       "connects_b": [
-        "cumin",
-        "chicken stock",
-        "cloves"
+        "cloves",
+        "taste",
+        "2"
       ]
     },
     {
       "name": "chorizo",
       "score": 84.15502845682282,
       "connects_a": [
-        "chicken stock",
         "cloves",
-        "parsley"
+        "parsley",
+        "paprika"
       ],
       "connects_b": [
-        "chicken stock",
         "cloves",
-        "parsley"
+        "parsley",
+        "paprika"
       ]
     },
     {
       "name": "tomato paste",
       "score": 81.52267490165445,
       "connects_a": [
-        "cumin",
-        "turmeric",
-        "cloves"
+        "cloves",
+        "onion",
+        "parsley"
       ],
       "connects_b": [
-        "cumin",
         "cloves",
+        "onion",
         "parsley"
       ]
     },
@@ -90,13 +90,13 @@
       "score": 80.19857941466283,
       "connects_a": [
         "tomato paste",
-        "chicken stock",
+        "onion",
         "parsley"
       ],
       "connects_b": [
-        "chicken stock",
+        "onion",
         "parsley",
-        "garlic"
+        "paprika"
       ]
     },
     {
@@ -104,12 +104,12 @@
       "score": 72.52472813718039,
       "connects_a": [
         "tomato paste",
-        "chicken stock",
-        "scallions"
+        "cloves",
+        "onion"
       ],
       "connects_b": [
-        "chicken stock",
         "cloves",
+        "onion",
         "parsley"
       ]
     },
@@ -118,13 +118,13 @@
       "score": 72.09948049589478,
       "connects_a": [
         "tomato paste",
-        "chicken stock",
-        "parsley"
+        "parsley",
+        "paprika"
       ],
       "connects_b": [
-        "chicken stock",
         "parsley",
-        "garlic"
+        "paprika",
+        "2"
       ]
     },
     {
@@ -132,12 +132,12 @@
       "score": 64.3766981235959,
       "connects_a": [
         "tomato paste",
-        "cumin",
-        "cloves"
+        "cloves",
+        "onion"
       ],
       "connects_b": [
-        "cumin",
         "cloves",
+        "onion",
         "parsley"
       ]
     }
@@ -149,23 +149,18 @@
       "strength": 1
     },
     {
-      "name": "pine",
+      "name": "scotch bonnet peppers",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "scotch bonnet peppers",
+      "name": "pine",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
       "name": "phyllo dough",
       "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "stewing",
-      "pairs_with": "onion",
       "strength": 1
     },
     {
@@ -179,7 +174,12 @@
       "strength": 1
     },
     {
-      "name": "lentils",
+      "name": "stewing",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "scotch bonnet peppers",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -189,22 +189,12 @@
       "strength": 1
     },
     {
-      "name": "scotch bonnet peppers",
+      "name": "lentils",
       "pairs_with": "onion",
       "strength": 1
     }
   ],
   "novel_from_b": [
-    {
-      "name": "bunch kale",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "sherry vinegar",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
     {
       "name": "crusty bread",
       "pairs_with": "olive oil",
@@ -216,32 +206,42 @@
       "strength": 1
     },
     {
-      "name": "chianti",
+      "name": "bunch kale",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "risotto",
+      "name": "romano cheese",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "grape tomatoes",
+      "name": "some",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "heads garlic",
+      "name": "pancetta",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "oregano leaves",
+      "name": "parmigiano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "romano",
+      "name": "sherry vinegar",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "crusty rolls",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cannellini",
       "pairs_with": "olive oil",
       "strength": 1
     }
