@@ -5,111 +5,111 @@
       "name": "confectioners",
       "score": 165.86062159435343,
       "connects_a": [
-        "cream",
-        "more",
-        "1"
+        "purpose flour",
+        "butter",
+        "nutmeg"
       ],
       "connects_b": [
-        "cream",
-        "more",
-        "1"
+        "purpose flour",
+        "chocolate",
+        "butter"
       ]
     },
     {
       "name": "at",
       "score": 130.51780680793453,
       "connects_a": [
-        "cream",
-        "more",
-        "1"
+        "purpose flour",
+        "butter",
+        "egg yolks"
       ],
       "connects_b": [
-        "cream",
-        "more",
-        "1"
+        "purpose flour",
+        "chocolate",
+        "butter"
       ]
     },
     {
       "name": "whole milk",
       "score": 120.35142207775438,
       "connects_a": [
-        "more",
-        "egg yolks",
-        "egg"
+        "purpose flour",
+        "butter",
+        "nutmeg"
       ],
       "connects_b": [
-        "more",
-        "maple syrup",
-        "egg yolks"
+        "purpose flour",
+        "chocolate",
+        "butter"
       ]
     },
     {
       "name": "ice water",
       "score": 100.50976204580036,
       "connects_a": [
-        "1",
-        "more",
-        "flour"
+        "purpose flour",
+        "butter",
+        "nutmeg"
       ],
       "connects_b": [
-        "1",
-        "more",
-        "flour"
+        "purpose flour",
+        "butter",
+        "nutmeg"
       ]
     },
     {
       "name": "sticks",
       "score": 99.35013592753592,
       "connects_a": [
-        "1",
-        "more",
-        "egg yolks"
+        "purpose flour",
+        "butter",
+        "nutmeg"
       ],
       "connects_b": [
-        "1",
-        "more",
-        "egg yolks"
+        "purpose flour",
+        "chocolate",
+        "butter"
       ]
     },
     {
       "name": "vanilla extract",
       "score": 97.54030748234841,
       "connects_a": [
-        "cream",
-        "1",
-        "egg yolks"
+        "purpose flour",
+        "butter",
+        "nutmeg"
       ],
       "connects_b": [
-        "cream",
-        "1",
-        "maple syrup"
+        "purpose flour",
+        "chocolate",
+        "butter"
       ]
     },
     {
       "name": "cake flour",
       "score": 80.09869046780798,
       "connects_a": [
-        "cream",
-        "1",
-        "egg yolks"
+        "butter",
+        "egg yolks",
+        "2"
       ],
       "connects_b": [
-        "cream",
-        "1",
-        "egg yolks"
+        "chocolate",
+        "butter",
+        "egg whites"
       ]
     },
     {
       "name": "filling",
       "score": 72.1105907441167,
       "connects_a": [
-        "cream",
-        "flour",
+        "purpose flour",
+        "butter",
         "egg yolks"
       ],
       "connects_b": [
-        "cream",
-        "flour",
+        "purpose flour",
+        "butter",
         "egg yolks"
       ]
     },
@@ -118,27 +118,27 @@
       "score": 70.19078357250338,
       "connects_a": [
         "tomato paste",
-        "cloves",
-        "parsley"
+        "carrot",
+        "wine"
       ],
       "connects_b": [
-        "cloves",
-        "parsley",
-        "egg"
+        "carrot",
+        "wine",
+        "2"
       ]
     },
     {
       "name": "corn syrup",
       "score": 70.11569053420071,
       "connects_a": [
-        "cream",
-        "1",
+        "butter",
+        "nutmeg",
         "egg yolks"
       ],
       "connects_b": [
-        "cream",
-        "1",
-        "egg yolks"
+        "chocolate",
+        "butter",
+        "egg whites"
       ]
     }
   ],
@@ -154,12 +154,12 @@
       "strength": 1
     },
     {
-      "name": "for drizzling",
+      "name": "sodium",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "sodium",
+      "name": "for drizzling",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -184,64 +184,64 @@
       "strength": 1
     },
     {
-      "name": "rutabaga",
+      "name": "sodium",
       "pairs_with": "carrot",
       "strength": 1
     },
     {
-      "name": "sodium",
+      "name": "rutabaga",
       "pairs_with": "carrot",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "artichokes",
+      "name": "chorizo",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pasta",
+      "name": "handful pine nuts",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "romano cheese",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "some",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pancetta",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "parmigiano",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "sherry vinegar",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "crusty rolls",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cannellini",
+      "name": "marzano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
       "name": "[extra",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "morel mushrooms",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "romano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "heads garlic",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "linguine",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "palm",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "petite",
       "pairs_with": "olive oil",
       "strength": 1
     }

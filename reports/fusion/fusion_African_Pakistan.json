@@ -5,161 +5,146 @@
       "name": "garam masala",
       "score": 380.13679950375564,
       "connects_a": [
+        "chicken",
         "tomato paste",
-        "cumin seeds",
-        "onion"
+        "coriander"
       ],
       "connects_b": [
-        "cardamom",
+        "coriander",
         "basmati rice",
-        "yogurt"
+        "tomatoes"
       ]
     },
     {
       "name": "turmeric",
       "score": 240.46523788447658,
       "connects_a": [
+        "chicken",
         "tomato paste",
-        "cilantro leaves",
-        "cumin seeds"
+        "coriander"
       ],
       "connects_b": [
-        "cardamom",
-        "basmati rice",
-        "yogurt"
+        "coriander",
+        "garam masala",
+        "basmati rice"
       ]
     },
     {
       "name": "coriander",
       "score": 200.5169066442297,
       "connects_a": [
-        "cilantro leaves",
-        "cumin seeds",
-        "turmeric"
+        "chicken",
+        "tomatoes",
+        "cumin"
       ],
       "connects_b": [
-        "cardamom",
+        "garam masala",
         "basmati rice",
-        "yogurt"
+        "tomatoes"
       ]
     },
     {
       "name": "cumin seeds",
       "score": 189.2331967420508,
       "connects_a": [
-        "cilantro leaves",
-        "turmeric",
-        "coriander"
+        "chicken",
+        "coriander",
+        "coriander seeds"
       ],
       "connects_b": [
-        "cardamom",
-        "basmati rice",
-        "yogurt"
+        "coriander",
+        "garam masala",
+        "basmati rice"
       ]
     },
     {
       "name": "chiles",
       "score": 182.8686245367487,
       "connects_a": [
-        "cloves",
-        "cumin seeds",
-        "cilantro leaves"
+        "coriander",
+        "coarsely",
+        "coriander seeds"
       ],
       "connects_b": [
-        "mustard seeds",
-        "cloves",
-        "cumin seeds"
+        "coconut milk",
+        "cinnamon sticks",
+        "coriander"
       ]
     },
     {
       "name": "cumin",
       "score": 172.9210423580534,
       "connects_a": [
+        "chicken",
         "tomato paste",
-        "cilantro leaves",
-        "cumin seeds"
+        "coriander"
       ],
       "connects_b": [
+        "coconut milk",
         "mustard seeds",
-        "cumin seeds",
-        "tumeric"
+        "coriander"
       ]
     },
     {
       "name": "mustard seeds",
       "score": 152.11838419786628,
       "connects_a": [
-        "cumin seeds",
-        "turmeric",
-        "coriander"
+        "coriander",
+        "coriander seeds",
+        "tomatoes"
       ],
       "connects_b": [
-        "yogurt",
-        "chilies",
-        "cilantro"
+        "coriander",
+        "garam masala",
+        "tomatoes"
       ]
     },
     {
       "name": "chilies",
       "score": 152.084503016234,
       "connects_a": [
-        "cumin seeds",
-        "turmeric",
-        "coriander"
+        "chicken",
+        "coriander",
+        "tomatoes"
       ],
       "connects_b": [
-        "cardamom",
-        "cilantro",
-        "potatoes"
+        "coriander",
+        "garam masala",
+        "tomatoes"
       ]
     },
     {
       "name": "cardamom pods",
       "score": 140.28775023100235,
       "connects_a": [
-        "cloves",
-        "cumin seeds",
-        "turmeric"
+        "coriander",
+        "coriander seeds",
+        "tomatoes"
       ],
       "connects_b": [
-        "cloves",
-        "cumin seeds",
-        "turmeric"
+        "cinnamon sticks",
+        "coriander",
+        "garam masala"
       ]
     },
     {
       "name": "cardamom",
       "score": 129.91559693725043,
       "connects_a": [
-        "cumin seeds",
-        "turmeric",
-        "coriander"
+        "coriander",
+        "powder",
+        "cumin"
       ],
       "connects_b": [
-        "cumin seeds",
-        "tumeric",
-        "turmeric"
+        "cinnamon sticks",
+        "coriander",
+        "garam masala"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "palm",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "handful pine nuts",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "brussels sprouts",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "kalamata olives",
+      "name": "chorizo",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -169,17 +154,7 @@
       "strength": 1
     },
     {
-      "name": "montreal steak",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "canned tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "olives",
+      "name": "eggplants",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -189,12 +164,42 @@
       "strength": 1
     },
     {
-      "name": "chorizo",
+      "name": "handful pine nuts",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "mussels",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "canned tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "beefsteak tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "brussels sprouts",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "olives",
       "pairs_with": "olive oil",
       "strength": 1
     }
   ],
   "novel_from_b": [
+    {
+      "name": "petite",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
     {
       "name": "lamb shanks",
       "pairs_with": "olive oil",
@@ -202,11 +207,16 @@
     },
     {
       "name": "petite",
-      "pairs_with": "olive oil",
+      "pairs_with": "cloves",
       "strength": 1
     },
     {
       "name": "chile",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "lamb shanks",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -217,16 +227,6 @@
     },
     {
       "name": "pork shoulder",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "lamb shanks",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "petite",
       "pairs_with": "cloves",
       "strength": 1
     },

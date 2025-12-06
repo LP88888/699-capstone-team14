@@ -5,13 +5,13 @@
       "name": "andouille sausage",
       "score": 168.2223675016619,
       "connects_a": [
-        "chicken broth",
-        "cajun seasoning",
-        "oregano"
+        "onion powder",
+        "creole seasoning",
+        "tomatoes"
       ],
       "connects_b": [
-        "chicken broth",
         "onion",
+        "garlic",
         "bell pepper"
       ]
     },
@@ -19,137 +19,137 @@
       "name": "celery",
       "score": 161.39964107200893,
       "connects_a": [
-        "chicken broth",
-        "cajun seasoning",
-        "oregano"
+        "onion powder",
+        "creole seasoning",
+        "tomatoes"
       ],
       "connects_b": [
-        "chicken broth",
+        "carrot",
         "onion",
-        "bell pepper"
+        "garlic"
       ]
     },
     {
       "name": "oyster sauce",
       "score": 132.0848653612167,
       "connects_a": [
-        "chicken broth",
         "chili sauce",
-        "chicken breasts"
+        "garlic",
+        "vegetable oil"
       ],
       "connects_b": [
-        "chicken broth",
-        "rice wine",
-        "soy sauce"
+        "spice powder",
+        "oil",
+        "ginger"
       ]
     },
     {
       "name": "chili sauce",
       "score": 120.21171734570844,
       "connects_a": [
-        "celery",
-        "andouille sausage",
-        "cajun seasoning"
+        "okra",
+        "onion powder",
+        "worcestershire sauce"
       ],
       "connects_b": [
-        "hoisin sauce",
-        "corn starch",
-        "rice vinegar"
+        "peanut oil",
+        "sesame oil",
+        "scallions"
       ]
     },
     {
       "name": "rice",
       "score": 110.31594394453099,
       "connects_a": [
-        "chicken broth",
-        "celery",
-        "andouille sausage"
+        "okra",
+        "creole seasoning",
+        "celery"
       ],
       "connects_b": [
-        "chicken broth",
-        "hoisin sauce",
-        "corn starch"
+        "peanut oil",
+        "sesame oil",
+        "scallions"
       ]
     },
     {
       "name": "okra",
       "score": 102.13939909204896,
       "connects_a": [
-        "thyme",
-        "celery",
-        "onion"
+        "purpose flour",
+        "worcestershire sauce",
+        "tomatoes"
       ],
       "connects_b": [
         "onion",
-        "bell pepper",
-        "chicken breasts"
+        "vegetable oil",
+        "bell pepper"
       ]
     },
     {
       "name": "shiitake",
       "score": 102.07561619275421,
       "connects_a": [
-        "chicken broth",
-        "thyme",
-        "celery"
+        "celery",
+        "shrimp",
+        "chicken broth"
       ],
       "connects_b": [
-        "chicken broth",
-        "shrimp",
-        "hoisin sauce"
+        "peanut oil",
+        "sesame oil",
+        "carrot"
       ]
     },
     {
       "name": "noodles",
       "score": 102.06479571980205,
       "connects_a": [
-        "chicken broth",
         "chili sauce",
-        "chicken breasts"
+        "vegetable oil",
+        "shrimp"
       ],
       "connects_b": [
-        "chicken broth",
-        "shrimp",
-        "hoisin sauce"
+        "peanut oil",
+        "sesame oil",
+        "carrot"
       ]
     },
     {
       "name": "corn starch",
       "score": 100.19849922946544,
       "connects_a": [
-        "chicken broth",
         "chili sauce",
+        "garlic",
         "rice"
       ],
       "connects_b": [
-        "chicken broth",
-        "rice wine",
-        "soy sauce"
+        "oil",
+        "ginger",
+        "peanut oil"
       ]
     },
     {
       "name": "creole seasoning",
       "score": 95.05131263435733,
       "connects_a": [
-        "chicken broth",
-        "oregano",
-        "hot sauce"
+        "onion powder",
+        "tomatoes",
+        "oregano"
       ],
       "connects_b": [
-        "chicken broth",
-        "bell pepper",
-        "rice"
+        "garlic",
+        "rice",
+        "bell pepper"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "oregano leaves",
+      "name": "chorizo",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "chorizo",
+      "name": "oregano leaves",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -159,12 +159,27 @@
       "strength": 1
     },
     {
-      "name": "file powder",
+      "name": "shrimp stock",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "chicken base",
+      "name": "navy beans",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "andouille",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "okra",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "sandwich rolls",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -177,21 +192,6 @@
       "name": "bacon fat",
       "pairs_with": "onion",
       "strength": 1
-    },
-    {
-      "name": "navy beans",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "pinto beans",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "oxtails",
-      "pairs_with": "onion",
-      "strength": 1
     }
   ],
   "novel_from_b": [
@@ -201,17 +201,7 @@
       "strength": 1
     },
     {
-      "name": "baby arugula",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "radicchio",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "mussels",
+      "name": "palm",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -221,27 +211,37 @@
       "strength": 1
     },
     {
-      "name": "fennel bulb",
+      "name": "mussels",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "spun",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "palm",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cremini",
+      "name": "baby arugula",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
       "name": "squid",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "anchovies",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "fennel bulb",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "radicchio",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cremini",
       "pairs_with": "olive oil",
       "strength": 1
     }

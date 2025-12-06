@@ -5,55 +5,55 @@
       "name": "garam masala",
       "score": 77.43527397298726,
       "connects_a": [
-        "onion",
-        "ginger",
-        "cumin"
+        "tomatoes",
+        "cumin",
+        "onion"
       ],
       "connects_b": [
-        "onion",
         "bay leaf",
-        "lemon juice"
+        "onion",
+        "vegetable oil"
       ]
     },
     {
       "name": "tomato paste",
       "score": 70.45169435945446,
       "connects_a": [
-        "cloves",
-        "onion",
-        "oregano"
+        "worcestershire sauce",
+        "tomatoes",
+        "cumin"
       ],
       "connects_b": [
-        "cloves",
-        "onion",
-        "parsley"
+        "carrot",
+        "wine",
+        "onion"
       ]
     },
     {
       "name": "celery",
       "score": 60.14893456099712,
       "connects_a": [
-        "onion",
-        "oregano",
-        "bell pepper"
+        "onion powder",
+        "worcestershire sauce",
+        "tomatoes"
       ],
       "connects_b": [
-        "onion",
-        "parsley",
-        "bacon"
+        "carrot",
+        "bay leaf",
+        "onion"
       ]
     },
     {
       "name": "file powder",
       "score": 45.091393484691054,
       "connects_a": [
-        "onion",
+        "onion powder",
         "tomatoes",
-        "bell pepper"
+        "onion"
       ],
       "connects_b": [
+        "purpose flour",
         "onion",
-        "garlic",
         "vegetable oil"
       ]
     },
@@ -61,69 +61,69 @@
       "name": "can tomatoes",
       "score": 40.23543632724744,
       "connects_a": [
-        "cloves",
-        "onion",
-        "pepper flakes"
+        "worcestershire sauce",
+        "seasoning",
+        "cumin"
       ],
       "connects_b": [
-        "cloves",
-        "onion",
-        "parsley"
+        "wine",
+        "bay leaf",
+        "onion"
       ]
     },
     {
       "name": "cans tomatoes",
       "score": 40.088856636544925,
       "connects_a": [
-        "cloves",
+        "seasoning",
         "onion",
-        "pepper flakes"
+        "oregano"
       ],
       "connects_b": [
-        "cloves",
-        "onion",
-        "leaves"
+        "carrot",
+        "olive oil",
+        "onion"
       ]
     },
     {
       "name": "yellow onions",
       "score": 40.05526694216377,
       "connects_a": [
-        "pepper flakes",
-        "oregano",
-        "bell pepper"
+        "onion powder",
+        "worcestershire sauce",
+        "oregano"
       ],
       "connects_b": [
-        "parsley",
-        "2",
-        "wine"
+        "carrot",
+        "wine",
+        "2"
       ]
     },
     {
       "name": "granulated",
       "score": 36.12640479958858,
       "connects_a": [
-        "seasoning",
-        "worcestershire sauce",
-        "cayenne pepper"
+        "ketchup",
+        "onion powder",
+        "worcestershire sauce"
       ],
       "connects_b": [
-        "egg yolks",
-        "vanilla extract",
-        "cocoa powder"
+        "cocoa powder",
+        "egg whites",
+        "nutmeg"
       ]
     },
     {
       "name": "thyme",
       "score": 35.18259819172008,
       "connects_a": [
-        "oregano",
         "rosemary",
+        "onion powder",
         "worcestershire sauce"
       ],
       "connects_b": [
-        "parsley",
-        "bacon",
+        "wine",
+        "bay leaf",
         "2"
       ]
     },
@@ -131,18 +131,28 @@
       "name": "allspice",
       "score": 35.15593918542888,
       "connects_a": [
-        "cloves",
-        "ginger",
-        "cumin"
+        "onion powder",
+        "cumin",
+        "cloves"
       ],
       "connects_b": [
-        "cloves",
-        "bay leaf",
-        "cider vinegar"
+        "cider vinegar",
+        "nutmeg",
+        "cinnamon"
       ]
     }
   ],
   "novel_from_a": [
+    {
+      "name": "plum tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "sandwich rolls",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
     {
       "name": "cherry tomatoes",
       "pairs_with": "olive oil",
@@ -159,13 +169,13 @@
       "strength": 1
     },
     {
-      "name": "plum tomatoes",
-      "pairs_with": "olive oil",
+      "name": "sirloin",
+      "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "sandwich rolls",
-      "pairs_with": "olive oil",
+      "name": "plum tomatoes",
+      "pairs_with": "cloves",
       "strength": 1
     },
     {
@@ -175,16 +185,6 @@
     },
     {
       "name": "oregano leaves",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "sirloin",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "plum tomatoes",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -206,7 +206,12 @@
       "strength": 1
     },
     {
-      "name": "escarole",
+      "name": "beef chuck",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "ribs celery",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -221,12 +226,7 @@
       "strength": 1
     },
     {
-      "name": "beef chuck",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "ribs celery",
+      "name": "escarole",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -236,12 +236,12 @@
       "strength": 1
     },
     {
-      "name": "bosc pears",
+      "name": "dutch process",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "corn syrup",
+      "name": "bosc pears",
       "pairs_with": "butter",
       "strength": 1
     }

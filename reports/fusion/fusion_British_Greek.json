@@ -5,14 +5,14 @@
       "name": "confectioners",
       "score": 77.40162341069826,
       "connects_a": [
-        "cream",
-        "more",
-        "1"
+        "purpose flour",
+        "butter",
+        "nutmeg"
       ],
       "connects_b": [
-        "1",
-        "more",
-        "egg"
+        "purpose flour",
+        "butter",
+        "cinnamon"
       ]
     },
     {
@@ -21,82 +21,82 @@
       "connects_a": [
         "tomato paste",
         "onion",
-        "cayenne pepper"
+        "vegetable oil"
       ],
       "connects_b": [
-        "spinach",
-        "onion",
-        "greek yogurt"
+        "greek yogurt",
+        "tomatoes",
+        "yogurt"
       ]
     },
     {
       "name": "ice water",
       "score": 60.30585722748021,
       "connects_a": [
-        "1",
-        "more",
-        "flour"
+        "purpose flour",
+        "butter",
+        "nutmeg"
       ],
       "connects_b": [
-        "1",
-        "more",
-        "egg"
+        "purpose flour",
+        "butter",
+        "cinnamon"
       ]
     },
     {
       "name": "at",
       "score": 60.23898775750824,
       "connects_a": [
-        "cream",
-        "more",
-        "1"
+        "purpose flour",
+        "butter",
+        "egg yolks"
       ],
       "connects_b": [
-        "1",
-        "more",
-        "egg"
+        "purpose flour",
+        "butter",
+        "1"
       ]
     },
     {
       "name": "tomato paste",
       "score": 54.3484499344363,
       "connects_a": [
-        "cloves",
-        "onion",
-        "parsley"
+        "carrot",
+        "worcestershire sauce",
+        "wine"
       ],
       "connects_b": [
-        "cloves",
+        "tomatoes",
         "onion",
-        "parsley"
+        "oregano"
       ]
     },
     {
       "name": "sticks",
       "score": 54.19098323320141,
       "connects_a": [
-        "1",
-        "more",
-        "egg yolks"
+        "purpose flour",
+        "butter",
+        "nutmeg"
       ],
       "connects_b": [
-        "1",
-        "more",
-        "egg"
+        "purpose flour",
+        "butter",
+        "cinnamon"
       ]
     },
     {
       "name": "whole milk",
       "score": 50.14642586573099,
       "connects_a": [
-        "more",
-        "egg yolks",
-        "egg"
+        "purpose flour",
+        "butter",
+        "nutmeg"
       ],
       "connects_b": [
-        "more",
-        "egg",
-        "butter"
+        "purpose flour",
+        "butter",
+        "cinnamon"
       ]
     },
     {
@@ -104,27 +104,27 @@
       "score": 50.13627398035956,
       "connects_a": [
         "tomato paste",
-        "cloves",
-        "parsley"
+        "carrot",
+        "wine"
       ],
       "connects_b": [
+        "oregano",
         "cloves",
-        "parsley",
-        "egg"
+        "milk"
       ]
     },
     {
       "name": "vanilla extract",
       "score": 48.770153741174205,
       "connects_a": [
-        "cream",
-        "1",
-        "egg yolks"
+        "purpose flour",
+        "butter",
+        "nutmeg"
       ],
       "connects_b": [
-        "1",
-        "egg",
-        "milk"
+        "purpose flour",
+        "butter",
+        "cinnamon"
       ]
     },
     {
@@ -132,13 +132,13 @@
       "score": 48.26888749589051,
       "connects_a": [
         "tomato paste",
-        "2",
-        "cayenne pepper"
+        "cayenne pepper",
+        "beef"
       ],
       "connects_b": [
-        "cheese crumbles",
-        "kalamata olives",
-        "kalamata"
+        "feta cheese",
+        "wine vinegar",
+        "kalamata olives"
       ]
     }
   ],
@@ -154,17 +154,12 @@
       "strength": 1
     },
     {
-      "name": "mussels",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "cremini",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
       "name": "bundle",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "mussels",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -174,12 +169,12 @@
       "strength": 1
     },
     {
-      "name": "chervil",
-      "pairs_with": "butter",
+      "name": "cremini",
+      "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "chocolate hazelnut spread",
+      "name": "chervil",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -189,44 +184,29 @@
       "strength": 1
     },
     {
-      "name": "lobster stock",
+      "name": "chocolate hazelnut spread",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "veal stock",
       "pairs_with": "butter",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "finely oregano",
+      "name": "handful pine nuts",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "artichokes",
+      "name": "cubanelle peppers",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pasta",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "romano cheese",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "some",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "parmigiano",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "sherry vinegar",
+      "name": "marzano",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -236,12 +216,32 @@
       "strength": 1
     },
     {
+      "name": "romano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "heads garlic",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "linguine",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "pinenuts",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "couscous",
+      "name": "palm",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "petite",
       "pairs_with": "olive oil",
       "strength": 1
     }

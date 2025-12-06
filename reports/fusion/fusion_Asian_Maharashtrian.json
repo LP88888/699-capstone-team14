@@ -5,27 +5,27 @@
       "name": "peanuts",
       "score": 80.85347328099543,
       "connects_a": [
-        "fish sauce",
-        "oyster sauce",
-        "hoisin sauce"
+        "peanut oil",
+        "sesame oil",
+        "scallions"
       ],
       "connects_b": [
+        "rai",
         "gram",
-        "dal",
-        "rai"
+        "coconut"
       ]
     },
     {
       "name": "chili pepper",
       "score": 50.018943174857945,
       "connects_a": [
-        "fish sauce",
-        "rice vinegar",
-        "ginger"
+        "peanut oil",
+        "sesame oil",
+        "soy sauce"
       ],
       "connects_b": [
         "turmeric",
-        "chili powder",
+        "oil",
         "peanuts"
       ]
     },
@@ -33,50 +33,50 @@
       "name": "cilantro",
       "score": 44.255096686413516,
       "connects_a": [
-        "fish sauce",
-        "hoisin sauce",
-        "rice vinegar"
+        "scallions",
+        "cabbage",
+        "ginger"
       ],
       "connects_b": [
+        "peanuts",
         "turmeric",
-        "chili powder",
-        "peanuts"
+        "chili powder"
       ]
     },
     {
       "name": "coconut milk",
       "score": 40.10731869018686,
       "connects_a": [
-        "fish sauce",
-        "shrimp",
-        "ginger"
+        "peanut oil",
+        "ginger",
+        "cilantro"
       ],
       "connects_b": [
+        "peanuts",
         "turmeric",
-        "coconut",
-        "peanuts"
+        "coconut"
       ]
     },
     {
       "name": "fish sauce",
       "score": 38.37360592956602,
       "connects_a": [
-        "cilantro",
-        "soy sauce",
-        "peanut oil"
+        "carrot",
+        "ginger",
+        "lime juice"
       ],
       "connects_b": [
-        "coconut",
-        "peanuts"
+        "peanuts",
+        "coconut"
       ]
     },
     {
       "name": "sesame seed",
       "score": 34.060302072677025,
       "connects_a": [
-        "fish sauce",
         "honey",
-        "oyster sauce"
+        "wine vinegar",
+        "peanut oil"
       ],
       "connects_b": [
         "peanuts",
@@ -87,9 +87,9 @@
       "name": "oyster sauce",
       "score": 34.021859259707334,
       "connects_a": [
-        "fish sauce",
-        "shrimp",
-        "hoisin sauce"
+        "peanut oil",
+        "sesame oil",
+        "scallions"
       ],
       "connects_b": [
         "peanuts",
@@ -100,9 +100,9 @@
       "name": "jalapeno peppers",
       "score": 33.03228120161656,
       "connects_a": [
-        "fish sauce",
-        "shrimp",
-        "hoisin sauce"
+        "peanut oil",
+        "scallions",
+        "cabbage"
       ],
       "connects_b": [
         "turmeric",
@@ -114,22 +114,22 @@
       "name": "ginger",
       "score": 32.58741561216815,
       "connects_a": [
-        "fish sauce",
-        "oyster sauce",
-        "hoisin sauce"
+        "peanut oil",
+        "sesame oil",
+        "scallions"
       ],
       "connects_b": [
-        "turmeric",
-        "peanuts"
+        "peanuts",
+        "turmeric"
       ]
     },
     {
       "name": "corn starch",
       "score": 32.06351975342894,
       "connects_a": [
-        "pepper flakes",
-        "oyster sauce",
-        "hoisin sauce"
+        "peanut oil",
+        "sesame oil",
+        "scallions"
       ],
       "connects_b": [
         "peanuts",
@@ -139,17 +139,12 @@
   ],
   "novel_from_a": [
     {
+      "name": "button",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
       "name": "gourd",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "powder amchur",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "virgin",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -159,12 +154,12 @@
       "strength": 1
     },
     {
-      "name": "pepper powder",
+      "name": "fruit",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "button",
+      "name": "powder amchur",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -174,7 +169,12 @@
       "strength": 1
     },
     {
-      "name": "fruit",
+      "name": "virgin",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "pepper powder",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -184,7 +184,7 @@
       "strength": 1
     },
     {
-      "name": "gourd",
+      "name": "button",
       "pairs_with": "powder",
       "strength": 1
     }
@@ -211,17 +211,17 @@
       "strength": 1
     },
     {
+      "name": "masala",
+      "pairs_with": "peanuts",
+      "strength": 1
+    },
+    {
       "name": "dal",
       "pairs_with": "peanuts",
       "strength": 1
     },
     {
       "name": "rai",
-      "pairs_with": "peanuts",
-      "strength": 1
-    },
-    {
-      "name": "masala",
       "pairs_with": "peanuts",
       "strength": 1
     },

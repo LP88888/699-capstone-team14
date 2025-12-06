@@ -5,55 +5,55 @@
       "name": "hoisin sauce",
       "score": 110.0841005791393,
       "connects_a": [
-        "rice wine",
-        "honey",
-        "soy sauce"
+        "carrot",
+        "spice powder",
+        "ginger"
       ],
       "connects_b": [
-        "honey",
-        "rice",
-        "garlic"
+        "carrot",
+        "garlic",
+        "rice"
       ]
     },
     {
       "name": "bean sprouts",
       "score": 85.18037842324503,
       "connects_a": [
-        "shrimp",
-        "hoisin sauce",
-        "canola oil"
+        "peanut oil",
+        "sesame oil",
+        "carrot"
       ],
       "connects_b": [
-        "taste",
-        "shrimp",
-        "wine vinegar"
+        "wine vinegar",
+        "carrot",
+        "taste"
       ]
     },
     {
       "name": "snow peas",
       "score": 80.03683622855938,
       "connects_a": [
-        "shrimp",
-        "corn starch",
-        "rice vinegar"
+        "sesame oil",
+        "carrot",
+        "soy sauce"
       ],
       "connects_b": [
+        "carrot",
         "bell pepper",
-        "rice",
-        "shrimp"
+        "rice"
       ]
     },
     {
       "name": "inch piece",
       "score": 78.23333547948052,
       "connects_a": [
-        "cloves",
-        "hoisin sauce",
-        "canola oil"
+        "peanut oil",
+        "sesame oil",
+        "carrot"
       ],
       "connects_b": [
-        "more",
-        "cloves",
+        "wine vinegar",
+        "carrot",
         "rice"
       ]
     },
@@ -61,13 +61,13 @@
       "name": "rice vinegar",
       "score": 76.17423068796336,
       "connects_a": [
-        "rice wine",
-        "honey",
-        "soy sauce"
+        "carrot",
+        "spice powder",
+        "ginger"
       ],
       "connects_b": [
+        "canola oil",
         "rice",
-        "honey",
         "carrot"
       ]
     },
@@ -75,14 +75,14 @@
       "name": "andouille sausage",
       "score": 72.0953003578551,
       "connects_a": [
-        "chicken broth",
         "onion",
+        "garlic",
         "bell pepper"
       ],
       "connects_b": [
+        "tomatoes",
         "onion",
-        "paprika",
-        "bell pepper"
+        "garlic"
       ]
     },
     {
@@ -90,12 +90,12 @@
       "score": 72.08520273535774,
       "connects_a": [
         "honey",
-        "hoisin sauce",
-        "corn starch"
+        "peanut oil",
+        "sesame oil"
       ],
       "connects_b": [
+        "garlic",
         "shrimp",
-        "honey",
         "carrot"
       ]
     },
@@ -103,13 +103,13 @@
       "name": "sodium soy sauce",
       "score": 72.0607798228439,
       "connects_a": [
-        "pepper flakes",
         "honey",
-        "hoisin sauce"
+        "peanut oil",
+        "noodles"
       ],
       "connects_b": [
+        "canola oil",
         "rice",
-        "honey",
         "carrot"
       ]
     },
@@ -117,39 +117,39 @@
       "name": "celery",
       "score": 70.17375698782998,
       "connects_a": [
-        "chicken broth",
+        "carrot",
         "onion",
-        "bell pepper"
+        "garlic"
       ],
       "connects_b": [
-        "onion",
-        "parsley",
-        "paprika"
+        "carrot",
+        "tomatoes",
+        "onion"
       ]
     },
     {
       "name": "shiitake",
       "score": 68.05041079516947,
       "connects_a": [
-        "chicken broth",
-        "shrimp",
-        "hoisin sauce"
+        "peanut oil",
+        "sesame oil",
+        "carrot"
       ],
       "connects_b": [
+        "canola oil",
         "shrimp",
-        "chicken stock",
         "carrot"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "pasta",
+      "name": "petite",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "cremini",
+      "name": "pasta",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -164,8 +164,13 @@
       "strength": 1
     },
     {
-      "name": "petite",
+      "name": "cremini",
       "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "petite",
+      "pairs_with": "cloves",
       "strength": 1
     },
     {
@@ -174,7 +179,12 @@
       "strength": 1
     },
     {
-      "name": "piece ginger",
+      "name": "black beans",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "and finely",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -182,66 +192,56 @@
       "name": "pinch sugar",
       "pairs_with": "cloves",
       "strength": 1
-    },
-    {
-      "name": "cremini",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "inch piece",
-      "pairs_with": "cloves",
-      "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "crusty bread",
+      "name": "or finely",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "evoo",
+      "name": "bundle",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "oregano leaves",
+      "name": "slab bacon",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "montreal steak",
+      "name": "san marzano",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "finely parsley",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "finely oregano",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "serrano chili",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "have",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "jalapeno chile",
+      "name": "serrano",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
       "name": "chorizo",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "herbes",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "grigio",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "for drizzling",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "oregano leaves",
       "pairs_with": "cloves",
       "strength": 1
     }

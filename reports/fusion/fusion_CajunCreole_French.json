@@ -5,27 +5,27 @@
       "name": "celery",
       "score": 138.34254949029338,
       "connects_a": [
-        "chicken broth",
-        "cajun seasoning",
-        "oregano"
+        "onion powder",
+        "creole seasoning",
+        "tomatoes"
       ],
       "connects_b": [
-        "thyme",
-        "onion",
-        "parsley"
+        "carrot",
+        "bay leaf",
+        "onion"
       ]
     },
     {
       "name": "tomato paste",
       "score": 98.63237210323626,
       "connects_a": [
-        "thyme",
-        "cloves",
-        "celery"
+        "okra",
+        "worcestershire sauce",
+        "tomatoes"
       ],
       "connects_b": [
-        "thyme",
-        "cloves",
+        "carrot",
+        "wine",
         "onion"
       ]
     },
@@ -33,97 +33,97 @@
       "name": "file powder",
       "score": 90.18278696938211,
       "connects_a": [
-        "thyme",
-        "celery",
-        "onion"
+        "okra",
+        "purpose flour",
+        "onion powder"
       ],
       "connects_b": [
-        "thyme",
+        "purpose flour",
         "onion",
-        "garlic"
+        "vegetable oil"
       ]
     },
     {
       "name": "andouille sausage",
       "score": 84.11118375083095,
       "connects_a": [
-        "chicken broth",
-        "cajun seasoning",
-        "oregano"
+        "onion powder",
+        "creole seasoning",
+        "tomatoes"
       ],
       "connects_b": [
-        "thyme",
-        "onion",
-        "garlic"
+        "garlic",
+        "bay leaf",
+        "thyme"
       ]
     },
     {
       "name": "thyme",
       "score": 80.4173672953602,
       "connects_a": [
-        "celery",
-        "andouille sausage",
-        "cajun seasoning"
+        "okra",
+        "onion powder",
+        "worcestershire sauce"
       ],
       "connects_b": [
-        "parsley",
-        "2",
-        "wine"
+        "wine",
+        "bay leaf",
+        "2"
       ]
     },
     {
       "name": "yellow onions",
       "score": 77.10638886366525,
       "connects_a": [
-        "thyme",
-        "celery",
-        "parsley"
+        "onion powder",
+        "worcestershire sauce",
+        "oregano"
       ],
       "connects_b": [
-        "thyme",
-        "parsley",
-        "2"
+        "carrot",
+        "wine",
+        "kosher sea salt"
       ]
     },
     {
       "name": "grits",
       "score": 72.28168200681829,
       "connects_a": [
-        "cream",
-        "andouille sausage",
-        "cajun seasoning"
+        "onion powder",
+        "butter",
+        "bell pepper"
       ],
       "connects_b": [
-        "cream",
-        "more",
-        "parsley"
+        "butter",
+        "2",
+        "milk"
       ]
     },
     {
       "name": "yellow onion",
       "score": 72.04160972117874,
       "connects_a": [
-        "thyme",
-        "celery",
+        "onion powder",
+        "worcestershire sauce",
         "oregano"
       ],
       "connects_b": [
-        "thyme",
-        "2",
-        "wine"
+        "dijon mustard",
+        "wine",
+        "kosher sea salt"
       ]
     },
     {
       "name": "ribs celery",
       "score": 70.51015235559204,
       "connects_a": [
-        "chicken broth",
-        "cloves",
-        "thyme"
+        "worcestershire sauce",
+        "onion",
+        "bell pepper"
       ],
       "connects_b": [
-        "thyme",
-        "cloves",
+        "carrot",
+        "wine",
         "onion"
       ]
     },
@@ -131,25 +131,25 @@
       "name": "okra",
       "score": 68.09293272803264,
       "connects_a": [
-        "thyme",
-        "celery",
-        "onion"
+        "purpose flour",
+        "worcestershire sauce",
+        "tomatoes"
       ],
       "connects_b": [
-        "thyme",
         "purpose flour",
+        "thyme",
         "onion"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "fettuccine",
+      "name": "linguini",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "linguini",
+      "name": "fettuccine",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -159,12 +159,12 @@
       "strength": 1
     },
     {
-      "name": "file powder",
+      "name": "shrimp stock",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "chicken base",
+      "name": "andouille",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -179,7 +179,7 @@
       "strength": 1
     },
     {
-      "name": "tumeric",
+      "name": "chicken base",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -189,49 +189,29 @@
       "strength": 1
     },
     {
-      "name": "andouille",
+      "name": "tumeric",
       "pairs_with": "onion",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "crusty bread",
+      "name": "handful pine nuts",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "artichokes",
+      "name": "marzano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "some",
+      "name": "morel mushrooms",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pancetta",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "parmigiano",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "sherry vinegar",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "crusty rolls",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cannellini",
+      "name": "romano",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -241,7 +221,27 @@
       "strength": 1
     },
     {
-      "name": "head fennel",
+      "name": "palm",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "petite",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "sherry vinegar",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "anchovy paste",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "anchovy fillets",
       "pairs_with": "olive oil",
       "strength": 1
     }

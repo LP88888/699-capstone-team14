@@ -5,51 +5,51 @@
       "name": "garam masala",
       "score": 162.91577121589526,
       "connects_a": [
-        "onion",
         "bay leaf",
-        "lemon juice"
+        "onion",
+        "vegetable oil"
       ],
       "connects_b": [
-        "cardamom",
+        "coriander",
         "basmati rice",
-        "yogurt"
+        "tomatoes"
       ]
     },
     {
       "name": "allspice",
       "score": 66.29405674966588,
       "connects_a": [
-        "thyme",
-        "cloves",
+        "nutmeg",
+        "kosher sea salt",
         "bay leaf"
       ],
       "connects_b": [
-        "cloves",
-        "cardamom",
-        "coriander"
+        "cinnamon sticks",
+        "coriander",
+        "mustard seeds"
       ]
     },
     {
       "name": "coriander powder",
       "score": 64.1249721882729,
       "connects_a": [
-        "cinnamon",
+        "garlic",
         "onion",
-        "garlic"
+        "leaves"
       ],
       "connects_b": [
-        "cumin seeds",
+        "garam masala",
         "tumeric",
-        "onion"
+        "tomatoes"
       ]
     },
     {
       "name": "confectioners",
       "score": 60.31295330703761,
       "connects_a": [
-        "cream",
-        "more",
-        "1"
+        "purpose flour",
+        "chocolate",
+        "butter"
       ],
       "connects_b": [
         "cream",
@@ -61,79 +61,79 @@
       "name": "coriander seeds",
       "score": 60.08439361396923,
       "connects_a": [
-        "shallots",
-        "bay leaf",
-        "kosher sea salt"
+        "wine vinegar",
+        "kosher sea salt",
+        "cinnamon"
       ],
       "connects_b": [
-        "mustard seeds",
-        "cumin seeds",
-        "turmeric"
+        "coconut milk",
+        "cinnamon sticks",
+        "mustard seeds"
       ]
     },
     {
       "name": "cardamom pods",
       "score": 56.115100092400944,
       "connects_a": [
+        "cinnamon",
         "cloves",
-        "vegetable oil",
-        "cinnamon"
+        "bay leaf"
       ],
       "connects_b": [
-        "cloves",
-        "cumin seeds",
-        "turmeric"
+        "cinnamon sticks",
+        "coriander",
+        "garam masala"
       ]
     },
     {
       "name": "tumeric",
       "score": 54.15285920668306,
       "connects_a": [
-        "onion",
         "garlic",
+        "onion",
         "cinnamon"
       ],
       "connects_b": [
         "mustard seeds",
-        "cumin seeds",
-        "onion"
+        "coriander",
+        "garam masala"
       ]
     },
     {
       "name": "chiles",
       "score": 52.24817843907106,
       "connects_a": [
+        "shallots",
         "cloves",
-        "2",
-        "shallots"
+        "2"
       ],
       "connects_b": [
-        "mustard seeds",
-        "cloves",
-        "cumin seeds"
+        "coconut milk",
+        "cinnamon sticks",
+        "coriander"
       ]
     },
     {
       "name": "tomato paste",
       "score": 49.31618605161813,
       "connects_a": [
-        "thyme",
-        "cloves",
+        "carrot",
+        "wine",
         "onion"
       ],
       "connects_b": [
-        "cloves",
-        "onion",
-        "turmeric"
+        "garam masala",
+        "tomatoes",
+        "cumin"
       ]
     },
     {
       "name": "vanilla extract",
       "score": 48.770153741174205,
       "connects_a": [
-        "cream",
-        "1",
-        "maple syrup"
+        "purpose flour",
+        "chocolate",
+        "butter"
       ],
       "connects_b": [
         "cream",
@@ -144,37 +144,47 @@
   ],
   "novel_from_a": [
     {
-      "name": "crusty bread",
+      "name": "chorizo",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "artichokes",
+      "name": "handful pine nuts",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pasta",
+      "name": "marzano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "romano cheese",
+      "name": "[extra",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "some",
+      "name": "morel mushrooms",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pancetta",
+      "name": "romano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "parmigiano",
+      "name": "heads garlic",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "linguine",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "palm",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -182,21 +192,11 @@
       "name": "sherry vinegar",
       "pairs_with": "olive oil",
       "strength": 1
-    },
-    {
-      "name": "crusty rolls",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cannellini",
-      "pairs_with": "olive oil",
-      "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "chicken bouillon",
+      "name": "capsicum",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -206,22 +206,7 @@
       "strength": 1
     },
     {
-      "name": "capsicum",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "kasuri methi",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "paneer",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "ginger paste",
+      "name": "kidney beans",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -231,12 +216,27 @@
       "strength": 1
     },
     {
-      "name": "kidney beans",
+      "name": "chicken bouillon",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "ginger paste",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "paneer",
       "pairs_with": "onion",
       "strength": 1
     },
     {
       "name": "corn tortillas",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "kasuri methi",
       "pairs_with": "onion",
       "strength": 1
     },

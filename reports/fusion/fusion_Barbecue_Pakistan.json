@@ -5,144 +5,149 @@
       "name": "garam masala",
       "score": 298.678913895808,
       "connects_a": [
-        "onion",
-        "ginger",
-        "cumin"
+        "tomatoes",
+        "cumin",
+        "onion"
       ],
       "connects_b": [
-        "cardamom",
+        "coriander",
         "basmati rice",
-        "yogurt"
+        "tomatoes"
       ]
     },
     {
       "name": "cumin",
       "score": 155.62893812224806,
       "connects_a": [
-        "oregano",
-        "bell pepper",
-        "lime"
+        "onion powder",
+        "tomatoes",
+        "oregano"
       ],
       "connects_b": [
+        "coconut milk",
         "mustard seeds",
-        "cumin seeds",
-        "tumeric"
+        "coriander"
       ]
     },
     {
       "name": "tumeric",
       "score": 144.4076245511548,
       "connects_a": [
-        "onion",
-        "ginger",
-        "cumin"
+        "tomatoes",
+        "cumin",
+        "onion"
       ],
       "connects_b": [
         "mustard seeds",
-        "cumin seeds",
-        "onion"
+        "coriander",
+        "garam masala"
       ]
     },
     {
       "name": "coriander",
       "score": 140.3618346509608,
       "connects_a": [
-        "ginger",
+        "tomatoes",
         "cumin",
-        "garlic powder"
+        "cilantro"
       ],
       "connects_b": [
-        "cardamom",
+        "garam masala",
         "basmati rice",
-        "yogurt"
+        "tomatoes"
       ]
     },
     {
       "name": "turmeric",
       "score": 120.23261894223829,
       "connects_a": [
-        "ginger",
+        "tomatoes",
         "cumin",
         "vegetable oil"
       ],
       "connects_b": [
-        "cardamom",
-        "basmati rice",
-        "yogurt"
+        "coriander",
+        "garam masala",
+        "basmati rice"
       ]
     },
     {
       "name": "chili powder",
       "score": 118.3616610971817,
       "connects_a": [
-        "cumin",
-        "worcestershire sauce",
-        "barbecue sauce"
+        "ketchup",
+        "onion powder",
+        "worcestershire sauce"
       ],
       "connects_b": [
         "mustard seeds",
-        "cumin seeds",
-        "tumeric"
+        "coriander",
+        "garam masala"
       ]
     },
     {
       "name": "cumin seeds",
       "score": 105.12955374558379,
       "connects_a": [
-        "ginger",
+        "tomatoes",
         "cumin",
         "cilantro"
       ],
       "connects_b": [
-        "cardamom",
-        "basmati rice",
-        "yogurt"
+        "coriander",
+        "garam masala",
+        "basmati rice"
       ]
     },
     {
       "name": "coriander powder",
       "score": 96.18745828240935,
       "connects_a": [
-        "onion",
         "tomatoes",
-        "ginger"
+        "cumin",
+        "onion"
       ],
       "connects_b": [
-        "cumin seeds",
+        "garam masala",
         "tumeric",
-        "onion"
+        "tomatoes"
       ]
     },
     {
       "name": "mustard seeds",
       "score": 95.07399012366643,
       "connects_a": [
-        "ginger",
+        "tomatoes",
         "cumin",
         "vegetable oil"
       ],
       "connects_b": [
-        "yogurt",
-        "chilies",
-        "cilantro"
+        "coriander",
+        "garam masala",
+        "tomatoes"
       ]
     },
     {
       "name": "chiles",
       "score": 91.43431226837436,
       "connects_a": [
-        "cloves",
-        "ginger",
-        "cumin"
+        "cumin",
+        "vegetable oil",
+        "cilantro"
       ],
       "connects_b": [
-        "mustard seeds",
-        "cloves",
-        "cumin seeds"
+        "coconut milk",
+        "cinnamon sticks",
+        "coriander"
       ]
     }
   ],
   "novel_from_a": [
+    {
+      "name": "sandwich rolls",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
     {
       "name": "cherry tomatoes",
       "pairs_with": "olive oil",
@@ -159,8 +164,8 @@
       "strength": 1
     },
     {
-      "name": "sandwich rolls",
-      "pairs_with": "olive oil",
+      "name": "sirloin",
+      "pairs_with": "cloves",
       "strength": 1
     },
     {
@@ -174,8 +179,8 @@
       "strength": 1
     },
     {
-      "name": "sirloin",
-      "pairs_with": "cloves",
+      "name": "gruyere cheese",
+      "pairs_with": "butter",
       "strength": 1
     },
     {
@@ -184,17 +189,17 @@
       "strength": 1
     },
     {
-      "name": "gruyere cheese",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "chicken base",
+      "name": "beef stock",
       "pairs_with": "onion",
       "strength": 1
     }
   ],
   "novel_from_b": [
+    {
+      "name": "petite",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
     {
       "name": "couscous",
       "pairs_with": "olive oil",
@@ -207,26 +212,11 @@
     },
     {
       "name": "petite",
-      "pairs_with": "olive oil",
+      "pairs_with": "cloves",
       "strength": 1
     },
     {
       "name": "chile",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "cardamom pods",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "pork shoulder",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "chiles",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -241,7 +231,17 @@
       "strength": 1
     },
     {
+      "name": "chiles",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
       "name": "serrano",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "lamb shanks",
       "pairs_with": "cloves",
       "strength": 1
     }

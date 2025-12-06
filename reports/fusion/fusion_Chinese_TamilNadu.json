@@ -5,27 +5,27 @@
       "name": "peanuts",
       "score": 56.5974312966968,
       "connects_a": [
-        "hoisin sauce",
-        "corn starch",
-        "rice vinegar"
+        "peanut oil",
+        "sesame oil",
+        "scallions"
       ],
       "connects_b": [
-        "rai",
-        "dal",
-        "gram"
+        "dhania",
+        "gram",
+        "rai"
       ]
     },
     {
       "name": "oil",
       "score": 30.14505747846478,
       "connects_a": [
+        "soy sauce",
         "rice wine",
-        "corn starch",
-        "oyster sauce"
+        "shaoxing"
       ],
       "connects_b": [
-        "channa dal",
-        "gram",
+        "finger",
+        "urad dal",
         "dal"
       ]
     },
@@ -37,18 +37,18 @@
         "oil"
       ],
       "connects_b": [
-        "chilli",
-        "flour",
-        "oil salt"
+        "finger",
+        "fenugreek",
+        "powder"
       ]
     },
     {
       "name": "oyster sauce",
       "score": 22.014144226869455,
       "connects_a": [
-        "chicken broth",
-        "rice wine",
-        "soy sauce"
+        "spice powder",
+        "oil",
+        "ginger"
       ],
       "connects_b": [
         "oil"
@@ -58,9 +58,9 @@
       "name": "corn starch",
       "score": 20.03969984589309,
       "connects_a": [
-        "chicken broth",
-        "rice wine",
-        "soy sauce"
+        "oil",
+        "ginger",
+        "peanut oil"
       ],
       "connects_b": [
         "oil"
@@ -70,9 +70,9 @@
       "name": "soy sauce",
       "score": 19.524073755401215,
       "connects_a": [
-        "rice wine",
-        "honey",
-        "peanut oil"
+        "spice powder",
+        "oil",
+        "ginger"
       ],
       "connects_b": [
         "oil"
@@ -86,9 +86,9 @@
         "oil"
       ],
       "connects_b": [
-        "chilli",
-        "flour",
-        "oil salt"
+        "fenugreek",
+        "powder",
+        "oil"
       ]
     },
     {
@@ -98,9 +98,9 @@
         "oil"
       ],
       "connects_b": [
-        "chilli",
-        "chillies",
-        "gram"
+        "fenugreek",
+        "urad dal",
+        "powder"
       ]
     },
     {
@@ -108,8 +108,8 @@
       "score": 16.00412717405789,
       "connects_a": [
         "honey",
-        "hoisin sauce",
-        "corn starch"
+        "peanut oil",
+        "sesame oil"
       ],
       "connects_b": [
         "oil"
@@ -119,35 +119,20 @@
       "name": "coriander powder",
       "score": 15.029290356626463,
       "connects_a": [
+        "oil",
         "onion",
-        "ginger",
         "garlic"
       ],
       "connects_b": [
-        "onion",
         "leaves",
-        "oil"
+        "oil",
+        "onion"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "green bell",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
       "name": "olive",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "virgin",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "masala",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -157,27 +142,42 @@
       "strength": 1
     },
     {
-      "name": "fruit",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
       "name": "brown",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "celery",
-      "pairs_with": "onion",
+      "name": "masala",
+      "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "stalks celery",
+      "name": "fruit",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "green bell",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "virgin",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "beef broth",
       "pairs_with": "onion",
       "strength": 1
     },
     {
       "name": "beef stock",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "lentil",
       "pairs_with": "onion",
       "strength": 1
     }
@@ -199,12 +199,12 @@
       "strength": 1
     },
     {
-      "name": "pudina salt",
+      "name": "pudina",
       "pairs_with": "leaves",
       "strength": 1
     },
     {
-      "name": "murungai",
+      "name": "pudina salt",
       "pairs_with": "leaves",
       "strength": 1
     },
@@ -214,12 +214,12 @@
       "strength": 1
     },
     {
-      "name": "pudina",
+      "name": "moringa",
       "pairs_with": "leaves",
       "strength": 1
     },
     {
-      "name": "moringa",
+      "name": "murungai",
       "pairs_with": "leaves",
       "strength": 1
     },

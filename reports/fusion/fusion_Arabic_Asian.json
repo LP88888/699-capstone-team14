@@ -5,27 +5,27 @@
       "name": "fish sauce",
       "score": 115.12081778869806,
       "connects_a": [
-        "vinegar",
-        "mint",
-        "vegetable oil"
+        "carrot",
+        "vegetable oil",
+        "cilantro"
       ],
       "connects_b": [
-        "cilantro",
-        "soy sauce",
-        "peanut oil"
+        "carrot",
+        "ginger",
+        "lime juice"
       ]
     },
     {
       "name": "chile",
       "score": 108.4656582978038,
       "connects_a": [
-        "vinegar",
-        "cayenne",
-        "coriander"
+        "coriander",
+        "cumin",
+        "cayenne"
       ],
       "connects_b": [
-        "fish sauce",
-        "cloves",
+        "peanut oil",
+        "soy sauce",
         "oyster sauce"
       ]
     },
@@ -34,13 +34,13 @@
       "score": 100.07645507194482,
       "connects_a": [
         "chicken",
-        "garlic",
-        "cilantro"
+        "carrot",
+        "garlic"
       ],
       "connects_b": [
-        "honey",
-        "cilantro",
-        "soy sauce"
+        "carrot",
+        "fish sauce",
+        "ginger"
       ]
     },
     {
@@ -52,9 +52,9 @@
         "carrot"
       ],
       "connects_b": [
-        "cilantro",
-        "soy sauce",
-        "peanut oil"
+        "carrot",
+        "fish sauce",
+        "ginger"
       ]
     },
     {
@@ -62,69 +62,69 @@
       "score": 88.24447662433012,
       "connects_a": [
         "tomato paste",
-        "cayenne",
-        "coriander"
+        "coriander",
+        "carrot"
       ],
       "connects_b": [
-        "fish sauce",
-        "oyster sauce",
-        "rice vinegar"
+        "carrot",
+        "soy sauce",
+        "scallions"
       ]
     },
     {
       "name": "garam masala",
       "score": 84.47484433416793,
       "connects_a": [
+        "chicken",
         "tomato paste",
-        "onion",
-        "cayenne"
+        "coriander"
       ],
       "connects_b": [
         "onion",
-        "ginger",
-        "chicken breasts"
+        "vegetable oil",
+        "garlic"
       ]
     },
     {
       "name": "noodles",
       "score": 72.04573815515438,
       "connects_a": [
-        "vinegar",
         "paprika",
+        "vinegar",
         "carrot"
       ],
       "connects_b": [
-        "fish sauce",
-        "oyster sauce",
-        "hoisin sauce"
+        "peanut oil",
+        "sesame oil",
+        "carrot"
       ]
     },
     {
       "name": "ginger",
       "score": 65.1748312243363,
       "connects_a": [
-        "cilantro",
+        "garlic",
         "coriander",
         "yogurt"
       ],
       "connects_b": [
-        "fish sauce",
-        "oyster sauce",
-        "hoisin sauce"
+        "peanut oil",
+        "sesame oil",
+        "scallions"
       ]
     },
     {
       "name": "sriracha",
       "score": 60.07100227946479,
       "connects_a": [
-        "cilantro",
         "garlic",
+        "cilantro",
         "carrot"
       ],
       "connects_b": [
-        "honey",
-        "cilantro",
-        "soy sauce"
+        "carrot",
+        "fish sauce",
+        "ginger"
       ]
     },
     {
@@ -132,13 +132,13 @@
       "score": 57.13067301597252,
       "connects_a": [
         "cilantro",
-        "cucumber",
-        "carrot"
+        "carrot",
+        "cucumber"
       ],
       "connects_b": [
-        "honey",
-        "cilantro",
-        "soy sauce"
+        "carrot",
+        "fish sauce",
+        "ginger"
       ]
     }
   ],
@@ -164,12 +164,12 @@
       "strength": 1
     },
     {
-      "name": "puff",
+      "name": "margarine",
       "pairs_with": "egg",
       "strength": 1
     },
     {
-      "name": "margarine",
+      "name": "puff",
       "pairs_with": "egg",
       "strength": 1
     },
@@ -191,21 +191,6 @@
   ],
   "novel_from_b": [
     {
-      "name": "and half",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "bosc pears",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "corn syrup",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
       "name": "chervil",
       "pairs_with": "butter",
       "strength": 1
@@ -216,7 +201,32 @@
       "strength": 1
     },
     {
-      "name": "percent milk",
+      "name": "ice water",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "granny smith apples",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "lobster stock",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "freshly nutmeg",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "pecans",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "gruyere cheese",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -226,17 +236,7 @@
       "strength": 1
     },
     {
-      "name": "veal stock",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "sticks",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "pecans",
+      "name": "corn syrup",
       "pairs_with": "butter",
       "strength": 1
     }

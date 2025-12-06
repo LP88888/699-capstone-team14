@@ -10,9 +10,9 @@
         "carrot"
       ],
       "connects_b": [
-        "cilantro",
-        "soy sauce",
-        "peanut oil"
+        "carrot",
+        "fish sauce",
+        "ginger"
       ]
     },
     {
@@ -24,37 +24,37 @@
         "vegetable oil"
       ],
       "connects_b": [
-        "bean sprouts",
-        "thai basil",
-        "cilantro"
+        "carrot",
+        "ginger",
+        "lime juice"
       ]
     },
     {
       "name": "chiles",
       "score": 56.26726908823037,
       "connects_a": [
+        "shallots",
         "cloves",
-        "2",
-        "shallots"
+        "2"
       ],
       "connects_b": [
-        "fish sauce",
-        "cloves",
-        "cilantro leaves"
+        "coconut milk",
+        "peanut oil",
+        "limes"
       ]
     },
     {
       "name": "chile",
       "score": 51.21989419618512,
       "connects_a": [
-        "cloves",
         "shallots",
+        "cloves",
         "vegetable oil"
       ],
       "connects_b": [
-        "fish sauce",
-        "cloves",
-        "bean sprouts"
+        "peanut oil",
+        "chiles",
+        "soy sauce"
       ]
     },
     {
@@ -66,115 +66,95 @@
         "carrot"
       ],
       "connects_b": [
-        "fish sauce",
-        "cilantro leaves",
-        "bean sprouts"
+        "wine vinegar",
+        "peanut oil",
+        "carrot"
       ]
     },
     {
       "name": "garam masala",
       "score": 48.271339619524525,
       "connects_a": [
-        "onion",
         "bay leaf",
-        "lemon juice"
+        "onion",
+        "vegetable oil"
       ],
       "connects_b": [
-        "onion",
+        "coconut milk",
         "chiles",
-        "ginger"
+        "onion"
       ]
     },
     {
       "name": "head",
       "score": 48.21007893659926,
       "connects_a": [
-        "lemon",
+        "wine vinegar",
         "dijon mustard",
-        "wine vinegar"
+        "lemon"
       ],
       "connects_b": [
-        "cilantro leaves",
-        "fish sauce",
-        "carrot"
+        "wine vinegar",
+        "carrot",
+        "scallions"
       ]
     },
     {
       "name": "inch piece",
       "score": 48.1435910642957,
       "connects_a": [
-        "more",
         "wine vinegar",
+        "cloves",
         "carrot"
       ],
       "connects_b": [
-        "fish sauce",
-        "more",
-        "cloves"
+        "wine vinegar",
+        "peanut oil",
+        "carrot"
       ]
     },
     {
       "name": "confectioners",
       "score": 45.234714980278206,
       "connects_a": [
-        "cream",
-        "more",
-        "1"
+        "purpose flour",
+        "chocolate",
+        "butter"
       ],
       "connects_b": [
         "1",
-        "more",
-        "egg"
+        "egg",
+        "more"
       ]
     },
     {
       "name": "ribs celery",
       "score": 42.306091413355226,
       "connects_a": [
-        "thyme",
-        "cloves",
+        "carrot",
+        "wine",
         "onion"
       ],
       "connects_b": [
-        "cloves",
-        "onion",
-        "bell pepper"
+        "scallions",
+        "carrot",
+        "onion"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "artichokes",
+      "name": "chorizo",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "romano cheese",
+      "name": "handful pine nuts",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "some",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pancetta",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "sherry vinegar",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "crusty rolls",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cannellini",
+      "name": "marzano",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -184,19 +164,39 @@
       "strength": 1
     },
     {
-      "name": "sandwich rolls",
+      "name": "morel mushrooms",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "head fennel",
+      "name": "romano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "petite",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "sherry vinegar",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "anchovy paste",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "clam broth",
       "pairs_with": "olive oil",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "center cut",
+      "name": "littleneck clams",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -206,32 +206,22 @@
       "strength": 1
     },
     {
+      "name": "center cut",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "linguini",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "littleneck clams",
-      "pairs_with": "olive oil",
+      "name": "stalk lemongrass",
+      "pairs_with": "cloves",
       "strength": 1
     },
     {
       "name": "white onion",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "piece ginger",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "serrano chili",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "ancho chile",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -241,7 +231,17 @@
       "strength": 1
     },
     {
-      "name": "stalk lemongrass",
+      "name": "ancho chile",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "wheat spaghetti",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "littleneck clams",
       "pairs_with": "cloves",
       "strength": 1
     }

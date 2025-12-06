@@ -5,56 +5,56 @@
       "name": "can tomatoes",
       "score": 183.07123528897586,
       "connects_a": [
-        "chicken broth",
-        "cloves",
-        "tomato paste"
+        "chicken",
+        "tomato paste",
+        "worcestershire sauce"
       ],
       "connects_b": [
-        "cloves",
-        "optional",
-        "pepper flakes"
+        "basil",
+        "mozzarella cheese",
+        "seasoning"
       ]
     },
     {
       "name": "tomato paste",
       "score": 161.03244425018164,
       "connects_a": [
-        "thyme",
-        "cloves",
-        "chuck"
+        "carrot",
+        "worcestershire sauce",
+        "beef broth"
       ],
       "connects_b": [
-        "cloves",
-        "onion",
-        "parsley"
+        "basil",
+        "carrot",
+        "tomatoes"
       ]
     },
     {
       "name": "ribs celery",
       "score": 120.87454689530064,
       "connects_a": [
-        "chicken broth",
-        "cloves",
-        "tomato paste"
+        "chicken",
+        "tomato paste",
+        "carrot"
       ],
       "connects_b": [
-        "cloves",
-        "optional",
-        "pepper flakes"
+        "carrot",
+        "wine",
+        "onion"
       ]
     },
     {
       "name": "celery",
       "score": 98.24325978296196,
       "connects_a": [
-        "chicken broth",
         "tomato paste",
-        "thyme"
+        "carrot",
+        "worcestershire sauce"
       ],
       "connects_b": [
-        "onion",
-        "parsley",
-        "oregano"
+        "carrot",
+        "tomatoes",
+        "onion"
       ]
     },
     {
@@ -62,13 +62,13 @@
       "score": 88.23984220543282,
       "connects_a": [
         "tomato paste",
-        "cloves",
-        "parsley"
+        "carrot",
+        "wine"
       ],
       "connects_b": [
-        "cloves",
-        "parsley",
-        "oregano"
+        "carrot",
+        "freshly",
+        "wine"
       ]
     },
     {
@@ -76,13 +76,13 @@
       "score": 88.11353750401068,
       "connects_a": [
         "tomato paste",
-        "parsley",
-        "carrot"
+        "carrot",
+        "wine"
       ],
       "connects_b": [
-        "more",
-        "pepper flakes",
-        "parsley"
+        "mozzarella cheese",
+        "carrot",
+        "freshly"
       ]
     },
     {
@@ -90,41 +90,41 @@
       "score": 72.09948049589478,
       "connects_a": [
         "tomato paste",
-        "thyme",
-        "parsley"
+        "carrot",
+        "worcestershire sauce"
       ],
       "connects_b": [
-        "parsley",
-        "pepper flakes",
-        "oregano"
+        "carrot",
+        "wine",
+        "kosher sea salt"
       ]
     },
     {
       "name": "celery ribs",
       "score": 72.05508925641611,
       "connects_a": [
-        "chicken broth",
         "tomato paste",
-        "thyme"
+        "carrot",
+        "worcestershire sauce"
       ],
       "connects_b": [
-        "onion",
-        "parsley",
-        "carrot"
+        "carrot",
+        "tomatoes",
+        "wine"
       ]
     },
     {
       "name": "bay leaf",
       "score": 66.59397016751777,
       "connects_a": [
-        "chicken broth",
         "tomato paste",
-        "thyme"
+        "carrot",
+        "beef broth"
       ],
       "connects_b": [
-        "onion",
-        "parsley",
-        "oregano"
+        "carrot",
+        "tomatoes",
+        "wine"
       ]
     },
     {
@@ -132,19 +132,19 @@
       "score": 66.12942549259438,
       "connects_a": [
         "tomato paste",
-        "cloves",
-        "parsley"
+        "wine",
+        "olive oil"
       ],
       "connects_b": [
-        "cloves",
-        "pepper flakes",
-        "parsley"
+        "basil",
+        "seasoning",
+        "freshly"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "bouquet garni",
+      "name": "garam masala",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -154,7 +154,7 @@
       "strength": 1
     },
     {
-      "name": "garam masala",
+      "name": "bouquet garni",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -164,12 +164,12 @@
       "strength": 1
     },
     {
-      "name": "bouquet garni",
+      "name": "beansprouts",
       "pairs_with": "carrot",
       "strength": 1
     },
     {
-      "name": "beansprouts",
+      "name": "bouquet garni",
       "pairs_with": "carrot",
       "strength": 1
     },
@@ -179,69 +179,69 @@
       "strength": 1
     },
     {
-      "name": "tahini",
-      "pairs_with": "parsley",
-      "strength": 1
-    },
-    {
       "name": "bouquet garni",
       "pairs_with": "parsley",
       "strength": 1
     },
     {
       "name": "tahini",
+      "pairs_with": "parsley",
+      "strength": 1
+    },
+    {
+      "name": "garam masala",
       "pairs_with": "garlic",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "ricotta salata",
+      "name": "pass",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "head fennel",
+      "name": "sherry vinegar",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "radicchio",
+      "name": "san marzano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "mussels",
+      "name": "anchovy paste",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pizza",
+      "name": "baby arugula",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "chipotle puree",
+      "name": "linguini",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "marzano",
+      "name": "squid",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "morel mushrooms",
+      "name": "chianti",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pecorino",
+      "name": "romano cheese",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "prosciutto",
+      "name": "some",
       "pairs_with": "olive oil",
       "strength": 1
     }

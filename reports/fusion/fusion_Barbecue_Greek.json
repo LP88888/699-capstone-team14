@@ -5,41 +5,41 @@
       "name": "garam masala",
       "score": 99.55963796526933,
       "connects_a": [
-        "onion",
-        "ginger",
-        "cumin"
+        "tomatoes",
+        "cumin",
+        "onion"
       ],
       "connects_b": [
-        "spinach",
-        "onion",
-        "greek yogurt"
+        "greek yogurt",
+        "tomatoes",
+        "yogurt"
       ]
     },
     {
       "name": "oregano",
       "score": 96.53777499178102,
       "connects_a": [
-        "pepper flakes",
-        "bell pepper",
+        "onion powder",
+        "tomatoes",
         "cumin"
       ],
       "connects_b": [
-        "cheese crumbles",
-        "kalamata olives",
-        "kalamata"
+        "feta cheese",
+        "wine vinegar",
+        "kalamata olives"
       ]
     },
     {
       "name": "capers",
       "score": 70.13647752160337,
       "connects_a": [
-        "mayonnaise",
-        "pepper flakes",
-        "oregano"
+        "rosemary",
+        "tomatoes",
+        "olive oil"
       ],
       "connects_b": [
-        "parsley",
-        "oregano",
+        "wine vinegar",
+        "lemon",
         "kalamata olives"
       ]
     },
@@ -47,41 +47,41 @@
       "name": "romaine",
       "score": 70.04784179795661,
       "connects_a": [
-        "mayonnaise",
+        "ketchup",
         "balsamic vinegar",
-        "oregano"
+        "worcestershire sauce"
       ],
       "connects_b": [
-        "cheese crumbles",
-        "kalamata olives",
-        "oregano"
+        "feta cheese",
+        "wine vinegar",
+        "lemon"
       ]
     },
     {
       "name": "tomato paste",
       "score": 60.387166593818115,
       "connects_a": [
-        "cloves",
-        "onion",
-        "oregano"
+        "worcestershire sauce",
+        "tomatoes",
+        "cumin"
       ],
       "connects_b": [
-        "cloves",
+        "tomatoes",
         "onion",
-        "parsley"
+        "oregano"
       ]
     },
     {
       "name": "celery",
       "score": 60.14893456099712,
       "connects_a": [
-        "onion",
-        "oregano",
-        "bell pepper"
+        "onion powder",
+        "worcestershire sauce",
+        "tomatoes"
       ],
       "connects_b": [
+        "tomatoes",
         "onion",
-        "parsley",
         "oregano"
       ]
     },
@@ -90,12 +90,12 @@
       "score": 60.09078155564856,
       "connects_a": [
         "balsamic vinegar",
-        "oregano",
-        "bell pepper"
+        "rosemary",
+        "tomatoes"
       ],
       "connects_b": [
-        "oregano",
-        "kalamata",
+        "feta cheese",
+        "wine vinegar",
         "kalamata olives"
       ]
     },
@@ -103,42 +103,42 @@
       "name": "andouille sausage",
       "score": 60.07941696487925,
       "connects_a": [
-        "onion",
-        "oregano",
-        "bell pepper"
+        "onion powder",
+        "worcestershire sauce",
+        "tomatoes"
       ],
       "connects_b": [
+        "tomatoes",
         "onion",
-        "oregano",
-        "bell pepper"
+        "oregano"
       ]
     },
     {
       "name": "feta cheese",
       "score": 60.012704447242896,
       "connects_a": [
-        "seasoning",
         "lemon juice",
-        "tomatoes"
+        "tomatoes",
+        "seasoning"
       ],
       "connects_b": [
-        "spinach",
-        "parsley",
-        "oregano"
+        "wine vinegar",
+        "lemon",
+        "kalamata olives"
       ]
     },
     {
       "name": "cucumber",
       "score": 56.08423141770763,
       "connects_a": [
-        "lime",
         "lemon juice",
-        "tomatoes"
+        "tomatoes",
+        "lime"
       ],
       "connects_b": [
-        "cheese crumbles",
-        "oregano",
-        "kalamata"
+        "feta cheese",
+        "wine vinegar",
+        "kalamata olives"
       ]
     }
   ],
@@ -159,7 +159,7 @@
       "strength": 1
     },
     {
-      "name": "chicken base",
+      "name": "sandwich rolls",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -174,12 +174,12 @@
       "strength": 1
     },
     {
-      "name": "ginger paste",
+      "name": "chicken base",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "sandwich rolls",
+      "name": "ginger paste",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -189,49 +189,44 @@
       "strength": 1
     },
     {
-      "name": "sausages",
+      "name": "thigh",
       "pairs_with": "bell pepper",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "crusty bread",
+      "name": "for drizzling",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "finely oregano",
+      "name": "handful pine nuts",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "artichokes",
+      "name": "cubanelle peppers",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pasta",
+      "name": "marzano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "romano cheese",
+      "name": "romano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "some",
+      "name": "heads garlic",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "parmigiano",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "sherry vinegar",
+      "name": "linguine",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -241,7 +236,12 @@
       "strength": 1
     },
     {
-      "name": "couscous",
+      "name": "palm",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "petite",
       "pairs_with": "olive oil",
       "strength": 1
     }

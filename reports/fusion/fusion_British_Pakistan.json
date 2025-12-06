@@ -7,12 +7,12 @@
       "connects_a": [
         "tomato paste",
         "onion",
-        "cayenne pepper"
+        "vegetable oil"
       ],
       "connects_b": [
-        "cardamom",
+        "coriander",
         "basmati rice",
-        "yogurt"
+        "tomatoes"
       ]
     },
     {
@@ -20,13 +20,13 @@
       "score": 90.25476534447176,
       "connects_a": [
         "onion",
-        "cayenne pepper",
-        "garlic"
+        "garlic",
+        "potatoes"
       ],
       "connects_b": [
         "mustard seeds",
-        "cumin seeds",
-        "onion"
+        "coriander",
+        "garam masala"
       ]
     },
     {
@@ -34,41 +34,41 @@
       "score": 63.566971523539685,
       "connects_a": [
         "tomato paste",
-        "onion",
-        "parsley"
+        "carrot",
+        "wine"
       ],
       "connects_b": [
-        "onion",
-        "cardamom",
-        "turmeric"
+        "cinnamon sticks",
+        "garam masala",
+        "basmati rice"
       ]
     },
     {
       "name": "tomato paste",
       "score": 63.406524923509025,
       "connects_a": [
-        "cloves",
-        "onion",
-        "parsley"
+        "carrot",
+        "worcestershire sauce",
+        "wine"
       ],
       "connects_b": [
-        "cloves",
-        "onion",
-        "turmeric"
+        "garam masala",
+        "tomatoes",
+        "cumin"
       ]
     },
     {
       "name": "turmeric",
       "score": 60.116309471119145,
       "connects_a": [
-        "tomato paste",
         "peas",
+        "tomato paste",
         "vegetable oil"
       ],
       "connects_b": [
-        "cardamom",
-        "basmati rice",
-        "yogurt"
+        "coriander",
+        "garam masala",
+        "basmati rice"
       ]
     },
     {
@@ -80,46 +80,46 @@
         "vegetable oil"
       ],
       "connects_b": [
-        "yogurt",
-        "chilies",
-        "cilantro"
+        "coriander",
+        "garam masala",
+        "tomatoes"
       ]
     },
     {
       "name": "allspice",
       "score": 55.24504729138824,
       "connects_a": [
-        "cloves",
-        "cayenne pepper",
-        "nutmeg"
+        "nutmeg",
+        "kosher sea salt",
+        "cloves"
       ],
       "connects_b": [
-        "cloves",
-        "cardamom",
-        "coriander"
+        "cinnamon sticks",
+        "coriander",
+        "mustard seeds"
       ]
     },
     {
       "name": "coriander powder",
       "score": 48.093729141204676,
       "connects_a": [
-        "onion",
         "garlic",
-        "leaves"
+        "leaves",
+        "onion"
       ],
       "connects_b": [
-        "cumin seeds",
+        "garam masala",
         "tumeric",
-        "onion"
+        "tomatoes"
       ]
     },
     {
       "name": "confectioners",
       "score": 44.22949909182758,
       "connects_a": [
-        "cream",
-        "more",
-        "1"
+        "purpose flour",
+        "butter",
+        "nutmeg"
       ],
       "connects_b": [
         "cream",
@@ -135,50 +135,15 @@
         "potatoes"
       ],
       "connects_b": [
-        "cardamom",
-        "basmati rice",
-        "yogurt"
+        "coriander",
+        "garam masala",
+        "basmati rice"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "crusty bread",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "head fennel",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "capers",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "canned tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "for drizzling",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cremini",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "arugula leaves",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "turn",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -188,12 +153,52 @@
       "strength": 1
     },
     {
+      "name": "canned tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "prosciutto",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "turn",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "arugula leaves",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "spun",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "head fennel",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "crusty bread",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cremini",
       "pairs_with": "olive oil",
       "strength": 1
     }
   ],
   "novel_from_b": [
+    {
+      "name": "petite",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
     {
       "name": "couscous",
       "pairs_with": "olive oil",
@@ -206,16 +211,6 @@
     },
     {
       "name": "petite",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cardamom pods",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "pork shoulder",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -240,7 +235,12 @@
       "strength": 1
     },
     {
-      "name": "petite",
+      "name": "cardamom pods",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "pork shoulder",
       "pairs_with": "cloves",
       "strength": 1
     }

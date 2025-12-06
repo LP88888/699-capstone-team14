@@ -5,40 +5,40 @@
       "name": "cayenne pepper",
       "score": 24.1568971200659,
       "connects_a": [
-        "chili powder",
-        "mustard"
+        "mustard",
+        "chili powder"
       ],
       "connects_b": [
-        "thyme",
-        "mayonnaise",
-        "celery"
+        "onion powder",
+        "worcestershire sauce",
+        "oregano"
       ]
     },
     {
       "name": "garam masala",
       "score": 24.135669809762263,
       "connects_a": [
-        "chili powder",
         "peas",
-        "potatoes"
+        "potatoes",
+        "oil"
       ],
       "connects_b": [
+        "tomatoes",
         "onion",
-        "cayenne pepper",
-        "garlic"
+        "vegetable oil"
       ]
     },
     {
       "name": "onion powder",
       "score": 24.084688841906846,
       "connects_a": [
-        "chili powder",
-        "mustard"
+        "mustard",
+        "chili powder"
       ],
       "connects_b": [
-        "thyme",
-        "mayonnaise",
-        "celery"
+        "worcestershire sauce",
+        "kosher sea salt",
+        "oregano"
       ]
     },
     {
@@ -46,12 +46,12 @@
       "score": 20.23276258071482,
       "connects_a": [
         "leaf",
-        "jeera coriander",
-        "methi"
+        "oil",
+        "jeera coriander"
       ],
       "connects_b": [
-        "worcestershire sauce",
         "paprika",
+        "onion powder",
         "cayenne pepper"
       ]
     },
@@ -59,66 +59,66 @@
       "name": "worcestershire sauce",
       "score": 20.14224334530205,
       "connects_a": [
-        "chili powder",
-        "mustard"
+        "mustard",
+        "chili powder"
       ],
       "connects_b": [
-        "thyme",
-        "mayonnaise",
-        "celery"
+        "onion powder",
+        "celery",
+        "stalks celery"
       ]
     },
     {
       "name": "paprika",
       "score": 18.171612689291866,
       "connects_a": [
-        "chili powder",
-        "mustard"
+        "mustard",
+        "chili powder"
       ],
       "connects_b": [
-        "thyme",
-        "celery",
-        "oregano"
+        "cajun spice",
+        "onion powder",
+        "worcestershire sauce"
       ]
     },
     {
       "name": "tumeric",
       "score": 16.04529161679498,
       "connects_a": [
-        "chili powder",
         "peas",
-        "potatoes"
+        "potatoes",
+        "oil"
       ],
       "connects_b": [
-        "onion",
-        "cayenne pepper",
-        "garlic"
+        "garlic",
+        "tomatoes",
+        "cayenne pepper"
       ]
     },
     {
       "name": "ketchup",
       "score": 14.054552306247661,
       "connects_a": [
-        "chili powder",
-        "mustard"
+        "mustard",
+        "chili powder"
       ],
       "connects_b": [
-        "mayonnaise",
-        "such as",
-        "hot sauce"
+        "onion powder",
+        "worcestershire sauce",
+        "such as"
       ]
     },
     {
       "name": "beef stock",
       "score": 14.051542259600836,
       "connects_a": [
-        "flour",
-        "potatoes"
+        "potatoes",
+        "flour"
       ],
       "connects_b": [
-        "thyme",
-        "celery",
-        "flour"
+        "onion powder",
+        "worcestershire sauce",
+        "onion"
       ]
     },
     {
@@ -129,9 +129,9 @@
         "potatoes"
       ],
       "connects_b": [
-        "thyme",
-        "parsley",
-        "paprika"
+        "tomatoes",
+        "rice",
+        "shrimp"
       ]
     }
   ],
@@ -157,22 +157,17 @@
       "strength": 1
     },
     {
-      "name": "palm",
-      "pairs_with": "bell pepper",
-      "strength": 1
-    },
-    {
       "name": "bell",
       "pairs_with": "bell pepper",
       "strength": 1
     },
     {
-      "name": "wheat",
-      "pairs_with": "flour",
+      "name": "palm",
+      "pairs_with": "bell pepper",
       "strength": 1
     },
     {
-      "name": "sugar whole",
+      "name": "maida sooji",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -185,22 +180,22 @@
       "name": "finger",
       "pairs_with": "flour",
       "strength": 1
+    },
+    {
+      "name": "wheat",
+      "pairs_with": "flour",
+      "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "french",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
       "name": "black",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
       "name": "french",
-      "pairs_with": "powder",
+      "pairs_with": "dhania",
       "strength": 1
     },
     {
@@ -209,12 +204,27 @@
       "strength": 1
     },
     {
-      "name": "beef stock",
+      "name": "french",
+      "pairs_with": "powder",
+      "strength": 1
+    },
+    {
+      "name": "yeast",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "pinch cayenne",
+      "name": "cornmeal",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "ice water",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "beef stock",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -224,17 +234,7 @@
       "strength": 1
     },
     {
-      "name": "f",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "buttermilk",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "crabs",
+      "name": "egg wash",
       "pairs_with": "flour",
       "strength": 1
     }

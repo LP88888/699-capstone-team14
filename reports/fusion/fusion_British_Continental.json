@@ -5,14 +5,14 @@
       "name": "tomato paste",
       "score": 36.23229995629087,
       "connects_a": [
-        "cloves",
-        "onion",
-        "parsley"
+        "carrot",
+        "worcestershire sauce",
+        "wine"
       ],
       "connects_b": [
+        "bell pepper",
         "thyme",
-        "onion",
-        "bell pepper"
+        "onion"
       ]
     },
     {
@@ -20,12 +20,12 @@
       "score": 36.13253723897358,
       "connects_a": [
         "tomato paste",
-        "flour",
-        "onion"
+        "carrot",
+        "worcestershire sauce"
       ],
       "connects_b": [
+        "potatoes",
         "thyme",
-        "flour",
         "onion"
       ]
     },
@@ -34,12 +34,12 @@
       "score": 30.041450206622823,
       "connects_a": [
         "tomato paste",
-        "parsley",
-        "2"
+        "carrot",
+        "worcestershire sauce"
       ],
       "connects_b": [
-        "thyme",
         "bell pepper",
+        "thyme",
         "oregano"
       ]
     },
@@ -48,13 +48,13 @@
       "score": 28.251987343795417,
       "connects_a": [
         "tomato paste",
-        "onion",
-        "parsley"
+        "carrot",
+        "wine"
       ],
       "connects_b": [
+        "beans",
         "thyme",
-        "onion",
-        "beans"
+        "onion"
       ]
     },
     {
@@ -62,13 +62,13 @@
       "score": 28.06950279513199,
       "connects_a": [
         "tomato paste",
-        "onion",
-        "parsley"
+        "carrot",
+        "worcestershire sauce"
       ],
       "connects_b": [
+        "bell pepper",
         "thyme",
-        "onion",
-        "bell pepper"
+        "onion"
       ]
     },
     {
@@ -76,27 +76,27 @@
       "score": 28.062199645581448,
       "connects_a": [
         "tomato paste",
-        "cloves",
+        "carrot",
         "onion"
       ],
       "connects_b": [
         "olive oil",
-        "onion",
-        "leaves"
+        "leaves",
+        "onion"
       ]
     },
     {
       "name": "file powder",
       "score": 24.04874319183523,
       "connects_a": [
+        "purpose flour",
         "onion",
-        "cayenne pepper",
-        "garlic"
+        "vegetable oil"
       ],
       "connects_b": [
-        "thyme",
-        "onion",
-        "bell pepper"
+        "bell pepper",
+        "leaves",
+        "thyme"
       ]
     },
     {
@@ -104,13 +104,13 @@
       "score": 24.028040509690815,
       "connects_a": [
         "tomato paste",
-        "onion",
-        "carrot"
+        "carrot",
+        "worcestershire sauce"
       ],
       "connects_b": [
+        "potatoes",
         "thyme",
-        "onion",
-        "potatoes"
+        "onion"
       ]
     },
     {
@@ -118,45 +118,30 @@
       "score": 24.018363085472036,
       "connects_a": [
         "tomato paste",
-        "onion",
-        "parsley"
+        "carrot",
+        "worcestershire sauce"
       ],
       "connects_b": [
+        "bell pepper",
         "thyme",
-        "onion",
-        "bell pepper"
+        "onion"
       ]
     },
     {
       "name": "confectioners",
       "score": 22.11474954591379,
       "connects_a": [
-        "cream",
-        "more",
-        "1"
+        "purpose flour",
+        "butter",
+        "nutmeg"
       ],
       "connects_b": [
-        "cream",
-        "almonds"
+        "almonds",
+        "cream"
       ]
     }
   ],
   "novel_from_a": [
-    {
-      "name": "head fennel",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "capers",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "canned tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
     {
       "name": "plum tomatoes",
       "pairs_with": "olive oil",
@@ -168,7 +153,17 @@
       "strength": 1
     },
     {
-      "name": "cremini",
+      "name": "mussels",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "canned tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "prosciutto",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -178,39 +173,39 @@
       "strength": 1
     },
     {
-      "name": "mussels",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "spun",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "prosciutto",
+      "name": "head fennel",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cremini",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "capers",
       "pairs_with": "olive oil",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
+      "name": "handful pine nuts",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "pasta",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "arugula",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "reggiano",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "handful pine nuts",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -220,8 +215,8 @@
       "strength": 1
     },
     {
-      "name": "reggiano",
-      "pairs_with": "cloves",
+      "name": "arugula",
+      "pairs_with": "olive oil",
       "strength": 1
     },
     {
@@ -230,17 +225,22 @@
       "strength": 1
     },
     {
-      "name": "ricotta",
-      "pairs_with": "egg",
+      "name": "reggiano",
+      "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "cocoa",
+      "name": "margarine",
       "pairs_with": "egg",
       "strength": 1
     },
     {
       "name": "icing",
+      "pairs_with": "egg",
+      "strength": 1
+    },
+    {
+      "name": "ricotta",
       "pairs_with": "egg",
       "strength": 1
     }

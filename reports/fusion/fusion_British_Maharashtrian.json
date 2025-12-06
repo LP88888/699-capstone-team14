@@ -7,12 +7,12 @@
       "connects_a": [
         "tomato paste",
         "onion",
-        "cayenne pepper"
+        "vegetable oil"
       ],
       "connects_b": [
+        "oil",
         "turmeric",
-        "chili powder",
-        "oil"
+        "potatoes"
       ]
     },
     {
@@ -22,9 +22,9 @@
         "peas"
       ],
       "connects_b": [
-        "gram flour",
-        "powder",
-        "carom"
+        "fenugreek",
+        "mango",
+        "powder"
       ]
     },
     {
@@ -32,13 +32,13 @@
       "score": 20.056614520993726,
       "connects_a": [
         "onion",
-        "cayenne pepper",
-        "garlic"
+        "garlic",
+        "potatoes"
       ],
       "connects_b": [
-        "chili powder",
         "peas",
-        "potatoes"
+        "potatoes",
+        "oil"
       ]
     },
     {
@@ -50,8 +50,8 @@
       ],
       "connects_b": [
         "carom",
-        "chilli",
-        "turmeric"
+        "powder",
+        "oil"
       ]
     },
     {
@@ -59,12 +59,12 @@
       "score": 18.06626861948679,
       "connects_a": [
         "tomato paste",
-        "flour",
-        "onion"
+        "carrot",
+        "worcestershire sauce"
       ],
       "connects_b": [
-        "flour",
-        "potatoes"
+        "potatoes",
+        "flour"
       ]
     },
     {
@@ -76,9 +76,9 @@
         "vegetable oil"
       ],
       "connects_b": [
+        "oil",
         "turmeric",
-        "chili powder",
-        "oil"
+        "potatoes"
       ]
     },
     {
@@ -86,12 +86,12 @@
       "score": 16.03403919314919,
       "connects_a": [
         "tomato paste",
-        "cloves",
-        "grain sea salt"
+        "lemon",
+        "carrot"
       ],
       "connects_b": [
-        "leaves",
-        "potatoes"
+        "potatoes",
+        "leaves"
       ]
     },
     {
@@ -101,9 +101,9 @@
         "peas"
       ],
       "connects_b": [
+        "fenugreek",
         "carom",
-        "chilli",
-        "chillies coriander"
+        "mango"
       ]
     },
     {
@@ -111,12 +111,12 @@
       "score": 14.082402714536602,
       "connects_a": [
         "tomato paste",
-        "cloves",
-        "onion"
+        "worcestershire sauce",
+        "wine"
       ],
       "connects_b": [
-        "chili powder",
-        "("
+        "(",
+        "chili powder"
       ]
     },
     {
@@ -126,9 +126,9 @@
         "flour"
       ],
       "connects_b": [
+        "fenugreek",
         "carom",
-        "chilli",
-        "flour"
+        "mango"
       ]
     }
   ],
@@ -144,27 +144,17 @@
       "strength": 1
     },
     {
+      "name": "shortening",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "vanilla sugar",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
       "name": "chocolate chips",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "cold",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "buttermilk",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "cod",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "beef stock",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -174,12 +164,22 @@
       "strength": 1
     },
     {
-      "name": "soda",
+      "name": "cod",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "vanilla sugar",
+      "name": "buttermilk",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "self",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "beef stock",
       "pairs_with": "flour",
       "strength": 1
     }
@@ -196,12 +196,12 @@
       "strength": 1
     },
     {
-      "name": "pearl",
+      "name": "maida sooji",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "wheat",
+      "name": "pearl",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -211,12 +211,12 @@
       "strength": 1
     },
     {
-      "name": "flour all",
+      "name": "carom",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "carom",
+      "name": "flour all",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -226,12 +226,12 @@
       "strength": 1
     },
     {
-      "name": "demerara",
+      "name": "wheat",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "maida sooji",
+      "name": "demerara",
       "pairs_with": "flour",
       "strength": 1
     }

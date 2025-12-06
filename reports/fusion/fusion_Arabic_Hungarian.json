@@ -5,13 +5,13 @@
       "name": "garam masala",
       "score": 154.87054794597452,
       "connects_a": [
+        "chicken",
         "tomato paste",
-        "onion",
-        "cayenne"
+        "coriander"
       ],
       "connects_b": [
+        "chicken",
         "tomato paste",
-        "onion",
         "tomatoes"
       ]
     },
@@ -19,14 +19,14 @@
       "name": "tomato paste",
       "score": 112.72271097512716,
       "connects_a": [
-        "onion",
-        "parsley",
-        "cayenne"
+        "carrot",
+        "lamb",
+        "cumin"
       ],
       "connects_b": [
-        "thyme",
-        "cloves",
-        "chuck"
+        "carrot",
+        "worcestershire sauce",
+        "beef broth"
       ]
     },
     {
@@ -34,27 +34,27 @@
       "score": 98.24325978296196,
       "connects_a": [
         "tomato paste",
-        "onion",
-        "parsley"
+        "carrot",
+        "cayenne"
       ],
       "connects_b": [
-        "chicken broth",
         "tomato paste",
-        "thyme"
+        "carrot",
+        "worcestershire sauce"
       ]
     },
     {
       "name": "cumin",
       "score": 85.44333857692051,
       "connects_a": [
+        "chicken",
         "tomato paste",
-        "cayenne",
         "coriander"
       ],
       "connects_b": [
+        "chicken",
         "tomato paste",
-        "bell pepper",
-        "chicken"
+        "sodium chicken broth"
       ]
     },
     {
@@ -62,27 +62,27 @@
       "score": 77.6929651954374,
       "connects_a": [
         "tomato paste",
-        "onion",
-        "parsley"
+        "carrot",
+        "tomato"
       ],
       "connects_b": [
-        "chicken broth",
         "tomato paste",
-        "thyme"
+        "carrot",
+        "beef broth"
       ]
     },
     {
       "name": "turmeric",
       "score": 77.14926382126957,
       "connects_a": [
+        "chicken",
         "tomato paste",
-        "cayenne",
         "coriander"
       ],
       "connects_b": [
-        "tomato paste",
         "chicken",
-        "oil"
+        "tomato paste",
+        "tomatoes"
       ]
     },
     {
@@ -90,41 +90,41 @@
       "score": 72.26507447794717,
       "connects_a": [
         "tomato paste",
-        "flour",
+        "carrot",
         "onion"
       ],
       "connects_b": [
         "tomato paste",
-        "thyme",
-        "flour"
+        "carrot",
+        "worcestershire sauce"
       ]
     },
     {
       "name": "can tomatoes",
       "score": 65.38258403177709,
       "connects_a": [
+        "chicken",
         "tomato paste",
-        "onion",
-        "parsley"
+        "cumin"
       ],
       "connects_b": [
-        "chicken broth",
-        "cloves",
-        "tomato paste"
+        "chicken",
+        "tomato paste",
+        "worcestershire sauce"
       ]
     },
     {
       "name": "andouille sausage",
       "score": 65.08603504528585,
       "connects_a": [
+        "chicken",
         "tomato paste",
-        "onion",
-        "chicken"
+        "onion"
       ],
       "connects_b": [
-        "chicken broth",
+        "chicken",
         "tomato paste",
-        "thyme"
+        "worcestershire sauce"
       ]
     },
     {
@@ -132,13 +132,13 @@
       "score": 65.07594304707929,
       "connects_a": [
         "tomato paste",
-        "onion",
-        "bread"
+        "carrot",
+        "onion"
       ],
       "connects_b": [
         "tomato paste",
-        "thyme",
-        "onion"
+        "carrot",
+        "worcestershire sauce"
       ]
     }
   ],
@@ -169,17 +169,7 @@
       "strength": 1
     },
     {
-      "name": "lentil",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
       "name": "tomato puree",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "tumeric",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -189,14 +179,24 @@
       "strength": 1
     },
     {
-      "name": "pastry",
+      "name": "lentil",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "tumeric",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "applesauce",
       "pairs_with": "egg",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "pecans",
+      "name": "sticks",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -206,42 +206,42 @@
       "strength": 1
     },
     {
-      "name": "ice water",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "sticks",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
       "name": "filling",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "chicken base",
+      "name": "pecans",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "ice water",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "beef stock",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "chicken livers",
+      "name": "beef broth",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "stock",
+      "name": "beef chuck",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "capsicum",
+      "name": "navy beans",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "beef shoulder",
+      "name": "sodium beef broth",
       "pairs_with": "onion",
       "strength": 1
     }

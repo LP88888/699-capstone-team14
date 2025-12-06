@@ -13,6 +13,7 @@ import networkx as nx
 import numpy as np
 from pathlib import Path
 from pyvis.network import Network
+import shutil
 
 from ..ingrnorm.dedupe_map import load_jsonl_map, _DROP_TOKENS, _DROP_SUBSTRINGS
 
@@ -52,7 +53,7 @@ def _inject_focus_controls(html_text: str, fusions: list | None = None) -> str:
     layout_styles = """
     <style id="rp-layout">
       html, body { height:100vh; overflow:hidden; }
-      body { display:flex; align-items:flex-start; gap:0; margin:0; padding:0; }
+      body { display:flex; align-items:flex-start; gap:0; margin:0; padding:0; overflow:hidden; }
       .card { flex:1 1 auto; width:100% !important; height:100vh; margin:0; padding:0; border:0; box-shadow:none; background:transparent; }
       .card-body { width:100% !important; height:100vh; padding:0 !important; }
       #mynetwork { flex: 1 1 auto; min-width:0; height:100vh; }
@@ -163,7 +164,7 @@ def _inject_focus_controls(html_text: str, fusions: list | None = None) -> str:
         parentPositions = network.getPositions(Array.from(parentIds));
         try {
           network.fit({animation: false, padding: 40});
-          network.moveTo({scale: 1.7, offset: {x:0,y:0}, animation: {duration:500, easingFunction:"easeInOutQuad"}});
+          network.moveTo({scale: 1.3, offset: {x:0,y:0}, animation: {duration:500, easingFunction:"easeInOutQuad"}});
         } catch(e){}
       });
       function ensureParentPositions(){
@@ -938,6 +939,14 @@ def run(context: PipelineContext, *, force: bool = False) -> StageResult:
     import numpy as np # Ensure numpy is available for log1p
     fusion_dir = Path(recommender_cfg.get("output", {}).get("reports_dir", "reports/fusion"))
     plot_cuisine_network(df_top, cuisine_counts, html_path, min_shared=2, parent_map=parent_map, dedupe_map=dedupe_map, fusion_dir=fusion_dir)
+    # Also copy to public for static hosting
+    try:
+        public_dir = Path("public")
+        public_dir.mkdir(parents=True, exist_ok=True)
+        shutil.copy(html_path, public_dir / "cuisine_network.html")
+        shutil.copy(html_path, public_dir / "index.html")
+    except Exception as exc:
+        logger.warning("Failed to copy cuisine network to public: %s", exc)
     
     # [cite_start]B. Distribution Plot [cite: 307]
     dist_path = viz_dir / "cuisine_distribution.png"

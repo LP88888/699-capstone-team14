@@ -5,28 +5,28 @@
       "name": "can tomatoes",
       "score": 42.24720814360981,
       "connects_a": [
-        "onion",
         "bell pepper",
+        "onion",
         "oregano"
       ],
       "connects_b": [
-        "cloves",
-        "optional",
-        "pepper flakes"
+        "basil",
+        "mozzarella cheese",
+        "seasoning"
       ]
     },
     {
       "name": "tomato paste",
       "score": 40.25811106254541,
       "connects_a": [
+        "bell pepper",
         "thyme",
-        "onion",
-        "bell pepper"
+        "onion"
       ],
       "connects_b": [
-        "cloves",
-        "onion",
-        "parsley"
+        "basil",
+        "carrot",
+        "tomatoes"
       ]
     },
     {
@@ -34,97 +34,97 @@
       "score": 40.088856636544925,
       "connects_a": [
         "olive oil",
-        "onion",
-        "leaves"
+        "leaves",
+        "onion"
       ],
       "connects_b": [
-        "cloves",
-        "optional",
-        "pepper flakes"
+        "carrot",
+        "seasoning",
+        "onion"
       ]
     },
     {
       "name": "ribs celery",
       "score": 30.21863672382516,
       "connects_a": [
+        "bell pepper",
         "thyme",
-        "onion",
-        "bell pepper"
+        "onion"
       ],
       "connects_b": [
-        "cloves",
-        "optional",
-        "pepper flakes"
+        "carrot",
+        "wine",
+        "onion"
       ]
     },
     {
       "name": "sausage",
       "score": 30.043328824827974,
       "connects_a": [
-        "thyme",
         "bell pepper",
+        "thyme",
         "oregano"
       ],
       "connects_b": [
-        "pepper flakes",
-        "oregano",
-        "parmesan cheese"
+        "basil",
+        "mozzarella cheese",
+        "seasoning"
       ]
     },
     {
       "name": "celery",
       "score": 28.06950279513199,
       "connects_a": [
+        "bell pepper",
         "thyme",
-        "onion",
-        "bell pepper"
+        "onion"
       ],
       "connects_b": [
-        "onion",
-        "parsley",
-        "oregano"
+        "carrot",
+        "tomatoes",
+        "onion"
       ]
     },
     {
       "name": "bay leaf",
       "score": 24.215989151824644,
       "connects_a": [
+        "beans",
         "thyme",
-        "onion",
-        "beans"
+        "onion"
       ],
       "connects_b": [
-        "onion",
-        "parsley",
-        "oregano"
+        "carrot",
+        "tomatoes",
+        "wine"
       ]
     },
     {
       "name": "file powder",
       "score": 24.04874319183523,
       "connects_a": [
-        "thyme",
-        "onion",
-        "bell pepper"
+        "bell pepper",
+        "leaves",
+        "thyme"
       ],
       "connects_b": [
-        "onion",
+        "purpose flour",
         "tomatoes",
-        "bell pepper"
+        "onion"
       ]
     },
     {
       "name": "yellow onions",
       "score": 24.03316016529826,
       "connects_a": [
-        "thyme",
         "bell pepper",
+        "thyme",
         "oregano"
       ],
       "connects_b": [
-        "parsley",
-        "pepper flakes",
-        "oregano"
+        "carrot",
+        "wine",
+        "kosher sea salt"
       ]
     },
     {
@@ -135,9 +135,9 @@
         "oregano"
       ],
       "connects_b": [
-        "cloves",
-        "pepper flakes",
-        "parsley"
+        "basil",
+        "seasoning",
+        "freshly"
       ]
     }
   ],
@@ -168,12 +168,7 @@
       "strength": 1
     },
     {
-      "name": "salt coriander",
-      "pairs_with": "leaves",
-      "strength": 1
-    },
-    {
-      "name": "oil coriander",
+      "name": "pudina",
       "pairs_with": "leaves",
       "strength": 1
     },
@@ -188,24 +183,29 @@
       "strength": 1
     },
     {
-      "name": "pudina",
+      "name": "oil coriander",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
+      "name": "salt coriander",
       "pairs_with": "leaves",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "finely oregano",
+      "name": "chorizo",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "plum tomatoes",
+      "name": "for drizzling",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "artichokes",
+      "name": "cubanelle peppers",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -215,32 +215,32 @@
       "strength": 1
     },
     {
-      "name": "romano cheese",
+      "name": "marzano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "some",
+      "name": "pass",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pancetta",
+      "name": "[extra",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "parmigiano",
+      "name": "orecchiette",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "sherry vinegar",
+      "name": "morel mushrooms",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "crusty rolls",
+      "name": "center cut",
       "pairs_with": "olive oil",
       "strength": 1
     }

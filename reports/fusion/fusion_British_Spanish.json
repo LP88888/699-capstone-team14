@@ -6,27 +6,27 @@
       "score": 90.12435061986847,
       "connects_a": [
         "tomato paste",
-        "parsley",
-        "2"
+        "carrot",
+        "worcestershire sauce"
       ],
       "connects_b": [
-        "parsley",
-        "paprika",
-        "2"
+        "carrot",
+        "wine",
+        "kosher sea salt"
       ]
     },
     {
       "name": "tomato paste",
       "score": 81.52267490165445,
       "connects_a": [
-        "cloves",
-        "onion",
-        "parsley"
+        "carrot",
+        "worcestershire sauce",
+        "wine"
       ],
       "connects_b": [
-        "cloves",
-        "onion",
-        "parsley"
+        "carrot",
+        "tomatoes",
+        "cumin"
       ]
     },
     {
@@ -34,27 +34,27 @@
       "score": 70.17375698782998,
       "connects_a": [
         "tomato paste",
-        "onion",
-        "parsley"
+        "carrot",
+        "worcestershire sauce"
       ],
       "connects_b": [
-        "onion",
-        "parsley",
-        "paprika"
+        "carrot",
+        "tomatoes",
+        "onion"
       ]
     },
     {
       "name": "confectioners",
       "score": 66.34424863774137,
       "connects_a": [
-        "cream",
-        "more",
-        "1"
+        "purpose flour",
+        "butter",
+        "nutmeg"
       ],
       "connects_b": [
-        "1",
-        "more",
-        "egg"
+        "butter",
+        "orange",
+        "2"
       ]
     },
     {
@@ -62,13 +62,13 @@
       "score": 64.04896822792543,
       "connects_a": [
         "tomato paste",
-        "onion",
-        "parsley"
+        "carrot",
+        "worcestershire sauce"
       ],
       "connects_b": [
-        "onion",
-        "parsley",
-        "carrot"
+        "carrot",
+        "tomatoes",
+        "wine"
       ]
     },
     {
@@ -76,13 +76,13 @@
       "score": 63.566971523539685,
       "connects_a": [
         "tomato paste",
-        "onion",
-        "parsley"
+        "carrot",
+        "wine"
       ],
       "connects_b": [
-        "onion",
-        "parsley",
-        "paprika"
+        "carrot",
+        "tomatoes",
+        "chorizo"
       ]
     },
     {
@@ -90,27 +90,27 @@
       "score": 60.16352877643147,
       "connects_a": [
         "tomato paste",
-        "cloves",
-        "parsley"
+        "carrot",
+        "wine"
       ],
       "connects_b": [
-        "cloves",
-        "parsley",
-        "egg"
+        "carrot",
+        "wine",
+        "2"
       ]
     },
     {
       "name": "chorizo",
       "score": 60.1107346120163,
       "connects_a": [
-        "cloves",
-        "parsley",
-        "wine"
+        "wine",
+        "olive oil",
+        "cloves"
       ],
       "connects_b": [
-        "cloves",
-        "parsley",
-        "paprika"
+        "olives",
+        "tomatoes",
+        "wine"
       ]
     },
     {
@@ -118,13 +118,13 @@
       "score": 56.40812188447363,
       "connects_a": [
         "tomato paste",
-        "cloves",
-        "onion"
+        "carrot",
+        "worcestershire sauce"
       ],
       "connects_b": [
-        "cloves",
-        "onion",
-        "parsley"
+        "carrot",
+        "wine",
+        "onion"
       ]
     },
     {
@@ -132,13 +132,13 @@
       "score": 56.32961085814641,
       "connects_a": [
         "tomato paste",
-        "cloves",
-        "onion"
+        "worcestershire sauce",
+        "wine"
       ],
       "connects_b": [
-        "cloves",
-        "onion",
-        "parsley"
+        "coarsely",
+        "olives",
+        "cumin"
       ]
     }
   ],
@@ -149,7 +149,7 @@
       "strength": 1
     },
     {
-      "name": "cremini",
+      "name": "arugula leaves",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -159,8 +159,13 @@
       "strength": 1
     },
     {
-      "name": "arugula leaves",
+      "name": "cremini",
       "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "sodium",
+      "pairs_with": "cloves",
       "strength": 1
     },
     {
@@ -174,17 +179,12 @@
       "strength": 1
     },
     {
-      "name": "sodium",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
       "name": "chervil",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "pecans",
+      "name": "tomato concasse",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -196,12 +196,12 @@
   ],
   "novel_from_b": [
     {
-      "name": "finely oregano",
+      "name": "chorizo",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "artichokes",
+      "name": "handful pine nuts",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -211,37 +211,37 @@
       "strength": 1
     },
     {
-      "name": "romano cheese",
+      "name": "marzano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "some",
+      "name": "pass",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pancetta",
+      "name": "center cut",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "parmigiano",
+      "name": "romano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "sherry vinegar",
+      "name": "heads garlic",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "crusty rolls",
+      "name": "palm",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "cannellini",
+      "name": "cans chickpeas",
       "pairs_with": "olive oil",
       "strength": 1
     }

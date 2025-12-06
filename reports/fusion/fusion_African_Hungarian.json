@@ -5,13 +5,13 @@
       "name": "garam masala",
       "score": 154.87054794597452,
       "connects_a": [
+        "chicken",
         "tomato paste",
-        "cumin seeds",
-        "onion"
+        "coriander"
       ],
       "connects_b": [
+        "chicken",
         "tomato paste",
-        "onion",
         "tomatoes"
       ]
     },
@@ -19,14 +19,14 @@
       "name": "tomato paste",
       "score": 144.9291998251635,
       "connects_a": [
-        "cloves",
-        "onion",
-        "parsley"
+        "carrot",
+        "tomatoes",
+        "cumin"
       ],
       "connects_b": [
-        "thyme",
-        "cloves",
-        "chuck"
+        "carrot",
+        "worcestershire sauce",
+        "beef broth"
       ]
     },
     {
@@ -34,13 +34,13 @@
       "score": 112.27801118052795,
       "connects_a": [
         "tomato paste",
-        "onion",
-        "parsley"
+        "carrot",
+        "tomatoes"
       ],
       "connects_b": [
-        "chicken broth",
         "tomato paste",
-        "thyme"
+        "carrot",
+        "worcestershire sauce"
       ]
     },
     {
@@ -48,69 +48,69 @@
       "score": 110.98995027919628,
       "connects_a": [
         "tomato paste",
-        "onion",
-        "parsley"
+        "carrot",
+        "coriander seeds"
       ],
       "connects_b": [
-        "chicken broth",
         "tomato paste",
-        "thyme"
+        "carrot",
+        "beef broth"
       ]
     },
     {
       "name": "ribs celery",
       "score": 108.78709220577058,
       "connects_a": [
+        "chicken",
         "tomato paste",
-        "cloves",
-        "onion"
+        "carrot"
       ],
       "connects_b": [
-        "chicken broth",
-        "cloves",
-        "tomato paste"
+        "chicken",
+        "tomato paste",
+        "carrot"
       ]
     },
     {
       "name": "can tomatoes",
       "score": 104.61213445084334,
       "connects_a": [
+        "chicken",
         "tomato paste",
-        "cloves",
-        "onion"
+        "coarsely"
       ],
       "connects_b": [
-        "chicken broth",
-        "cloves",
-        "tomato paste"
+        "chicken",
+        "tomato paste",
+        "worcestershire sauce"
       ]
     },
     {
       "name": "andouille sausage",
       "score": 91.12044906340019,
       "connects_a": [
+        "chicken",
         "tomato paste",
-        "onion",
-        "paprika"
+        "tomatoes"
       ],
       "connects_b": [
-        "chicken broth",
+        "chicken",
         "tomato paste",
-        "thyme"
+        "worcestershire sauce"
       ]
     },
     {
       "name": "turmeric",
       "score": 84.16283325956681,
       "connects_a": [
+        "chicken",
         "tomato paste",
-        "cilantro leaves",
-        "cumin seeds"
+        "coriander"
       ],
       "connects_b": [
-        "tomato paste",
         "chicken",
-        "oil"
+        "tomato paste",
+        "tomatoes"
       ]
     },
     {
@@ -118,13 +118,13 @@
       "score": 80.22225147666374,
       "connects_a": [
         "tomato paste",
-        "cilantro leaves",
-        "turmeric"
+        "coriander",
+        "carrot"
       ],
       "connects_b": [
-        "chicken broth",
         "tomato paste",
-        "bell pepper"
+        "carrot",
+        "sodium chicken broth"
       ]
     },
     {
@@ -132,34 +132,24 @@
       "score": 77.80280496579158,
       "connects_a": [
         "tomato paste",
-        "onion",
-        "parsley"
+        "carrot",
+        "coarsely"
       ],
       "connects_b": [
-        "chicken broth",
         "tomato paste",
-        "thyme"
+        "carrot",
+        "worcestershire sauce"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "palm",
+      "name": "chorizo",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "handful pine nuts",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "brussels sprouts",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "kalamata olives",
+      "name": "couscous",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -169,17 +159,7 @@
       "strength": 1
     },
     {
-      "name": "montreal steak",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "canned tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "olives",
+      "name": "eggplants",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -189,19 +169,39 @@
       "strength": 1
     },
     {
-      "name": "chorizo",
+      "name": "handful pine nuts",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "mussels",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "canned tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "beefsteak tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "brussels sprouts",
       "pairs_with": "olive oil",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "pasta",
+      "name": "anchovy fillets",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "anchovy fillets",
+      "name": "[extra",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -211,7 +211,7 @@
       "strength": 1
     },
     {
-      "name": "[extra",
+      "name": "pasta",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -226,22 +226,22 @@
       "strength": 1
     },
     {
+      "name": "sirloin",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "beef chuck",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
       "name": "chile",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "pork shoulder",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
       "name": "piquillo peppers",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "sirloin",
       "pairs_with": "cloves",
       "strength": 1
     }

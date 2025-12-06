@@ -6,55 +6,55 @@
       "score": 112.27801118052795,
       "connects_a": [
         "tomato paste",
-        "onion",
-        "parsley"
+        "carrot",
+        "cayenne"
       ],
       "connects_b": [
-        "thyme",
-        "onion",
-        "parsley"
+        "onion powder",
+        "worcestershire sauce",
+        "tomatoes"
       ]
     },
     {
       "name": "andouille sausage",
       "score": 85.11250736691227,
       "connects_a": [
+        "chicken",
         "tomato paste",
-        "onion",
-        "chicken"
+        "onion"
       ],
       "connects_b": [
-        "thyme",
-        "celery",
-        "onion"
+        "onion powder",
+        "worcestershire sauce",
+        "tomatoes"
       ]
     },
     {
       "name": "tomato paste",
       "score": 84.54203323134537,
       "connects_a": [
-        "onion",
-        "parsley",
-        "cayenne"
+        "carrot",
+        "lamb",
+        "cumin"
       ],
       "connects_b": [
-        "thyme",
-        "cloves",
-        "celery"
+        "worcestershire sauce",
+        "tomatoes",
+        "onion"
       ]
     },
     {
       "name": "garam masala",
       "score": 84.47484433416793,
       "connects_a": [
+        "chicken",
         "tomato paste",
-        "onion",
-        "cayenne"
+        "coriander"
       ],
       "connects_b": [
+        "tomatoes",
         "onion",
-        "cayenne pepper",
-        "garlic"
+        "vegetable oil"
       ]
     },
     {
@@ -62,27 +62,27 @@
       "score": 78.10777053721934,
       "connects_a": [
         "tomato paste",
-        "parsley",
+        "carrot",
         "cayenne"
       ],
       "connects_b": [
-        "kosher sea salt",
-        "thyme",
-        "celery"
+        "onion powder",
+        "worcestershire sauce",
+        "kosher sea salt"
       ]
     },
     {
       "name": "cumin",
       "score": 73.23714735164614,
       "connects_a": [
+        "chicken",
         "tomato paste",
-        "cayenne",
         "coriander"
       ],
       "connects_b": [
-        "oregano",
-        "bell pepper",
-        "cayenne pepper"
+        "onion powder",
+        "tomatoes",
+        "oregano"
       ]
     },
     {
@@ -90,13 +90,13 @@
       "score": 64.17780118133099,
       "connects_a": [
         "tomato paste",
-        "cayenne",
-        "coriander"
+        "coriander",
+        "carrot"
       ],
       "connects_b": [
+        "scallions",
         "celery",
-        "such as",
-        "paprika"
+        "vegetable oil"
       ]
     },
     {
@@ -104,13 +104,13 @@
       "score": 64.03456851156704,
       "connects_a": [
         "paprika",
-        "parsley",
-        "garlic"
+        "garlic",
+        "parsley"
       ],
       "connects_b": [
-        "thyme",
-        "mayonnaise",
-        "celery"
+        "onion powder",
+        "worcestershire sauce",
+        "tomatoes"
       ]
     },
     {
@@ -118,13 +118,13 @@
       "score": 63.566971523539685,
       "connects_a": [
         "tomato paste",
-        "onion",
-        "parsley"
+        "carrot",
+        "tomato"
       ],
       "connects_b": [
-        "thyme",
-        "celery",
-        "onion"
+        "tomatoes",
+        "onion",
+        "oregano"
       ]
     },
     {
@@ -132,12 +132,12 @@
       "score": 56.31370207853893,
       "connects_a": [
         "tomato paste",
-        "cayenne",
-        "mint"
+        "lamb",
+        "cumin"
       ],
       "connects_b": [
-        "thyme",
-        "celery",
+        "onion powder",
+        "tomatoes",
         "2"
       ]
     }
@@ -159,17 +159,12 @@
       "strength": 1
     },
     {
-      "name": "lentil",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
       "name": "tomato puree",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "tumeric",
+      "name": "lentil",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -179,7 +174,17 @@
       "strength": 1
     },
     {
+      "name": "tumeric",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
       "name": "shortening",
+      "pairs_with": "egg",
+      "strength": 1
+    },
+    {
+      "name": "applesauce",
       "pairs_with": "egg",
       "strength": 1
     },
@@ -187,29 +192,9 @@
       "name": "puff",
       "pairs_with": "egg",
       "strength": 1
-    },
-    {
-      "name": "pie crust",
-      "pairs_with": "egg",
-      "strength": 1
     }
   ],
   "novel_from_b": [
-    {
-      "name": "and half",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "pecans",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "yellow cornmeal",
-      "pairs_with": "butter",
-      "strength": 1
-    },
     {
       "name": "cooking grits",
       "pairs_with": "butter",
@@ -221,27 +206,42 @@
       "strength": 1
     },
     {
-      "name": "corn syrup",
+      "name": "ice water",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "gruyere cheese",
+      "name": "popcorn",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "heavy cream",
+      "name": "country ham",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "grits",
+      "name": "sticks",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "creme",
+      "name": "lobster stock",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "pecans",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "at",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "stone",
       "pairs_with": "butter",
       "strength": 1
     }

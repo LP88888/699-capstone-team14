@@ -5,28 +5,28 @@
       "name": "palm",
       "score": 99.38094452682073,
       "connects_a": [
-        "cloves",
-        "onion",
-        "parsley"
+        "coriander",
+        "lemon",
+        "scallions"
       ],
       "connects_b": [
-        "cloves",
-        "onion",
-        "parsley"
+        "lemon",
+        "cumin",
+        "onion"
       ]
     },
     {
       "name": "garam masala",
       "score": 98.55398505652924,
       "connects_a": [
+        "chicken",
         "tomato paste",
-        "cumin seeds",
-        "onion"
+        "coriander"
       ],
       "connects_b": [
-        "onion",
-        "paprika",
-        "cumin"
+        "tomatoes",
+        "cumin",
+        "onion"
       ]
     },
     {
@@ -34,55 +34,55 @@
       "score": 90.80995931934241,
       "connects_a": [
         "tomato paste",
-        "onion",
-        "parsley"
+        "carrot",
+        "coriander seeds"
       ],
       "connects_b": [
-        "onion",
-        "parsley",
-        "paprika"
+        "carrot",
+        "tomatoes",
+        "chorizo"
       ]
     },
     {
       "name": "chiles",
       "score": 84.40090363234556,
       "connects_a": [
-        "cloves",
-        "cumin seeds",
-        "cilantro leaves"
+        "coriander",
+        "coarsely",
+        "coriander seeds"
       ],
       "connects_b": [
-        "cloves",
+        "coarsely",
         "taste",
-        "2"
+        "cumin"
       ]
     },
     {
       "name": "chorizo",
       "score": 84.15502845682282,
       "connects_a": [
-        "cloves",
-        "parsley",
-        "paprika"
+        "tomatoes",
+        "olive oil",
+        "bell pepper"
       ],
       "connects_b": [
-        "cloves",
-        "parsley",
-        "paprika"
+        "olives",
+        "tomatoes",
+        "wine"
       ]
     },
     {
       "name": "tomato paste",
       "score": 81.52267490165445,
       "connects_a": [
-        "cloves",
-        "onion",
-        "parsley"
+        "carrot",
+        "tomatoes",
+        "cumin"
       ],
       "connects_b": [
-        "cloves",
-        "onion",
-        "parsley"
+        "carrot",
+        "tomatoes",
+        "cumin"
       ]
     },
     {
@@ -90,27 +90,27 @@
       "score": 80.19857941466283,
       "connects_a": [
         "tomato paste",
-        "onion",
-        "parsley"
+        "carrot",
+        "tomatoes"
       ],
       "connects_b": [
-        "onion",
-        "parsley",
-        "paprika"
+        "carrot",
+        "tomatoes",
+        "onion"
       ]
     },
     {
       "name": "ribs celery",
       "score": 72.52472813718039,
       "connects_a": [
+        "chicken",
         "tomato paste",
-        "cloves",
-        "onion"
+        "carrot"
       ],
       "connects_b": [
-        "cloves",
-        "onion",
-        "parsley"
+        "carrot",
+        "wine",
+        "onion"
       ]
     },
     {
@@ -118,27 +118,27 @@
       "score": 72.09948049589478,
       "connects_a": [
         "tomato paste",
-        "parsley",
-        "paprika"
+        "carrot",
+        "kosher sea salt"
       ],
       "connects_b": [
-        "parsley",
-        "paprika",
-        "2"
+        "carrot",
+        "wine",
+        "kosher sea salt"
       ]
     },
     {
       "name": "can tomatoes",
       "score": 64.3766981235959,
       "connects_a": [
+        "chicken",
         "tomato paste",
-        "cloves",
-        "onion"
+        "coarsely"
       ],
       "connects_b": [
-        "cloves",
-        "onion",
-        "parsley"
+        "coarsely",
+        "olives",
+        "cumin"
       ]
     }
   ],
@@ -164,7 +164,22 @@
       "strength": 1
     },
     {
+      "name": "okra",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "scotch bonnet peppers",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
       "name": "lamb shoulder",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "lentils",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -177,31 +192,11 @@
       "name": "stewing",
       "pairs_with": "onion",
       "strength": 1
-    },
-    {
-      "name": "scotch bonnet peppers",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "okra",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "lentils",
-      "pairs_with": "onion",
-      "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "crusty bread",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "finely oregano",
+      "name": "for drizzling",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -211,22 +206,27 @@
       "strength": 1
     },
     {
-      "name": "romano cheese",
+      "name": "marzano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "some",
+      "name": "pass",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pancetta",
+      "name": "center cut",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "parmigiano",
+      "name": "romano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "heads garlic",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -236,12 +236,12 @@
       "strength": 1
     },
     {
-      "name": "crusty rolls",
+      "name": "san marzano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "cannellini",
+      "name": "anchovy fillets",
       "pairs_with": "olive oil",
       "strength": 1
     }

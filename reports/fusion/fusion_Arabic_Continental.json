@@ -5,41 +5,41 @@
       "name": "olive",
       "score": 45.209483225183185,
       "connects_a": [
-        "pepper bell",
-        "mint",
-        "salt pepper"
+        "salt pepper",
+        "lamb",
+        "tomato"
       ],
       "connects_b": [
-        "chilli",
+        "bell",
         "virgin",
-        "wheat"
+        "chilli"
       ]
     },
     {
       "name": "garam masala",
       "score": 42.23742216708396,
       "connects_a": [
+        "chicken",
         "tomato paste",
-        "onion",
-        "cayenne"
+        "coriander"
       ],
       "connects_b": [
-        "onion",
         "potatoes",
-        "oil"
+        "oil",
+        "onion"
       ]
     },
     {
       "name": "cumin",
       "score": 36.61857367582307,
       "connects_a": [
+        "chicken",
         "tomato paste",
-        "cayenne",
         "coriander"
       ],
       "connects_b": [
-        "beans",
         "bell pepper",
+        "beans",
         "oregano"
       ]
     },
@@ -51,9 +51,9 @@
         "olive"
       ],
       "connects_b": [
-        "oats",
-        "chilli",
-        "flour"
+        "finger",
+        "flour all",
+        "bell"
       ]
     },
     {
@@ -61,27 +61,27 @@
       "score": 28.251987343795417,
       "connects_a": [
         "tomato paste",
-        "onion",
-        "parsley"
+        "carrot",
+        "tomato"
       ],
       "connects_b": [
+        "beans",
         "thyme",
-        "onion",
-        "beans"
+        "onion"
       ]
     },
     {
       "name": "tomato paste",
       "score": 28.18067774378179,
       "connects_a": [
-        "onion",
-        "parsley",
-        "cayenne"
+        "carrot",
+        "lamb",
+        "cumin"
       ],
       "connects_b": [
+        "bell pepper",
         "thyme",
-        "onion",
-        "bell pepper"
+        "onion"
       ]
     },
     {
@@ -89,13 +89,13 @@
       "score": 28.06950279513199,
       "connects_a": [
         "tomato paste",
-        "onion",
-        "parsley"
+        "carrot",
+        "cayenne"
       ],
       "connects_b": [
+        "bell pepper",
         "thyme",
-        "onion",
-        "bell pepper"
+        "onion"
       ]
     },
     {
@@ -103,12 +103,12 @@
       "score": 24.08835815931572,
       "connects_a": [
         "tomato paste",
-        "flour",
+        "carrot",
         "onion"
       ],
       "connects_b": [
+        "potatoes",
         "thyme",
-        "flour",
         "onion"
       ]
     },
@@ -116,27 +116,27 @@
       "name": "yogurt",
       "score": 22.06101887377049,
       "connects_a": [
-        "cayenne",
+        "chicken",
         "coriander",
-        "olive"
+        "lamb"
       ],
       "connects_b": [
-        "olive",
-        "greek"
+        "greek",
+        "olive"
       ]
     },
     {
       "name": "cardamom",
       "score": 20.29931202144538,
       "connects_a": [
-        "cumin",
+        "yogurt",
         "coriander",
-        "yogurt"
+        "cumin"
       ],
       "connects_b": [
-        "chilli",
-        "seeds",
-        "oil"
+        "powder",
+        "oil",
+        "chilli"
       ]
     }
   ],
@@ -147,17 +147,7 @@
       "strength": 1
     },
     {
-      "name": "celery",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "lentil",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "tomato paste",
+      "name": "beef",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -167,17 +157,12 @@
       "strength": 1
     },
     {
-      "name": "bay leaf",
+      "name": "okra",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "beef",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "tumeric",
+      "name": "lentil",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -187,12 +172,32 @@
       "strength": 1
     },
     {
-      "name": "okra",
+      "name": "bay leaf",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "tumeric",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "tomato paste",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "celery",
       "pairs_with": "onion",
       "strength": 1
     }
   ],
   "novel_from_b": [
+    {
+      "name": "icing",
+      "pairs_with": "egg",
+      "strength": 1
+    },
     {
       "name": "ricotta",
       "pairs_with": "egg",
@@ -209,16 +214,6 @@
       "strength": 1
     },
     {
-      "name": "cocoa",
-      "pairs_with": "egg",
-      "strength": 1
-    },
-    {
-      "name": "icing",
-      "pairs_with": "egg",
-      "strength": 1
-    },
-    {
       "name": "soda",
       "pairs_with": "egg",
       "strength": 1
@@ -229,7 +224,12 @@
       "strength": 1
     },
     {
-      "name": "homemade",
+      "name": "cocoa",
+      "pairs_with": "egg",
+      "strength": 1
+    },
+    {
+      "name": "red wine",
       "pairs_with": "carrot",
       "strength": 1
     },
@@ -239,7 +239,7 @@
       "strength": 1
     },
     {
-      "name": "button mushrooms",
+      "name": "peppercorns",
       "pairs_with": "carrot",
       "strength": 1
     }

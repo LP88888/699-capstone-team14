@@ -5,13 +5,13 @@
       "name": "corn tortillas",
       "score": 204.7161363613743,
       "connects_a": [
-        "jalapeno",
-        "more",
-        "cilantro leaves"
+        "tomatoes",
+        "cumin",
+        "salsa"
       ],
       "connects_b": [
-        "more",
-        "cilantro leaves",
+        "chiles",
+        "limes",
         "onion"
       ]
     },
@@ -20,26 +20,26 @@
       "score": 185.80903923789862,
       "connects_a": [
         "jalapeno",
-        "cilantro leaves",
-        "lime"
+        "vegetable oil",
+        "cilantro"
       ],
       "connects_b": [
-        "bean sprouts",
-        "thai basil",
-        "cilantro"
+        "carrot",
+        "ginger",
+        "lime juice"
       ]
     },
     {
       "name": "cilantro",
       "score": 183.05517265743774,
       "connects_a": [
-        "jalapeno",
-        "corn",
-        "corn tortillas"
+        "beans",
+        "flour tortillas",
+        "corn"
       ],
       "connects_b": [
-        "fish sauce",
-        "bean sprouts",
+        "coconut milk",
+        "scallions",
         "chiles"
       ]
     },
@@ -47,109 +47,104 @@
       "name": "chiles",
       "score": 182.8686245367487,
       "connects_a": [
-        "cloves",
-        "cilantro leaves",
-        "corn tortillas"
+        "flour tortillas",
+        "chicken breasts",
+        "cumin"
       ],
       "connects_b": [
-        "fish sauce",
-        "cloves",
-        "cilantro leaves"
+        "coconut milk",
+        "peanut oil",
+        "limes"
       ]
     },
     {
       "name": "lime wedges",
       "score": 154.16789164273564,
       "connects_a": [
-        "jalapeno",
-        "cilantro leaves",
-        "corn tortillas"
+        "flour tortillas",
+        "cumin",
+        "jalapeno"
       ],
       "connects_b": [
-        "fish sauce",
-        "cilantro leaves",
-        "bean sprouts"
+        "coconut milk",
+        "peanut oil",
+        "scallions"
       ]
     },
     {
       "name": "chile",
       "score": 153.65968258855537,
       "connects_a": [
-        "cloves",
-        "cilantro leaves",
-        "corn tortillas"
+        "flour tortillas",
+        "cumin",
+        "vegetable oil"
       ],
       "connects_b": [
-        "fish sauce",
-        "cloves",
-        "bean sprouts"
+        "peanut oil",
+        "chiles",
+        "soy sauce"
       ]
     },
     {
       "name": "lime",
       "score": 150.39076621021448,
       "connects_a": [
-        "jalapeno",
-        "cilantro leaves",
-        "corn tortillas"
+        "flour tortillas",
+        "cumin",
+        "salsa"
       ],
       "connects_b": [
-        "fish sauce",
-        "cilantro leaves",
-        "bean sprouts"
+        "coconut milk",
+        "peanut oil",
+        "scallions"
       ]
     },
     {
       "name": "jalapeno peppers",
       "score": 140.1369505523127,
       "connects_a": [
-        "cilantro leaves",
-        "corn",
-        "corn tortillas"
+        "beans",
+        "flour tortillas",
+        "tomatoes"
       ],
       "connects_b": [
-        "fish sauce",
-        "cilantro leaves",
-        "shrimp"
+        "peanut oil",
+        "scallions",
+        "limes"
       ]
     },
     {
       "name": "cilantro leaves",
       "score": 133.11992883013707,
       "connects_a": [
-        "jalapeno",
+        "flour tortillas",
         "corn",
-        "corn tortillas"
+        "cumin"
       ],
       "connects_b": [
-        "fish sauce",
-        "bean sprouts",
-        "chiles"
+        "coconut milk",
+        "wine vinegar",
+        "peanut oil"
       ]
     },
     {
       "name": "lime juice",
       "score": 132.73466626022304,
       "connects_a": [
-        "jalapeno",
-        "cilantro leaves",
-        "corn tortillas"
+        "flour tortillas",
+        "cumin",
+        "salsa"
       ],
       "connects_b": [
-        "fish sauce",
-        "cilantro leaves",
-        "bean sprouts"
+        "coconut milk",
+        "peanut oil",
+        "chiles"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "pizza",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "handful pine nuts",
+      "name": "petite",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -159,22 +154,12 @@
       "strength": 1
     },
     {
-      "name": "capers",
+      "name": "pizza",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "canned tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "finely oregano",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "artichokes",
+      "name": "sherry vinegar",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -189,29 +174,34 @@
       "strength": 1
     },
     {
-      "name": "chorizo sausage",
+      "name": "artichokes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "handful pine nuts",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "for seasoning",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "canned tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "crusty bread",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "kalamata olives",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "anchovy fillets",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "center cut",
+      "name": "littleneck clams",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -221,12 +211,12 @@
       "strength": 1
     },
     {
-      "name": "cremini",
+      "name": "hearts",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "hearts",
+      "name": "center cut",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -242,6 +232,16 @@
     },
     {
       "name": "spaghetti",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "kalamata olives",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "al dente",
       "pairs_with": "olive oil",
       "strength": 1
     }

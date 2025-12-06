@@ -5,35 +5,35 @@
       "name": "file powder",
       "score": 26.052805124488167,
       "connects_a": [
-        "thyme",
-        "celery",
-        "onion"
+        "purpose flour",
+        "onion powder",
+        "tomatoes"
       ],
       "connects_b": [
-        "onion",
-        "leaves"
+        "leaves",
+        "onion"
       ]
     },
     {
       "name": "bay leaf",
       "score": 18.161991863868483,
       "connects_a": [
-        "thyme",
-        "celery",
-        "onion"
+        "tomatoes",
+        "onion",
+        "oregano"
       ],
       "connects_b": [
-        "onion",
-        "beans"
+        "beans",
+        "onion"
       ]
     },
     {
       "name": "can tomatoes",
       "score": 18.105946347261348,
       "connects_a": [
-        "cloves",
-        "celery",
-        "onion"
+        "worcestershire sauce",
+        "onion",
+        "oregano"
       ],
       "connects_b": [
         "onion",
@@ -44,9 +44,9 @@
       "name": "andouille sausage",
       "score": 17.022501473382455,
       "connects_a": [
-        "thyme",
-        "celery",
-        "onion"
+        "onion powder",
+        "worcestershire sauce",
+        "tomatoes"
       ],
       "connects_b": [
         "onion"
@@ -56,9 +56,9 @@
       "name": "celery",
       "score": 16.039715882932565,
       "connects_a": [
-        "thyme",
-        "onion",
-        "parsley"
+        "onion powder",
+        "worcestershire sauce",
+        "tomatoes"
       ],
       "connects_b": [
         "onion"
@@ -68,9 +68,9 @@
       "name": "okra",
       "score": 15.020499866477788,
       "connects_a": [
-        "thyme",
-        "celery",
-        "onion"
+        "purpose flour",
+        "worcestershire sauce",
+        "tomatoes"
       ],
       "connects_b": [
         "onion"
@@ -80,9 +80,9 @@
       "name": "beef stock",
       "score": 14.051542259600836,
       "connects_a": [
-        "thyme",
-        "celery",
-        "flour"
+        "onion powder",
+        "worcestershire sauce",
+        "onion"
       ],
       "connects_b": [
         "flour",
@@ -93,13 +93,13 @@
       "name": "chili powder",
       "score": 12.139657548428893,
       "connects_a": [
-        "worcestershire sauce",
         "paprika",
+        "onion powder",
         "cayenne pepper"
       ],
       "connects_b": [
-        "gram",
         "dhania",
+        "gram",
         "oil"
       ]
     },
@@ -107,9 +107,9 @@
       "name": "tomato paste",
       "score": 12.077433318763624,
       "connects_a": [
-        "thyme",
-        "cloves",
-        "celery"
+        "worcestershire sauce",
+        "tomatoes",
+        "onion"
       ],
       "connects_b": [
         "onion"
@@ -119,13 +119,13 @@
       "name": "garam masala",
       "score": 12.067834904881131,
       "connects_a": [
+        "tomatoes",
         "onion",
-        "cayenne pepper",
-        "garlic"
+        "vegetable oil"
       ],
       "connects_b": [
-        "onion",
-        "oil"
+        "oil",
+        "onion"
       ]
     }
   ],
@@ -136,37 +136,22 @@
       "strength": 1
     },
     {
-      "name": "celery",
+      "name": "andouille sausage",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "scotch bonnet peppers",
+      "name": "zatarain",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "okra",
+      "name": "oxtails",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "chicken base",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "stalks celery",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "crawfish tail",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "green pepper",
+      "name": "bacon fat",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -176,7 +161,22 @@
       "strength": 1
     },
     {
-      "name": "shrimp shells",
+      "name": "roux",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "scotch bonnet peppers",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "chicken livers",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "tomato paste",
       "pairs_with": "onion",
       "strength": 1
     }
@@ -193,7 +193,7 @@
       "strength": 1
     },
     {
-      "name": "wheat",
+      "name": "carom",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -203,12 +203,12 @@
       "strength": 1
     },
     {
-      "name": "carom",
+      "name": "finger",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "finger",
+      "name": "wheat",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -223,12 +223,12 @@
       "strength": 1
     },
     {
-      "name": "salt coriander",
+      "name": "pudina",
       "pairs_with": "leaves",
       "strength": 1
     },
     {
-      "name": "leaves mint",
+      "name": "pudina salt",
       "pairs_with": "leaves",
       "strength": 1
     }

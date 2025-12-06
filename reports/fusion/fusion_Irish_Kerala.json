@@ -5,12 +5,12 @@
       "name": "garam masala",
       "score": 20.113058174801886,
       "connects_a": [
-        "onion",
         "garlic",
-        "potatoes"
+        "potatoes",
+        "onion"
       ],
       "connects_b": [
-        "cumin seeds",
+        "oil",
         "onion",
         "chili powder"
       ]
@@ -19,12 +19,12 @@
       "name": "tumeric",
       "score": 15.042460890745295,
       "connects_a": [
-        "onion",
         "garlic",
-        "potatoes"
+        "potatoes",
+        "onion"
       ],
       "connects_b": [
-        "cumin seeds",
+        "oil",
         "onion",
         "chili powder"
       ]
@@ -33,36 +33,36 @@
       "name": "coriander powder",
       "score": 15.029290356626463,
       "connects_a": [
-        "onion",
         "garlic",
-        "leaves"
+        "leaves",
+        "onion"
       ],
       "connects_b": [
-        "cumin seeds",
+        "oil",
         "onion",
-        "chili powder"
+        "leaves"
       ]
     },
     {
       "name": "bay leaf",
       "score": 12.107994575912322,
       "connects_a": [
-        "thyme",
+        "carrot",
         "onion",
-        "parsley"
+        "thyme"
       ],
       "connects_b": [
-        "onion",
-        "beans"
+        "beans",
+        "onion"
       ]
     },
     {
       "name": "beef stock",
       "score": 12.04417907965786,
       "connects_a": [
-        "thyme",
-        "flour",
-        "onion"
+        "carrot",
+        "onion",
+        "potatoes"
       ],
       "connects_b": [
         "flour",
@@ -73,26 +73,26 @@
       "name": "file powder",
       "score": 12.024371595917614,
       "connects_a": [
-        "thyme",
+        "purpose flour",
         "onion",
-        "garlic"
+        "vegetable oil"
       ],
       "connects_b": [
-        "onion",
-        "leaves"
+        "leaves",
+        "onion"
       ]
     },
     {
       "name": "vanilla",
       "score": 12.01569212554963,
       "connects_a": [
-        "cream",
-        "flour",
-        "egg yolks"
+        "egg yolks",
+        "buttermilk",
+        "milk"
       ],
       "connects_b": [
-        "banana",
-        "flour"
+        "flour",
+        "banana"
       ]
     },
     {
@@ -102,18 +102,18 @@
         "flour"
       ],
       "connects_b": [
-        "chilli",
-        "flour",
-        "oil salt"
+        "finger",
+        "fenugreek",
+        "mango"
       ]
     },
     {
       "name": "celery",
       "score": 10.024822426832854,
       "connects_a": [
-        "thyme",
+        "carrot",
         "onion",
-        "parsley"
+        "garlic"
       ],
       "connects_b": [
         "rice",
@@ -124,39 +124,29 @@
       "name": "cans tomatoes",
       "score": 10.022214159136231,
       "connects_a": [
-        "cloves",
-        "onion",
-        "leaves"
+        "carrot",
+        "olive oil",
+        "onion"
       ],
       "connects_b": [
-        "onion",
-        "leaves"
+        "leaves",
+        "onion"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "celery",
+      "name": "beef broth",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "chicken bouillon",
+      "name": "stock",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "palm",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "tomato paste",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "lamb shoulder",
+      "name": "in juice",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -166,22 +156,32 @@
       "strength": 1
     },
     {
-      "name": "ham hocks",
+      "name": "lamb shoulder",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "stalks celery",
+      "name": "chicken bouillon",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "green pepper",
+      "name": "beef chuck",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "beef stock",
+      "name": "navy beans",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "bacon fat",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "celery ribs",
       "pairs_with": "onion",
       "strength": 1
     }
@@ -213,27 +213,27 @@
       "strength": 1
     },
     {
-      "name": "banana",
-      "pairs_with": "vanilla extract",
-      "strength": 1
-    },
-    {
       "name": "coconut",
       "pairs_with": "vanilla extract",
       "strength": 1
     },
     {
-      "name": "salt coriander",
+      "name": "banana",
+      "pairs_with": "vanilla extract",
+      "strength": 1
+    },
+    {
+      "name": "pudina",
       "pairs_with": "leaves",
       "strength": 1
     },
     {
-      "name": "leaves mint",
+      "name": "pudina salt",
       "pairs_with": "leaves",
       "strength": 1
     },
     {
-      "name": "oil coriander",
+      "name": "cloves cardamom",
       "pairs_with": "leaves",
       "strength": 1
     }

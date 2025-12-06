@@ -5,23 +5,23 @@
       "name": "garam masala",
       "score": 35.1978518059033,
       "connects_a": [
+        "oil",
         "turmeric",
-        "chili powder",
-        "oil"
+        "potatoes"
       ],
       "connects_b": [
-        "onion",
-        "paprika",
-        "cumin"
+        "tomatoes",
+        "cumin",
+        "onion"
       ]
     },
     {
       "name": "dhania",
       "score": 27.036738930477963,
       "connects_a": [
-        "gram flour",
-        "powder",
-        "carom"
+        "fenugreek",
+        "mango",
+        "powder"
       ],
       "connects_b": [
         "peas"
@@ -31,42 +31,42 @@
       "name": "cumin seeds",
       "score": 24.029612284704868,
       "connects_a": [
+        "oil",
         "turmeric",
-        "chili powder",
-        "oil"
+        "potatoes"
       ],
       "connects_b": [
-        "cumin",
-        "peas",
-        "paprika"
+        "paprika",
+        "tomatoes",
+        "cumin"
       ]
     },
     {
       "name": "mustard seeds",
       "score": 24.018692241768363,
       "connects_a": [
+        "oil",
         "turmeric",
-        "chili powder",
-        "oil"
+        "potatoes"
       ],
       "connects_b": [
-        "cumin",
         "peas",
-        "wine vinegar"
+        "tomatoes",
+        "cumin"
       ]
     },
     {
       "name": "tumeric",
       "score": 20.056614520993726,
       "connects_a": [
-        "chili powder",
         "peas",
-        "potatoes"
+        "potatoes",
+        "oil"
       ],
       "connects_b": [
-        "onion",
+        "tomatoes",
         "cumin",
-        "garlic"
+        "onion"
       ]
     },
     {
@@ -77,8 +77,8 @@
         "potatoes"
       ],
       "connects_b": [
-        "parsley",
-        "paprika",
+        "tomatoes",
+        "chorizo",
         "taste"
       ]
     },
@@ -86,14 +86,14 @@
       "name": "coriander powder",
       "score": 20.039053808835284,
       "connects_a": [
+        "leaves",
         "turmeric",
-        "chili powder",
-        "leaves"
+        "oil"
       ],
       "connects_b": [
-        "onion",
         "tomatoes",
-        "cumin"
+        "cumin",
+        "onion"
       ]
     },
     {
@@ -101,33 +101,33 @@
       "score": 18.269380819300842,
       "connects_a": [
         "carom",
-        "chilli",
-        "turmeric"
+        "powder",
+        "oil"
       ],
       "connects_b": [
-        "cumin",
-        "peas"
+        "peas",
+        "cumin"
       ]
     },
     {
       "name": "can tomatoes",
       "score": 16.094174530898975,
       "connects_a": [
-        "chili powder",
-        "("
+        "(",
+        "chili powder"
       ],
       "connects_b": [
-        "cloves",
-        "onion",
-        "parsley"
+        "coarsely",
+        "olives",
+        "cumin"
       ]
     },
     {
       "name": "bell",
       "score": 16.072610935053948,
       "connects_a": [
-        "chilli",
-        "oil salt",
+        "fenugreek",
+        "powder",
         "seeds"
       ],
       "connects_b": [
@@ -163,12 +163,12 @@
       "strength": 1
     },
     {
-      "name": "chili pepper",
+      "name": "coriander powder",
       "pairs_with": "garlic",
       "strength": 1
     },
     {
-      "name": "coriander powder",
+      "name": "chili pepper",
       "pairs_with": "garlic",
       "strength": 1
     },
@@ -178,7 +178,7 @@
       "strength": 1
     },
     {
-      "name": "salt coriander",
+      "name": "coriander powder",
       "pairs_with": "leaves",
       "strength": 1
     },
@@ -210,12 +210,22 @@
       "strength": 1
     },
     {
-      "name": "beef stock",
+      "name": "yeast",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "pinch cayenne",
+      "name": "cornmeal",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "ice water",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "beef stock",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -225,17 +235,7 @@
       "strength": 1
     },
     {
-      "name": "buttermilk",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "lard",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "yeast",
+      "name": "filling",
       "pairs_with": "flour",
       "strength": 1
     }
