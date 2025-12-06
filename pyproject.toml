@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "recipe_pipeline"
+version = "0.1.0"
+description = "Recipe preprocessing and analysis pipeline"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = [
+    "numpy",
+    "pandas",
+    "pyyaml",
+    "scikit-learn",
+    "spacy",
+    "networkx",
+    "pyarrow",
+    "tqdm",
+    "gensim",
+    "rapidfuzz",
+    "sentence-transformers",
+    "pyvis",
+    "seaborn",
+    "matplotlib",
+]
+
+[project.scripts]
+recipe-pipeline = "recipe_pipeline.__main__:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["recipe_pipeline", "networks", "recipe_pipeline.*", "networks.*"]

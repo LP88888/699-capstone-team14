@@ -21,8 +21,10 @@ PIPELINE_ORDER: List[StageName] = [
     # "ingredients_summary",
     # "cuisine_classifier",
     "analysis_baseline",
+    "analysis_pmi",
     "analysis_graph",
     "analysis_viz",
+    "analysis_recommender",
 ]
 
 

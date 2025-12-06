@@ -79,16 +79,17 @@ def plot_ingredient_network(pmi_path: Path, centrality_path: Path, out_path: Pat
             line_width=2))
 
     # 6. Assemble Figure
-    fig = go.Figure(data=[edge_trace, node_trace],
-             layout=go.Layout(
-                title=title,
-                titlefont_size=16,
-                showlegend=False,
-                hovermode='closest',
-                margin=dict(b=20,l=5,r=5,t=40),
-                xaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
-                yaxis=dict(showgrid=False, zeroline=False, showticklabels=False))
-                )
+    fig = go.Figure(
+        data=[edge_trace, node_trace],
+        layout=go.Layout(
+            title=dict(text=title, font=dict(size=16)),
+            showlegend=False,
+            hovermode="closest",
+            margin=dict(b=20, l=5, r=5, t=40),
+            xaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
+            yaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
+        ),
+    )
                 
     fig.write_html(str(out_path))
 
@@ -103,8 +104,8 @@ def run(context: PipelineContext, *, force: bool = False) -> StageResult:
     pmi_path = Path(pmi_cfg.get("pmi_pairs", "reports/pmi/pairings_pmi_global.csv"))
     nodes_path = Path(pmi_cfg.get("node_metrics", "reports/pmi/network_nodes_centrality.csv"))
     
-    baseline_report_dir = Path(baseline_cfg.get("reports_dir", "reports/baseline"))
-    viz_dir = Path(cfg.get("output", {}).get("viz_dir", "reports/viz_phase2"))
+    baseline_report_dir = Path(baseline_cfg.get("reports_dir", "reports/baseline")).resolve()
+    viz_dir = Path(cfg.get("output", {}).get("viz_dir", "reports/viz_phase2")).resolve()
     viz_dir.mkdir(parents=True, exist_ok=True)
     
     # 1. Confusion Matrix
@@ -116,7 +117,8 @@ def run(context: PipelineContext, *, force: bool = False) -> StageResult:
         mask = df_preds["y_true"].isin(top_cuisines)
         cm = confusion_matrix(df_preds[mask]["y_true"], df_preds[mask]["y_pred"], labels=top_cuisines)
         fig = px.imshow(cm, x=top_cuisines, y=top_cuisines, color_continuous_scale="Blues", title="Confusion Matrix (Top 12)")
-        fig.write_html(str(viz_dir / "confusion_matrix.html"))
+        cm_path = (viz_dir / "confusion_matrix.html").resolve()
+        fig.write_html(str(cm_path))
         
     # 2. Cluster Heatmap
     cluster_path = baseline_report_dir / "cluster_assignments.csv"
@@ -126,12 +128,13 @@ def run(context: PipelineContext, *, force: bool = False) -> StageResult:
         pivot = df_clust.pivot_table(index="cluster", columns="cuisine", aggfunc="size", fill_value=0)
         top_cols = pivot.sum().sort_values(ascending=False).head(15).index
         fig = px.imshow(pivot[top_cols], aspect="auto", title="Cluster vs Cuisine Heatmap")
-        fig.write_html(str(viz_dir / "cluster_heatmap.html"))
+        clus_path = (viz_dir / "cluster_heatmap.html").resolve()
+        fig.write_html(str(clus_path))
         
     # 3. Ingredient Network (The "Colleague Special")
     if pmi_path.exists() and nodes_path.exists():
         logger.info("Generating Interactive Ingredient Network...")
-        plot_ingredient_network(pmi_path, nodes_path, viz_dir / "ingredient_network.html")
+        plot_ingredient_network(pmi_path, nodes_path, (viz_dir / "ingredient_network.html").resolve())
             
     return StageResult(
         name="analysis_viz", 
