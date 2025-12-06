@@ -359,3 +359,14 @@ pipeline:
   analysis_viz:
     output:
       viz_dir: "./reports/cuisines/viz_phase2"
+
+  analysis_recommender:
+    data:
+      input_path: *cuisine_combined_encoded
+      ingredients_col: "inferred_ingredients"
+      cuisine_col: "cuisine_deduped"
+      dedupe_map_path: "./data/ingr_normalized/ingredient_second_pass_map.jsonl"
+    params:
+      max_cuisines: 30
+    output:
+      reports_dir: "./reports/fusion"
