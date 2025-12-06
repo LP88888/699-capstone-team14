@@ -29,7 +29,6 @@ def _inject_ingredient_controls(html_text: str) -> str:
       #mynetwork > div.vis-network { width:100% !important; height:100% !important; }
       #ing-panel { width:320px; max-width:320px; background:#ffffff; border-left:1px solid #e2e8f0; padding:12px; box-shadow:-8px 0 24px rgba(17,24,39,0.08); font-family:Arial,sans-serif; overflow-y:auto; }
       .vis-tooltip { display:none !important; }
-      #ing-bar { position:fixed; top:8px; left:8px; z-index:9999; background:#ffffff; border:1px solid #e2e8f0; border-radius:10px; padding:8px 10px; box-shadow:0 8px 24px rgba(17,24,39,0.12); font-family:Arial,sans-serif; min-width:220px; max-width:320px; }
       @media (max-width: 1100px) {
         body { flex-direction:column; overflow:auto; }
         #ing-panel { width:100%; max-width:100%; position:relative; box-shadow:none; border-left:none; border-top:1px solid #e2e8f0; }
@@ -48,13 +47,11 @@ def _inject_ingredient_controls(html_text: str) -> str:
       <div style="font-size:12px;color:#475569;line-height:1.5;margin-bottom:12px;">
         Hover an ingredient to highlight its connections. Zoom in to read labels clearly. Click background or reset to clear highlights.
       </div>
+      <div id="ing-bar" style="background:#ffffff;border:1px solid #e2e8f0;border-radius:10px;padding:8px 10px;box-shadow:0 8px 24px rgba(17,24,39,0.08);font-family:Arial,sans-serif;min-width:220px;max-width:100%;margin-bottom:10px;">
+        <div id="ing-title" style="font-weight:700;color:#0f172a;font-size:14px;">Hover an ingredient</div>
+        <div id="ing-meta" style="font-size:12px;color:#475569;margin-top:2px;"></div>
+      </div>
       <button id="ing-reset" style="border:none;background:#0f172a;color:white;border-radius:8px;padding:8px 10px;font-size:12px;cursor:pointer;">Reset highlights</button>
-    </div>
-    """
-    selected_bar = """
-    <div id="ing-bar">
-      <div id="ing-title" style="font-weight:700;color:#0f172a;font-size:14px;">Hover an ingredient</div>
-      <div id="ing-meta" style="font-size:12px;color:#475569;margin-top:2px;"></div>
     </div>
     """
     script = """
@@ -112,7 +109,7 @@ def _inject_ingredient_controls(html_text: str) -> str:
     """
     html_text = html_text.replace("<head>", "<head>" + layout_styles)
     # Insert UI elements inside body (after opening tag)
-    return html_text.replace("<body>", "<body>" + selected_bar + panel).replace("</body>", script + "</body>")
+    return html_text.replace("<body>", "<body>" + panel).replace("</body>", script + "</body>")
 
 
 def plot_ingredient_network(pmi_path: Path, centrality_path: Path, out_path: Path, title="Ingredient PMI Network"):
