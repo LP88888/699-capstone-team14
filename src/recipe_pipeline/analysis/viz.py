@@ -6,92 +6,237 @@ from __future__ import annotations
 import pandas as pd
 import networkx as nx
 import plotly.express as px
-import plotly.graph_objects as go
 from sklearn.metrics import confusion_matrix
 from pathlib import Path
+import seaborn as sns
+from pyvis.network import Network
+import numpy as np
+import json
+import re
+
 from ..core import PipelineContext, StageResult
 from ..utils import stage_logger
+from ..ingrnorm.dedupe_map import _DROP_TOKENS, _DROP_SUBSTRINGS
+
+
+def _inject_ingredient_controls(html_text: str) -> str:
+    """Injects layout, hover bar, and chained click filter for ingredient graph."""
+    layout_styles = """
+    <style id="ing-layout">
+      html, body { height:100vh; margin:0; padding:0; overflow:hidden; background:#ffffff; }
+      body { display:flex; }
+      #mynetwork { flex:1 1 auto; height:100vh; }
+      #mynetwork > div.vis-network { width:100% !important; height:100% !important; }
+      #ing-panel { width:320px; max-width:320px; background:#ffffff; border-left:1px solid #e2e8f0; padding:12px; box-shadow:-8px 0 24px rgba(17,24,39,0.08); font-family:Arial,sans-serif; overflow-y:auto; }
+      .vis-tooltip { display:none !important; }
+      #ing-bar { position:fixed; top:8px; left:8px; z-index:9999; background:#ffffff; border:1px solid #e2e8f0; border-radius:10px; padding:8px 10px; box-shadow:0 8px 24px rgba(17,24,39,0.12); font-family:Arial,sans-serif; min-width:220px; max-width:320px; }
+      @media (max-width: 1100px) {
+        body { flex-direction:column; overflow:auto; }
+        #ing-panel { width:100%; max-width:100%; position:relative; box-shadow:none; border-left:none; border-top:1px solid #e2e8f0; }
+        #mynetwork { height:70vh; }
+      }
+    </style>
+    """
+    panel = """
+    <div id="ing-panel">
+      <div style="display:flex;gap:8px;align-items:center;justify-content:flex-start;margin-bottom:6px;">
+        <a href="/public/index.html" style="font-size:12px;color:#2563eb;font-weight:700;text-decoration:none;">Cuisine Network</a>
+        <span style="color:#cbd5e1;">|</span>
+        <a href="/public/ingredient_network.html" style="font-size:12px;color:#111827;font-weight:700;text-decoration:none;">Ingredient Network</a>
+      </div>
+      <div style="font-weight:700;font-size:18px;color:#0f172a;margin-bottom:6px;">Ingredient PMI Network</div>
+      <div style="font-size:12px;color:#475569;line-height:1.5;margin-bottom:12px;">
+        Hover an ingredient to highlight its connections. Zoom in to read labels clearly. Click background or reset to clear highlights.
+      </div>
+      <button id="ing-reset" style="border:none;background:#0f172a;color:white;border-radius:8px;padding:8px 10px;font-size:12px;cursor:pointer;">Reset highlights</button>
+    </div>
+    """
+    selected_bar = """
+    <div id="ing-bar">
+      <div id="ing-title" style="font-weight:700;color:#0f172a;font-size:14px;">Hover an ingredient</div>
+      <div id="ing-meta" style="font-size:12px;color:#475569;margin-top:2px;"></div>
+    </div>
+    """
+    script = """
+    <script type="text/javascript">
+    (function(){
+      const nodes = window.nodes;
+      const edges = window.edges;
+      const network = window.network;
+      if(!nodes || !edges || !network){ return; }
+      function syncEdges(){ /* no-op placeholder for compatibility */ }
+
+      function updateBar(data){
+        const tEl = document.getElementById("ing-title");
+        const mEl = document.getElementById("ing-meta");
+        if(!tEl || !mEl){ return; }
+        if(!data){
+          tEl.textContent = "Hover an ingredient";
+          mEl.textContent = "";
+          return;
+        }
+        tEl.textContent = data.label || data.id;
+        const deg = data.degree ? `Degree: ${data.degree}` : "";
+        const cent = data.centrality ? `Centrality: ${data.centrality.toFixed ? data.centrality.toFixed(4) : data.centrality}` : "";
+        mEl.textContent = [deg, cent].filter(Boolean).join(" | ");
+      }
+
+      network.on("hoverNode", function(params){
+        if(params.node){
+          const data = nodes.get(params.node);
+          updateBar(data);
+          const neighbors = network.getConnectedNodes(params.node);
+          const selection = [params.node].concat(neighbors);
+          const edgeIds = network.getConnectedEdges(params.node);
+          network.unselectAll();
+          network.selectNodes(selection);
+          network.selectEdges(edgeIds);
+        }
+      });
+      network.on("blurNode", function(){
+        updateBar(null);
+        network.unselectAll();
+      });
+
+      const resetBtn = document.getElementById("ing-reset");
+      if(resetBtn){
+        resetBtn.addEventListener("click", function(){
+          network.unselectAll();
+          updateBar(null);
+        });
+      }
+      // initial sync
+      network.unselectAll();
+    })();
+    </script>
+    """
+    html_text = html_text.replace("<head>", "<head>" + layout_styles)
+    # Insert UI elements inside body (after opening tag)
+    return html_text.replace("<body>", "<body>" + selected_bar + panel).replace("</body>", script + "</body>")
+
 
 def plot_ingredient_network(pmi_path: Path, centrality_path: Path, out_path: Path, title="Ingredient PMI Network"):
-    """
-    Generates an interactive Plotly network graph (from Colleague's Snippet 4).
-    """
-    # 1. Load Data
+    """Generate an interactive ingredient network with bright colors and chained filtering."""
     df_pmi = pd.read_csv(pmi_path)
     df_nodes = pd.read_csv(centrality_path).set_index("ingredient")
-    
-    # Filter for visualization speed (top 500 edges by PMI)
-    df_pmi = df_pmi.head(1000)
-    
-    # 2. Build Graph
-    G = nx.from_pandas_edgelist(df_pmi, 'ingredient_a', 'ingredient_b', ['pmi'])
-    
-    # 3. Layout (Spring Layout)
-    pos = nx.spring_layout(G, seed=42, k=0.15)
-    
-    # 4. Create Edges Trace
-    edge_x = []
-    edge_y = []
-    for edge in G.edges():
-        x0, y0 = pos[edge[0]]
-        x1, y1 = pos[edge[1]]
-        edge_x.extend([x0, x1, None])
-        edge_y.extend([y0, y1, None])
 
-    edge_trace = go.Scatter(
-        x=edge_x, y=edge_y,
-        line=dict(width=0.5, color='#888'),
-        hoverinfo='none',
-        mode='lines'
-    )
+    def _clean_ing(name: str) -> str | None:
+        if not isinstance(name, str):
+            return None
+        t = name.strip().strip("\"'").lower()
+        t = re.sub(r"[()\\[\\]{}]", " ", t)
+        t = re.sub(r"\\d+[^a-z]+", " ", t)
+        t = re.sub(r"[^a-z\\s]", " ", t)
+        t = re.sub(r"\\s+", " ", t).strip()
+        if not t:
+            return None
+        if t in _DROP_TOKENS or any(substr in t for substr in _DROP_SUBSTRINGS):
+            return None
+        if t.endswith("ed"):
+            return None
+        if len(t) <= 2:
+            return None
+        return t
 
-    # 5. Create Nodes Trace
-    node_x = []
-    node_y = []
-    node_text = []
-    node_size = []
-    node_color = []
-    
-    for node in G.nodes():
-        x, y = pos[node]
-        node_x.append(x)
-        node_y.append(y)
-        
-        # Get metrics
-        cent = df_nodes.loc[node, "betweenness"] if node in df_nodes.index else 0
-        deg = df_nodes.loc[node, "degree"] if node in df_nodes.index else 1
-        
-        node_text.append(f"{node}<br>Degree: {deg}<br>Centrality: {cent:.4f}")
-        node_size.append(10 + (cent * 50)) # Size by centrality
-        node_color.append(deg)             # Color by degree
+    # Clean edges and filter strongest
+    cleaned_edges = []
+    for _, row in df_pmi.iterrows():
+        a = _clean_ing(row["ingredient_a"])
+        b = _clean_ing(row["ingredient_b"])
+        if not a or not b or a == b:
+            continue
+        cleaned_edges.append((a, b, row["pmi"]))
+    cleaned_edges = sorted(cleaned_edges, key=lambda x: -x[2])[:600]
 
-    node_trace = go.Scatter(
-        x=node_x, y=node_y,
-        mode='markers',
-        hoverinfo='text',
-        text=node_text,
-        marker=dict(
-            showscale=True,
-            colorscale='YlGnBu',
-            size=node_size,
-            color=node_color,
-            colorbar=dict(thickness=15, title='Node Degree'),
-            line_width=2))
+    # Clean node metrics
+    centrality_map = {}
+    for ing, r in df_nodes.iterrows():
+        c = _clean_ing(ing)
+        if not c:
+            continue
+        cent = float(r.get("betweenness", 0.0))
+        deg = float(r.get("degree", 0.0))
+        if c not in centrality_map:
+            centrality_map[c] = {"betweenness": cent, "degree": deg}
+        else:
+            centrality_map[c]["betweenness"] = max(centrality_map[c]["betweenness"], cent)
+            centrality_map[c]["degree"] = max(centrality_map[c]["degree"], deg)
 
-    # 6. Assemble Figure
-    fig = go.Figure(
-        data=[edge_trace, node_trace],
-        layout=go.Layout(
-            title=dict(text=title, font=dict(size=16)),
-            showlegend=False,
-            hovermode="closest",
-            margin=dict(b=20, l=5, r=5, t=40),
-            xaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
-            yaxis=dict(showgrid=False, zeroline=False, showticklabels=False),
-        ),
-    )
-                
-    fig.write_html(str(out_path))
+    # Build graph
+    G = nx.Graph()
+    for a, b, pmi in cleaned_edges:
+        G.add_edge(a, b, pmi=pmi)
+    degrees = dict(G.degree())
+
+    # Color palette by degree bucket (food-friendly warm → fresh)
+    palette = [
+        "#f97316",  # orange
+        "#f59e0b",  # amber
+        "#fbbf24",  # sunflower
+        "#fde047",  # lemon
+        "#a3e635",  # lime
+        "#4ade80",  # fresh green
+        "#22c55e",  # vibrant green
+        "#10b981",  # jade
+        "#0ea5e9",  # sky accent
+        "#8b5cf6",  # berry accent
+    ]
+    def bucket(deg):
+        if deg >= 30: return 0
+        if deg >= 20: return 1
+        if deg >= 15: return 2
+        if deg >= 10: return 3
+        if deg >= 7: return 4
+        if deg >= 5: return 5
+        return 6
+
+    net = Network(height="760px", width="100%", bgcolor="#ffffff", font_color="#0f172a", notebook=False, cdn_resources="in_line")
+    net.force_atlas_2based(gravity=-60, central_gravity=0.01, spring_length=180, damping=0.6, overlap=0.8)
+
+    for n in G.nodes():
+        deg = degrees.get(n, 1)
+        cent = df_nodes.loc[n, "betweenness"] if n in df_nodes.index else 0.0
+        size = float(np.log1p(deg) * 8 + cent * 80)
+        col = palette[bucket(deg) % len(palette)]
+        title_html = f"{n}<br>Degree: {deg}<br>Centrality: {cent:.4f}"
+        net.add_node(
+            n,
+            label=n,
+            value=size,
+            title=title_html,
+            color=col,
+            degree=deg,
+            centrality=cent,
+        )
+
+    for a, b, pmi in cleaned_edges:
+        w = max(0.8, np.log1p(pmi) * 1.2)
+        net.add_edge(a, b, value=pmi, width=w, color="#cbd5e1")
+
+    net.set_options(json.dumps({
+        "nodes": {
+            "shape": "dot",
+            "scaling": {"min": 6, "max": 36},
+            "shadow": True,
+            "borderWidth": 1,
+            "borderWidthSelected": 3,
+            "font": {"size": 14, "face": "arial"}
+        },
+        "edges": {
+            "smooth": {"type": "dynamic"},
+            "color": {"inherit": False},
+            "shadow": False,
+            "selectionWidth": 2
+        },
+        "layout": {"improvedLayout": False},
+        "physics": {"stabilization": {"iterations": 150}, "timestep": 0.35, "minVelocity": 0.75},
+        "interaction": {"hover": True, "hoverConnectedEdges": True, "selectConnectedEdges": True, "multiselect": False}
+    }))
+
+    net.conf = False
+    net.html = _inject_ingredient_controls(net.generate_html(notebook=False))
+    out_path = Path(out_path)
+    out_path.write_text(net.html, encoding="utf-8")
 
 def run(context: PipelineContext, *, force: bool = False) -> StageResult:
     cfg = context.stage("analysis_viz")

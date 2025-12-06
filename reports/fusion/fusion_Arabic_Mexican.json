@@ -5,70 +5,70 @@
       "name": "cumin",
       "score": 183.09286837911537,
       "connects_a": [
-        "yogurt",
         "tomato paste",
-        "lamb"
+        "cayenne",
+        "coriander"
       ],
       "connects_b": [
+        "jalapeno",
         "cilantro leaves",
-        "lime",
-        "tomatillos"
+        "oregano"
       ]
     },
     {
       "name": "garam masala",
       "score": 126.71226650125188,
       "connects_a": [
-        "yogurt",
         "tomato paste",
-        "cumin"
+        "onion",
+        "cayenne"
       ],
       "connects_b": [
-        "chicken breasts",
+        "onion",
         "cumin",
-        "vegetable oil"
+        "chicken breasts"
       ]
     },
     {
       "name": "corn tortillas",
       "score": 85.29839015057263,
       "connects_a": [
+        "onion",
         "cumin",
-        "vegetable oil",
-        "onion"
+        "vegetable oil"
       ],
       "connects_b": [
-        "cilantro leaves",
-        "lime",
-        "tomatillos"
+        "jalapeno",
+        "more",
+        "cilantro leaves"
       ]
     },
     {
       "name": "chile",
       "score": 81.34924372335284,
       "connects_a": [
-        "yogurt",
-        "cumin",
-        "vegetable oil"
+        "vinegar",
+        "cayenne",
+        "coriander"
       ],
       "connects_b": [
+        "cloves",
         "cilantro leaves",
-        "lime",
-        "cumin"
+        "corn tortillas"
       ]
     },
     {
       "name": "jalapeno",
       "score": 72.18868690572307,
       "connects_a": [
-        "cumin",
+        "cayenne",
         "coriander",
         "chicken"
       ],
       "connects_b": [
         "cilantro leaves",
-        "lime",
-        "tomatillos"
+        "corn",
+        "corn tortillas"
       ]
     },
     {
@@ -76,81 +76,91 @@
       "score": 70.06847527615635,
       "connects_a": [
         "tomato paste",
-        "cumin",
-        "coriander"
+        "coriander",
+        "mint"
       ],
       "connects_b": [
         "cilantro leaves",
-        "lime",
-        "cumin"
+        "corn",
+        "corn tortillas"
       ]
     },
     {
       "name": "turmeric",
       "score": 66.12794041823106,
       "connects_a": [
-        "yogurt",
         "tomato paste",
-        "cumin"
+        "cayenne",
+        "coriander"
       ],
       "connects_b": [
         "cilantro leaves",
         "cumin",
-        "vegetable oil"
+        "jalapeno peppers"
       ]
     },
     {
       "name": "cilantro",
       "score": 65.37684737765633,
       "connects_a": [
-        "yogurt",
-        "cumin",
-        "coriander"
+        "coriander",
+        "mint",
+        "cumin"
       ],
       "connects_b": [
-        "lime",
-        "tomatillos",
-        "jalapeno"
+        "jalapeno",
+        "corn",
+        "corn tortillas"
       ]
     },
     {
       "name": "chiles",
       "score": 65.31022304883882,
       "connects_a": [
-        "yogurt",
+        "coriander",
         "cumin",
-        "vegetable oil"
+        "yogurt"
       ],
       "connects_b": [
+        "cloves",
         "cilantro leaves",
-        "lime",
-        "tomatillos"
+        "corn tortillas"
       ]
     },
     {
       "name": "coriander",
       "score": 63.16282559293236,
       "connects_a": [
-        "yogurt",
-        "cumin",
-        "chicken"
+        "cayenne",
+        "chicken",
+        "mint"
       ],
       "connects_b": [
-        "cilantro leaves",
         "jalapeno",
+        "cilantro leaves",
         "cumin"
       ]
     }
   ],
   "novel_from_a": [
     {
+      "name": "sirloin",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
       "name": "harissa",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "sirloin",
-      "pairs_with": "cloves",
+      "name": "lentil",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "tumeric",
+      "pairs_with": "onion",
       "strength": 1
     },
     {
@@ -164,13 +174,8 @@
       "strength": 1
     },
     {
-      "name": "tumeric",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "lentil",
-      "pairs_with": "onion",
+      "name": "puff",
+      "pairs_with": "egg",
       "strength": 1
     },
     {
@@ -184,11 +189,6 @@
       "strength": 1
     },
     {
-      "name": "puff",
-      "pairs_with": "egg",
-      "strength": 1
-    },
-    {
       "name": "margarine",
       "pairs_with": "egg",
       "strength": 1
@@ -196,17 +196,22 @@
   ],
   "novel_from_b": [
     {
-      "name": "grits",
+      "name": "and half",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "almond extract",
+      "name": "corn syrup",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "filling",
+      "name": "sticks",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "pecans",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -216,12 +221,7 @@
       "strength": 1
     },
     {
-      "name": "1/2 pound (",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "whole milk",
+      "name": "heavy cream",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -231,17 +231,17 @@
       "strength": 1
     },
     {
+      "name": "stone",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
       "name": "at",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "and half",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "tomato concasse",
+      "name": "ice water",
       "pairs_with": "butter",
       "strength": 1
     }

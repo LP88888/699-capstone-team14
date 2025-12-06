@@ -5,56 +5,56 @@
       "name": "can tomatoes",
       "score": 183.07123528897586,
       "connects_a": [
-        "tomato paste",
-        "worcestershire sauce",
-        "bay leaf"
+        "chicken broth",
+        "cloves",
+        "tomato paste"
       ],
       "connects_b": [
-        "oregano",
-        "basil",
-        "cloves"
+        "cloves",
+        "optional",
+        "pepper flakes"
       ]
     },
     {
       "name": "tomato paste",
       "score": 161.03244425018164,
       "connects_a": [
-        "worcestershire sauce",
-        "chuck",
-        "bay leaf"
+        "thyme",
+        "cloves",
+        "chuck"
       ],
       "connects_b": [
-        "oregano",
-        "basil",
-        "cloves"
+        "cloves",
+        "onion",
+        "parsley"
       ]
     },
     {
       "name": "ribs celery",
       "score": 120.87454689530064,
       "connects_a": [
-        "tomato paste",
-        "worcestershire sauce",
-        "bay leaf"
+        "chicken broth",
+        "cloves",
+        "tomato paste"
       ],
       "connects_b": [
         "cloves",
-        "parsley",
-        "wine"
+        "optional",
+        "pepper flakes"
       ]
     },
     {
       "name": "celery",
       "score": 98.24325978296196,
       "connects_a": [
+        "chicken broth",
         "tomato paste",
-        "worcestershire sauce",
-        "bay leaf"
+        "thyme"
       ],
       "connects_b": [
-        "oregano",
+        "onion",
         "parsley",
-        "garlic"
+        "oregano"
       ]
     },
     {
@@ -66,9 +66,9 @@
         "parsley"
       ],
       "connects_b": [
-        "oregano",
         "cloves",
-        "parsley"
+        "parsley",
+        "oregano"
       ]
     },
     {
@@ -76,13 +76,13 @@
       "score": 88.11353750401068,
       "connects_a": [
         "tomato paste",
-        "mushrooms",
-        "bay leaf"
+        "parsley",
+        "carrot"
       ],
       "connects_b": [
-        "parsley",
-        "olive oil",
-        "wine"
+        "more",
+        "pepper flakes",
+        "parsley"
       ]
     },
     {
@@ -90,41 +90,41 @@
       "score": 72.09948049589478,
       "connects_a": [
         "tomato paste",
-        "worcestershire sauce",
+        "thyme",
         "parsley"
       ],
       "connects_b": [
-        "oregano",
         "parsley",
-        "garlic"
+        "pepper flakes",
+        "oregano"
       ]
     },
     {
       "name": "celery ribs",
       "score": 72.05508925641611,
       "connects_a": [
+        "chicken broth",
         "tomato paste",
-        "worcestershire sauce",
-        "bay leaf"
+        "thyme"
       ],
       "connects_b": [
+        "onion",
         "parsley",
-        "wine",
-        "tomatoes"
+        "carrot"
       ]
     },
     {
       "name": "bay leaf",
       "score": 66.59397016751777,
       "connects_a": [
-        "tomato paste",
         "chicken broth",
-        "parsley"
+        "tomato paste",
+        "thyme"
       ],
       "connects_b": [
-        "oregano",
+        "onion",
         "parsley",
-        "wine"
+        "oregano"
       ]
     },
     {
@@ -136,9 +136,9 @@
         "parsley"
       ],
       "connects_b": [
-        "oregano",
-        "basil",
-        "cloves"
+        "cloves",
+        "pepper flakes",
+        "parsley"
       ]
     }
   ],
@@ -149,12 +149,12 @@
       "strength": 1
     },
     {
-      "name": "garam masala",
+      "name": "catsup",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "catsup",
+      "name": "garam masala",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -179,69 +179,69 @@
       "strength": 1
     },
     {
+      "name": "tahini",
+      "pairs_with": "parsley",
+      "strength": 1
+    },
+    {
       "name": "bouquet garni",
       "pairs_with": "parsley",
       "strength": 1
     },
     {
       "name": "tahini",
-      "pairs_with": "parsley",
-      "strength": 1
-    },
-    {
-      "name": "corn starch",
       "pairs_with": "garlic",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
+      "name": "ricotta salata",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "head fennel",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "radicchio",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "sherry vinegar",
+      "name": "mussels",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "crusty bread",
+      "name": "pizza",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "heads garlic",
+      "name": "chipotle puree",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "romano",
+      "name": "marzano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "arugula",
+      "name": "morel mushrooms",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "penne pasta",
+      "name": "pecorino",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pass",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "mortadella",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cannellini",
+      "name": "prosciutto",
       "pairs_with": "olive oil",
       "strength": 1
     }

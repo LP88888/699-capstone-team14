@@ -5,69 +5,69 @@
       "name": "confectioners",
       "score": 90.46942996055641,
       "connects_a": [
-        "butter",
         "cream",
-        "cinnamon"
+        "more",
+        "1"
       ],
       "connects_b": [
-        "butter",
-        "egg yolks",
-        "cream"
+        "cream",
+        "more",
+        "egg yolks"
       ]
     },
     {
       "name": "at",
       "score": 81.32263347263613,
       "connects_a": [
-        "butter",
         "cream",
-        "kosher sea salt"
+        "more",
+        "1"
       ],
       "connects_b": [
-        "butter",
-        "egg yolks",
-        "cream"
+        "cream",
+        "more",
+        "egg yolks"
       ]
     },
     {
       "name": "sticks",
       "score": 72.25464431093522,
       "connects_a": [
-        "butter",
-        "cinnamon",
-        "1"
+        "1",
+        "more",
+        "egg"
       ],
       "connects_b": [
-        "butter",
+        "more",
         "egg yolks",
-        "raisins"
+        "egg"
       ]
     },
     {
       "name": "whole milk",
       "score": 64.18742510813567,
       "connects_a": [
-        "butter",
-        "kosher sea salt",
-        "cinnamon"
+        "more",
+        "egg",
+        "2"
       ],
       "connects_b": [
-        "butter",
+        "more",
         "egg yolks",
-        "kosher sea salt"
+        "egg"
       ]
     },
     {
       "name": "filling",
       "score": 64.0983028836593,
       "connects_a": [
+        "cream",
         "flour",
-        "butter",
-        "cream"
+        "egg"
       ],
       "connects_b": [
+        "cream",
         "flour",
-        "butter",
         "egg yolks"
       ]
     },
@@ -75,41 +75,41 @@
       "name": "vanilla extract",
       "score": 64.01082678529114,
       "connects_a": [
-        "butter",
         "cream",
-        "cinnamon"
+        "1",
+        "egg"
       ],
       "connects_b": [
-        "butter",
-        "egg yolks",
-        "cream"
+        "cream",
+        "coffee",
+        "egg yolks"
       ]
     },
     {
       "name": "tomato paste",
       "score": 56.36135548756358,
       "connects_a": [
-        "cumin",
         "cloves",
+        "onion",
         "parsley"
       ],
       "connects_b": [
-        "russet potatoes",
+        "thyme",
         "cloves",
-        "parsley"
+        "onion"
       ]
     },
     {
       "name": "ice water",
       "score": 56.2854667456482,
       "connects_a": [
-        "flour",
-        "butter",
-        "cinnamon"
+        "1",
+        "more",
+        "flour"
       ],
       "connects_b": [
+        "more",
         "flour",
-        "butter",
         "egg yolks"
       ]
     },
@@ -117,14 +117,14 @@
       "name": "cake flour",
       "score": 56.069083327465584,
       "connects_a": [
-        "butter",
         "cream",
+        "1",
         "egg"
       ],
       "connects_b": [
-        "butter",
+        "cream",
         "egg yolks",
-        "cream"
+        "egg"
       ]
     },
     {
@@ -132,64 +132,64 @@
       "score": 49.046639295489214,
       "connects_a": [
         "flour",
-        "cinnamon",
-        "egg"
+        "egg",
+        "milk"
       ],
       "connects_b": [
         "flour",
         "egg",
-        "buttermilk"
+        "milk"
       ]
     }
   ],
   "novel_from_a": [
+    {
+      "name": "[extra",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "ricotta salata",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
     {
       "name": "radicchio",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "crusty bread",
+      "name": "mussels",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "heads garlic",
+      "name": "pizza",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "romano",
+      "name": "chipotle puree",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "arugula",
+      "name": "marzano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "penne pasta",
+      "name": "morel mushrooms",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pass",
+      "name": "pecorino",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "mortadella",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cannellini",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pasta",
+      "name": "prosciutto",
       "pairs_with": "olive oil",
       "strength": 1
     }

@@ -5,13 +5,13 @@
       "name": "garam masala",
       "score": 28.15828144472264,
       "connects_a": [
-        "yogurt",
         "tomato paste",
-        "cumin"
+        "onion",
+        "cayenne"
       ],
       "connects_b": [
-        "oil",
-        "onion"
+        "onion",
+        "oil"
       ]
     },
     {
@@ -21,57 +21,45 @@
         "olive"
       ],
       "connects_b": [
+        "arhar dal",
         "powder",
-        "split",
-        "finger"
-      ]
-    },
-    {
-      "name": "cardamom",
-      "score": 24.359174425734455,
-      "connects_a": [
-        "yogurt",
-        "coriander",
-        "cinnamon"
-      ],
-      "connects_b": [
-        "powder",
-        "seeds",
-        "oil"
+        "leaves coriander"
       ]
     },
     {
       "name": "wheat",
-      "score": 24.074030033193484,
+      "score": 22.067860863760693,
       "connects_a": [
         "flour",
         "olive"
       ],
       "connects_b": [
-        "powder",
-        "seeds",
-        "flour"
+        "chilli",
+        "flour",
+        "oil salt"
       ]
     },
     {
-      "name": "chilli",
-      "score": 18.173521895348486,
+      "name": "cardamom",
+      "score": 20.29931202144538,
       "connects_a": [
-        "olive"
+        "cumin",
+        "coriander",
+        "yogurt"
       ],
       "connects_b": [
-        "gram",
-        "powder",
-        "seeds"
+        "chilli",
+        "seeds",
+        "oil"
       ]
     },
     {
       "name": "olive",
       "score": 18.083793290073274,
       "connects_a": [
-        "yogurt",
-        "salt pepper",
-        "tahini"
+        "pepper bell",
+        "mint",
+        "salt pepper"
       ],
       "connects_b": [
         "chilli",
@@ -79,17 +67,29 @@
       ]
     },
     {
+      "name": "chilli",
+      "score": 17.16388179005135,
+      "connects_a": [
+        "olive"
+      ],
+      "connects_b": [
+        "brinjal",
+        "chillies",
+        "gram"
+      ]
+    },
+    {
       "name": "chili powder",
       "score": 15.174571935536115,
       "connects_a": [
-        "cumin",
         "coriander",
-        "chicken"
+        "chicken",
+        "cumin"
       ],
       "connects_b": [
-        "oil",
         "gram",
-        "dhania"
+        "dhania",
+        "oil"
       ]
     },
     {
@@ -97,7 +97,7 @@
       "score": 14.125993671897708,
       "connects_a": [
         "tomato paste",
-        "cumin",
+        "onion",
         "parsley"
       ],
       "connects_b": [
@@ -109,24 +109,24 @@
       "name": "cumin",
       "score": 12.206191225274358,
       "connects_a": [
-        "yogurt",
         "tomato paste",
-        "lamb"
+        "cayenne",
+        "coriander"
       ],
       "connects_b": [
         "beans"
       ]
     },
     {
-      "name": "palm",
-      "score": 12.046175094160088,
+      "name": "beef stock",
+      "score": 12.04417907965786,
       "connects_a": [
-        "cumin",
-        "parsley",
-        "coriander"
+        "tomato paste",
+        "flour",
+        "onion"
       ],
       "connects_b": [
-        "split",
+        "flour",
         "onion"
       ]
     }
@@ -138,12 +138,32 @@
       "strength": 1
     },
     {
+      "name": "celery",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "lentil",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
       "name": "tomato paste",
       "pairs_with": "onion",
       "strength": 1
     },
     {
       "name": "tomato puree",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "beef",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "tumeric",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -158,27 +178,7 @@
       "strength": 1
     },
     {
-      "name": "tumeric",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "beef",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "lentil",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "celery",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "basmati",
+      "name": "almond",
       "pairs_with": "powder",
       "strength": 1
     }
@@ -190,12 +190,12 @@
       "strength": 1
     },
     {
-      "name": "oats",
+      "name": "banana",
       "pairs_with": "cinnamon",
       "strength": 1
     },
     {
-      "name": "banana",
+      "name": "oats",
       "pairs_with": "cinnamon",
       "strength": 1
     },
@@ -220,7 +220,7 @@
       "strength": 1
     },
     {
-      "name": "finger",
+      "name": "flour all",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -230,7 +230,7 @@
       "strength": 1
     },
     {
-      "name": "flour all",
+      "name": "finger",
       "pairs_with": "flour",
       "strength": 1
     }

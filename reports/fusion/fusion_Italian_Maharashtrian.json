@@ -5,9 +5,9 @@
       "name": "can tomatoes",
       "score": 28.164805429073205,
       "connects_a": [
-        "oregano",
-        "basil",
-        "cloves"
+        "cloves",
+        "optional",
+        "pepper flakes"
       ],
       "connects_b": [
         "chili powder",
@@ -18,67 +18,53 @@
       "name": "garam masala",
       "score": 20.113058174801886,
       "connects_a": [
-        "garlic",
+        "onion",
         "lemon juice",
-        "onion"
+        "garlic"
       ],
       "connects_b": [
         "turmeric",
-        "oil",
-        "chili powder"
+        "chili powder",
+        "oil"
       ]
     },
     {
       "name": "can",
       "score": 18.073421400104678,
       "connects_a": [
-        "seasoning",
-        "tomatoes",
-        "pepper flakes"
+        "pepper flakes",
+        "mozzarella cheese",
+        "seasoning"
       ],
       "connects_b": [
-        ")",
         "chili powder",
+        ")",
         "("
-      ]
-    },
-    {
-      "name": "sprigs thyme",
-      "score": 18.03829409229284,
-      "connects_a": [
-        "cloves",
-        "wine",
-        "grain sea salt"
-      ],
-      "connects_b": [
-        "potatoes",
-        "split",
-        "leaves"
       ]
     },
     {
       "name": "coriander powder",
       "score": 16.031243047068227,
       "connects_a": [
-        "garlic",
         "onion",
+        "garlic",
         "leaves"
       ],
       "connects_b": [
-        "oil",
+        "turmeric",
         "chili powder",
         "leaves"
       ]
     },
     {
       "name": "wheat",
-      "score": 14.043184186029531,
+      "score": 13.040099601313138,
       "connects_a": [
         "flour"
       ],
       "connects_b": [
-        "powder",
-        "seeds",
+        "carom",
+        "chilli",
         "flour"
       ]
     },
@@ -86,35 +72,36 @@
       "name": "tumeric",
       "score": 12.033968712596234,
       "connects_a": [
-        "garlic",
         "onion",
+        "garlic",
         "tomatoes"
       ],
       "connects_b": [
-        "oil",
-        "potatoes",
-        "chili powder"
+        "chili powder",
+        "peas",
+        "potatoes"
       ]
     },
     {
-      "name": "carom",
-      "score": 11.018613333006584,
+      "name": "sprigs thyme",
+      "score": 12.025529394861893,
       "connects_a": [
-        "flour"
+        "cloves",
+        "grain sea salt",
+        "lemon"
       ],
       "connects_b": [
-        "powder",
-        "seeds",
-        "flour"
+        "leaves",
+        "potatoes"
       ]
     },
     {
       "name": "tomato paste",
       "score": 10.064527765636353,
       "connects_a": [
-        "oregano",
-        "basil",
-        "cloves"
+        "cloves",
+        "onion",
+        "parsley"
       ],
       "connects_b": [
         "turmeric"
@@ -125,16 +112,33 @@
       "score": 10.036815899714885,
       "connects_a": [
         "flour",
-        "wine",
-        "parmigiano"
+        "onion",
+        "wine"
       ],
       "connects_b": [
-        "potatoes",
-        "flour"
+        "flour",
+        "potatoes"
+      ]
+    },
+    {
+      "name": "cans tomatoes",
+      "score": 10.022214159136231,
+      "connects_a": [
+        "cloves",
+        "optional",
+        "pepper flakes"
+      ],
+      "connects_b": [
+        "leaves"
       ]
     }
   ],
   "novel_from_a": [
+    {
+      "name": "pepper powder",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
     {
       "name": "powder amchur",
       "pairs_with": "dhania",
@@ -146,7 +150,12 @@
       "strength": 1
     },
     {
-      "name": "fruit",
+      "name": "button",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "oats",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -166,17 +175,7 @@
       "strength": 1
     },
     {
-      "name": "button",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "pepper powder",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "oats",
+      "name": "fruit",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -203,12 +202,12 @@
       "strength": 1
     },
     {
-      "name": "oil coriander",
+      "name": "salt coriander",
       "pairs_with": "leaves",
       "strength": 1
     },
     {
-      "name": "salt coriander",
+      "name": "oil coriander",
       "pairs_with": "leaves",
       "strength": 1
     },
@@ -228,12 +227,12 @@
       "strength": 1
     },
     {
-      "name": "hing",
+      "name": "asafoetida hing",
       "pairs_with": ")",
       "strength": 1
     },
     {
-      "name": "asafoetida hing",
+      "name": "hing",
       "pairs_with": ")",
       "strength": 1
     }

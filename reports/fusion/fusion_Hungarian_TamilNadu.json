@@ -5,9 +5,9 @@
       "name": "can tomatoes",
       "score": 26.153033612710836,
       "connects_a": [
-        "tomato paste",
-        "worcestershire sauce",
-        "bay leaf"
+        "chicken broth",
+        "cloves",
+        "tomato paste"
       ],
       "connects_b": [
         "onion",
@@ -19,8 +19,8 @@
       "score": 24.08835815931572,
       "connects_a": [
         "tomato paste",
-        "worcestershire sauce",
-        "mushrooms"
+        "thyme",
+        "flour"
       ],
       "connects_b": [
         "flour",
@@ -28,25 +28,12 @@
       ]
     },
     {
-      "name": "wheat",
-      "score": 24.074030033193484,
-      "connects_a": [
-        "oil",
-        "flour"
-      ],
-      "connects_b": [
-        "powder",
-        "seeds",
-        "flour"
-      ]
-    },
-    {
       "name": "bay leaf",
       "score": 22.197990055839256,
       "connects_a": [
-        "tomato paste",
         "chicken broth",
-        "parsley"
+        "tomato paste",
+        "thyme"
       ],
       "connects_b": [
         "onion",
@@ -58,33 +45,34 @@
       "score": 22.124363992282074,
       "connects_a": [
         "tomato paste",
-        "chicken breasts",
-        "bay leaf"
+        "onion",
+        "tomatoes"
       ],
       "connects_b": [
-        "oil",
-        "onion"
+        "onion",
+        "oil"
       ]
     },
     {
-      "name": "dal",
-      "score": 18.013338228510946,
+      "name": "wheat",
+      "score": 22.067860863760693,
       "connects_a": [
+        "flour",
         "oil"
       ],
       "connects_b": [
-        "gram",
-        "powder",
-        "seeds"
+        "chilli",
+        "flour",
+        "oil salt"
       ]
     },
     {
       "name": "tomato paste",
       "score": 16.103244425018165,
       "connects_a": [
-        "worcestershire sauce",
-        "chuck",
-        "bay leaf"
+        "thyme",
+        "cloves",
+        "chuck"
       ],
       "connects_b": [
         "onion"
@@ -94,9 +82,9 @@
       "name": "file powder",
       "score": 16.032495461223487,
       "connects_a": [
-        "vegetable oil",
-        "garlic",
-        "tomatoes"
+        "thyme",
+        "onion",
+        "bell pepper"
       ],
       "connects_b": [
         "onion",
@@ -104,35 +92,63 @@
       ]
     },
     {
-      "name": "carom",
-      "score": 16.02707393891867,
-      "connects_a": [
-        "oil",
-        "flour"
-      ],
-      "connects_b": [
-        "powder",
-        "seeds",
-        "flour"
-      ]
-    },
-    {
       "name": "finger",
       "score": 16.01637290387976,
       "connects_a": [
-        "oil",
-        "flour"
+        "flour",
+        "oil"
       ],
       "connects_b": [
-        "powder",
-        "seeds",
-        "flour"
+        "chilli",
+        "flour",
+        "oil salt"
+      ]
+    },
+    {
+      "name": "dal",
+      "score": 16.011856203120843,
+      "connects_a": [
+        "oil"
+      ],
+      "connects_b": [
+        "chilli",
+        "chillies",
+        "gram"
+      ]
+    },
+    {
+      "name": "can",
+      "score": 15.061184500087231,
+      "connects_a": [
+        "tomato paste",
+        "bay leaf",
+        "worcestershire sauce"
+      ],
+      "connects_b": [
+        "beans",
+        ")",
+        "("
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "beef shoulder",
+      "name": "celery",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "tomato paste",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "tomato soup",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "kidney beans",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -142,42 +158,27 @@
       "strength": 1
     },
     {
-      "name": "capsicum",
+      "name": "chicken base",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "beef chuck",
+      "name": "beef shoulder",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "beef",
+      "name": "catsup",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "chicken livers",
+      "name": "beef stock",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "celery",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "stewing",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "celery ribs",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "lentils",
+      "name": "sodium beef broth",
       "pairs_with": "onion",
       "strength": 1
     }
@@ -199,12 +200,7 @@
       "strength": 1
     },
     {
-      "name": "finger",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "carom",
+      "name": "wheat",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -214,12 +210,12 @@
       "strength": 1
     },
     {
-      "name": "purpose",
+      "name": "carom",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "wheat",
+      "name": "finger",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -231,6 +227,11 @@
     {
       "name": "sesame oil",
       "pairs_with": "garlic",
+      "strength": 1
+    },
+    {
+      "name": "cashews",
+      "pairs_with": "vegetable oil",
       "strength": 1
     }
   ]

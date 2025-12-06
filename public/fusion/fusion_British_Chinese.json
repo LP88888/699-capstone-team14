@@ -6,41 +6,41 @@
       "score": 78.23333547948052,
       "connects_a": [
         "tomato paste",
-        "mushrooms",
+        "more",
         "cloves"
       ],
       "connects_b": [
+        "cloves",
         "hoisin sauce",
-        "soy sauce",
-        "mushrooms"
+        "canola oil"
       ]
     },
     {
       "name": "bean sprouts",
       "score": 68.14430273859602,
       "connects_a": [
-        "vegetable oil",
+        "mushrooms",
         "beaten",
-        "mushrooms"
+        "carrot"
       ],
       "connects_b": [
+        "shrimp",
         "hoisin sauce",
-        "ginger",
-        "mushrooms"
+        "canola oil"
       ]
     },
     {
       "name": "oyster sauce",
       "score": 66.04243268060836,
       "connects_a": [
-        "vegetable oil",
+        "mushrooms",
         "garlic",
-        "mushrooms"
+        "vegetable oil"
       ],
       "connects_b": [
-        "cabbage",
-        "corn starch",
-        "sodium soy sauce"
+        "chicken broth",
+        "rice wine",
+        "soy sauce"
       ]
     },
     {
@@ -48,41 +48,41 @@
       "score": 56.40812188447363,
       "connects_a": [
         "tomato paste",
-        "worcestershire sauce",
-        "cloves"
+        "cloves",
+        "onion"
       ],
       "connects_b": [
-        "scallions",
         "chicken broth",
-        "cloves"
+        "cloves",
+        "onion"
       ]
     },
     {
       "name": "shiitake",
       "score": 51.037808096377105,
       "connects_a": [
-        "grain sea salt",
+        "mushrooms",
         "carrot",
-        "mushrooms"
+        "grain sea salt"
       ],
       "connects_b": [
-        "hoisin sauce",
-        "ginger",
-        "mushrooms"
+        "chicken broth",
+        "shrimp",
+        "hoisin sauce"
       ]
     },
     {
       "name": "noodles",
       "score": 51.032397859901025,
       "connects_a": [
-        "vegetable oil",
+        "mushrooms",
         "carrot",
-        "mushrooms"
+        "vegetable oil"
       ],
       "connects_b": [
-        "hoisin sauce",
-        "ginger",
-        "pork"
+        "chicken broth",
+        "shrimp",
+        "hoisin sauce"
       ]
     },
     {
@@ -90,12 +90,12 @@
       "score": 49.12162989148098,
       "connects_a": [
         "tomato paste",
-        "worcestershire sauce",
+        "onion",
         "parsley"
       ],
       "connects_b": [
         "chicken broth",
-        "garlic",
+        "onion",
         "bell pepper"
       ]
     },
@@ -103,14 +103,14 @@
       "name": "cornstarch",
       "score": 48.26798559748296,
       "connects_a": [
-        "egg yolks",
         "vanilla extract",
+        "pastry",
         "beaten"
       ],
       "connects_b": [
+        "rice wine",
         "hoisin sauce",
-        "ginger",
-        "pork"
+        "rice vinegar"
       ]
     },
     {
@@ -118,31 +118,36 @@
       "score": 48.03672617094407,
       "connects_a": [
         "tomato paste",
-        "worcestershire sauce",
+        "onion",
         "parsley"
       ],
       "connects_b": [
         "chicken broth",
-        "bell pepper",
-        "onion"
+        "onion",
+        "bell pepper"
       ]
     },
     {
       "name": "snow peas",
       "score": 48.02210173713563,
       "connects_a": [
-        "vegetable oil",
+        "mushrooms",
         "carrot",
-        "mushrooms"
+        "vegetable oil"
       ],
       "connects_b": [
-        "ginger",
-        "mushrooms",
-        "chicken breasts"
+        "shrimp",
+        "corn starch",
+        "rice vinegar"
       ]
     }
   ],
   "novel_from_a": [
+    {
+      "name": "crusty bread",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
     {
       "name": "head fennel",
       "pairs_with": "cloves",
@@ -164,11 +169,6 @@
       "strength": 1
     },
     {
-      "name": "crusty bread",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
       "name": "round steak",
       "pairs_with": "onion",
       "strength": 1
@@ -179,12 +179,7 @@
       "strength": 1
     },
     {
-      "name": "almond extract",
-      "pairs_with": "egg",
-      "strength": 1
-    },
-    {
-      "name": "room temp",
+      "name": "and half",
       "pairs_with": "egg",
       "strength": 1
     },
@@ -192,26 +187,16 @@
       "name": "pecans",
       "pairs_with": "egg",
       "strength": 1
+    },
+    {
+      "name": "shortening",
+      "pairs_with": "egg",
+      "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "radicchio",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "petite",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "fennel bulb",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "squid",
+      "name": "pasta",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -221,17 +206,32 @@
       "strength": 1
     },
     {
+      "name": "baby arugula",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "radicchio",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "spaghetti",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "petite",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "cherry tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "eyeball",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pasta",
+      "name": "fennel bulb",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -241,7 +241,7 @@
       "strength": 1
     },
     {
-      "name": "baby arugula",
+      "name": "palm",
       "pairs_with": "olive oil",
       "strength": 1
     }

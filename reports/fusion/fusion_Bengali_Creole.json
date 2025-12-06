@@ -5,79 +5,79 @@
       "name": "cayenne pepper",
       "score": 28.18304664007688,
       "connects_a": [
-        "mustard",
-        "chili powder"
+        "chili powder",
+        "mustard"
       ],
       "connects_b": [
-        "hot sauce",
-        "worcestershire sauce",
-        "mayonnaise"
+        "thyme",
+        "mayonnaise",
+        "celery"
       ]
     },
     {
       "name": "garam masala",
       "score": 28.15828144472264,
       "connects_a": [
-        "potatoes",
-        "oil",
-        "chili powder"
+        "chili powder",
+        "peas",
+        "potatoes"
       ],
       "connects_b": [
-        "vegetable oil",
-        "garlic",
-        "cayenne pepper"
+        "onion",
+        "cayenne pepper",
+        "garlic"
       ]
     },
     {
       "name": "onion powder",
       "score": 26.091746245399083,
       "connects_a": [
-        "mustard",
-        "chili powder"
+        "chili powder",
+        "mustard"
       ],
       "connects_b": [
-        "hot sauce",
-        "worcestershire sauce",
-        "mayonnaise"
+        "thyme",
+        "mayonnaise",
+        "celery"
       ]
     },
     {
       "name": "paprika",
       "score": 22.209748842467835,
       "connects_a": [
-        "mustard",
-        "chili powder"
+        "chili powder",
+        "mustard"
       ],
       "connects_b": [
-        "hot sauce",
-        "worcestershire sauce",
-        "onion powder"
+        "thyme",
+        "celery",
+        "andouille sausage"
       ]
     },
     {
       "name": "worcestershire sauce",
       "score": 22.156467679832254,
       "connects_a": [
-        "mustard",
-        "chili powder"
+        "chili powder",
+        "mustard"
       ],
       "connects_b": [
-        "hot sauce",
+        "thyme",
         "mayonnaise",
-        "onion powder"
+        "celery"
       ]
     },
     {
       "name": "chili powder",
       "score": 20.23276258071482,
       "connects_a": [
-        "oil",
-        "methi",
-        "leaf"
+        "leaf",
+        "jeera coriander",
+        "methi"
       ],
       "connects_b": [
         "worcestershire sauce",
-        "onion powder",
+        "paprika",
         "cayenne pepper"
       ]
     },
@@ -85,26 +85,26 @@
       "name": "tumeric",
       "score": 16.04529161679498,
       "connects_a": [
-        "oil",
-        "potatoes",
-        "chili powder"
+        "chili powder",
+        "peas",
+        "potatoes"
       ],
       "connects_b": [
-        "garlic",
+        "onion",
         "cayenne pepper",
-        "onion"
+        "garlic"
       ]
     },
     {
       "name": "beef stock",
       "score": 14.051542259600836,
       "connects_a": [
-        "potatoes",
-        "flour"
+        "flour",
+        "potatoes"
       ],
       "connects_b": [
-        "worcestershire sauce",
-        "onion powder",
+        "thyme",
+        "celery",
         "flour"
       ]
     },
@@ -112,13 +112,13 @@
       "name": "clams",
       "score": 14.031801381540555,
       "connects_a": [
-        "potatoes",
-        "peas"
+        "peas",
+        "potatoes"
       ],
       "connects_b": [
-        "chicken stock",
+        "thyme",
         "parsley",
-        "thyme"
+        "paprika"
       ]
     },
     {
@@ -128,9 +128,9 @@
         "leaves"
       ],
       "connects_b": [
-        "onion powder",
-        "vegetable oil",
-        "andouille sausage"
+        "thyme",
+        "celery",
+        "onion"
       ]
     }
   ],
@@ -166,7 +166,12 @@
       "strength": 1
     },
     {
-      "name": "finger",
+      "name": "wheat",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "sugar whole",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -176,12 +181,7 @@
       "strength": 1
     },
     {
-      "name": "purpose",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "sugar whole",
+      "name": "finger",
       "pairs_with": "flour",
       "strength": 1
     }
@@ -198,32 +198,27 @@
       "strength": 1
     },
     {
+      "name": "yeast",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "f",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
       "name": "cornmeal",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "biscuits",
+      "name": "cold butter",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "pinch cayenne",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "lard",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "beef stock",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "ice water",
+      "name": "cold",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -233,7 +228,12 @@
       "strength": 1
     },
     {
-      "name": "f",
+      "name": "cod",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "crabs",
       "pairs_with": "flour",
       "strength": 1
     }

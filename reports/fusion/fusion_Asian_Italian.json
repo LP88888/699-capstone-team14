@@ -5,28 +5,28 @@
       "name": "inch piece",
       "score": 85.25427584302363,
       "connects_a": [
-        "hoisin sauce",
-        "soy sauce",
-        "mushrooms"
+        "fish sauce",
+        "cloves",
+        "hoisin sauce"
       ],
       "connects_b": [
+        "more",
         "cloves",
-        "grain sea salt",
-        "more"
+        "grain sea salt"
       ]
     },
     {
       "name": "ribs celery",
       "score": 70.51015235559204,
       "connects_a": [
-        "scallions",
         "cloves",
+        "onion",
         "pepper flakes"
       ],
       "connects_b": [
         "cloves",
-        "parsley",
-        "wine"
+        "optional",
+        "pepper flakes"
       ]
     },
     {
@@ -34,22 +34,22 @@
       "score": 60.133284954817384,
       "connects_a": [
         "cloves",
-        "olive oil",
+        "onion",
         "pepper flakes"
       ],
       "connects_b": [
-        "oregano",
         "cloves",
-        "olive oil"
+        "optional",
+        "pepper flakes"
       ]
     },
     {
       "name": "hoisin sauce",
       "score": 60.04587304316689,
       "connects_a": [
-        "cabbage",
-        "sodium soy sauce",
-        "fish sauce"
+        "honey",
+        "cilantro",
+        "soy sauce"
       ],
       "connects_b": [
         "pepper flakes",
@@ -61,70 +61,56 @@
       "name": "can tomatoes",
       "score": 56.32961085814641,
       "connects_a": [
-        "pepper flakes",
-        "bell pepper",
-        "onion"
+        "cloves",
+        "onion",
+        "pepper flakes"
       ],
       "connects_b": [
-        "oregano",
-        "basil",
-        "cloves"
-      ]
-    },
-    {
-      "name": "eyeball",
-      "score": 54.58208262152522,
-      "connects_a": [
-        "lime",
-        "mushrooms",
-        "scallions"
-      ],
-      "connects_b": [
-        "parsley",
-        "olive oil",
-        "wine"
+        "cloves",
+        "optional",
+        "pepper flakes"
       ]
     },
     {
       "name": "peeled ginger",
       "score": 48.02715405310887,
       "connects_a": [
+        "fish sauce",
         "hoisin sauce",
-        "lime",
-        "soy sauce"
+        "rice vinegar"
       ],
       "connects_b": [
-        ")",
+        "1",
         "more",
-        "carrot"
+        ")"
       ]
     },
     {
       "name": "veal",
       "score": 44.11992110271641,
       "connects_a": [
-        "carrot",
+        "cloves",
         "2",
-        "egg"
+        "carrot"
       ],
       "connects_b": [
-        "oregano",
         "cloves",
-        "parsley"
+        "parsley",
+        "oregano"
       ]
     },
     {
       "name": "pancetta",
       "score": 44.05676875200534,
       "connects_a": [
-        "pepper flakes",
         "olive oil",
-        "carrot"
+        "mushrooms",
+        "pepper flakes"
       ],
       "connects_b": [
-        "parsley",
-        "olive oil",
-        "wine"
+        "more",
+        "pepper flakes",
+        "parsley"
       ]
     },
     {
@@ -132,13 +118,27 @@
       "score": 42.252943726202304,
       "connects_a": [
         "cloves",
-        "olive oil",
+        "fish sauce",
         "pepper flakes"
       ],
       "connects_b": [
         "cloves",
+        "pepper flakes",
+        "parsley"
+      ]
+    },
+    {
+      "name": "celery",
+      "score": 42.10425419269799,
+      "connects_a": [
+        "onion",
+        "bell pepper",
+        "rice"
+      ],
+      "connects_b": [
+        "onion",
         "parsley",
-        "olive oil"
+        "oregano"
       ]
     }
   ],
@@ -164,11 +164,6 @@
       "strength": 1
     },
     {
-      "name": "garam masala",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
       "name": "ginger paste",
       "pairs_with": "onion",
       "strength": 1
@@ -179,8 +174,8 @@
       "strength": 1
     },
     {
-      "name": "pecan halves",
-      "pairs_with": "egg",
+      "name": "garam masala",
+      "pairs_with": "onion",
       "strength": 1
     },
     {
@@ -189,39 +184,19 @@
       "strength": 1
     },
     {
-      "name": "palm sugar",
+      "name": "pecan halves",
+      "pairs_with": "egg",
+      "strength": 1
+    },
+    {
+      "name": "hoisin sauce",
       "pairs_with": "carrot",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "giardiniera",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "petite",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pinenuts",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "porcini mushrooms",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "crusty bread",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "kalamata olives",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -231,17 +206,42 @@
       "strength": 1
     },
     {
-      "name": "chianti",
+      "name": "artichokes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "risotto",
+      "name": "romano cheese",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "romano",
+      "name": "cannellini",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "[extra",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "ricotta salata",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pinenuts",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "of handfuls",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "reggiano cheese",
       "pairs_with": "olive oil",
       "strength": 1
     }

@@ -10,61 +10,22 @@
       ],
       "connects_b": [
         "hoisin sauce",
-        "ginger",
-        "soy sauce"
+        "corn starch",
+        "rice vinegar"
       ]
     },
     {
       "name": "garam masala",
       "score": 24.135669809762263,
       "connects_a": [
-        "potatoes",
-        "oil",
-        "chili powder"
+        "chili powder",
+        "peas",
+        "potatoes"
       ],
       "connects_b": [
-        "ginger",
-        "chicken breasts",
-        "vegetable oil"
-      ]
-    },
-    {
-      "name": "carom",
-      "score": 24.040610908378003,
-      "connects_a": [
-        "powder",
-        "seeds",
-        "flour"
-      ],
-      "connects_b": [
-        "oil",
-        "flour"
-      ]
-    },
-    {
-      "name": "cardamom",
-      "score": 22.329243223589916,
-      "connects_a": [
-        "powder",
-        "seeds",
-        "seeds cloves"
-      ],
-      "connects_b": [
+        "onion",
         "oil",
         "ginger"
-      ]
-    },
-    {
-      "name": "wheat",
-      "score": 22.067860863760693,
-      "connects_a": [
-        "powder",
-        "seeds",
-        "flour"
-      ],
-      "connects_b": [
-        "oil",
-        "flour"
       ]
     },
     {
@@ -74,36 +35,49 @@
         "oil"
       ],
       "connects_b": [
-        "cabbage",
-        "corn starch",
-        "sodium soy sauce"
+        "chicken broth",
+        "rice wine",
+        "soy sauce"
       ]
     },
     {
       "name": "chili pepper",
       "score": 22.008334996937496,
       "connects_a": [
-        "oil",
-        "chili powder"
+        "chili powder",
+        "oil"
       ],
       "connects_b": [
-        "ginger",
-        "soy sauce",
-        "chicken breasts"
+        "rice wine",
+        "corn starch",
+        "rice vinegar"
+      ]
+    },
+    {
+      "name": "cardamom",
+      "score": 20.29931202144538,
+      "connects_a": [
+        "chilli",
+        "leaf",
+        "seeds cloves"
+      ],
+      "connects_b": [
+        "oil",
+        "ginger"
       ]
     },
     {
       "name": "tumeric",
       "score": 20.056614520993726,
       "connects_a": [
-        "oil",
-        "potatoes",
-        "chili powder"
+        "chili powder",
+        "peas",
+        "potatoes"
       ],
       "connects_b": [
+        "onion",
         "ginger",
-        "chicken breasts",
-        "oil"
+        "chicken breasts"
       ]
     },
     {
@@ -113,9 +87,22 @@
         "oil"
       ],
       "connects_b": [
-        "cabbage",
-        "sodium soy sauce",
-        "shaoxing"
+        "chicken broth",
+        "rice wine",
+        "soy sauce"
+      ]
+    },
+    {
+      "name": "carom",
+      "score": 20.033842423648338,
+      "connects_a": [
+        "chilli",
+        "flour",
+        "jeera coriander"
+      ],
+      "connects_b": [
+        "flour",
+        "oil"
       ]
     },
     {
@@ -125,9 +112,22 @@
         "oil"
       ],
       "connects_b": [
-        "cabbage",
-        "corn starch",
-        "shaoxing"
+        "rice wine",
+        "honey",
+        "peanut oil"
+      ]
+    },
+    {
+      "name": "wheat",
+      "score": 18.055522524895114,
+      "connects_a": [
+        "chilli",
+        "flour",
+        "oil salt"
+      ],
+      "connects_b": [
+        "flour",
+        "oil"
       ]
     }
   ],
@@ -138,17 +138,17 @@
       "strength": 1
     },
     {
-      "name": "fenugreek seeds",
-      "pairs_with": "ginger",
-      "strength": 1
-    },
-    {
       "name": "mustard seeds",
       "pairs_with": "ginger",
       "strength": 1
     },
     {
-      "name": "finger",
+      "name": "fenugreek seeds",
+      "pairs_with": "ginger",
+      "strength": 1
+    },
+    {
+      "name": "sugar whole",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -158,7 +158,7 @@
       "strength": 1
     },
     {
-      "name": "sugar whole",
+      "name": "finger",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -173,49 +173,19 @@
       "strength": 1
     },
     {
-      "name": "fenugreek seeds",
+      "name": "cloves cardamom",
       "pairs_with": "leaves",
       "strength": 1
     },
     {
-      "name": "cloves cardamom",
+      "name": "fenugreek seeds",
       "pairs_with": "leaves",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "leaves green",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "virgin",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
       "name": "green bell",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "french",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "leaves whole",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "fruit",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "button",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -225,7 +195,37 @@
       "strength": 1
     },
     {
+      "name": "virgin",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "leaves whole",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
       "name": "pepper powder",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "button",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "fruit",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "french",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "leaves green",
       "pairs_with": "dhania",
       "strength": 1
     },

@@ -3,15 +3,29 @@
   "bridges": [
     {
       "name": "tomato paste",
-      "score": 24.15486663752725,
+      "score": 32.20648885003633,
       "connects_a": [
-        "bell pepper",
+        "thyme",
         "onion",
-        "thyme"
+        "bell pepper"
       ],
       "connects_b": [
-        "russet potatoes",
+        "thyme",
         "cloves",
+        "onion"
+      ]
+    },
+    {
+      "name": "bay leaf",
+      "score": 24.215989151824644,
+      "connects_a": [
+        "thyme",
+        "onion",
+        "beans"
+      ],
+      "connects_b": [
+        "thyme",
+        "onion",
         "parsley"
       ]
     },
@@ -19,13 +33,13 @@
       "name": "beef stock",
       "score": 24.08835815931572,
       "connects_a": [
+        "thyme",
         "flour",
-        "potatoes",
         "onion"
       ],
       "connects_b": [
-        "flour",
         "thyme",
+        "flour",
         "onion"
       ]
     },
@@ -33,14 +47,42 @@
       "name": "file powder",
       "score": 24.04874319183523,
       "connects_a": [
-        "bell pepper",
+        "thyme",
+        "onion",
+        "bell pepper"
+      ],
+      "connects_b": [
+        "thyme",
+        "onion",
+        "garlic"
+      ]
+    },
+    {
+      "name": "celery",
+      "score": 20.049644853665708,
+      "connects_a": [
+        "thyme",
+        "onion",
+        "bell pepper"
+      ],
+      "connects_b": [
+        "thyme",
+        "onion",
+        "parsley"
+      ]
+    },
+    {
+      "name": "cans tomatoes",
+      "score": 20.044428318272463,
+      "connects_a": [
+        "olive oil",
         "onion",
         "leaves"
       ],
       "connects_b": [
-        "vegetable oil",
-        "garlic",
-        "thyme"
+        "cloves",
+        "onion",
+        "leaves"
       ]
     },
     {
@@ -51,23 +93,9 @@
         "almonds"
       ],
       "connects_b": [
-        "butter",
-        "egg yolks",
-        "cream"
-      ]
-    },
-    {
-      "name": "bay leaf",
-      "score": 18.161991863868483,
-      "connects_a": [
-        "onion",
-        "thyme",
-        "beans"
-      ],
-      "connects_b": [
-        "russet potatoes",
-        "parsley",
-        "thyme"
+        "cream",
+        "coffee",
+        "egg yolks"
       ]
     },
     {
@@ -78,62 +106,37 @@
         "almonds"
       ],
       "connects_b": [
-        "butter",
-        "egg yolks",
-        "cream"
+        "cream",
+        "more",
+        "egg yolks"
+      ]
+    },
+    {
+      "name": "yellow onions",
+      "score": 18.024870123973695,
+      "connects_a": [
+        "thyme",
+        "bell pepper",
+        "oregano"
+      ],
+      "connects_b": [
+        "thyme",
+        "parsley",
+        "2"
       ]
     },
     {
       "name": "beef broth",
       "score": 18.021030382268112,
       "connects_a": [
-        "potatoes",
-        "onion",
-        "thyme"
-      ],
-      "connects_b": [
-        "caraway seeds",
         "thyme",
-        "onion"
-      ]
-    },
-    {
-      "name": "wheat",
-      "score": 16.049353355462323,
-      "connects_a": [
-        "powder",
-        "seeds",
-        "flour"
-      ],
-      "connects_b": [
-        "flour"
-      ]
-    },
-    {
-      "name": "filling",
-      "score": 16.024575720914825,
-      "connects_a": [
-        "cream",
-        "flour"
-      ],
-      "connects_b": [
-        "flour",
-        "butter",
-        "egg yolks"
-      ]
-    },
-    {
-      "name": "ribs celery",
-      "score": 15.10931836191258,
-      "connects_a": [
-        "bell pepper",
         "onion",
-        "thyme"
+        "potatoes"
       ],
       "connects_b": [
-        "cloves",
-        "parsley",
-        "thyme"
+        "thyme",
+        "onion",
+        "carrot"
       ]
     }
   ],
@@ -144,12 +147,17 @@
       "strength": 1
     },
     {
+      "name": "pasta",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "arugula",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "cherry tomatoes",
+      "name": "reggiano",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -159,7 +167,7 @@
       "strength": 1
     },
     {
-      "name": "pasta",
+      "name": "cherry tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -169,12 +177,12 @@
       "strength": 1
     },
     {
-      "name": "reggiano",
-      "pairs_with": "olive oil",
+      "name": "crusty bread",
+      "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "crusty bread",
+      "name": "reggiano",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -182,41 +190,16 @@
       "name": "black beans",
       "pairs_with": "cloves",
       "strength": 1
-    },
-    {
-      "name": "reggiano",
-      "pairs_with": "cloves",
-      "strength": 1
     }
   ],
   "novel_from_b": [
-    {
-      "name": "bunch kale",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "head fennel",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "eyeball",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
     {
       "name": "palm",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "sherry vinegar",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "plum tomatoes",
+      "name": "head fennel",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -231,12 +214,32 @@
       "strength": 1
     },
     {
-      "name": "split",
-      "pairs_with": "dhania",
+      "name": "plum tomatoes",
+      "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "ham hocks",
+      "name": "bunch kale",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "sherry vinegar",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "celery",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "chicken bouillon",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "palm",
       "pairs_with": "onion",
       "strength": 1
     }

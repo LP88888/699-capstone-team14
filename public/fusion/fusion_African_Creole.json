@@ -6,13 +6,13 @@
       "score": 136.3375850049268,
       "connects_a": [
         "tomato paste",
-        "chicken stock",
+        "onion",
         "parsley"
       ],
       "connects_b": [
-        "hot sauce",
-        "worcestershire sauce",
-        "onion powder"
+        "thyme",
+        "onion",
+        "andouille sausage"
       ]
     },
     {
@@ -20,27 +20,27 @@
       "score": 119.15751031367718,
       "connects_a": [
         "tomato paste",
-        "chicken stock",
-        "chicken"
+        "onion",
+        "paprika"
       ],
       "connects_b": [
-        "hot sauce",
-        "worcestershire sauce",
-        "onion powder"
+        "thyme",
+        "celery",
+        "onion"
       ]
     },
     {
       "name": "tomato paste",
       "score": 117.75497485794533,
       "connects_a": [
-        "cumin",
-        "turmeric",
-        "cloves"
+        "cloves",
+        "onion",
+        "parsley"
       ],
       "connects_b": [
-        "worcestershire sauce",
-        "oregano",
-        "cloves"
+        "thyme",
+        "cloves",
+        "celery"
       ]
     },
     {
@@ -48,13 +48,13 @@
       "score": 104.1436940496258,
       "connects_a": [
         "tomato paste",
-        "chicken stock",
-        "parsley"
+        "parsley",
+        "paprika"
       ],
       "connects_b": [
-        "worcestershire sauce",
-        "onion powder",
-        "chicken stock"
+        "kosher sea salt",
+        "thyme",
+        "celery"
       ]
     },
     {
@@ -62,27 +62,27 @@
       "score": 100.89995479926934,
       "connects_a": [
         "tomato paste",
-        "cumin",
-        "chicken stock"
+        "onion",
+        "parsley"
       ],
       "connects_b": [
-        "chicken stock",
-        "oregano",
-        "parsley"
+        "thyme",
+        "celery",
+        "onion"
       ]
     },
     {
       "name": "palm",
       "score": 99.38094452682073,
       "connects_a": [
-        "cumin",
-        "chicken stock",
-        "scallions"
+        "cloves",
+        "onion",
+        "parsley"
       ],
       "connects_b": [
-        "hot sauce",
-        "chicken stock",
-        "cloves"
+        "cloves",
+        "onion",
+        "parsley"
       ]
     },
     {
@@ -90,13 +90,13 @@
       "score": 98.55398505652924,
       "connects_a": [
         "tomato paste",
-        "ginger",
-        "cumin"
+        "cumin seeds",
+        "onion"
       ],
       "connects_b": [
-        "vegetable oil",
-        "garlic",
-        "cayenne pepper"
+        "onion",
+        "cayenne pepper",
+        "garlic"
       ]
     },
     {
@@ -104,27 +104,27 @@
       "score": 90.12299919886672,
       "connects_a": [
         "tomato paste",
-        "chicken stock",
-        "vegetable oil"
+        "onion",
+        "bell pepper"
       ],
       "connects_b": [
-        "hot sauce",
-        "worcestershire sauce",
-        "chicken stock"
+        "thyme",
+        "celery",
+        "onion"
       ]
     },
     {
       "name": "creole seasoning",
       "score": 85.04591130442498,
       "connects_a": [
-        "chicken stock",
         "parsley",
-        "tomatoes"
+        "paprika",
+        "bell pepper"
       ],
       "connects_b": [
-        "hot sauce",
-        "worcestershire sauce",
-        "mayonnaise"
+        "thyme",
+        "mayonnaise",
+        "celery"
       ]
     },
     {
@@ -132,19 +132,34 @@
       "score": 84.54913992023064,
       "connects_a": [
         "tomato paste",
-        "cumin",
-        "coriander"
+        "coriander",
+        "2"
       ],
       "connects_b": [
-        "hot sauce",
-        "worcestershire sauce",
-        "mayonnaise"
+        "thyme",
+        "mayonnaise",
+        "celery"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "cans chickpeas",
+      "name": "palm",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "handful pine nuts",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "brussels sprouts",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "kalamata olives",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -159,17 +174,7 @@
       "strength": 1
     },
     {
-      "name": "palm",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "handful pine nuts",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "fennel bulb",
+      "name": "cans chickpeas",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -179,7 +184,7 @@
       "strength": 1
     },
     {
-      "name": "kalamata olives",
+      "name": "fennel bulb",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -187,41 +192,31 @@
       "name": "turkey sausage",
       "pairs_with": "olive oil",
       "strength": 1
-    },
-    {
-      "name": "brussels sprouts",
-      "pairs_with": "olive oil",
-      "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "cannellini",
+      "name": "basil chiffonade",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "fettuccine",
+      "name": "heads garlic",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "spaghetti",
+      "name": "oregano leaves",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "capers",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
       "name": "roasted tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "parmigiano",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "littleneck clams",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -236,12 +231,17 @@
       "strength": 1
     },
     {
-      "name": "heads garlic",
+      "name": "arugula",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "oregano leaves",
+      "name": "parmigiano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cannellini",
       "pairs_with": "olive oil",
       "strength": 1
     }

@@ -6,26 +6,26 @@
       "score": 64.12477944832308,
       "connects_a": [
         "mayonnaise",
-        "dijon mustard",
-        "wine vinegar"
+        "parsley",
+        "lemon"
       ],
       "connects_b": [
-        "wine vinegar",
         "parsley",
-        "olive oil"
+        "lemon",
+        "lemon juice"
       ]
     },
     {
       "name": "tomato paste",
       "score": 63.406524923509025,
       "connects_a": [
-        "cumin",
         "cloves",
+        "onion",
         "parsley"
       ],
       "connects_b": [
-        "cumin",
         "cloves",
+        "onion",
         "parsley"
       ]
     },
@@ -33,42 +33,42 @@
       "name": "palm",
       "score": 63.24241924434047,
       "connects_a": [
-        "cumin",
         "cloves",
+        "onion",
         "parsley"
       ],
       "connects_b": [
-        "cumin",
-        "chicken stock",
-        "cloves"
+        "cloves",
+        "onion",
+        "parsley"
       ]
     },
     {
       "name": "confectioners",
       "score": 60.31295330703761,
       "connects_a": [
-        "butter",
         "cream",
-        "cinnamon"
+        "more",
+        "1"
       ],
       "connects_b": [
-        "butter",
-        "egg",
-        "1"
+        "1",
+        "more",
+        "egg"
       ]
     },
     {
       "name": "celery",
       "score": 60.14893456099712,
       "connects_a": [
+        "onion",
         "parsley",
-        "garlic",
         "tomatoes"
       ],
       "connects_b": [
-        "chicken stock",
+        "onion",
         "parsley",
-        "garlic"
+        "paprika"
       ]
     },
     {
@@ -77,12 +77,12 @@
       "connects_a": [
         "cloves",
         "parsley",
-        "olive oil"
+        "bell pepper"
       ],
       "connects_b": [
-        "chicken stock",
         "cloves",
-        "parsley"
+        "parsley",
+        "paprika"
       ]
     },
     {
@@ -90,12 +90,12 @@
       "score": 56.40812188447363,
       "connects_a": [
         "cloves",
-        "parsley",
-        "optional"
+        "optional",
+        "parsley"
       ],
       "connects_b": [
-        "chicken stock",
         "cloves",
+        "onion",
         "parsley"
       ]
     },
@@ -103,28 +103,28 @@
       "name": "garam masala",
       "score": 56.31656288944528,
       "connects_a": [
+        "onion",
         "cumin",
-        "vegetable oil",
-        "garlic"
+        "lemon juice"
       ],
       "connects_b": [
-        "cumin",
-        "garlic",
-        "tomatoes"
+        "onion",
+        "paprika",
+        "cumin"
       ]
     },
     {
       "name": "grits",
       "score": 56.21908600530311,
       "connects_a": [
-        "butter",
-        "parsley",
-        "cream"
+        "cream",
+        "more",
+        "parsley"
       ],
       "connects_b": [
-        "chicken stock",
-        "butter",
-        "parsley"
+        "more",
+        "parsley",
+        "paprika"
       ]
     },
     {
@@ -132,49 +132,34 @@
       "score": 54.07461037192108,
       "connects_a": [
         "parsley",
-        "garlic",
-        "kosher sea salt"
+        "2",
+        "bell pepper"
       ],
       "connects_b": [
-        "chicken stock",
         "parsley",
-        "garlic"
+        "paprika",
+        "2"
       ]
     }
   ],
   "novel_from_a": [
     {
+      "name": "[extra",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "ricotta salata",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "head fennel",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "radicchio",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "penne pasta",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "mortadella",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pasta",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "fettuccine",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "by hand",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "1/4 cup chopped fresh",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -184,12 +169,27 @@
       "strength": 1
     },
     {
-      "name": "petite",
+      "name": "morel mushrooms",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "roma",
+      "name": "pecorino",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cubanelle peppers",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cremini",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "micro greens",
       "pairs_with": "olive oil",
       "strength": 1
     }

@@ -6,13 +6,13 @@
       "score": 130.17961756203223,
       "connects_a": [
         "tomato paste",
-        "worcestershire sauce",
-        "parsley"
+        "parsley",
+        "2"
       ],
       "connects_b": [
-        "worcestershire sauce",
-        "onion powder",
-        "chicken stock"
+        "kosher sea salt",
+        "thyme",
+        "celery"
       ]
     },
     {
@@ -20,41 +20,41 @@
       "score": 112.27801118052795,
       "connects_a": [
         "tomato paste",
-        "worcestershire sauce",
+        "onion",
         "parsley"
       ],
       "connects_b": [
-        "hot sauce",
-        "worcestershire sauce",
-        "onion powder"
+        "thyme",
+        "onion",
+        "parsley"
       ]
     },
     {
       "name": "tomato paste",
       "score": 108.6968998688726,
       "connects_a": [
-        "worcestershire sauce",
-        "russet potatoes",
-        "cloves"
+        "cloves",
+        "onion",
+        "parsley"
       ],
       "connects_b": [
-        "worcestershire sauce",
-        "oregano",
-        "cloves"
+        "thyme",
+        "cloves",
+        "celery"
       ]
     },
     {
       "name": "grits",
       "score": 98.38340050928045,
       "connects_a": [
-        "butter",
-        "parsley",
-        "cream"
+        "cream",
+        "more",
+        "parsley"
       ],
       "connects_b": [
-        "hot sauce",
-        "onion powder",
-        "scallions"
+        "cream",
+        "more",
+        "parsley"
       ]
     },
     {
@@ -62,13 +62,13 @@
       "score": 98.05663545382662,
       "connects_a": [
         "tomato paste",
-        "worcestershire sauce",
-        "garlic"
+        "2",
+        "wine"
       ],
       "connects_b": [
-        "hot sauce",
-        "worcestershire sauce",
-        "onion powder"
+        "kosher sea salt",
+        "thyme",
+        "celery"
       ]
     },
     {
@@ -76,13 +76,13 @@
       "score": 90.12299919886672,
       "connects_a": [
         "tomato paste",
-        "worcestershire sauce",
-        "vegetable oil"
+        "onion",
+        "worcestershire sauce"
       ],
       "connects_b": [
-        "hot sauce",
-        "worcestershire sauce",
-        "chicken stock"
+        "thyme",
+        "celery",
+        "onion"
       ]
     },
     {
@@ -90,13 +90,13 @@
       "score": 85.11250736691227,
       "connects_a": [
         "tomato paste",
-        "worcestershire sauce",
-        "garlic"
+        "onion",
+        "worcestershire sauce"
       ],
       "connects_b": [
-        "hot sauce",
-        "worcestershire sauce",
-        "onion powder"
+        "thyme",
+        "celery",
+        "onion"
       ]
     },
     {
@@ -104,13 +104,13 @@
       "score": 84.4382356601282,
       "connects_a": [
         "tomato paste",
-        "worcestershire sauce",
-        "parsley"
+        "parsley",
+        "2"
       ],
       "connects_b": [
-        "hot sauce",
-        "worcestershire sauce",
-        "onion powder"
+        "celery",
+        "parsley",
+        "cajun seasoning"
       ]
     },
     {
@@ -118,13 +118,13 @@
       "score": 84.34465246000889,
       "connects_a": [
         "flour",
-        "beaten",
-        "kosher sea salt"
+        "egg",
+        "milk"
       ],
       "connects_b": [
-        "hot sauce",
+        "thyme",
         "mayonnaise",
-        "onion powder"
+        "flour"
       ]
     },
     {
@@ -132,22 +132,17 @@
       "score": 80.06121028490679,
       "connects_a": [
         "tomato paste",
-        "worcestershire sauce",
+        "onion",
         "parsley"
       ],
       "connects_b": [
-        "worcestershire sauce",
+        "thyme",
         "mayonnaise",
-        "parsley"
+        "onion"
       ]
     }
   ],
   "novel_from_a": [
-    {
-      "name": "spun",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
     {
       "name": "head fennel",
       "pairs_with": "olive oil",
@@ -159,7 +154,12 @@
       "strength": 1
     },
     {
-      "name": "arugula leaves",
+      "name": "cremini",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "spun",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -174,17 +174,17 @@
       "strength": 1
     },
     {
-      "name": "cremini",
+      "name": "arugula leaves",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "sodium",
+      "name": "head fennel",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "head fennel",
+      "name": "stock",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -196,37 +196,22 @@
   ],
   "novel_from_b": [
     {
-      "name": "bunch kale",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "chipotle puree",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "orzo pasta",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "baby arugula",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "fettuccine",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "radicchio",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "roma",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "handful pine nuts",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "anchovy paste",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pepperoncini peppers",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -236,12 +221,27 @@
       "strength": 1
     },
     {
-      "name": "beefsteak tomatoes",
+      "name": "chipotle puree",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "oregano leaves",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "olives",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
       "name": "roasted tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "bunch kale",
       "pairs_with": "olive oil",
       "strength": 1
     }

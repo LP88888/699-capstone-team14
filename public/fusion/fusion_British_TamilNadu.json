@@ -8,9 +8,9 @@
         "peas"
       ],
       "connects_b": [
+        "arhar dal",
         "powder",
-        "split",
-        "finger"
+        "leaves coriander"
       ]
     },
     {
@@ -18,8 +18,8 @@
       "score": 18.06626861948679,
       "connects_a": [
         "tomato paste",
-        "worcestershire sauce",
-        "mushrooms"
+        "flour",
+        "onion"
       ],
       "connects_b": [
         "flour",
@@ -27,24 +27,11 @@
       ]
     },
     {
-      "name": "sprigs thyme",
-      "score": 16.03403919314919,
-      "connects_a": [
-        "tomato paste",
-        "cloves",
-        "wine"
-      ],
-      "connects_b": [
-        "split",
-        "leaves"
-      ]
-    },
-    {
       "name": "bay leaf",
       "score": 14.125993671897708,
       "connects_a": [
         "tomato paste",
-        "russet potatoes",
+        "onion",
         "parsley"
       ],
       "connects_b": [
@@ -57,8 +44,8 @@
       "score": 14.082402714536602,
       "connects_a": [
         "tomato paste",
-        "worcestershire sauce",
-        "cloves"
+        "cloves",
+        "onion"
       ],
       "connects_b": [
         "onion",
@@ -70,12 +57,12 @@
       "score": 14.07914072236132,
       "connects_a": [
         "tomato paste",
-        "vegetable oil",
-        "garlic"
+        "onion",
+        "cayenne pepper"
       ],
       "connects_b": [
-        "oil",
-        "onion"
+        "onion",
+        "oil"
       ]
     },
     {
@@ -84,49 +71,62 @@
       "connects_a": [
         "tomato paste",
         "cloves",
-        "olive oil"
+        "onion"
       ],
       "connects_b": [
         "onion",
         "leaves"
-      ]
-    },
-    {
-      "name": "cardamom",
-      "score": 12.179587212867228,
-      "connects_a": [
-        "nutmeg",
-        "peas"
-      ],
-      "connects_b": [
-        "powder",
-        "seeds",
-        "oil"
-      ]
-    },
-    {
-      "name": "wheat",
-      "score": 12.037015016596742,
-      "connects_a": [
-        "flour"
-      ],
-      "connects_b": [
-        "powder",
-        "seeds",
-        "flour"
       ]
     },
     {
       "name": "file powder",
       "score": 12.024371595917614,
       "connects_a": [
-        "vegetable oil",
-        "garlic",
-        "cayenne pepper"
+        "onion",
+        "cayenne pepper",
+        "garlic"
       ],
       "connects_b": [
         "onion",
         "leaves"
+      ]
+    },
+    {
+      "name": "evoo",
+      "score": 12.009743217517157,
+      "connects_a": [
+        "tomato paste",
+        "cloves",
+        "onion"
+      ],
+      "connects_b": [
+        "onion",
+        "leaves"
+      ]
+    },
+    {
+      "name": "wheat",
+      "score": 11.033930431880346,
+      "connects_a": [
+        "flour"
+      ],
+      "connects_b": [
+        "chilli",
+        "flour",
+        "oil salt"
+      ]
+    },
+    {
+      "name": "cardamom",
+      "score": 10.14965601072269,
+      "connects_a": [
+        "peas",
+        "nutmeg"
+      ],
+      "connects_b": [
+        "chilli",
+        "seeds",
+        "oil"
       ]
     }
   ],
@@ -137,32 +137,7 @@
       "strength": 1
     },
     {
-      "name": "tomato puree",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "beef",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
       "name": "celery",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "stalks celery",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "celery ribs",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "beef stock",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -172,12 +147,37 @@
       "strength": 1
     },
     {
+      "name": "lamb shoulder",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
       "name": "round steak",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "lamb shoulder",
+      "name": "stalks celery",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "beef stock",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "sodium beef broth",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "celery ribs",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "tomato puree",
       "pairs_with": "onion",
       "strength": 1
     }
@@ -194,12 +194,7 @@
       "strength": 1
     },
     {
-      "name": "finger",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "carom",
+      "name": "wheat",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -209,17 +204,22 @@
       "strength": 1
     },
     {
-      "name": "wheat",
+      "name": "carom",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "coffee",
-      "pairs_with": "vanilla extract",
+      "name": "finger",
+      "pairs_with": "flour",
       "strength": 1
     },
     {
       "name": "banana",
+      "pairs_with": "vanilla extract",
+      "strength": 1
+    },
+    {
+      "name": "coffee",
       "pairs_with": "vanilla extract",
       "strength": 1
     },

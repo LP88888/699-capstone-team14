@@ -5,55 +5,55 @@
       "name": "confectioners",
       "score": 150.782383267594,
       "connects_a": [
-        "butter",
         "cream",
-        "cinnamon"
+        "more",
+        "1"
       ],
       "connects_b": [
-        "nutmeg",
-        "maple syrup",
-        "butter"
+        "cream",
+        "more",
+        "1"
       ]
     },
     {
       "name": "at",
       "score": 117.46602612714106,
       "connects_a": [
-        "butter",
         "cream",
-        "kosher sea salt"
+        "more",
+        "1"
       ],
       "connects_b": [
-        "maple syrup",
-        "butter",
-        "egg yolks"
+        "cream",
+        "more",
+        "1"
       ]
     },
     {
       "name": "whole milk",
       "score": 96.2811376622035,
       "connects_a": [
-        "butter",
-        "kosher sea salt",
-        "cinnamon"
+        "more",
+        "egg",
+        "2"
       ],
       "connects_b": [
-        "nutmeg",
+        "more",
         "maple syrup",
-        "butter"
+        "egg yolks"
       ]
     },
     {
       "name": "sticks",
       "score": 88.31123193558749,
       "connects_a": [
-        "butter",
-        "cinnamon",
-        "1"
+        "1",
+        "more",
+        "egg"
       ],
       "connects_b": [
-        "nutmeg",
-        "butter",
+        "1",
+        "more",
         "egg yolks"
       ]
     },
@@ -61,41 +61,41 @@
       "name": "vanilla extract",
       "score": 85.34776904705485,
       "connects_a": [
-        "butter",
         "cream",
-        "cinnamon"
+        "1",
+        "egg"
       ],
       "connects_b": [
-        "nutmeg",
-        "maple syrup",
-        "butter"
+        "cream",
+        "1",
+        "maple syrup"
       ]
     },
     {
       "name": "ice water",
       "score": 80.40780963664028,
       "connects_a": [
-        "flour",
-        "butter",
-        "cinnamon"
+        "1",
+        "more",
+        "flour"
       ],
       "connects_b": [
-        "nutmeg",
-        "flour",
-        "butter"
+        "1",
+        "more",
+        "flour"
       ]
     },
     {
       "name": "filling",
       "score": 72.1105907441167,
       "connects_a": [
+        "cream",
         "flour",
-        "butter",
-        "cream"
+        "egg"
       ],
       "connects_b": [
+        "cream",
         "flour",
-        "butter",
         "egg yolks"
       ]
     },
@@ -103,78 +103,48 @@
       "name": "cake flour",
       "score": 70.08635415933199,
       "connects_a": [
-        "butter",
         "cream",
+        "1",
         "egg"
       ],
       "connects_b": [
-        "butter",
-        "egg yolks",
-        "cream"
+        "cream",
+        "1",
+        "egg yolks"
       ]
     },
     {
       "name": "almond extract",
       "score": 63.070115657900736,
       "connects_a": [
-        "butter",
-        "cinnamon",
-        "1"
+        "1",
+        "egg",
+        "milk"
       ],
       "connects_b": [
-        "butter",
+        "1",
         "egg yolks",
-        "egg whites"
+        "purpose flour"
       ]
     },
     {
       "name": "corn syrup",
       "score": 60.09916331502917,
       "connects_a": [
-        "butter",
         "cream",
-        "cinnamon"
+        "1",
+        "milk"
       ],
       "connects_b": [
-        "nutmeg",
-        "butter",
+        "cream",
+        "1",
         "egg yolks"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "pass",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "mortadella",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "hearts",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "fettuccine",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "by hand",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pepperoncini peppers",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "bunch kale",
+      "name": "ricotta salata",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -184,12 +154,42 @@
       "strength": 1
     },
     {
+      "name": "pecorino",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cubanelle peppers",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "center cut",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "micro greens",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "squid",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "risotto",
+      "name": "orzo pasta",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "fettuccine",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "head escarole",
       "pairs_with": "olive oil",
       "strength": 1
     }
@@ -201,12 +201,12 @@
       "strength": 1
     },
     {
-      "name": "coriander powder",
+      "name": "lamb shoulder",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "lamb shoulder",
+      "name": "coriander powder",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -226,17 +226,17 @@
       "strength": 1
     },
     {
-      "name": "flour all",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
       "name": "sugar whole",
       "pairs_with": "flour",
       "strength": 1
     },
     {
       "name": "ragi",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "flour all",
       "pairs_with": "flour",
       "strength": 1
     },

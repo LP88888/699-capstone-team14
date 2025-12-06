@@ -3,81 +3,68 @@
   "bridges": [
     {
       "name": "seeds",
-      "score": 52.798425128756335,
+      "score": 50.76771646995801,
       "connects_a": [
-        "powder",
-        "dhania"
+        "dhania",
+        "powder"
       ],
       "connects_b": [
-        "powder",
-        "split",
-        "finger"
+        "arhar dal",
+        "gingelly",
+        "dhania"
       ]
     },
     {
       "name": "cardamom",
-      "score": 48.71834885146891,
+      "score": 40.59862404289076,
       "connects_a": [
-        "powder",
-        "ginger",
-        "cumin"
+        "cumin seeds",
+        "turmeric",
+        "coriander"
       ],
       "connects_b": [
-        "powder",
+        "chilli",
         "seeds",
         "oil"
       ]
     },
     {
-      "name": "red",
-      "score": 38.13994515615271,
+      "name": "chilli",
+      "score": 34.3277635801027,
       "connects_a": [
-        "powder",
-        "dhania"
+        "dhania",
+        "powder"
       ],
       "connects_b": [
-        "powder",
-        "split",
-        "pods"
+        "brinjal",
+        "chillies",
+        "gram"
       ]
     },
     {
-      "name": "chilli",
-      "score": 36.34704379069697,
+      "name": "red",
+      "score": 34.125214087084004,
       "connects_a": [
-        "powder",
-        "dhania"
+        "dhania",
+        "powder"
       ],
       "connects_b": [
-        "gram",
-        "powder",
-        "seeds"
+        "brinjal",
+        "chilli",
+        "gram"
       ]
     },
     {
       "name": "dal",
-      "score": 36.02667645702189,
+      "score": 32.023712406241685,
       "connects_a": [
-        "powder",
-        "dhania"
+        "dhania",
+        "powder"
       ],
       "connects_b": [
-        "gram",
-        "powder",
-        "seeds"
-      ]
-    },
-    {
-      "name": "fenugreek",
-      "score": 32.09444095576196,
-      "connects_a": [
-        "powder",
-        "dhania"
-      ],
-      "connects_b": [
-        "gram",
-        "powder",
-        "seeds"
+        "chilli",
+        "chillies",
+        "gram"
       ]
     },
     {
@@ -85,12 +72,25 @@
       "score": 28.15828144472264,
       "connects_a": [
         "tomato paste",
-        "ginger",
-        "cumin"
+        "cumin seeds",
+        "onion"
       ],
       "connects_b": [
-        "oil",
-        "onion"
+        "onion",
+        "oil"
+      ]
+    },
+    {
+      "name": "fenugreek",
+      "score": 28.082635836291715,
+      "connects_a": [
+        "dhania",
+        "powder"
+      ],
+      "connects_b": [
+        "chilli",
+        "gram",
+        "oil salt"
       ]
     },
     {
@@ -100,47 +100,43 @@
         "powder"
       ],
       "connects_b": [
+        "arhar dal",
         "powder",
-        "split",
-        "finger"
+        "leaves coriander"
       ]
     },
     {
       "name": "chili powder",
       "score": 24.279315096857786,
       "connects_a": [
-        "cumin",
+        "cumin seeds",
         "turmeric",
         "coriander"
       ],
       "connects_b": [
-        "oil",
         "gram",
-        "dhania"
+        "dhania",
+        "oil"
       ]
     },
     {
-      "name": "wheat",
-      "score": 24.074030033193484,
+      "name": "coriander powder",
+      "score": 24.046864570602338,
       "connects_a": [
-        "powder",
-        "dhania"
+        "cumin seeds",
+        "onion",
+        "tomatoes"
       ],
       "connects_b": [
-        "powder",
-        "seeds",
-        "flour"
+        "onion",
+        "leaves",
+        "oil"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "kabuli",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "olive",
+      "name": "green bell",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -155,64 +151,79 @@
       "strength": 1
     },
     {
+      "name": "kabuli",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "olive",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
       "name": "powder coriander",
       "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "green bell",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "pinch saffron",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "okra",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "beef",
-      "pairs_with": "onion",
       "strength": 1
     },
     {
       "name": "celery",
       "pairs_with": "onion",
       "strength": 1
+    },
+    {
+      "name": "palm",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "tomato paste",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "evoo",
+      "pairs_with": "onion",
+      "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "finger",
+      "name": "chili powder",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "chillies coriander",
+      "name": "wheat",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "leaves coriander",
+      "name": "jeera whole",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "carom",
+      "name": "til",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "semolina",
+      "name": "seeds cloves",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "mullangi",
+      "name": "chillies",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "urad dal",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "rai",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -222,17 +233,7 @@
       "strength": 1
     },
     {
-      "name": "kala",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "chili powder",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "hing",
+      "name": "channa dal",
       "pairs_with": "dhania",
       "strength": 1
     }

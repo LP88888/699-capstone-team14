@@ -6,13 +6,13 @@
       "score": 112.65922171629282,
       "connects_a": [
         "tomato paste",
-        "cumin",
-        "cloves"
+        "cloves",
+        "onion"
       ],
       "connects_b": [
-        "oregano",
-        "basil",
-        "cloves"
+        "cloves",
+        "optional",
+        "pepper flakes"
       ]
     },
     {
@@ -20,41 +20,41 @@
       "score": 90.65591017147548,
       "connects_a": [
         "tomato paste",
-        "chicken stock",
-        "scallions"
+        "cloves",
+        "onion"
       ],
       "connects_b": [
         "cloves",
-        "parsley",
-        "wine"
+        "optional",
+        "pepper flakes"
       ]
     },
     {
       "name": "tomato paste",
       "score": 90.58074989072718,
       "connects_a": [
-        "cumin",
-        "turmeric",
-        "cloves"
+        "cloves",
+        "onion",
+        "parsley"
       ],
       "connects_b": [
-        "oregano",
-        "basil",
-        "cloves"
+        "cloves",
+        "onion",
+        "parsley"
       ]
     },
     {
       "name": "palm",
       "score": 66.25396301788048,
       "connects_a": [
-        "cumin",
-        "chicken stock",
-        "scallions"
+        "cloves",
+        "onion",
+        "parsley"
       ],
       "connects_b": [
         "cloves",
-        "parsley",
-        "olive oil"
+        "onion",
+        "parsley"
       ]
     },
     {
@@ -62,13 +62,13 @@
       "score": 64.08842710746202,
       "connects_a": [
         "tomato paste",
-        "chicken stock",
-        "parsley"
+        "parsley",
+        "paprika"
       ],
       "connects_b": [
-        "oregano",
         "parsley",
-        "garlic"
+        "pepper flakes",
+        "oregano"
       ]
     },
     {
@@ -76,13 +76,13 @@
       "score": 60.5399728795616,
       "connects_a": [
         "tomato paste",
-        "cumin",
-        "chicken stock"
+        "onion",
+        "parsley"
       ],
       "connects_b": [
-        "oregano",
+        "onion",
         "parsley",
-        "wine"
+        "oregano"
       ]
     },
     {
@@ -91,12 +91,12 @@
       "connects_a": [
         "tomato paste",
         "cloves",
-        "olive oil"
+        "onion"
       ],
       "connects_b": [
-        "oregano",
         "cloves",
-        "olive oil"
+        "optional",
+        "pepper flakes"
       ]
     },
     {
@@ -104,13 +104,13 @@
       "score": 56.31656288944528,
       "connects_a": [
         "tomato paste",
-        "ginger",
-        "cumin"
+        "cumin seeds",
+        "onion"
       ],
       "connects_b": [
-        "garlic",
+        "onion",
         "lemon juice",
-        "onion"
+        "garlic"
       ]
     },
     {
@@ -118,13 +118,13 @@
       "score": 56.13900559026398,
       "connects_a": [
         "tomato paste",
-        "chicken stock",
+        "onion",
         "parsley"
       ],
       "connects_b": [
-        "oregano",
+        "onion",
         "parsley",
-        "garlic"
+        "oregano"
       ]
     },
     {
@@ -136,20 +136,20 @@
         "parsley"
       ],
       "connects_b": [
-        "oregano",
         "cloves",
-        "parsley"
+        "parsley",
+        "oregano"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "scotch bonnet",
+      "name": "scotch bonnet peppers",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "scotch bonnet peppers",
+      "name": "scotch bonnet",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -196,7 +196,42 @@
   ],
   "novel_from_b": [
     {
-      "name": "radicchio",
+      "name": "crusty bread",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "finely oregano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "bunch kale",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pasta",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "romano cheese",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "some",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pancetta",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "parmigiano",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -206,42 +241,7 @@
       "strength": 1
     },
     {
-      "name": "crusty bread",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "heads garlic",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "romano",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "arugula",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "penne pasta",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pass",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "mortadella",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cannellini",
+      "name": "crusty rolls",
       "pairs_with": "olive oil",
       "strength": 1
     }

@@ -5,154 +5,144 @@
       "name": "garam masala",
       "score": 461.59468511170326,
       "connects_a": [
-        "yogurt",
-        "cardamom",
-        "ginger"
+        "mustard seeds",
+        "cumin seeds",
+        "onion"
       ],
       "connects_b": [
-        "yogurt",
-        "tomatoes",
-        "peas"
+        "cardamom",
+        "basmati rice",
+        "yogurt"
       ]
     },
     {
       "name": "cumin seeds",
       "score": 294.3627504876346,
       "connects_a": [
-        "yogurt",
+        "mustard seeds",
         "cardamom",
-        "ginger"
+        "tomatoes"
       ],
       "connects_b": [
-        "yogurt",
-        "tomatoes",
-        "peas"
+        "cardamom",
+        "basmati rice",
+        "yogurt"
       ]
     },
     {
       "name": "turmeric",
       "score": 280.5427775318893,
       "connects_a": [
-        "yogurt",
+        "mustard seeds",
+        "cumin seeds",
+        "cardamom"
+      ],
+      "connects_b": [
         "cardamom",
-        "ginger"
-      ],
-      "connects_b": [
-        "yogurt",
-        "tomatoes",
-        "peas"
-      ]
-    },
-    {
-      "name": "cardamom",
-      "score": 276.07064349165717,
-      "connects_a": [
-        "yogurt",
-        "powder",
-        "ginger"
-      ],
-      "connects_b": [
-        "yogurt",
-        "yoghurt",
-        "ginger"
+        "basmati rice",
+        "yogurt"
       ]
     },
     {
       "name": "tumeric",
       "score": 270.7642960334153,
       "connects_a": [
-        "cardamom",
-        "ginger",
-        "cumin"
+        "mustard seeds",
+        "cumin seeds",
+        "onion"
       ],
       "connects_b": [
-        "cardamom",
-        "ginger",
-        "cumin"
+        "mustard seeds",
+        "cumin seeds",
+        "onion"
       ]
     },
     {
       "name": "mustard seeds",
       "score": 266.207172346266,
       "connects_a": [
-        "yogurt",
-        "ginger",
-        "cumin"
+        "cumin seeds",
+        "tomatoes",
+        "turmeric"
       ],
       "connects_b": [
         "yogurt",
-        "tomatoes",
-        "peas"
+        "chilies",
+        "cilantro"
       ]
     },
     {
       "name": "chilies",
       "score": 266.1478802784095,
       "connects_a": [
-        "cardamom",
-        "ginger",
-        "cumin"
+        "mustard seeds",
+        "cumin seeds",
+        "cardamom"
       ],
       "connects_b": [
-        "tomatoes",
-        "peas",
-        "yoghurt"
+        "cardamom",
+        "cilantro",
+        "potatoes"
+      ]
+    },
+    {
+      "name": "cardamom",
+      "score": 259.83119387450085,
+      "connects_a": [
+        "carom",
+        "cumin seeds",
+        "chilli"
+      ],
+      "connects_b": [
+        "cumin seeds",
+        "tumeric",
+        "turmeric"
       ]
     },
     {
       "name": "coriander",
       "score": 220.56859730865267,
       "connects_a": [
-        "yogurt",
-        "cardamom",
-        "ginger"
+        "mustard seeds",
+        "cumin seeds",
+        "cardamom"
       ],
       "connects_b": [
-        "yogurt",
-        "tomatoes",
-        "yoghurt"
+        "cardamom",
+        "basmati rice",
+        "yogurt"
       ]
     },
     {
       "name": "coriander powder",
       "score": 192.3749165648187,
       "connects_a": [
-        "cardamom",
-        "ginger",
-        "cumin"
+        "cumin seeds",
+        "onion",
+        "cardamom"
       ],
       "connects_b": [
-        "yoghurt",
-        "cardamom",
-        "ginger"
+        "cumin seeds",
+        "tumeric",
+        "onion"
       ]
     },
     {
       "name": "basmati rice",
       "score": 180.17352631287113,
       "connects_a": [
-        "yogurt",
+        "cumin seeds",
         "cardamom",
-        "ginger"
+        "turmeric"
       ],
       "connects_b": [
-        "yogurt",
+        "cumin seeds",
         "cardamom",
-        "coconut milk"
+        "turmeric"
       ]
     }
   ],
   "novel_from_a": [
-    {
-      "name": "chipotle puree",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "fennel bulb",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
     {
       "name": "crusty bread",
       "pairs_with": "olive oil",
@@ -160,6 +150,16 @@
     },
     {
       "name": "finely oregano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pasta",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "[extra",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -174,7 +174,7 @@
       "strength": 1
     },
     {
-      "name": "cherry tomatoes",
+      "name": "spaghetti",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -184,12 +184,12 @@
       "strength": 1
     },
     {
-      "name": "olives",
+      "name": "handful pine nuts",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "handful pine nuts",
+      "name": "cherry tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     }
@@ -201,7 +201,7 @@
       "strength": 1
     },
     {
-      "name": "celery ribs",
+      "name": "chicken bouillon",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -211,18 +211,13 @@
       "strength": 1
     },
     {
-      "name": "chicken bouillon",
+      "name": "celery ribs",
       "pairs_with": "onion",
       "strength": 1
     },
     {
       "name": "rice vinegar",
       "pairs_with": "ginger",
-      "strength": 1
-    },
-    {
-      "name": "corn tortillas",
-      "pairs_with": "cumin",
       "strength": 1
     },
     {
@@ -236,7 +231,12 @@
       "strength": 1
     },
     {
-      "name": "shortening",
+      "name": "corn tortillas",
+      "pairs_with": "cumin",
+      "strength": 1
+    },
+    {
+      "name": "pastry flour",
       "pairs_with": "flour",
       "strength": 1
     },

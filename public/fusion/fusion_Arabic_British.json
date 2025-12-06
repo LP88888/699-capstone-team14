@@ -5,28 +5,28 @@
       "name": "garam masala",
       "score": 98.55398505652924,
       "connects_a": [
-        "yogurt",
         "tomato paste",
-        "cumin"
+        "onion",
+        "cayenne"
       ],
       "connects_b": [
         "tomato paste",
-        "vegetable oil",
-        "garlic"
+        "onion",
+        "cayenne pepper"
       ]
     },
     {
       "name": "tomato paste",
       "score": 63.406524923509025,
       "connects_a": [
-        "cumin",
+        "onion",
         "parsley",
-        "onion"
+        "cayenne"
       ],
       "connects_b": [
-        "worcestershire sauce",
-        "russet potatoes",
-        "cloves"
+        "cloves",
+        "onion",
+        "parsley"
       ]
     },
     {
@@ -35,12 +35,12 @@
       "connects_a": [
         "tomato paste",
         "parsley",
-        "garlic"
+        "cayenne"
       ],
       "connects_b": [
         "tomato paste",
-        "worcestershire sauce",
-        "parsley"
+        "parsley",
+        "2"
       ]
     },
     {
@@ -49,12 +49,12 @@
       "connects_a": [
         "tomato paste",
         "flour",
-        "bread"
+        "onion"
       ],
       "connects_b": [
         "tomato paste",
-        "worcestershire sauce",
-        "mushrooms"
+        "flour",
+        "onion"
       ]
     },
     {
@@ -63,7 +63,7 @@
       "connects_a": [
         "tomato paste",
         "parsley",
-        "carrot"
+        "egg"
       ],
       "connects_b": [
         "tomato paste",
@@ -76,12 +76,12 @@
       "score": 49.440977851641975,
       "connects_a": [
         "tomato paste",
-        "cumin",
+        "onion",
         "parsley"
       ],
       "connects_b": [
         "tomato paste",
-        "russet potatoes",
+        "onion",
         "parsley"
       ]
     },
@@ -90,12 +90,12 @@
       "score": 49.12162989148098,
       "connects_a": [
         "tomato paste",
-        "parsley",
-        "garlic"
+        "onion",
+        "parsley"
       ],
       "connects_b": [
         "tomato paste",
-        "worcestershire sauce",
+        "onion",
         "parsley"
       ]
     },
@@ -103,28 +103,28 @@
       "name": "confectioners",
       "score": 44.22949909182758,
       "connects_a": [
+        "cinnamon",
         "milk",
-        "butter",
-        "egg"
+        "butter"
       ],
       "connects_b": [
-        "nutmeg",
-        "butter",
-        "egg yolks"
+        "cream",
+        "more",
+        "1"
       ]
     },
     {
       "name": "ice water",
       "score": 40.20390481832014,
       "connects_a": [
-        "butter",
-        "flour",
-        "egg"
-      ],
-      "connects_b": [
-        "nutmeg",
+        "cinnamon",
         "flour",
         "butter"
+      ],
+      "connects_b": [
+        "1",
+        "more",
+        "flour"
       ]
     },
     {
@@ -132,29 +132,29 @@
       "score": 40.06143930228706,
       "connects_a": [
         "flour",
-        "butter",
-        "cinnamon"
+        "egg",
+        "milk"
       ],
       "connects_b": [
+        "cream",
         "flour",
-        "butter",
         "egg yolks"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "cherry tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "pizza",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pine",
+      "name": "cherry tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "sirloin",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -164,8 +164,18 @@
       "strength": 1
     },
     {
-      "name": "sirloin",
+      "name": "pine",
       "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "lentil",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "tumeric",
+      "pairs_with": "onion",
       "strength": 1
     },
     {
@@ -179,64 +189,54 @@
       "strength": 1
     },
     {
-      "name": "tumeric",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "lentil",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "pie crust",
+      "name": "margarine",
       "pairs_with": "egg",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "chervil",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "at",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "slices brioche",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
       "name": "and half",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "tomato concasse",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "veal stock",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "lobster stock",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "almond extract",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
       "name": "pecans",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "rutabaga",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "cold",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "heavy cream",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "chervil",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "freshly nutmeg",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "confectioners",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "at",
       "pairs_with": "butter",
       "strength": 1
     },

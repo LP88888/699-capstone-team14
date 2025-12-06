@@ -5,56 +5,56 @@
       "name": "grits",
       "score": 98.38340050928045,
       "connects_a": [
-        "butter",
-        "parsley",
-        "cream"
+        "cream",
+        "more",
+        "parsley"
       ],
       "connects_b": [
-        "hot sauce",
-        "onion powder",
-        "scallions"
+        "cream",
+        "more",
+        "parsley"
       ]
     },
     {
       "name": "celery",
       "score": 96.23829529759539,
       "connects_a": [
+        "onion",
         "parsley",
-        "garlic",
         "tomatoes"
       ],
       "connects_b": [
-        "hot sauce",
-        "worcestershire sauce",
-        "onion powder"
+        "thyme",
+        "onion",
+        "parsley"
       ]
     },
     {
       "name": "file powder",
       "score": 91.18481793570858,
       "connects_a": [
-        "vegetable oil",
-        "garlic",
-        "tomatoes"
+        "onion",
+        "tomatoes",
+        "bell pepper"
       ],
       "connects_b": [
-        "onion powder",
-        "vegetable oil",
-        "celery"
+        "thyme",
+        "celery",
+        "onion"
       ]
     },
     {
       "name": "tomato paste",
       "score": 84.54203323134537,
       "connects_a": [
-        "cumin",
         "cloves",
+        "onion",
         "parsley"
       ],
       "connects_b": [
-        "worcestershire sauce",
-        "oregano",
-        "cloves"
+        "thyme",
+        "cloves",
+        "celery"
       ]
     },
     {
@@ -63,12 +63,12 @@
       "connects_a": [
         "mayonnaise",
         "parsley",
-        "garlic"
+        "bell pepper"
       ],
       "connects_b": [
-        "hot sauce",
-        "worcestershire sauce",
-        "mayonnaise"
+        "thyme",
+        "mayonnaise",
+        "celery"
       ]
     },
     {
@@ -76,27 +76,27 @@
       "score": 78.10777053721934,
       "connects_a": [
         "parsley",
-        "garlic",
-        "kosher sea salt"
+        "2",
+        "bell pepper"
       ],
       "connects_b": [
-        "worcestershire sauce",
-        "onion powder",
-        "chicken stock"
+        "kosher sea salt",
+        "thyme",
+        "celery"
       ]
     },
     {
       "name": "okra",
       "score": 75.10249933238894,
       "connects_a": [
-        "vegetable oil",
-        "tomatoes",
-        "bell pepper"
+        "onion",
+        "bell pepper",
+        "vegetable oil"
       ],
       "connects_b": [
-        "hot sauce",
-        "worcestershire sauce",
-        "chicken stock"
+        "thyme",
+        "celery",
+        "onion"
       ]
     },
     {
@@ -105,12 +105,12 @@
       "connects_a": [
         "mayonnaise",
         "flour",
-        "kosher sea salt"
+        "egg"
       ],
       "connects_b": [
-        "hot sauce",
+        "thyme",
         "mayonnaise",
-        "onion powder"
+        "flour"
       ]
     },
     {
@@ -118,68 +118,63 @@
       "score": 70.51015235559204,
       "connects_a": [
         "cloves",
-        "parsley",
-        "optional"
+        "optional",
+        "parsley"
       ],
       "connects_b": [
-        "hot sauce",
-        "worcestershire sauce",
-        "scallions"
+        "thyme",
+        "cloves",
+        "onion"
       ]
     },
     {
       "name": "yellow onion",
       "score": 70.04045389559045,
       "connects_a": [
-        "dijon mustard",
-        "garlic",
-        "kosher sea salt"
+        "2",
+        "bell pepper",
+        "dijon mustard"
       ],
       "connects_b": [
-        "hot sauce",
-        "worcestershire sauce",
-        "onion powder"
+        "kosher sea salt",
+        "thyme",
+        "celery"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "sherry vinegar",
+      "name": "[extra",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "heads garlic",
+      "name": "ricotta salata",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "romano",
+      "name": "head fennel",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pass",
+      "name": "pizza",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "mortadella",
+      "name": "marzano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "cannellini",
+      "name": "morel mushrooms",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "turkey sausage",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "hearts",
+      "name": "pecorino",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -189,7 +184,12 @@
       "strength": 1
     },
     {
-      "name": "spaghetti",
+      "name": "palm",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cubanelle peppers",
       "pairs_with": "olive oil",
       "strength": 1
     }

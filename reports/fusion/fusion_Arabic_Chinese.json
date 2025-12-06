@@ -5,83 +5,83 @@
       "name": "hoisin sauce",
       "score": 110.0841005791393,
       "connects_a": [
-        "garlic",
         "chicken",
-        "cucumber"
+        "garlic",
+        "cilantro"
       ],
       "connects_b": [
-        "cabbage",
-        "corn starch",
-        "sodium soy sauce"
+        "rice wine",
+        "honey",
+        "soy sauce"
       ]
     },
     {
       "name": "fish sauce",
       "score": 109.06182737876658,
       "connects_a": [
-        "vegetable oil",
         "vinegar",
-        "cucumber"
+        "mint",
+        "vegetable oil"
       ],
       "connects_b": [
+        "shrimp",
         "hoisin sauce",
-        "ginger",
-        "pork"
+        "rice vinegar"
       ]
     },
     {
       "name": "chicken thighs",
       "score": 88.24447662433012,
       "connects_a": [
-        "yogurt",
         "tomato paste",
-        "vegetable oil"
+        "cayenne",
+        "coriander"
       ],
       "connects_b": [
-        "soy sauce",
         "chicken broth",
-        "scallions"
+        "oyster sauce",
+        "rice vinegar"
       ]
     },
     {
       "name": "garam masala",
       "score": 84.47484433416793,
       "connects_a": [
-        "yogurt",
         "tomato paste",
-        "cumin"
+        "onion",
+        "cayenne"
       ],
       "connects_b": [
-        "ginger",
-        "chicken breasts",
-        "vegetable oil"
+        "onion",
+        "oil",
+        "ginger"
       ]
     },
     {
       "name": "ginger",
       "score": 73.32168512737834,
       "connects_a": [
-        "yogurt",
-        "garlic",
-        "coriander"
+        "cilantro",
+        "coriander",
+        "yogurt"
       ],
       "connects_b": [
+        "rice wine",
         "hoisin sauce",
-        "pork",
-        "soy sauce"
+        "corn starch"
       ]
     },
     {
       "name": "chile",
       "score": 72.31043886520253,
       "connects_a": [
-        "yogurt",
-        "cumin",
-        "vegetable oil"
+        "vinegar",
+        "cayenne",
+        "coriander"
       ],
       "connects_b": [
-        "soy sauce",
         "cloves",
+        "rice vinegar",
         "vegetable oil"
       ]
     },
@@ -89,72 +89,77 @@
       "name": "bean sprouts",
       "score": 68.14430273859602,
       "connects_a": [
-        "vegetable oil",
+        "cilantro",
         "cucumber",
-        "cilantro"
+        "carrot"
       ],
       "connects_b": [
+        "shrimp",
         "hoisin sauce",
-        "ginger",
-        "mushrooms"
+        "canola oil"
       ]
     },
     {
       "name": "noodles",
       "score": 68.0431971465347,
       "connects_a": [
-        "vegetable oil",
+        "vinegar",
         "paprika",
         "carrot"
       ],
       "connects_b": [
-        "hoisin sauce",
-        "ginger",
-        "pork"
+        "chicken broth",
+        "shrimp",
+        "hoisin sauce"
       ]
     },
     {
       "name": "rice vinegar",
       "score": 57.13067301597252,
       "connects_a": [
-        "cucumber",
         "cilantro",
+        "cucumber",
         "carrot"
       ],
       "connects_b": [
-        "cabbage",
-        "corn starch",
-        "sodium soy sauce"
+        "rice wine",
+        "honey",
+        "soy sauce"
       ]
     },
     {
       "name": "chili pepper",
       "score": 55.02083749234374,
       "connects_a": [
-        "garlic",
+        "vinegar",
         "coriander",
         "chicken"
       ],
       "connects_b": [
-        "ginger",
-        "soy sauce",
-        "chicken breasts"
+        "rice wine",
+        "corn starch",
+        "rice vinegar"
       ]
     }
   ],
   "novel_from_a": [
-    {
-      "name": "pine",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
     {
       "name": "harissa",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
+      "name": "pine",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
       "name": "tomato puree",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "tumeric",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -169,21 +174,6 @@
       "strength": 1
     },
     {
-      "name": "tumeric",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "pie crust",
-      "pairs_with": "egg",
-      "strength": 1
-    },
-    {
-      "name": "applesauce",
-      "pairs_with": "egg",
-      "strength": 1
-    },
-    {
       "name": "shortening",
       "pairs_with": "egg",
       "strength": 1
@@ -192,26 +182,21 @@
       "name": "margarine",
       "pairs_with": "egg",
       "strength": 1
+    },
+    {
+      "name": "pie crust",
+      "pairs_with": "egg",
+      "strength": 1
+    },
+    {
+      "name": "vanilla",
+      "pairs_with": "egg",
+      "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "almond flour",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "peeled and",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "filling",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "arborio rice",
+      "name": "bosc pears",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -221,7 +206,12 @@
       "strength": 1
     },
     {
-      "name": "whole milk",
+      "name": "veal stock",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "sticks",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -241,7 +231,17 @@
       "strength": 1
     },
     {
-      "name": "bosc pears",
+      "name": "chanterelles",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "cold",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "arborio rice",
       "pairs_with": "butter",
       "strength": 1
     }

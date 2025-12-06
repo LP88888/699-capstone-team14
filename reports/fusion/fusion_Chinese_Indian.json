@@ -5,27 +5,27 @@
       "name": "ginger",
       "score": 164.97379153660125,
       "connects_a": [
+        "rice wine",
         "hoisin sauce",
-        "pork",
-        "soy sauce"
+        "corn starch"
       ],
       "connects_b": [
-        "yogurt",
-        "cardamom",
-        "garam masala"
+        "mustard seeds",
+        "cumin seeds",
+        "cardamom"
       ]
     },
     {
       "name": "chili pepper",
       "score": 110.04167498468748,
       "connects_a": [
-        "ginger",
-        "soy sauce",
-        "chicken breasts"
+        "rice wine",
+        "corn starch",
+        "rice vinegar"
       ],
       "connects_b": [
-        "ginger",
-        "garam masala",
+        "mustard seeds",
+        "cumin seeds",
         "turmeric"
       ]
     },
@@ -33,56 +33,56 @@
       "name": "garam masala",
       "score": 102.57659669148961,
       "connects_a": [
-        "ginger",
-        "chicken breasts",
-        "vegetable oil"
+        "onion",
+        "oil",
+        "ginger"
       ],
       "connects_b": [
-        "yogurt",
-        "cardamom",
-        "ginger"
+        "mustard seeds",
+        "cumin seeds",
+        "onion"
       ]
     },
     {
       "name": "oyster sauce",
       "score": 88.05657690747782,
       "connects_a": [
-        "cabbage",
-        "corn starch",
-        "sodium soy sauce"
+        "chicken broth",
+        "rice wine",
+        "soy sauce"
       ],
       "connects_b": [
-        "vegetable oil",
         "garlic",
-        "ginger"
+        "vegetable oil",
+        "oil"
       ]
     },
     {
       "name": "chile",
       "score": 80.34493207244725,
       "connects_a": [
-        "soy sauce",
         "cloves",
+        "rice vinegar",
         "vegetable oil"
       ],
       "connects_b": [
-        "yogurt",
-        "cumin",
-        "garam masala"
+        "mustard seeds",
+        "cloves",
+        "cumin seeds"
       ]
     },
     {
       "name": "tumeric",
       "score": 75.21230445372647,
       "connects_a": [
+        "onion",
         "ginger",
-        "chicken breasts",
-        "oil"
+        "chicken breasts"
       ],
       "connects_b": [
-        "cardamom",
-        "ginger",
-        "cumin"
+        "mustard seeds",
+        "cumin seeds",
+        "onion"
       ]
     },
     {
@@ -90,66 +90,71 @@
       "score": 70.746789120871,
       "connects_a": [
         "hoisin sauce",
-        "ginger",
-        "soy sauce"
+        "corn starch",
+        "rice vinegar"
       ],
       "connects_b": [
+        "dal",
         "ginger",
-        "masala",
-        "dhania"
+        "masala"
+      ]
+    },
+    {
+      "name": "cilantro",
+      "score": 70.40583563747605,
+      "connects_a": [
+        "hoisin sauce",
+        "rice vinegar",
+        "ginger"
+      ],
+      "connects_b": [
+        "cumin seeds",
+        "mango",
+        "turmeric"
       ]
     },
     {
       "name": "chiles",
       "score": 66.31499571112866,
       "connects_a": [
-        "ginger",
-        "chicken breasts",
-        "cloves"
+        "cloves",
+        "rice vinegar",
+        "ginger"
       ],
       "connects_b": [
-        "yogurt",
-        "ginger",
-        "cumin"
+        "mustard seeds",
+        "cloves",
+        "cumin seeds"
       ]
     },
     {
       "name": "chicken thighs",
       "score": 66.18335746824758,
       "connects_a": [
-        "soy sauce",
         "chicken broth",
-        "scallions"
+        "oyster sauce",
+        "rice vinegar"
       ],
       "connects_b": [
-        "yogurt",
-        "garam masala",
-        "turmeric"
-      ]
-    },
-    {
-      "name": "hoisin sauce",
-      "score": 66.05046034748358,
-      "connects_a": [
-        "cabbage",
-        "corn starch",
-        "sodium soy sauce"
-      ],
-      "connects_b": [
-        "garlic",
-        "ginger",
-        "cilantro"
+        "turmeric",
+        "coriander",
+        "yogurt"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "veal",
+      "name": "sauvignon",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "to each",
+      "name": "handfuls",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "sirloin",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -159,12 +164,7 @@
       "strength": 1
     },
     {
-      "name": "anchovies",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "sodium",
+      "name": "cremini",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -174,37 +174,27 @@
       "strength": 1
     },
     {
-      "name": "snapper fillets",
+      "name": "wheat spaghetti",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "mussels",
+      "name": "to each",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "black beans",
+      "name": "sodium",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "ribs celery",
+      "name": "racks",
       "pairs_with": "cloves",
       "strength": 1
     }
   ],
   "novel_from_b": [
-    {
-      "name": "chipotle puree",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "hair pasta",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
     {
       "name": "crusty bread",
       "pairs_with": "cloves",
@@ -216,17 +206,22 @@
       "strength": 1
     },
     {
-      "name": "saffron threads",
+      "name": "serrano chili",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "scotch bonnet",
+      "name": "bunch cilantro",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "cardamom pods",
+      "name": "serrano",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "bundle",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -236,12 +231,17 @@
       "strength": 1
     },
     {
-      "name": "2 medium",
+      "name": "leg",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "leg",
+      "name": "vegetable",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "lamb shanks",
       "pairs_with": "cloves",
       "strength": 1
     }

@@ -5,139 +5,139 @@
       "name": "garam masala",
       "score": 153.86489503723442,
       "connects_a": [
-        "yogurt",
-        "cardamom",
-        "ginger"
+        "mustard seeds",
+        "cumin seeds",
+        "onion"
       ],
       "connects_b": [
-        "chicken breasts",
+        "onion",
         "cumin",
-        "vegetable oil"
+        "chicken breasts"
       ]
     },
     {
       "name": "cumin",
       "score": 152.57739031592948,
       "connects_a": [
-        "yogurt",
-        "cardamom",
-        "garam masala"
+        "mustard seeds",
+        "cumin seeds",
+        "cardamom"
       ],
       "connects_b": [
+        "jalapeno",
         "cilantro leaves",
-        "lime",
-        "tomatillos"
+        "oregano"
       ]
     },
     {
       "name": "chiles",
       "score": 143.68249070744542,
       "connects_a": [
-        "yogurt",
-        "ginger",
-        "cumin"
+        "mustard seeds",
+        "cloves",
+        "cumin seeds"
       ],
       "connects_b": [
+        "cloves",
         "cilantro leaves",
-        "lime",
-        "tomatillos"
+        "corn tortillas"
       ]
     },
     {
       "name": "cilantro",
-      "score": 117.67832527978139,
+      "score": 130.75369475531267,
       "connects_a": [
-        "yogurt",
-        "ginger",
-        "cumin"
+        "cumin seeds",
+        "mango",
+        "turmeric"
       ],
       "connects_b": [
-        "lime",
-        "tomatillos",
-        "jalapeno"
+        "jalapeno",
+        "corn",
+        "corn tortillas"
       ]
     },
     {
       "name": "jalapeno peppers",
-      "score": 112.10956044185015,
+      "score": 126.12325549708142,
       "connects_a": [
-        "cumin",
-        "garam masala",
+        "cumin seeds",
+        "mango",
         "turmeric"
       ],
       "connects_b": [
         "cilantro leaves",
-        "lime",
-        "cumin"
+        "corn",
+        "corn tortillas"
       ]
     },
     {
       "name": "tumeric",
       "score": 105.29722623521705,
       "connects_a": [
-        "cardamom",
-        "ginger",
-        "cumin"
+        "mustard seeds",
+        "cumin seeds",
+        "onion"
       ],
       "connects_b": [
+        "onion",
         "cumin",
-        "chicken breasts",
-        "garlic"
+        "chicken breasts"
       ]
     },
     {
       "name": "chile",
       "score": 90.38804858150317,
       "connects_a": [
-        "yogurt",
-        "cumin",
-        "garam masala"
+        "mustard seeds",
+        "cloves",
+        "cumin seeds"
       ],
       "connects_b": [
+        "cloves",
         "cilantro leaves",
-        "lime",
-        "cumin"
+        "corn tortillas"
       ]
     },
     {
       "name": "corn tortillas",
       "score": 85.29839015057263,
       "connects_a": [
+        "onion",
         "cumin",
-        "vegetable oil",
-        "tomatoes"
+        "vegetable oil"
       ],
       "connects_b": [
-        "cilantro leaves",
-        "lime",
-        "tomatillos"
+        "jalapeno",
+        "more",
+        "cilantro leaves"
       ]
     },
     {
       "name": "turmeric",
       "score": 84.16283325956681,
       "connects_a": [
-        "yogurt",
-        "cardamom",
-        "ginger"
+        "mustard seeds",
+        "cumin seeds",
+        "cardamom"
       ],
       "connects_b": [
         "cilantro leaves",
         "cumin",
-        "vegetable oil"
+        "jalapeno peppers"
       ]
     },
     {
       "name": "coriander",
       "score": 77.19900905802844,
       "connects_a": [
-        "yogurt",
-        "cardamom",
-        "ginger"
+        "mustard seeds",
+        "cumin seeds",
+        "cardamom"
       ],
       "connects_b": [
-        "cilantro leaves",
         "jalapeno",
+        "cilantro leaves",
         "cumin"
       ]
     }
@@ -145,11 +145,6 @@
   "novel_from_a": [
     {
       "name": "crusty bread",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "linguine",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -164,16 +159,6 @@
       "strength": 1
     },
     {
-      "name": "cans chickpeas",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pinch saffron",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "lamb shanks",
       "pairs_with": "olive oil",
       "strength": 1
@@ -184,39 +169,64 @@
       "strength": 1
     },
     {
-      "name": "inch piece",
-      "pairs_with": "cloves",
+      "name": "cans chickpeas",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "linguine",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pinch saffron",
+      "pairs_with": "olive oil",
       "strength": 1
     },
     {
       "name": "crusty bread",
       "pairs_with": "cloves",
       "strength": 1
+    },
+    {
+      "name": "pinch sugar",
+      "pairs_with": "cloves",
+      "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "pine",
+      "name": "sauvignon",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "beef chuck",
+      "name": "evoo",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "herbes",
+      "name": "tuttorosso",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "thighs",
+      "name": "cotija cheese",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "depending",
+      "name": "porcini mushrooms",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "jalapeno chile",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "chorizo",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -226,22 +236,12 @@
       "strength": 1
     },
     {
-      "name": "pasilla chiles",
+      "name": "chorizo sausage",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "chipotle chile",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "sodium",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "pass",
+      "name": "romano",
       "pairs_with": "cloves",
       "strength": 1
     }

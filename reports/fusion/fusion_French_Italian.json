@@ -5,13 +5,13 @@
       "name": "confectioners",
       "score": 105.54766828731582,
       "connects_a": [
-        "nutmeg",
-        "maple syrup",
-        "butter"
+        "cream",
+        "more",
+        "1"
       ],
       "connects_b": [
-        "butter",
         "cream",
+        "more",
         "1"
       ]
     },
@@ -19,28 +19,28 @@
       "name": "at",
       "score": 104.41424544634762,
       "connects_a": [
-        "maple syrup",
-        "butter",
-        "egg yolks"
+        "cream",
+        "more",
+        "1"
       ],
       "connects_b": [
-        "butter",
         "cream",
-        "kosher sea salt"
+        "more",
+        "1"
       ]
     },
     {
       "name": "whole milk",
       "score": 84.24599545442807,
       "connects_a": [
-        "nutmeg",
+        "more",
         "maple syrup",
-        "butter"
+        "egg yolks"
       ],
       "connects_b": [
-        "butter",
-        "kosher sea salt",
-        "egg"
+        "more",
+        "egg",
+        "mozzarella cheese"
       ]
     },
     {
@@ -49,96 +49,96 @@
       "connects_a": [
         "cloves",
         "parsley",
-        "wine"
+        "egg"
       ],
       "connects_b": [
-        "oregano",
         "cloves",
-        "parsley"
+        "parsley",
+        "oregano"
       ]
     },
     {
       "name": "pancetta",
       "score": 77.09934531600935,
       "connects_a": [
-        "bay leaf",
+        "more",
         "parsley",
-        "olive oil"
+        "wine"
       ],
       "connects_b": [
-        "parsley",
-        "olive oil",
-        "wine"
+        "more",
+        "pepper flakes",
+        "parsley"
       ]
     },
     {
       "name": "vanilla extract",
       "score": 73.15523061176131,
       "connects_a": [
-        "nutmeg",
-        "maple syrup",
-        "butter"
+        "cream",
+        "1",
+        "maple syrup"
       ],
       "connects_b": [
-        "butter",
         "cream",
-        "1"
+        "1",
+        "egg"
       ]
     },
     {
       "name": "ribs celery",
       "score": 70.51015235559204,
       "connects_a": [
-        "bay leaf",
+        "thyme",
         "cloves",
-        "parsley"
+        "onion"
       ],
       "connects_b": [
         "cloves",
-        "parsley",
-        "wine"
+        "optional",
+        "pepper flakes"
       ]
     },
     {
       "name": "tomato paste",
       "score": 70.45169435945446,
       "connects_a": [
-        "bay leaf",
+        "thyme",
         "cloves",
-        "parsley"
+        "onion"
       ],
       "connects_b": [
-        "oregano",
-        "basil",
-        "cloves"
+        "cloves",
+        "onion",
+        "parsley"
       ]
     },
     {
       "name": "can tomatoes",
       "score": 70.41201357268302,
       "connects_a": [
-        "bay leaf",
         "cloves",
+        "onion",
         "parsley"
       ],
       "connects_b": [
-        "oregano",
-        "basil",
-        "cloves"
+        "cloves",
+        "optional",
+        "pepper flakes"
       ]
     },
     {
       "name": "ice water",
       "score": 60.30585722748021,
       "connects_a": [
-        "nutmeg",
-        "flour",
-        "butter"
+        "1",
+        "more",
+        "flour"
       ],
       "connects_b": [
-        "flour",
-        "butter",
-        "egg"
+        "1",
+        "more",
+        "flour"
       ]
     }
   ],
@@ -149,37 +149,7 @@
       "strength": 1
     },
     {
-      "name": "challah",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "finely pecans",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "graham cracker crumbs",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
       "name": "muscovado sugar",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "mcintosh apples",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "candies",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "pecan halves",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -189,19 +159,54 @@
       "strength": 1
     },
     {
+      "name": "pecan halves",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "banana liqueur",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "delicious",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "crawfish",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "graham cracker crumbs",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
       "name": "creme",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "dutch process",
       "pairs_with": "butter",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
+      "name": "finely oregano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "bunch kale",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "chipotle puree",
+      "name": "ricotta salata",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -211,37 +216,32 @@
       "strength": 1
     },
     {
-      "name": "squid",
+      "name": "of handfuls",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "finely oregano",
+      "name": "pepperoncini peppers",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "risotto",
+      "name": "montreal steak",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "2 cups extra",
+      "name": "for drizzling",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "basil chiffonade",
+      "name": "hearts",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "head escarole",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pass",
+      "name": "chunk",
       "pairs_with": "olive oil",
       "strength": 1
     }

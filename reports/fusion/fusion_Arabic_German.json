@@ -5,41 +5,41 @@
       "name": "garam masala",
       "score": 98.55398505652924,
       "connects_a": [
-        "yogurt",
         "tomato paste",
-        "cumin"
+        "onion",
+        "cayenne"
       ],
       "connects_b": [
+        "onion",
         "bay leaf",
-        "vegetable oil",
-        "garlic"
+        "lemon juice"
       ]
     },
     {
       "name": "confectioners",
       "score": 52.2712261994326,
       "connects_a": [
+        "cinnamon",
         "milk",
-        "butter",
-        "egg"
+        "butter"
       ],
       "connects_b": [
-        "cocoa powder",
-        "nutmeg",
-        "butter"
+        "cream",
+        "egg yolks",
+        "purpose flour"
       ]
     },
     {
       "name": "tomato paste",
       "score": 49.31618605161813,
       "connects_a": [
-        "cumin",
+        "onion",
         "parsley",
-        "onion"
+        "cayenne"
       ],
       "connects_b": [
-        "bay leaf",
         "cloves",
+        "onion",
         "parsley"
       ]
     },
@@ -47,14 +47,14 @@
       "name": "vanilla extract",
       "score": 48.770153741174205,
       "connects_a": [
+        "cinnamon",
         "milk",
-        "butter",
-        "egg"
+        "butter"
       ],
       "connects_b": [
-        "cocoa powder",
-        "nutmeg",
-        "butter"
+        "cream",
+        "egg yolks",
+        "purpose flour"
       ]
     },
     {
@@ -62,12 +62,12 @@
       "score": 45.069119215072945,
       "connects_a": [
         "flour",
-        "butter",
-        "cinnamon"
+        "egg",
+        "milk"
       ],
       "connects_b": [
+        "cream",
         "flour",
-        "butter",
         "egg yolks"
       ]
     },
@@ -76,27 +76,27 @@
       "score": 42.10425419269799,
       "connects_a": [
         "tomato paste",
-        "parsley",
-        "garlic"
+        "onion",
+        "parsley"
       ],
       "connects_b": [
-        "bacon",
-        "bay leaf",
-        "parsley"
+        "onion",
+        "parsley",
+        "bacon"
       ]
     },
     {
       "name": "room temp",
       "score": 40.02903828316117,
       "connects_a": [
+        "cinnamon",
         "milk",
-        "butter",
-        "egg"
+        "butter"
       ],
       "connects_b": [
-        "cocoa powder",
-        "nutmeg",
-        "butter"
+        "egg yolks",
+        "purpose flour",
+        "egg"
       ]
     },
     {
@@ -105,56 +105,56 @@
       "connects_a": [
         "tomato paste",
         "flour",
-        "bread"
+        "onion"
       ],
       "connects_b": [
         "flour",
-        "bay leaf",
-        "wine"
+        "onion",
+        "carrot"
       ]
     },
     {
       "name": "vanilla",
       "score": 36.04707637664889,
       "connects_a": [
-        "milk",
         "cinnamon",
+        "milk",
         "flour"
       ],
       "connects_b": [
-        "cocoa powder",
-        "nutmeg",
-        "flour"
+        "cream",
+        "flour",
+        "egg yolks"
       ]
     },
     {
       "name": "almond extract",
       "score": 36.04006609022899,
       "connects_a": [
+        "cinnamon",
         "milk",
-        "butter",
-        "egg"
+        "butter"
       ],
       "connects_b": [
-        "butter",
         "egg yolks",
-        "egg whites"
+        "purpose flour",
+        "egg"
       ]
     }
   ],
   "novel_from_a": [
-    {
-      "name": "cherry tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
     {
       "name": "pizza",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pine",
+      "name": "cherry tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "sirloin",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -164,12 +164,22 @@
       "strength": 1
     },
     {
-      "name": "sirloin",
+      "name": "pine",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
+      "name": "lentil",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
       "name": "tomato puree",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "tumeric",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -182,46 +192,41 @@
       "name": "okra",
       "pairs_with": "onion",
       "strength": 1
-    },
-    {
-      "name": "tumeric",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "lentil",
-      "pairs_with": "onion",
-      "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "mcintosh apples",
+      "name": "pecans",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "at",
+      "name": "bosc pears",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "almond flour",
+      "name": "corn syrup",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "ca",
+      "name": "muscovado sugar",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "almond extract",
+      "name": "delicious apples",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "percent milk",
+      "name": "cold",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "heavy cream",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -231,17 +236,12 @@
       "strength": 1
     },
     {
-      "name": "pecans",
+      "name": "confectioners",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "1 cup (",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "graham cracker crumbs",
+      "name": "cake flour",
       "pairs_with": "butter",
       "strength": 1
     }

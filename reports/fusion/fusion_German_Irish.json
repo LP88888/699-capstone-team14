@@ -5,83 +5,83 @@
       "name": "confectioners",
       "score": 117.61025894872334,
       "connects_a": [
-        "cocoa powder",
-        "nutmeg",
-        "butter"
+        "cream",
+        "egg yolks",
+        "purpose flour"
       ],
       "connects_b": [
-        "butter",
-        "egg yolks",
-        "cream"
+        "cream",
+        "more",
+        "egg yolks"
       ]
     },
     {
       "name": "vanilla extract",
       "score": 109.73284591764197,
       "connects_a": [
-        "cocoa powder",
-        "nutmeg",
-        "butter"
+        "cream",
+        "egg yolks",
+        "purpose flour"
       ],
       "connects_b": [
-        "butter",
-        "egg yolks",
-        "cream"
+        "cream",
+        "coffee",
+        "egg yolks"
       ]
     },
     {
       "name": "sticks",
       "score": 99.35013592753592,
       "connects_a": [
-        "cocoa powder",
-        "nutmeg",
-        "butter"
+        "egg yolks",
+        "egg",
+        "2"
       ],
       "connects_b": [
-        "butter",
+        "more",
         "egg yolks",
-        "raisins"
+        "egg"
       ]
     },
     {
       "name": "at",
       "score": 81.32263347263613,
       "connects_a": [
-        "cocoa powder",
-        "butter",
-        "egg yolks"
+        "cream",
+        "egg yolks",
+        "purpose flour"
       ],
       "connects_b": [
-        "butter",
-        "egg yolks",
-        "cream"
+        "cream",
+        "more",
+        "egg yolks"
       ]
     },
     {
       "name": "whole milk",
       "score": 72.21085324665263,
       "connects_a": [
-        "cocoa powder",
-        "nutmeg",
-        "butter"
+        "egg yolks",
+        "egg",
+        "2"
       ],
       "connects_b": [
-        "butter",
+        "more",
         "egg yolks",
-        "kosher sea salt"
+        "egg"
       ]
     },
     {
       "name": "filling",
       "score": 72.1105907441167,
       "connects_a": [
+        "cream",
         "flour",
-        "butter",
         "egg yolks"
       ],
       "connects_b": [
+        "cream",
         "flour",
-        "butter",
         "egg yolks"
       ]
     },
@@ -89,55 +89,55 @@
       "name": "cake flour",
       "score": 72.08882142102718,
       "connects_a": [
-        "cocoa powder",
-        "butter",
-        "egg yolks"
+        "cream",
+        "egg yolks",
+        "egg"
       ],
       "connects_b": [
-        "butter",
+        "cream",
         "egg yolks",
-        "cream"
+        "egg"
       ]
     },
     {
       "name": "room temp",
       "score": 70.05081699553205,
       "connects_a": [
-        "cocoa powder",
-        "nutmeg",
-        "butter"
+        "egg yolks",
+        "purpose flour",
+        "egg"
       ],
       "connects_b": [
-        "butter",
         "egg yolks",
-        "egg"
+        "egg",
+        "milk"
       ]
     },
     {
       "name": "tomato paste",
       "score": 56.36135548756358,
       "connects_a": [
-        "bay leaf",
         "cloves",
+        "onion",
         "parsley"
       ],
       "connects_b": [
-        "russet potatoes",
+        "thyme",
         "cloves",
-        "parsley"
+        "onion"
       ]
     },
     {
       "name": "ice water",
       "score": 56.2854667456482,
       "connects_a": [
-        "nutmeg",
         "flour",
-        "butter"
+        "egg yolks",
+        "egg"
       ],
       "connects_b": [
+        "more",
         "flour",
-        "butter",
         "egg yolks"
       ]
     }
@@ -149,12 +149,12 @@
       "strength": 1
     },
     {
-      "name": "montreal steak",
+      "name": "escarole",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "veal",
+      "name": "montreal steak",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -164,22 +164,27 @@
       "strength": 1
     },
     {
-      "name": "escarole",
+      "name": "veal",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "mcintosh apples",
+      "name": "pecans",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "almond extract",
+      "name": "bosc pears",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "percent milk",
+      "name": "muscovado sugar",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "delicious apples",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -187,41 +192,16 @@
       "name": "dutch process",
       "pairs_with": "butter",
       "strength": 1
-    },
-    {
-      "name": "pecans",
-      "pairs_with": "butter",
-      "strength": 1
     }
   ],
   "novel_from_b": [
-    {
-      "name": "bunch kale",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "head fennel",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "eyeball",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
     {
       "name": "palm",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "sherry vinegar",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "plum tomatoes",
+      "name": "head fennel",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -231,17 +211,37 @@
       "strength": 1
     },
     {
-      "name": "inch piece",
-      "pairs_with": "cloves",
+      "name": "plum tomatoes",
+      "pairs_with": "olive oil",
       "strength": 1
     },
     {
       "name": "bunch kale",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "sherry vinegar",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "palm",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
       "name": "head fennel",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "sirloin",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "allspice berries",
       "pairs_with": "cloves",
       "strength": 1
     }

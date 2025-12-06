@@ -58,6 +58,10 @@ def _inject_focus_controls(html_text: str, fusions: list | None = None) -> str:
       #mynetwork { flex: 1 1 auto; min-width:0; height:100vh; }
       #mynetwork > div.vis-network { width: 100% !important; height: 100% !important; }
       #rp-panel { order:2; display:flex; flex-direction:column; gap:10px; max-width:360px; width:340px; align-items:stretch; flex:0 0 auto; max-height:100vh; overflow-y:auto; position:sticky; top:0; }
+      /* Enable scrolling for the right-side cards */
+      #rp-panel::-webkit-scrollbar { width: 8px; }
+      #rp-panel::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 8px; }
+      #rp-panel::-webkit-scrollbar-track { background: #f8fafc; }
       .vis-tooltip { display: none !important; }
       @media (max-width: 1200px) {
         body { flex-direction: column; overflow:auto; }
@@ -101,6 +105,11 @@ def _inject_focus_controls(html_text: str, fusions: list | None = None) -> str:
     """
     panel = f"""
     <div id="rp-panel" style="order:2; display:flex; flex-direction:column; gap:10px; max-width:360px; width:340px; align-items:stretch; flex:0 0 auto; padding-top:12px; padding-right:12px;">
+      <div style="display:flex;gap:8px;align-items:center;justify-content:flex-start;margin-bottom:4px;">
+        <a href="/public/index.html" style="font-size:12px;color:#111827;font-weight:700;text-decoration:none;">Cuisine Network</a>
+        <span style="color:#cbd5e1;">|</span>
+        <a href="/public/ingredient_network.html" style="font-size:12px;color:#2563eb;font-weight:700;text-decoration:none;">Ingredient Network</a>
+      </div>
       {info}
       {controls}
       <div id="rp-fusion" style="background:#ffffff;border:1px solid #e2e8f0;border-radius:12px;padding:12px 12px;box-shadow:0 12px 32px rgba(17,24,39,0.12);font-family:Arial, sans-serif;min-width:280px;max-width:340px;width:100%;">

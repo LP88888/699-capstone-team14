@@ -6,69 +6,69 @@
       "score": 197.10797011305849,
       "connects_a": [
         "tomato paste",
-        "ginger",
-        "cumin"
+        "cumin seeds",
+        "onion"
       ],
       "connects_b": [
-        "yogurt",
         "tomato paste",
-        "cumin"
+        "onion",
+        "cayenne"
       ]
     },
     {
       "name": "turmeric",
       "score": 132.25588083646213,
       "connects_a": [
-        "cilantro leaves",
         "tomato paste",
-        "ginger"
+        "cilantro leaves",
+        "cumin seeds"
       ],
       "connects_b": [
-        "yogurt",
         "tomato paste",
-        "cumin"
+        "cayenne",
+        "coriander"
       ]
     },
     {
       "name": "cumin",
       "score": 122.06191225274358,
       "connects_a": [
-        "cilantro leaves",
         "tomato paste",
-        "turmeric"
+        "cilantro leaves",
+        "cumin seeds"
       ],
       "connects_b": [
-        "yogurt",
         "tomato paste",
-        "lamb"
+        "cayenne",
+        "coriander"
       ]
     },
     {
       "name": "yogurt",
       "score": 99.27458493196721,
       "connects_a": [
-        "ginger",
-        "cumin",
-        "turmeric"
+        "cumin seeds",
+        "turmeric",
+        "coriander"
       ],
       "connects_b": [
-        "cumin",
+        "cayenne",
         "coriander",
-        "chicken"
+        "olive"
       ]
     },
     {
       "name": "chile",
       "score": 90.38804858150317,
       "connects_a": [
-        "cilantro leaves",
-        "cumin",
-        "turmeric"
+        "cloves",
+        "cumin seeds",
+        "cilantro leaves"
       ],
       "connects_b": [
-        "yogurt",
-        "cumin",
-        "vegetable oil"
+        "vinegar",
+        "cayenne",
+        "coriander"
       ]
     },
     {
@@ -76,27 +76,27 @@
       "score": 90.23260798990336,
       "connects_a": [
         "cilantro leaves",
-        "ginger",
-        "cumin"
+        "cumin seeds",
+        "turmeric"
       ],
       "connects_b": [
-        "yogurt",
-        "cumin",
-        "chicken"
+        "cayenne",
+        "chicken",
+        "mint"
       ]
     },
     {
       "name": "chicken thighs",
       "score": 80.22225147666374,
       "connects_a": [
-        "cilantro leaves",
         "tomato paste",
-        "chicken stock"
+        "cilantro leaves",
+        "turmeric"
       ],
       "connects_b": [
-        "yogurt",
         "tomato paste",
-        "vegetable oil"
+        "cayenne",
+        "coriander"
       ]
     },
     {
@@ -104,12 +104,12 @@
       "score": 70.62996835948854,
       "connects_a": [
         "tomato paste",
-        "cumin",
-        "chicken stock"
+        "onion",
+        "parsley"
       ],
       "connects_b": [
         "tomato paste",
-        "cumin",
+        "onion",
         "parsley"
       ]
     },
@@ -117,28 +117,28 @@
       "name": "chiles",
       "score": 70.33408636028797,
       "connects_a": [
-        "cilantro leaves",
-        "ginger",
-        "cumin"
+        "cloves",
+        "cumin seeds",
+        "cilantro leaves"
       ],
       "connects_b": [
-        "yogurt",
+        "coriander",
         "cumin",
-        "vegetable oil"
+        "yogurt"
       ]
     },
     {
       "name": "palm",
       "score": 66.25396301788048,
       "connects_a": [
-        "cumin",
-        "chicken stock",
-        "scallions"
+        "cloves",
+        "onion",
+        "parsley"
       ],
       "connects_b": [
-        "cumin",
+        "onion",
         "parsley",
-        "coriander"
+        "lemon"
       ]
     }
   ],
@@ -154,27 +154,7 @@
       "strength": 1
     },
     {
-      "name": "pinch saffron",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
       "name": "palm",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "stewing",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "celery ribs",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "lentils",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -184,12 +164,32 @@
       "strength": 1
     },
     {
+      "name": "lamb shoulder",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "scotch bonnet peppers",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "pinch saffron",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
       "name": "beef stock",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "lamb shoulder",
+      "name": "fire",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "celery ribs",
       "pairs_with": "onion",
       "strength": 1
     }
@@ -211,18 +211,23 @@
       "strength": 1
     },
     {
-      "name": "semolina",
+      "name": "wheat",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "wheat",
+      "name": "semolina",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
       "name": "methi",
       "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "lentil",
+      "pairs_with": "onion",
       "strength": 1
     },
     {
@@ -236,12 +241,7 @@
       "strength": 1
     },
     {
-      "name": "lentil",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "semolina",
+      "name": "wheat",
       "pairs_with": "powder",
       "strength": 1
     }
