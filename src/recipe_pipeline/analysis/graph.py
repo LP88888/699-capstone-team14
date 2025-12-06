@@ -51,18 +51,18 @@ def _inject_focus_controls(html_text: str, fusions: list | None = None) -> str:
     fusions_json = json.dumps(fusions or [])
     layout_styles = """
     <style id="rp-layout">
-      html, body { height:100%; }
+      html, body { height:100vh; overflow:hidden; }
       body { display:flex; align-items:flex-start; gap:0; margin:0; padding:0; }
       .card { flex:1 1 auto; width:100% !important; height:100vh; margin:0; padding:0; border:0; box-shadow:none; background:transparent; }
       .card-body { width:100% !important; height:100vh; padding:0 !important; }
       #mynetwork { flex: 1 1 auto; min-width:0; height:100vh; }
       #mynetwork > div.vis-network { width: 100% !important; height: 100% !important; }
-      #rp-panel { order:2; display:flex; flex-direction:column; gap:10px; max-width:360px; width:340px; align-items:stretch; flex:0 0 auto; }
+      #rp-panel { order:2; display:flex; flex-direction:column; gap:10px; max-width:360px; width:340px; align-items:stretch; flex:0 0 auto; max-height:100vh; overflow-y:auto; position:sticky; top:0; }
       .vis-tooltip { display: none !important; }
       @media (max-width: 1200px) {
-        body { flex-direction: column; }
-        #rp-panel { order:1; width:100%; max-width:100%; }
-        #mynetwork { order:2; width:100%; }
+        body { flex-direction: column; overflow:auto; }
+        #rp-panel { order:1; width:100%; max-width:100%; position:relative; max-height:none; }
+        #mynetwork { order:2; width:100%; height:70vh; }
       }
     </style>
     """
@@ -504,9 +504,8 @@ def _inject_focus_controls(html_text: str, fusions: list | None = None) -> str:
           ingredientMatches = new Set();
           nodes.forEach(function(n){
             const isParent = parentIds.has(n.id);
-            // Keep parents visible for context; always show all cuisines
-            nodes.update({id: n.id, hidden: false, physics: true});
-            if(isParent){ nodes.update({id: n.id, hidden: false, physics: true}); }
+            // Hide parents, show all cuisines/orphans
+            nodes.update({id: n.id, hidden: isParent, physics: true});
           });
           syncEdgeVisibility();
           updateLegendButtons();
