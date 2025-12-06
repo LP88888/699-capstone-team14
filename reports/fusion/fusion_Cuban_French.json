@@ -5,41 +5,41 @@
       "name": "tomato paste",
       "score": 63.406524923509025,
       "connects_a": [
-        "tomatoes",
+        "bell pepper",
         "cumin",
-        "wine"
+        "bay leaf"
       ],
       "connects_b": [
-        "carrot",
-        "wine",
-        "onion"
+        "thyme",
+        "bay leaf",
+        "carrot"
       ]
     },
     {
       "name": "confectioners",
       "score": 60.31295330703761,
       "connects_a": [
-        "orange",
         "butter",
-        "egg"
+        "orange",
+        "rum"
       ],
       "connects_b": [
-        "purpose flour",
-        "chocolate",
-        "butter"
+        "milk",
+        "1",
+        "maple syrup"
       ]
     },
     {
       "name": "garam masala",
       "score": 42.23742216708396,
       "connects_a": [
-        "tomatoes",
         "cumin",
-        "bay leaf"
+        "bay leaf",
+        "tomatoes"
       ],
       "connects_b": [
         "bay leaf",
-        "onion",
+        "garlic",
         "vegetable oil"
       ]
     },
@@ -47,104 +47,104 @@
       "name": "allspice",
       "score": 42.18712702251465,
       "connects_a": [
-        "orange",
         "cumin",
-        "bay leaf"
+        "bay leaf",
+        "orange juice"
       ],
       "connects_b": [
-        "nutmeg",
-        "kosher sea salt",
-        "bay leaf"
+        "thyme",
+        "bay leaf",
+        "kosher sea salt"
       ]
     },
     {
       "name": "celery",
       "score": 42.10425419269799,
       "connects_a": [
-        "tomatoes",
-        "bay leaf",
-        "onion"
+        "bell pepper",
+        "rice",
+        "bay leaf"
       ],
       "connects_b": [
-        "carrot",
+        "thyme",
         "bay leaf",
-        "onion"
+        "carrot"
       ]
     },
     {
       "name": "capers",
       "score": 42.08188651296202,
       "connects_a": [
-        "wine vinegar",
-        "tomatoes",
-        "olives"
+        "olives",
+        "olive oil",
+        "tomatoes"
       ],
       "connects_b": [
         "wine vinegar",
-        "dijon mustard",
-        "lemon"
+        "shallots",
+        "parsley"
       ]
     },
     {
       "name": "celery ribs",
       "score": 42.03213539957606,
       "connects_a": [
-        "wine",
-        "tomatoes",
+        "bell pepper",
+        "rice",
         "bay leaf"
       ],
       "connects_b": [
-        "carrot",
-        "wine",
-        "bay leaf"
+        "thyme",
+        "bay leaf",
+        "carrot"
       ]
     },
     {
       "name": "can tomatoes",
       "score": 40.23543632724744,
       "connects_a": [
+        "bell pepper",
         "olives",
-        "cumin",
-        "wine"
+        "cumin"
       ],
       "connects_b": [
-        "wine",
         "bay leaf",
-        "onion"
+        "parsley",
+        "cloves"
       ]
     },
     {
       "name": "fennel bulb",
       "score": 40.091723388008916,
       "connects_a": [
-        "wine vinegar",
-        "orange",
-        "wine"
+        "olive oil",
+        "bay leaf",
+        "wine vinegar"
       ],
       "connects_b": [
         "wine vinegar",
-        "lemon",
-        "carrot"
+        "shallots",
+        "bay leaf"
       ]
     },
     {
       "name": "chorizo",
       "score": 40.073823074677534,
       "connects_a": [
-        "olives",
-        "tomatoes",
-        "wine"
+        "bell pepper",
+        "rice",
+        "olives"
       ],
       "connects_b": [
-        "wine",
         "bay leaf",
-        "olive oil"
+        "parsley",
+        "cloves"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "chipotle puree",
+      "name": "montreal steak",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -164,12 +164,17 @@
       "strength": 1
     },
     {
-      "name": "montreal steak",
+      "name": "chipotle puree",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "chipotle puree",
+      "name": "montreal steak",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "seasoning blend",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -184,11 +189,6 @@
       "strength": 1
     },
     {
-      "name": "chipotles",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
       "name": "finely oregano",
       "pairs_with": "cloves",
       "strength": 1
@@ -196,12 +196,37 @@
   ],
   "novel_from_b": [
     {
-      "name": "marzano",
+      "name": "roasted tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "morel mushrooms",
+      "name": "eggplants",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "some",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "grigio",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "radicchio",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cannellini beans",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "porcini mushrooms",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -211,37 +236,12 @@
       "strength": 1
     },
     {
-      "name": "heads garlic",
+      "name": "turkey sausage",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "linguine",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "palm",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "petite",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "anchovy paste",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "anchovy fillets",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "clam broth",
+      "name": "morel mushrooms",
       "pairs_with": "olive oil",
       "strength": 1
     }

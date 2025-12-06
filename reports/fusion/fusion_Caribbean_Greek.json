@@ -7,53 +7,53 @@
       "connects_a": [
         "coconut milk",
         "cumin",
-        "onion"
+        "ginger"
       ],
       "connects_b": [
-        "greek yogurt",
-        "tomatoes",
-        "yogurt"
+        "spinach",
+        "yogurt",
+        "tomatoes"
       ]
     },
     {
       "name": "cumin",
       "score": 54.92786051373461,
       "connects_a": [
-        "coconut milk",
         "plantains",
-        "cilantro"
+        "coconut milk",
+        "bell pepper"
       ],
       "connects_b": [
-        "greek yogurt",
-        "tomatoes",
-        "yogurt"
+        "bell pepper",
+        "yogurt",
+        "tomatoes"
       ]
     },
     {
       "name": "oregano",
       "score": 48.26888749589051,
       "connects_a": [
+        "plantains",
         "bell pepper",
-        "cumin",
-        "plantains"
+        "cumin"
       ],
       "connects_b": [
-        "feta cheese",
-        "wine vinegar",
-        "kalamata olives"
+        "bell pepper",
+        "olives",
+        "cheese crumbles"
       ]
     },
     {
       "name": "chile",
       "score": 45.194024290751585,
       "connects_a": [
+        "cilantro leaves",
         "cumin",
-        "vegetable oil",
-        "cilantro"
+        "lime juice"
       ],
       "connects_b": [
         "yogurt",
-        "cloves",
+        "grain sea salt",
         "mint"
       ]
     },
@@ -61,28 +61,28 @@
       "name": "tomato paste",
       "score": 42.271016615672686,
       "connects_a": [
-        "carrot",
+        "bell pepper",
         "cumin",
-        "onion"
+        "thyme"
       ],
       "connects_b": [
+        "bell pepper",
         "tomatoes",
-        "onion",
-        "oregano"
+        "parsley"
       ]
     },
     {
       "name": "confectioners",
       "score": 42.21906731492633,
       "connects_a": [
-        "butter",
-        "cinnamon",
-        "rum"
+        "1",
+        "cream",
+        "butter"
       ],
       "connects_b": [
-        "purpose flour",
-        "butter",
-        "cinnamon"
+        "milk",
+        "1",
+        "purpose flour"
       ]
     },
     {
@@ -90,71 +90,61 @@
       "score": 42.16161282956031,
       "connects_a": [
         "scallions",
-        "cumin",
-        "onion"
+        "bell pepper",
+        "cumin"
       ],
       "connects_b": [
-        "lemon",
-        "olive oil",
-        "onion"
+        "bell pepper",
+        "onion",
+        "parsley"
       ]
     },
     {
       "name": "celery",
       "score": 42.10425419269799,
       "connects_a": [
-        "carrot",
-        "onion",
-        "garlic"
+        "bell pepper",
+        "rice",
+        "thyme"
       ],
       "connects_b": [
+        "bell pepper",
         "tomatoes",
-        "onion",
-        "oregano"
+        "parsley"
       ]
     },
     {
       "name": "corn tortillas",
       "score": 40.14041889438712,
       "connects_a": [
+        "cilantro leaves",
         "cumin",
-        "onion",
-        "vegetable oil"
+        "lime juice"
       ],
       "connects_b": [
         "tomatoes",
-        "onion",
-        "oregano"
+        "oregano",
+        "more"
       ]
     },
     {
       "name": "vanilla extract",
       "score": 36.577615305880656,
       "connects_a": [
-        "butter",
-        "cinnamon",
-        "rum"
+        "1",
+        "cream",
+        "butter"
       ],
       "connects_b": [
-        "purpose flour",
-        "butter",
-        "cinnamon"
+        "milk",
+        "1",
+        "purpose flour"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "chipotle puree",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "chorizo",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "basil chiffonade",
+      "name": "radicchio",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -164,17 +154,7 @@
       "strength": 1
     },
     {
-      "name": "bunch kale",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "radicchio",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "chorizo sausage",
+      "name": "chorizo",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -184,7 +164,12 @@
       "strength": 1
     },
     {
-      "name": "by hand",
+      "name": "basil chiffonade",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "chipotle puree",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -192,56 +177,71 @@
       "name": "cans chickpeas",
       "pairs_with": "olive oil",
       "strength": 1
+    },
+    {
+      "name": "bunch kale",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "by hand",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "chorizo sausage",
+      "pairs_with": "olive oil",
+      "strength": 1
     }
   ],
   "novel_from_b": [
+    {
+      "name": "beefsteak tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "kalamata olives",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
     {
       "name": "petite",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pizza",
+      "name": "arugula leaves",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pepperoncini peppers",
+      "name": "pecorino",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "san marzano",
+      "name": "montreal steak",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "couscous",
+      "name": "some",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "for drizzling",
+      "name": "linguine",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "anchovy paste",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "artichokes",
+      "name": "[extra",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
       "name": "handful pine nuts",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "porcini mushrooms",
       "pairs_with": "olive oil",
       "strength": 1
     }

@@ -5,69 +5,69 @@
       "name": "andouille sausage",
       "score": 136.18001178705964,
       "connects_a": [
-        "onion powder",
-        "worcestershire sauce",
-        "creole seasoning"
+        "hot sauce",
+        "bell pepper",
+        "rice"
       ],
       "connects_b": [
-        "tomatoes",
-        "bay leaf",
-        "onion"
+        "bell pepper",
+        "rice",
+        "bay leaf"
       ]
     },
     {
       "name": "celery",
       "score": 119.29538687931095,
       "connects_a": [
-        "onion powder",
-        "worcestershire sauce",
-        "creole seasoning"
+        "hot sauce",
+        "bell pepper",
+        "rice"
       ],
       "connects_b": [
-        "tomatoes",
-        "bay leaf",
-        "onion"
+        "bell pepper",
+        "rice",
+        "bay leaf"
       ]
     },
     {
       "name": "tomato paste",
       "score": 117.75497485794533,
       "connects_a": [
-        "worcestershire sauce",
-        "tomatoes",
-        "onion"
+        "bell pepper",
+        "cayenne pepper",
+        "andouille sausage"
       ],
       "connects_b": [
-        "tomatoes",
+        "bell pepper",
         "cumin",
-        "wine"
+        "bay leaf"
       ]
     },
     {
       "name": "creole seasoning",
       "score": 102.05509356530997,
       "connects_a": [
-        "onion powder",
-        "worcestershire sauce",
-        "tomatoes"
+        "hot sauce",
+        "bell pepper",
+        "rice"
       ],
       "connects_b": [
-        "tomatoes",
-        "oregano",
-        "garlic"
+        "bell pepper",
+        "rice",
+        "tomatoes"
       ]
     },
     {
       "name": "file powder",
       "score": 84.1706011714233,
       "connects_a": [
-        "purpose flour",
-        "onion powder",
-        "tomatoes"
+        "bell pepper",
+        "shrimp",
+        "cayenne pepper"
       ],
       "connects_b": [
+        "bell pepper",
         "tomatoes",
-        "onion",
         "vegetable oil"
       ]
     },
@@ -75,79 +75,74 @@
       "name": "can tomatoes",
       "score": 80.47087265449488,
       "connects_a": [
-        "worcestershire sauce",
-        "onion",
-        "oregano"
+        "hot sauce",
+        "bell pepper",
+        "andouille sausage"
       ],
       "connects_b": [
+        "bell pepper",
         "olives",
-        "cumin",
-        "wine"
+        "cumin"
       ]
     },
     {
       "name": "oregano",
       "score": 80.4481458264842,
       "connects_a": [
-        "onion powder",
-        "creole seasoning",
-        "tomatoes"
+        "bell pepper",
+        "cayenne pepper",
+        "2"
       ],
       "connects_b": [
-        "wine vinegar",
-        "tomatoes",
-        "cumin"
+        "plantains",
+        "bell pepper",
+        "olives"
       ]
     },
     {
       "name": "okra",
       "score": 75.10249933238894,
       "connects_a": [
-        "purpose flour",
-        "worcestershire sauce",
-        "tomatoes"
+        "hot sauce",
+        "bell pepper",
+        "rice"
       ],
       "connects_b": [
-        "tomatoes",
-        "onion",
-        "vegetable oil"
+        "bell pepper",
+        "rice",
+        "tomatoes"
       ]
     },
     {
       "name": "cumin",
       "score": 73.23714735164614,
       "connects_a": [
-        "onion powder",
-        "tomatoes",
-        "oregano"
+        "bell pepper",
+        "cayenne pepper",
+        "onion powder"
       ],
       "connects_b": [
-        "beans",
-        "tomatoes",
-        "plantains"
+        "plantains",
+        "dill pickles",
+        "bell pepper"
       ]
     },
     {
       "name": "chorizo",
       "score": 72.13288153441955,
       "connects_a": [
-        "tomatoes",
-        "olive oil",
-        "bell pepper"
+        "bell pepper",
+        "rice",
+        "shrimp"
       ],
       "connects_b": [
-        "olives",
-        "tomatoes",
-        "wine"
+        "bell pepper",
+        "rice",
+        "olives"
       ]
     }
   ],
   "novel_from_a": [
-    {
-      "name": "basil chiffonade",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
     {
       "name": "roasted tomatoes",
       "pairs_with": "olive oil",
@@ -159,7 +154,7 @@
       "strength": 1
     },
     {
-      "name": "littleneck clams",
+      "name": "reggiano",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -174,12 +169,17 @@
       "strength": 1
     },
     {
-      "name": "cannellini",
+      "name": "basil chiffonade",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "reggiano",
+      "name": "littleneck clams",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "parmigiano",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -189,29 +189,19 @@
       "strength": 1
     },
     {
-      "name": "heads garlic",
+      "name": "cannellini",
       "pairs_with": "olive oil",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "chipotle puree",
+      "name": "crusty rolls",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "sherry vinegar",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "sandwich rolls",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "handful pine nuts",
+      "name": "montreal steak",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -226,7 +216,12 @@
       "strength": 1
     },
     {
-      "name": "crusty rolls",
+      "name": "handful pine nuts",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "sandwich rolls",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -241,7 +236,12 @@
       "strength": 1
     },
     {
-      "name": "montreal steak",
+      "name": "sherry vinegar",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "chipotle puree",
       "pairs_with": "olive oil",
       "strength": 1
     }

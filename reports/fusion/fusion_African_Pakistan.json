@@ -5,151 +5,156 @@
       "name": "garam masala",
       "score": 380.13679950375564,
       "connects_a": [
-        "chicken",
-        "tomato paste",
-        "coriander"
+        "cumin seeds",
+        "cumin",
+        "turmeric"
       ],
       "connects_b": [
-        "coriander",
-        "basmati rice",
-        "tomatoes"
+        "cumin seeds",
+        "chili powder",
+        "potatoes"
       ]
     },
     {
       "name": "turmeric",
       "score": 240.46523788447658,
       "connects_a": [
-        "chicken",
-        "tomato paste",
-        "coriander"
+        "cumin seeds",
+        "cilantro leaves",
+        "couscous"
       ],
       "connects_b": [
-        "coriander",
-        "garam masala",
-        "basmati rice"
+        "cumin seeds",
+        "chili powder",
+        "garam masala"
       ]
     },
     {
       "name": "coriander",
       "score": 200.5169066442297,
       "connects_a": [
-        "chicken",
-        "tomatoes",
-        "cumin"
+        "cumin seeds",
+        "cilantro leaves",
+        "couscous"
       ],
       "connects_b": [
-        "garam masala",
-        "basmati rice",
-        "tomatoes"
+        "cumin seeds",
+        "chili powder",
+        "garam masala"
       ]
     },
     {
       "name": "cumin seeds",
       "score": 189.2331967420508,
       "connects_a": [
-        "chicken",
-        "coriander",
-        "coriander seeds"
+        "cilantro leaves",
+        "cumin",
+        "turmeric"
       ],
       "connects_b": [
-        "coriander",
+        "chili powder",
         "garam masala",
-        "basmati rice"
+        "potatoes"
       ]
     },
     {
       "name": "chiles",
       "score": 182.8686245367487,
       "connects_a": [
-        "coriander",
+        "cumin seeds",
         "coarsely",
-        "coriander seeds"
+        "cilantro leaves"
       ],
       "connects_b": [
+        "cumin seeds",
         "coconut milk",
-        "cinnamon sticks",
-        "coriander"
+        "cumin"
       ]
     },
     {
       "name": "cumin",
       "score": 172.9210423580534,
       "connects_a": [
-        "chicken",
-        "tomato paste",
-        "coriander"
+        "cumin seeds",
+        "cilantro leaves",
+        "bell pepper"
       ],
       "connects_b": [
-        "coconut milk",
-        "mustard seeds",
-        "coriander"
+        "cumin seeds",
+        "chili powder",
+        "coconut milk"
       ]
     },
     {
       "name": "mustard seeds",
       "score": 152.11838419786628,
       "connects_a": [
-        "coriander",
-        "coriander seeds",
-        "tomatoes"
+        "cumin seeds",
+        "cumin",
+        "turmeric"
       ],
       "connects_b": [
-        "coriander",
-        "garam masala",
-        "tomatoes"
+        "cumin seeds",
+        "chili powder",
+        "garam masala"
       ]
     },
     {
       "name": "chilies",
       "score": 152.084503016234,
       "connects_a": [
-        "chicken",
-        "coriander",
-        "tomatoes"
+        "cumin seeds",
+        "cumin",
+        "turmeric"
       ],
       "connects_b": [
-        "coriander",
-        "garam masala",
-        "tomatoes"
+        "cumin seeds",
+        "chili powder",
+        "garam masala"
       ]
     },
     {
       "name": "cardamom pods",
       "score": 140.28775023100235,
       "connects_a": [
-        "coriander",
-        "coriander seeds",
-        "tomatoes"
+        "cumin seeds",
+        "cumin",
+        "turmeric"
       ],
       "connects_b": [
-        "cinnamon sticks",
-        "coriander",
-        "garam masala"
+        "cumin seeds",
+        "cumin",
+        "turmeric"
       ]
     },
     {
       "name": "cardamom",
       "score": 129.91559693725043,
       "connects_a": [
-        "coriander",
-        "powder",
-        "cumin"
+        "cumin seeds",
+        "cumin",
+        "turmeric"
       ],
       "connects_b": [
-        "cinnamon sticks",
-        "coriander",
-        "garam masala"
+        "cumin seeds",
+        "chili powder",
+        "cumin"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "chorizo",
+      "name": "beefsteak tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "cherry tomatoes",
+      "name": "kalamata olives",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "montreal steak",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -159,7 +164,7 @@
       "strength": 1
     },
     {
-      "name": "artichokes",
+      "name": "canned tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -169,22 +174,7 @@
       "strength": 1
     },
     {
-      "name": "mussels",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "canned tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "beefsteak tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "brussels sprouts",
+      "name": "squid",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -192,14 +182,19 @@
       "name": "olives",
       "pairs_with": "olive oil",
       "strength": 1
-    }
-  ],
-  "novel_from_b": [
+    },
     {
-      "name": "petite",
+      "name": "artichokes",
       "pairs_with": "olive oil",
       "strength": 1
     },
+    {
+      "name": "mussels",
+      "pairs_with": "olive oil",
+      "strength": 1
+    }
+  ],
+  "novel_from_b": [
     {
       "name": "lamb shanks",
       "pairs_with": "olive oil",
@@ -207,12 +202,7 @@
     },
     {
       "name": "petite",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "chile",
-      "pairs_with": "cloves",
+      "pairs_with": "olive oil",
       "strength": 1
     },
     {
@@ -226,13 +216,18 @@
       "strength": 1
     },
     {
+      "name": "petite",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
       "name": "pork shoulder",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "granny smith apples",
-      "pairs_with": "butter",
+      "name": "chile",
+      "pairs_with": "cloves",
       "strength": 1
     },
     {
@@ -241,7 +236,12 @@
       "strength": 1
     },
     {
-      "name": "jeera",
+      "name": "granny smith apples",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "gram flour",
       "pairs_with": "dhania",
       "strength": 1
     }

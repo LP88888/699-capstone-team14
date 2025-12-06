@@ -5,70 +5,70 @@
       "name": "chicken thighs",
       "score": 110.30559578041265,
       "connects_a": [
-        "tomato paste",
-        "coriander",
-        "carrot"
+        "scallions",
+        "cilantro leaves",
+        "bell pepper"
       ],
       "connects_b": [
-        "carrot",
-        "soy sauce",
-        "spice powder"
+        "scallions",
+        "bell pepper",
+        "rice"
       ]
     },
     {
       "name": "fish sauce",
       "score": 109.06182737876658,
       "connects_a": [
-        "carrot",
         "scallions",
-        "vegetable oil"
+        "cilantro leaves",
+        "roughly"
       ],
       "connects_b": [
-        "peanut oil",
+        "scallions",
         "noodles",
-        "carrot"
+        "hoisin sauce"
       ]
     },
     {
       "name": "bean sprouts",
       "score": 102.21645410789404,
       "connects_a": [
-        "carrot",
         "scallions",
+        "cilantro leaves",
         "taste"
       ],
       "connects_b": [
-        "peanut oil",
-        "sesame oil",
-        "carrot"
+        "scallions",
+        "mushrooms",
+        "noodles"
       ]
     },
     {
       "name": "ginger",
       "score": 91.65210640922292,
       "connects_a": [
-        "coriander",
+        "cumin seeds",
         "scallions",
-        "coriander seeds"
+        "turmeric"
       ],
       "connects_b": [
-        "peanut oil",
-        "sesame oil",
-        "scallions"
+        "scallions",
+        "noodles",
+        "rice vinegar"
       ]
     },
     {
       "name": "hoisin sauce",
       "score": 88.06728046331145,
       "connects_a": [
-        "chicken",
         "scallions",
+        "chicken",
         "carrot"
       ],
       "connects_b": [
-        "carrot",
-        "spice powder",
-        "ginger"
+        "rice vinegar",
+        "garlic",
+        "shaoxing"
       ]
     },
     {
@@ -76,26 +76,26 @@
       "score": 85.05399643316836,
       "connects_a": [
         "scallions",
-        "carrot",
-        "vegetable oil"
+        "ginger",
+        "carrot"
       ],
       "connects_b": [
-        "peanut oil",
-        "sesame oil",
-        "carrot"
+        "scallions",
+        "mushrooms",
+        "sesame oil"
       ]
     },
     {
       "name": "garam masala",
       "score": 84.47484433416793,
       "connects_a": [
-        "chicken",
-        "tomato paste",
-        "coriander"
+        "cumin seeds",
+        "cumin",
+        "turmeric"
       ],
       "connects_b": [
         "oil",
-        "onion",
+        "ginger",
         "vegetable oil"
       ]
     },
@@ -103,28 +103,28 @@
       "name": "chiles",
       "score": 84.40090363234556,
       "connects_a": [
-        "coriander",
+        "cumin seeds",
         "coarsely",
-        "coriander seeds"
+        "cilantro leaves"
       ],
       "connects_b": [
-        "peanut oil",
-        "vegetable oil",
-        "cloves"
+        "rice vinegar",
+        "ginger",
+        "peanut oil"
       ]
     },
     {
       "name": "chile",
       "score": 80.34493207244725,
       "connects_a": [
-        "coriander",
+        "cumin seeds",
         "coarsely",
-        "coriander seeds"
+        "cilantro leaves"
       ],
       "connects_b": [
-        "peanut oil",
-        "soy sauce",
-        "oyster sauce"
+        "noodles",
+        "rice vinegar",
+        "soy sauce"
       ]
     },
     {
@@ -132,13 +132,13 @@
       "score": 80.03683622855938,
       "connects_a": [
         "scallions",
-        "carrot",
-        "vegetable oil"
+        "bell pepper",
+        "ginger"
       ],
       "connects_b": [
-        "sesame oil",
-        "carrot",
-        "soy sauce"
+        "scallions",
+        "mushrooms",
+        "bell pepper"
       ]
     }
   ],
@@ -149,12 +149,32 @@
       "strength": 1
     },
     {
+      "name": "leg",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "herbes",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
       "name": "saffron threads",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "leg",
+      "name": "cover",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "finely parsley",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "montreal steak",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -164,37 +184,27 @@
       "strength": 1
     },
     {
-      "name": "slab bacon",
+      "name": "pine",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "pinch saffron",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "harissa",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "serrano",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "chorizo",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "herbes",
+      "name": "scotch bonnet peppers",
       "pairs_with": "cloves",
       "strength": 1
     }
   ],
   "novel_from_b": [
+    {
+      "name": "radicchio",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "baby arugula",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
     {
       "name": "heads garlic",
       "pairs_with": "olive oil",
@@ -206,22 +216,7 @@
       "strength": 1
     },
     {
-      "name": "pasta",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "baby arugula",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "anchovies",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "radicchio",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -232,6 +227,11 @@
     },
     {
       "name": "spun",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pasta",
       "pairs_with": "olive oil",
       "strength": 1
     },

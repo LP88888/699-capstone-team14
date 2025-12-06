@@ -5,83 +5,83 @@
       "name": "celery",
       "score": 170.42198125615852,
       "connects_a": [
-        "onion powder",
-        "worcestershire sauce",
-        "creole seasoning"
+        "hot sauce",
+        "bell pepper",
+        "rice"
       ],
       "connects_b": [
-        "carrot",
-        "tomatoes",
-        "onion"
+        "bell pepper",
+        "rice",
+        "shrimp"
       ]
     },
     {
       "name": "andouille sausage",
       "score": 153.2025132604421,
       "connects_a": [
-        "onion powder",
-        "worcestershire sauce",
-        "creole seasoning"
+        "hot sauce",
+        "bell pepper",
+        "rice"
       ],
       "connects_b": [
-        "tomatoes",
-        "onion",
-        "garlic"
+        "bell pepper",
+        "rice",
+        "shrimp"
       ]
     },
     {
       "name": "creole seasoning",
       "score": 136.07345808707998,
       "connects_a": [
-        "onion powder",
-        "worcestershire sauce",
-        "tomatoes"
+        "hot sauce",
+        "bell pepper",
+        "rice"
       ],
       "connects_b": [
-        "tomatoes",
-        "garlic",
-        "bell pepper"
+        "bell pepper",
+        "rice",
+        "shrimp"
       ]
     },
     {
       "name": "tomato paste",
       "score": 117.75497485794533,
       "connects_a": [
-        "worcestershire sauce",
-        "tomatoes",
-        "onion"
+        "bell pepper",
+        "cayenne pepper",
+        "andouille sausage"
       ],
       "connects_b": [
-        "carrot",
-        "tomatoes",
-        "cumin"
+        "bell pepper",
+        "cumin",
+        "tomatoes"
       ]
     },
     {
       "name": "yellow onions",
       "score": 117.16165580582901,
       "connects_a": [
-        "onion powder",
-        "worcestershire sauce",
-        "kosher sea salt"
+        "bell pepper",
+        "cayenne pepper",
+        "2"
       ],
       "connects_b": [
-        "carrot",
-        "wine",
-        "kosher sea salt"
+        "bell pepper",
+        "2",
+        "carrot"
       ]
     },
     {
       "name": "yellow onion",
       "score": 112.06472623294471,
       "connects_a": [
-        "onion powder",
-        "worcestershire sauce",
-        "kosher sea salt"
+        "hot sauce",
+        "bell pepper",
+        "shrimp"
       ],
       "connects_b": [
-        "wine",
-        "kosher sea salt",
+        "bell pepper",
+        "shrimp",
         "2"
       ]
     },
@@ -89,73 +89,68 @@
       "name": "chorizo",
       "score": 108.19932230162934,
       "connects_a": [
-        "tomatoes",
-        "olive oil",
-        "bell pepper"
+        "bell pepper",
+        "rice",
+        "shrimp"
       ],
       "connects_b": [
-        "olives",
-        "tomatoes",
-        "wine"
+        "bell pepper",
+        "rice",
+        "olives"
       ]
     },
     {
       "name": "file powder",
       "score": 98.19903469999386,
       "connects_a": [
-        "purpose flour",
-        "onion powder",
-        "tomatoes"
+        "bell pepper",
+        "shrimp",
+        "cayenne pepper"
       ],
       "connects_b": [
-        "tomatoes",
-        "onion",
-        "bell pepper"
+        "bell pepper",
+        "shrimp",
+        "tomatoes"
       ]
     },
     {
       "name": "grits",
       "score": 96.37557600909105,
       "connects_a": [
-        "onion powder",
-        "butter",
-        "2"
+        "hot sauce",
+        "bell pepper",
+        "shrimp"
       ],
       "connects_b": [
-        "butter",
-        "2",
-        "bell pepper"
+        "bell pepper",
+        "shrimp",
+        "2"
       ]
     },
     {
       "name": "bay leaf",
       "score": 90.80995931934241,
       "connects_a": [
-        "tomatoes",
-        "onion",
-        "oregano"
+        "andouille sausage",
+        "thyme",
+        "onion"
       ],
       "connects_b": [
-        "carrot",
-        "tomatoes",
-        "chorizo"
+        "cumin",
+        "chorizo",
+        "onion"
       ]
     }
   ],
   "novel_from_a": [
-    {
-      "name": "basil chiffonade",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
     {
       "name": "fettuccine",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pasilla chiles",
-      "pairs_with": "cloves",
+      "name": "basil chiffonade",
+      "pairs_with": "olive oil",
       "strength": 1
     },
     {
@@ -164,17 +159,7 @@
       "strength": 1
     },
     {
-      "name": "black beans",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "basil chiffonade",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "inch piece",
+      "name": "pasilla chiles",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -184,44 +169,49 @@
       "strength": 1
     },
     {
-      "name": "chervil",
+      "name": "black beans",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "inch piece",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "basil chiffonade",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "tomato concasse",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "cooking grits",
+      "name": "gruyere cheese",
       "pairs_with": "butter",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "pizza",
+      "name": "crusty rolls",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pepperoncini peppers",
+      "name": "kalamata olives",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "sherry vinegar",
+      "name": "montreal steak",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pancetta",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "san marzano",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "couscous",
+      "name": "some",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -231,7 +221,7 @@
       "strength": 1
     },
     {
-      "name": "for drizzling",
+      "name": "handful pine nuts",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -241,7 +231,17 @@
       "strength": 1
     },
     {
-      "name": "pimenton",
+      "name": "parma",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "piquillo peppers",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "squid",
       "pairs_with": "olive oil",
       "strength": 1
     }

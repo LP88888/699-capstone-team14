@@ -5,41 +5,41 @@
       "name": "garam masala",
       "score": 40.22611634960377,
       "connects_a": [
-        "tomatoes",
         "cumin",
-        "onion"
+        "tomatoes",
+        "potatoes"
       ],
       "connects_b": [
+        "chili powder",
         "oil",
-        "turmeric",
-        "potatoes"
+        "turmeric"
       ]
     },
     {
       "name": "mustard seeds",
       "score": 30.02336530221045,
       "connects_a": [
-        "wine vinegar",
+        "cumin",
         "tomatoes",
-        "cumin"
+        "potatoes"
       ],
       "connects_b": [
-        "oil",
+        "chili powder",
         "turmeric",
-        "potatoes"
+        "oil"
       ]
     },
     {
       "name": "tumeric",
       "score": 24.06793742519247,
       "connects_a": [
-        "tomatoes",
         "cumin",
-        "onion"
+        "tomatoes",
+        "potatoes"
       ],
       "connects_b": [
         "peas",
-        "potatoes",
+        "chili powder",
         "oil"
       ]
     },
@@ -47,28 +47,28 @@
       "name": "coriander powder",
       "score": 24.046864570602338,
       "connects_a": [
-        "tomatoes",
         "cumin",
-        "cinnamon"
+        "tomatoes",
+        "garlic"
       ],
       "connects_b": [
-        "leaves",
-        "turmeric",
-        "oil"
+        "oil",
+        "chili powder",
+        "leaves"
       ]
     },
     {
       "name": "chilies",
       "score": 20.011118817925528,
       "connects_a": [
-        "potatoes",
+        "cumin",
         "tomatoes",
-        "cumin"
+        "potatoes"
       ],
       "connects_b": [
-        "turmeric",
+        "chili powder",
         "oil",
-        "potatoes"
+        "turmeric"
       ]
     },
     {
@@ -79,8 +79,8 @@
         "cinnamon"
       ],
       "connects_b": [
-        "carom",
-        "powder",
+        "chili powder",
+        "turmeric",
         "oil"
       ]
     },
@@ -88,28 +88,28 @@
       "name": "cumin seeds",
       "score": 18.02220921352865,
       "connects_a": [
-        "potatoes",
+        "cumin",
         "tomatoes",
-        "cumin"
+        "potatoes"
       ],
       "connects_b": [
-        "oil",
+        "chili powder",
         "turmeric",
-        "potatoes"
+        "oil"
       ]
     },
     {
       "name": "coriander seeds",
       "score": 16.02250496372513,
       "connects_a": [
-        "wine vinegar",
+        "honey",
         "kosher sea salt",
-        "cinnamon"
+        "wine vinegar"
       ],
       "connects_b": [
         "oil",
-        "turmeric",
-        "coconut"
+        "chili powder",
+        "turmeric"
       ]
     },
     {
@@ -119,43 +119,28 @@
         "flour"
       ],
       "connects_b": [
-        "fenugreek",
-        "carom",
-        "mango"
+        "mango",
+        "dal",
+        "oil"
       ]
     },
     {
       "name": "can tomatoes",
       "score": 12.070630898174231,
       "connects_a": [
+        "bell pepper",
         "cumin",
-        "onion",
         "optional"
       ],
       "connects_b": [
-        "(",
-        "chili powder"
+        "chili powder",
+        "("
       ]
     }
   ],
   "novel_from_a": [
     {
       "name": "oats",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "pepper powder",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "button",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "baby",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -170,12 +155,22 @@
       "strength": 1
     },
     {
-      "name": "button",
-      "pairs_with": "powder",
+      "name": "baby",
+      "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "baby",
+      "name": "button",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "pepper powder",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "almond",
       "pairs_with": "powder",
       "strength": 1
     },
@@ -185,7 +180,12 @@
       "strength": 1
     },
     {
-      "name": "almond",
+      "name": "baby",
+      "pairs_with": "powder",
+      "strength": 1
+    },
+    {
+      "name": "button",
       "pairs_with": "powder",
       "strength": 1
     }
@@ -207,6 +207,21 @@
       "strength": 1
     },
     {
+      "name": "bajra",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "flour all",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "carom",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
       "name": "maida sooji",
       "pairs_with": "flour",
       "strength": 1
@@ -217,27 +232,12 @@
       "strength": 1
     },
     {
-      "name": "bajra",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "carom",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "flour all",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
       "name": "coriander powder",
       "pairs_with": "garlic",
       "strength": 1
     },
     {
-      "name": "coriander powder",
+      "name": "oil coriander",
       "pairs_with": "leaves",
       "strength": 1
     }

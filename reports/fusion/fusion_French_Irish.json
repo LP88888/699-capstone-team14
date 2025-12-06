@@ -5,156 +5,166 @@
       "name": "confectioners",
       "score": 135.70414494083462,
       "connects_a": [
-        "purpose flour",
-        "chocolate",
-        "butter"
+        "milk",
+        "1",
+        "maple syrup"
       ],
       "connects_b": [
-        "purpose flour",
-        "butter",
-        "egg yolks"
+        "milk",
+        "2",
+        "purpose flour"
       ]
     },
     {
       "name": "at",
       "score": 117.46602612714106,
       "connects_a": [
-        "purpose flour",
-        "chocolate",
-        "butter"
+        "milk",
+        "1",
+        "maple syrup"
       ],
       "connects_b": [
+        "milk",
         "purpose flour",
-        "butter",
-        "egg yolks"
+        "cream"
       ]
     },
     {
       "name": "vanilla extract",
       "score": 109.73284591764197,
       "connects_a": [
-        "purpose flour",
-        "chocolate",
-        "butter"
+        "milk",
+        "1",
+        "maple syrup"
       ],
       "connects_b": [
-        "purpose flour",
-        "butter",
-        "egg yolks"
+        "coffee",
+        "milk",
+        "purpose flour"
       ]
     },
     {
       "name": "sticks",
       "score": 99.35013592753592,
       "connects_a": [
-        "purpose flour",
-        "chocolate",
-        "butter"
+        "1",
+        "2",
+        "purpose flour"
       ],
       "connects_b": [
+        "2",
         "purpose flour",
-        "butter",
-        "egg yolks"
+        "buttermilk"
       ]
     },
     {
       "name": "whole milk",
       "score": 96.2811376622035,
       "connects_a": [
-        "purpose flour",
-        "chocolate",
-        "butter"
+        "maple syrup",
+        "2",
+        "purpose flour"
       ],
       "connects_b": [
+        "2",
         "purpose flour",
-        "butter",
-        "egg yolks"
+        "vanilla extract"
       ]
     },
     {
       "name": "cake flour",
       "score": 80.09869046780798,
       "connects_a": [
-        "chocolate",
-        "butter",
-        "egg whites"
+        "milk",
+        "1",
+        "2"
       ],
       "connects_b": [
-        "butter",
-        "egg yolks",
-        "2"
+        "milk",
+        "2",
+        "buttermilk"
       ]
     },
     {
       "name": "cocoa powder",
       "score": 72.12863399232403,
       "connects_a": [
-        "purpose flour",
-        "chocolate",
-        "egg whites"
+        "milk",
+        "1",
+        "purpose flour"
       ],
       "connects_b": [
-        "purpose flour",
-        "egg yolks",
-        "coffee"
+        "coffee",
+        "milk",
+        "purpose flour"
       ]
     },
     {
       "name": "filling",
       "score": 72.1105907441167,
       "connects_a": [
+        "milk",
         "purpose flour",
-        "butter",
-        "egg yolks"
+        "flour"
       ],
       "connects_b": [
+        "milk",
         "purpose flour",
-        "butter",
-        "egg yolks"
+        "flour"
       ]
     },
     {
       "name": "ice water",
       "score": 70.35683343206024,
       "connects_a": [
+        "1",
         "purpose flour",
-        "butter",
-        "nutmeg"
+        "flour"
       ],
       "connects_b": [
         "purpose flour",
-        "butter",
-        "egg yolks"
+        "flour",
+        "vanilla extract"
       ]
     },
     {
       "name": "room temp",
       "score": 70.05081699553205,
       "connects_a": [
+        "milk",
         "purpose flour",
-        "chocolate",
-        "butter"
+        "chocolate"
       ],
       "connects_b": [
+        "milk",
         "purpose flour",
-        "butter",
-        "egg yolks"
+        "buttermilk"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "chorizo",
+      "name": "roasted tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "handful pine nuts",
+      "name": "eggplants",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "marzano",
+      "name": "some",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "grigio",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "radicchio",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -164,32 +174,22 @@
       "strength": 1
     },
     {
-      "name": "morel mushrooms",
+      "name": "arugula",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "romano",
+      "name": "sandwich rolls",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "heads garlic",
+      "name": "mussels",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "linguine",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "petite",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "anchovy paste",
+      "name": "cannellini beans",
       "pairs_with": "olive oil",
       "strength": 1
     }

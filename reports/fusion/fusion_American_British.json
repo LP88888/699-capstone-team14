@@ -5,166 +5,146 @@
       "name": "confectioners",
       "score": 110.57374772956895,
       "connects_a": [
-        "purpose flour",
-        "butter",
-        "cinnamon"
+        "milk",
+        "1",
+        "2"
       ],
       "connects_b": [
-        "purpose flour",
-        "butter",
-        "nutmeg"
+        "milk",
+        "1",
+        "2"
       ]
     },
     {
       "name": "at",
       "score": 90.35848163626235,
       "connects_a": [
-        "purpose flour",
-        "butter",
-        "kosher sea salt"
+        "milk",
+        "1",
+        "purpose flour"
       ],
       "connects_b": [
-        "purpose flour",
-        "butter",
-        "egg yolks"
+        "milk",
+        "1",
+        "purpose flour"
       ]
     },
     {
       "name": "ice water",
       "score": 80.40780963664028,
       "connects_a": [
+        "1",
         "purpose flour",
-        "butter",
-        "cinnamon"
+        "flour"
       ],
       "connects_b": [
+        "1",
         "purpose flour",
-        "butter",
-        "nutmeg"
+        "beaten"
       ]
     },
     {
       "name": "whole milk",
       "score": 80.2342813851696,
       "connects_a": [
+        "2",
         "purpose flour",
-        "butter",
-        "kosher sea salt"
+        "vanilla extract"
       ],
       "connects_b": [
+        "2",
         "purpose flour",
-        "butter",
-        "nutmeg"
+        "beaten"
       ]
     },
     {
       "name": "sticks",
       "score": 72.25464431093522,
       "connects_a": [
-        "purpose flour",
-        "butter",
-        "cinnamon"
+        "1",
+        "2",
+        "purpose flour"
       ],
       "connects_b": [
-        "purpose flour",
-        "butter",
-        "nutmeg"
+        "1",
+        "2",
+        "purpose flour"
       ]
     },
     {
       "name": "filling",
       "score": 64.0983028836593,
       "connects_a": [
+        "milk",
         "purpose flour",
-        "butter",
-        "cinnamon"
+        "flour"
       ],
       "connects_b": [
+        "milk",
         "purpose flour",
-        "butter",
-        "egg yolks"
+        "flour"
       ]
     },
     {
       "name": "tomato paste",
       "score": 63.406524923509025,
       "connects_a": [
-        "carrot",
-        "tomatoes",
-        "cumin"
+        "bell pepper",
+        "cumin",
+        "tomatoes"
       ],
       "connects_b": [
-        "carrot",
-        "worcestershire sauce",
-        "wine"
+        "beef",
+        "cayenne pepper",
+        "carrot"
       ]
     },
     {
       "name": "veal",
       "score": 60.16352877643147,
       "connects_a": [
-        "carrot",
+        "milk",
         "2",
-        "cloves"
+        "carrot"
       ],
       "connects_b": [
-        "tomato paste",
-        "carrot",
-        "wine"
+        "beef",
+        "milk",
+        "2"
       ]
     },
     {
       "name": "yellow onions",
       "score": 60.082900413245646,
       "connects_a": [
-        "carrot",
-        "kosher sea salt",
-        "2"
+        "bell pepper",
+        "2",
+        "carrot"
       ],
       "connects_b": [
-        "tomato paste",
-        "carrot",
-        "worcestershire sauce"
+        "cayenne pepper",
+        "2",
+        "beaten"
       ]
     },
     {
       "name": "vanilla extract",
       "score": 56.89851269803657,
       "connects_a": [
-        "purpose flour",
-        "butter",
-        "cinnamon"
+        "milk",
+        "1",
+        "purpose flour"
       ],
       "connects_b": [
-        "purpose flour",
-        "butter",
-        "nutmeg"
+        "milk",
+        "1",
+        "purpose flour"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "pass",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "sherry vinegar",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "san marzano",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "anchovy paste",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "baby arugula",
+      "name": "radicchio",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -174,22 +154,42 @@
       "strength": 1
     },
     {
-      "name": "squid",
+      "name": "romano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "chianti",
+      "name": "for seasoning",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "fettuccine",
+      "name": "morel mushrooms",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "romano cheese",
+      "name": "roma",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "reggiano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pinenuts",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "salami",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pepperoncini peppers",
       "pairs_with": "olive oil",
       "strength": 1
     }

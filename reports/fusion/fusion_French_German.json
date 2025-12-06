@@ -5,156 +5,166 @@
       "name": "confectioners",
       "score": 196.01709824787224,
       "connects_a": [
-        "purpose flour",
-        "chocolate",
-        "butter"
+        "milk",
+        "1",
+        "maple syrup"
       ],
       "connects_b": [
-        "purpose flour",
+        "milk",
         "cocoa powder",
-        "butter"
+        "2"
       ]
     },
     {
       "name": "vanilla extract",
       "score": 146.31046122352262,
       "connects_a": [
-        "purpose flour",
-        "chocolate",
-        "butter"
+        "milk",
+        "1",
+        "maple syrup"
       ],
       "connects_b": [
-        "purpose flour",
+        "milk",
         "cocoa powder",
-        "butter"
+        "apples"
       ]
     },
     {
       "name": "sticks",
       "score": 121.42794391143279,
       "connects_a": [
-        "purpose flour",
-        "chocolate",
-        "butter"
+        "1",
+        "2",
+        "purpose flour"
       ],
       "connects_b": [
-        "purpose flour",
         "cocoa powder",
-        "butter"
+        "apples",
+        "2"
       ]
     },
     {
       "name": "at",
       "score": 117.46602612714106,
       "connects_a": [
-        "purpose flour",
-        "chocolate",
-        "butter"
+        "milk",
+        "1",
+        "maple syrup"
       ],
       "connects_b": [
-        "purpose flour",
+        "milk",
         "cocoa powder",
-        "butter"
+        "purpose flour"
       ]
     },
     {
       "name": "whole milk",
       "score": 108.31627986997894,
       "connects_a": [
-        "purpose flour",
-        "chocolate",
-        "butter"
+        "maple syrup",
+        "2",
+        "purpose flour"
       ],
       "connects_b": [
-        "purpose flour",
         "cocoa powder",
-        "butter"
+        "2",
+        "purpose flour"
       ]
     },
     {
       "name": "room temp",
       "score": 100.07259570790292,
       "connects_a": [
+        "milk",
         "purpose flour",
-        "chocolate",
-        "butter"
+        "chocolate"
       ],
       "connects_b": [
-        "purpose flour",
+        "milk",
         "cocoa powder",
-        "butter"
+        "purpose flour"
       ]
     },
     {
       "name": "softened",
       "score": 90.22856937668978,
       "connects_a": [
+        "maple syrup",
         "purpose flour",
-        "chocolate",
-        "butter"
+        "chocolate"
       ],
       "connects_b": [
-        "purpose flour",
         "cocoa powder",
-        "butter"
+        "purpose flour",
+        "vanilla extract"
       ]
     },
     {
       "name": "corn syrup",
       "score": 90.14874497254377,
       "connects_a": [
-        "chocolate",
-        "butter",
-        "egg whites"
+        "milk",
+        "1",
+        "cream"
       ],
       "connects_b": [
+        "milk",
         "cocoa powder",
-        "butter",
-        "egg whites"
+        "cream"
       ]
     },
     {
       "name": "vanilla",
       "score": 90.11769094162223,
       "connects_a": [
-        "chocolate",
-        "egg whites",
-        "nutmeg"
+        "milk",
+        "maple syrup",
+        "flour"
       ],
       "connects_b": [
+        "milk",
         "cocoa powder",
-        "egg whites",
-        "nutmeg"
+        "flour"
       ]
     },
     {
       "name": "cake flour",
       "score": 90.11102677628398,
       "connects_a": [
-        "chocolate",
-        "butter",
-        "egg whites"
+        "milk",
+        "1",
+        "2"
       ],
       "connects_b": [
+        "milk",
         "cocoa powder",
-        "butter",
-        "egg whites"
+        "2"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "chorizo",
+      "name": "roasted tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "handful pine nuts",
+      "name": "eggplants",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "marzano",
+      "name": "some",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "grigio",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "radicchio",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -164,32 +174,22 @@
       "strength": 1
     },
     {
-      "name": "morel mushrooms",
+      "name": "arugula",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "romano",
+      "name": "sandwich rolls",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "heads garlic",
+      "name": "mussels",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "linguine",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "palm",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "petite",
+      "name": "cannellini beans",
       "pairs_with": "olive oil",
       "strength": 1
     }
@@ -221,17 +221,17 @@
       "strength": 1
     },
     {
-      "name": "semolina flour",
-      "pairs_with": "egg",
-      "strength": 1
-    },
-    {
       "name": "flaked coconut",
       "pairs_with": "egg",
       "strength": 1
     },
     {
       "name": "pickle relish",
+      "pairs_with": "egg",
+      "strength": 1
+    },
+    {
+      "name": "semolina flour",
       "pairs_with": "egg",
       "strength": 1
     },

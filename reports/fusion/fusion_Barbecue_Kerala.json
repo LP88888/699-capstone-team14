@@ -5,65 +5,65 @@
       "name": "garam masala",
       "score": 55.31090998070518,
       "connects_a": [
-        "tomatoes",
         "cumin",
+        "cayenne pepper",
         "onion"
       ],
       "connects_b": [
-        "oil",
-        "onion",
-        "chili powder"
+        "cumin seeds",
+        "chili powder",
+        "oil"
       ]
     },
     {
       "name": "tumeric",
       "score": 40.11322904198745,
       "connects_a": [
-        "tomatoes",
         "cumin",
+        "cayenne pepper",
         "onion"
       ],
       "connects_b": [
-        "oil",
-        "onion",
-        "chili powder"
+        "cumin seeds",
+        "chili powder",
+        "oil"
       ]
     },
     {
       "name": "coriander powder",
       "score": 30.058580713252926,
       "connects_a": [
-        "tomatoes",
         "cumin",
-        "onion"
+        "tomatoes",
+        "ginger"
       ],
       "connects_b": [
-        "oil",
-        "onion",
-        "leaves"
+        "cumin seeds",
+        "chili powder",
+        "oil"
       ]
     },
     {
       "name": "cumin",
       "score": 27.463930256867304,
       "connects_a": [
-        "onion powder",
-        "tomatoes",
-        "oregano"
+        "bell pepper",
+        "cayenne pepper",
+        "onion powder"
       ],
       "connects_b": [
         "cumin seeds",
-        "beans",
-        "chili powder"
+        "chili powder",
+        "beans"
       ]
     },
     {
       "name": "chili powder",
       "score": 27.314229483965008,
       "connects_a": [
-        "ketchup",
-        "onion powder",
-        "worcestershire sauce"
+        "cumin",
+        "cayenne pepper",
+        "ketchup"
       ],
       "connects_b": [
         "cumin seeds",
@@ -75,27 +75,27 @@
       "name": "jalapeno peppers",
       "score": 25.024455455770124,
       "connects_a": [
-        "tomatoes",
+        "bell pepper",
         "cumin",
-        "cilantro"
+        "tomatoes"
       ],
       "connects_b": [
-        "beans",
-        "mango",
-        "rice"
+        "cumin seeds",
+        "chili powder",
+        "mango"
       ]
     },
     {
       "name": "turmeric",
       "score": 24.046523788447658,
       "connects_a": [
-        "tomatoes",
         "cumin",
-        "vegetable oil"
+        "tomatoes",
+        "ginger"
       ],
       "connects_b": [
-        "peas",
         "cumin seeds",
+        "chili powder",
         "oil"
       ]
     },
@@ -103,23 +103,23 @@
       "name": "coriander",
       "score": 21.054275197644117,
       "connects_a": [
-        "tomatoes",
         "cumin",
-        "cilantro"
+        "cayenne pepper",
+        "garlic powder"
       ],
       "connects_b": [
         "cumin seeds",
-        "chillies",
-        "chili powder"
+        "chili powder",
+        "chillies"
       ]
     },
     {
       "name": "celery",
       "score": 20.049644853665708,
       "connects_a": [
-        "onion powder",
-        "worcestershire sauce",
-        "tomatoes"
+        "bell pepper",
+        "cayenne pepper",
+        "onion powder"
       ],
       "connects_b": [
         "rice",
@@ -130,9 +130,9 @@
       "name": "andouille sausage",
       "score": 20.026472321626414,
       "connects_a": [
-        "onion powder",
-        "worcestershire sauce",
-        "tomatoes"
+        "bell pepper",
+        "cayenne pepper",
+        "onion powder"
       ],
       "connects_b": [
         "rice",
@@ -142,27 +142,7 @@
   ],
   "novel_from_a": [
     {
-      "name": "beef stock",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
       "name": "beef broth",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "beef",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "sandwich rolls",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "lentil",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -172,7 +152,22 @@
       "strength": 1
     },
     {
+      "name": "beef stock",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "sandwich rolls",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
       "name": "chicken base",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "beef",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -183,6 +178,11 @@
     },
     {
       "name": "ginger paste",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "lentil",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -199,6 +199,11 @@
       "strength": 1
     },
     {
+      "name": "chili oil",
+      "pairs_with": "soy sauce",
+      "strength": 1
+    },
+    {
       "name": "noodles",
       "pairs_with": "soy sauce",
       "strength": 1
@@ -210,11 +215,6 @@
     },
     {
       "name": "chili oil",
-      "pairs_with": "soy sauce",
-      "strength": 1
-    },
-    {
-      "name": "mustard seeds",
       "pairs_with": "ginger",
       "strength": 1
     },
@@ -229,17 +229,17 @@
       "strength": 1
     },
     {
+      "name": "mustard seeds",
+      "pairs_with": "ginger",
+      "strength": 1
+    },
+    {
       "name": "peanuts",
       "pairs_with": "ginger",
       "strength": 1
     },
     {
-      "name": "chili oil",
-      "pairs_with": "ginger",
-      "strength": 1
-    },
-    {
-      "name": "mustard seeds",
+      "name": "turmeric",
       "pairs_with": "cumin",
       "strength": 1
     }

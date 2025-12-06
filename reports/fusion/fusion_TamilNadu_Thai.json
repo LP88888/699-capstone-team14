@@ -6,22 +6,22 @@
       "score": 60.64010496074657,
       "connects_a": [
         "dhania",
-        "gram",
-        "rai"
+        "dal",
+        "gram"
       ],
       "connects_b": [
+        "scallions",
         "coconut milk",
-        "peanut oil",
-        "scallions"
+        "noodles"
       ]
     },
     {
       "name": "dhania",
       "score": 25.996864356228812,
       "connects_a": [
-        "fenugreek",
-        "finger",
-        "powder"
+        "urad dal",
+        "(",
+        "leaves sunflower"
       ],
       "connects_b": [
         "peanuts"
@@ -32,12 +32,12 @@
       "score": 25.17561520058016,
       "connects_a": [
         "fenugreek",
-        "powder",
+        "dhania",
         "chilli"
       ],
       "connects_b": [
         "coconut milk",
-        "limes",
+        "lime juice",
         "cilantro"
       ]
     },
@@ -45,9 +45,9 @@
       "name": "red",
       "score": 17.062607043542002,
       "connects_a": [
-        "fenugreek",
+        "chillies",
         "urad dal",
-        "powder"
+        "dal"
       ],
       "connects_b": [
         "peanuts"
@@ -62,17 +62,17 @@
       ],
       "connects_b": [
         "coconut milk",
-        "chiles",
-        "onion"
+        "onion",
+        "ginger"
       ]
     },
     {
       "name": "dal",
       "score": 16.011856203120843,
       "connects_a": [
-        "fenugreek",
-        "urad dal",
-        "powder"
+        "chillies",
+        "leaves coriander",
+        "urad dal"
       ],
       "connects_b": [
         "peanuts"
@@ -85,9 +85,9 @@
         "beans"
       ],
       "connects_b": [
-        "coconut milk",
         "scallions",
-        "chiles"
+        "coconut milk",
+        "fish sauce"
       ]
     },
     {
@@ -97,9 +97,9 @@
         "onion"
       ],
       "connects_b": [
-        "chiles",
-        "limes",
-        "onion"
+        "cilantro leaves",
+        "onion",
+        "lime juice"
       ]
     },
     {
@@ -110,9 +110,9 @@
         "onion"
       ],
       "connects_b": [
-        "onion",
-        "vegetable oil",
-        "bell pepper"
+        "bell pepper",
+        "shrimp",
+        "vegetable oil"
       ]
     },
     {
@@ -125,8 +125,8 @@
       ],
       "connects_b": [
         "garlic",
-        "leaves",
-        "onion"
+        "ginger",
+        "leaves"
       ]
     }
   ],
@@ -137,27 +137,7 @@
       "strength": 1
     },
     {
-      "name": "moringa",
-      "pairs_with": "leaves",
-      "strength": 1
-    },
-    {
-      "name": "murungai",
-      "pairs_with": "leaves",
-      "strength": 1
-    },
-    {
-      "name": "cloves cardamom",
-      "pairs_with": "leaves",
-      "strength": 1
-    },
-    {
       "name": "pudina",
-      "pairs_with": "leaves",
-      "strength": 1
-    },
-    {
-      "name": "pudina salt",
       "pairs_with": "leaves",
       "strength": 1
     },
@@ -167,8 +147,23 @@
       "strength": 1
     },
     {
-      "name": "rai",
-      "pairs_with": "peanuts",
+      "name": "pudina salt",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
+      "name": "murungai",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
+      "name": "moringa",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
+      "name": "cloves cardamom",
+      "pairs_with": "leaves",
       "strength": 1
     },
     {
@@ -180,9 +175,19 @@
       "name": "gram",
       "pairs_with": "peanuts",
       "strength": 1
+    },
+    {
+      "name": "rai",
+      "pairs_with": "peanuts",
+      "strength": 1
     }
   ],
   "novel_from_b": [
+    {
+      "name": "green bell",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
     {
       "name": "olive",
       "pairs_with": "dhania",
@@ -194,22 +199,12 @@
       "strength": 1
     },
     {
-      "name": "green bell",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
       "name": "kabuli",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "beef broth",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "palm",
+      "name": "tomatillos",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -219,17 +214,22 @@
       "strength": 1
     },
     {
+      "name": "beef broth",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "shrimp stock",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
       "name": "sodium beef broth",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "tomatillos",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "corn tortillas",
+      "name": "stalks celery",
       "pairs_with": "onion",
       "strength": 1
     }

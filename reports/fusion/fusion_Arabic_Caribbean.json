@@ -5,140 +5,140 @@
       "name": "garam masala",
       "score": 112.63312577889056,
       "connects_a": [
-        "chicken",
-        "tomato paste",
-        "coriander"
+        "cayenne",
+        "cumin",
+        "tomato"
       ],
       "connects_b": [
         "coconut milk",
         "cumin",
-        "onion"
+        "ginger"
       ]
     },
     {
       "name": "cumin",
       "score": 109.85572102746922,
       "connects_a": [
-        "chicken",
-        "tomato paste",
-        "coriander"
+        "cayenne",
+        "lamb",
+        "tahini"
       ],
       "connects_b": [
-        "coconut milk",
         "plantains",
-        "cilantro"
+        "coconut milk",
+        "bell pepper"
       ]
     },
     {
       "name": "chile",
       "score": 81.34924372335284,
       "connects_a": [
-        "coriander",
+        "cayenne",
         "cumin",
-        "cayenne"
+        "vinegar"
       ],
       "connects_b": [
+        "cilantro leaves",
         "cumin",
-        "vegetable oil",
-        "cilantro"
+        "lime juice"
       ]
     },
     {
       "name": "fish sauce",
       "score": 66.64889450924625,
       "connects_a": [
+        "vinegar",
         "carrot",
-        "vegetable oil",
-        "cilantro"
+        "vegetable oil"
       ],
       "connects_b": [
+        "scallions",
         "coconut milk",
-        "carrot",
-        "scallions"
+        "cilantro leaves"
       ]
     },
     {
       "name": "turmeric",
       "score": 66.12794041823106,
       "connects_a": [
-        "chicken",
-        "tomato paste",
-        "coriander"
+        "cayenne",
+        "cumin",
+        "tomato"
       ],
       "connects_b": [
+        "cilantro leaves",
         "coconut milk",
-        "cumin",
-        "vegetable oil"
+        "cumin"
       ]
     },
     {
       "name": "chicken thighs",
       "score": 64.17780118133099,
       "connects_a": [
-        "tomato paste",
-        "coriander",
+        "cayenne",
+        "yogurt",
         "carrot"
       ],
       "connects_b": [
+        "scallions",
         "coconut milk",
-        "carrot",
-        "scallions"
+        "bell pepper"
       ]
     },
     {
       "name": "coriander",
       "score": 63.16282559293236,
       "connects_a": [
-        "chicken",
+        "cayenne",
         "lamb",
         "cumin"
       ],
       "connects_b": [
+        "cilantro leaves",
         "coconut milk",
-        "cumin",
-        "cinnamon"
+        "cumin"
       ]
     },
     {
       "name": "tomato paste",
       "score": 49.31618605161813,
       "connects_a": [
-        "carrot",
+        "cayenne",
         "lamb",
         "cumin"
       ],
       "connects_b": [
-        "carrot",
+        "bell pepper",
         "cumin",
-        "onion"
+        "thyme"
       ]
     },
     {
       "name": "celery",
       "score": 49.12162989148098,
       "connects_a": [
-        "tomato paste",
+        "cayenne",
         "carrot",
-        "cayenne"
+        "parsley"
       ],
       "connects_b": [
-        "carrot",
-        "onion",
-        "garlic"
+        "bell pepper",
+        "rice",
+        "thyme"
       ]
     },
     {
       "name": "jalapeno",
       "score": 48.12579127048205,
       "connects_a": [
-        "chicken",
-        "coriander",
+        "cayenne",
+        "cumin",
         "tomato"
       ],
       "connects_b": [
         "scallions",
-        "cumin",
-        "cilantro"
+        "cilantro leaves",
+        "bell pepper"
       ]
     }
   ],
@@ -146,6 +146,11 @@
     {
       "name": "pizza",
       "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pine",
+      "pairs_with": "cloves",
       "strength": 1
     },
     {
@@ -159,8 +164,8 @@
       "strength": 1
     },
     {
-      "name": "pine",
-      "pairs_with": "cloves",
+      "name": "tumeric",
+      "pairs_with": "onion",
       "strength": 1
     },
     {
@@ -169,8 +174,8 @@
       "strength": 1
     },
     {
-      "name": "tumeric",
-      "pairs_with": "onion",
+      "name": "pie crust",
+      "pairs_with": "egg",
       "strength": 1
     },
     {
@@ -179,29 +184,29 @@
       "strength": 1
     },
     {
-      "name": "margarine",
-      "pairs_with": "egg",
-      "strength": 1
-    },
-    {
-      "name": "puff",
-      "pairs_with": "egg",
-      "strength": 1
-    },
-    {
       "name": "cream cheese",
+      "pairs_with": "egg",
+      "strength": 1
+    },
+    {
+      "name": "margarine",
       "pairs_with": "egg",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "crawfish",
+      "name": "sticks",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "filling",
+      "name": "room temp",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "confectioners",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -211,22 +216,7 @@
       "strength": 1
     },
     {
-      "name": "sticks",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
       "name": "granny smith apples",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "veal stock",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "lobster stock",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -236,12 +226,22 @@
       "strength": 1
     },
     {
-      "name": "at",
+      "name": "lobster stock",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "filling",
       "pairs_with": "butter",
       "strength": 1
     },
     {
       "name": "almond extract",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "at",
       "pairs_with": "butter",
       "strength": 1
     }

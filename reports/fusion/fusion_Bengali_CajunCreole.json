@@ -9,9 +9,9 @@
         "chili powder"
       ],
       "connects_b": [
-        "okra",
-        "onion powder",
-        "worcestershire sauce"
+        "hot sauce",
+        "bell pepper",
+        "shrimp"
       ]
     },
     {
@@ -19,12 +19,12 @@
       "score": 28.15828144472264,
       "connects_a": [
         "peas",
-        "potatoes",
+        "chili powder",
         "oil"
       ],
       "connects_b": [
+        "cayenne pepper",
         "tomatoes",
-        "onion",
         "vegetable oil"
       ]
     },
@@ -32,14 +32,14 @@
       "name": "chili powder",
       "score": 25.290953225893524,
       "connects_a": [
-        "leaf",
+        "jeera coriander",
         "oil",
-        "jeera coriander"
+        "methi"
       ],
       "connects_b": [
+        "cayenne pepper",
         "onion powder",
-        "worcestershire sauce",
-        "cayenne pepper"
+        "garlic powder"
       ]
     },
     {
@@ -50,9 +50,9 @@
         "chili powder"
       ],
       "connects_b": [
-        "okra",
-        "onion powder",
-        "creole seasoning"
+        "hot sauce",
+        "cayenne pepper",
+        "andouille sausage"
       ]
     },
     {
@@ -63,9 +63,9 @@
         "chili powder"
       ],
       "connects_b": [
-        "worcestershire sauce",
-        "creole seasoning",
-        "oregano"
+        "hot sauce",
+        "cayenne pepper",
+        "andouille sausage"
       ]
     },
     {
@@ -76,9 +76,9 @@
         "chili powder"
       ],
       "connects_b": [
-        "onion powder",
-        "worcestershire sauce",
-        "creole seasoning"
+        "hot sauce",
+        "cayenne pepper",
+        "andouille sausage"
       ]
     },
     {
@@ -86,12 +86,12 @@
       "score": 20.056614520993726,
       "connects_a": [
         "peas",
-        "potatoes",
+        "chili powder",
         "oil"
       ],
       "connects_b": [
+        "cayenne pepper",
         "tomatoes",
-        "onion",
         "garlic"
       ]
     },
@@ -102,22 +102,22 @@
         "leaves"
       ],
       "connects_b": [
-        "okra",
-        "purpose flour",
-        "onion powder"
+        "bell pepper",
+        "shrimp",
+        "cayenne pepper"
       ]
     },
     {
       "name": "cumin",
       "score": 14.240556429486752,
       "connects_a": [
-        "beans",
-        "chili powder"
+        "chili powder",
+        "beans"
       ],
       "connects_b": [
-        "onion powder",
-        "tomatoes",
-        "oregano"
+        "bell pepper",
+        "cayenne pepper",
+        "onion powder"
       ]
     },
     {
@@ -128,9 +128,9 @@
         "chili powder"
       ],
       "connects_b": [
-        "onion powder",
-        "worcestershire sauce",
-        "chili sauce"
+        "hot sauce",
+        "cayenne pepper",
+        "onion powder"
       ]
     }
   ],
@@ -166,7 +166,7 @@
       "strength": 1
     },
     {
-      "name": "maida sooji",
+      "name": "sugar whole",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -181,24 +181,19 @@
       "strength": 1
     },
     {
-      "name": "wheat",
+      "name": "maida sooji",
       "pairs_with": "flour",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "cornmeal",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "cod",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
       "name": "ice water",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "cornmeal",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -208,18 +203,13 @@
       "strength": 1
     },
     {
-      "name": "lard",
+      "name": "cod",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "sprigs thyme",
-      "pairs_with": "leaves",
-      "strength": 1
-    },
-    {
-      "name": "oregano leaves",
-      "pairs_with": "leaves",
+      "name": "lard",
+      "pairs_with": "flour",
       "strength": 1
     },
     {
@@ -233,7 +223,17 @@
       "strength": 1
     },
     {
-      "name": "paprika",
+      "name": "oregano leaves",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
+      "name": "sprigs thyme",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
+      "name": "cider vinegar",
       "pairs_with": "chili powder",
       "strength": 1
     }

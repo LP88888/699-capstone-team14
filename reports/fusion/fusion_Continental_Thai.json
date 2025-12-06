@@ -5,13 +5,13 @@
       "name": "salsa",
       "score": 32.09376320403048,
       "connects_a": [
+        "oregano",
         "bell pepper",
-        "beans",
-        "cream"
+        "beans"
       ],
       "connects_b": [
         "scallions",
-        "cilantro",
+        "cilantro leaves",
         "bell pepper"
       ]
     },
@@ -20,12 +20,12 @@
       "score": 25.17561520058016,
       "connects_a": [
         "wheat",
-        "powder",
+        "dhania",
         "chilli"
       ],
       "connects_b": [
         "coconut milk",
-        "limes",
+        "lime juice",
         "cilantro"
       ]
     },
@@ -33,97 +33,97 @@
       "name": "cumin",
       "score": 24.412382450548716,
       "connects_a": [
+        "oregano",
         "bell pepper",
-        "beans",
-        "oregano"
+        "beans"
       ],
       "connects_b": [
+        "cilantro leaves",
         "coconut milk",
-        "chiles",
-        "limes"
+        "bell pepper"
       ]
     },
     {
       "name": "garam masala",
       "score": 24.135669809762263,
       "connects_a": [
-        "potatoes",
         "oil",
+        "potatoes",
         "onion"
       ],
       "connects_b": [
         "coconut milk",
-        "chiles",
-        "onion"
+        "onion",
+        "ginger"
       ]
     },
     {
       "name": "corn tortillas",
       "score": 24.08425133663227,
       "connects_a": [
-        "onion",
-        "oregano"
+        "oregano",
+        "onion"
       ],
       "connects_b": [
-        "chiles",
-        "limes",
-        "onion"
+        "cilantro leaves",
+        "onion",
+        "lime juice"
       ]
     },
     {
       "name": "file powder",
       "score": 24.04874319183523,
       "connects_a": [
+        "thyme",
         "bell pepper",
-        "leaves",
-        "thyme"
+        "leaves"
       ],
       "connects_b": [
-        "onion",
-        "vegetable oil",
-        "bell pepper"
+        "bell pepper",
+        "shrimp",
+        "vegetable oil"
       ]
     },
     {
       "name": "andouille sausage",
       "score": 24.0317667859517,
       "connects_a": [
-        "bell pepper",
         "thyme",
-        "onion"
+        "bell pepper",
+        "oregano"
       ],
       "connects_b": [
-        "onion",
-        "garlic",
-        "bell pepper"
+        "bell pepper",
+        "shrimp",
+        "garlic"
       ]
     },
     {
       "name": "celery",
       "score": 20.049644853665708,
       "connects_a": [
-        "bell pepper",
         "thyme",
-        "onion"
+        "bell pepper",
+        "oregano"
       ],
       "connects_b": [
-        "carrot",
-        "onion",
-        "garlic"
+        "bell pepper",
+        "shrimp",
+        "carrot"
       ]
     },
     {
       "name": "cans tomatoes",
       "score": 20.044428318272463,
       "connects_a": [
-        "olive oil",
-        "leaves",
-        "onion"
+        "oregano",
+        "onion",
+        "leaves"
       ],
       "connects_b": [
-        "carrot",
         "olive oil",
-        "onion"
+        "carrot",
+        "cloves"
       ]
     },
     {
@@ -134,20 +134,20 @@
         "beans"
       ],
       "connects_b": [
-        "peanut oil",
         "scallions",
-        "limes"
+        "cilantro leaves",
+        "bell pepper"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "handful pine nuts",
+      "name": "arugula leaves",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "arugula leaves",
+      "name": "handful pine nuts",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -162,22 +162,17 @@
       "strength": 1
     },
     {
-      "name": "margarine",
-      "pairs_with": "egg",
-      "strength": 1
-    },
-    {
-      "name": "icing",
-      "pairs_with": "egg",
-      "strength": 1
-    },
-    {
-      "name": "ricotta",
-      "pairs_with": "egg",
-      "strength": 1
-    },
-    {
       "name": "cream cheese",
+      "pairs_with": "egg",
+      "strength": 1
+    },
+    {
+      "name": "soda",
+      "pairs_with": "egg",
+      "strength": 1
+    },
+    {
+      "name": "cocoa",
       "pairs_with": "egg",
       "strength": 1
     },
@@ -187,34 +182,19 @@
       "strength": 1
     },
     {
-      "name": "soda",
+      "name": "cocoa powder",
+      "pairs_with": "egg",
+      "strength": 1
+    },
+    {
+      "name": "icing",
       "pairs_with": "egg",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "center cut",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "heads garlic",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "linguine",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "palm",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "anchovy fillets",
+      "name": "eggplants",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -224,12 +204,27 @@
       "strength": 1
     },
     {
+      "name": "linguini",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "porcini mushrooms",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "linguini",
+      "name": "anchovy fillets",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "fennel bulb",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "heads garlic",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -239,7 +234,12 @@
       "strength": 1
     },
     {
-      "name": "beefsteak tomatoes",
+      "name": "linguine",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "center cut",
       "pairs_with": "olive oil",
       "strength": 1
     }

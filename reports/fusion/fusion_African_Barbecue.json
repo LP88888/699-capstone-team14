@@ -5,13 +5,13 @@
       "name": "garam masala",
       "score": 154.87054794597452,
       "connects_a": [
-        "chicken",
-        "tomato paste",
-        "coriander"
+        "cumin seeds",
+        "cumin",
+        "turmeric"
       ],
       "connects_b": [
-        "tomatoes",
         "cumin",
+        "cayenne pepper",
         "onion"
       ]
     },
@@ -19,93 +19,93 @@
       "name": "chiles",
       "score": 98.46772090440315,
       "connects_a": [
-        "coriander",
+        "cumin seeds",
         "coarsely",
-        "coriander seeds"
+        "cilantro leaves"
       ],
       "connects_b": [
         "cumin",
-        "vegetable oil",
-        "cilantro"
+        "ginger",
+        "vegetable oil"
       ]
     },
     {
       "name": "cumin",
       "score": 91.54643418955769,
       "connects_a": [
-        "chicken",
-        "tomato paste",
-        "coriander"
+        "cumin seeds",
+        "cilantro leaves",
+        "bell pepper"
       ],
       "connects_b": [
-        "onion powder",
-        "tomatoes",
-        "oregano"
+        "bell pepper",
+        "cayenne pepper",
+        "onion powder"
       ]
     },
     {
       "name": "tomato paste",
       "score": 90.58074989072718,
       "connects_a": [
-        "carrot",
-        "tomatoes",
-        "cumin"
+        "bell pepper",
+        "cumin",
+        "turmeric"
       ],
       "connects_b": [
-        "worcestershire sauce",
-        "tomatoes",
-        "cumin"
+        "bell pepper",
+        "cumin",
+        "cayenne pepper"
       ]
     },
     {
       "name": "celery",
       "score": 80.19857941466283,
       "connects_a": [
-        "tomato paste",
-        "carrot",
+        "bell pepper",
+        "onion",
         "tomatoes"
       ],
       "connects_b": [
-        "onion powder",
-        "worcestershire sauce",
-        "tomatoes"
+        "bell pepper",
+        "cayenne pepper",
+        "onion powder"
       ]
     },
     {
       "name": "chili powder",
       "score": 72.83794529057336,
       "connects_a": [
-        "chicken",
-        "coriander",
-        "coriander seeds"
+        "cumin seeds",
+        "cumin",
+        "turmeric"
       ],
       "connects_b": [
-        "ketchup",
-        "onion powder",
-        "worcestershire sauce"
+        "cumin",
+        "cayenne pepper",
+        "ketchup"
       ]
     },
     {
       "name": "turmeric",
       "score": 72.13957136534297,
       "connects_a": [
-        "chicken",
-        "tomato paste",
-        "coriander"
+        "cumin seeds",
+        "cilantro leaves",
+        "couscous"
       ],
       "connects_b": [
-        "tomatoes",
         "cumin",
-        "vegetable oil"
+        "tomatoes",
+        "ginger"
       ]
     },
     {
       "name": "chile",
       "score": 70.30181556339134,
       "connects_a": [
-        "coriander",
+        "cumin seeds",
         "coarsely",
-        "coriander seeds"
+        "cilantro leaves"
       ],
       "connects_b": [
         "soy sauce",
@@ -117,39 +117,44 @@
       "name": "coriander",
       "score": 70.1809173254804,
       "connects_a": [
-        "chicken",
-        "tomatoes",
-        "cumin"
+        "cumin seeds",
+        "cilantro leaves",
+        "couscous"
       ],
       "connects_b": [
-        "tomatoes",
         "cumin",
-        "cilantro"
+        "cayenne pepper",
+        "garlic powder"
       ]
     },
     {
       "name": "andouille sausage",
       "score": 70.09265312569245,
       "connects_a": [
-        "chicken",
-        "tomato paste",
+        "bell pepper",
+        "onion",
         "tomatoes"
       ],
       "connects_b": [
-        "onion powder",
-        "worcestershire sauce",
-        "tomatoes"
+        "bell pepper",
+        "cayenne pepper",
+        "onion powder"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "chorizo",
+      "name": "beefsteak tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "couscous",
+      "name": "kalamata olives",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "montreal steak",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -159,7 +164,7 @@
       "strength": 1
     },
     {
-      "name": "artichokes",
+      "name": "canned tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -169,27 +174,22 @@
       "strength": 1
     },
     {
-      "name": "mussels",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "canned tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "beefsteak tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "brussels sprouts",
+      "name": "squid",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
       "name": "olives",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "artichokes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "mussels",
       "pairs_with": "olive oil",
       "strength": 1
     }
@@ -211,12 +211,12 @@
       "strength": 1
     },
     {
-      "name": "sirloin",
+      "name": "chipotle chile",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "chipotle chile",
+      "name": "sirloin",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -231,12 +231,12 @@
       "strength": 1
     },
     {
-      "name": "gruyere cheese",
+      "name": "pecans",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "pecans",
+      "name": "gruyere cheese",
       "pairs_with": "butter",
       "strength": 1
     },

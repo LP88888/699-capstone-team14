@@ -5,56 +5,56 @@
       "name": "garam masala",
       "score": 119.67269614007122,
       "connects_a": [
-        "tomato paste",
-        "onion",
-        "vegetable oil"
+        "cayenne pepper",
+        "potatoes",
+        "peas"
       ],
       "connects_b": [
-        "mustard seeds",
-        "coriander",
-        "tomatoes"
+        "cumin seeds",
+        "chili powder",
+        "cumin"
       ]
     },
     {
       "name": "tumeric",
       "score": 75.21230445372647,
       "connects_a": [
-        "onion",
-        "garlic",
-        "potatoes"
+        "cayenne pepper",
+        "potatoes",
+        "peas"
       ],
       "connects_b": [
-        "mustard seeds",
-        "coriander",
-        "garam masala"
+        "cumin seeds",
+        "chili powder",
+        "cumin"
       ]
     },
     {
       "name": "tomato paste",
       "score": 54.3484499344363,
       "connects_a": [
-        "carrot",
-        "worcestershire sauce",
-        "wine"
+        "beef",
+        "cayenne pepper",
+        "carrot"
       ],
       "connects_b": [
-        "garam masala",
-        "tomatoes",
-        "cumin"
+        "cumin",
+        "turmeric",
+        "tomatoes"
       ]
     },
     {
       "name": "bay leaf",
       "score": 42.37798101569312,
       "connects_a": [
-        "tomato paste",
+        "beef",
         "carrot",
-        "wine"
+        "russet potatoes"
       ],
       "connects_b": [
-        "garam masala",
-        "tomatoes",
-        "cumin"
+        "cumin",
+        "turmeric",
+        "tomatoes"
       ]
     },
     {
@@ -62,13 +62,13 @@
       "score": 42.081416629783405,
       "connects_a": [
         "peas",
-        "tomato paste",
-        "vegetable oil"
+        "vegetable oil",
+        "tomato paste"
       ],
       "connects_b": [
-        "mustard seeds",
-        "coriander",
-        "garam masala"
+        "cumin seeds",
+        "chili powder",
+        "cumin"
       ]
     },
     {
@@ -76,13 +76,13 @@
       "score": 42.03271142309463,
       "connects_a": [
         "peas",
-        "potatoes",
-        "vegetable oil"
+        "vegetable oil",
+        "potatoes"
       ],
       "connects_b": [
-        "coriander",
-        "garam masala",
-        "tomatoes"
+        "cumin seeds",
+        "chili powder",
+        "cumin"
       ]
     },
     {
@@ -94,8 +94,8 @@
         "onion"
       ],
       "connects_b": [
-        "garam masala",
-        "tomatoes",
+        "cumin seeds",
+        "chili powder",
         "cumin"
       ]
     },
@@ -103,28 +103,28 @@
       "name": "allspice",
       "score": 35.15593918542888,
       "connects_a": [
-        "nutmeg",
-        "kosher sea salt",
-        "cloves"
+        "beef",
+        "cayenne pepper",
+        "kosher sea salt"
       ],
       "connects_b": [
-        "mustard seeds",
-        "coriander",
-        "cumin"
+        "chili powder",
+        "cumin",
+        "mustard seeds"
       ]
     },
     {
       "name": "chiles",
       "score": 33.15749785556433,
       "connects_a": [
-        "cloves",
         "2",
-        "vegetable oil"
+        "vegetable oil",
+        "cloves"
       ],
       "connects_b": [
-        "mustard seeds",
-        "coriander",
-        "garam masala"
+        "cumin seeds",
+        "cumin",
+        "turmeric"
       ]
     },
     {
@@ -135,38 +135,13 @@
         "nutmeg"
       ],
       "connects_b": [
-        "carom",
-        "coriander",
-        "garam masala"
+        "cumin seeds",
+        "chili powder",
+        "cumin"
       ]
     }
   ],
   "novel_from_a": [
-    {
-      "name": "ribs celery",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "mussels",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "sodium",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "head fennel",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "for drizzling",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
     {
       "name": "cremini",
       "pairs_with": "cloves",
@@ -178,7 +153,32 @@
       "strength": 1
     },
     {
-      "name": "chervil",
+      "name": "ribs celery",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "sodium",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "for drizzling",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "head fennel",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "mussels",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "almond extract",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -188,14 +188,14 @@
       "strength": 1
     },
     {
-      "name": "vanilla extract",
+      "name": "veal stock",
       "pairs_with": "butter",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "handful pine nuts",
+      "name": "eggplants",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -205,17 +205,27 @@
       "strength": 1
     },
     {
-      "name": "linguine",
+      "name": "arugula",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "palm",
+      "name": "finely oregano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "cans chickpeas",
+      "name": "handful pine nuts",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "fennel bulb",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pizza",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -225,22 +235,12 @@
       "strength": 1
     },
     {
-      "name": "chipotle puree",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pasta",
+      "name": "linguine",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
       "name": "cherry tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "fennel bulb",
       "pairs_with": "olive oil",
       "strength": 1
     }

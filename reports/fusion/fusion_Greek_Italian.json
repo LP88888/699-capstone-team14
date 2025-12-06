@@ -5,54 +5,54 @@
       "name": "feta cheese",
       "score": 90.01905667086434,
       "connects_a": [
-        "wine vinegar",
-        "lemon",
-        "kalamata olives"
+        "cherry tomatoes",
+        "olives",
+        "dill"
       ],
       "connects_b": [
-        "lemon",
+        "seasoning",
         "tomatoes",
-        "seasoning"
+        "parsley"
       ]
     },
     {
       "name": "can tomatoes",
       "score": 84.49441628721962,
       "connects_a": [
+        "bell pepper",
         "olives",
-        "onion",
-        "oregano"
+        "parsley"
       ],
       "connects_b": [
-        "basil",
-        "mozzarella cheese",
-        "seasoning"
+        "freshly",
+        "bell pepper",
+        "mozzarella cheese"
       ]
     },
     {
       "name": "capers",
       "score": 80.15597431040385,
       "connects_a": [
-        "wine vinegar",
-        "lemon",
-        "kalamata olives"
+        "cherry tomatoes",
+        "olives",
+        "wine vinegar"
       ],
       "connects_b": [
-        "lemon",
+        "pepper flakes",
         "tomatoes",
-        "olive oil"
+        "parsley"
       ]
     },
     {
       "name": "oregano",
       "score": 72.40333124383577,
       "connects_a": [
-        "feta cheese",
-        "wine vinegar",
-        "kalamata olives"
+        "bell pepper",
+        "olives",
+        "cheese crumbles"
       ],
       "connects_b": [
-        "basil",
+        "bell pepper",
         "mozzarella cheese",
         "tomatoes"
       ]
@@ -61,84 +61,84 @@
       "name": "basil",
       "score": 63.08115787444858,
       "connects_a": [
-        "tomatoes",
         "olives",
-        "oregano"
+        "spinach",
+        "tomatoes"
       ],
       "connects_b": [
-        "mozzarella cheese",
-        "tomatoes",
-        "seasoning"
+        "parmesan cheese",
+        "seasoning",
+        "mozzarella cheese"
       ]
     },
     {
       "name": "tomato paste",
       "score": 60.387166593818115,
       "connects_a": [
+        "bell pepper",
         "tomatoes",
-        "onion",
-        "oregano"
+        "parsley"
       ],
       "connects_b": [
-        "basil",
-        "carrot",
-        "tomatoes"
+        "bell pepper",
+        "tomatoes",
+        "carrot"
       ]
     },
     {
       "name": "cans tomatoes",
       "score": 60.133284954817384,
       "connects_a": [
-        "olive oil",
+        "grain sea salt",
         "onion",
         "oregano"
       ],
       "connects_b": [
-        "carrot",
+        "pepper flakes",
         "seasoning",
-        "onion"
+        "optional"
       ]
     },
     {
       "name": "kalamata olives",
       "score": 60.08175132994992,
       "connects_a": [
-        "feta cheese",
-        "wine vinegar",
-        "lemon"
+        "cherry tomatoes",
+        "olives",
+        "olive oil"
       ],
       "connects_b": [
-        "lemon",
+        "olive oil",
         "tomatoes",
-        "olive oil"
+        "oregano"
       ]
     },
     {
       "name": "veal",
       "score": 55.14990137839551,
       "connects_a": [
-        "oregano",
-        "cloves",
-        "milk"
+        "milk",
+        "parsley",
+        "oregano"
       ],
       "connects_b": [
-        "carrot",
+        "parmesan cheese",
         "freshly",
-        "wine"
+        "milk"
       ]
     },
     {
       "name": "spaghetti",
       "score": 55.10785457716198,
       "connects_a": [
-        "olive oil",
+        "parsley",
         "oregano",
-        "cherry tomatoes"
+        "cloves"
       ],
       "connects_b": [
-        "basil",
-        "seasoning",
-        "freshly"
+        "parmesan cheese",
+        "freshly",
+        "pepper flakes"
       ]
     }
   ],
@@ -154,22 +154,22 @@
       "strength": 1
     },
     {
-      "name": "pinto",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
       "name": "garam masala",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "water chestnuts",
-      "pairs_with": "carrot",
+      "name": "pinto",
+      "pairs_with": "onion",
       "strength": 1
     },
     {
       "name": "jicama",
+      "pairs_with": "carrot",
+      "strength": 1
+    },
+    {
+      "name": "water chestnuts",
       "pairs_with": "carrot",
       "strength": 1
     },
@@ -196,42 +196,37 @@
   ],
   "novel_from_b": [
     {
-      "name": "chorizo",
+      "name": "bucatini",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "bunch kale",
+      "name": "grigio",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pass",
+      "name": "radicchio",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "orecchiette",
+      "name": "sandwich rolls",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "morel mushrooms",
+      "name": "mussels",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "center cut",
+      "name": "fettuccine",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "cans chickpeas",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "chipotle puree",
+      "name": "micro greens",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -241,7 +236,12 @@
       "strength": 1
     },
     {
-      "name": "anchovy fillets",
+      "name": "cannellini beans",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "chorizo sausage",
       "pairs_with": "olive oil",
       "strength": 1
     }

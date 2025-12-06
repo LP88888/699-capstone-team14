@@ -5,51 +5,51 @@
       "name": "inch piece",
       "score": 85.25427584302363,
       "connects_a": [
-        "wine vinegar",
-        "peanut oil",
+        "scallions",
+        "mushrooms",
         "sesame oil"
       ],
       "connects_b": [
-        "carrot",
-        "cloves",
-        "about"
+        "about",
+        "grain sea salt",
+        "carrot"
       ]
     },
     {
       "name": "ribs celery",
       "score": 70.51015235559204,
       "connects_a": [
-        "carrot",
         "scallions",
-        "onion"
+        "bell pepper",
+        "shrimp"
       ],
       "connects_b": [
-        "carrot",
-        "wine",
-        "onion"
+        "bell pepper",
+        "about",
+        "optional"
       ]
     },
     {
       "name": "cans tomatoes",
       "score": 60.133284954817384,
       "connects_a": [
-        "carrot",
+        "olive oil",
         "onion",
-        "olive oil"
+        "carrot"
       ],
       "connects_b": [
-        "carrot",
+        "pepper flakes",
         "seasoning",
-        "onion"
+        "optional"
       ]
     },
     {
       "name": "hoisin sauce",
       "score": 60.04587304316689,
       "connects_a": [
-        "carrot",
-        "fish sauce",
-        "ginger"
+        "rice vinegar",
+        "garlic",
+        "scallions"
       ],
       "connects_b": [
         "garlic",
@@ -62,26 +62,26 @@
       "score": 56.32961085814641,
       "connects_a": [
         "bell pepper",
-        "cloves",
-        "onion"
+        "onion",
+        "cloves"
       ],
       "connects_b": [
-        "basil",
-        "mozzarella cheese",
-        "seasoning"
+        "freshly",
+        "bell pepper",
+        "mozzarella cheese"
       ]
     },
     {
       "name": "peeled ginger",
       "score": 48.02715405310887,
       "connects_a": [
-        "peanut oil",
+        "scallions",
         "sesame oil",
-        "carrot"
+        "hoisin sauce"
       ],
       "connects_b": [
-        "1",
         ")",
+        "1",
         "carrot"
       ]
     },
@@ -89,14 +89,14 @@
       "name": "veal",
       "score": 44.11992110271641,
       "connects_a": [
+        "2",
         "cloves",
-        "carrot",
-        "egg"
+        "carrot"
       ],
       "connects_b": [
-        "carrot",
+        "parmesan cheese",
         "freshly",
-        "wine"
+        "milk"
       ]
     },
     {
@@ -104,58 +104,63 @@
       "score": 44.05676875200534,
       "connects_a": [
         "mushrooms",
-        "carrot",
-        "olive oil"
+        "pepper flakes",
+        "carrot"
       ],
       "connects_b": [
-        "mozzarella cheese",
-        "carrot",
-        "freshly"
+        "parmesan cheese",
+        "freshly",
+        "pepper flakes"
       ]
     },
     {
       "name": "mussels",
       "score": 42.252943726202304,
       "connects_a": [
-        "olive oil",
         "bell pepper",
-        "rice"
+        "rice",
+        "shrimp"
       ],
       "connects_b": [
-        "wine",
+        "bell pepper",
         "olive oil",
-        "bell pepper"
+        "parsley"
       ]
     },
     {
       "name": "celery",
       "score": 42.10425419269799,
       "connects_a": [
-        "carrot",
-        "onion",
-        "garlic"
+        "bell pepper",
+        "rice",
+        "shrimp"
       ],
       "connects_b": [
-        "carrot",
+        "bell pepper",
         "tomatoes",
-        "onion"
+        "carrot"
       ]
     }
   ],
   "novel_from_a": [
-    {
-      "name": "scotch bonnet peppers",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
     {
       "name": "tomatillos",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
+      "name": "scotch bonnet peppers",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
       "name": "pecan halves",
       "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "tomatillos",
+      "pairs_with": "onion",
       "strength": 1
     },
     {
@@ -169,18 +174,8 @@
       "strength": 1
     },
     {
-      "name": "tomatillos",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
       "name": "ginger paste",
       "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "pecan halves",
-      "pairs_with": "egg",
       "strength": 1
     },
     {
@@ -189,24 +184,39 @@
       "strength": 1
     },
     {
-      "name": "water chestnuts",
+      "name": "pecan halves",
+      "pairs_with": "egg",
+      "strength": 1
+    },
+    {
+      "name": "miso",
       "pairs_with": "carrot",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "for drizzling",
+      "name": "roasted tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "cubanelle peppers",
+      "name": "arugula leaves",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "marzano",
+      "name": "bucatini",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pecorino",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "grigio",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -216,32 +226,22 @@
       "strength": 1
     },
     {
-      "name": "orecchiette",
+      "name": "finely oregano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "morel mushrooms",
+      "name": "fettuccine",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "romano",
+      "name": "micro greens",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pinenuts",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "palm",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cans chickpeas",
+      "name": "cannellini beans",
       "pairs_with": "olive oil",
       "strength": 1
     }

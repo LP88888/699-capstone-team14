@@ -5,69 +5,69 @@
       "name": "andouille sausage",
       "score": 168.2223675016619,
       "connects_a": [
-        "onion powder",
-        "creole seasoning",
-        "tomatoes"
+        "garlic",
+        "bell pepper",
+        "rice"
       ],
       "connects_b": [
-        "tomatoes",
-        "bay leaf",
-        "onion"
+        "bell pepper",
+        "rice",
+        "bay leaf"
       ]
     },
     {
       "name": "celery",
       "score": 161.39964107200893,
       "connects_a": [
-        "onion powder",
-        "creole seasoning",
-        "tomatoes"
+        "andouille sausage",
+        "garlic powder",
+        "parsley"
       ],
       "connects_b": [
-        "tomatoes",
-        "bay leaf",
-        "onion"
+        "bell pepper",
+        "rice",
+        "bay leaf"
       ]
     },
     {
       "name": "tomato paste",
       "score": 126.81304984701805,
       "connects_a": [
-        "okra",
-        "worcestershire sauce",
-        "tomatoes"
+        "bell pepper",
+        "cayenne pepper",
+        "andouille sausage"
       ],
       "connects_b": [
-        "tomatoes",
+        "bell pepper",
         "cumin",
-        "wine"
+        "bay leaf"
       ]
     },
     {
       "name": "creole seasoning",
       "score": 114.0615751612288,
       "connects_a": [
-        "onion powder",
-        "tomatoes",
-        "oregano"
+        "andouille sausage",
+        "garlic powder",
+        "parsley"
       ],
       "connects_b": [
-        "tomatoes",
-        "oregano",
-        "garlic"
+        "bell pepper",
+        "rice",
+        "tomatoes"
       ]
     },
     {
       "name": "file powder",
       "score": 90.18278696938211,
       "connects_a": [
-        "okra",
-        "purpose flour",
-        "onion powder"
+        "bell pepper",
+        "shrimp",
+        "cayenne pepper"
       ],
       "connects_b": [
+        "bell pepper",
         "tomatoes",
-        "onion",
         "vegetable oil"
       ]
     },
@@ -75,106 +75,76 @@
       "name": "can tomatoes",
       "score": 88.51795991994436,
       "connects_a": [
-        "worcestershire sauce",
-        "onion",
-        "oregano"
+        "hot sauce",
+        "bell pepper",
+        "andouille sausage"
       ],
       "connects_b": [
+        "bell pepper",
         "olives",
-        "cumin",
-        "wine"
+        "cumin"
       ]
     },
     {
       "name": "oregano",
       "score": 88.4929604091326,
       "connects_a": [
-        "onion powder",
-        "creole seasoning",
-        "tomatoes"
+        "bell pepper",
+        "cayenne pepper",
+        "andouille sausage"
       ],
       "connects_b": [
-        "wine vinegar",
-        "tomatoes",
-        "cumin"
+        "plantains",
+        "bell pepper",
+        "olives"
       ]
     },
     {
       "name": "cumin",
       "score": 85.44333857692051,
       "connects_a": [
-        "onion powder",
-        "tomatoes",
-        "oregano"
+        "bell pepper",
+        "cayenne pepper",
+        "onion powder"
       ],
       "connects_b": [
-        "beans",
-        "tomatoes",
-        "plantains"
+        "plantains",
+        "dill pickles",
+        "bell pepper"
       ]
     },
     {
       "name": "okra",
       "score": 85.11616591004079,
       "connects_a": [
-        "purpose flour",
-        "worcestershire sauce",
-        "tomatoes"
+        "hot sauce",
+        "bell pepper",
+        "rice"
       ],
       "connects_b": [
-        "tomatoes",
-        "onion",
-        "vegetable oil"
+        "bell pepper",
+        "rice",
+        "tomatoes"
       ]
     },
     {
       "name": "tabasco sauce",
       "score": 78.08495838446582,
       "connects_a": [
-        "onion powder",
-        "worcestershire sauce",
-        "chili sauce"
+        "hot sauce",
+        "bell pepper",
+        "rice"
       ],
       "connects_b": [
-        "mustard",
-        "bay leaf",
-        "bell pepper"
+        "bell pepper",
+        "rice",
+        "bay leaf"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "grape tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "penne pasta",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "linguini",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "reggiano cheese",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "turkey sausage",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "spaghetti",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "couscous",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -184,7 +154,37 @@
       "strength": 1
     },
     {
+      "name": "penne pasta",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "grape tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "pasta",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "linguine",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "turkey sausage",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "linguini",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "spaghetti",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -196,22 +196,17 @@
   ],
   "novel_from_b": [
     {
-      "name": "chipotle puree",
+      "name": "crusty rolls",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "sherry vinegar",
+      "name": "beefsteak tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "handful pine nuts",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "mussels",
+      "name": "montreal steak",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -226,12 +221,12 @@
       "strength": 1
     },
     {
-      "name": "beefsteak tomatoes",
+      "name": "handful pine nuts",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "crusty rolls",
+      "name": "arugula",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -242,6 +237,11 @@
     },
     {
       "name": "finely oregano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "mussels",
       "pairs_with": "olive oil",
       "strength": 1
     }

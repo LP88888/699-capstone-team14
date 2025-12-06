@@ -5,97 +5,97 @@
       "name": "tomato paste",
       "score": 72.46459991258175,
       "connects_a": [
-        "carrot",
-        "tomatoes",
-        "cumin"
+        "bell pepper",
+        "cumin",
+        "turmeric"
       ],
       "connects_b": [
-        "carrot",
-        "onion",
-        "caraway seeds"
+        "beef",
+        "thyme",
+        "carrot"
       ]
     },
     {
       "name": "bay leaf",
       "score": 60.5399728795616,
       "connects_a": [
-        "tomato paste",
-        "carrot",
+        "cumin",
+        "turmeric",
         "coriander seeds"
       ],
       "connects_b": [
-        "carrot",
-        "onion",
-        "thyme"
+        "beef",
+        "thyme",
+        "carrot"
       ]
     },
     {
       "name": "garam masala",
       "score": 56.31656288944528,
       "connects_a": [
-        "chicken",
-        "tomato paste",
-        "coriander"
+        "cumin seeds",
+        "cumin",
+        "turmeric"
       ],
       "connects_b": [
+        "vegetable oil",
         "garlic",
-        "potatoes",
-        "onion"
+        "potatoes"
       ]
     },
     {
       "name": "yellow onions",
       "score": 48.06632033059652,
       "connects_a": [
-        "tomato paste",
-        "carrot",
-        "kosher sea salt"
+        "bell pepper",
+        "2",
+        "carrot"
       ],
       "connects_b": [
-        "carrot",
-        "kosher sea salt",
-        "2"
+        "2",
+        "thyme",
+        "carrot"
       ]
     },
     {
       "name": "ribs celery",
       "score": 45.32795508573774,
       "connects_a": [
-        "chicken",
-        "tomato paste",
-        "carrot"
+        "scallions",
+        "bell pepper",
+        "onion"
       ],
       "connects_b": [
+        "thyme",
         "carrot",
-        "onion",
-        "cloves"
+        "parsley"
       ]
     },
     {
       "name": "allspice",
       "score": 45.200493238408555,
       "connects_a": [
-        "coriander",
         "coarsely",
-        "cumin"
+        "cumin",
+        "roughly"
       ],
       "connects_b": [
-        "kosher sea salt",
-        "cloves",
-        "thyme"
+        "beef",
+        "thyme",
+        "kosher sea salt"
       ]
     },
     {
       "name": "palm",
       "score": 44.169308678586994,
       "connects_a": [
-        "coriander",
-        "lemon",
-        "scallions"
+        "scallions",
+        "bell pepper",
+        "cumin"
       ],
       "connects_b": [
-        "olive oil",
         "cloves",
+        "olive oil",
         "parsley"
       ]
     },
@@ -103,58 +103,58 @@
       "name": "chiles",
       "score": 42.20045181617278,
       "connects_a": [
-        "coriander",
+        "cumin seeds",
         "coarsely",
-        "coriander seeds"
+        "cilantro leaves"
       ],
       "connects_b": [
-        "cloves",
         "2",
-        "vegetable oil"
+        "vegetable oil",
+        "cloves"
       ]
     },
     {
       "name": "grits",
       "score": 42.16431450397734,
       "connects_a": [
-        "butter",
         "scallions",
+        "bell pepper",
         "2"
       ],
       "connects_b": [
-        "butter",
+        "milk",
         "2",
-        "milk"
+        "parsley"
       ]
     },
     {
       "name": "celery",
       "score": 40.099289707331415,
       "connects_a": [
-        "tomato paste",
-        "carrot",
+        "bell pepper",
+        "onion",
         "tomatoes"
       ],
       "connects_b": [
+        "thyme",
         "carrot",
-        "onion",
-        "garlic"
+        "parsley"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "chorizo",
+      "name": "beefsteak tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "couscous",
+      "name": "kalamata olives",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "cherry tomatoes",
+      "name": "montreal steak",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -164,7 +164,7 @@
       "strength": 1
     },
     {
-      "name": "artichokes",
+      "name": "canned tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -174,27 +174,37 @@
       "strength": 1
     },
     {
+      "name": "squid",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "artichokes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "mussels",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "canned tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "beefsteak tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "brussels sprouts",
+      "name": "chorizo",
       "pairs_with": "olive oil",
       "strength": 1
     }
   ],
   "novel_from_b": [
+    {
+      "name": "capers",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "head fennel",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
     {
       "name": "sherry vinegar",
       "pairs_with": "olive oil",
@@ -206,22 +216,22 @@
       "strength": 1
     },
     {
-      "name": "head fennel",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "capers",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "beef chuck",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "bunch kale",
+      "name": "head fennel",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "allspice berries",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "hair pasta",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -231,17 +241,7 @@
       "strength": 1
     },
     {
-      "name": "chipotles",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
       "name": "inch piece",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "pork shoulder",
       "pairs_with": "cloves",
       "strength": 1
     }

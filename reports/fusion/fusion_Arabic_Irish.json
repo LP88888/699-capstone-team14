@@ -5,56 +5,56 @@
       "name": "tomato paste",
       "score": 56.36135548756358,
       "connects_a": [
-        "carrot",
+        "cayenne",
         "lamb",
         "cumin"
       ],
       "connects_b": [
-        "carrot",
-        "onion",
-        "caraway seeds"
+        "beef",
+        "thyme",
+        "carrot"
       ]
     },
     {
       "name": "garam masala",
       "score": 56.31656288944528,
       "connects_a": [
-        "chicken",
-        "tomato paste",
-        "coriander"
+        "cayenne",
+        "cumin",
+        "tomato"
       ],
       "connects_b": [
+        "vegetable oil",
         "garlic",
-        "potatoes",
-        "onion"
+        "potatoes"
       ]
     },
     {
       "name": "bay leaf",
       "score": 42.37798101569312,
       "connects_a": [
-        "tomato paste",
-        "carrot",
-        "tomato"
+        "cumin",
+        "tomato",
+        "carrot"
       ],
       "connects_b": [
-        "carrot",
-        "onion",
-        "thyme"
+        "beef",
+        "thyme",
+        "carrot"
       ]
     },
     {
       "name": "filling",
       "score": 40.06143930228706,
       "connects_a": [
-        "butter",
-        "cinnamon",
-        "milk"
+        "milk",
+        "flour",
+        "butter"
       ],
       "connects_b": [
+        "milk",
         "purpose flour",
-        "butter",
-        "egg yolks"
+        "flour"
       ]
     },
     {
@@ -63,12 +63,12 @@
       "connects_a": [
         "butter",
         "milk",
-        "cinnamon"
+        "egg"
       ],
       "connects_b": [
-        "purpose flour",
-        "butter",
-        "egg yolks"
+        "coffee",
+        "milk",
+        "purpose flour"
       ]
     },
     {
@@ -77,68 +77,68 @@
       "connects_a": [
         "butter",
         "milk",
-        "cinnamon"
+        "egg"
       ],
       "connects_b": [
-        "purpose flour",
-        "butter",
-        "egg yolks"
+        "milk",
+        "2",
+        "purpose flour"
       ]
     },
     {
       "name": "beef stock",
       "score": 36.13253723897358,
       "connects_a": [
-        "tomato paste",
-        "carrot",
-        "onion"
+        "bread",
+        "flour",
+        "carrot"
       ],
       "connects_b": [
-        "carrot",
-        "onion",
-        "potatoes"
+        "beef",
+        "thyme",
+        "flour"
       ]
     },
     {
       "name": "yellow onions",
       "score": 36.04974024794739,
       "connects_a": [
-        "tomato paste",
+        "cayenne",
         "carrot",
-        "cayenne"
+        "parsley"
       ],
       "connects_b": [
-        "carrot",
-        "kosher sea salt",
-        "2"
+        "2",
+        "thyme",
+        "carrot"
       ]
     },
     {
       "name": "veal",
       "score": 35.09539178625169,
       "connects_a": [
-        "tomato paste",
+        "milk",
         "carrot",
-        "milk"
+        "parsley"
       ],
       "connects_b": [
-        "carrot",
-        "2",
-        "cloves"
+        "beef",
+        "milk",
+        "2"
       ]
     },
     {
       "name": "celery",
       "score": 35.08687849391499,
       "connects_a": [
-        "tomato paste",
+        "cayenne",
         "carrot",
-        "cayenne"
+        "parsley"
       ],
       "connects_b": [
+        "thyme",
         "carrot",
-        "onion",
-        "garlic"
+        "parsley"
       ]
     }
   ],
@@ -154,13 +154,18 @@
       "strength": 1
     },
     {
+      "name": "pine",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
       "name": "harissa",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "pine",
-      "pairs_with": "cloves",
+      "name": "garam masala",
+      "pairs_with": "onion",
       "strength": 1
     },
     {
@@ -169,7 +174,7 @@
       "strength": 1
     },
     {
-      "name": "okra",
+      "name": "tumeric",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -179,12 +184,7 @@
       "strength": 1
     },
     {
-      "name": "garam masala",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "tumeric",
+      "name": "okra",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -196,37 +196,37 @@
   ],
   "novel_from_b": [
     {
-      "name": "cake flour",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "almond flour",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
       "name": "sticks",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "cooking apples",
+      "name": "room temp",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "veal stock",
+      "name": "!®",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "ca",
+      "name": "confectioners",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "at",
+      "name": "cake flour",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "believe",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "corn syrup",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -236,12 +236,12 @@
       "strength": 1
     },
     {
-      "name": "stone",
+      "name": "at",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "and half",
+      "name": "cooking apples",
       "pairs_with": "butter",
       "strength": 1
     }

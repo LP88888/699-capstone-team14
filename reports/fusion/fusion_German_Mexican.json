@@ -5,14 +5,14 @@
       "name": "confectioners",
       "score": 78.40683929914888,
       "connects_a": [
-        "purpose flour",
+        "milk",
         "cocoa powder",
-        "butter"
+        "2"
       ],
       "connects_b": [
-        "butter",
-        "cinnamon",
-        "1"
+        "1",
+        "cream",
+        "butter"
       ]
     },
     {
@@ -20,11 +20,11 @@
       "score": 63.35613325062594,
       "connects_a": [
         "bay leaf",
-        "onion",
-        "vegetable oil"
+        "potatoes",
+        "garlic"
       ],
       "connects_b": [
-        "tomatoes",
+        "jalapeno peppers",
         "cumin",
         "onion"
       ]
@@ -33,68 +33,68 @@
       "name": "vanilla extract",
       "score": 60.962692176467755,
       "connects_a": [
-        "purpose flour",
+        "milk",
         "cocoa powder",
-        "butter"
+        "apples"
       ],
       "connects_b": [
-        "butter",
-        "cinnamon",
-        "1"
+        "1",
+        "cream",
+        "butter"
       ]
     },
     {
       "name": "sticks",
       "score": 55.19451995974218,
       "connects_a": [
-        "purpose flour",
         "cocoa powder",
-        "butter"
+        "apples",
+        "2"
       ],
       "connects_b": [
+        "1",
         "butter",
-        "cinnamon",
-        "1"
+        "more"
       ]
     },
     {
       "name": "at",
       "score": 54.21508898175742,
       "connects_a": [
-        "purpose flour",
+        "milk",
         "cocoa powder",
-        "butter"
+        "purpose flour"
       ],
       "connects_b": [
-        "butter",
-        "kosher sea salt",
-        "1"
+        "1",
+        "cream",
+        "kosher sea salt"
       ]
     },
     {
       "name": "corn tortillas",
       "score": 51.17903409034358,
       "connects_a": [
-        "onion",
+        "vegetable oil",
         "cabbage",
-        "vegetable oil"
+        "onion"
       ],
       "connects_b": [
-        "tomatoes",
-        "cumin",
-        "salsa"
+        "cilantro leaves",
+        "jalapeno",
+        "jalapeno peppers"
       ]
     },
     {
       "name": "tomato paste",
       "score": 49.31618605161813,
       "connects_a": [
+        "bay leaf",
         "carrot",
-        "wine",
-        "onion"
+        "parsley"
       ],
       "connects_b": [
-        "tomatoes",
+        "bell pepper",
         "cumin",
         "onion"
       ]
@@ -103,42 +103,42 @@
       "name": "whole milk",
       "score": 45.131783279157894,
       "connects_a": [
-        "purpose flour",
         "cocoa powder",
-        "butter"
+        "2",
+        "purpose flour"
       ],
       "connects_b": [
-        "butter",
         "kosher sea salt",
-        "cinnamon"
+        "butter",
+        "more"
       ]
     },
     {
       "name": "cabbage",
       "score": 42.163371871509966,
       "connects_a": [
-        "wine vinegar",
-        "cider vinegar",
+        "bacon",
+        "apples",
         "carrot"
       ],
       "connects_b": [
-        "flour tortillas",
-        "cilantro",
-        "jalapeno peppers"
+        "cilantro leaves",
+        "corn tortillas",
+        "flour tortillas"
       ]
     },
     {
       "name": "celery",
       "score": 42.10425419269799,
       "connects_a": [
-        "carrot",
+        "bacon",
         "bay leaf",
-        "onion"
+        "carrot"
       ],
       "connects_b": [
-        "tomatoes",
-        "onion",
-        "oregano"
+        "bell pepper",
+        "rice",
+        "onion"
       ]
     }
   ],
@@ -149,12 +149,12 @@
       "strength": 1
     },
     {
-      "name": "ribs celery",
+      "name": "montreal steak",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "montreal steak",
+      "name": "ribs celery",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -169,17 +169,22 @@
       "strength": 1
     },
     {
-      "name": "dutch process",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "bosc pears",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
       "name": "raspberry jam",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "percent milk",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "cake flour",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "believe",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -187,61 +192,56 @@
       "name": "phyllo dough",
       "pairs_with": "butter",
       "strength": 1
-    },
-    {
-      "name": "muscovado sugar",
-      "pairs_with": "butter",
-      "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "chorizo",
+      "name": "roasted tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "handful pine nuts",
+      "name": "arugula leaves",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pass",
+      "name": "pecorino",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "romano",
+      "name": "eggplants",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "heads garlic",
+      "name": "some",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "palm",
+      "name": "arugula",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "petite",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "chipotle puree",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "sherry vinegar",
+      "name": "finely oregano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
       "name": "mussels",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "porcini mushrooms",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "chorizo sausage",
       "pairs_with": "olive oil",
       "strength": 1
     }

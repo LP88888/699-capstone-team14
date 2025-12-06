@@ -5,14 +5,14 @@
       "name": "celery",
       "score": 96.23829529759539,
       "connects_a": [
-        "onion powder",
-        "worcestershire sauce",
-        "tomatoes"
+        "hot sauce",
+        "bell pepper",
+        "rice"
       ],
       "connects_b": [
-        "carrot",
+        "thyme",
         "bay leaf",
-        "onion"
+        "carrot"
       ]
     },
     {
@@ -20,110 +20,110 @@
       "score": 91.36246476555417,
       "connects_a": [
         "purpose flour",
-        "butter",
-        "kosher sea salt"
+        "cream",
+        "butter"
       ],
       "connects_b": [
-        "purpose flour",
-        "chocolate",
-        "butter"
+        "milk",
+        "1",
+        "maple syrup"
       ]
     },
     {
       "name": "yellow onions",
       "score": 91.12573229342257,
       "connects_a": [
-        "onion powder",
-        "worcestershire sauce",
-        "kosher sea salt"
+        "bell pepper",
+        "cayenne pepper",
+        "2"
       ],
       "connects_b": [
-        "carrot",
-        "wine",
-        "kosher sea salt"
+        "2",
+        "thyme",
+        "carrot"
       ]
     },
     {
       "name": "confectioners",
       "score": 90.46942996055641,
       "connects_a": [
+        "2",
         "purpose flour",
-        "butter",
-        "2"
+        "cream"
       ],
       "connects_b": [
-        "purpose flour",
-        "chocolate",
-        "butter"
+        "milk",
+        "1",
+        "maple syrup"
       ]
     },
     {
       "name": "tomato paste",
       "score": 84.54203323134537,
       "connects_a": [
-        "worcestershire sauce",
-        "tomatoes",
-        "onion"
+        "bell pepper",
+        "cayenne pepper",
+        "thyme"
       ],
       "connects_b": [
-        "carrot",
-        "wine",
-        "onion"
+        "thyme",
+        "bay leaf",
+        "carrot"
       ]
     },
     {
       "name": "grits",
       "score": 84.32862900795467,
       "connects_a": [
-        "onion powder",
-        "butter",
-        "scallions"
+        "scallions",
+        "hot sauce",
+        "bell pepper"
       ],
       "connects_b": [
-        "butter",
+        "milk",
         "2",
-        "milk"
+        "parsley"
       ]
     },
     {
       "name": "whole milk",
       "score": 84.24599545442807,
       "connects_a": [
+        "2",
         "purpose flour",
-        "butter",
-        "kosher sea salt"
+        "butter"
       ],
       "connects_b": [
-        "purpose flour",
-        "chocolate",
-        "butter"
+        "maple syrup",
+        "2",
+        "purpose flour"
       ]
     },
     {
       "name": "yellow onion",
       "score": 84.04854467470854,
       "connects_a": [
-        "onion powder",
-        "worcestershire sauce",
-        "kosher sea salt"
+        "hot sauce",
+        "bell pepper",
+        "shrimp"
       ],
       "connects_b": [
-        "dijon mustard",
-        "wine",
-        "kosher sea salt"
+        "2",
+        "thyme",
+        "garlic"
       ]
     },
     {
       "name": "file powder",
       "score": 78.15841537346449,
       "connects_a": [
-        "purpose flour",
-        "onion powder",
-        "tomatoes"
+        "bell pepper",
+        "shrimp",
+        "cayenne pepper"
       ],
       "connects_b": [
         "purpose flour",
-        "onion",
+        "thyme",
         "vegetable oil"
       ]
     },
@@ -131,20 +131,20 @@
       "name": "cornmeal",
       "score": 72.29541639429333,
       "connects_a": [
-        "purpose flour",
-        "onion powder",
-        "kosher sea salt"
+        "hot sauce",
+        "cayenne pepper",
+        "onion powder"
       ],
       "connects_b": [
+        "milk",
         "purpose flour",
-        "kosher sea salt",
         "thyme"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "chipotle puree",
+      "name": "fettuccine",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -154,17 +154,17 @@
       "strength": 1
     },
     {
-      "name": "bunch kale",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "fettuccine",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "orzo pasta",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "chipotle puree",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "bunch kale",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -174,34 +174,34 @@
       "strength": 1
     },
     {
-      "name": "chipotle puree",
+      "name": "scotch bonnet peppers",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "white onion",
+      "name": "seasoning blend",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "black beans",
+      "name": "tails",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "bunch kale",
+      "name": "serrano chili",
       "pairs_with": "cloves",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "chorizo",
+      "name": "some",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "marzano",
+      "name": "grigio",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -211,7 +211,17 @@
       "strength": 1
     },
     {
-      "name": "morel mushrooms",
+      "name": "sandwich rolls",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "porcini mushrooms",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "chorizo sausage",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -221,22 +231,12 @@
       "strength": 1
     },
     {
-      "name": "heads garlic",
+      "name": "turkey sausage",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "palm",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "petite",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "sherry vinegar",
+      "name": "morel mushrooms",
       "pairs_with": "olive oil",
       "strength": 1
     },

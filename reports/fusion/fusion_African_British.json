@@ -5,83 +5,83 @@
       "name": "garam masala",
       "score": 98.55398505652924,
       "connects_a": [
-        "chicken",
-        "tomato paste",
-        "coriander"
+        "cumin seeds",
+        "cumin",
+        "turmeric"
       ],
       "connects_b": [
-        "tomato paste",
-        "onion",
-        "vegetable oil"
+        "cayenne pepper",
+        "potatoes",
+        "peas"
       ]
     },
     {
       "name": "tomato paste",
       "score": 81.52267490165445,
       "connects_a": [
-        "carrot",
-        "tomatoes",
-        "cumin"
+        "bell pepper",
+        "cumin",
+        "turmeric"
       ],
       "connects_b": [
-        "carrot",
-        "worcestershire sauce",
-        "wine"
+        "beef",
+        "cayenne pepper",
+        "carrot"
       ]
     },
     {
       "name": "yellow onions",
       "score": 80.11053388432754,
       "connects_a": [
-        "tomato paste",
-        "carrot",
-        "kosher sea salt"
+        "bell pepper",
+        "2",
+        "carrot"
       ],
       "connects_b": [
-        "tomato paste",
-        "carrot",
-        "worcestershire sauce"
+        "cayenne pepper",
+        "2",
+        "beaten"
       ]
     },
     {
       "name": "bay leaf",
       "score": 70.62996835948854,
       "connects_a": [
-        "tomato paste",
-        "carrot",
+        "cumin",
+        "turmeric",
         "coriander seeds"
       ],
       "connects_b": [
-        "tomato paste",
+        "beef",
         "carrot",
-        "wine"
+        "russet potatoes"
       ]
     },
     {
       "name": "sprigs thyme",
       "score": 64.13615677259676,
       "connects_a": [
-        "tomato paste",
-        "lemon",
+        "coarsely",
+        "roughly",
         "carrot"
       ],
       "connects_b": [
-        "tomato paste",
-        "lemon",
-        "carrot"
+        "grain sea salt",
+        "carrot",
+        "potatoes"
       ]
     },
     {
       "name": "ribs celery",
       "score": 63.459137120032835,
       "connects_a": [
-        "chicken",
-        "tomato paste",
-        "carrot"
+        "scallions",
+        "bell pepper",
+        "onion"
       ],
       "connects_b": [
-        "tomato paste",
         "carrot",
+        "parsley",
         "worcestershire sauce"
       ]
     },
@@ -89,72 +89,72 @@
       "name": "can tomatoes",
       "score": 56.32961085814641,
       "connects_a": [
-        "chicken",
-        "tomato paste",
-        "coarsely"
+        "coarsely",
+        "bell pepper",
+        "cumin"
       ],
       "connects_b": [
-        "tomato paste",
-        "worcestershire sauce",
-        "wine"
+        "beef",
+        "parsley",
+        "worcestershire sauce"
       ]
     },
     {
       "name": "celery",
       "score": 56.13900559026398,
       "connects_a": [
-        "tomato paste",
-        "carrot",
+        "bell pepper",
+        "onion",
         "tomatoes"
       ],
       "connects_b": [
-        "tomato paste",
+        "cayenne pepper",
         "carrot",
-        "worcestershire sauce"
+        "parsley"
       ]
     },
     {
       "name": "palm",
       "score": 55.21163584823374,
       "connects_a": [
-        "coriander",
-        "lemon",
-        "scallions"
+        "scallions",
+        "bell pepper",
+        "cumin"
       ],
       "connects_b": [
-        "lemon",
-        "olive oil",
-        "onion"
+        "onion",
+        "parsley",
+        "cloves"
       ]
     },
     {
       "name": "veal",
       "score": 50.13627398035956,
       "connects_a": [
-        "tomato paste",
+        "2",
         "carrot",
-        "2"
+        "parsley"
       ],
       "connects_b": [
-        "tomato paste",
-        "carrot",
-        "wine"
+        "beef",
+        "milk",
+        "2"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "chorizo",
+      "name": "beefsteak tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "couscous",
+      "name": "kalamata olives",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "cherry tomatoes",
+      "name": "montreal steak",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -164,22 +164,12 @@
       "strength": 1
     },
     {
-      "name": "artichokes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "handful pine nuts",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "beefsteak tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "brussels sprouts",
+      "name": "squid",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -189,34 +179,29 @@
       "strength": 1
     },
     {
-      "name": "fennel bulb",
+      "name": "artichokes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "chorizo",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pinch saffron",
       "pairs_with": "olive oil",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "for drizzling",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "prosciutto",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "turn",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "arugula leaves",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "spun",
+      "name": "capers",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -231,12 +216,27 @@
       "strength": 1
     },
     {
+      "name": "turn",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "cremini",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "capers",
+      "name": "spun",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "prosciutto",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "for drizzling",
       "pairs_with": "olive oil",
       "strength": 1
     },

@@ -5,42 +5,42 @@
       "name": "garam masala",
       "score": 244.3736568238429,
       "connects_a": [
-        "greek yogurt",
-        "tomatoes",
-        "yogurt"
+        "spinach",
+        "yogurt",
+        "tomatoes"
       ],
       "connects_b": [
-        "coriander",
-        "basmati rice",
-        "tomatoes"
+        "cumin seeds",
+        "chili powder",
+        "potatoes"
       ]
     },
     {
       "name": "cumin",
       "score": 103.75262541483204,
       "connects_a": [
-        "greek yogurt",
-        "tomatoes",
-        "yogurt"
+        "bell pepper",
+        "yogurt",
+        "tomatoes"
       ],
       "connects_b": [
-        "coconut milk",
-        "mustard seeds",
-        "coriander"
+        "cumin seeds",
+        "chili powder",
+        "coconut milk"
       ]
     },
     {
       "name": "coriander",
       "score": 100.25845332211485,
       "connects_a": [
-        "greek yogurt",
+        "yogurt",
         "tomatoes",
-        "yogurt"
+        "greek yogurt"
       ],
       "connects_b": [
-        "garam masala",
-        "basmati rice",
-        "tomatoes"
+        "cumin seeds",
+        "chili powder",
+        "garam masala"
       ]
     },
     {
@@ -48,13 +48,13 @@
       "score": 90.25476534447176,
       "connects_a": [
         "tomatoes",
-        "onion",
-        "cinnamon"
+        "garlic",
+        "chicken breasts"
       ],
       "connects_b": [
-        "mustard seeds",
-        "coriander",
-        "garam masala"
+        "cumin seeds",
+        "chili powder",
+        "cumin"
       ]
     },
     {
@@ -62,104 +62,109 @@
       "score": 80.15621523534114,
       "connects_a": [
         "tomatoes",
-        "cinnamon",
-        "onion"
+        "garlic",
+        "leaves"
       ],
       "connects_b": [
-        "garam masala",
-        "tumeric",
-        "tomatoes"
+        "cumin seeds",
+        "chili powder",
+        "cumin"
       ]
     },
     {
       "name": "turmeric",
       "score": 80.15507929482553,
       "connects_a": [
-        "tomatoes",
+        "mint",
         "yogurt",
-        "greek yogurt"
+        "tomatoes"
       ],
       "connects_b": [
-        "coriander",
-        "garam masala",
-        "basmati rice"
+        "cumin seeds",
+        "chili powder",
+        "garam masala"
       ]
     },
     {
       "name": "greek yogurt",
       "score": 72.28894391543095,
       "connects_a": [
-        "feta cheese",
-        "lemon",
+        "dill",
+        "cheese crumbles",
         "yogurt"
       ],
       "connects_b": [
-        "coriander",
-        "garam masala",
-        "cumin"
+        "cumin",
+        "turmeric",
+        "yogurt"
       ]
     },
     {
       "name": "tomatoes",
       "score": 70.53961049265325,
       "connects_a": [
-        "feta cheese",
-        "kalamata olives",
-        "olives"
+        "olives",
+        "cheese crumbles",
+        "kalamata olives"
       ],
       "connects_b": [
-        "mustard seeds",
-        "coriander",
-        "garam masala"
+        "cumin seeds",
+        "cumin",
+        "turmeric"
       ]
     },
     {
       "name": "yogurt",
       "score": 65.18028303614008,
       "connects_a": [
-        "greek yogurt",
         "dill",
-        "lemon juice"
+        "greek yogurt",
+        "mint"
       ],
       "connects_b": [
-        "cinnamon sticks",
-        "coriander",
-        "garam masala"
+        "cumin seeds",
+        "curry powder",
+        "turmeric"
       ]
     },
     {
       "name": "coriander seeds",
       "score": 60.08439361396923,
       "connects_a": [
-        "wine vinegar",
+        "honey",
         "yogurt",
-        "cinnamon"
+        "grain sea salt"
       ],
       "connects_b": [
-        "coconut milk",
-        "cinnamon sticks",
-        "mustard seeds"
+        "cumin seeds",
+        "chili powder",
+        "coconut milk"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "for drizzling",
+      "name": "roasted tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "handful pine nuts",
+      "name": "arugula leaves",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "cubanelle peppers",
+      "name": "pecorino",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "marzano",
+      "name": "eggplants",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "some",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -169,27 +174,22 @@
       "strength": 1
     },
     {
-      "name": "romano",
+      "name": "arugula",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "heads garlic",
+      "name": "finely oregano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "linguine",
+      "name": "linguini",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pinenuts",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "palm",
+      "name": "porcini mushrooms",
       "pairs_with": "olive oil",
       "strength": 1
     }
@@ -198,11 +198,6 @@
     {
       "name": "lamb shanks",
       "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "serrano",
-      "pairs_with": "cloves",
       "strength": 1
     },
     {
@@ -216,17 +211,12 @@
       "strength": 1
     },
     {
-      "name": "okra",
-      "pairs_with": "onion",
+      "name": "serrano",
+      "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "lentil",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "coriander powder",
+      "name": "kasuri methi",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -236,12 +226,22 @@
       "strength": 1
     },
     {
-      "name": "tumeric",
+      "name": "coriander powder",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "paneer",
       "pairs_with": "onion",
       "strength": 1
     },
     {
       "name": "chicken bouillon",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "ginger paste",
       "pairs_with": "onion",
       "strength": 1
     }

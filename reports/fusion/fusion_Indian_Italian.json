@@ -5,50 +5,50 @@
       "name": "garam masala",
       "score": 68.38439779432642,
       "connects_a": [
-        "mustard seeds",
-        "coriander",
-        "tomatoes"
+        "cumin seeds",
+        "chili powder",
+        "cumin"
       ],
       "connects_b": [
+        "lemon juice",
         "garlic",
-        "tomatoes",
-        "onion"
+        "tomatoes"
       ]
     },
     {
       "name": "tomato paste",
       "score": 60.387166593818115,
       "connects_a": [
-        "garam masala",
-        "tomatoes",
-        "cumin"
+        "cumin",
+        "turmeric",
+        "tomatoes"
       ],
       "connects_b": [
-        "basil",
-        "carrot",
-        "tomatoes"
+        "bell pepper",
+        "tomatoes",
+        "carrot"
       ]
     },
     {
       "name": "can tomatoes",
       "score": 56.32961085814641,
       "connects_a": [
+        "chili powder",
         "cumin",
-        "cloves",
-        "onion"
+        "cloves"
       ],
       "connects_b": [
-        "basil",
-        "mozzarella cheese",
-        "seasoning"
+        "freshly",
+        "bell pepper",
+        "mozzarella cheese"
       ]
     },
     {
       "name": "coriander powder",
       "score": 48.093729141204676,
       "connects_a": [
-        "garam masala",
-        "tomatoes",
+        "cumin seeds",
+        "chili powder",
         "cumin"
       ],
       "connects_b": [
@@ -61,9 +61,9 @@
       "name": "tumeric",
       "score": 45.12738267223588,
       "connects_a": [
-        "mustard seeds",
-        "coriander",
-        "garam masala"
+        "cumin seeds",
+        "chili powder",
+        "cumin"
       ],
       "connects_b": [
         "garlic",
@@ -75,41 +75,41 @@
       "name": "bay leaf",
       "score": 36.323983727736966,
       "connects_a": [
-        "garam masala",
-        "tomatoes",
-        "cumin"
+        "cumin",
+        "turmeric",
+        "tomatoes"
       ],
       "connects_b": [
-        "carrot",
         "tomatoes",
-        "wine"
+        "carrot",
+        "parsley"
       ]
     },
     {
       "name": "tomato sauce",
       "score": 36.04968891555477,
       "connects_a": [
-        "cilantro",
-        "cumin",
-        "garam masala"
+        "chili powder",
+        "garam masala",
+        "cilantro"
       ],
       "connects_b": [
-        "basil",
-        "mozzarella cheese",
-        "seasoning"
+        "parmesan cheese",
+        "freshly",
+        "bell pepper"
       ]
     },
     {
       "name": "cardamom pods",
       "score": 33.06782684016484,
       "connects_a": [
-        "coriander",
-        "garam masala",
-        "tomatoes"
+        "cumin seeds",
+        "cumin",
+        "turmeric"
       ],
       "connects_b": [
-        "tomatoes",
         "cloves",
+        "tomatoes",
         "optional"
       ]
     },
@@ -117,28 +117,28 @@
       "name": "cumin",
       "score": 30.515478063185896,
       "connects_a": [
-        "mustard seeds",
-        "coriander",
-        "garam masala"
+        "cumin seeds",
+        "chili powder",
+        "turmeric"
       ],
       "connects_b": [
+        "oregano",
         "bell pepper",
-        "tomatoes",
-        "oregano"
+        "tomatoes"
       ]
     },
     {
       "name": "cans tomatoes",
       "score": 30.066642477408692,
       "connects_a": [
-        "leaves",
         "cloves",
+        "leaves",
         "onion"
       ],
       "connects_b": [
-        "carrot",
+        "pepper flakes",
         "seasoning",
-        "onion"
+        "optional"
       ]
     }
   ],
@@ -154,17 +154,7 @@
       "strength": 1
     },
     {
-      "name": "sambar",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
       "name": "lentil",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "garam masala",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -179,7 +169,12 @@
       "strength": 1
     },
     {
-      "name": "kasuri methi",
+      "name": "garam masala",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "sambar",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -189,59 +184,64 @@
       "strength": 1
     },
     {
-      "name": "palm sugar",
+      "name": "kasuri methi",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "jicama",
       "pairs_with": "carrot",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
+      "name": "roasted tomatoes",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "tuttorosso",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "bucatini",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "beef chuck",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
       "name": "snapper fillets",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "or finely",
+      "name": "some",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "slab bacon",
+      "name": "grigio",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "chorizo",
+      "name": "pasilla chiles",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "for drizzling",
+      "name": "black beans",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "pecorino cheese",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "bunch kale",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "marzano",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "pass",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "fire",
+      "name": "ribs celery",
       "pairs_with": "cloves",
       "strength": 1
     }

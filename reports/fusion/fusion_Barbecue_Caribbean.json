@@ -5,42 +5,42 @@
       "name": "garam masala",
       "score": 88.4974559691283,
       "connects_a": [
-        "tomatoes",
         "cumin",
+        "cayenne pepper",
         "onion"
       ],
       "connects_b": [
         "coconut milk",
         "cumin",
-        "onion"
+        "ginger"
       ]
     },
     {
       "name": "cumin",
       "score": 82.39179077060192,
       "connects_a": [
-        "onion powder",
-        "tomatoes",
-        "oregano"
+        "bell pepper",
+        "cayenne pepper",
+        "onion powder"
       ],
       "connects_b": [
-        "coconut milk",
         "plantains",
-        "cilantro"
+        "coconut milk",
+        "bell pepper"
       ]
     },
     {
       "name": "sriracha",
       "score": 81.09585307727747,
       "connects_a": [
-        "ketchup",
         "soy sauce",
-        "ginger"
+        "ketchup",
+        "honey"
       ],
       "connects_b": [
-        "honey",
-        "carrot",
-        "scallions"
+        "scallions",
+        "cilantro leaves",
+        "honey"
       ]
     },
     {
@@ -48,97 +48,97 @@
       "score": 77.75704359412062,
       "connects_a": [
         "soy sauce",
-        "vegetable oil",
-        "pineapple"
+        "pineapple",
+        "ginger"
       ],
       "connects_b": [
+        "scallions",
         "coconut milk",
-        "carrot",
-        "scallions"
+        "cilantro leaves"
       ]
     },
     {
       "name": "chipotle pepper",
       "score": 72.06562829955054,
       "connects_a": [
+        "cumin",
         "ketchup",
-        "worcestershire sauce",
-        "cumin"
+        "honey"
       ],
       "connects_b": [
-        "honey",
+        "cilantro leaves",
         "cumin",
-        "kosher sea salt"
+        "honey"
       ]
     },
     {
       "name": "tomato paste",
       "score": 70.45169435945446,
       "connects_a": [
-        "worcestershire sauce",
-        "tomatoes",
-        "cumin"
+        "bell pepper",
+        "cumin",
+        "cayenne pepper"
       ],
       "connects_b": [
-        "carrot",
+        "bell pepper",
         "cumin",
-        "onion"
+        "thyme"
       ]
     },
     {
       "name": "celery",
       "score": 70.17375698782998,
       "connects_a": [
-        "onion powder",
-        "worcestershire sauce",
-        "tomatoes"
+        "bell pepper",
+        "cayenne pepper",
+        "onion powder"
       ],
       "connects_b": [
-        "carrot",
-        "onion",
-        "garlic"
+        "bell pepper",
+        "rice",
+        "thyme"
       ]
     },
     {
       "name": "rice vinegar",
       "score": 70.16047563365046,
       "connects_a": [
-        "ketchup",
         "soy sauce",
-        "ginger"
+        "pineapple",
+        "ketchup"
       ],
       "connects_b": [
-        "honey",
-        "carrot",
-        "scallions"
+        "scallions",
+        "rice",
+        "pineapple"
       ]
     },
     {
       "name": "corn tortillas",
       "score": 64.22467023101939,
       "connects_a": [
-        "tomatoes",
-        "cumin",
-        "onion"
-      ],
-      "connects_b": [
         "cumin",
         "onion",
-        "vegetable oil"
+        "tomatoes"
+      ],
+      "connects_b": [
+        "cilantro leaves",
+        "cumin",
+        "lime juice"
       ]
     },
     {
       "name": "hoisin sauce",
       "score": 64.04893124604469,
       "connects_a": [
-        "ketchup",
+        "pepper flakes",
         "soy sauce",
-        "ginger"
+        "ketchup"
       ],
       "connects_b": [
-        "honey",
-        "carrot",
-        "scallions"
+        "scallions",
+        "rice",
+        "honey"
       ]
     }
   ],
@@ -159,27 +159,22 @@
       "strength": 1
     },
     {
-      "name": "gruyere cheese",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
       "name": "pecans",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "sandwich rolls",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "lentil",
-      "pairs_with": "onion",
+      "name": "gruyere cheese",
+      "pairs_with": "butter",
       "strength": 1
     },
     {
       "name": "coriander powder",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "sandwich rolls",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -192,29 +187,14 @@
       "name": "ginger paste",
       "pairs_with": "onion",
       "strength": 1
+    },
+    {
+      "name": "lentil",
+      "pairs_with": "onion",
+      "strength": 1
     }
   ],
   "novel_from_b": [
-    {
-      "name": "chipotle puree",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "sherry vinegar",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "chorizo",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "basil chiffonade",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
     {
       "name": "roasted tomatoes",
       "pairs_with": "olive oil",
@@ -226,22 +206,42 @@
       "strength": 1
     },
     {
-      "name": "mussels",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "cubanelle peppers",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "bunch kale",
+      "name": "canned tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "canned tomatoes",
+      "name": "capers",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "radicchio",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "reggiano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "hearts",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "olives",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "mussels",
       "pairs_with": "olive oil",
       "strength": 1
     }

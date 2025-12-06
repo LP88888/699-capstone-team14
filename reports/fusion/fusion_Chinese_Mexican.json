@@ -5,27 +5,27 @@
       "name": "fish sauce",
       "score": 145.41576983835546,
       "connects_a": [
-        "peanut oil",
+        "scallions",
         "noodles",
-        "carrot"
+        "hoisin sauce"
       ],
       "connects_b": [
+        "cilantro leaves",
         "jalapeno",
-        "vegetable oil",
-        "cilantro"
+        "jalapeno peppers"
       ]
     },
     {
       "name": "scallions",
       "score": 120.4417684405765,
       "connects_a": [
-        "peanut oil",
         "noodles",
-        "sesame oil"
+        "hoisin sauce",
+        "rice vinegar"
       ],
       "connects_b": [
-        "salsa",
-        "cilantro",
+        "cilantro leaves",
+        "jalapeno",
         "rice"
       ]
     },
@@ -33,13 +33,13 @@
       "name": "hoisin sauce",
       "score": 110.0841005791393,
       "connects_a": [
-        "carrot",
-        "spice powder",
-        "ginger"
+        "rice vinegar",
+        "garlic",
+        "shaoxing"
       ],
       "connects_b": [
-        "cilantro",
         "rice",
+        "jalapeno peppers",
         "garlic"
       ]
     },
@@ -47,109 +47,119 @@
       "name": "sriracha",
       "score": 108.12780410303662,
       "connects_a": [
-        "honey",
-        "peanut oil",
-        "sesame oil"
+        "scallions",
+        "noodles",
+        "hoisin sauce"
       ],
       "connects_b": [
-        "cilantro",
-        "garlic",
-        "cilantro leaves"
+        "cilantro leaves",
+        "lime juice",
+        "garlic"
       ]
     },
     {
       "name": "cabbage",
       "score": 105.40842967877491,
       "connects_a": [
-        "peanut oil",
+        "scallions",
         "noodles",
-        "carrot"
+        "hoisin sauce"
       ],
       "connects_b": [
-        "flour tortillas",
-        "cilantro",
-        "jalapeno peppers"
+        "cilantro leaves",
+        "corn tortillas",
+        "flour tortillas"
       ]
     },
     {
       "name": "corn tortillas",
       "score": 102.35806818068716,
       "connects_a": [
-        "onion",
-        "cabbage",
-        "vegetable oil"
+        "chicken broth",
+        "vegetable oil",
+        "chicken breasts"
       ],
       "connects_b": [
-        "tomatoes",
-        "cumin",
-        "salsa"
+        "cilantro leaves",
+        "jalapeno",
+        "jalapeno peppers"
       ]
     },
     {
       "name": "bean sprouts",
       "score": 102.21645410789404,
       "connects_a": [
-        "peanut oil",
-        "sesame oil",
-        "carrot"
+        "scallions",
+        "mushrooms",
+        "noodles"
       ],
       "connects_b": [
-        "vegetable oil",
-        "cilantro",
-        "cilantro leaves"
+        "cilantro leaves",
+        "lime juice",
+        "vegetable oil"
       ]
     },
     {
       "name": "jalapeno peppers",
       "score": 98.09586538661888,
       "connects_a": [
-        "peanut oil",
         "scallions",
-        "cabbage"
+        "bell pepper",
+        "rice"
       ],
       "connects_b": [
-        "beans",
-        "flour tortillas",
-        "tomatoes"
+        "cilantro leaves",
+        "bell pepper",
+        "rice"
       ]
     },
     {
       "name": "peanut oil",
       "score": 96.21696927350456,
       "connects_a": [
-        "sesame oil",
         "scallions",
-        "spice powder"
+        "mushrooms",
+        "noodles"
       ],
       "connects_b": [
-        "lime juice",
-        "rice",
-        "jalapeno peppers"
+        "cilantro leaves",
+        "jalapeno",
+        "rice"
       ]
     },
     {
       "name": "rice vinegar",
       "score": 95.2177883599542,
       "connects_a": [
-        "carrot",
-        "spice powder",
-        "ginger"
+        "scallions",
+        "noodles",
+        "hoisin sauce"
       ],
       "connects_b": [
-        "cilantro",
         "rice",
+        "lime juice",
         "chicken breasts"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "pasta",
+      "name": "radicchio",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "radicchio",
+      "name": "anchovies",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "baby arugula",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cremini",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -159,7 +169,7 @@
       "strength": 1
     },
     {
-      "name": "baby arugula",
+      "name": "pasta",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -174,49 +184,19 @@
       "strength": 1
     },
     {
-      "name": "cremini",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "anchovies",
-      "pairs_with": "olive oil",
+      "name": "to each",
+      "pairs_with": "cloves",
       "strength": 1
     },
     {
       "name": "stalk lemongrass",
       "pairs_with": "cloves",
       "strength": 1
-    },
-    {
-      "name": "ribs celery",
-      "pairs_with": "cloves",
-      "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "chipotle puree",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "or finely",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "bundle",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "pasilla chiles",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "chorizo",
+      "name": "chipotle chile",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -226,7 +206,17 @@
       "strength": 1
     },
     {
+      "name": "roasted tomatoes",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
       "name": "onion finely",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "tuttorosso",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -236,12 +226,22 @@
       "strength": 1
     },
     {
-      "name": "roasted tomatoes",
+      "name": "eggplants",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "ancho chile",
+      "name": "some",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "seasoning blend",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "scotch bonnet",
       "pairs_with": "cloves",
       "strength": 1
     }

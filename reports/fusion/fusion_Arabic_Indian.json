@@ -5,144 +5,149 @@
       "name": "garam masala",
       "score": 239.34539228014245,
       "connects_a": [
-        "chicken",
-        "tomato paste",
-        "coriander"
+        "cayenne",
+        "cumin",
+        "tomato"
       ],
       "connects_b": [
-        "mustard seeds",
-        "coriander",
-        "tomatoes"
+        "cumin seeds",
+        "chili powder",
+        "cumin"
       ]
     },
     {
       "name": "turmeric",
       "score": 154.29852764253914,
       "connects_a": [
-        "chicken",
-        "tomato paste",
-        "coriander"
+        "cayenne",
+        "cumin",
+        "tomato"
       ],
       "connects_b": [
-        "mustard seeds",
-        "coriander",
-        "garam masala"
+        "cumin seeds",
+        "chili powder",
+        "cumin"
       ]
     },
     {
       "name": "cumin",
       "score": 122.06191225274358,
       "connects_a": [
-        "chicken",
-        "tomato paste",
-        "coriander"
+        "cayenne",
+        "lamb",
+        "tahini"
       ],
       "connects_b": [
-        "mustard seeds",
-        "coriander",
-        "garam masala"
+        "cumin seeds",
+        "chili powder",
+        "turmeric"
       ]
     },
     {
       "name": "yogurt",
       "score": 99.27458493196721,
       "connects_a": [
-        "chicken",
-        "coriander",
-        "lamb"
+        "cayenne",
+        "lamb",
+        "olive"
       ],
       "connects_b": [
-        "mustard seeds",
-        "coriander",
-        "garam masala"
+        "cumin seeds",
+        "cumin",
+        "turmeric"
       ]
     },
     {
       "name": "coriander",
       "score": 99.25586878889371,
       "connects_a": [
-        "chicken",
+        "cayenne",
         "lamb",
         "cumin"
       ],
       "connects_b": [
-        "mustard seeds",
-        "garam masala",
-        "tomatoes"
+        "cumin seeds",
+        "chili powder",
+        "cumin"
       ]
     },
     {
       "name": "cumin seeds",
       "score": 98.12091682921154,
       "connects_a": [
-        "chicken",
-        "coriander",
-        "cumin"
+        "cayenne",
+        "cumin",
+        "yogurt"
       ],
       "connects_b": [
-        "mustard seeds",
-        "coriander",
-        "garam masala"
+        "chili powder",
+        "cumin",
+        "turmeric"
       ]
     },
     {
       "name": "chile",
       "score": 90.38804858150317,
       "connects_a": [
-        "coriander",
+        "cayenne",
         "cumin",
-        "cayenne"
+        "vinegar"
       ],
       "connects_b": [
-        "mustard seeds",
-        "coriander",
-        "garam masala"
+        "cumin seeds",
+        "cumin",
+        "turmeric"
       ]
     },
     {
       "name": "tumeric",
       "score": 90.25476534447176,
       "connects_a": [
-        "coriander",
         "cumin",
-        "onion"
+        "garlic",
+        "cilantro"
       ],
       "connects_b": [
-        "mustard seeds",
-        "coriander",
-        "garam masala"
+        "cumin seeds",
+        "chili powder",
+        "cumin"
       ]
     },
     {
       "name": "mustard seeds",
       "score": 84.06542284618926,
       "connects_a": [
-        "coriander",
+        "cayenne",
         "cumin",
-        "cayenne"
+        "yogurt"
       ],
       "connects_b": [
-        "coriander",
-        "garam masala",
-        "tomatoes"
+        "cumin seeds",
+        "chili powder",
+        "cumin"
       ]
     },
     {
       "name": "chilies",
       "score": 70.03891586273934,
       "connects_a": [
+        "cumin",
         "chicken",
-        "coriander",
-        "cumin"
+        "cilantro"
       ],
       "connects_b": [
-        "mustard seeds",
-        "coriander",
-        "garam masala"
+        "cumin seeds",
+        "chili powder",
+        "cumin"
       ]
     }
   ],
   "novel_from_a": [
+    {
+      "name": "pine",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
     {
       "name": "sirloin",
       "pairs_with": "cloves",
@@ -150,11 +155,6 @@
     },
     {
       "name": "harissa",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "pine",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -174,12 +174,12 @@
       "strength": 1
     },
     {
-      "name": "shortening",
+      "name": "applesauce",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "applesauce",
+      "name": "shortening",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -196,7 +196,7 @@
   ],
   "novel_from_b": [
     {
-      "name": "ice water",
+      "name": "candies",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -206,27 +206,17 @@
       "strength": 1
     },
     {
-      "name": "pecans",
+      "name": "heavy cream",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "!®",
+      "name": "and half",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "sticks",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "ca",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "i",
+      "name": "whole milk",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -236,12 +226,22 @@
       "strength": 1
     },
     {
-      "name": "stone",
+      "name": "room temp",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "room temp",
+      "name": "phyllo dough",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "i",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "at",
       "pairs_with": "butter",
       "strength": 1
     }

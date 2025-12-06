@@ -5,12 +5,12 @@
       "name": "palm",
       "score": 99.38094452682073,
       "connects_a": [
-        "coriander",
-        "lemon",
-        "scallions"
+        "scallions",
+        "bell pepper",
+        "cumin"
       ],
       "connects_b": [
-        "lemon",
+        "bell pepper",
         "cumin",
         "onion"
       ]
@@ -19,97 +19,97 @@
       "name": "garam masala",
       "score": 98.55398505652924,
       "connects_a": [
-        "chicken",
-        "tomato paste",
-        "coriander"
+        "cumin seeds",
+        "cumin",
+        "turmeric"
       ],
       "connects_b": [
-        "tomatoes",
         "cumin",
-        "onion"
+        "tomatoes",
+        "peas"
       ]
     },
     {
       "name": "bay leaf",
       "score": 90.80995931934241,
       "connects_a": [
-        "tomato paste",
-        "carrot",
+        "cumin",
+        "turmeric",
         "coriander seeds"
       ],
       "connects_b": [
-        "carrot",
-        "tomatoes",
-        "chorizo"
+        "cumin",
+        "chorizo",
+        "onion"
       ]
     },
     {
       "name": "chiles",
       "score": 84.40090363234556,
       "connects_a": [
-        "coriander",
+        "cumin seeds",
         "coarsely",
-        "coriander seeds"
+        "cilantro leaves"
       ],
       "connects_b": [
         "coarsely",
-        "taste",
-        "cumin"
+        "cumin",
+        "2"
       ]
     },
     {
       "name": "chorizo",
       "score": 84.15502845682282,
       "connects_a": [
-        "tomatoes",
+        "bell pepper",
         "olive oil",
-        "bell pepper"
+        "tomatoes"
       ],
       "connects_b": [
-        "olives",
-        "tomatoes",
-        "wine"
+        "bell pepper",
+        "rice",
+        "olives"
       ]
     },
     {
       "name": "tomato paste",
       "score": 81.52267490165445,
       "connects_a": [
-        "carrot",
-        "tomatoes",
-        "cumin"
+        "bell pepper",
+        "cumin",
+        "turmeric"
       ],
       "connects_b": [
-        "carrot",
-        "tomatoes",
-        "cumin"
+        "bell pepper",
+        "cumin",
+        "tomatoes"
       ]
     },
     {
       "name": "celery",
       "score": 80.19857941466283,
       "connects_a": [
-        "tomato paste",
-        "carrot",
+        "bell pepper",
+        "onion",
         "tomatoes"
       ],
       "connects_b": [
-        "carrot",
-        "tomatoes",
-        "onion"
+        "bell pepper",
+        "rice",
+        "shrimp"
       ]
     },
     {
       "name": "ribs celery",
       "score": 72.52472813718039,
       "connects_a": [
-        "chicken",
-        "tomato paste",
-        "carrot"
+        "scallions",
+        "bell pepper",
+        "onion"
       ],
       "connects_b": [
-        "carrot",
-        "wine",
+        "bell pepper",
+        "shrimp",
         "onion"
       ]
     },
@@ -117,28 +117,28 @@
       "name": "yellow onions",
       "score": 72.09948049589478,
       "connects_a": [
-        "tomato paste",
-        "carrot",
-        "kosher sea salt"
+        "bell pepper",
+        "2",
+        "carrot"
       ],
       "connects_b": [
-        "carrot",
-        "wine",
-        "kosher sea salt"
+        "bell pepper",
+        "2",
+        "carrot"
       ]
     },
     {
       "name": "can tomatoes",
       "score": 64.3766981235959,
       "connects_a": [
-        "chicken",
-        "tomato paste",
-        "coarsely"
+        "coarsely",
+        "bell pepper",
+        "cumin"
       ],
       "connects_b": [
         "coarsely",
-        "olives",
-        "cumin"
+        "bell pepper",
+        "olives"
       ]
     }
   ],
@@ -149,12 +149,12 @@
       "strength": 1
     },
     {
-      "name": "scotch bonnet peppers",
+      "name": "pine",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "pine",
+      "name": "scotch bonnet peppers",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -164,17 +164,7 @@
       "strength": 1
     },
     {
-      "name": "okra",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "scotch bonnet peppers",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "lamb shoulder",
+      "name": "stewing",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -184,39 +174,54 @@
       "strength": 1
     },
     {
+      "name": "lamb shoulder",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
       "name": "celery ribs",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "stewing",
+      "name": "scotch bonnet peppers",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "okra",
       "pairs_with": "onion",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "for drizzling",
+      "name": "roasted tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "bunch kale",
+      "name": "some",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "marzano",
+      "name": "grigio",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pass",
+      "name": "arugula",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "center cut",
+      "name": "finely oregano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "chorizo sausage",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -226,22 +231,17 @@
       "strength": 1
     },
     {
-      "name": "heads garlic",
+      "name": "for seasoning",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "sherry vinegar",
+      "name": "crusty rolls",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "san marzano",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "anchovy fillets",
+      "name": "capers",
       "pairs_with": "olive oil",
       "strength": 1
     }

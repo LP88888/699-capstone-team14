@@ -5,14 +5,14 @@
       "name": "andouille sausage",
       "score": 28.037061250276984,
       "connects_a": [
-        "onion",
-        "garlic",
-        "bell pepper"
+        "bell pepper",
+        "rice",
+        "shrimp"
       ],
       "connects_b": [
-        "bell pepper",
         "thyme",
-        "onion"
+        "bell pepper",
+        "oregano"
       ]
     },
     {
@@ -20,64 +20,64 @@
       "score": 24.07032240302286,
       "connects_a": [
         "scallions",
-        "cilantro",
-        "bell pepper"
+        "bell pepper",
+        "lime juice"
       ],
       "connects_b": [
+        "oregano",
         "bell pepper",
-        "beans",
-        "cream"
+        "beans"
       ]
     },
     {
       "name": "celery",
       "score": 24.059573824398846,
       "connects_a": [
-        "carrot",
-        "onion",
-        "garlic"
+        "bell pepper",
+        "rice",
+        "shrimp"
       ],
       "connects_b": [
-        "bell pepper",
         "thyme",
-        "onion"
+        "bell pepper",
+        "oregano"
       ]
     },
     {
       "name": "cans tomatoes",
       "score": 24.053313981926955,
       "connects_a": [
-        "carrot",
+        "olive oil",
         "onion",
-        "olive oil"
+        "carrot"
       ],
       "connects_b": [
-        "olive oil",
-        "leaves",
-        "onion"
+        "oregano",
+        "onion",
+        "leaves"
       ]
     },
     {
       "name": "file powder",
       "score": 24.04874319183523,
       "connects_a": [
-        "onion",
-        "vegetable oil",
-        "bell pepper"
+        "bell pepper",
+        "shrimp",
+        "vegetable oil"
       ],
       "connects_b": [
+        "thyme",
         "bell pepper",
-        "leaves",
-        "thyme"
+        "leaves"
       ]
     },
     {
       "name": "jalapeno peppers",
       "score": 22.021520801077706,
       "connects_a": [
-        "peanut oil",
         "scallions",
-        "cabbage"
+        "bell pepper",
+        "hoisin sauce"
       ],
       "connects_b": [
         "bell pepper",
@@ -88,13 +88,13 @@
       "name": "ribs celery",
       "score": 21.153045706677613,
       "connects_a": [
-        "carrot",
         "scallions",
-        "onion"
+        "bell pepper",
+        "shrimp"
       ],
       "connects_b": [
-        "bell pepper",
         "thyme",
+        "bell pepper",
         "onion"
       ]
     },
@@ -103,12 +103,12 @@
       "score": 18.101752357321697,
       "connects_a": [
         "onion",
-        "vegetable oil",
-        "garlic"
+        "ginger",
+        "vegetable oil"
       ],
       "connects_b": [
-        "potatoes",
         "oil",
+        "potatoes",
         "onion"
       ]
     },
@@ -116,13 +116,13 @@
       "name": "okra",
       "score": 18.024599839773344,
       "connects_a": [
-        "onion",
-        "vegetable oil",
-        "bell pepper"
+        "bell pepper",
+        "rice",
+        "shrimp"
       ],
       "connects_b": [
-        "bell pepper",
         "thyme",
+        "bell pepper",
         "onion"
       ]
     },
@@ -130,9 +130,9 @@
       "name": "shrimp stock",
       "score": 18.006218267998793,
       "connects_a": [
-        "onion",
         "bell pepper",
-        "rice"
+        "rice",
+        "shrimp"
       ],
       "connects_b": [
         "bell pepper",
@@ -143,47 +143,27 @@
   ],
   "novel_from_a": [
     {
-      "name": "chorizo",
+      "name": "eggplants",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "bunch kale",
+      "name": "some",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pass",
+      "name": "radicchio",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "center cut",
+      "name": "sandwich rolls",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "heads garlic",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "linguine",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "chipotle puree",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "sherry vinegar",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "anchovy paste",
+      "name": "mussels",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -191,16 +171,36 @@
       "name": "basil chiffonade",
       "pairs_with": "olive oil",
       "strength": 1
-    }
-  ],
-  "novel_from_b": [
+    },
     {
-      "name": "crusty bread",
+      "name": "linguini",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
+      "name": "chorizo sausage",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "turkey sausage",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "crusty rolls",
+      "pairs_with": "olive oil",
+      "strength": 1
+    }
+  ],
+  "novel_from_b": [
+    {
       "name": "arugula leaves",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "crusty bread",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -210,7 +210,7 @@
       "strength": 1
     },
     {
-      "name": "margarine",
+      "name": "cocoa",
       "pairs_with": "egg",
       "strength": 1
     },
@@ -220,7 +220,7 @@
       "strength": 1
     },
     {
-      "name": "cocoa",
+      "name": "margarine",
       "pairs_with": "egg",
       "strength": 1
     },
@@ -230,17 +230,17 @@
       "strength": 1
     },
     {
-      "name": "cloves cardamom",
-      "pairs_with": "leaves",
-      "strength": 1
-    },
-    {
       "name": "pudina",
       "pairs_with": "leaves",
       "strength": 1
     },
     {
       "name": "pudina salt",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
+      "name": "water coriander",
       "pairs_with": "leaves",
       "strength": 1
     }

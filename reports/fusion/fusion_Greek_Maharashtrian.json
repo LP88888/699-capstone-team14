@@ -5,27 +5,27 @@
       "name": "garam masala",
       "score": 45.254380893304244,
       "connects_a": [
-        "greek yogurt",
-        "tomatoes",
-        "yogurt"
+        "spinach",
+        "yogurt",
+        "tomatoes"
       ],
       "connects_b": [
+        "chili powder",
         "oil",
-        "turmeric",
-        "potatoes"
+        "turmeric"
       ]
     },
     {
       "name": "cardamom",
       "score": 27.404071228951263,
       "connects_a": [
-        "yogurt",
         "cinnamon",
+        "yogurt",
         "greek yogurt"
       ],
       "connects_b": [
-        "carom",
-        "powder",
+        "chili powder",
+        "turmeric",
         "oil"
       ]
     },
@@ -34,12 +34,12 @@
       "score": 20.056614520993726,
       "connects_a": [
         "tomatoes",
-        "onion",
-        "cinnamon"
+        "garlic",
+        "chicken breasts"
       ],
       "connects_b": [
         "peas",
-        "potatoes",
+        "chili powder",
         "oil"
       ]
     },
@@ -48,103 +48,103 @@
       "score": 20.039053808835284,
       "connects_a": [
         "tomatoes",
-        "cinnamon",
-        "onion"
+        "garlic",
+        "leaves"
       ],
       "connects_b": [
-        "leaves",
-        "turmeric",
-        "oil"
+        "oil",
+        "chili powder",
+        "leaves"
       ]
     },
     {
       "name": "coriander seeds",
       "score": 20.02813120465641,
       "connects_a": [
-        "wine vinegar",
+        "honey",
         "yogurt",
-        "cinnamon"
+        "grain sea salt"
       ],
       "connects_b": [
         "oil",
-        "turmeric",
-        "coconut"
+        "chili powder",
+        "turmeric"
       ]
     },
     {
       "name": "mustard seeds",
       "score": 18.014019181326272,
       "connects_a": [
-        "tomatoes",
         "yogurt",
+        "tomatoes",
         "wine vinegar"
       ],
       "connects_b": [
-        "oil",
+        "chili powder",
         "turmeric",
-        "potatoes"
+        "oil"
       ]
     },
     {
       "name": "cilantro",
       "score": 16.092762431423097,
       "connects_a": [
+        "mint",
         "yogurt",
-        "chicken breasts",
-        "greek yogurt"
+        "chicken breasts"
       ],
       "connects_b": [
-        "peanuts",
-        "turmeric",
-        "chili powder"
+        "mango",
+        "chili powder",
+        "turmeric"
       ]
     },
     {
       "name": "olive",
       "score": 16.074482924509578,
       "connects_a": [
-        "cucumber",
-        "yogurt",
-        "lemon juice"
+        "lemon juice",
+        "mint",
+        "cucumber"
       ],
       "connects_b": [
-        "chilli",
         "dhania",
-        "wheat"
+        "wheat",
+        "bell"
       ]
     },
     {
       "name": "turmeric",
       "score": 16.031015858965105,
       "connects_a": [
-        "tomatoes",
+        "mint",
         "yogurt",
-        "greek yogurt"
+        "tomatoes"
       ],
       "connects_b": [
         "peas",
-        "oil",
-        "coconut"
+        "chili powder",
+        "oil"
       ]
     },
     {
       "name": "coriander",
       "score": 15.038767998317228,
       "connects_a": [
-        "greek yogurt",
+        "yogurt",
         "tomatoes",
-        "yogurt"
+        "greek yogurt"
       ],
       "connects_b": [
-        "turmeric",
         "chillies",
-        "chili powder"
+        "chili powder",
+        "turmeric"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "fruit",
+      "name": "virgin",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -159,7 +159,7 @@
       "strength": 1
     },
     {
-      "name": "virgin",
+      "name": "fruit",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -169,18 +169,13 @@
       "strength": 1
     },
     {
-      "name": "kabuli",
-      "pairs_with": "powder",
-      "strength": 1
-    },
-    {
       "name": "virgin",
       "pairs_with": "powder",
       "strength": 1
     },
     {
-      "name": "yeast",
-      "pairs_with": "flour",
+      "name": "kabuli",
+      "pairs_with": "powder",
       "strength": 1
     },
     {
@@ -189,7 +184,12 @@
       "strength": 1
     },
     {
-      "name": "ice water",
+      "name": "filling",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "beef stock",
       "pairs_with": "flour",
       "strength": 1
     }
@@ -211,7 +211,12 @@
       "strength": 1
     },
     {
-      "name": "coriander powder",
+      "name": "oil coriander",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
+      "name": "salt coriander",
       "pairs_with": "leaves",
       "strength": 1
     },
@@ -221,12 +226,7 @@
       "strength": 1
     },
     {
-      "name": "oil coriander",
-      "pairs_with": "leaves",
-      "strength": 1
-    },
-    {
-      "name": "salt coriander",
+      "name": "coriander powder",
       "pairs_with": "leaves",
       "strength": 1
     },

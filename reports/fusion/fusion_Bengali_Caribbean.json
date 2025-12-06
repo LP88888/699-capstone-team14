@@ -5,28 +5,28 @@
       "name": "cardamom",
       "score": 40.59862404289076,
       "connects_a": [
-        "leaf",
-        "powder",
-        "oil"
+        "chili powder",
+        "oil",
+        "methi"
       ],
       "connects_b": [
+        "ginger",
         "cumin",
-        "allspice",
-        "cinnamon"
+        "allspice"
       ]
     },
     {
       "name": "mango",
       "score": 36.25288588883543,
       "connects_a": [
+        "wheat",
         "fenugreek",
-        "powder",
-        "seeds"
+        "dhania"
       ],
       "connects_b": [
         "coconut milk",
         "pineapple",
-        "cilantro"
+        "lime juice"
       ]
     },
     {
@@ -34,13 +34,13 @@
       "score": 32.18089307968302,
       "connects_a": [
         "peas",
-        "potatoes",
+        "chili powder",
         "oil"
       ],
       "connects_b": [
         "coconut milk",
         "cumin",
-        "onion"
+        "ginger"
       ]
     },
     {
@@ -48,13 +48,13 @@
       "score": 24.06793742519247,
       "connects_a": [
         "peas",
-        "potatoes",
+        "chili powder",
         "oil"
       ],
       "connects_b": [
         "cumin",
-        "onion",
-        "cinnamon"
+        "ginger",
+        "garlic"
       ]
     },
     {
@@ -62,13 +62,13 @@
       "score": 24.018692241768363,
       "connects_a": [
         "peas",
-        "potatoes",
+        "chili powder",
         "oil"
       ],
       "connects_b": [
         "coconut milk",
         "cumin",
-        "vegetable oil"
+        "ginger"
       ]
     },
     {
@@ -76,13 +76,13 @@
       "score": 20.02467690392072,
       "connects_a": [
         "peas",
-        "potatoes",
+        "chili powder",
         "oil"
       ],
       "connects_b": [
+        "cilantro leaves",
         "coconut milk",
-        "cumin",
-        "cilantro"
+        "cumin"
       ]
     },
     {
@@ -90,40 +90,40 @@
       "score": 20.011118817925528,
       "connects_a": [
         "peas",
-        "potatoes",
+        "chili powder",
         "oil"
       ],
       "connects_b": [
         "coconut milk",
         "cumin",
-        "cinnamon"
+        "ginger"
       ]
     },
     {
       "name": "cumin",
       "score": 18.309286837911536,
       "connects_a": [
-        "beans",
-        "chili powder"
+        "chili powder",
+        "beans"
       ],
       "connects_b": [
-        "coconut milk",
         "plantains",
-        "cilantro"
+        "coconut milk",
+        "bell pepper"
       ]
     },
     {
       "name": "coriander powder",
       "score": 18.035148427951754,
       "connects_a": [
+        "chili powder",
         "leaves",
-        "oil",
-        "chili powder"
+        "oil"
       ],
       "connects_b": [
         "cumin",
-        "cinnamon",
-        "onion"
+        "ginger",
+        "garlic"
       ]
     },
     {
@@ -131,13 +131,13 @@
       "score": 18.034892841335743,
       "connects_a": [
         "peas",
-        "oil",
-        "chili powder"
+        "chili powder",
+        "oil"
       ],
       "connects_b": [
+        "cilantro leaves",
         "coconut milk",
-        "cumin",
-        "vegetable oil"
+        "cumin"
       ]
     }
   ],
@@ -173,17 +173,17 @@
       "strength": 1
     },
     {
-      "name": "cashew",
-      "pairs_with": "ginger",
-      "strength": 1
-    },
-    {
       "name": "fenugreek seeds",
       "pairs_with": "ginger",
       "strength": 1
     },
     {
       "name": "chili oil",
+      "pairs_with": "ginger",
+      "strength": 1
+    },
+    {
+      "name": "cashew",
       "pairs_with": "ginger",
       "strength": 1
     },
@@ -215,6 +215,11 @@
       "strength": 1
     },
     {
+      "name": "cornmeal",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
       "name": "shortening",
       "pairs_with": "flour",
       "strength": 1
@@ -225,12 +230,7 @@
       "strength": 1
     },
     {
-      "name": "cornmeal",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "filling",
+      "name": "buttermilk",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -240,7 +240,7 @@
       "strength": 1
     },
     {
-      "name": "buttermilk",
+      "name": "filling",
       "pairs_with": "flour",
       "strength": 1
     }

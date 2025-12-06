@@ -5,84 +5,84 @@
       "name": "can tomatoes",
       "score": 84.49441628721962,
       "connects_a": [
+        "bell pepper",
         "cumin",
-        "onion",
         "optional"
       ],
       "connects_b": [
-        "basil",
-        "mozzarella cheese",
-        "seasoning"
+        "freshly",
+        "bell pepper",
+        "mozzarella cheese"
       ]
     },
     {
       "name": "at",
       "score": 72.28678530900989,
       "connects_a": [
-        "purpose flour",
-        "butter",
-        "kosher sea salt"
+        "milk",
+        "1",
+        "purpose flour"
       ],
       "connects_b": [
-        "purpose flour",
-        "butter",
-        "kosher sea salt"
+        "milk",
+        "1",
+        "purpose flour"
       ]
     },
     {
       "name": "ribs celery",
       "score": 70.51015235559204,
       "connects_a": [
-        "carrot",
-        "onion",
+        "bell pepper",
+        "about",
         "optional"
       ],
       "connects_b": [
-        "carrot",
-        "wine",
-        "onion"
+        "bell pepper",
+        "about",
+        "optional"
       ]
     },
     {
       "name": "tomato paste",
       "score": 70.45169435945446,
       "connects_a": [
-        "carrot",
-        "tomatoes",
-        "cumin"
+        "bell pepper",
+        "cumin",
+        "tomatoes"
       ],
       "connects_b": [
-        "basil",
-        "carrot",
-        "tomatoes"
+        "bell pepper",
+        "tomatoes",
+        "carrot"
       ]
     },
     {
       "name": "confectioners",
       "score": 70.36511219154387,
       "connects_a": [
-        "purpose flour",
-        "butter",
-        "cinnamon"
+        "milk",
+        "1",
+        "2"
       ],
       "connects_b": [
-        "purpose flour",
-        "butter",
-        "1"
+        "milk",
+        "1",
+        "purpose flour"
       ]
     },
     {
       "name": "veal",
       "score": 66.17988165407462,
       "connects_a": [
-        "carrot",
+        "milk",
         "2",
-        "cloves"
+        "carrot"
       ],
       "connects_b": [
-        "carrot",
+        "parmesan cheese",
         "freshly",
-        "wine"
+        "milk"
       ]
     },
     {
@@ -90,66 +90,66 @@
       "score": 64.12477944832308,
       "connects_a": [
         "wine vinegar",
-        "dijon mustard",
-        "lemon"
+        "tomatoes",
+        "parsley"
       ],
       "connects_b": [
-        "lemon",
+        "pepper flakes",
         "tomatoes",
-        "olive oil"
+        "parsley"
       ]
     },
     {
       "name": "cans tomatoes",
       "score": 60.133284954817384,
       "connects_a": [
-        "carrot",
+        "optional",
         "onion",
-        "optional"
+        "carrot"
       ],
       "connects_b": [
-        "carrot",
+        "pepper flakes",
         "seasoning",
-        "onion"
+        "optional"
       ]
     },
     {
       "name": "whole milk",
       "score": 56.16399696961871,
       "connects_a": [
+        "2",
         "purpose flour",
-        "butter",
-        "kosher sea salt"
+        "vanilla extract"
       ],
       "connects_b": [
-        "purpose flour",
+        "freshly",
         "mozzarella cheese",
-        "butter"
+        "purpose flour"
       ]
     },
     {
       "name": "ice water",
       "score": 48.244685781984174,
       "connects_a": [
+        "1",
         "purpose flour",
-        "butter",
-        "cinnamon"
+        "flour"
       ],
       "connects_b": [
+        "1",
         "purpose flour",
-        "butter",
-        "1"
+        "flour"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "cotija cheese",
+      "name": "tomatillos",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "scotch bonnet",
+      "name": "cotija cheese",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -159,7 +159,7 @@
       "strength": 1
     },
     {
-      "name": "tomatillos",
+      "name": "scotch bonnet",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -169,22 +169,7 @@
       "strength": 1
     },
     {
-      "name": "graham cracker crumbs",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "cooking apples",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
       "name": "candies",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "pecan halves",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -192,26 +177,41 @@
       "name": "finely pecans",
       "pairs_with": "butter",
       "strength": 1
+    },
+    {
+      "name": "crawfish",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "calvados",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "creme",
+      "pairs_with": "butter",
+      "strength": 1
     }
   ],
   "novel_from_b": [
-    {
-      "name": "rigatoni",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
     {
       "name": "wheat spaghetti",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "lamb shoulder",
-      "pairs_with": "onion",
+      "name": "rigatoni",
+      "pairs_with": "cloves",
       "strength": 1
     },
     {
       "name": "capsicum",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "lamb shoulder",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -221,17 +221,12 @@
       "strength": 1
     },
     {
-      "name": "pearl",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "flour all",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
       "name": "sugar whole",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "maida sooji",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -241,7 +236,12 @@
       "strength": 1
     },
     {
-      "name": "maida sooji",
+      "name": "flour all",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "carom",
       "pairs_with": "flour",
       "strength": 1
     }

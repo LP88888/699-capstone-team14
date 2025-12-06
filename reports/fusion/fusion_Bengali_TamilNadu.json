@@ -5,176 +5,151 @@
       "name": "dhania",
       "score": 545.934151480805,
       "connects_a": [
-        "fenugreek",
-        "powder",
-        "oil salt"
+        "chili powder",
+        "yellow",
+        "fenugreek"
       ],
       "connects_b": [
-        "fenugreek",
-        "finger",
-        "powder"
+        "urad dal",
+        "(",
+        "leaves sunflower"
       ]
     },
     {
       "name": "seeds",
       "score": 507.67716469958015,
       "connects_a": [
-        "fenugreek",
-        "powder",
-        "oil salt"
+        "onion nigella",
+        "yellow",
+        "fenugreek"
       ],
       "connects_b": [
-        "fenugreek",
-        "finger",
-        "powder"
+        "urad dal",
+        "(",
+        "finger"
       ]
     },
     {
       "name": "powder",
       "score": 451.517410015876,
       "connects_a": [
+        "onion nigella",
         "fenugreek",
-        "oil salt",
-        "dal"
+        "ginger green"
       ],
       "connects_b": [
+        "urad dal",
         "fenugreek",
-        "finger",
-        "oil salt"
+        "finger"
       ]
     },
     {
       "name": "chilli",
       "score": 291.78599043087297,
       "connects_a": [
-        "fenugreek",
-        "leaf",
-        "powder coriander"
+        "onion nigella",
+        "ginger green",
+        "jeera coriander"
       ],
       "connects_b": [
-        "fenugreek",
-        "finger",
-        "powder"
+        "chillies",
+        "leaves coriander",
+        "dal"
       ]
     },
     {
       "name": "red",
       "score": 204.75128452250402,
       "connects_a": [
-        "fenugreek",
-        "leaf",
-        "powder"
+        "jeera coriander",
+        "dal",
+        "methi"
       ],
       "connects_b": [
-        "fenugreek",
+        "chillies",
         "urad dal",
-        "powder"
+        "dal"
       ]
     },
     {
       "name": "dal",
       "score": 160.11856203120843,
       "connects_a": [
-        "fenugreek",
-        "wheat",
-        "powder"
+        "ginger green",
+        "oil",
+        "oil salt"
       ],
       "connects_b": [
-        "fenugreek",
-        "urad dal",
-        "powder"
+        "chillies",
+        "leaves coriander",
+        "urad dal"
       ]
     },
     {
       "name": "fenugreek",
       "score": 154.45449709960442,
       "connects_a": [
-        "leaf",
-        "powder",
-        "seeds"
+        "onion nigella",
+        "jeera coriander",
+        "dal"
       ],
       "connects_b": [
-        "finger",
+        "chillies",
         "urad dal",
-        "powder"
+        "dal"
       ]
     },
     {
       "name": "powder red",
       "score": 104.04621494668594,
       "connects_a": [
-        "fenugreek",
-        "leaf",
-        "powder"
+        "chili powder",
+        "jeera coriander",
+        "dal"
       ],
       "connects_b": [
-        "fenugreek",
-        "powder",
-        "rai"
+        "dal",
+        "oil salt",
+        "fenugreek"
       ]
     },
     {
       "name": "wheat",
       "score": 99.30537388692312,
       "connects_a": [
-        "fenugreek",
-        "powder",
-        "oil"
+        "dal",
+        "oil",
+        "oil salt"
       ],
       "connects_b": [
+        "dal",
         "finger",
-        "fenugreek",
-        "powder"
+        "oil"
       ]
     },
     {
       "name": "gram",
       "score": 88.03546414638274,
       "connects_a": [
-        "fenugreek",
-        "dal",
-        "powder"
+        "chili powder",
+        "oil",
+        "dal"
       ],
       "connects_b": [
-        "fenugreek",
         "urad dal",
-        "powder"
+        "oil",
+        "dal"
       ]
     }
   ],
   "novel_from_a": [
-    {
-      "name": "onions green",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
     {
       "name": "water coriander",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "badi",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "chillies whole",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
       "name": "powder amchur",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "brown",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "masala",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -189,24 +164,69 @@
       "strength": 1
     },
     {
+      "name": "onions green",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
       "name": "ginger coriander",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "chillies whole",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "masala",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "brown",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "badi",
       "pairs_with": "dhania",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "leaves green",
+      "name": "chilli coriander",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "onion coriander",
+      "name": "leaves sunflower",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "peppercorns coriander",
+      "name": "jeera green",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "leaves whole",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "kala",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "coconut coriander",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "sooji",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -216,32 +236,12 @@
       "strength": 1
     },
     {
-      "name": "sambar",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "pepper powder",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "leaves coriander",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "urad",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "french",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
       "name": "seeds coriander",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "garlic coriander",
       "pairs_with": "dhania",
       "strength": 1
     }

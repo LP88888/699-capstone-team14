@@ -5,9 +5,9 @@
       "name": "garam masala",
       "score": 28.15828144472264,
       "connects_a": [
-        "chicken",
-        "tomato paste",
-        "coriander"
+        "cayenne",
+        "cumin",
+        "tomato"
       ],
       "connects_b": [
         "oil",
@@ -21,35 +21,35 @@
         "olive"
       ],
       "connects_b": [
-        "fenugreek",
-        "finger",
-        "powder"
+        "urad dal",
+        "(",
+        "leaves sunflower"
       ]
     },
     {
       "name": "wheat",
       "score": 22.067860863760693,
       "connects_a": [
-        "flour",
-        "olive"
+        "olive",
+        "flour"
       ],
       "connects_b": [
+        "dal",
         "finger",
-        "fenugreek",
-        "powder"
+        "oil"
       ]
     },
     {
       "name": "cardamom",
       "score": 20.29931202144538,
       "connects_a": [
-        "yogurt",
         "coriander",
+        "yogurt",
         "cumin"
       ],
       "connects_b": [
-        "powder",
         "oil",
+        "dhania",
         "chilli"
       ]
     },
@@ -57,13 +57,13 @@
       "name": "olive",
       "score": 18.083793290073274,
       "connects_a": [
-        "salt pepper",
         "lamb",
-        "tomato"
+        "tomato",
+        "tahini"
       ],
       "connects_b": [
-        "chilli",
-        "dhania"
+        "dhania",
+        "chilli"
       ]
     },
     {
@@ -73,32 +73,32 @@
         "olive"
       ],
       "connects_b": [
-        "fenugreek",
-        "finger",
-        "powder"
+        "chillies",
+        "leaves coriander",
+        "dal"
       ]
     },
     {
       "name": "chili powder",
       "score": 15.174571935536115,
       "connects_a": [
+        "cumin",
         "chicken",
-        "coriander",
-        "cumin"
+        "paprika"
       ],
       "connects_b": [
         "dhania",
-        "gram",
-        "oil"
+        "oil",
+        "gram"
       ]
     },
     {
       "name": "bay leaf",
       "score": 14.125993671897708,
       "connects_a": [
-        "tomato paste",
-        "carrot",
-        "tomato"
+        "cumin",
+        "tomato",
+        "carrot"
       ],
       "connects_b": [
         "beans",
@@ -109,9 +109,9 @@
       "name": "cumin",
       "score": 12.206191225274358,
       "connects_a": [
-        "chicken",
-        "tomato paste",
-        "coriander"
+        "cayenne",
+        "lamb",
+        "tahini"
       ],
       "connects_b": [
         "beans"
@@ -121,9 +121,9 @@
       "name": "beef stock",
       "score": 12.04417907965786,
       "connects_a": [
-        "tomato paste",
-        "carrot",
-        "onion"
+        "bread",
+        "flour",
+        "carrot"
       ],
       "connects_b": [
         "flour",
@@ -138,6 +138,16 @@
       "strength": 1
     },
     {
+      "name": "celery",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "garam masala",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
       "name": "beef",
       "pairs_with": "onion",
       "strength": 1
@@ -148,17 +158,7 @@
       "strength": 1
     },
     {
-      "name": "okra",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "lentil",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "garam masala",
+      "name": "tomato paste",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -168,17 +168,17 @@
       "strength": 1
     },
     {
-      "name": "tomato paste",
+      "name": "lentil",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "celery",
+      "name": "okra",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "basmati",
+      "name": "almond",
       "pairs_with": "powder",
       "strength": 1
     }
@@ -190,22 +190,22 @@
       "strength": 1
     },
     {
-      "name": "banana",
-      "pairs_with": "cinnamon",
-      "strength": 1
-    },
-    {
       "name": "oats",
       "pairs_with": "cinnamon",
       "strength": 1
     },
     {
-      "name": "chili powder",
-      "pairs_with": "cumin",
+      "name": "banana",
+      "pairs_with": "cinnamon",
       "strength": 1
     },
     {
       "name": "bell pepper",
+      "pairs_with": "cumin",
+      "strength": 1
+    },
+    {
+      "name": "chili powder",
       "pairs_with": "cumin",
       "strength": 1
     },
@@ -220,12 +220,12 @@
       "strength": 1
     },
     {
-      "name": "carom",
+      "name": "flour all",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "flour all",
+      "name": "carom",
       "pairs_with": "flour",
       "strength": 1
     },

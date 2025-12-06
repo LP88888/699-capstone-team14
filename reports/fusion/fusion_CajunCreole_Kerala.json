@@ -5,9 +5,9 @@
       "name": "celery",
       "score": 46.11418316343113,
       "connects_a": [
-        "onion powder",
-        "creole seasoning",
-        "tomatoes"
+        "andouille sausage",
+        "garlic powder",
+        "parsley"
       ],
       "connects_b": [
         "rice",
@@ -18,9 +18,9 @@
       "name": "andouille sausage",
       "score": 42.05559187541547,
       "connects_a": [
-        "onion powder",
-        "creole seasoning",
-        "tomatoes"
+        "garlic",
+        "bell pepper",
+        "rice"
       ],
       "connects_b": [
         "rice",
@@ -31,23 +31,23 @@
       "name": "garam masala",
       "score": 35.1978518059033,
       "connects_a": [
+        "cayenne pepper",
         "tomatoes",
-        "onion",
         "vegetable oil"
       ],
       "connects_b": [
-        "oil",
-        "onion",
-        "chili powder"
+        "cumin seeds",
+        "chili powder",
+        "oil"
       ]
     },
     {
       "name": "okra",
       "score": 34.04646636401632,
       "connects_a": [
-        "purpose flour",
-        "worcestershire sauce",
-        "tomatoes"
+        "hot sauce",
+        "bell pepper",
+        "rice"
       ],
       "connects_b": [
         "rice",
@@ -58,9 +58,9 @@
       "name": "file powder",
       "score": 30.06092898979404,
       "connects_a": [
-        "okra",
-        "purpose flour",
-        "onion powder"
+        "bell pepper",
+        "shrimp",
+        "cayenne pepper"
       ],
       "connects_b": [
         "leaves",
@@ -71,37 +71,37 @@
       "name": "tumeric",
       "score": 25.070768151242156,
       "connects_a": [
+        "cayenne pepper",
         "tomatoes",
-        "onion",
         "garlic"
       ],
       "connects_b": [
-        "oil",
-        "onion",
-        "chili powder"
+        "cumin seeds",
+        "chili powder",
+        "oil"
       ]
     },
     {
       "name": "jalapeno peppers",
       "score": 25.024455455770124,
       "connects_a": [
-        "tomatoes",
+        "hot sauce",
         "bell pepper",
         "rice"
       ],
       "connects_b": [
-        "beans",
-        "mango",
-        "rice"
+        "cumin seeds",
+        "chili powder",
+        "mango"
       ]
     },
     {
       "name": "cayenne",
       "score": 24.018324669990236,
       "connects_a": [
-        "onion powder",
-        "worcestershire sauce",
-        "creole seasoning"
+        "hot sauce",
+        "rice",
+        "garlic powder"
       ],
       "connects_b": [
         "cumin seeds",
@@ -112,22 +112,22 @@
       "name": "can tomatoes",
       "score": 22.12948997998609,
       "connects_a": [
-        "worcestershire sauce",
-        "onion",
-        "oregano"
+        "hot sauce",
+        "bell pepper",
+        "andouille sausage"
       ],
       "connects_b": [
-        "onion",
-        "chili powder"
+        "chili powder",
+        "onion"
       ]
     },
     {
       "name": "celery ribs",
       "score": 22.016832828349365,
       "connects_a": [
-        "worcestershire sauce",
-        "tomatoes",
-        "onion"
+        "bell pepper",
+        "rice",
+        "shrimp"
       ],
       "connects_b": [
         "rice",
@@ -137,7 +137,17 @@
   ],
   "novel_from_a": [
     {
-      "name": "beef broth",
+      "name": "bacon fat",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "roux",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "capsicum",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -147,42 +157,32 @@
       "strength": 1
     },
     {
-      "name": "crawfish",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "andouille sausage",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "in juice",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "bay leaf",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "oxtails",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
       "name": "shrimp stock",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "navy beans",
+      "name": "file powder",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "beef",
       "pairs_with": "onion",
       "strength": 1
     },
     {
       "name": "shrimp shells",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "sodium beef broth",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "celery",
       "pairs_with": "onion",
       "strength": 1
     }
@@ -199,12 +199,12 @@
       "strength": 1
     },
     {
-      "name": "ragi",
+      "name": "flour all",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "flour all",
+      "name": "ragi",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -214,12 +214,12 @@
       "strength": 1
     },
     {
-      "name": "wheat",
+      "name": "soda",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "soda",
+      "name": "wheat",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -234,7 +234,7 @@
       "strength": 1
     },
     {
-      "name": "pudina",
+      "name": "oil coriander",
       "pairs_with": "leaves",
       "strength": 1
     }

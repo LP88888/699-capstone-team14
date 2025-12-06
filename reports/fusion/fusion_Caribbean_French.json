@@ -5,126 +5,126 @@
       "name": "confectioners",
       "score": 90.46942996055641,
       "connects_a": [
-        "butter",
-        "cinnamon",
-        "rum"
+        "1",
+        "cream",
+        "butter"
       ],
       "connects_b": [
-        "purpose flour",
-        "chocolate",
-        "butter"
+        "milk",
+        "1",
+        "maple syrup"
       ]
     },
     {
       "name": "at",
       "score": 78.31068408476071,
       "connects_a": [
-        "butter",
-        "kosher sea salt",
-        "rum"
+        "1",
+        "cream",
+        "kosher sea salt"
       ],
       "connects_b": [
-        "purpose flour",
-        "chocolate",
-        "butter"
+        "milk",
+        "1",
+        "maple syrup"
       ]
     },
     {
       "name": "vanilla extract",
       "score": 73.15523061176131,
       "connects_a": [
-        "butter",
-        "cinnamon",
-        "rum"
+        "1",
+        "cream",
+        "butter"
       ],
       "connects_b": [
-        "purpose flour",
-        "chocolate",
-        "butter"
+        "milk",
+        "1",
+        "maple syrup"
       ]
     },
     {
       "name": "sticks",
       "score": 55.19451995974218,
       "connects_a": [
+        "1",
         "butter",
-        "cinnamon",
         "rum"
       ],
       "connects_b": [
-        "purpose flour",
-        "chocolate",
-        "butter"
+        "1",
+        "2",
+        "purpose flour"
       ]
     },
     {
       "name": "ice water",
       "score": 50.25488102290018,
       "connects_a": [
-        "butter",
-        "cinnamon",
-        "1"
+        "1",
+        "flour",
+        "butter"
       ],
       "connects_b": [
+        "1",
         "purpose flour",
-        "butter",
-        "nutmeg"
+        "flour"
       ]
     },
     {
       "name": "corn syrup",
       "score": 50.082636095857644,
       "connects_a": [
-        "butter",
-        "cinnamon",
-        "rum"
+        "1",
+        "cream",
+        "butter"
       ],
       "connects_b": [
-        "chocolate",
-        "butter",
-        "egg whites"
+        "milk",
+        "1",
+        "cream"
       ]
     },
     {
       "name": "cake flour",
       "score": 50.061681542379986,
       "connects_a": [
-        "butter",
-        "rum",
-        "1"
+        "1",
+        "cream",
+        "butter"
       ],
       "connects_b": [
-        "chocolate",
-        "butter",
-        "egg whites"
+        "milk",
+        "1",
+        "2"
       ]
     },
     {
       "name": "ribs celery",
       "score": 49.35710664891443,
       "connects_a": [
-        "carrot",
         "scallions",
-        "onion"
+        "bell pepper",
+        "thyme"
       ],
       "connects_b": [
-        "carrot",
-        "wine",
-        "onion"
+        "thyme",
+        "bay leaf",
+        "carrot"
       ]
     },
     {
       "name": "tomato paste",
       "score": 49.31618605161813,
       "connects_a": [
-        "carrot",
+        "bell pepper",
         "cumin",
-        "onion"
+        "thyme"
       ],
       "connects_b": [
-        "carrot",
-        "wine",
-        "onion"
+        "thyme",
+        "bay leaf",
+        "carrot"
       ]
     },
     {
@@ -133,33 +133,18 @@
       "connects_a": [
         "coconut milk",
         "cumin",
-        "onion"
+        "ginger"
       ],
       "connects_b": [
         "bay leaf",
-        "onion",
+        "garlic",
         "vegetable oil"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "chipotle puree",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "basil chiffonade",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "cubanelle peppers",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "bunch kale",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -169,7 +154,12 @@
       "strength": 1
     },
     {
-      "name": "by hand",
+      "name": "basil chiffonade",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "chipotle puree",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -179,29 +169,39 @@
       "strength": 1
     },
     {
-      "name": "chipotle puree",
+      "name": "bunch kale",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "by hand",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "scotch bonnet peppers",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "stalk lemongrass",
+      "name": "scotch bonnet",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "white onion",
+      "name": "serrano chili",
       "pairs_with": "cloves",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "handful pine nuts",
+      "name": "some",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "marzano",
+      "name": "grigio",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -211,7 +211,22 @@
       "strength": 1
     },
     {
-      "name": "morel mushrooms",
+      "name": "arugula",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "sandwich rolls",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cannellini beans",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "porcini mushrooms",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -221,27 +236,12 @@
       "strength": 1
     },
     {
-      "name": "heads garlic",
+      "name": "turkey sausage",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "linguine",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "palm",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "petite",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "anchovy paste",
+      "name": "crusty rolls",
       "pairs_with": "olive oil",
       "strength": 1
     }

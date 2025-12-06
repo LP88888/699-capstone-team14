@@ -5,14 +5,14 @@
       "name": "garam masala",
       "score": 20.113058174801886,
       "connects_a": [
+        "vegetable oil",
         "garlic",
-        "potatoes",
-        "onion"
+        "potatoes"
       ],
       "connects_b": [
+        "chili powder",
         "oil",
-        "turmeric",
-        "potatoes"
+        "turmeric"
       ]
     },
     {
@@ -22,22 +22,22 @@
         "flour"
       ],
       "connects_b": [
-        "fenugreek",
-        "carom",
-        "mango"
+        "mango",
+        "dal",
+        "oil"
       ]
     },
     {
       "name": "beef stock",
       "score": 12.04417907965786,
       "connects_a": [
-        "carrot",
-        "onion",
-        "potatoes"
+        "beef",
+        "thyme",
+        "flour"
       ],
       "connects_b": [
-        "potatoes",
-        "flour"
+        "flour",
+        "potatoes"
       ]
     },
     {
@@ -50,7 +50,7 @@
       ],
       "connects_b": [
         "peas",
-        "potatoes",
+        "chili powder",
         "oil"
       ]
     },
@@ -63,44 +63,44 @@
         "onion"
       ],
       "connects_b": [
-        "leaves",
-        "turmeric",
-        "oil"
+        "oil",
+        "chili powder",
+        "leaves"
       ]
     },
     {
       "name": "cumin seeds",
       "score": 12.014806142352434,
       "connects_a": [
-        "potatoes",
-        "raisins"
+        "raisins",
+        "potatoes"
       ],
       "connects_b": [
-        "oil",
+        "chili powder",
         "turmeric",
-        "potatoes"
+        "oil"
       ]
     },
     {
       "name": "mustard seeds",
       "score": 12.009346120884182,
       "connects_a": [
-        "potatoes",
-        "vegetable oil"
+        "vegetable oil",
+        "potatoes"
       ],
       "connects_b": [
-        "oil",
+        "chili powder",
         "turmeric",
-        "potatoes"
+        "oil"
       ]
     },
     {
       "name": "vanilla extract",
       "score": 9.144403826470164,
       "connects_a": [
-        "purpose flour",
-        "butter",
-        "egg yolks"
+        "coffee",
+        "milk",
+        "purpose flour"
       ],
       "connects_b": [
         "coconut"
@@ -113,8 +113,8 @@
         "raisins"
       ],
       "connects_b": [
-        "carom",
-        "powder",
+        "chili powder",
+        "turmeric",
         "oil"
       ]
     },
@@ -125,21 +125,31 @@
         "flour"
       ],
       "connects_b": [
-        "fenugreek",
-        "powder",
-        "seeds"
+        "jeera coriander",
+        "oil",
+        "wheat"
       ]
     }
   ],
   "novel_from_a": [
+    {
+      "name": "oats",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
     {
       "name": "fruit",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "oats",
-      "pairs_with": "dhania",
+      "name": "cold butter",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "applesauce",
+      "pairs_with": "flour",
       "strength": 1
     },
     {
@@ -153,12 +163,12 @@
       "strength": 1
     },
     {
-      "name": "chocolate chips",
+      "name": "buttermilk",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "egg wash",
+      "name": "soda",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -168,17 +178,7 @@
       "strength": 1
     },
     {
-      "name": "buttermilk",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
       "name": "pastry flour",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "vegetable shortening",
       "pairs_with": "flour",
       "strength": 1
     }
@@ -190,22 +190,7 @@
       "strength": 1
     },
     {
-      "name": "maida sooji",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "pearl",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
       "name": "bajra",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "carom",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -215,7 +200,22 @@
       "strength": 1
     },
     {
+      "name": "carom",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
       "name": "finger",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "maida sooji",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "pearl",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -230,7 +230,7 @@
       "strength": 1
     },
     {
-      "name": "coriander powder",
+      "name": "chili pepper",
       "pairs_with": "garlic",
       "strength": 1
     }
