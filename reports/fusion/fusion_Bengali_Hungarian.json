@@ -6,12 +6,12 @@
       "score": 44.24872798456415,
       "connects_a": [
         "peas",
-        "potatoes",
+        "chili powder",
         "oil"
       ],
       "connects_b": [
-        "chicken",
-        "tomato paste",
+        "oil",
+        "bay leaf",
         "tomatoes"
       ]
     },
@@ -19,13 +19,13 @@
       "name": "beef stock",
       "score": 24.08835815931572,
       "connects_a": [
-        "potatoes",
-        "flour"
+        "flour",
+        "potatoes"
       ],
       "connects_b": [
-        "tomato paste",
-        "carrot",
-        "worcestershire sauce"
+        "mushrooms",
+        "beef",
+        "bay leaf"
       ]
     },
     {
@@ -33,13 +33,13 @@
       "score": 24.06793742519247,
       "connects_a": [
         "peas",
-        "potatoes",
+        "chili powder",
         "oil"
       ],
       "connects_b": [
-        "tomatoes",
         "oil",
-        "onion"
+        "tomatoes",
+        "potatoes"
       ]
     },
     {
@@ -47,12 +47,12 @@
       "score": 21.040708314891702,
       "connects_a": [
         "peas",
-        "oil",
-        "chili powder"
+        "chili powder",
+        "oil"
       ],
       "connects_b": [
-        "chicken",
-        "tomato paste",
+        "oil",
+        "bay leaf",
         "tomatoes"
       ]
     },
@@ -60,25 +60,25 @@
       "name": "cardamom",
       "score": 20.29931202144538,
       "connects_a": [
-        "leaf",
-        "powder",
-        "oil"
+        "chili powder",
+        "oil",
+        "methi"
       ],
       "connects_b": [
-        "oil",
-        "bay leaf"
+        "bay leaf",
+        "oil"
       ]
     },
     {
       "name": "chili powder",
       "score": 20.23276258071482,
       "connects_a": [
-        "leaf",
+        "jeera coriander",
         "oil",
-        "jeera coriander"
+        "methi"
       ],
       "connects_b": [
-        "paprika",
+        "worcestershire sauce",
         "chicken",
         "oil"
       ]
@@ -87,13 +87,13 @@
       "name": "carom",
       "score": 20.033842423648338,
       "connects_a": [
-        "fenugreek",
-        "powder",
-        "seeds"
+        "jeera coriander",
+        "oil",
+        "methi"
       ],
       "connects_b": [
-        "flour",
-        "oil"
+        "oil",
+        "flour"
       ]
     },
     {
@@ -101,13 +101,13 @@
       "score": 20.02467690392072,
       "connects_a": [
         "peas",
-        "potatoes",
+        "chili powder",
         "oil"
       ],
       "connects_b": [
-        "chicken",
+        "oil",
         "tomatoes",
-        "oil"
+        "potatoes"
       ]
     },
     {
@@ -115,26 +115,26 @@
       "score": 20.011118817925528,
       "connects_a": [
         "peas",
-        "potatoes",
+        "chili powder",
         "oil"
       ],
       "connects_b": [
-        "chicken",
-        "tomatoes",
-        "oil"
+        "oil",
+        "bay leaf",
+        "tomatoes"
       ]
     },
     {
       "name": "wheat",
       "score": 18.055522524895114,
       "connects_a": [
-        "fenugreek",
-        "powder",
-        "oil"
+        "dal",
+        "oil",
+        "oil salt"
       ],
       "connects_b": [
-        "flour",
-        "oil"
+        "oil",
+        "flour"
       ]
     }
   ],
@@ -170,7 +170,7 @@
       "strength": 1
     },
     {
-      "name": "maida sooji",
+      "name": "sugar whole",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -185,19 +185,24 @@
       "strength": 1
     },
     {
-      "name": "wheat",
+      "name": "maida sooji",
       "pairs_with": "flour",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "shortening",
+      "name": "extract",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "vanilla sugar",
+      "name": "ice water",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "shortening",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -212,17 +217,7 @@
       "strength": 1
     },
     {
-      "name": "ice water",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
       "name": "beef stock",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "lard",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -232,12 +227,17 @@
       "strength": 1
     },
     {
-      "name": "extract",
+      "name": "vanilla sugar",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "juniper berries",
+      "name": "lard",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "chiffonade",
       "pairs_with": "leaves",
       "strength": 1
     }

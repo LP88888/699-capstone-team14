@@ -5,28 +5,28 @@
       "name": "bean sprouts",
       "score": 100.21220990970004,
       "connects_a": [
-        "wine vinegar",
-        "carrot",
-        "taste"
+        "shrimp",
+        "taste",
+        "carrot"
       ],
       "connects_b": [
-        "carrot",
-        "fish sauce",
-        "ginger"
+        "scallions",
+        "coconut milk",
+        "noodles"
       ]
     },
     {
       "name": "julienned",
       "score": 85.2061898351034,
       "connects_a": [
-        "wine vinegar",
-        "carrot",
-        "sherry vinegar"
+        "sherry vinegar",
+        "taste",
+        "carrot"
       ],
       "connects_b": [
-        "wine vinegar",
-        "peanut oil",
-        "carrot"
+        "scallions",
+        "cilantro leaves",
+        "soy sauce"
       ]
     },
     {
@@ -34,13 +34,13 @@
       "score": 84.40090363234556,
       "connects_a": [
         "coarsely",
-        "taste",
-        "cumin"
+        "cumin",
+        "2"
       ],
       "connects_b": [
+        "cilantro leaves",
         "coconut milk",
-        "peanut oil",
-        "limes"
+        "fish sauce"
       ]
     },
     {
@@ -48,54 +48,54 @@
       "score": 84.29487967821295,
       "connects_a": [
         "coarsely",
-        "tomatoes",
-        "cumin"
+        "cumin",
+        "onion"
       ],
       "connects_b": [
-        "chiles",
-        "limes",
-        "onion"
+        "cilantro leaves",
+        "onion",
+        "lime juice"
       ]
     },
     {
       "name": "inch piece",
       "score": 72.21538659644355,
       "connects_a": [
-        "wine vinegar",
+        "rice",
         "carrot",
-        "rice"
+        "more"
       ],
       "connects_b": [
-        "wine vinegar",
-        "peanut oil",
-        "carrot"
+        "scallions",
+        "cilantro leaves",
+        "soy sauce"
       ]
     },
     {
       "name": "fish sauce",
       "score": 69.67838971421199,
       "connects_a": [
-        "canola oil",
         "shrimp",
-        "carrot"
+        "carrot",
+        "canola oil"
       ],
       "connects_b": [
-        "carrot",
-        "ginger",
-        "lime juice"
+        "thai basil",
+        "bean sprouts",
+        "scallions"
       ]
     },
     {
       "name": "chile",
       "score": 68.29319226158017,
       "connects_a": [
-        "canola oil",
+        "coarsely",
         "cumin",
         "cloves"
       ],
       "connects_b": [
-        "peanut oil",
-        "chiles",
+        "cilantro leaves",
+        "noodles",
         "soy sauce"
       ]
     },
@@ -103,13 +103,13 @@
       "name": "hoisin sauce",
       "score": 65.04969579676414,
       "connects_a": [
-        "carrot",
-        "garlic",
-        "rice"
+        "rice",
+        "honey",
+        "carrot"
       ],
       "connects_b": [
-        "peanut oil",
-        "carrot",
+        "scallions",
+        "noodles",
         "soy sauce"
       ]
     },
@@ -117,59 +117,49 @@
       "name": "sriracha",
       "score": 64.07573576476244,
       "connects_a": [
+        "honey",
         "garlic",
-        "shrimp",
-        "carrot"
+        "shrimp"
       ],
       "connects_b": [
-        "peanut oil",
-        "carrot",
-        "soy sauce"
+        "scallions",
+        "cilantro leaves",
+        "noodles"
       ]
     },
     {
       "name": "mussels",
       "score": 60.361348180289006,
       "connects_a": [
-        "wine",
-        "chorizo",
-        "olive oil"
+        "bell pepper",
+        "rice",
+        "shrimp"
       ],
       "connects_b": [
-        "olive oil",
         "bell pepper",
-        "fish sauce"
+        "shrimp",
+        "shallots"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "pizza",
+      "name": "crusty rolls",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pepperoncini peppers",
+      "name": "roasted tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "sherry vinegar",
+      "name": "montreal steak",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pancetta",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "san marzano",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "chorizo",
+      "name": "some",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -179,32 +169,32 @@
       "strength": 1
     },
     {
-      "name": "for drizzling",
+      "name": "canned tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "oregano leaves",
+      "name": "capers",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "roasted tomatoes",
+      "name": "handful pine nuts",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "parma",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "piquillo peppers",
       "pairs_with": "olive oil",
       "strength": 1
     }
   ],
   "novel_from_b": [
-    {
-      "name": "porcini mushrooms",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pasta",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
     {
       "name": "linguine",
       "pairs_with": "olive oil",
@@ -212,6 +202,11 @@
     },
     {
       "name": "linguini",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "porcini mushrooms",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -226,12 +221,12 @@
       "strength": 1
     },
     {
-      "name": "white onion",
-      "pairs_with": "cloves",
+      "name": "pasta",
+      "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "porcini mushrooms",
+      "name": "white onion",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -242,6 +237,11 @@
     },
     {
       "name": "inch piece",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "cardamom pods",
       "pairs_with": "cloves",
       "strength": 1
     }

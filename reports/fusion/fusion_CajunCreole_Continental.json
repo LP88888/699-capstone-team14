@@ -5,55 +5,55 @@
       "name": "celery",
       "score": 92.22836632686226,
       "connects_a": [
-        "onion powder",
-        "creole seasoning",
-        "tomatoes"
+        "andouille sausage",
+        "garlic powder",
+        "parsley"
       ],
       "connects_b": [
-        "bell pepper",
         "thyme",
-        "onion"
+        "bell pepper",
+        "oregano"
       ]
     },
     {
       "name": "andouille sausage",
       "score": 84.11118375083095,
       "connects_a": [
-        "onion powder",
-        "creole seasoning",
-        "tomatoes"
+        "garlic",
+        "bell pepper",
+        "rice"
       ],
       "connects_b": [
-        "bell pepper",
         "thyme",
-        "onion"
+        "bell pepper",
+        "oregano"
       ]
     },
     {
       "name": "file powder",
       "score": 60.12185797958808,
       "connects_a": [
-        "okra",
-        "purpose flour",
-        "onion powder"
+        "bell pepper",
+        "shrimp",
+        "cayenne pepper"
       ],
       "connects_b": [
+        "thyme",
         "bell pepper",
-        "leaves",
-        "thyme"
+        "leaves"
       ]
     },
     {
       "name": "creole seasoning",
       "score": 57.0307875806144,
       "connects_a": [
-        "onion powder",
-        "tomatoes",
-        "oregano"
+        "andouille sausage",
+        "garlic powder",
+        "parsley"
       ],
       "connects_b": [
-        "bell pepper",
         "thyme",
+        "bell pepper",
         "oregano"
       ]
     },
@@ -61,27 +61,27 @@
       "name": "tomato paste",
       "score": 56.36135548756358,
       "connects_a": [
-        "okra",
-        "worcestershire sauce",
-        "tomatoes"
+        "bell pepper",
+        "cayenne pepper",
+        "andouille sausage"
       ],
       "connects_b": [
-        "bell pepper",
         "thyme",
-        "onion"
+        "bell pepper",
+        "oregano"
       ]
     },
     {
       "name": "okra",
       "score": 51.06969954602448,
       "connects_a": [
-        "purpose flour",
-        "worcestershire sauce",
-        "tomatoes"
+        "hot sauce",
+        "bell pepper",
+        "rice"
       ],
       "connects_b": [
-        "bell pepper",
         "thyme",
+        "bell pepper",
         "onion"
       ]
     },
@@ -89,13 +89,13 @@
       "name": "cayenne pepper",
       "score": 45.29418210012356,
       "connects_a": [
-        "okra",
-        "onion powder",
-        "worcestershire sauce"
+        "hot sauce",
+        "bell pepper",
+        "shrimp"
       ],
       "connects_b": [
-        "bell pepper",
         "thyme",
+        "bell pepper",
         "oregano"
       ]
     },
@@ -103,27 +103,27 @@
       "name": "bay leaf",
       "score": 40.359981919707735,
       "connects_a": [
-        "tomatoes",
-        "onion",
-        "oregano"
-      ],
-      "connects_b": [
-        "beans",
+        "andouille sausage",
         "thyme",
         "onion"
+      ],
+      "connects_b": [
+        "oregano",
+        "thyme",
+        "beans"
       ]
     },
     {
       "name": "yellow onion",
       "score": 36.02080486058937,
       "connects_a": [
-        "onion powder",
-        "worcestershire sauce",
-        "oregano"
+        "hot sauce",
+        "bell pepper",
+        "shrimp"
       ],
       "connects_b": [
-        "bell pepper",
         "thyme",
+        "bell pepper",
         "oregano"
       ]
     },
@@ -131,29 +131,29 @@
       "name": "cajun seasoning",
       "score": 34.015114891202636,
       "connects_a": [
-        "okra",
-        "onion powder",
-        "worcestershire sauce"
+        "hot sauce",
+        "bell pepper",
+        "rice"
       ],
       "connects_b": [
-        "bell pepper",
-        "thyme"
+        "thyme",
+        "bell pepper"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "plum tomatoes",
+      "name": "linguine",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "chorizo",
+      "name": "capers",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "couscous",
+      "name": "[extra",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -168,7 +168,12 @@
       "strength": 1
     },
     {
-      "name": "[extra",
+      "name": "olives",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "chorizo",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -178,22 +183,27 @@
       "strength": 1
     },
     {
-      "name": "olives",
+      "name": "reggiano cheese",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "romano cheese",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "chorizo sausage",
+      "name": "grape tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     }
   ],
   "novel_from_b": [
+    {
+      "name": "arugula leaves",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "arugula",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
     {
       "name": "handful pine nuts",
       "pairs_with": "olive oil",
@@ -206,16 +216,6 @@
     },
     {
       "name": "crusty bread",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "arugula",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "arugula leaves",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -240,7 +240,7 @@
       "strength": 1
     },
     {
-      "name": "margarine",
+      "name": "soda",
       "pairs_with": "egg",
       "strength": 1
     }

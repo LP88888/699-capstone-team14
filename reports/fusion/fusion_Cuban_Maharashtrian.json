@@ -5,96 +5,96 @@
       "name": "garam masala",
       "score": 35.1978518059033,
       "connects_a": [
-        "tomatoes",
         "cumin",
-        "bay leaf"
+        "bay leaf",
+        "tomatoes"
       ],
       "connects_b": [
+        "chili powder",
         "oil",
-        "turmeric",
-        "potatoes"
+        "turmeric"
       ]
     },
     {
       "name": "mustard seeds",
       "score": 30.02336530221045,
       "connects_a": [
-        "wine vinegar",
+        "cumin",
         "tomatoes",
-        "cumin"
+        "vegetable oil"
       ],
       "connects_b": [
-        "oil",
+        "chili powder",
         "turmeric",
-        "potatoes"
+        "oil"
       ]
     },
     {
       "name": "mango",
       "score": 28.19668902464978,
       "connects_a": [
-        "cilantro",
-        "lime",
-        "orange juice"
+        "orange juice",
+        "lime juice",
+        "lime"
       ],
       "connects_b": [
+        "wheat",
         "fenugreek",
-        "powder",
-        "seeds"
+        "dhania"
       ]
     },
     {
       "name": "cumin",
       "score": 24.412382450548716,
       "connects_a": [
-        "beans",
-        "tomatoes",
-        "plantains"
+        "plantains",
+        "dill pickles",
+        "bell pepper"
       ],
       "connects_b": [
-        "turmeric",
-        "chili powder"
+        "chili powder",
+        "turmeric"
       ]
     },
     {
       "name": "cilantro",
       "score": 24.139143647134645,
       "connects_a": [
+        "plantains",
         "beans",
-        "cumin",
-        "plantains"
+        "cumin"
       ],
       "connects_b": [
-        "peanuts",
-        "turmeric",
-        "chili powder"
+        "mango",
+        "chili powder",
+        "turmeric"
       ]
     },
     {
       "name": "jalapeno peppers",
       "score": 24.023477237539318,
       "connects_a": [
-        "beans",
-        "tomatoes",
-        "cumin"
+        "bell pepper",
+        "rice",
+        "beans"
       ],
       "connects_b": [
-        "turmeric",
+        "mango",
         "chili powder",
-        "mango"
+        "turmeric"
       ]
     },
     {
       "name": "tumeric",
       "score": 20.056614520993726,
       "connects_a": [
-        "tomatoes",
         "cumin",
-        "onion"
+        "tomatoes",
+        "garlic"
       ],
       "connects_b": [
         "peas",
-        "potatoes",
+        "chili powder",
         "oil"
       ]
     },
@@ -103,11 +103,11 @@
       "score": 20.05365934509343,
       "connects_a": [
         "cumin",
-        "rum",
-        "cilantro"
+        "lime juice",
+        "rum"
       ],
       "connects_b": [
-        "peanuts",
+        "mango",
         "turmeric",
         "coconut"
       ]
@@ -116,32 +116,42 @@
       "name": "coriander powder",
       "score": 20.039053808835284,
       "connects_a": [
-        "tomatoes",
         "cumin",
-        "onion"
+        "tomatoes",
+        "garlic"
       ],
       "connects_b": [
-        "leaves",
-        "turmeric",
-        "oil"
+        "oil",
+        "chili powder",
+        "leaves"
       ]
     },
     {
       "name": "turmeric",
       "score": 20.03876982370638,
       "connects_a": [
-        "tomatoes",
         "cumin",
-        "bay leaf"
+        "bay leaf",
+        "tomatoes"
       ],
       "connects_b": [
         "peas",
-        "oil",
-        "coconut"
+        "chili powder",
+        "oil"
       ]
     }
   ],
   "novel_from_a": [
+    {
+      "name": "extract",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "cornmeal",
+      "pairs_with": "flour",
+      "strength": 1
+    },
     {
       "name": "shortening",
       "pairs_with": "flour",
@@ -153,7 +163,7 @@
       "strength": 1
     },
     {
-      "name": "cornmeal",
+      "name": "soda",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -163,22 +173,12 @@
       "strength": 1
     },
     {
-      "name": "egg wash",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "white sugar",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
       "name": "beef stock",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "lard",
+      "name": "quart",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -188,7 +188,7 @@
       "strength": 1
     },
     {
-      "name": "soda",
+      "name": "egg wash",
       "pairs_with": "flour",
       "strength": 1
     }
@@ -220,7 +220,12 @@
       "strength": 1
     },
     {
-      "name": "coriander powder",
+      "name": "oil coriander",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
+      "name": "salt coriander",
       "pairs_with": "leaves",
       "strength": 1
     },
@@ -230,12 +235,7 @@
       "strength": 1
     },
     {
-      "name": "oil coriander",
-      "pairs_with": "leaves",
-      "strength": 1
-    },
-    {
-      "name": "salt coriander",
+      "name": "coriander powder",
       "pairs_with": "leaves",
       "strength": 1
     },

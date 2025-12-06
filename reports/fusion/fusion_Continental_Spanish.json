@@ -5,70 +5,70 @@
       "name": "celery",
       "score": 40.099289707331415,
       "connects_a": [
-        "bell pepper",
         "thyme",
-        "onion"
+        "bell pepper",
+        "oregano"
       ],
       "connects_b": [
-        "carrot",
-        "tomatoes",
-        "onion"
+        "bell pepper",
+        "rice",
+        "shrimp"
       ]
     },
     {
       "name": "bay leaf",
       "score": 36.323983727736966,
       "connects_a": [
-        "beans",
+        "oregano",
         "thyme",
-        "onion"
+        "beans"
       ],
       "connects_b": [
-        "carrot",
-        "tomatoes",
-        "chorizo"
+        "cumin",
+        "chorizo",
+        "onion"
       ]
     },
     {
       "name": "tomato paste",
       "score": 36.23229995629087,
       "connects_a": [
-        "bell pepper",
         "thyme",
-        "onion"
+        "bell pepper",
+        "oregano"
       ],
       "connects_b": [
-        "carrot",
-        "tomatoes",
-        "cumin"
+        "bell pepper",
+        "cumin",
+        "tomatoes"
       ]
     },
     {
       "name": "andouille sausage",
       "score": 36.04765017892755,
       "connects_a": [
-        "bell pepper",
         "thyme",
-        "onion"
+        "bell pepper",
+        "oregano"
       ],
       "connects_b": [
-        "tomatoes",
-        "onion",
-        "garlic"
+        "bell pepper",
+        "rice",
+        "shrimp"
       ]
     },
     {
       "name": "file powder",
       "score": 28.0568670571411,
       "connects_a": [
+        "thyme",
         "bell pepper",
-        "leaves",
-        "thyme"
+        "leaves"
       ],
       "connects_b": [
-        "tomatoes",
-        "onion",
-        "bell pepper"
+        "bell pepper",
+        "shrimp",
+        "tomatoes"
       ]
     },
     {
@@ -80,7 +80,7 @@
         "onion"
       ],
       "connects_b": [
-        "lemon",
+        "bell pepper",
         "cumin",
         "onion"
       ]
@@ -89,27 +89,27 @@
       "name": "yellow onions",
       "score": 27.03730518596054,
       "connects_a": [
-        "bell pepper",
         "thyme",
+        "bell pepper",
         "oregano"
       ],
       "connects_b": [
-        "carrot",
-        "wine",
-        "kosher sea salt"
+        "bell pepper",
+        "2",
+        "carrot"
       ]
     },
     {
       "name": "ribs celery",
       "score": 24.17490937906013,
       "connects_a": [
-        "bell pepper",
         "thyme",
+        "bell pepper",
         "onion"
       ],
       "connects_b": [
-        "carrot",
-        "wine",
+        "bell pepper",
+        "shrimp",
         "onion"
       ]
     },
@@ -117,14 +117,14 @@
       "name": "can tomatoes",
       "score": 24.141261796348463,
       "connects_a": [
+        "oregano",
         "bell pepper",
-        "onion",
-        "oregano"
+        "onion"
       ],
       "connects_b": [
         "coarsely",
-        "olives",
-        "cumin"
+        "bell pepper",
+        "olives"
       ]
     },
     {
@@ -135,20 +135,20 @@
         "olive oil"
       ],
       "connects_b": [
-        "olives",
-        "tomatoes",
-        "wine"
+        "bell pepper",
+        "rice",
+        "olives"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "pasta",
+      "name": "arugula leaves",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "arugula leaves",
+      "name": "pasta",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -158,12 +158,7 @@
       "strength": 1
     },
     {
-      "name": "margarine",
-      "pairs_with": "egg",
-      "strength": 1
-    },
-    {
-      "name": "icing",
+      "name": "cocoa",
       "pairs_with": "egg",
       "strength": 1
     },
@@ -173,7 +168,12 @@
       "strength": 1
     },
     {
-      "name": "cocoa",
+      "name": "icing",
+      "pairs_with": "egg",
+      "strength": 1
+    },
+    {
+      "name": "margarine",
       "pairs_with": "egg",
       "strength": 1
     },
@@ -195,32 +195,37 @@
   ],
   "novel_from_b": [
     {
-      "name": "chorizo",
+      "name": "roasted tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "for drizzling",
+      "name": "eggplants",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "bunch kale",
+      "name": "some",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "marzano",
+      "name": "grigio",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pass",
+      "name": "finely oregano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "center cut",
+      "name": "mussels",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "chorizo sausage",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -230,17 +235,12 @@
       "strength": 1
     },
     {
-      "name": "heads garlic",
+      "name": "turkey sausage",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "palm",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cans chickpeas",
+      "name": "for seasoning",
       "pairs_with": "olive oil",
       "strength": 1
     }

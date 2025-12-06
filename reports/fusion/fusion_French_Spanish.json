@@ -5,125 +5,125 @@
       "name": "confectioners",
       "score": 90.46942996055641,
       "connects_a": [
-        "purpose flour",
-        "chocolate",
-        "butter"
+        "milk",
+        "1",
+        "maple syrup"
       ],
       "connects_b": [
-        "butter",
-        "orange",
-        "2"
+        "1",
+        "2",
+        "butter"
       ]
     },
     {
       "name": "at",
       "score": 65.25890340396727,
       "connects_a": [
-        "purpose flour",
-        "chocolate",
-        "butter"
+        "milk",
+        "1",
+        "maple syrup"
       ],
       "connects_b": [
-        "butter",
+        "1",
         "kosher sea salt",
-        "1"
+        "butter"
       ]
     },
     {
       "name": "tomato paste",
       "score": 63.406524923509025,
       "connects_a": [
-        "carrot",
-        "wine",
-        "onion"
+        "thyme",
+        "bay leaf",
+        "carrot"
       ],
       "connects_b": [
-        "carrot",
-        "tomatoes",
-        "cumin"
+        "bell pepper",
+        "cumin",
+        "tomatoes"
       ]
     },
     {
       "name": "yellow onions",
       "score": 63.08704543390793,
       "connects_a": [
-        "carrot",
-        "wine",
-        "kosher sea salt"
+        "2",
+        "thyme",
+        "carrot"
       ],
       "connects_b": [
-        "carrot",
-        "wine",
-        "kosher sea salt"
+        "bell pepper",
+        "2",
+        "carrot"
       ]
     },
     {
       "name": "mussels",
       "score": 60.361348180289006,
       "connects_a": [
-        "wine",
+        "shallots",
         "bay leaf",
-        "olive oil"
+        "parsley"
       ],
       "connects_b": [
-        "wine",
-        "chorizo",
-        "olive oil"
+        "bell pepper",
+        "rice",
+        "shrimp"
       ]
     },
     {
       "name": "whole milk",
       "score": 60.17571103887719,
       "connects_a": [
-        "purpose flour",
-        "chocolate",
-        "butter"
+        "maple syrup",
+        "2",
+        "purpose flour"
       ],
       "connects_b": [
-        "butter",
+        "2",
         "kosher sea salt",
-        "2"
+        "butter"
       ]
     },
     {
       "name": "celery",
       "score": 60.14893456099712,
       "connects_a": [
-        "carrot",
+        "thyme",
         "bay leaf",
-        "onion"
+        "carrot"
       ],
       "connects_b": [
-        "carrot",
-        "tomatoes",
-        "onion"
+        "bell pepper",
+        "rice",
+        "shrimp"
       ]
     },
     {
       "name": "chorizo",
       "score": 60.1107346120163,
       "connects_a": [
-        "wine",
         "bay leaf",
-        "olive oil"
+        "parsley",
+        "cloves"
       ],
       "connects_b": [
-        "olives",
-        "tomatoes",
-        "wine"
+        "bell pepper",
+        "rice",
+        "olives"
       ]
     },
     {
       "name": "ribs celery",
       "score": 56.40812188447363,
       "connects_a": [
-        "carrot",
-        "wine",
-        "onion"
+        "thyme",
+        "bay leaf",
+        "carrot"
       ],
       "connects_b": [
-        "carrot",
-        "wine",
+        "bell pepper",
+        "shrimp",
         "onion"
       ]
     },
@@ -132,54 +132,24 @@
       "score": 56.128412743212486,
       "connects_a": [
         "wine vinegar",
-        "lemon",
-        "carrot"
+        "shallots",
+        "bay leaf"
       ],
       "connects_b": [
         "wine vinegar",
-        "lemon",
-        "carrot"
+        "carrot",
+        "parsley"
       ]
     }
   ],
   "novel_from_a": [
     {
+      "name": "radicchio",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "[extra",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "morel mushrooms",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "linguine",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "petite",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "anchovy paste",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "porcini mushrooms",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pasta",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "reggiano cheese",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -189,49 +159,64 @@
       "strength": 1
     },
     {
+      "name": "cannellini beans",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "porcini mushrooms",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "morel mushrooms",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "roma",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "salami",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "reggiano cheese",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "giardiniera",
       "pairs_with": "olive oil",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "pepperoncini peppers",
+      "name": "montreal steak",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "san marzano",
+      "name": "squid",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "for drizzling",
+      "name": "risotto",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pimenton",
+      "name": "hearts",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "littleneck clams",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "for seasoning",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "bunch kale",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "head escarole",
+      "name": "finely oregano",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -241,7 +226,22 @@
       "strength": 1
     },
     {
-      "name": "hearts",
+      "name": "san marzano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pepperoncini peppers",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "center cut",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "head escarole",
       "pairs_with": "olive oil",
       "strength": 1
     }

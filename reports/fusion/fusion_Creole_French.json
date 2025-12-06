@@ -5,55 +5,55 @@
       "name": "celery",
       "score": 102.2531887536951,
       "connects_a": [
-        "onion powder",
-        "worcestershire sauce",
-        "creole seasoning"
+        "hot sauce",
+        "bell pepper",
+        "rice"
       ],
       "connects_b": [
-        "carrot",
+        "thyme",
         "bay leaf",
-        "onion"
+        "carrot"
       ]
     },
     {
       "name": "tomato paste",
       "score": 91.58720266729081,
       "connects_a": [
-        "worcestershire sauce",
-        "tomatoes",
-        "onion"
+        "bell pepper",
+        "cayenne pepper",
+        "andouille sausage"
       ],
       "connects_b": [
-        "carrot",
-        "wine",
-        "onion"
+        "thyme",
+        "bay leaf",
+        "carrot"
       ]
     },
     {
       "name": "yellow onions",
       "score": 91.12573229342257,
       "connects_a": [
-        "onion powder",
-        "worcestershire sauce",
-        "kosher sea salt"
+        "bell pepper",
+        "cayenne pepper",
+        "2"
       ],
       "connects_b": [
-        "carrot",
-        "wine",
-        "kosher sea salt"
+        "2",
+        "thyme",
+        "carrot"
       ]
     },
     {
       "name": "file powder",
       "score": 84.1706011714233,
       "connects_a": [
-        "purpose flour",
-        "onion powder",
-        "tomatoes"
+        "bell pepper",
+        "shrimp",
+        "cayenne pepper"
       ],
       "connects_b": [
         "purpose flour",
-        "onion",
+        "thyme",
         "vegetable oil"
       ]
     },
@@ -61,95 +61,95 @@
       "name": "yellow onion",
       "score": 84.04854467470854,
       "connects_a": [
-        "onion powder",
-        "worcestershire sauce",
-        "kosher sea salt"
+        "hot sauce",
+        "bell pepper",
+        "shrimp"
       ],
       "connects_b": [
-        "dijon mustard",
-        "wine",
-        "kosher sea salt"
+        "2",
+        "thyme",
+        "garlic"
       ]
     },
     {
       "name": "confectioners",
       "score": 75.391191633797,
       "connects_a": [
+        "2",
         "purpose flour",
-        "butter",
-        "2"
+        "cream"
       ],
       "connects_b": [
-        "purpose flour",
-        "chocolate",
-        "butter"
+        "milk",
+        "1",
+        "maple syrup"
       ]
     },
     {
       "name": "grits",
       "score": 72.28168200681829,
       "connects_a": [
-        "onion powder",
-        "butter",
-        "2"
+        "hot sauce",
+        "bell pepper",
+        "shrimp"
       ],
       "connects_b": [
-        "butter",
+        "milk",
         "2",
-        "milk"
+        "parsley"
       ]
     },
     {
       "name": "thyme",
       "score": 70.36519638344016,
       "connects_a": [
-        "onion powder",
-        "worcestershire sauce",
-        "creole seasoning"
+        "hot sauce",
+        "shrimp",
+        "cayenne pepper"
       ],
       "connects_b": [
-        "wine",
-        "bay leaf",
-        "2"
+        "shallots",
+        "2",
+        "bay leaf"
       ]
     },
     {
       "name": "andouille sausage",
       "score": 68.09000589352982,
       "connects_a": [
-        "onion powder",
-        "worcestershire sauce",
-        "creole seasoning"
+        "hot sauce",
+        "bell pepper",
+        "rice"
       ],
       "connects_b": [
+        "thyme",
         "garlic",
-        "bay leaf",
-        "thyme"
+        "bay leaf"
       ]
     },
     {
       "name": "cornmeal",
       "score": 66.27079836143555,
       "connects_a": [
-        "purpose flour",
-        "onion powder",
-        "creole seasoning"
+        "hot sauce",
+        "cayenne pepper",
+        "onion powder"
       ],
       "connects_b": [
+        "milk",
         "purpose flour",
-        "kosher sea salt",
         "thyme"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "littleneck clams",
+      "name": "basil chiffonade",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "basil chiffonade",
+      "name": "littleneck clams",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -159,7 +159,27 @@
       "strength": 1
     },
     {
+      "name": "white onion",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "pasilla chiles",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
       "name": "ancho chile",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "basil chiffonade",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "black beans",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -172,36 +192,21 @@
       "name": "seasoning blend",
       "pairs_with": "cloves",
       "strength": 1
-    },
-    {
-      "name": "pasilla chiles",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "white onion",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "black beans",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "basil chiffonade",
-      "pairs_with": "cloves",
-      "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "handful pine nuts",
+      "name": "some",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "marzano",
+      "name": "grigio",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "radicchio",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -211,7 +216,17 @@
       "strength": 1
     },
     {
-      "name": "morel mushrooms",
+      "name": "sandwich rolls",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cannellini beans",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "porcini mushrooms",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -221,27 +236,12 @@
       "strength": 1
     },
     {
-      "name": "linguine",
+      "name": "turkey sausage",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "palm",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "petite",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "sherry vinegar",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "anchovy paste",
+      "name": "crusty rolls",
       "pairs_with": "olive oil",
       "strength": 1
     }

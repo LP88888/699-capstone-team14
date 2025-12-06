@@ -5,56 +5,56 @@
       "name": "garam masala",
       "score": 190.06839975187782,
       "connects_a": [
-        "tomato paste",
-        "onion",
-        "vegetable oil"
+        "cayenne pepper",
+        "potatoes",
+        "peas"
       ],
       "connects_b": [
-        "coriander",
-        "basmati rice",
-        "tomatoes"
+        "cumin seeds",
+        "chili powder",
+        "potatoes"
       ]
     },
     {
       "name": "tumeric",
       "score": 90.25476534447176,
       "connects_a": [
-        "onion",
-        "garlic",
-        "potatoes"
+        "cayenne pepper",
+        "potatoes",
+        "peas"
       ],
       "connects_b": [
-        "mustard seeds",
-        "coriander",
-        "garam masala"
+        "cumin seeds",
+        "chili powder",
+        "cumin"
       ]
     },
     {
       "name": "bay leaf",
       "score": 63.566971523539685,
       "connects_a": [
-        "tomato paste",
+        "beef",
         "carrot",
-        "wine"
+        "russet potatoes"
       ],
       "connects_b": [
-        "cinnamon sticks",
-        "garam masala",
-        "basmati rice"
+        "cumin",
+        "turmeric",
+        "garam masala"
       ]
     },
     {
       "name": "tomato paste",
       "score": 63.406524923509025,
       "connects_a": [
-        "carrot",
-        "worcestershire sauce",
-        "wine"
+        "beef",
+        "cayenne pepper",
+        "carrot"
       ],
       "connects_b": [
-        "garam masala",
-        "tomatoes",
-        "cumin"
+        "cumin",
+        "cayenne pepper",
+        "turmeric"
       ]
     },
     {
@@ -62,13 +62,13 @@
       "score": 60.116309471119145,
       "connects_a": [
         "peas",
-        "tomato paste",
-        "vegetable oil"
+        "vegetable oil",
+        "tomato paste"
       ],
       "connects_b": [
-        "coriander",
-        "garam masala",
-        "basmati rice"
+        "cumin seeds",
+        "chili powder",
+        "garam masala"
       ]
     },
     {
@@ -76,27 +76,27 @@
       "score": 57.04439407419986,
       "connects_a": [
         "peas",
-        "potatoes",
-        "vegetable oil"
+        "vegetable oil",
+        "potatoes"
       ],
       "connects_b": [
-        "coriander",
-        "garam masala",
-        "tomatoes"
+        "cumin seeds",
+        "chili powder",
+        "garam masala"
       ]
     },
     {
       "name": "allspice",
       "score": 55.24504729138824,
       "connects_a": [
-        "nutmeg",
-        "kosher sea salt",
-        "cloves"
+        "beef",
+        "cayenne pepper",
+        "kosher sea salt"
       ],
       "connects_b": [
-        "cinnamon sticks",
-        "coriander",
-        "mustard seeds"
+        "chili powder",
+        "curry powder",
+        "cumin"
       ]
     },
     {
@@ -108,23 +108,23 @@
         "onion"
       ],
       "connects_b": [
-        "garam masala",
-        "tumeric",
-        "tomatoes"
+        "cumin seeds",
+        "chili powder",
+        "cumin"
       ]
     },
     {
       "name": "confectioners",
       "score": 44.22949909182758,
       "connects_a": [
-        "purpose flour",
-        "butter",
-        "nutmeg"
+        "milk",
+        "1",
+        "2"
       ],
       "connects_b": [
-        "cream",
+        "butter",
         "milk",
-        "cinnamon"
+        "cream"
       ]
     },
     {
@@ -135,20 +135,15 @@
         "potatoes"
       ],
       "connects_b": [
-        "coriander",
+        "chili powder",
         "garam masala",
-        "basmati rice"
+        "potatoes"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "for drizzling",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "mussels",
+      "name": "arugula leaves",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -158,22 +153,7 @@
       "strength": 1
     },
     {
-      "name": "prosciutto",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "turn",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "arugula leaves",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "spun",
+      "name": "capers",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -183,7 +163,17 @@
       "strength": 1
     },
     {
+      "name": "mussels",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "crusty bread",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "turn",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -191,9 +181,24 @@
       "name": "cremini",
       "pairs_with": "olive oil",
       "strength": 1
+    },
+    {
+      "name": "spun",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "prosciutto",
+      "pairs_with": "olive oil",
+      "strength": 1
     }
   ],
   "novel_from_b": [
+    {
+      "name": "lamb shanks",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
     {
       "name": "petite",
       "pairs_with": "olive oil",
@@ -205,12 +210,12 @@
       "strength": 1
     },
     {
-      "name": "lamb shanks",
-      "pairs_with": "olive oil",
+      "name": "leg",
+      "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "petite",
+      "name": "lamb shanks",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -220,27 +225,22 @@
       "strength": 1
     },
     {
-      "name": "leg",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "serrano",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "lamb shanks",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
       "name": "cardamom pods",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
+      "name": "petite",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
       "name": "pork shoulder",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "serrano",
       "pairs_with": "cloves",
       "strength": 1
     }

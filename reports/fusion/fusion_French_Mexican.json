@@ -5,70 +5,70 @@
       "name": "confectioners",
       "score": 90.46942996055641,
       "connects_a": [
-        "purpose flour",
-        "chocolate",
-        "butter"
+        "milk",
+        "1",
+        "maple syrup"
       ],
       "connects_b": [
-        "butter",
-        "cinnamon",
-        "1"
+        "1",
+        "cream",
+        "butter"
       ]
     },
     {
       "name": "at",
       "score": 78.31068408476071,
       "connects_a": [
-        "purpose flour",
-        "chocolate",
-        "butter"
+        "milk",
+        "1",
+        "maple syrup"
       ],
       "connects_b": [
-        "butter",
-        "kosher sea salt",
-        "1"
+        "1",
+        "cream",
+        "kosher sea salt"
       ]
     },
     {
       "name": "vanilla extract",
       "score": 60.962692176467755,
       "connects_a": [
-        "purpose flour",
-        "chocolate",
-        "butter"
+        "milk",
+        "1",
+        "maple syrup"
       ],
       "connects_b": [
-        "butter",
-        "cinnamon",
-        "1"
+        "1",
+        "cream",
+        "butter"
       ]
     },
     {
       "name": "whole milk",
       "score": 60.17571103887719,
       "connects_a": [
-        "purpose flour",
-        "chocolate",
-        "butter"
+        "maple syrup",
+        "2",
+        "purpose flour"
       ],
       "connects_b": [
-        "butter",
         "kosher sea salt",
-        "cinnamon"
+        "butter",
+        "more"
       ]
     },
     {
       "name": "sticks",
       "score": 55.19451995974218,
       "connects_a": [
-        "purpose flour",
-        "chocolate",
-        "butter"
+        "1",
+        "2",
+        "purpose flour"
       ],
       "connects_b": [
+        "1",
         "butter",
-        "cinnamon",
-        "1"
+        "more"
       ]
     },
     {
@@ -76,11 +76,11 @@
       "score": 54.30525707196509,
       "connects_a": [
         "bay leaf",
-        "onion",
+        "garlic",
         "vegetable oil"
       ],
       "connects_b": [
-        "tomatoes",
+        "jalapeno peppers",
         "cumin",
         "onion"
       ]
@@ -89,54 +89,54 @@
       "name": "chiles",
       "score": 52.24817843907106,
       "connects_a": [
-        "shallots",
-        "cloves",
-        "2"
+        "2",
+        "vegetable oil",
+        "cloves"
       ],
       "connects_b": [
-        "flour tortillas",
-        "chicken breasts",
-        "cumin"
+        "cilantro leaves",
+        "cumin",
+        "corn tortillas"
       ]
     },
     {
       "name": "corn tortillas",
       "score": 51.17903409034358,
       "connects_a": [
+        "vegetable oil",
         "more",
-        "onion",
-        "vegetable oil"
+        "onion"
       ],
       "connects_b": [
-        "tomatoes",
-        "cumin",
-        "salsa"
+        "cilantro leaves",
+        "jalapeno",
+        "jalapeno peppers"
       ]
     },
     {
       "name": "ice water",
       "score": 50.25488102290018,
       "connects_a": [
+        "1",
         "purpose flour",
-        "butter",
-        "nutmeg"
+        "flour"
       ],
       "connects_b": [
+        "1",
         "butter",
-        "cinnamon",
-        "1"
+        "more"
       ]
     },
     {
       "name": "tomato paste",
       "score": 49.31618605161813,
       "connects_a": [
-        "carrot",
-        "wine",
-        "onion"
+        "thyme",
+        "bay leaf",
+        "carrot"
       ],
       "connects_b": [
-        "tomatoes",
+        "bell pepper",
         "cumin",
         "onion"
       ]
@@ -144,7 +144,12 @@
   ],
   "novel_from_a": [
     {
-      "name": "marzano",
+      "name": "grigio",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "radicchio",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -154,17 +159,27 @@
       "strength": 1
     },
     {
+      "name": "sandwich rolls",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cannellini beans",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "turkey sausage",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "crusty rolls",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "morel mushrooms",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "linguine",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "anchovy paste",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -174,27 +189,42 @@
       "strength": 1
     },
     {
-      "name": "clam broth",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pasta",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cannellini",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "baby arugula",
+      "name": "oregano leaves",
       "pairs_with": "olive oil",
       "strength": 1
     }
   ],
   "novel_from_b": [
+    {
+      "name": "arugula leaves",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pecorino",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "squid",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "finely oregano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pass",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "orzo pasta",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
     {
       "name": "chipotle puree",
       "pairs_with": "olive oil",
@@ -206,42 +236,12 @@
       "strength": 1
     },
     {
-      "name": "pass",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pecorino",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "finely oregano",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "arugula leaves",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "orzo pasta",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "squid",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "chipotle puree",
+      "name": "tuttorosso",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "pasilla chiles",
+      "name": "seasoning blend",
       "pairs_with": "cloves",
       "strength": 1
     }

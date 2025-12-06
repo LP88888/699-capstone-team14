@@ -5,9 +5,9 @@
       "name": "garam masala",
       "score": 18.101752357321697,
       "connects_a": [
-        "greek yogurt",
-        "tomatoes",
-        "yogurt"
+        "spinach",
+        "yogurt",
+        "tomatoes"
       ],
       "connects_b": [
         "oil",
@@ -18,13 +18,13 @@
       "name": "cardamom",
       "score": 15.224484016084034,
       "connects_a": [
-        "yogurt",
         "cinnamon",
+        "yogurt",
         "greek yogurt"
       ],
       "connects_b": [
-        "powder",
         "oil",
+        "dhania",
         "chilli"
       ]
     },
@@ -33,8 +33,8 @@
       "score": 15.029290356626463,
       "connects_a": [
         "tomatoes",
-        "cinnamon",
-        "onion"
+        "garlic",
+        "leaves"
       ],
       "connects_b": [
         "leaves",
@@ -46,20 +46,20 @@
       "name": "can tomatoes",
       "score": 12.070630898174231,
       "connects_a": [
+        "bell pepper",
         "olives",
-        "onion",
-        "oregano"
+        "parsley"
       ],
       "connects_b": [
-        "onion",
-        "("
+        "(",
+        "onion"
       ]
     },
     {
       "name": "cans tomatoes",
       "score": 12.026656990963478,
       "connects_a": [
-        "olive oil",
+        "grain sea salt",
         "onion",
         "oregano"
       ],
@@ -72,9 +72,9 @@
       "name": "file powder",
       "score": 12.024371595917614,
       "connects_a": [
+        "bell pepper",
         "purpose flour",
-        "tomatoes",
-        "onion"
+        "tomatoes"
       ],
       "connects_b": [
         "leaves",
@@ -86,8 +86,8 @@
       "score": 10.028307260496863,
       "connects_a": [
         "tomatoes",
-        "onion",
-        "cinnamon"
+        "garlic",
+        "chicken breasts"
       ],
       "connects_b": [
         "oil",
@@ -98,9 +98,9 @@
       "name": "crawfish tail",
       "score": 10.017157830303969,
       "connects_a": [
-        "butter",
-        "onion",
-        "bell pepper"
+        "bell pepper",
+        "garlic",
+        "butter"
       ],
       "connects_b": [
         "leaves",
@@ -111,9 +111,9 @@
       "name": "bay leaf",
       "score": 8.071996383941547,
       "connects_a": [
+        "oregano",
         "tomatoes",
-        "parsley",
-        "onion"
+        "parsley"
       ],
       "connects_b": [
         "beans",
@@ -124,19 +124,19 @@
       "name": "olive",
       "score": 8.037241462254789,
       "connects_a": [
-        "cucumber",
-        "yogurt",
-        "lemon juice"
+        "lemon juice",
+        "mint",
+        "cucumber"
       ],
       "connects_b": [
-        "chilli",
-        "dhania"
+        "dhania",
+        "chilli"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "olive",
+      "name": "virgin",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -146,7 +146,7 @@
       "strength": 1
     },
     {
-      "name": "fruit",
+      "name": "olive",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -156,32 +156,32 @@
       "strength": 1
     },
     {
-      "name": "virgin",
+      "name": "fruit",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "beef broth",
+      "name": "roasted tomatoes",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "cubanelle peppers",
+      "name": "capsicum",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "beef stock",
+      "name": "beef chuck",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "ribs celery",
       "pairs_with": "onion",
       "strength": 1
     },
     {
       "name": "chicken livers",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "palm",
       "pairs_with": "onion",
       "strength": 1
     }
@@ -198,31 +198,6 @@
       "strength": 1
     },
     {
-      "name": "pudina",
-      "pairs_with": "leaves",
-      "strength": 1
-    },
-    {
-      "name": "pudina salt",
-      "pairs_with": "leaves",
-      "strength": 1
-    },
-    {
-      "name": "cloves cardamom",
-      "pairs_with": "leaves",
-      "strength": 1
-    },
-    {
-      "name": "moringa",
-      "pairs_with": "leaves",
-      "strength": 1
-    },
-    {
-      "name": "leaves mint",
-      "pairs_with": "leaves",
-      "strength": 1
-    },
-    {
       "name": "oil coriander",
       "pairs_with": "leaves",
       "strength": 1
@@ -234,6 +209,31 @@
     },
     {
       "name": "salt coriander",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
+      "name": "cloves cardamom",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
+      "name": "pudina",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
+      "name": "pudina salt",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
+      "name": "leaves mint",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
+      "name": "moringa",
       "pairs_with": "leaves",
       "strength": 1
     }

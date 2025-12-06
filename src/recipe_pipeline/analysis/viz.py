@@ -39,9 +39,9 @@ def _inject_ingredient_controls(html_text: str) -> str:
     panel = """
     <div id="ing-panel">
       <div style="display:flex;gap:8px;align-items:center;justify-content:flex-start;margin-bottom:6px;">
-        <a href="/public/index.html" style="font-size:12px;color:#2563eb;font-weight:700;text-decoration:none;">Cuisine Network</a>
+        <a href="index.html" style="font-size:12px;color:#2563eb;font-weight:700;text-decoration:none;">Cuisine Network</a>
         <span style="color:#cbd5e1;">|</span>
-        <a href="/public/ingredient_network.html" style="font-size:12px;color:#111827;font-weight:700;text-decoration:none;">Ingredient Network</a>
+        <a href="ingredient_network.html" style="font-size:12px;color:#111827;font-weight:700;text-decoration:none;">Ingredient Network</a>
       </div>
       <div style="font-weight:700;font-size:18px;color:#0f172a;margin-bottom:6px;">Ingredient PMI Network</div>
       <div style="font-size:12px;color:#475569;line-height:1.5;margin-bottom:12px;">
@@ -276,7 +276,15 @@ def run(context: PipelineContext, *, force: bool = False) -> StageResult:
     # 3. Ingredient Network (The "Colleague Special")
     if pmi_path.exists() and nodes_path.exists():
         logger.info("Generating Interactive Ingredient Network...")
-        plot_ingredient_network(pmi_path, nodes_path, (viz_dir / "ingredient_network.html").resolve())
+        ing_path = (viz_dir / "ingredient_network.html").resolve()
+        plot_ingredient_network(pmi_path, nodes_path, ing_path)
+        # copy to public for static hosting
+        try:
+            public_dir = Path("public")
+            public_dir.mkdir(parents=True, exist_ok=True)
+            shutil.copy(ing_path, public_dir / "ingredient_network.html")
+        except Exception as exc:
+            logger.warning("Failed to copy ingredient network to public: %s", exc)
             
     return StageResult(
         name="analysis_viz", 

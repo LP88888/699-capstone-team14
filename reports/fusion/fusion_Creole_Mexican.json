@@ -5,68 +5,68 @@
       "name": "andouille sausage",
       "score": 136.18001178705964,
       "connects_a": [
-        "onion powder",
-        "worcestershire sauce",
-        "creole seasoning"
+        "hot sauce",
+        "bell pepper",
+        "rice"
       ],
       "connects_b": [
-        "tomatoes",
-        "onion",
-        "oregano"
+        "bell pepper",
+        "rice",
+        "onion"
       ]
     },
     {
       "name": "celery",
       "score": 119.29538687931095,
       "connects_a": [
-        "onion powder",
-        "worcestershire sauce",
-        "creole seasoning"
+        "hot sauce",
+        "bell pepper",
+        "rice"
       ],
       "connects_b": [
-        "tomatoes",
-        "onion",
-        "oregano"
+        "bell pepper",
+        "rice",
+        "onion"
       ]
     },
     {
       "name": "okra",
       "score": 105.14349906534451,
       "connects_a": [
-        "purpose flour",
-        "worcestershire sauce",
-        "tomatoes"
+        "hot sauce",
+        "bell pepper",
+        "rice"
       ],
       "connects_b": [
-        "tomatoes",
-        "onion",
-        "vegetable oil"
+        "bell pepper",
+        "rice",
+        "onion"
       ]
     },
     {
       "name": "creole seasoning",
       "score": 102.05509356530997,
       "connects_a": [
-        "onion powder",
-        "worcestershire sauce",
-        "tomatoes"
+        "hot sauce",
+        "bell pepper",
+        "rice"
       ],
       "connects_b": [
-        "tomatoes",
-        "oregano",
-        "garlic"
+        "bell pepper",
+        "rice",
+        "tomatoes"
       ]
     },
     {
       "name": "tomato paste",
       "score": 91.58720266729081,
       "connects_a": [
-        "worcestershire sauce",
-        "tomatoes",
-        "onion"
+        "bell pepper",
+        "cayenne pepper",
+        "andouille sausage"
       ],
       "connects_b": [
-        "tomatoes",
+        "bell pepper",
         "cumin",
         "onion"
       ]
@@ -75,14 +75,14 @@
       "name": "cumin",
       "score": 91.54643418955769,
       "connects_a": [
-        "onion powder",
-        "tomatoes",
-        "oregano"
+        "bell pepper",
+        "cayenne pepper",
+        "onion powder"
       ],
       "connects_b": [
-        "beans",
-        "flour tortillas",
-        "tomatoes"
+        "jalapeno",
+        "bell pepper",
+        "beans"
       ]
     },
     {
@@ -90,26 +90,26 @@
       "score": 85.29839015057263,
       "connects_a": [
         "tomatoes",
-        "onion",
-        "oregano"
+        "oregano",
+        "vegetable oil"
       ],
       "connects_b": [
-        "tomatoes",
-        "cumin",
-        "salsa"
+        "cilantro leaves",
+        "jalapeno",
+        "jalapeno peppers"
       ]
     },
     {
       "name": "file powder",
       "score": 84.1706011714233,
       "connects_a": [
-        "purpose flour",
-        "onion powder",
-        "tomatoes"
+        "bell pepper",
+        "shrimp",
+        "cayenne pepper"
       ],
       "connects_b": [
+        "bell pepper",
         "tomatoes",
-        "onion",
         "vegetable oil"
       ]
     },
@@ -117,28 +117,28 @@
       "name": "salsa",
       "score": 80.23440801007621,
       "connects_a": [
-        "tomatoes",
-        "oregano",
-        "bell pepper"
+        "hot sauce",
+        "bell pepper",
+        "tomatoes"
       ],
       "connects_b": [
-        "beans",
-        "flour tortillas",
-        "tomatoes"
+        "jalapeno",
+        "bell pepper",
+        "beans"
       ]
     },
     {
       "name": "tortilla chips",
       "score": 70.16933054654835,
       "connects_a": [
+        "bell pepper",
         "tomatoes",
-        "vegetable oil",
-        "bell pepper"
+        "cream"
       ],
       "connects_b": [
-        "beans",
-        "tomatoes",
-        "cumin"
+        "jalapeno",
+        "bell pepper",
+        "beans"
       ]
     }
   ],
@@ -149,17 +149,17 @@
       "strength": 1
     },
     {
+      "name": "fettuccine",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "basil chiffonade",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
       "name": "littleneck clams",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "fettuccine",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -184,17 +184,52 @@
       "strength": 1
     },
     {
-      "name": "basil chiffonade",
+      "name": "saffron threads",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "saffron threads",
+      "name": "ribs celery",
       "pairs_with": "cloves",
       "strength": 1
     }
   ],
   "novel_from_b": [
+    {
+      "name": "arugula leaves",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pecorino",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "some",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "finely oregano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "porcini mushrooms",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "romano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "for seasoning",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
     {
       "name": "handful pine nuts",
       "pairs_with": "olive oil",
@@ -206,42 +241,7 @@
       "strength": 1
     },
     {
-      "name": "romano",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "palm",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "petite",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "chipotle puree",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "sherry vinegar",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "porcini mushrooms",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "turn",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "squid",
+      "name": "fennel bulb",
       "pairs_with": "olive oil",
       "strength": 1
     }

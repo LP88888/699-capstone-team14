@@ -5,14 +5,14 @@
       "name": "cardamom",
       "score": 30.448968032168068,
       "connects_a": [
-        "leaf",
-        "powder",
-        "oil"
+        "chili powder",
+        "oil",
+        "methi"
       ],
       "connects_b": [
-        "cinnamon",
         "bay leaf",
-        "nutmeg"
+        "nutmeg",
+        "cinnamon"
       ]
     },
     {
@@ -20,12 +20,12 @@
       "score": 24.135669809762263,
       "connects_a": [
         "peas",
-        "potatoes",
+        "chili powder",
         "oil"
       ],
       "connects_b": [
         "bay leaf",
-        "onion",
+        "garlic",
         "vegetable oil"
       ]
     },
@@ -33,12 +33,12 @@
       "name": "beef stock",
       "score": 14.051542259600836,
       "connects_a": [
-        "potatoes",
-        "flour"
+        "flour",
+        "potatoes"
       ],
       "connects_b": [
-        "carrot",
-        "wine",
+        "bread",
+        "thyme",
         "bay leaf"
       ]
     },
@@ -46,13 +46,13 @@
       "name": "sprigs thyme",
       "score": 14.029784294005541,
       "connects_a": [
-        "potatoes",
-        "leaves"
+        "leaves",
+        "potatoes"
       ],
       "connects_b": [
-        "lemon",
-        "carrot",
-        "wine"
+        "shallots",
+        "bay leaf",
+        "carrot"
       ]
     },
     {
@@ -63,9 +63,9 @@
         "chili powder"
       ],
       "connects_b": [
-        "nutmeg",
-        "kosher sea salt",
-        "bay leaf"
+        "thyme",
+        "bay leaf",
+        "kosher sea salt"
       ]
     },
     {
@@ -73,7 +73,7 @@
       "score": 12.033968712596234,
       "connects_a": [
         "peas",
-        "potatoes",
+        "chili powder",
         "oil"
       ],
       "connects_b": [
@@ -86,14 +86,14 @@
       "name": "coriander powder",
       "score": 12.023432285301169,
       "connects_a": [
+        "chili powder",
         "leaves",
-        "oil",
-        "chili powder"
+        "oil"
       ],
       "connects_b": [
         "garlic",
-        "onion",
-        "leaves"
+        "leaves",
+        "cinnamon"
       ]
     },
     {
@@ -103,18 +103,18 @@
         "flour"
       ],
       "connects_b": [
+        "1",
         "purpose flour",
-        "butter",
-        "nutmeg"
+        "flour"
       ]
     },
     {
       "name": "carom",
       "score": 10.016921211824169,
       "connects_a": [
-        "fenugreek",
-        "powder",
-        "seeds"
+        "jeera coriander",
+        "oil",
+        "methi"
       ],
       "connects_b": [
         "flour"
@@ -124,34 +124,34 @@
       "name": "coriander seeds",
       "score": 10.014065602328206,
       "connects_a": [
-        "oil",
-        "chili powder"
+        "chili powder",
+        "oil"
       ],
       "connects_b": [
-        "wine vinegar",
-        "kosher sea salt",
-        "cinnamon"
+        "shallots",
+        "bay leaf",
+        "kosher sea salt"
       ]
     }
   ],
   "novel_from_a": [
-    {
-      "name": "maida sooji",
-      "pairs_with": "flour",
-      "strength": 1
-    },
     {
       "name": "carom",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "water coriander",
+      "name": "maida sooji",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "oil coriander",
       "pairs_with": "leaves",
       "strength": 1
     },
     {
-      "name": "cloves cardamom",
+      "name": "water coriander",
       "pairs_with": "leaves",
       "strength": 1
     },
@@ -161,24 +161,19 @@
       "strength": 1
     },
     {
-      "name": "oil coriander",
+      "name": "salt coriander",
       "pairs_with": "leaves",
       "strength": 1
     },
     {
-      "name": "salt coriander",
+      "name": "cloves cardamom",
       "pairs_with": "leaves",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "olive",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "black",
+      "name": "leaves whole",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -188,17 +183,22 @@
       "strength": 1
     },
     {
+      "name": "onion coriander",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
       "name": "sooji",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "leaves whole",
+      "name": "black",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "button",
+      "name": "olive",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -208,7 +208,7 @@
       "strength": 1
     },
     {
-      "name": "onion coriander",
+      "name": "button",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -218,7 +218,7 @@
       "strength": 1
     },
     {
-      "name": "black",
+      "name": "french",
       "pairs_with": "powder",
       "strength": 1
     }

@@ -5,14 +5,14 @@
       "name": "cardamom",
       "score": 30.448968032168068,
       "connects_a": [
-        "leaf",
-        "powder",
-        "oil"
+        "chili powder",
+        "oil",
+        "methi"
       ],
       "connects_b": [
-        "cinnamon",
         "bay leaf",
-        "nutmeg"
+        "nutmeg",
+        "cinnamon"
       ]
     },
     {
@@ -20,13 +20,13 @@
       "score": 28.15828144472264,
       "connects_a": [
         "peas",
-        "potatoes",
+        "chili powder",
         "oil"
       ],
       "connects_b": [
         "bay leaf",
-        "onion",
-        "vegetable oil"
+        "potatoes",
+        "garlic"
       ]
     },
     {
@@ -34,13 +34,13 @@
       "score": 16.04529161679498,
       "connects_a": [
         "peas",
-        "potatoes",
+        "chili powder",
         "oil"
       ],
       "connects_b": [
         "garlic",
-        "potatoes",
-        "onion"
+        "onion",
+        "potatoes"
       ]
     },
     {
@@ -48,53 +48,53 @@
       "score": 16.01246149451224,
       "connects_a": [
         "peas",
-        "potatoes",
+        "chili powder",
         "oil"
       ],
       "connects_b": [
-        "potatoes",
+        "vegetable oil",
         "wine vinegar",
-        "cider vinegar"
+        "potatoes"
       ]
     },
     {
       "name": "beef stock",
       "score": 12.04417907965786,
       "connects_a": [
-        "potatoes",
-        "flour"
+        "flour",
+        "potatoes"
       ],
       "connects_b": [
-        "carrot",
-        "wine",
-        "bay leaf"
+        "bay leaf",
+        "flour",
+        "carrot"
       ]
     },
     {
       "name": "sprigs thyme",
       "score": 12.025529394861893,
       "connects_a": [
-        "potatoes",
-        "leaves"
+        "leaves",
+        "potatoes"
       ],
       "connects_b": [
+        "bay leaf",
         "carrot",
-        "wine",
-        "bay leaf"
+        "potatoes"
       ]
     },
     {
       "name": "coriander powder",
       "score": 12.023432285301169,
       "connects_a": [
+        "chili powder",
         "leaves",
-        "oil",
-        "chili powder"
+        "oil"
       ],
       "connects_b": [
         "garlic",
-        "onion",
-        "leaves"
+        "leaves",
+        "cinnamon"
       ]
     },
     {
@@ -102,13 +102,13 @@
       "score": 12.006671290755316,
       "connects_a": [
         "peas",
-        "potatoes",
+        "chili powder",
         "oil"
       ],
       "connects_b": [
-        "cinnamon",
+        "bay leaf",
         "potatoes",
-        "bay leaf"
+        "cinnamon"
       ]
     },
     {
@@ -119,18 +119,18 @@
         "chili powder"
       ],
       "connects_b": [
-        "cider vinegar",
+        "bay leaf",
         "nutmeg",
-        "cinnamon"
+        "cloves"
       ]
     },
     {
       "name": "carom",
       "score": 10.016921211824169,
       "connects_a": [
-        "fenugreek",
-        "powder",
-        "seeds"
+        "jeera coriander",
+        "oil",
+        "methi"
       ],
       "connects_b": [
         "flour"
@@ -159,7 +159,7 @@
       "strength": 1
     },
     {
-      "name": "maida sooji",
+      "name": "sugar whole",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -174,12 +174,12 @@
       "strength": 1
     },
     {
-      "name": "wheat",
+      "name": "maida sooji",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "sugar whole",
+      "name": "wheat",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -191,12 +191,12 @@
   ],
   "novel_from_b": [
     {
-      "name": "fruit",
+      "name": "french",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "french",
+      "name": "fruit",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -206,22 +206,17 @@
       "strength": 1
     },
     {
-      "name": "shortening",
+      "name": "cold butter",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "vanilla sugar",
+      "name": "applesauce",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "yeast",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "chocolate chips",
+      "name": "ice water",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -231,12 +226,17 @@
       "strength": 1
     },
     {
-      "name": "filling",
+      "name": "shortening",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "ice water",
+      "name": "yeast",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "buttermilk",
       "pairs_with": "flour",
       "strength": 1
     }

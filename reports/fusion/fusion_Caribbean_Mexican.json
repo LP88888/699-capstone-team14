@@ -5,28 +5,28 @@
       "name": "cumin",
       "score": 137.31965128433652,
       "connects_a": [
-        "coconut milk",
         "plantains",
-        "cilantro"
+        "coconut milk",
+        "bell pepper"
       ],
       "connects_b": [
-        "beans",
-        "flour tortillas",
-        "tomatoes"
+        "jalapeno",
+        "bell pepper",
+        "beans"
       ]
     },
     {
       "name": "corn tortillas",
       "score": 136.4774242409162,
       "connects_a": [
+        "cilantro leaves",
         "cumin",
-        "onion",
-        "vegetable oil"
+        "lime juice"
       ],
       "connects_b": [
-        "tomatoes",
-        "cumin",
-        "salsa"
+        "cilantro leaves",
+        "jalapeno",
+        "jalapeno peppers"
       ]
     },
     {
@@ -34,41 +34,41 @@
       "score": 128.37505281612192,
       "connects_a": [
         "scallions",
-        "cumin",
-        "cilantro"
+        "cilantro leaves",
+        "bell pepper"
       ],
       "connects_b": [
-        "beans",
-        "flour tortillas",
-        "tomatoes"
+        "jalapeno",
+        "bell pepper",
+        "beans"
       ]
     },
     {
       "name": "chiles",
       "score": 117.55840148790989,
       "connects_a": [
+        "cilantro leaves",
         "coconut milk",
-        "cumin",
-        "vegetable oil"
+        "cumin"
       ],
       "connects_b": [
-        "flour tortillas",
-        "chicken breasts",
-        "cumin"
+        "cilantro leaves",
+        "cumin",
+        "corn tortillas"
       ]
     },
     {
       "name": "tortilla chips",
       "score": 112.27092887447736,
       "connects_a": [
-        "cumin",
-        "vegetable oil",
-        "cilantro"
+        "cilantro leaves",
+        "bell pepper",
+        "cumin"
       ],
       "connects_b": [
-        "beans",
-        "tomatoes",
-        "cumin"
+        "jalapeno",
+        "bell pepper",
+        "beans"
       ]
     },
     {
@@ -76,26 +76,26 @@
       "score": 112.10956044185015,
       "connects_a": [
         "scallions",
-        "cumin",
-        "cilantro"
+        "cilantro leaves",
+        "bell pepper"
       ],
       "connects_b": [
-        "beans",
-        "flour tortillas",
-        "tomatoes"
+        "cilantro leaves",
+        "bell pepper",
+        "rice"
       ]
     },
     {
       "name": "chipotle pepper",
       "score": 104.09479643268412,
       "connects_a": [
-        "honey",
+        "cilantro leaves",
         "cumin",
-        "kosher sea salt"
+        "honey"
       ],
       "connects_b": [
-        "chicken stock",
-        "flour tortillas",
+        "cilantro leaves",
+        "jalapeno",
         "cumin"
       ]
     },
@@ -103,14 +103,14 @@
       "name": "limes",
       "score": 100.15898398195692,
       "connects_a": [
-        "coconut milk",
         "scallions",
-        "cumin"
+        "coconut milk",
+        "cilantro leaves"
       ],
       "connects_b": [
-        "flour tortillas",
-        "cumin",
-        "jalapeno"
+        "cilantro leaves",
+        "jalapeno",
+        "cumin"
       ]
     },
     {
@@ -118,12 +118,12 @@
       "score": 96.2515825409641,
       "connects_a": [
         "scallions",
-        "cumin",
-        "cilantro"
+        "cilantro leaves",
+        "bell pepper"
       ],
       "connects_b": [
-        "flour tortillas",
-        "corn",
+        "cilantro leaves",
+        "bell pepper",
         "cumin"
       ]
     },
@@ -131,40 +131,20 @@
       "name": "cilantro",
       "score": 91.52758632871887,
       "connects_a": [
-        "coconut milk",
         "scallions",
-        "lime juice"
+        "coconut milk",
+        "plantains"
       ],
       "connects_b": [
+        "jalapeno",
         "beans",
-        "flour tortillas",
-        "corn"
+        "cumin"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "oregano leaves",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "basil chiffonade",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "cubanelle peppers",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "bunch kale",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "hearts",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -174,12 +154,22 @@
       "strength": 1
     },
     {
+      "name": "oregano leaves",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "hearts",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "pinch saffron",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "by hand",
+      "name": "basil chiffonade",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -189,39 +179,44 @@
       "strength": 1
     },
     {
-      "name": "stalk lemongrass",
+      "name": "bunch kale",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "by hand",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "scotch bonnet peppers",
       "pairs_with": "cloves",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "handful pine nuts",
+      "name": "arugula leaves",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pass",
+      "name": "pecorino",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "romano",
+      "name": "some",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "heads garlic",
+      "name": "arugula",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "palm",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "petite",
+      "name": "finely oregano",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -231,17 +226,22 @@
       "strength": 1
     },
     {
-      "name": "turn",
+      "name": "romano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "squid",
+      "name": "for seasoning",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "beefsteak tomatoes",
+      "name": "handful pine nuts",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pass",
       "pairs_with": "olive oil",
       "strength": 1
     }

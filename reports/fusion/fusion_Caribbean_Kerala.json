@@ -7,12 +7,12 @@
       "connects_a": [
         "coconut milk",
         "cumin",
-        "onion"
+        "ginger"
       ],
       "connects_b": [
-        "oil",
-        "onion",
-        "chili powder"
+        "cumin seeds",
+        "chili powder",
+        "oil"
       ]
     },
     {
@@ -20,13 +20,13 @@
       "score": 40.039128729232196,
       "connects_a": [
         "scallions",
-        "cumin",
-        "cilantro"
+        "cilantro leaves",
+        "bell pepper"
       ],
       "connects_b": [
-        "beans",
-        "mango",
-        "rice"
+        "cumin seeds",
+        "chili powder",
+        "mango"
       ]
     },
     {
@@ -35,26 +35,26 @@
       "connects_a": [
         "coconut milk",
         "pineapple",
-        "cilantro"
+        "lime juice"
       ],
       "connects_b": [
+        "wheat",
         "fenugreek",
-        "powder",
-        "seeds"
+        "dhania"
       ]
     },
     {
       "name": "cardamom",
       "score": 32.47889923431261,
       "connects_a": [
+        "ginger",
         "cumin",
-        "allspice",
-        "cinnamon"
+        "allspice"
       ],
       "connects_b": [
-        "powder",
-        "oil",
-        "chilli"
+        "cumin seeds",
+        "chili powder",
+        "oil"
       ]
     },
     {
@@ -62,13 +62,13 @@
       "score": 30.08492178149059,
       "connects_a": [
         "cumin",
-        "onion",
-        "cinnamon"
+        "ginger",
+        "garlic"
       ],
       "connects_b": [
-        "oil",
-        "onion",
-        "chili powder"
+        "cumin seeds",
+        "chili powder",
+        "oil"
       ]
     },
     {
@@ -76,22 +76,22 @@
       "score": 30.058580713252926,
       "connects_a": [
         "cumin",
-        "cinnamon",
-        "onion"
+        "ginger",
+        "garlic"
       ],
       "connects_b": [
-        "oil",
-        "onion",
-        "leaves"
+        "cumin seeds",
+        "chili powder",
+        "oil"
       ]
     },
     {
       "name": "cilantro",
       "score": 28.16233425499042,
       "connects_a": [
-        "coconut milk",
         "scallions",
-        "lime juice"
+        "coconut milk",
+        "plantains"
       ],
       "connects_b": [
         "cumin seeds",
@@ -103,27 +103,27 @@
       "name": "cumin",
       "score": 27.463930256867304,
       "connects_a": [
-        "coconut milk",
         "plantains",
-        "cilantro"
+        "coconut milk",
+        "bell pepper"
       ],
       "connects_b": [
         "cumin seeds",
-        "beans",
-        "chili powder"
+        "chili powder",
+        "beans"
       ]
     },
     {
       "name": "turmeric",
       "score": 24.046523788447658,
       "connects_a": [
+        "cilantro leaves",
         "coconut milk",
-        "cumin",
-        "vegetable oil"
+        "cumin"
       ],
       "connects_b": [
-        "peas",
         "cumin seeds",
+        "chili powder",
         "oil"
       ]
     },
@@ -133,16 +133,21 @@
       "connects_a": [
         "coconut milk",
         "cumin",
-        "vegetable oil"
+        "ginger"
       ],
       "connects_b": [
-        "peas",
         "cumin seeds",
+        "chili powder",
         "oil"
       ]
     }
   ],
   "novel_from_a": [
+    {
+      "name": "bell",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
     {
       "name": "cardamom",
       "pairs_with": "dhania",
@@ -154,17 +159,7 @@
       "strength": 1
     },
     {
-      "name": "bell",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "beef broth",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "crawfish",
+      "name": "roasted tomatoes",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -174,12 +169,17 @@
       "strength": 1
     },
     {
-      "name": "bay leaf",
+      "name": "garam masala",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "oxtails",
+      "name": "beef chuck",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "cubanelle peppers",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -189,7 +189,7 @@
       "strength": 1
     },
     {
-      "name": "beef chuck",
+      "name": "scotch bonnet peppers",
       "pairs_with": "onion",
       "strength": 1
     }
@@ -226,22 +226,22 @@
       "strength": 1
     },
     {
-      "name": "noodles",
-      "pairs_with": "ginger",
-      "strength": 1
-    },
-    {
       "name": "chili oil",
       "pairs_with": "ginger",
       "strength": 1
     },
     {
-      "name": "ragi",
-      "pairs_with": "flour",
+      "name": "noodles",
+      "pairs_with": "ginger",
       "strength": 1
     },
     {
       "name": "flour all",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "ragi",
       "pairs_with": "flour",
       "strength": 1
     }

@@ -5,42 +5,42 @@
       "name": "tomato paste",
       "score": 112.72271097512716,
       "connects_a": [
+        "bay leaf",
         "carrot",
-        "wine",
-        "onion"
+        "parsley"
       ],
       "connects_b": [
-        "carrot",
-        "worcestershire sauce",
-        "beef broth"
+        "beef broth",
+        "beef",
+        "bell pepper"
       ]
     },
     {
       "name": "celery",
       "score": 84.20850838539597,
       "connects_a": [
-        "carrot",
+        "bacon",
         "bay leaf",
-        "onion"
+        "carrot"
       ],
       "connects_b": [
-        "tomato paste",
-        "carrot",
-        "worcestershire sauce"
+        "beef broth",
+        "bell pepper",
+        "bay leaf"
       ]
     },
     {
       "name": "beef broth",
       "score": 78.09113165649515,
       "connects_a": [
+        "bay leaf",
         "carrot",
-        "wine",
-        "bay leaf"
+        "potatoes"
       ],
       "connects_b": [
-        "tomato paste",
-        "carrot",
-        "worcestershire sauce"
+        "mushrooms",
+        "beef",
+        "noodles"
       ]
     },
     {
@@ -48,12 +48,12 @@
       "score": 77.43527397298726,
       "connects_a": [
         "bay leaf",
-        "onion",
-        "vegetable oil"
+        "potatoes",
+        "garlic"
       ],
       "connects_b": [
-        "chicken",
-        "tomato paste",
+        "oil",
+        "bay leaf",
         "tomatoes"
       ]
     },
@@ -61,84 +61,84 @@
       "name": "ribs celery",
       "score": 72.52472813718039,
       "connects_a": [
+        "bay leaf",
         "carrot",
-        "wine",
-        "bay leaf"
+        "parsley"
       ],
       "connects_b": [
-        "chicken",
-        "tomato paste",
-        "carrot"
+        "bell pepper",
+        "bay leaf",
+        "thyme"
       ]
     },
     {
       "name": "beef stock",
       "score": 72.26507447794717,
       "connects_a": [
-        "carrot",
-        "wine",
-        "bay leaf"
+        "bay leaf",
+        "flour",
+        "carrot"
       ],
       "connects_b": [
-        "tomato paste",
-        "carrot",
-        "worcestershire sauce"
+        "mushrooms",
+        "beef",
+        "bay leaf"
       ]
     },
     {
       "name": "can tomatoes",
       "score": 65.38258403177709,
       "connects_a": [
-        "wine",
         "bay leaf",
-        "onion"
+        "parsley",
+        "cloves"
       ],
       "connects_b": [
-        "chicken",
-        "tomato paste",
-        "worcestershire sauce"
+        "beef broth",
+        "beef",
+        "bell pepper"
       ]
     },
     {
       "name": "confectioners",
       "score": 65.33903274929074,
       "connects_a": [
-        "purpose flour",
+        "milk",
         "cocoa powder",
-        "butter"
+        "2"
       ],
       "connects_b": [
+        "milk",
         "purpose flour",
-        "butter",
-        "milk"
+        "cream"
       ]
     },
     {
       "name": "vanilla extract",
       "score": 60.962692176467755,
       "connects_a": [
-        "purpose flour",
+        "milk",
         "cocoa powder",
-        "butter"
+        "apples"
       ],
       "connects_b": [
+        "milk",
         "purpose flour",
-        "butter",
-        "milk"
+        "cream"
       ]
     },
     {
       "name": "celery ribs",
       "score": 60.04590771368009,
       "connects_a": [
+        "bay leaf",
         "carrot",
-        "wine",
-        "bay leaf"
+        "parsley"
       ],
       "connects_b": [
-        "tomato paste",
-        "carrot",
-        "worcestershire sauce"
+        "beef",
+        "bell pepper",
+        "bay leaf"
       ]
     }
   ],
@@ -149,7 +149,7 @@
       "strength": 1
     },
     {
-      "name": "ribs celery",
+      "name": "montreal steak",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -159,7 +159,7 @@
       "strength": 1
     },
     {
-      "name": "montreal steak",
+      "name": "ribs celery",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -169,32 +169,42 @@
       "strength": 1
     },
     {
-      "name": "dutch process",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "bosc pears",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
       "name": "raspberry jam",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "phyllo dough",
+      "name": "room temp",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "muscovado sugar",
+      "name": "percent milk",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "confectioners",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "cake flour",
       "pairs_with": "butter",
       "strength": 1
     }
   ],
   "novel_from_b": [
+    {
+      "name": "pasta",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "[extra",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
     {
       "name": "anchovy fillets",
       "pairs_with": "olive oil",
@@ -206,17 +216,7 @@
       "strength": 1
     },
     {
-      "name": "[extra",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "piquillo peppers",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pasta",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -226,22 +226,22 @@
       "strength": 1
     },
     {
-      "name": "sirloin",
+      "name": "stock",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "allspice berries",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "chiles",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
       "name": "chile",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "plum tomatoes",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "stock",
       "pairs_with": "cloves",
       "strength": 1
     }

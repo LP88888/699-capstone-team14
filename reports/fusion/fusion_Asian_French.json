@@ -5,12 +5,12 @@
       "name": "bean sprouts",
       "score": 92.19523311692403,
       "connects_a": [
-        "carrot",
-        "fish sauce",
-        "ginger"
+        "rice vinegar",
+        "scallions",
+        "hoisin sauce"
       ],
       "connects_b": [
-        "wine vinegar",
+        "vegetable oil",
         "shallots",
         "carrot"
       ]
@@ -19,13 +19,13 @@
       "name": "inch piece",
       "score": 68.20342067441891,
       "connects_a": [
-        "wine vinegar",
-        "peanut oil",
+        "scallions",
+        "mushrooms",
         "sesame oil"
       ],
       "connects_b": [
-        "wine vinegar",
         "cloves",
+        "more",
         "carrot"
       ]
     },
@@ -33,55 +33,55 @@
       "name": "fish sauce",
       "score": 57.56040889434903,
       "connects_a": [
-        "carrot",
-        "ginger",
-        "lime juice"
+        "rice vinegar",
+        "scallions",
+        "hoisin sauce"
       ],
       "connects_b": [
-        "shallots",
+        "vegetable oil",
         "carrot",
-        "vegetable oil"
+        "shallots"
       ]
     },
     {
       "name": "ribs celery",
       "score": 49.35710664891443,
       "connects_a": [
-        "carrot",
         "scallions",
-        "onion"
+        "bell pepper",
+        "shrimp"
       ],
       "connects_b": [
-        "carrot",
-        "wine",
-        "onion"
+        "thyme",
+        "bay leaf",
+        "carrot"
       ]
     },
     {
       "name": "shiitake",
       "score": 48.035584090707864,
       "connects_a": [
-        "peanut oil",
-        "sesame oil",
-        "carrot"
+        "scallions",
+        "mushrooms",
+        "sesame oil"
       ],
       "connects_b": [
-        "shallots",
+        "thyme",
         "carrot",
-        "thyme"
+        "shallots"
       ]
     },
     {
       "name": "peeled ginger",
       "score": 48.02715405310887,
       "connects_a": [
-        "peanut oil",
+        "scallions",
         "sesame oil",
-        "carrot"
+        "hoisin sauce"
       ],
       "connects_b": [
+        "vegetable oil",
         "1",
-        "more",
         "carrot"
       ]
     },
@@ -89,92 +89,62 @@
       "name": "confectioners",
       "score": 45.234714980278206,
       "connects_a": [
-        "cornstarch",
+        "2",
         "egg",
-        "2"
+        "cornstarch"
       ],
       "connects_b": [
-        "purpose flour",
-        "chocolate",
-        "butter"
+        "milk",
+        "1",
+        "maple syrup"
       ]
     },
     {
       "name": "chiles",
       "score": 44.209997140752435,
       "connects_a": [
-        "peanut oil",
-        "2",
-        "ginger"
+        "rice vinegar",
+        "fish sauce",
+        "2"
       ],
       "connects_b": [
-        "shallots",
-        "cloves",
-        "2"
+        "2",
+        "vegetable oil",
+        "cloves"
       ]
     },
     {
       "name": "mussels",
       "score": 42.252943726202304,
       "connects_a": [
-        "olive oil",
         "bell pepper",
-        "rice"
+        "rice",
+        "shrimp"
       ],
       "connects_b": [
-        "wine",
+        "shallots",
         "bay leaf",
-        "olive oil"
+        "parsley"
       ]
     },
     {
       "name": "head",
       "score": 42.183819069524354,
       "connects_a": [
-        "wine vinegar",
-        "carrot",
-        "scallions"
+        "scallions",
+        "shrimp",
+        "fish sauce"
       ],
       "connects_b": [
-        "wine vinegar",
-        "dijon mustard",
-        "lemon"
+        "shallots",
+        "carrot",
+        "kosher sea salt"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "bunch kale",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pass",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "center cut",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "chipotle puree",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "basil chiffonade",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "brussels sprouts",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "broccoli rabe",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -184,19 +154,54 @@
       "strength": 1
     },
     {
+      "name": "montreal steak",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pass",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "bunch kale",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "broccoli rabe",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "squid",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "hearts",
+      "name": "center cut",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "littleneck clams",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "brussels sprouts",
       "pairs_with": "olive oil",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "marzano",
+      "name": "roasted tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "grigio",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -206,32 +211,7 @@
       "strength": 1
     },
     {
-      "name": "morel mushrooms",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "romano",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "palm",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "petite",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "anchovy fillets",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "clam broth",
+      "name": "cannellini beans",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -241,7 +221,27 @@
       "strength": 1
     },
     {
-      "name": "cannellini",
+      "name": "romano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "morel mushrooms",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "capers",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "anchovy fillets",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "roma",
       "pairs_with": "olive oil",
       "strength": 1
     }

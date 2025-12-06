@@ -5,14 +5,14 @@
       "name": "cumin",
       "score": 91.54643418955769,
       "connects_a": [
-        "greek yogurt",
-        "tomatoes",
-        "yogurt"
+        "bell pepper",
+        "yogurt",
+        "tomatoes"
       ],
       "connects_b": [
-        "beans",
-        "flour tortillas",
-        "tomatoes"
+        "jalapeno",
+        "bell pepper",
+        "beans"
       ]
     },
     {
@@ -20,25 +20,25 @@
       "score": 85.29839015057263,
       "connects_a": [
         "tomatoes",
-        "onion",
-        "oregano"
+        "oregano",
+        "more"
       ],
       "connects_b": [
-        "tomatoes",
-        "cumin",
-        "salsa"
+        "cilantro leaves",
+        "jalapeno",
+        "jalapeno peppers"
       ]
     },
     {
       "name": "garam masala",
       "score": 81.45788560794763,
       "connects_a": [
-        "greek yogurt",
-        "tomatoes",
-        "yogurt"
+        "spinach",
+        "yogurt",
+        "tomatoes"
       ],
       "connects_b": [
-        "tomatoes",
+        "jalapeno peppers",
         "cumin",
         "onion"
       ]
@@ -47,84 +47,84 @@
       "name": "oregano",
       "score": 72.40333124383577,
       "connects_a": [
-        "feta cheese",
-        "wine vinegar",
-        "kalamata olives"
+        "bell pepper",
+        "olives",
+        "cheese crumbles"
       ],
       "connects_b": [
-        "flour tortillas",
-        "tomatoes",
-        "cumin"
+        "bell pepper",
+        "cumin",
+        "corn tortillas"
       ]
     },
     {
       "name": "salsa",
       "score": 64.18752640806096,
       "connects_a": [
+        "oregano",
         "bell pepper",
-        "tomatoes",
-        "chicken breasts"
+        "tomatoes"
       ],
       "connects_b": [
-        "beans",
-        "flour tortillas",
-        "tomatoes"
+        "jalapeno",
+        "bell pepper",
+        "beans"
       ]
     },
     {
       "name": "cucumber",
       "score": 56.08423141770763,
       "connects_a": [
-        "feta cheese",
-        "wine vinegar",
-        "kalamata olives"
+        "cherry tomatoes",
+        "olives",
+        "dill"
       ],
       "connects_b": [
-        "tomatoes",
-        "lime",
-        "oregano"
+        "oregano",
+        "avocado",
+        "tomatoes"
       ]
     },
     {
       "name": "cilantro",
       "score": 52.301477902125065,
       "connects_a": [
+        "mint",
         "yogurt",
-        "chicken breasts",
-        "greek yogurt"
+        "chicken breasts"
       ],
       "connects_b": [
+        "jalapeno",
         "beans",
-        "flour tortillas",
-        "corn"
+        "cumin"
       ]
     },
     {
       "name": "romaine",
       "score": 50.034172712826155,
       "connects_a": [
-        "feta cheese",
-        "wine vinegar",
-        "lemon"
+        "olives",
+        "cheese crumbles",
+        "kalamata olives"
       ],
       "connects_b": [
-        "oregano",
         "cilantro leaves",
-        "lime"
+        "oregano",
+        "chicken breasts"
       ]
     },
     {
       "name": "andouille sausage",
       "score": 48.0635335719034,
       "connects_a": [
+        "bell pepper",
         "tomatoes",
-        "onion",
         "oregano"
       ],
       "connects_b": [
-        "tomatoes",
-        "onion",
-        "oregano"
+        "bell pepper",
+        "rice",
+        "onion"
       ]
     },
     {
@@ -132,39 +132,24 @@
       "score": 45.194024290751585,
       "connects_a": [
         "yogurt",
-        "cloves",
+        "grain sea salt",
         "mint"
       ],
       "connects_b": [
-        "flour tortillas",
+        "cilantro leaves",
         "cumin",
-        "vegetable oil"
+        "corn tortillas"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "pepperoncini peppers",
+      "name": "kalamata olives",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "san marzano",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "for drizzling",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "anchovy paste",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "oregano leaves",
+      "name": "montreal steak",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -174,7 +159,7 @@
       "strength": 1
     },
     {
-      "name": "marzano",
+      "name": "linguine",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -184,19 +169,34 @@
       "strength": 1
     },
     {
+      "name": "head fennel",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "parma",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "piquillo peppers",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pasta",
+      "name": "oregano leaves",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "hearts",
       "pairs_with": "olive oil",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "chipotle puree",
+      "name": "mussels",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -206,17 +206,12 @@
       "strength": 1
     },
     {
-      "name": "mussels",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "for seasoning",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "pass",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "chipotle puree",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -226,22 +221,27 @@
       "strength": 1
     },
     {
+      "name": "for seasoning",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "chipotle chile",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "herbes",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "tuttorosso",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
       "name": "snapper fillets",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "chipotle puree",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "or finely",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "bundle",
       "pairs_with": "cloves",
       "strength": 1
     }

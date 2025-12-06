@@ -5,41 +5,41 @@
       "name": "garam masala",
       "score": 55.31090998070518,
       "connects_a": [
-        "tomatoes",
         "cumin",
+        "cayenne pepper",
         "onion"
       ],
       "connects_b": [
+        "chili powder",
         "oil",
-        "turmeric",
-        "potatoes"
+        "turmeric"
       ]
     },
     {
       "name": "chili powder",
       "score": 45.523715806608344,
       "connects_a": [
-        "ketchup",
-        "onion powder",
-        "worcestershire sauce"
+        "cumin",
+        "cayenne pepper",
+        "ketchup"
       ],
       "connects_b": [
         "oil",
-        "turmeric",
-        "jeera coriander"
+        "jeera coriander",
+        "turmeric"
       ]
     },
     {
       "name": "tumeric",
       "score": 32.09058323358996,
       "connects_a": [
-        "tomatoes",
         "cumin",
+        "cayenne pepper",
         "onion"
       ],
       "connects_b": [
         "peas",
-        "potatoes",
+        "chili powder",
         "oil"
       ]
     },
@@ -47,28 +47,28 @@
       "name": "cumin seeds",
       "score": 30.03701535588108,
       "connects_a": [
-        "tomatoes",
         "cumin",
-        "cilantro"
+        "tomatoes",
+        "ginger"
       ],
       "connects_b": [
-        "oil",
+        "chili powder",
         "turmeric",
-        "potatoes"
+        "oil"
       ]
     },
     {
       "name": "mustard seeds",
       "score": 30.02336530221045,
       "connects_a": [
-        "tomatoes",
         "cumin",
-        "vegetable oil"
+        "tomatoes",
+        "ginger"
       ],
       "connects_b": [
-        "oil",
+        "chili powder",
         "turmeric",
-        "potatoes"
+        "oil"
       ]
     },
     {
@@ -76,13 +76,13 @@
       "score": 25.26671040031107,
       "connects_a": [
         "soy sauce",
-        "cilantro",
-        "lime"
+        "ginger",
+        "chicken breasts"
       ],
       "connects_b": [
-        "rai",
+        "dal",
         "gram",
-        "coconut"
+        "dhania"
       ]
     },
     {
@@ -90,13 +90,13 @@
       "score": 25.009471587428973,
       "connects_a": [
         "soy sauce",
-        "cilantro",
+        "ginger",
         "garlic"
       ],
       "connects_b": [
-        "turmeric",
+        "chili powder",
         "oil",
-        "peanuts"
+        "turmeric"
       ]
     },
     {
@@ -105,10 +105,10 @@
       "connects_a": [
         "cumin",
         "pineapple",
-        "cilantro"
+        "ginger"
       ],
       "connects_b": [
-        "peanuts",
+        "mango",
         "turmeric",
         "coconut"
       ]
@@ -117,28 +117,28 @@
       "name": "coriander powder",
       "score": 24.046864570602338,
       "connects_a": [
-        "tomatoes",
         "cumin",
-        "onion"
+        "tomatoes",
+        "ginger"
       ],
       "connects_b": [
-        "leaves",
-        "turmeric",
-        "oil"
+        "oil",
+        "chili powder",
+        "leaves"
       ]
     },
     {
       "name": "turmeric",
       "score": 24.046523788447658,
       "connects_a": [
-        "tomatoes",
         "cumin",
-        "vegetable oil"
+        "tomatoes",
+        "ginger"
       ],
       "connects_b": [
         "peas",
-        "oil",
-        "coconut"
+        "chili powder",
+        "oil"
       ]
     }
   ],
@@ -154,12 +154,12 @@
       "strength": 1
     },
     {
-      "name": "paprika",
+      "name": "yoghurt",
       "pairs_with": "chili powder",
       "strength": 1
     },
     {
-      "name": "worcestershire sauce",
+      "name": "cider vinegar",
       "pairs_with": "chili powder",
       "strength": 1
     },
@@ -169,27 +169,27 @@
       "strength": 1
     },
     {
-      "name": "ketchup",
-      "pairs_with": "chili powder",
-      "strength": 1
-    },
-    {
       "name": "jalapenos",
       "pairs_with": "chili powder",
       "strength": 1
     },
     {
-      "name": "onion powder",
+      "name": "cumin",
       "pairs_with": "chili powder",
       "strength": 1
     },
     {
-      "name": "molasses",
+      "name": "paprika",
       "pairs_with": "chili powder",
       "strength": 1
     },
     {
-      "name": "cayenne pepper",
+      "name": "flour tortillas",
+      "pairs_with": "chili powder",
+      "strength": 1
+    },
+    {
+      "name": "cilantro",
       "pairs_with": "chili powder",
       "strength": 1
     }
@@ -216,12 +216,12 @@
       "strength": 1
     },
     {
-      "name": "cardamom",
+      "name": "spring onions",
       "pairs_with": "ginger",
       "strength": 1
     },
     {
-      "name": "spring onions",
+      "name": "cardamom",
       "pairs_with": "ginger",
       "strength": 1
     },

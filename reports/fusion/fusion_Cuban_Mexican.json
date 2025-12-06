@@ -5,70 +5,70 @@
       "name": "cumin",
       "score": 183.09286837911537,
       "connects_a": [
-        "beans",
-        "tomatoes",
-        "plantains"
+        "plantains",
+        "dill pickles",
+        "bell pepper"
       ],
       "connects_b": [
-        "beans",
-        "flour tortillas",
-        "tomatoes"
+        "jalapeno",
+        "bell pepper",
+        "beans"
       ]
     },
     {
       "name": "corn tortillas",
       "score": 153.53710227103073,
       "connects_a": [
-        "tomatoes",
         "cumin",
-        "onion"
+        "tomatoes",
+        "lime juice"
       ],
       "connects_b": [
-        "tomatoes",
-        "cumin",
-        "salsa"
+        "cilantro leaves",
+        "jalapeno",
+        "jalapeno peppers"
       ]
     },
     {
       "name": "salsa",
       "score": 128.37505281612192,
       "connects_a": [
+        "bell pepper",
         "beans",
-        "tomatoes",
         "cumin"
       ],
       "connects_b": [
-        "beans",
-        "flour tortillas",
-        "tomatoes"
+        "jalapeno",
+        "bell pepper",
+        "beans"
       ]
     },
     {
       "name": "tortilla chips",
       "score": 112.27092887447736,
       "connects_a": [
+        "bell pepper",
         "beans",
-        "tomatoes",
         "cumin"
       ],
       "connects_b": [
-        "beans",
-        "tomatoes",
-        "cumin"
+        "jalapeno",
+        "bell pepper",
+        "beans"
       ]
     },
     {
       "name": "jalapeno peppers",
       "score": 112.10956044185015,
       "connects_a": [
-        "beans",
-        "tomatoes",
-        "cumin"
+        "bell pepper",
+        "rice",
+        "beans"
       ],
       "connects_b": [
-        "beans",
-        "flour tortillas",
-        "tomatoes"
+        "cilantro leaves",
+        "bell pepper",
+        "rice"
       ]
     },
     {
@@ -76,26 +76,26 @@
       "score": 112.07993317042741,
       "connects_a": [
         "beans",
-        "tomatoes",
-        "cumin"
+        "cumin",
+        "tomatoes"
       ],
       "connects_b": [
-        "beans",
-        "tomatoes",
-        "cumin"
+        "cilantro leaves",
+        "jalapeno",
+        "beans"
       ]
     },
     {
       "name": "chipotle pepper",
       "score": 91.0829468785986,
       "connects_a": [
-        "wine vinegar",
         "cumin",
+        "lime juice",
         "cilantro"
       ],
       "connects_b": [
-        "chicken stock",
-        "flour tortillas",
+        "cilantro leaves",
+        "jalapeno",
         "cumin"
       ]
     },
@@ -103,14 +103,14 @@
       "name": "cilantro",
       "score": 78.4522168531876,
       "connects_a": [
+        "plantains",
         "beans",
-        "cumin",
-        "plantains"
+        "cumin"
       ],
       "connects_b": [
+        "jalapeno",
         "beans",
-        "flour tortillas",
-        "corn"
+        "cumin"
       ]
     },
     {
@@ -118,13 +118,13 @@
       "score": 78.37226765860659,
       "connects_a": [
         "cumin",
-        "vegetable oil",
-        "cilantro"
+        "lime juice",
+        "vegetable oil"
       ],
       "connects_b": [
-        "flour tortillas",
-        "chicken breasts",
-        "cumin"
+        "cilantro leaves",
+        "cumin",
+        "corn tortillas"
       ]
     },
     {
@@ -133,23 +133,23 @@
       "connects_a": [
         "beans",
         "cumin",
-        "cilantro"
+        "lime juice"
       ],
       "connects_b": [
-        "beans",
-        "flour tortillas",
-        "cumin"
+        "jalapeno",
+        "cilantro leaves",
+        "beans"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "oregano leaves",
+      "name": "crusty rolls",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "sandwich rolls",
+      "name": "montreal steak",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -164,7 +164,12 @@
       "strength": 1
     },
     {
-      "name": "crusty rolls",
+      "name": "oregano leaves",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "sandwich rolls",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -174,17 +179,12 @@
       "strength": 1
     },
     {
-      "name": "montreal steak",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "crusty bread",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "slab bacon",
+      "name": "montreal steak",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -196,27 +196,27 @@
   ],
   "novel_from_b": [
     {
-      "name": "pass",
+      "name": "roasted tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "romano",
+      "name": "arugula leaves",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "heads garlic",
+      "name": "pecorino",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "palm",
+      "name": "eggplants",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "petite",
+      "name": "some",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -226,22 +226,22 @@
       "strength": 1
     },
     {
+      "name": "romano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "for seasoning",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "reggiano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "turn",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "squid",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "roasted tomatoes",
+      "name": "pass",
       "pairs_with": "olive oil",
       "strength": 1
     }

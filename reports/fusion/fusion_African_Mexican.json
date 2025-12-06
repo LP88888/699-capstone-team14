@@ -5,54 +5,54 @@
       "name": "chiles",
       "score": 182.8686245367487,
       "connects_a": [
-        "coriander",
+        "cumin seeds",
         "coarsely",
-        "coriander seeds"
+        "cilantro leaves"
       ],
       "connects_b": [
-        "flour tortillas",
-        "chicken breasts",
-        "cumin"
+        "cilantro leaves",
+        "cumin",
+        "corn tortillas"
       ]
     },
     {
       "name": "cumin",
       "score": 152.57739031592948,
       "connects_a": [
-        "chicken",
-        "tomato paste",
-        "coriander"
+        "cumin seeds",
+        "cilantro leaves",
+        "bell pepper"
       ],
       "connects_b": [
-        "beans",
-        "flour tortillas",
-        "tomatoes"
+        "jalapeno",
+        "bell pepper",
+        "beans"
       ]
     },
     {
       "name": "corn tortillas",
       "score": 136.4774242409162,
       "connects_a": [
+        "cilantro leaves",
         "coarsely",
-        "tomatoes",
         "cumin"
       ],
       "connects_b": [
-        "tomatoes",
-        "cumin",
-        "salsa"
+        "cilantro leaves",
+        "jalapeno",
+        "jalapeno peppers"
       ]
     },
     {
       "name": "garam masala",
       "score": 126.71226650125188,
       "connects_a": [
-        "chicken",
-        "tomato paste",
-        "coriander"
+        "cumin seeds",
+        "cumin",
+        "turmeric"
       ],
       "connects_b": [
-        "tomatoes",
+        "jalapeno peppers",
         "cumin",
         "onion"
       ]
@@ -61,27 +61,27 @@
       "name": "jalapeno peppers",
       "score": 126.12325549708142,
       "connects_a": [
-        "tomato paste",
-        "coriander",
-        "scallions"
+        "cumin seeds",
+        "cilantro leaves",
+        "bell pepper"
       ],
       "connects_b": [
-        "beans",
-        "flour tortillas",
-        "tomatoes"
+        "cilantro leaves",
+        "bell pepper",
+        "rice"
       ]
     },
     {
       "name": "jalapeno",
       "score": 108.28303035858461,
       "connects_a": [
-        "chicken",
-        "coriander",
-        "scallions"
+        "scallions",
+        "coarsely",
+        "bell pepper"
       ],
       "connects_b": [
-        "flour tortillas",
-        "corn",
+        "cilantro leaves",
+        "bell pepper",
         "cumin"
       ]
     },
@@ -89,70 +89,60 @@
       "name": "cilantro",
       "score": 91.52758632871887,
       "connects_a": [
-        "coriander",
+        "cumin seeds",
         "scallions",
-        "coriander seeds"
+        "cumin"
       ],
       "connects_b": [
+        "jalapeno",
         "beans",
-        "flour tortillas",
-        "corn"
+        "cumin"
       ]
     },
     {
       "name": "chile",
       "score": 90.38804858150317,
       "connects_a": [
-        "coriander",
+        "cumin seeds",
         "coarsely",
-        "coriander seeds"
+        "cilantro leaves"
       ],
       "connects_b": [
-        "flour tortillas",
+        "cilantro leaves",
         "cumin",
-        "vegetable oil"
+        "corn tortillas"
       ]
     },
     {
       "name": "cilantro leaves",
       "score": 88.74661922009138,
       "connects_a": [
-        "coriander",
-        "scallions",
-        "coarsely"
+        "cumin seeds",
+        "coarsely",
+        "scallions"
       ],
       "connects_b": [
-        "flour tortillas",
-        "corn",
-        "cumin"
+        "jalapeno",
+        "cumin",
+        "corn tortillas"
       ]
     },
     {
       "name": "tortilla chips",
       "score": 84.20319665585802,
       "connects_a": [
-        "tomatoes",
-        "cumin",
-        "vegetable oil"
+        "cilantro leaves",
+        "bell pepper",
+        "cumin"
       ],
       "connects_b": [
-        "beans",
-        "tomatoes",
-        "cumin"
+        "jalapeno",
+        "bell pepper",
+        "beans"
       ]
     }
   ],
   "novel_from_a": [
-    {
-      "name": "pinch saffron",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "turkey sausage",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
     {
       "name": "kalamata olives",
       "pairs_with": "olive oil",
@@ -160,6 +150,11 @@
     },
     {
       "name": "montreal steak",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "turkey sausage",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -174,8 +169,8 @@
       "strength": 1
     },
     {
-      "name": "saffron threads",
-      "pairs_with": "cloves",
+      "name": "pinch saffron",
+      "pairs_with": "olive oil",
       "strength": 1
     },
     {
@@ -184,44 +179,49 @@
       "strength": 1
     },
     {
-      "name": "slab bacon",
+      "name": "saffron threads",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "pinch saffron",
+      "name": "finely parsley",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "montreal steak",
       "pairs_with": "cloves",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "pass",
+      "name": "roasted tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "romano",
+      "name": "arugula leaves",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "heads garlic",
+      "name": "pecorino",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "petite",
+      "name": "some",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "chipotle puree",
+      "name": "arugula",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "sherry vinegar",
+      "name": "finely oregano",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -231,17 +231,17 @@
       "strength": 1
     },
     {
-      "name": "reggiano",
+      "name": "chorizo sausage",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "turn",
+      "name": "romano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "roasted tomatoes",
+      "name": "for seasoning",
       "pairs_with": "olive oil",
       "strength": 1
     }

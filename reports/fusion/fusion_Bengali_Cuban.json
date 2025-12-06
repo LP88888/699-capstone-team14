@@ -6,61 +6,61 @@
       "score": 28.15828144472264,
       "connects_a": [
         "peas",
-        "potatoes",
+        "chili powder",
         "oil"
       ],
       "connects_b": [
-        "tomatoes",
         "cumin",
-        "bay leaf"
+        "bay leaf",
+        "tomatoes"
       ]
     },
     {
       "name": "cumin",
       "score": 24.412382450548716,
       "connects_a": [
-        "beans",
-        "chili powder"
+        "chili powder",
+        "beans"
       ],
       "connects_b": [
-        "beans",
-        "tomatoes",
-        "plantains"
+        "plantains",
+        "dill pickles",
+        "bell pepper"
       ]
     },
     {
       "name": "mango",
       "score": 24.168590592556953,
       "connects_a": [
+        "wheat",
         "fenugreek",
-        "powder",
-        "seeds"
+        "dhania"
       ],
       "connects_b": [
-        "cilantro",
-        "lime",
-        "orange juice"
+        "orange juice",
+        "lime juice",
+        "lime"
       ]
     },
     {
       "name": "cardamom",
       "score": 20.29931202144538,
       "connects_a": [
-        "leaf",
-        "powder",
-        "oil"
+        "chili powder",
+        "oil",
+        "methi"
       ],
       "connects_b": [
-        "cumin",
-        "bay leaf"
+        "bay leaf",
+        "cumin"
       ]
     },
     {
       "name": "bell",
       "score": 20.090763668817434,
       "connects_a": [
-        "fenugreek",
         "beans",
+        "methi",
         "powder"
       ],
       "connects_b": [
@@ -73,13 +73,13 @@
       "score": 20.056614520993726,
       "connects_a": [
         "peas",
-        "potatoes",
+        "chili powder",
         "oil"
       ],
       "connects_b": [
-        "tomatoes",
         "cumin",
-        "onion"
+        "tomatoes",
+        "garlic"
       ]
     },
     {
@@ -87,25 +87,25 @@
       "score": 20.0155768681403,
       "connects_a": [
         "peas",
-        "potatoes",
+        "chili powder",
         "oil"
       ],
       "connects_b": [
-        "wine vinegar",
+        "cumin",
         "tomatoes",
-        "cumin"
+        "vegetable oil"
       ]
     },
     {
       "name": "salsa",
       "score": 16.04688160201524,
       "connects_a": [
-        "beans",
-        "chili powder"
+        "chili powder",
+        "beans"
       ],
       "connects_b": [
+        "bell pepper",
         "beans",
-        "tomatoes",
         "cumin"
       ]
     },
@@ -113,26 +113,26 @@
       "name": "jalapeno peppers",
       "score": 16.01565149169288,
       "connects_a": [
-        "beans",
-        "chili powder"
+        "chili powder",
+        "beans"
       ],
       "connects_b": [
-        "beans",
-        "tomatoes",
-        "cumin"
+        "bell pepper",
+        "rice",
+        "beans"
       ]
     },
     {
       "name": "flour tortillas",
       "score": 16.011419024346772,
       "connects_a": [
-        "beans",
-        "chili powder"
+        "chili powder",
+        "beans"
       ],
       "connects_b": [
         "beans",
-        "tomatoes",
-        "cumin"
+        "cumin",
+        "tomatoes"
       ]
     }
   ],
@@ -168,12 +168,12 @@
       "strength": 1
     },
     {
-      "name": "water coriander",
+      "name": "oil coriander",
       "pairs_with": "leaves",
       "strength": 1
     },
     {
-      "name": "cloves cardamom",
+      "name": "water coriander",
       "pairs_with": "leaves",
       "strength": 1
     },
@@ -183,7 +183,7 @@
       "strength": 1
     },
     {
-      "name": "oil coriander",
+      "name": "salt coriander",
       "pairs_with": "leaves",
       "strength": 1
     }
@@ -200,6 +200,16 @@
       "strength": 1
     },
     {
+      "name": "extract",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "cornmeal",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
       "name": "shortening",
       "pairs_with": "flour",
       "strength": 1
@@ -210,7 +220,7 @@
       "strength": 1
     },
     {
-      "name": "cornmeal",
+      "name": "soda",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -220,22 +230,12 @@
       "strength": 1
     },
     {
-      "name": "egg wash",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "white sugar",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
       "name": "beef stock",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "lard",
+      "name": "quart",
       "pairs_with": "flour",
       "strength": 1
     }

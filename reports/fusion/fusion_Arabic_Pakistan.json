@@ -5,140 +5,140 @@
       "name": "garam masala",
       "score": 380.13679950375564,
       "connects_a": [
-        "chicken",
-        "tomato paste",
-        "coriander"
+        "cayenne",
+        "cumin",
+        "tomato"
       ],
       "connects_b": [
-        "coriander",
-        "basmati rice",
-        "tomatoes"
+        "cumin seeds",
+        "chili powder",
+        "potatoes"
       ]
     },
     {
       "name": "turmeric",
       "score": 220.4264680607702,
       "connects_a": [
-        "chicken",
-        "tomato paste",
-        "coriander"
+        "cayenne",
+        "cumin",
+        "tomato"
       ],
       "connects_b": [
-        "coriander",
-        "garam masala",
-        "basmati rice"
+        "cumin seeds",
+        "chili powder",
+        "garam masala"
       ]
     },
     {
       "name": "cumin",
       "score": 207.50525082966408,
       "connects_a": [
-        "chicken",
-        "tomato paste",
-        "coriander"
+        "cayenne",
+        "lamb",
+        "tahini"
       ],
       "connects_b": [
-        "coconut milk",
-        "mustard seeds",
-        "coriander"
+        "cumin seeds",
+        "chili powder",
+        "coconut milk"
       ]
     },
     {
       "name": "coriander",
       "score": 180.46521597980671,
       "connects_a": [
-        "chicken",
+        "cayenne",
         "lamb",
         "cumin"
       ],
       "connects_b": [
-        "garam masala",
-        "basmati rice",
-        "tomatoes"
+        "cumin seeds",
+        "chili powder",
+        "garam masala"
       ]
     },
     {
       "name": "cumin seeds",
       "score": 147.1813752438173,
       "connects_a": [
-        "chicken",
-        "coriander",
-        "cumin"
+        "cayenne",
+        "cumin",
+        "yogurt"
       ],
       "connects_b": [
-        "coriander",
+        "chili powder",
         "garam masala",
-        "basmati rice"
+        "potatoes"
       ]
     },
     {
       "name": "yogurt",
       "score": 143.3966226795082,
       "connects_a": [
-        "chicken",
-        "coriander",
-        "lamb"
+        "cayenne",
+        "lamb",
+        "olive"
       ],
       "connects_b": [
-        "cinnamon sticks",
-        "coriander",
-        "garam masala"
+        "cumin seeds",
+        "curry powder",
+        "turmeric"
       ]
     },
     {
       "name": "mustard seeds",
       "score": 114.08878814839971,
       "connects_a": [
-        "coriander",
+        "cayenne",
         "cumin",
-        "cayenne"
+        "yogurt"
       ],
       "connects_b": [
-        "coriander",
-        "garam masala",
-        "tomatoes"
+        "cumin seeds",
+        "chili powder",
+        "garam masala"
       ]
     },
     {
       "name": "tumeric",
       "score": 108.30571841336612,
       "connects_a": [
-        "coriander",
         "cumin",
-        "onion"
+        "garlic",
+        "cilantro"
       ],
       "connects_b": [
-        "mustard seeds",
-        "coriander",
-        "garam masala"
+        "cumin seeds",
+        "chili powder",
+        "cumin"
       ]
     },
     {
       "name": "chile",
       "score": 99.42685343965348,
       "connects_a": [
-        "coriander",
+        "cayenne",
         "cumin",
-        "cayenne"
+        "vinegar"
       ],
       "connects_b": [
-        "mustard seeds",
-        "coriander",
-        "garam masala"
+        "cumin seeds",
+        "cumin",
+        "turmeric"
       ]
     },
     {
       "name": "chilies",
       "score": 95.05281438514625,
       "connects_a": [
+        "cumin",
         "chicken",
-        "coriander",
-        "cumin"
+        "cilantro"
       ],
       "connects_b": [
-        "coriander",
-        "garam masala",
-        "tomatoes"
+        "cumin seeds",
+        "chili powder",
+        "garam masala"
       ]
     }
   ],
@@ -154,6 +154,11 @@
       "strength": 1
     },
     {
+      "name": "pine",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
       "name": "sirloin",
       "pairs_with": "cloves",
       "strength": 1
@@ -164,22 +169,17 @@
       "strength": 1
     },
     {
-      "name": "pine",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
       "name": "tomato puree",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "apple juice",
+      "name": "pie crust",
       "pairs_with": "cinnamon",
       "strength": 1
     },
     {
-      "name": "syrup",
+      "name": "apple juice",
       "pairs_with": "cinnamon",
       "strength": 1
     },
@@ -201,17 +201,7 @@
       "strength": 1
     },
     {
-      "name": "petite",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "capsicum",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "coriander powder",
+      "name": "kasuri methi",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -221,12 +211,7 @@
       "strength": 1
     },
     {
-      "name": "lamb shoulder",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "kidney beans",
+      "name": "petite",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -236,12 +221,27 @@
       "strength": 1
     },
     {
-      "name": "celery ribs",
+      "name": "coriander powder",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "chicken bouillon",
+      "name": "lamb shoulder",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "capsicum",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "paneer",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "celery ribs",
       "pairs_with": "onion",
       "strength": 1
     }

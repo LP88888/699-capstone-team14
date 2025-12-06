@@ -107,9 +107,9 @@ def _inject_focus_controls(html_text: str, fusions: list | None = None) -> str:
     panel = f"""
     <div id="rp-panel" style="order:2; display:flex; flex-direction:column; gap:10px; max-width:360px; width:340px; align-items:stretch; flex:0 0 auto; padding-top:12px; padding-right:12px;">
       <div style="display:flex;gap:8px;align-items:center;justify-content:flex-start;margin-bottom:4px;">
-        <a href="/public/index.html" style="font-size:12px;color:#111827;font-weight:700;text-decoration:none;">Cuisine Network</a>
+        <a href="index.html" style="font-size:12px;color:#111827;font-weight:700;text-decoration:none;">Cuisine Network</a>
         <span style="color:#cbd5e1;">|</span>
-        <a href="/public/ingredient_network.html" style="font-size:12px;color:#2563eb;font-weight:700;text-decoration:none;">Ingredient Network</a>
+        <a href="ingredient_network.html" style="font-size:12px;color:#2563eb;font-weight:700;text-decoration:none;">Ingredient Network</a>
       </div>
       {info}
       {controls}

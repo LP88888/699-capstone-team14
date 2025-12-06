@@ -5,140 +5,140 @@
       "name": "confectioners",
       "score": 105.54766828731582,
       "connects_a": [
-        "purpose flour",
-        "chocolate",
-        "butter"
+        "milk",
+        "1",
+        "maple syrup"
       ],
       "connects_b": [
-        "purpose flour",
-        "butter",
-        "1"
+        "milk",
+        "1",
+        "purpose flour"
       ]
     },
     {
       "name": "at",
       "score": 104.41424544634762,
       "connects_a": [
-        "purpose flour",
-        "chocolate",
-        "butter"
+        "milk",
+        "1",
+        "maple syrup"
       ],
       "connects_b": [
-        "purpose flour",
-        "butter",
-        "kosher sea salt"
+        "milk",
+        "1",
+        "purpose flour"
       ]
     },
     {
       "name": "whole milk",
       "score": 84.24599545442807,
       "connects_a": [
-        "purpose flour",
-        "chocolate",
-        "butter"
+        "maple syrup",
+        "2",
+        "purpose flour"
       ],
       "connects_b": [
-        "purpose flour",
+        "freshly",
         "mozzarella cheese",
-        "butter"
+        "purpose flour"
       ]
     },
     {
       "name": "veal",
       "score": 77.20986192975371,
       "connects_a": [
-        "carrot",
-        "wine",
-        "2"
+        "milk",
+        "2",
+        "carrot"
       ],
       "connects_b": [
-        "carrot",
+        "parmesan cheese",
         "freshly",
-        "wine"
+        "milk"
       ]
     },
     {
       "name": "pancetta",
       "score": 77.09934531600935,
       "connects_a": [
-        "carrot",
-        "wine",
-        "bay leaf"
+        "shallots",
+        "bay leaf",
+        "carrot"
       ],
       "connects_b": [
-        "mozzarella cheese",
-        "carrot",
-        "freshly"
+        "parmesan cheese",
+        "freshly",
+        "pepper flakes"
       ]
     },
     {
       "name": "vanilla extract",
       "score": 73.15523061176131,
       "connects_a": [
-        "purpose flour",
-        "chocolate",
-        "butter"
+        "milk",
+        "1",
+        "maple syrup"
       ],
       "connects_b": [
-        "purpose flour",
-        "butter",
-        "1"
+        "milk",
+        "1",
+        "purpose flour"
       ]
     },
     {
       "name": "ribs celery",
       "score": 70.51015235559204,
       "connects_a": [
-        "carrot",
-        "wine",
-        "onion"
+        "thyme",
+        "bay leaf",
+        "carrot"
       ],
       "connects_b": [
-        "carrot",
-        "wine",
-        "onion"
+        "bell pepper",
+        "about",
+        "optional"
       ]
     },
     {
       "name": "tomato paste",
       "score": 70.45169435945446,
       "connects_a": [
-        "carrot",
-        "wine",
-        "onion"
+        "thyme",
+        "bay leaf",
+        "carrot"
       ],
       "connects_b": [
-        "basil",
-        "carrot",
-        "tomatoes"
+        "bell pepper",
+        "tomatoes",
+        "carrot"
       ]
     },
     {
       "name": "can tomatoes",
       "score": 70.41201357268302,
       "connects_a": [
-        "wine",
         "bay leaf",
-        "onion"
+        "parsley",
+        "cloves"
       ],
       "connects_b": [
-        "basil",
-        "mozzarella cheese",
-        "seasoning"
+        "freshly",
+        "bell pepper",
+        "mozzarella cheese"
       ]
     },
     {
       "name": "ice water",
       "score": 60.30585722748021,
       "connects_a": [
+        "1",
         "purpose flour",
-        "butter",
-        "nutmeg"
+        "flour"
       ],
       "connects_b": [
+        "1",
         "purpose flour",
-        "butter",
-        "1"
+        "flour"
       ]
     }
   ],
@@ -154,7 +154,17 @@
       "strength": 1
     },
     {
-      "name": "delicious",
+      "name": "candies",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "mcintosh apples",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "finely pecans",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -164,7 +174,7 @@
       "strength": 1
     },
     {
-      "name": "pecan halves",
+      "name": "delicious",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -179,69 +189,59 @@
       "strength": 1
     },
     {
-      "name": "finely pecans",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
       "name": "creme",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "banana liqueur",
       "pairs_with": "butter",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "for drizzling",
+      "name": "arugula leaves",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "cubanelle peppers",
+      "name": "bucatini",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "bunch kale",
+      "name": "pecorino",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pass",
+      "name": "finely oregano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "orecchiette",
+      "name": "fettuccine",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "center cut",
+      "name": "micro greens",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pinenuts",
+      "name": "basil chiffonade",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "cans chickpeas",
+      "name": "linguini",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "chipotle puree",
+      "name": "for seasoning",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "san marzano",
+      "name": "montreal steak",
       "pairs_with": "olive oil",
       "strength": 1
     }

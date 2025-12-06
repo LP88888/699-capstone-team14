@@ -5,65 +5,65 @@
       "name": "celery",
       "score": 138.34254949029338,
       "connects_a": [
-        "onion powder",
-        "creole seasoning",
-        "tomatoes"
+        "andouille sausage",
+        "garlic powder",
+        "parsley"
       ],
       "connects_b": [
-        "carrot",
+        "bacon",
         "bay leaf",
-        "onion"
+        "carrot"
       ]
     },
     {
       "name": "tomato paste",
       "score": 98.63237210323626,
       "connects_a": [
-        "okra",
-        "worcestershire sauce",
-        "tomatoes"
+        "bell pepper",
+        "cayenne pepper",
+        "andouille sausage"
       ],
       "connects_b": [
+        "bay leaf",
         "carrot",
-        "wine",
-        "onion"
+        "parsley"
       ]
     },
     {
       "name": "thyme",
       "score": 80.4173672953602,
       "connects_a": [
-        "okra",
-        "onion powder",
-        "worcestershire sauce"
+        "hot sauce",
+        "shrimp",
+        "cayenne pepper"
       ],
       "connects_b": [
-        "wine",
-        "bay leaf",
-        "2"
+        "bacon",
+        "2",
+        "bay leaf"
       ]
     },
     {
       "name": "file powder",
       "score": 75.15232247448509,
       "connects_a": [
-        "okra",
-        "purpose flour",
-        "onion powder"
+        "bell pepper",
+        "shrimp",
+        "cayenne pepper"
       ],
       "connects_b": [
         "purpose flour",
-        "onion",
-        "vegetable oil"
+        "vegetable oil",
+        "garlic"
       ]
     },
     {
       "name": "andouille sausage",
       "score": 63.08338781312321,
       "connects_a": [
-        "onion powder",
-        "creole seasoning",
-        "tomatoes"
+        "garlic",
+        "bell pepper",
+        "rice"
       ],
       "connects_b": [
         "garlic",
@@ -75,91 +75,86 @@
       "name": "ribs celery",
       "score": 60.43727344765032,
       "connects_a": [
-        "worcestershire sauce",
-        "onion",
-        "bell pepper"
+        "hot sauce",
+        "bell pepper",
+        "shrimp"
       ],
       "connects_b": [
+        "bay leaf",
         "carrot",
-        "wine",
-        "bay leaf"
+        "parsley"
       ]
     },
     {
       "name": "grits",
       "score": 60.234735005681905,
       "connects_a": [
-        "onion powder",
-        "butter",
-        "bell pepper"
+        "hot sauce",
+        "bell pepper",
+        "shrimp"
       ],
       "connects_b": [
-        "butter",
+        "milk",
         "2",
-        "milk"
+        "cream"
       ]
     },
     {
       "name": "stalks celery",
       "score": 55.57343211842256,
       "connects_a": [
-        "okra",
-        "worcestershire sauce",
-        "onion"
+        "hot sauce",
+        "andouille sausage",
+        "thyme"
       ],
       "connects_b": [
+        "bay leaf",
         "carrot",
-        "wine",
-        "bay leaf"
+        "parsley"
       ]
     },
     {
       "name": "can tomatoes",
       "score": 55.323724949965225,
       "connects_a": [
-        "worcestershire sauce",
-        "onion",
-        "oregano"
+        "hot sauce",
+        "bell pepper",
+        "andouille sausage"
       ],
       "connects_b": [
-        "wine",
         "bay leaf",
-        "onion"
+        "parsley",
+        "cloves"
       ]
     },
     {
       "name": "yellow onions",
       "score": 55.075992045475175,
       "connects_a": [
-        "onion powder",
-        "worcestershire sauce",
-        "oregano"
+        "bell pepper",
+        "cayenne pepper",
+        "onion powder"
       ],
       "connects_b": [
+        "2",
         "carrot",
-        "wine",
-        "2"
+        "parsley"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "olives",
+      "name": "reggiano cheese",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "grape tomatoes",
+      "name": "chorizo sausage",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "penne pasta",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "plum tomatoes",
+      "name": "romano cheese",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -169,27 +164,32 @@
       "strength": 1
     },
     {
-      "name": "linguini",
+      "name": "penne pasta",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "reggiano cheese",
+      "name": "grape tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cherry tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pasta",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "linguine",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
       "name": "turkey sausage",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "chorizo",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "spaghetti",
       "pairs_with": "olive oil",
       "strength": 1
     }
@@ -201,17 +201,17 @@
       "strength": 1
     },
     {
+      "name": "montreal steak",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
       "name": "beef chuck",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
       "name": "ribs celery",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "montreal steak",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -226,12 +226,7 @@
       "strength": 1
     },
     {
-      "name": "dutch process",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "bosc pears",
+      "name": "sticks",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -241,7 +236,12 @@
       "strength": 1
     },
     {
-      "name": "phyllo dough",
+      "name": "room temp",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "percent milk",
       "pairs_with": "butter",
       "strength": 1
     }

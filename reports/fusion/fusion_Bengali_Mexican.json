@@ -5,14 +5,14 @@
       "name": "mango",
       "score": 36.25288588883543,
       "connects_a": [
+        "wheat",
         "fenugreek",
-        "powder",
-        "seeds"
+        "dhania"
       ],
       "connects_b": [
+        "jalapeno",
         "lime juice",
-        "cilantro",
-        "jalapeno peppers"
+        "cilantro"
       ]
     },
     {
@@ -20,11 +20,11 @@
       "score": 36.203504714643394,
       "connects_a": [
         "peas",
-        "potatoes",
+        "chili powder",
         "oil"
       ],
       "connects_b": [
-        "tomatoes",
+        "jalapeno peppers",
         "cumin",
         "onion"
       ]
@@ -33,40 +33,40 @@
       "name": "salsa",
       "score": 32.09376320403048,
       "connects_a": [
-        "beans",
-        "chili powder"
+        "chili powder",
+        "beans"
       ],
       "connects_b": [
-        "beans",
-        "flour tortillas",
-        "tomatoes"
+        "jalapeno",
+        "bell pepper",
+        "beans"
       ]
     },
     {
       "name": "cumin",
       "score": 30.515478063185896,
       "connects_a": [
-        "beans",
-        "chili powder"
+        "chili powder",
+        "beans"
       ],
       "connects_b": [
-        "beans",
-        "flour tortillas",
-        "tomatoes"
+        "jalapeno",
+        "bell pepper",
+        "beans"
       ]
     },
     {
       "name": "chili powder",
       "score": 30.34914387107223,
       "connects_a": [
-        "leaf",
+        "jeera coriander",
         "oil",
-        "jeera coriander"
+        "methi"
       ],
       "connects_b": [
-        "flour tortillas",
+        "jalapeno",
         "cumin",
-        "salsa"
+        "flour tortillas"
       ]
     },
     {
@@ -74,61 +74,61 @@
       "score": 28.079260329391214,
       "connects_a": [
         "peas",
-        "potatoes",
+        "chili powder",
         "oil"
       ],
       "connects_b": [
-        "tomatoes",
         "cumin",
-        "onion"
+        "onion",
+        "tomatoes"
       ]
     },
     {
       "name": "jalapeno peppers",
       "score": 28.027390110462537,
       "connects_a": [
-        "beans",
-        "chili powder"
+        "chili powder",
+        "beans"
       ],
       "connects_b": [
-        "beans",
-        "flour tortillas",
-        "tomatoes"
+        "cilantro leaves",
+        "bell pepper",
+        "rice"
       ]
     },
     {
       "name": "flour tortillas",
       "score": 28.019983292606852,
       "connects_a": [
-        "beans",
-        "chili powder"
+        "chili powder",
+        "beans"
       ],
       "connects_b": [
-        "beans",
-        "tomatoes",
-        "cumin"
+        "cilantro leaves",
+        "jalapeno",
+        "beans"
       ]
     },
     {
       "name": "cilantro",
       "score": 26.150738951062532,
       "connects_a": [
-        "beans",
-        "chili powder"
+        "chili powder",
+        "beans"
       ],
       "connects_b": [
+        "jalapeno",
         "beans",
-        "flour tortillas",
-        "corn"
+        "cumin"
       ]
     },
     {
       "name": "cardamom",
       "score": 20.29931202144538,
       "connects_a": [
-        "leaf",
-        "powder",
-        "oil"
+        "chili powder",
+        "oil",
+        "methi"
       ],
       "connects_b": [
         "cumin",
@@ -138,22 +138,22 @@
   ],
   "novel_from_a": [
     {
-      "name": "cardamom",
-      "pairs_with": "cinnamon",
-      "strength": 1
-    },
-    {
       "name": "oats",
       "pairs_with": "cinnamon",
       "strength": 1
     },
     {
       "name": "cardamom",
-      "pairs_with": "cumin",
+      "pairs_with": "cinnamon",
       "strength": 1
     },
     {
       "name": "mint",
+      "pairs_with": "cumin",
+      "strength": 1
+    },
+    {
+      "name": "cardamom",
       "pairs_with": "cumin",
       "strength": 1
     },
@@ -163,12 +163,12 @@
       "strength": 1
     },
     {
-      "name": "water coriander",
+      "name": "oil coriander",
       "pairs_with": "leaves",
       "strength": 1
     },
     {
-      "name": "cloves cardamom",
+      "name": "water coriander",
       "pairs_with": "leaves",
       "strength": 1
     },
@@ -178,7 +178,7 @@
       "strength": 1
     },
     {
-      "name": "oil coriander",
+      "name": "cloves cardamom",
       "pairs_with": "leaves",
       "strength": 1
     },
@@ -190,31 +190,6 @@
   ],
   "novel_from_b": [
     {
-      "name": "peppercorns coriander",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "olive",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "rajma",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "garlic coriander",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "black",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
       "name": "leaves whole",
       "pairs_with": "dhania",
       "strength": 1
@@ -225,7 +200,17 @@
       "strength": 1
     },
     {
-      "name": "kabuli",
+      "name": "onion coriander",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "garlic coriander",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "rajma",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -235,7 +220,22 @@
       "strength": 1
     },
     {
-      "name": "onion coriander",
+      "name": "black",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "olive",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "chilli coriander",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "peppercorns coriander",
       "pairs_with": "dhania",
       "strength": 1
     }

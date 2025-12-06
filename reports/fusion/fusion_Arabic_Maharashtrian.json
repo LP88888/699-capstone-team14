@@ -5,55 +5,55 @@
       "name": "garam masala",
       "score": 70.3957036118066,
       "connects_a": [
-        "chicken",
-        "tomato paste",
-        "coriander"
+        "cayenne",
+        "cumin",
+        "tomato"
       ],
       "connects_b": [
+        "chili powder",
         "oil",
-        "turmeric",
-        "potatoes"
+        "turmeric"
       ]
     },
     {
       "name": "turmeric",
       "score": 44.08529361215404,
       "connects_a": [
-        "chicken",
-        "tomato paste",
-        "coriander"
+        "cayenne",
+        "cumin",
+        "tomato"
       ],
       "connects_b": [
         "peas",
-        "oil",
-        "coconut"
+        "chili powder",
+        "oil"
       ]
     },
     {
       "name": "cumin seeds",
       "score": 42.051821498233515,
       "connects_a": [
-        "chicken",
-        "coriander",
-        "cumin"
+        "cayenne",
+        "cumin",
+        "yogurt"
       ],
       "connects_b": [
-        "oil",
+        "chili powder",
         "turmeric",
-        "potatoes"
+        "oil"
       ]
     },
     {
       "name": "cardamom",
       "score": 36.538761638601684,
       "connects_a": [
-        "yogurt",
         "coriander",
+        "yogurt",
         "cumin"
       ],
       "connects_b": [
-        "carom",
-        "powder",
+        "chili powder",
+        "turmeric",
         "oil"
       ]
     },
@@ -61,42 +61,42 @@
       "name": "olive",
       "score": 36.16758658014655,
       "connects_a": [
-        "salt pepper",
         "lamb",
-        "tomato"
+        "tomato",
+        "tahini"
       ],
       "connects_b": [
-        "chilli",
         "dhania",
-        "wheat"
+        "wheat",
+        "bell"
       ]
     },
     {
       "name": "mustard seeds",
       "score": 36.028038362652545,
       "connects_a": [
-        "coriander",
+        "cayenne",
         "cumin",
-        "cayenne"
+        "yogurt"
       ],
       "connects_b": [
-        "oil",
+        "chili powder",
         "turmeric",
-        "potatoes"
+        "oil"
       ]
     },
     {
       "name": "coriander",
       "score": 27.06978239697101,
       "connects_a": [
-        "chicken",
+        "cayenne",
         "lamb",
         "cumin"
       ],
       "connects_b": [
-        "turmeric",
         "chillies",
-        "chili powder"
+        "chili powder",
+        "turmeric"
       ]
     },
     {
@@ -106,52 +106,52 @@
         "olive"
       ],
       "connects_b": [
-        "fenugreek",
-        "mango",
-        "powder"
+        "chili powder",
+        "chillies coriander",
+        "chilli coriander"
       ]
     },
     {
       "name": "wheat",
       "score": 26.080199202626275,
       "connects_a": [
-        "flour",
-        "olive"
+        "olive",
+        "flour"
       ],
       "connects_b": [
-        "fenugreek",
-        "carom",
-        "mango"
+        "mango",
+        "dal",
+        "oil"
       ]
     },
     {
       "name": "chili powder",
       "score": 25.290953225893524,
       "connects_a": [
+        "cumin",
         "chicken",
-        "coriander",
-        "cumin"
+        "paprika"
       ],
       "connects_b": [
         "oil",
-        "turmeric",
-        "jeera coriander"
+        "jeera coriander",
+        "turmeric"
       ]
     }
   ],
   "novel_from_a": [
-    {
-      "name": "basmati",
-      "pairs_with": "powder",
-      "strength": 1
-    },
     {
       "name": "almond",
       "pairs_with": "powder",
       "strength": 1
     },
     {
-      "name": "shortening",
+      "name": "basmati",
+      "pairs_with": "powder",
+      "strength": 1
+    },
+    {
+      "name": "vanilla",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -161,12 +161,12 @@
       "strength": 1
     },
     {
-      "name": "yeast",
+      "name": "shortening",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "vanilla",
+      "name": "yeast",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -176,17 +176,17 @@
       "strength": 1
     },
     {
-      "name": "paprika",
-      "pairs_with": "chili powder",
-      "strength": 1
-    },
-    {
-      "name": "cashew",
-      "pairs_with": "chili powder",
-      "strength": 1
-    },
-    {
       "name": "allspice",
+      "pairs_with": "chili powder",
+      "strength": 1
+    },
+    {
+      "name": "cauliflower",
+      "pairs_with": "chili powder",
+      "strength": 1
+    },
+    {
+      "name": "cumin",
       "pairs_with": "chili powder",
       "strength": 1
     }
@@ -208,18 +208,13 @@
       "strength": 1
     },
     {
-      "name": "coriander powder",
-      "pairs_with": "cinnamon",
-      "strength": 1
-    },
-    {
       "name": "almonds",
       "pairs_with": "cinnamon",
       "strength": 1
     },
     {
-      "name": "chili powder",
-      "pairs_with": "cumin",
+      "name": "coriander powder",
+      "pairs_with": "cinnamon",
       "strength": 1
     },
     {
@@ -228,7 +223,7 @@
       "strength": 1
     },
     {
-      "name": "coriander powder",
+      "name": "chili powder",
       "pairs_with": "cumin",
       "strength": 1
     },
@@ -239,6 +234,11 @@
     },
     {
       "name": "cumin seeds",
+      "pairs_with": "cumin",
+      "strength": 1
+    },
+    {
+      "name": "coriander powder",
       "pairs_with": "cumin",
       "strength": 1
     }

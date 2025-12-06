@@ -5,28 +5,28 @@
       "name": "celery",
       "score": 70.17375698782998,
       "connects_a": [
-        "carrot",
-        "onion",
-        "garlic"
+        "bell pepper",
+        "rice",
+        "thyme"
       ],
       "connects_b": [
-        "carrot",
-        "tomatoes",
-        "onion"
+        "bell pepper",
+        "rice",
+        "shrimp"
       ]
     },
     {
       "name": "tomato paste",
       "score": 63.406524923509025,
       "connects_a": [
-        "carrot",
+        "bell pepper",
         "cumin",
-        "onion"
+        "thyme"
       ],
       "connects_b": [
-        "carrot",
-        "tomatoes",
-        "cumin"
+        "bell pepper",
+        "cumin",
+        "tomatoes"
       ]
     },
     {
@@ -34,11 +34,11 @@
       "score": 63.24241924434047,
       "connects_a": [
         "scallions",
-        "cumin",
-        "onion"
+        "bell pepper",
+        "cumin"
       ],
       "connects_b": [
-        "lemon",
+        "bell pepper",
         "cumin",
         "onion"
       ]
@@ -47,27 +47,27 @@
       "name": "chorizo",
       "score": 60.1107346120163,
       "connects_a": [
-        "olive oil",
         "bell pepper",
-        "rice"
+        "rice",
+        "parsley"
       ],
       "connects_b": [
-        "olives",
-        "tomatoes",
-        "wine"
+        "bell pepper",
+        "rice",
+        "olives"
       ]
     },
     {
       "name": "ribs celery",
       "score": 56.40812188447363,
       "connects_a": [
-        "carrot",
         "scallions",
-        "onion"
+        "bell pepper",
+        "thyme"
       ],
       "connects_b": [
-        "carrot",
-        "wine",
+        "bell pepper",
+        "shrimp",
         "onion"
       ]
     },
@@ -77,82 +77,72 @@
       "connects_a": [
         "coconut milk",
         "cumin",
-        "onion"
+        "ginger"
       ],
       "connects_b": [
-        "tomatoes",
         "cumin",
-        "onion"
+        "tomatoes",
+        "peas"
       ]
     },
     {
       "name": "corn tortillas",
       "score": 56.196586452141965,
       "connects_a": [
+        "cilantro leaves",
         "cumin",
-        "onion",
-        "vegetable oil"
+        "lime juice"
       ],
       "connects_b": [
         "coarsely",
-        "tomatoes",
-        "cumin"
+        "cumin",
+        "onion"
       ]
     },
     {
       "name": "chipotle pepper",
       "score": 56.051044232983756,
       "connects_a": [
-        "honey",
+        "cilantro leaves",
         "cumin",
-        "kosher sea salt"
+        "honey"
       ],
       "connects_b": [
-        "wine vinegar",
         "cumin",
-        "kosher sea salt"
+        "wine vinegar",
+        "honey"
       ]
     },
     {
       "name": "bay leaf",
       "score": 54.485975591605445,
       "connects_a": [
-        "carrot",
         "cumin",
-        "onion"
+        "thyme",
+        "carrot"
       ],
       "connects_b": [
-        "carrot",
-        "tomatoes",
-        "chorizo"
+        "cumin",
+        "chorizo",
+        "onion"
       ]
     },
     {
       "name": "chiles",
       "score": 54.257723763650716,
       "connects_a": [
+        "cilantro leaves",
         "coconut milk",
-        "cumin",
-        "vegetable oil"
+        "cumin"
       ],
       "connects_b": [
         "coarsely",
-        "taste",
-        "cumin"
+        "cumin",
+        "2"
       ]
     }
   ],
   "novel_from_a": [
-    {
-      "name": "chipotle puree",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "basil chiffonade",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
     {
       "name": "cubanelle peppers",
       "pairs_with": "olive oil",
@@ -164,12 +154,27 @@
       "strength": 1
     },
     {
-      "name": "by hand",
+      "name": "basil chiffonade",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
       "name": "chipotle puree",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "by hand",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "scotch bonnet peppers",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "and finely",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -179,44 +184,39 @@
       "strength": 1
     },
     {
-      "name": "black beans",
+      "name": "pinch sugar",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "basil chiffonade",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "and finely",
+      "name": "allspice berries",
       "pairs_with": "cloves",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "pizza",
+      "name": "crusty rolls",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pepperoncini peppers",
+      "name": "beefsteak tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pancetta",
+      "name": "kalamata olives",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "san marzano",
+      "name": "montreal steak",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "couscous",
+      "name": "some",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -226,7 +226,7 @@
       "strength": 1
     },
     {
-      "name": "for drizzling",
+      "name": "handful pine nuts",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -236,12 +236,12 @@
       "strength": 1
     },
     {
-      "name": "pimenton",
+      "name": "parma",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "littleneck clams",
+      "name": "piquillo peppers",
       "pairs_with": "olive oil",
       "strength": 1
     }

@@ -7,12 +7,12 @@
       "connects_a": [
         "coconut milk",
         "pineapple",
-        "cilantro"
+        "lime juice"
       ],
       "connects_b": [
+        "wheat",
         "fenugreek",
-        "powder",
-        "seeds"
+        "dhania"
       ]
     },
     {
@@ -21,25 +21,25 @@
       "connects_a": [
         "coconut milk",
         "cumin",
-        "onion"
+        "ginger"
       ],
       "connects_b": [
+        "chili powder",
         "oil",
-        "turmeric",
-        "potatoes"
+        "turmeric"
       ]
     },
     {
       "name": "cardamom",
       "score": 36.538761638601684,
       "connects_a": [
+        "ginger",
         "cumin",
-        "allspice",
-        "cinnamon"
+        "allspice"
       ],
       "connects_b": [
-        "carom",
-        "powder",
+        "chili powder",
+        "turmeric",
         "oil"
       ]
     },
@@ -49,38 +49,38 @@
       "connects_a": [
         "coconut milk",
         "cumin",
-        "vegetable oil"
+        "ginger"
       ],
       "connects_b": [
-        "oil",
+        "chili powder",
         "turmeric",
-        "potatoes"
+        "oil"
       ]
     },
     {
       "name": "peanuts",
       "score": 35.3733945604355,
       "connects_a": [
-        "coconut milk",
         "scallions",
-        "ginger"
+        "coconut milk",
+        "cilantro leaves"
       ],
       "connects_b": [
-        "rai",
+        "dal",
         "gram",
-        "coconut"
+        "dhania"
       ]
     },
     {
       "name": "coconut milk",
       "score": 32.08585495214949,
       "connects_a": [
+        "cilantro leaves",
         "cumin",
-        "ginger",
         "pineapple"
       ],
       "connects_b": [
-        "peanuts",
+        "mango",
         "turmeric",
         "coconut"
       ]
@@ -89,56 +89,56 @@
       "name": "cumin seeds",
       "score": 30.03701535588108,
       "connects_a": [
+        "cilantro leaves",
         "coconut milk",
-        "cumin",
-        "cilantro"
+        "cumin"
       ],
       "connects_b": [
-        "oil",
+        "chili powder",
         "turmeric",
-        "potatoes"
+        "oil"
       ]
     },
     {
       "name": "cilantro",
       "score": 28.16233425499042,
       "connects_a": [
-        "coconut milk",
         "scallions",
-        "lime juice"
+        "coconut milk",
+        "plantains"
       ],
       "connects_b": [
-        "peanuts",
-        "turmeric",
-        "chili powder"
+        "mango",
+        "chili powder",
+        "turmeric"
       ]
     },
     {
       "name": "coriander seeds",
       "score": 28.039383686518978,
       "connects_a": [
+        "cilantro leaves",
         "coconut milk",
-        "kosher sea salt",
-        "cinnamon"
+        "honey"
       ],
       "connects_b": [
         "oil",
-        "turmeric",
-        "coconut"
+        "chili powder",
+        "turmeric"
       ]
     },
     {
       "name": "lime",
       "score": 27.070337917838604,
       "connects_a": [
-        "coconut milk",
         "scallions",
-        "cumin"
+        "coconut milk",
+        "cilantro leaves"
       ],
       "connects_b": [
-        "peanuts",
+        "mango",
         "coconut",
-        "mango"
+        "peanuts"
       ]
     }
   ],
@@ -159,6 +159,11 @@
       "strength": 1
     },
     {
+      "name": "cornmeal",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
       "name": "shortening",
       "pairs_with": "flour",
       "strength": 1
@@ -169,12 +174,7 @@
       "strength": 1
     },
     {
-      "name": "cornmeal",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "filling",
+      "name": "buttermilk",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -184,12 +184,12 @@
       "strength": 1
     },
     {
-      "name": "buttermilk",
+      "name": "filling",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "white sugar",
+      "name": "beef stock",
       "pairs_with": "flour",
       "strength": 1
     }
@@ -211,7 +211,7 @@
       "strength": 1
     },
     {
-      "name": "coriander powder",
+      "name": "chili pepper",
       "pairs_with": "ginger",
       "strength": 1
     },
@@ -221,7 +221,7 @@
       "strength": 1
     },
     {
-      "name": "chili pepper",
+      "name": "coriander powder",
       "pairs_with": "ginger",
       "strength": 1
     },
@@ -231,17 +231,17 @@
       "strength": 1
     },
     {
-      "name": "maida sooji",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "pearl",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
       "name": "bajra",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "flour all",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "carom",
       "pairs_with": "flour",
       "strength": 1
     }

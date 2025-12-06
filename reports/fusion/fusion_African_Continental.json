@@ -5,13 +5,13 @@
       "name": "garam masala",
       "score": 42.23742216708396,
       "connects_a": [
-        "chicken",
-        "tomato paste",
-        "coriander"
+        "cumin seeds",
+        "cumin",
+        "turmeric"
       ],
       "connects_b": [
-        "potatoes",
         "oil",
+        "potatoes",
         "onion"
       ]
     },
@@ -19,13 +19,13 @@
       "name": "cardamom",
       "score": 40.59862404289076,
       "connects_a": [
-        "coriander",
-        "powder",
-        "cumin"
+        "cumin seeds",
+        "cumin",
+        "turmeric"
       ],
       "connects_b": [
-        "powder",
         "oil",
+        "dhania",
         "chilli"
       ]
     },
@@ -33,37 +33,37 @@
       "name": "bay leaf",
       "score": 40.359981919707735,
       "connects_a": [
-        "tomato paste",
-        "carrot",
+        "cumin",
+        "turmeric",
         "coriander seeds"
       ],
       "connects_b": [
-        "beans",
+        "oregano",
         "thyme",
-        "onion"
+        "beans"
       ]
     },
     {
       "name": "tomato paste",
       "score": 36.23229995629087,
       "connects_a": [
-        "carrot",
-        "tomatoes",
-        "cumin"
+        "bell pepper",
+        "cumin",
+        "turmeric"
       ],
       "connects_b": [
-        "bell pepper",
         "thyme",
-        "onion"
+        "bell pepper",
+        "oregano"
       ]
     },
     {
       "name": "palm",
       "score": 33.12698150894024,
       "connects_a": [
-        "coriander",
-        "lemon",
-        "scallions"
+        "scallions",
+        "bell pepper",
+        "cumin"
       ],
       "connects_b": [
         "bell pepper",
@@ -75,90 +75,105 @@
       "name": "celery",
       "score": 32.07943176586513,
       "connects_a": [
-        "tomato paste",
-        "carrot",
+        "bell pepper",
+        "onion",
         "tomatoes"
       ],
       "connects_b": [
-        "bell pepper",
         "thyme",
-        "onion"
+        "bell pepper",
+        "oregano"
       ]
     },
     {
       "name": "cumin",
       "score": 30.515478063185896,
       "connects_a": [
-        "chicken",
-        "tomato paste",
-        "coriander"
+        "cumin seeds",
+        "cilantro leaves",
+        "bell pepper"
       ],
       "connects_b": [
+        "oregano",
         "bell pepper",
-        "beans",
-        "oregano"
+        "beans"
       ]
     },
     {
       "name": "bell",
       "score": 30.136145503226153,
       "connects_a": [
+        "dhania",
         "bell pepper",
-        "powder",
-        "dhania"
+        "powder"
       ],
       "connects_b": [
+        "bell pepper",
         "beans",
-        "powder",
-        "virgin"
+        "olive"
       ]
     },
     {
       "name": "wheat",
       "score": 30.092537541491854,
       "connects_a": [
-        "powder",
-        "dhania"
+        "dhania",
+        "powder"
       ],
       "connects_b": [
-        "finger",
+        "olive",
         "flour all",
-        "bell"
+        "demerara"
       ]
     },
     {
       "name": "andouille sausage",
       "score": 28.037061250276984,
       "connects_a": [
-        "chicken",
-        "tomato paste",
+        "bell pepper",
+        "onion",
         "tomatoes"
       ],
       "connects_b": [
-        "bell pepper",
         "thyme",
-        "onion"
+        "bell pepper",
+        "oregano"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "plum tomatoes",
+      "name": "beefsteak tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "chorizo",
+      "name": "kalamata olives",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "couscous",
+      "name": "montreal steak",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
       "name": "eggplants",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "canned tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "squid",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "olives",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -173,29 +188,19 @@
       "strength": 1
     },
     {
-      "name": "canned tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "beefsteak tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "brussels sprouts",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "olives",
+      "name": "chorizo",
       "pairs_with": "olive oil",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "pasta",
+      "name": "arugula leaves",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "arugula",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -210,12 +215,7 @@
       "strength": 1
     },
     {
-      "name": "arugula",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "arugula leaves",
+      "name": "pasta",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -235,12 +235,12 @@
       "strength": 1
     },
     {
-      "name": "chili powder",
+      "name": "gram flour",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "leaf",
+      "name": "dalchini cloves",
       "pairs_with": "dhania",
       "strength": 1
     }

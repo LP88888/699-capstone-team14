@@ -5,41 +5,41 @@
       "name": "can tomatoes",
       "score": 28.164805429073205,
       "connects_a": [
-        "basil",
-        "mozzarella cheese",
-        "seasoning"
+        "freshly",
+        "bell pepper",
+        "mozzarella cheese"
       ],
       "connects_b": [
-        "(",
-        "chili powder"
+        "chili powder",
+        "("
       ]
     },
     {
       "name": "garam masala",
       "score": 20.113058174801886,
       "connects_a": [
+        "lemon juice",
         "garlic",
-        "tomatoes",
-        "onion"
+        "tomatoes"
       ],
       "connects_b": [
+        "chili powder",
         "oil",
-        "turmeric",
-        "potatoes"
+        "turmeric"
       ]
     },
     {
       "name": "can",
       "score": 18.073421400104678,
       "connects_a": [
-        "mozzarella cheese",
-        "tomatoes",
-        "seasoning"
+        ")",
+        "seasoning",
+        "mozzarella cheese"
       ],
       "connects_b": [
         ")",
-        "(",
-        "chili powder"
+        "chili powder",
+        "("
       ]
     },
     {
@@ -51,9 +51,9 @@
         "leaves"
       ],
       "connects_b": [
-        "leaves",
-        "turmeric",
-        "oil"
+        "oil",
+        "chili powder",
+        "leaves"
       ]
     },
     {
@@ -63,9 +63,9 @@
         "flour"
       ],
       "connects_b": [
-        "fenugreek",
-        "carom",
-        "mango"
+        "mango",
+        "dal",
+        "oil"
       ]
     },
     {
@@ -78,7 +78,7 @@
       ],
       "connects_b": [
         "peas",
-        "potatoes",
+        "chili powder",
         "oil"
       ]
     },
@@ -86,22 +86,22 @@
       "name": "sprigs thyme",
       "score": 12.025529394861893,
       "connects_a": [
-        "lemon",
+        "grain sea salt",
         "carrot",
-        "wine"
+        "cloves"
       ],
       "connects_b": [
-        "potatoes",
-        "leaves"
+        "leaves",
+        "potatoes"
       ]
     },
     {
       "name": "tomato paste",
       "score": 10.064527765636353,
       "connects_a": [
-        "basil",
-        "carrot",
-        "tomatoes"
+        "bell pepper",
+        "tomatoes",
+        "carrot"
       ],
       "connects_b": [
         "turmeric"
@@ -111,22 +111,22 @@
       "name": "beef stock",
       "score": 10.036815899714885,
       "connects_a": [
+        "flour",
         "carrot",
-        "wine",
         "onion"
       ],
       "connects_b": [
-        "potatoes",
-        "flour"
+        "flour",
+        "potatoes"
       ]
     },
     {
       "name": "cans tomatoes",
       "score": 10.022214159136231,
       "connects_a": [
-        "carrot",
+        "pepper flakes",
         "seasoning",
-        "onion"
+        "optional"
       ],
       "connects_b": [
         "leaves"
@@ -135,27 +135,7 @@
   ],
   "novel_from_a": [
     {
-      "name": "oats",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "pepper powder",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "leaves whole",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "button",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "powder amchur",
+      "name": "onion coriander",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -165,12 +145,12 @@
       "strength": 1
     },
     {
-      "name": "onion coriander",
+      "name": "oats",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "baby",
+      "name": "powder amchur",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -180,7 +160,27 @@
       "strength": 1
     },
     {
+      "name": "leaves whole",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "baby",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
       "name": "button",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "pepper powder",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "onion coriander",
       "pairs_with": "powder",
       "strength": 1
     }
@@ -202,11 +202,6 @@
       "strength": 1
     },
     {
-      "name": "coriander powder",
-      "pairs_with": "leaves",
-      "strength": 1
-    },
-    {
       "name": "oil coriander",
       "pairs_with": "leaves",
       "strength": 1
@@ -218,7 +213,7 @@
     },
     {
       "name": "coriander powder",
-      "pairs_with": "tomatoes",
+      "pairs_with": "leaves",
       "strength": 1
     },
     {
@@ -227,12 +222,17 @@
       "strength": 1
     },
     {
-      "name": "asafoetida hing",
-      "pairs_with": ")",
+      "name": "coriander powder",
+      "pairs_with": "tomatoes",
       "strength": 1
     },
     {
       "name": "hing",
+      "pairs_with": ")",
+      "strength": 1
+    },
+    {
+      "name": "asafoetida hing",
       "pairs_with": ")",
       "strength": 1
     }

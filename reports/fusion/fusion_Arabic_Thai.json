@@ -5,13 +5,13 @@
       "name": "chile",
       "score": 153.65968258855537,
       "connects_a": [
-        "coriander",
+        "cayenne",
         "cumin",
-        "cayenne"
+        "vinegar"
       ],
       "connects_b": [
-        "peanut oil",
-        "chiles",
+        "cilantro leaves",
+        "noodles",
         "soy sauce"
       ]
     },
@@ -19,125 +19,125 @@
       "name": "fish sauce",
       "score": 139.35677942842398,
       "connects_a": [
+        "vinegar",
         "carrot",
-        "vegetable oil",
-        "cilantro"
+        "vegetable oil"
       ],
       "connects_b": [
-        "carrot",
-        "ginger",
-        "lime juice"
+        "thai basil",
+        "bean sprouts",
+        "scallions"
       ]
     },
     {
       "name": "garam masala",
       "score": 112.63312577889056,
       "connects_a": [
-        "chicken",
-        "tomato paste",
-        "coriander"
+        "cayenne",
+        "cumin",
+        "tomato"
       ],
       "connects_b": [
         "coconut milk",
-        "chiles",
-        "onion"
+        "onion",
+        "ginger"
       ]
     },
     {
       "name": "cumin",
       "score": 97.64952980219486,
       "connects_a": [
-        "chicken",
-        "tomato paste",
-        "coriander"
+        "cayenne",
+        "lamb",
+        "tahini"
       ],
       "connects_b": [
+        "cilantro leaves",
         "coconut milk",
-        "chiles",
-        "limes"
+        "bell pepper"
       ]
     },
     {
       "name": "bean sprouts",
       "score": 80.16976792776003,
       "connects_a": [
-        "cilantro",
+        "vegetable oil",
         "cucumber",
         "carrot"
       ],
       "connects_b": [
-        "carrot",
-        "fish sauce",
-        "ginger"
+        "scallions",
+        "coconut milk",
+        "noodles"
       ]
     },
     {
       "name": "chicken thighs",
       "score": 72.20002632899737,
       "connects_a": [
-        "tomato paste",
-        "coriander",
+        "cayenne",
+        "yogurt",
         "carrot"
       ],
       "connects_b": [
+        "scallions",
         "coconut milk",
-        "carrot",
-        "soy sauce"
+        "bell pepper"
       ]
     },
     {
       "name": "cilantro",
       "score": 70.40583563747605,
       "connects_a": [
-        "coriander",
+        "cumin",
         "tomato",
-        "cumin"
+        "yogurt"
       ],
       "connects_b": [
-        "coconut milk",
         "scallions",
-        "chiles"
+        "coconut milk",
+        "fish sauce"
       ]
     },
     {
       "name": "chiles",
       "score": 70.33408636028797,
       "connects_a": [
-        "coriander",
         "cumin",
-        "yogurt"
+        "yogurt",
+        "vegetable oil"
       ],
       "connects_b": [
+        "cilantro leaves",
         "coconut milk",
-        "peanut oil",
-        "limes"
+        "fish sauce"
       ]
     },
     {
       "name": "turmeric",
       "score": 66.12794041823106,
       "connects_a": [
-        "chicken",
-        "tomato paste",
-        "coriander"
+        "cayenne",
+        "cumin",
+        "tomato"
       ],
       "connects_b": [
+        "cilantro leaves",
         "coconut milk",
-        "chiles",
-        "vegetable oil"
+        "ginger"
       ]
     },
     {
       "name": "hoisin sauce",
       "score": 65.04969579676414,
       "connects_a": [
-        "chicken",
         "carrot",
-        "garlic"
+        "garlic",
+        "chicken"
       ],
       "connects_b": [
-        "peanut oil",
-        "carrot",
+        "scallions",
+        "noodles",
         "soy sauce"
       ]
     }
@@ -149,32 +149,22 @@
       "strength": 1
     },
     {
-      "name": "harissa",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
       "name": "pine",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "tomato puree",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "okra",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "lentil",
-      "pairs_with": "onion",
+      "name": "harissa",
+      "pairs_with": "cloves",
       "strength": 1
     },
     {
       "name": "garam masala",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "tomato puree",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -184,29 +174,44 @@
       "strength": 1
     },
     {
-      "name": "shortening",
+      "name": "lentil",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "okra",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "pie crust",
       "pairs_with": "egg",
       "strength": 1
     },
     {
-      "name": "applesauce",
+      "name": "vanilla",
       "pairs_with": "egg",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "lobster stock",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
       "name": "filling",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "sticks",
+      "name": "heavy cream",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "and half",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "whole milk",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -221,27 +226,22 @@
       "strength": 1
     },
     {
-      "name": "whole milk",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "arborio rice",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "heavy cream",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
       "name": "at",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "and half",
+      "name": "bosc pears",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "cold",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "arborio rice",
       "pairs_with": "butter",
       "strength": 1
     }

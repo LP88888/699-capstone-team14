@@ -5,42 +5,42 @@
       "name": "tomato paste",
       "score": 63.406524923509025,
       "connects_a": [
-        "carrot",
-        "tomatoes",
-        "cumin"
+        "bell pepper",
+        "cumin",
+        "tomatoes"
       ],
       "connects_b": [
-        "tomatoes",
+        "bell pepper",
         "cumin",
-        "wine"
+        "bay leaf"
       ]
     },
     {
       "name": "garam masala",
       "score": 56.31656288944528,
       "connects_a": [
-        "tomatoes",
         "cumin",
-        "onion"
+        "tomatoes",
+        "potatoes"
       ],
       "connects_b": [
-        "tomatoes",
         "cumin",
-        "bay leaf"
+        "bay leaf",
+        "tomatoes"
       ]
     },
     {
       "name": "can tomatoes",
       "score": 48.282523592696926,
       "connects_a": [
+        "bell pepper",
         "cumin",
-        "onion",
         "optional"
       ],
       "connects_b": [
+        "bell pepper",
         "olives",
-        "cumin",
-        "wine"
+        "cumin"
       ]
     },
     {
@@ -48,54 +48,54 @@
       "score": 48.093584586242315,
       "connects_a": [
         "wine vinegar",
-        "dijon mustard",
-        "lemon"
+        "tomatoes",
+        "parsley"
       ],
       "connects_b": [
-        "wine vinegar",
-        "tomatoes",
-        "olives"
+        "olives",
+        "olive oil",
+        "tomatoes"
       ]
     },
     {
       "name": "corn tortillas",
       "score": 45.157971256185505,
       "connects_a": [
-        "tomatoes",
         "cumin",
-        "onion"
+        "tomatoes",
+        "vegetable oil"
       ],
       "connects_b": [
-        "tomatoes",
         "cumin",
-        "onion"
+        "tomatoes",
+        "lime juice"
       ]
     },
     {
       "name": "celery",
       "score": 42.10425419269799,
       "connects_a": [
-        "carrot",
+        "bell pepper",
         "tomatoes",
-        "onion"
+        "carrot"
       ],
       "connects_b": [
-        "tomatoes",
-        "bay leaf",
-        "onion"
+        "bell pepper",
+        "rice",
+        "bay leaf"
       ]
     },
     {
       "name": "file powder",
       "score": 42.08530058571165,
       "connects_a": [
+        "bell pepper",
         "purpose flour",
-        "tomatoes",
-        "onion"
+        "tomatoes"
       ],
       "connects_b": [
+        "bell pepper",
         "tomatoes",
-        "onion",
         "vegetable oil"
       ]
     },
@@ -103,13 +103,13 @@
       "name": "chipotle pepper",
       "score": 42.03828317473781,
       "connects_a": [
-        "wine vinegar",
-        "dijon mustard",
-        "cumin"
+        "cumin",
+        "honey",
+        "kosher sea salt"
       ],
       "connects_b": [
-        "wine vinegar",
         "cumin",
+        "lime juice",
         "cilantro"
       ]
     },
@@ -117,13 +117,13 @@
       "name": "celery ribs",
       "score": 42.03213539957606,
       "connects_a": [
-        "carrot",
+        "bell pepper",
         "tomatoes",
-        "onion"
+        "carrot"
       ],
       "connects_b": [
-        "wine",
-        "tomatoes",
+        "bell pepper",
+        "rice",
         "bay leaf"
       ]
     },
@@ -131,35 +131,20 @@
       "name": "oregano",
       "score": 40.2240729132421,
       "connects_a": [
-        "wine vinegar",
-        "tomatoes",
-        "cumin"
+        "bell pepper",
+        "cumin",
+        "2"
       ],
       "connects_b": [
-        "wine vinegar",
-        "tomatoes",
-        "cumin"
+        "plantains",
+        "bell pepper",
+        "olives"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "pass",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "san marzano",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "anchovy paste",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "baby arugula",
+      "name": "radicchio",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -169,27 +154,42 @@
       "strength": 1
     },
     {
-      "name": "squid",
+      "name": "romano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "chianti",
+      "name": "for seasoning",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "fettuccine",
+      "name": "morel mushrooms",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "romano cheese",
+      "name": "roma",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "some",
+      "name": "reggiano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pinenuts",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "salami",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pepperoncini peppers",
       "pairs_with": "olive oil",
       "strength": 1
     }
