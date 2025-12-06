@@ -5,42 +5,42 @@
       "name": "salsa",
       "score": 64.18752640806096,
       "connects_a": [
-        "cream",
+        "bell pepper",
         "beans",
-        "bell pepper"
+        "cream"
       ],
       "connects_b": [
-        "jalapeno",
-        "cream",
-        "cilantro leaves"
+        "beans",
+        "flour tortillas",
+        "tomatoes"
       ]
     },
     {
       "name": "cumin",
       "score": 45.77321709477884,
       "connects_a": [
-        "beans",
         "bell pepper",
+        "beans",
         "oregano"
       ],
       "connects_b": [
-        "jalapeno",
-        "cilantro leaves",
-        "oregano"
+        "beans",
+        "flour tortillas",
+        "tomatoes"
       ]
     },
     {
       "name": "tortilla chips",
       "score": 42.10159832792901,
       "connects_a": [
-        "cream",
+        "bell pepper",
         "beans",
-        "bell pepper"
+        "cream"
       ],
       "connects_b": [
-        "jalapeno",
-        "cream",
-        "cilantro leaves"
+        "beans",
+        "tomatoes",
+        "cumin"
       ]
     },
     {
@@ -51,36 +51,36 @@
         "oregano"
       ],
       "connects_b": [
-        "jalapeno",
-        "more",
-        "cilantro leaves"
+        "tomatoes",
+        "cumin",
+        "salsa"
       ]
     },
     {
       "name": "andouille sausage",
       "score": 32.042355714602266,
       "connects_a": [
+        "bell pepper",
         "thyme",
-        "onion",
-        "bell pepper"
+        "onion"
       ],
       "connects_b": [
+        "tomatoes",
         "onion",
-        "oregano",
-        "bell pepper"
+        "oregano"
       ]
     },
     {
       "name": "mango",
       "score": 30.21073824069619,
       "connects_a": [
-        "chilli",
-        "seeds",
-        "dhania"
+        "wheat",
+        "powder",
+        "chilli"
       ],
       "connects_b": [
-        "jalapeno",
-        "lime",
+        "lime juice",
+        "cilantro",
         "jalapeno peppers"
       ]
     },
@@ -88,41 +88,41 @@
       "name": "tomato paste",
       "score": 28.18067774378179,
       "connects_a": [
+        "bell pepper",
         "thyme",
-        "onion",
-        "bell pepper"
+        "onion"
       ],
       "connects_b": [
-        "cloves",
-        "onion",
-        "oregano"
+        "tomatoes",
+        "cumin",
+        "onion"
       ]
     },
     {
       "name": "celery",
       "score": 28.06950279513199,
       "connects_a": [
+        "bell pepper",
         "thyme",
-        "onion",
-        "bell pepper"
+        "onion"
       ],
       "connects_b": [
+        "tomatoes",
         "onion",
-        "oregano",
-        "bell pepper"
+        "oregano"
       ]
     },
     {
       "name": "jalapeno peppers",
       "score": 28.027390110462537,
       "connects_a": [
-        "beans",
-        "bell pepper"
+        "bell pepper",
+        "beans"
       ],
       "connects_b": [
-        "cilantro leaves",
-        "corn",
-        "corn tortillas"
+        "beans",
+        "flour tortillas",
+        "tomatoes"
       ]
     },
     {
@@ -133,20 +133,20 @@
         "oregano"
       ],
       "connects_b": [
-        "jalapeno",
-        "cilantro leaves",
-        "corn"
+        "beans",
+        "tomatoes",
+        "cumin"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "crusty bread",
+      "name": "pasta",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pasta",
+      "name": "crusty bread",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -156,23 +156,13 @@
       "strength": 1
     },
     {
-      "name": "icing",
-      "pairs_with": "egg",
-      "strength": 1
-    },
-    {
       "name": "margarine",
       "pairs_with": "egg",
       "strength": 1
     },
     {
-      "name": "pistachios",
-      "pairs_with": "cinnamon",
-      "strength": 1
-    },
-    {
-      "name": "syrup",
-      "pairs_with": "cinnamon",
+      "name": "icing",
+      "pairs_with": "egg",
       "strength": 1
     },
     {
@@ -186,49 +176,34 @@
       "strength": 1
     },
     {
-      "name": "cardamom",
+      "name": "pistachios",
+      "pairs_with": "cinnamon",
+      "strength": 1
+    },
+    {
+      "name": "apple juice",
+      "pairs_with": "cinnamon",
+      "strength": 1
+    },
+    {
+      "name": "oats",
       "pairs_with": "cinnamon",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "finely oregano",
+      "name": "chorizo",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "plum tomatoes",
+      "name": "pass",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "artichokes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "romano cheese",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "some",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "parmigiano",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "sherry vinegar",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "couscous",
+      "name": "romano",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -238,7 +213,32 @@
       "strength": 1
     },
     {
-      "name": "canned tomatoes",
+      "name": "palm",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "petite",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "chipotle puree",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "sherry vinegar",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "mussels",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "porcini mushrooms",
       "pairs_with": "olive oil",
       "strength": 1
     }

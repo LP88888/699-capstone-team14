@@ -5,144 +5,149 @@
       "name": "cumin",
       "score": 137.31965128433652,
       "connects_a": [
-        "cilantro leaves",
         "coconut milk",
-        "bell pepper"
+        "plantains",
+        "cilantro"
       ],
       "connects_b": [
-        "jalapeno",
-        "cilantro leaves",
-        "oregano"
+        "beans",
+        "flour tortillas",
+        "tomatoes"
       ]
     },
     {
       "name": "corn tortillas",
       "score": 136.4774242409162,
       "connects_a": [
-        "cilantro leaves",
+        "cumin",
         "onion",
-        "cumin"
+        "vegetable oil"
       ],
       "connects_b": [
-        "jalapeno",
-        "more",
-        "cilantro leaves"
+        "tomatoes",
+        "cumin",
+        "salsa"
       ]
     },
     {
       "name": "salsa",
       "score": 128.37505281612192,
       "connects_a": [
-        "cream",
-        "cilantro leaves",
-        "bell pepper"
+        "scallions",
+        "cumin",
+        "cilantro"
       ],
       "connects_b": [
-        "jalapeno",
-        "cream",
-        "cilantro leaves"
+        "beans",
+        "flour tortillas",
+        "tomatoes"
       ]
     },
     {
       "name": "chiles",
       "score": 117.55840148790989,
       "connects_a": [
-        "cloves",
-        "cilantro leaves",
-        "ginger"
+        "coconut milk",
+        "cumin",
+        "vegetable oil"
       ],
       "connects_b": [
-        "cloves",
-        "cilantro leaves",
-        "corn tortillas"
+        "flour tortillas",
+        "chicken breasts",
+        "cumin"
       ]
     },
     {
       "name": "tortilla chips",
       "score": 112.27092887447736,
       "connects_a": [
-        "cream",
-        "cilantro leaves",
-        "bell pepper"
+        "cumin",
+        "vegetable oil",
+        "cilantro"
       ],
       "connects_b": [
-        "jalapeno",
-        "cream",
-        "cilantro leaves"
+        "beans",
+        "tomatoes",
+        "cumin"
       ]
     },
     {
       "name": "jalapeno peppers",
       "score": 112.10956044185015,
       "connects_a": [
-        "cilantro leaves",
-        "bell pepper",
-        "cumin"
+        "scallions",
+        "cumin",
+        "cilantro"
       ],
       "connects_b": [
-        "cilantro leaves",
-        "corn",
-        "corn tortillas"
+        "beans",
+        "flour tortillas",
+        "tomatoes"
       ]
     },
     {
       "name": "chipotle pepper",
       "score": 104.09479643268412,
       "connects_a": [
-        "cilantro leaves",
         "honey",
-        "lime juice"
+        "cumin",
+        "kosher sea salt"
       ],
       "connects_b": [
-        "jalapeno",
-        "kosher sea salt",
-        "cilantro leaves"
+        "chicken stock",
+        "flour tortillas",
+        "cumin"
       ]
     },
     {
       "name": "limes",
       "score": 100.15898398195692,
       "connects_a": [
-        "cilantro leaves",
-        "pineapple",
+        "coconut milk",
+        "scallions",
         "cumin"
       ],
       "connects_b": [
-        "jalapeno",
-        "cilantro leaves",
-        "corn tortillas"
+        "flour tortillas",
+        "cumin",
+        "jalapeno"
       ]
     },
     {
       "name": "jalapeno",
       "score": 96.2515825409641,
       "connects_a": [
-        "cilantro leaves",
-        "bell pepper",
-        "cumin"
+        "scallions",
+        "cumin",
+        "cilantro"
       ],
       "connects_b": [
-        "cilantro leaves",
+        "flour tortillas",
         "corn",
-        "corn tortillas"
+        "cumin"
       ]
     },
     {
       "name": "cilantro",
       "score": 91.52758632871887,
       "connects_a": [
-        "ginger",
-        "cumin",
-        "lime"
+        "coconut milk",
+        "scallions",
+        "lime juice"
       ],
       "connects_b": [
-        "jalapeno",
-        "corn",
-        "corn tortillas"
+        "beans",
+        "flour tortillas",
+        "corn"
       ]
     }
   ],
   "novel_from_a": [
+    {
+      "name": "oregano leaves",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
     {
       "name": "basil chiffonade",
       "pairs_with": "olive oil",
@@ -150,16 +155,6 @@
     },
     {
       "name": "cubanelle peppers",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "oregano leaves",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pinch saffron",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -174,7 +169,12 @@
       "strength": 1
     },
     {
-      "name": "cans chickpeas",
+      "name": "radicchio",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pinch saffron",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -184,49 +184,19 @@
       "strength": 1
     },
     {
-      "name": "radicchio",
+      "name": "cans chickpeas",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "basil chiffonade",
+      "name": "stalk lemongrass",
       "pairs_with": "cloves",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "finely oregano",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "artichokes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "romano cheese",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "some",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "couscous",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "heads garlic",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "arugula",
+      "name": "handful pine nuts",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -236,12 +206,42 @@
       "strength": 1
     },
     {
-      "name": "grape tomatoes",
+      "name": "romano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "for seasoning",
+      "name": "heads garlic",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "palm",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "petite",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "porcini mushrooms",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "turn",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "squid",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "beefsteak tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     }

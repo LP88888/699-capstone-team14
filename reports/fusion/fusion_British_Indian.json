@@ -7,12 +7,12 @@
       "connects_a": [
         "tomato paste",
         "onion",
-        "cayenne pepper"
+        "vegetable oil"
       ],
       "connects_b": [
         "mustard seeds",
-        "cumin seeds",
-        "onion"
+        "coriander",
+        "tomatoes"
       ]
     },
     {
@@ -20,27 +20,27 @@
       "score": 75.21230445372647,
       "connects_a": [
         "onion",
-        "cayenne pepper",
-        "garlic"
+        "garlic",
+        "potatoes"
       ],
       "connects_b": [
         "mustard seeds",
-        "cumin seeds",
-        "onion"
+        "coriander",
+        "garam masala"
       ]
     },
     {
       "name": "tomato paste",
       "score": 54.3484499344363,
       "connects_a": [
-        "cloves",
-        "onion",
-        "parsley"
+        "carrot",
+        "worcestershire sauce",
+        "wine"
       ],
       "connects_b": [
-        "cloves",
-        "onion",
-        "turmeric"
+        "garam masala",
+        "tomatoes",
+        "cumin"
       ]
     },
     {
@@ -48,27 +48,27 @@
       "score": 42.37798101569312,
       "connects_a": [
         "tomato paste",
-        "onion",
-        "parsley"
+        "carrot",
+        "wine"
       ],
       "connects_b": [
-        "onion",
-        "cardamom",
-        "turmeric"
+        "garam masala",
+        "tomatoes",
+        "cumin"
       ]
     },
     {
       "name": "turmeric",
       "score": 42.081416629783405,
       "connects_a": [
-        "tomato paste",
         "peas",
+        "tomato paste",
         "vegetable oil"
       ],
       "connects_b": [
         "mustard seeds",
-        "cumin seeds",
-        "cardamom"
+        "coriander",
+        "garam masala"
       ]
     },
     {
@@ -80,37 +80,37 @@
         "vegetable oil"
       ],
       "connects_b": [
-        "cumin seeds",
-        "tomatoes",
-        "turmeric"
+        "coriander",
+        "garam masala",
+        "tomatoes"
       ]
     },
     {
       "name": "coriander powder",
       "score": 36.07029685590351,
       "connects_a": [
-        "onion",
         "garlic",
-        "leaves"
+        "leaves",
+        "onion"
       ],
       "connects_b": [
-        "cumin seeds",
-        "onion",
-        "cardamom"
+        "garam masala",
+        "tomatoes",
+        "cumin"
       ]
     },
     {
       "name": "allspice",
       "score": 35.15593918542888,
       "connects_a": [
-        "cloves",
-        "cayenne pepper",
-        "nutmeg"
+        "nutmeg",
+        "kosher sea salt",
+        "cloves"
       ],
       "connects_b": [
-        "cloves",
-        "cardamom",
-        "coriander"
+        "mustard seeds",
+        "coriander",
+        "cumin"
       ]
     },
     {
@@ -123,8 +123,8 @@
       ],
       "connects_b": [
         "mustard seeds",
-        "cloves",
-        "cumin seeds"
+        "coriander",
+        "garam masala"
       ]
     },
     {
@@ -136,19 +136,29 @@
       ],
       "connects_b": [
         "carom",
-        "cumin seeds",
-        "chilli"
+        "coriander",
+        "garam masala"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "head fennel",
+      "name": "ribs celery",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
       "name": "mussels",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "sodium",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "head fennel",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -159,16 +169,6 @@
     },
     {
       "name": "cremini",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "ribs celery",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "sodium",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -188,19 +188,14 @@
       "strength": 1
     },
     {
-      "name": "freshly nutmeg",
+      "name": "vanilla extract",
       "pairs_with": "butter",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "finely oregano",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pasta",
+      "name": "handful pine nuts",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -210,22 +205,17 @@
       "strength": 1
     },
     {
-      "name": "couscous",
+      "name": "linguine",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "arugula",
+      "name": "palm",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "lamb shanks",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "spaghetti",
+      "name": "cans chickpeas",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -235,12 +225,22 @@
       "strength": 1
     },
     {
-      "name": "pizza",
+      "name": "chipotle puree",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "handful pine nuts",
+      "name": "pasta",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cherry tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "fennel bulb",
       "pairs_with": "olive oil",
       "strength": 1
     }

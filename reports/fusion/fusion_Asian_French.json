@@ -5,9 +5,9 @@
       "name": "bean sprouts",
       "score": 92.19523311692403,
       "connects_a": [
-        "cilantro",
-        "soy sauce",
-        "peanut oil"
+        "carrot",
+        "fish sauce",
+        "ginger"
       ],
       "connects_b": [
         "wine vinegar",
@@ -19,13 +19,13 @@
       "name": "inch piece",
       "score": 68.20342067441891,
       "connects_a": [
-        "fish sauce",
-        "cloves",
-        "hoisin sauce"
+        "wine vinegar",
+        "peanut oil",
+        "sesame oil"
       ],
       "connects_b": [
-        "more",
         "wine vinegar",
+        "cloves",
         "carrot"
       ]
     },
@@ -33,9 +33,9 @@
       "name": "fish sauce",
       "score": 57.56040889434903,
       "connects_a": [
-        "cilantro",
-        "soy sauce",
-        "peanut oil"
+        "carrot",
+        "ginger",
+        "lime juice"
       ],
       "connects_b": [
         "shallots",
@@ -47,13 +47,13 @@
       "name": "ribs celery",
       "score": 49.35710664891443,
       "connects_a": [
-        "cloves",
-        "onion",
-        "pepper flakes"
+        "carrot",
+        "scallions",
+        "onion"
       ],
       "connects_b": [
-        "thyme",
-        "cloves",
+        "carrot",
+        "wine",
         "onion"
       ]
     },
@@ -61,23 +61,23 @@
       "name": "shiitake",
       "score": 48.035584090707864,
       "connects_a": [
-        "oyster sauce",
-        "hoisin sauce",
-        "shrimp"
+        "peanut oil",
+        "sesame oil",
+        "carrot"
       ],
       "connects_b": [
-        "thyme",
         "shallots",
-        "carrot"
+        "carrot",
+        "thyme"
       ]
     },
     {
       "name": "peeled ginger",
       "score": 48.02715405310887,
       "connects_a": [
-        "fish sauce",
-        "hoisin sauce",
-        "rice vinegar"
+        "peanut oil",
+        "sesame oil",
+        "carrot"
       ],
       "connects_b": [
         "1",
@@ -90,55 +90,55 @@
       "score": 45.234714980278206,
       "connects_a": [
         "cornstarch",
-        "2",
-        "egg"
+        "egg",
+        "2"
       ],
       "connects_b": [
-        "cream",
-        "more",
-        "1"
+        "purpose flour",
+        "chocolate",
+        "butter"
       ]
     },
     {
       "name": "chiles",
       "score": 44.209997140752435,
       "connects_a": [
-        "fish sauce",
-        "cloves",
-        "2"
+        "peanut oil",
+        "2",
+        "ginger"
       ],
       "connects_b": [
+        "shallots",
         "cloves",
-        "2",
-        "shallots"
+        "2"
       ]
     },
     {
       "name": "mussels",
       "score": 42.252943726202304,
       "connects_a": [
-        "cloves",
-        "fish sauce",
-        "pepper flakes"
+        "olive oil",
+        "bell pepper",
+        "rice"
       ],
       "connects_b": [
-        "cloves",
-        "parsley",
-        "wine"
+        "wine",
+        "bay leaf",
+        "olive oil"
       ]
     },
     {
       "name": "head",
       "score": 42.183819069524354,
       "connects_a": [
-        "fish sauce",
-        "scallions",
-        "cabbage"
+        "wine vinegar",
+        "carrot",
+        "scallions"
       ],
       "connects_b": [
-        "lemon",
+        "wine vinegar",
         "dijon mustard",
-        "wine vinegar"
+        "lemon"
       ]
     }
   ],
@@ -149,27 +149,12 @@
       "strength": 1
     },
     {
-      "name": "montreal steak",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "hearts",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "chunk",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "pass",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "linguini",
+      "name": "center cut",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -192,26 +177,26 @@
       "name": "broccoli rabe",
       "pairs_with": "olive oil",
       "strength": 1
+    },
+    {
+      "name": "linguini",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "squid",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "hearts",
+      "pairs_with": "olive oil",
+      "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "crusty bread",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "artichokes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "romano cheese",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cannellini",
+      "name": "marzano",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -221,7 +206,22 @@
       "strength": 1
     },
     {
-      "name": "reggiano cheese",
+      "name": "morel mushrooms",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "romano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "palm",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "petite",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -231,17 +231,17 @@
       "strength": 1
     },
     {
-      "name": "roasted tomatoes",
+      "name": "clam broth",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "lamb shanks",
+      "name": "porcini mushrooms",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "salami",
+      "name": "cannellini",
       "pairs_with": "olive oil",
       "strength": 1
     }

@@ -5,23 +5,23 @@
       "name": "mango",
       "score": 20.140492160464127,
       "connects_a": [
-        "lime",
         "cilantro",
-        "lime juice"
+        "lime",
+        "orange juice"
       ],
       "connects_b": [
-        "chilli",
-        "seeds",
-        "fenugreek"
+        "fenugreek",
+        "powder",
+        "chilli"
       ]
     },
     {
       "name": "can tomatoes",
       "score": 16.094174530898975,
       "connects_a": [
-        "cloves",
-        "onion",
-        "oregano"
+        "olives",
+        "cumin",
+        "wine"
       ],
       "connects_b": [
         "onion",
@@ -32,49 +32,49 @@
       "name": "coriander powder",
       "score": 15.029290356626463,
       "connects_a": [
-        "onion",
         "tomatoes",
-        "cumin"
+        "cumin",
+        "onion"
       ],
       "connects_b": [
-        "onion",
         "leaves",
-        "oil"
+        "oil",
+        "onion"
       ]
     },
     {
       "name": "garam masala",
       "score": 14.07914072236132,
       "connects_a": [
-        "onion",
-        "bay leaf",
-        "cumin"
+        "tomatoes",
+        "cumin",
+        "bay leaf"
       ],
       "connects_b": [
-        "onion",
-        "oil"
+        "oil",
+        "onion"
       ]
     },
     {
       "name": "bell",
       "score": 14.063534568172205,
       "connects_a": [
-        "beans",
-        "bell pepper"
+        "bell pepper",
+        "beans"
       ],
       "connects_b": [
-        "chilli",
-        "oil salt",
-        "seeds"
+        "fenugreek",
+        "beans",
+        "powder"
       ]
     },
     {
       "name": "cumin",
       "score": 12.206191225274358,
       "connects_a": [
-        "oregano",
-        "bell pepper",
-        "bay leaf"
+        "beans",
+        "tomatoes",
+        "plantains"
       ],
       "connects_b": [
         "beans"
@@ -84,36 +84,36 @@
       "name": "peanuts",
       "score": 12.128020992149313,
       "connects_a": [
-        "lime",
         "cilantro",
+        "lime",
         "lime juice"
       ],
       "connects_b": [
-        "rai",
-        "dal",
-        "gram"
+        "dhania",
+        "gram",
+        "rai"
       ]
     },
     {
       "name": "bay leaf",
       "score": 12.107994575912322,
       "connects_a": [
-        "onion",
-        "oregano",
-        "wine"
+        "beans",
+        "tomatoes",
+        "cumin"
       ],
       "connects_b": [
-        "onion",
-        "beans"
+        "beans",
+        "onion"
       ]
     },
     {
       "name": "can",
       "score": 12.048947600069784,
       "connects_a": [
-        "cumin",
         "beans",
-        "tomatoes"
+        "tomatoes",
+        "cumin"
       ],
       "connects_b": [
         "beans",
@@ -125,29 +125,54 @@
       "name": "file powder",
       "score": 12.024371595917614,
       "connects_a": [
-        "onion",
         "tomatoes",
-        "bell pepper"
+        "onion",
+        "vegetable oil"
       ],
       "connects_b": [
-        "onion",
-        "leaves"
+        "leaves",
+        "onion"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "celery",
+      "name": "beef broth",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "tomato paste",
+      "name": "stock",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "evoo",
+      "name": "in juice",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "lentils",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "oxtails",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "beef chuck",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "navy beans",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "sandwich rolls",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -157,32 +182,7 @@
       "strength": 1
     },
     {
-      "name": "masa harina",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "finely oregano",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "kidney beans",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "ham hocks",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "chorizo sausage",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "lentil",
+      "name": "celery ribs",
       "pairs_with": "onion",
       "strength": 1
     }
@@ -204,7 +204,22 @@
       "strength": 1
     },
     {
-      "name": "salt coriander",
+      "name": "pudina",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
+      "name": "pudina salt",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
+      "name": "cloves cardamom",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
+      "name": "moringa",
       "pairs_with": "leaves",
       "strength": 1
     },
@@ -219,22 +234,7 @@
       "strength": 1
     },
     {
-      "name": "pudina salt",
-      "pairs_with": "leaves",
-      "strength": 1
-    },
-    {
       "name": "murungai",
-      "pairs_with": "leaves",
-      "strength": 1
-    },
-    {
-      "name": "cloves cardamom",
-      "pairs_with": "leaves",
-      "strength": 1
-    },
-    {
-      "name": "pudina",
       "pairs_with": "leaves",
       "strength": 1
     }

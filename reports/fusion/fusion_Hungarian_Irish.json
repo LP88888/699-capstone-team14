@@ -5,14 +5,14 @@
       "name": "tomato paste",
       "score": 128.82595540014532,
       "connects_a": [
-        "thyme",
-        "cloves",
-        "chuck"
+        "carrot",
+        "worcestershire sauce",
+        "beef broth"
       ],
       "connects_b": [
-        "thyme",
-        "cloves",
-        "onion"
+        "carrot",
+        "onion",
+        "caraway seeds"
       ]
     },
     {
@@ -20,13 +20,13 @@
       "score": 78.09113165649515,
       "connects_a": [
         "tomato paste",
-        "thyme",
-        "onion"
+        "carrot",
+        "worcestershire sauce"
       ],
       "connects_b": [
-        "thyme",
+        "carrot",
         "onion",
-        "carrot"
+        "caraway seeds"
       ]
     },
     {
@@ -34,69 +34,69 @@
       "score": 72.26507447794717,
       "connects_a": [
         "tomato paste",
-        "thyme",
-        "flour"
+        "carrot",
+        "worcestershire sauce"
       ],
       "connects_b": [
-        "thyme",
-        "flour",
-        "onion"
+        "carrot",
+        "onion",
+        "potatoes"
       ]
     },
     {
       "name": "celery",
       "score": 70.17375698782998,
       "connects_a": [
-        "chicken broth",
         "tomato paste",
-        "thyme"
+        "carrot",
+        "worcestershire sauce"
       ],
       "connects_b": [
-        "thyme",
+        "carrot",
         "onion",
-        "parsley"
+        "garlic"
       ]
     },
     {
       "name": "bay leaf",
       "score": 66.59397016751777,
       "connects_a": [
-        "chicken broth",
         "tomato paste",
-        "thyme"
+        "carrot",
+        "beef broth"
       ],
       "connects_b": [
-        "thyme",
+        "carrot",
         "onion",
-        "parsley"
+        "thyme"
       ]
     },
     {
       "name": "ribs celery",
       "score": 60.43727344765032,
       "connects_a": [
-        "chicken broth",
-        "cloves",
-        "tomato paste"
+        "chicken",
+        "tomato paste",
+        "carrot"
       ],
       "connects_b": [
-        "thyme",
-        "cloves",
-        "onion"
+        "carrot",
+        "onion",
+        "cloves"
       ]
     },
     {
       "name": "celery ribs",
       "score": 60.04590771368009,
       "connects_a": [
-        "chicken broth",
         "tomato paste",
-        "thyme"
+        "carrot",
+        "worcestershire sauce"
       ],
       "connects_b": [
-        "thyme",
+        "carrot",
         "onion",
-        "parsley"
+        "thyme"
       ]
     },
     {
@@ -104,13 +104,13 @@
       "score": 56.152626858002705,
       "connects_a": [
         "tomato paste",
-        "cloves",
-        "parsley"
+        "carrot",
+        "wine"
       ],
       "connects_b": [
-        "cloves",
-        "parsley",
-        "egg"
+        "carrot",
+        "2",
+        "cloves"
       ]
     },
     {
@@ -118,12 +118,12 @@
       "score": 54.07461037192108,
       "connects_a": [
         "tomato paste",
-        "thyme",
-        "parsley"
+        "carrot",
+        "worcestershire sauce"
       ],
       "connects_b": [
-        "thyme",
-        "parsley",
+        "carrot",
+        "kosher sea salt",
         "2"
       ]
     },
@@ -131,25 +131,25 @@
       "name": "can tomatoes",
       "score": 52.30606722542167,
       "connects_a": [
-        "chicken broth",
-        "cloves",
-        "tomato paste"
+        "chicken",
+        "tomato paste",
+        "worcestershire sauce"
       ],
       "connects_b": [
+        "beef",
         "cloves",
-        "onion",
         "parsley"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "pasta",
+      "name": "anchovy fillets",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "anchovy fillets",
+      "name": "[extra",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -159,7 +159,7 @@
       "strength": 1
     },
     {
-      "name": "[extra",
+      "name": "pasta",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -196,12 +196,12 @@
   ],
   "novel_from_b": [
     {
-      "name": "palm",
+      "name": "sherry vinegar",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "head fennel",
+      "name": "bunch kale",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -211,22 +211,27 @@
       "strength": 1
     },
     {
-      "name": "bunch kale",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "sherry vinegar",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "palm",
-      "pairs_with": "cloves",
+      "pairs_with": "olive oil",
       "strength": 1
     },
     {
       "name": "head fennel",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "slab bacon",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "sprigs thyme",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "bunch kale",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -236,12 +241,7 @@
       "strength": 1
     },
     {
-      "name": "bunch kale",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "leg",
+      "name": "chipotles",
       "pairs_with": "cloves",
       "strength": 1
     }

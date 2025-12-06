@@ -5,50 +5,50 @@
       "name": "garam masala",
       "score": 28.15828144472264,
       "connects_a": [
-        "chili powder",
         "peas",
-        "potatoes"
+        "potatoes",
+        "oil"
       ],
       "connects_b": [
-        "onion",
-        "bay leaf",
-        "cumin"
+        "tomatoes",
+        "cumin",
+        "bay leaf"
       ]
     },
     {
       "name": "cumin",
       "score": 24.412382450548716,
       "connects_a": [
-        "chili powder",
-        "beans"
+        "beans",
+        "chili powder"
       ],
       "connects_b": [
-        "oregano",
-        "bell pepper",
-        "bay leaf"
+        "beans",
+        "tomatoes",
+        "plantains"
       ]
     },
     {
       "name": "mango",
       "score": 24.168590592556953,
       "connects_a": [
-        "chilli",
-        "seeds",
-        "dhania"
+        "fenugreek",
+        "powder",
+        "seeds"
       ],
       "connects_b": [
-        "lime",
         "cilantro",
-        "lime juice"
+        "lime",
+        "orange juice"
       ]
     },
     {
       "name": "cardamom",
       "score": 20.29931202144538,
       "connects_a": [
-        "chilli",
         "leaf",
-        "seeds cloves"
+        "powder",
+        "oil"
       ],
       "connects_b": [
         "cumin",
@@ -59,53 +59,53 @@
       "name": "bell",
       "score": 20.090763668817434,
       "connects_a": [
-        "chilli",
-        "oil salt",
-        "seeds"
+        "fenugreek",
+        "beans",
+        "powder"
       ],
       "connects_b": [
-        "beans",
-        "bell pepper"
+        "bell pepper",
+        "beans"
       ]
     },
     {
       "name": "tumeric",
       "score": 20.056614520993726,
       "connects_a": [
-        "chili powder",
         "peas",
-        "potatoes"
+        "potatoes",
+        "oil"
       ],
       "connects_b": [
-        "onion",
+        "tomatoes",
         "cumin",
-        "garlic"
+        "onion"
       ]
     },
     {
       "name": "mustard seeds",
       "score": 20.0155768681403,
       "connects_a": [
-        "chili powder",
         "peas",
-        "potatoes"
+        "potatoes",
+        "oil"
       ],
       "connects_b": [
-        "cumin",
-        "vegetable oil",
-        "cilantro"
+        "wine vinegar",
+        "tomatoes",
+        "cumin"
       ]
     },
     {
       "name": "salsa",
       "score": 16.04688160201524,
       "connects_a": [
-        "chili powder",
-        "beans"
+        "beans",
+        "chili powder"
       ],
       "connects_b": [
-        "oregano",
-        "bell pepper",
+        "beans",
+        "tomatoes",
         "cumin"
       ]
     },
@@ -113,26 +113,26 @@
       "name": "jalapeno peppers",
       "score": 16.01565149169288,
       "connects_a": [
-        "chili powder",
-        "beans"
+        "beans",
+        "chili powder"
       ],
       "connects_b": [
-        "bell pepper",
-        "cumin",
-        "lime"
+        "beans",
+        "tomatoes",
+        "cumin"
       ]
     },
     {
       "name": "flour tortillas",
       "score": 16.011419024346772,
       "connects_a": [
-        "chili powder",
-        "beans"
+        "beans",
+        "chili powder"
       ],
       "connects_b": [
-        "oregano",
-        "cumin",
-        "lime"
+        "beans",
+        "tomatoes",
+        "cumin"
       ]
     }
   ],
@@ -153,12 +153,12 @@
       "strength": 1
     },
     {
-      "name": "palm",
+      "name": "bell",
       "pairs_with": "bell pepper",
       "strength": 1
     },
     {
-      "name": "bell",
+      "name": "palm",
       "pairs_with": "bell pepper",
       "strength": 1
     },
@@ -168,22 +168,22 @@
       "strength": 1
     },
     {
-      "name": "salt coriander",
-      "pairs_with": "leaves",
-      "strength": 1
-    },
-    {
-      "name": "oil coriander",
-      "pairs_with": "leaves",
-      "strength": 1
-    },
-    {
       "name": "water coriander",
       "pairs_with": "leaves",
       "strength": 1
     },
     {
       "name": "cloves cardamom",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
+      "name": "fenugreek seeds",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
+      "name": "oil coriander",
       "pairs_with": "leaves",
       "strength": 1
     }
@@ -200,7 +200,7 @@
       "strength": 1
     },
     {
-      "name": "white sugar",
+      "name": "shortening",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -210,22 +210,7 @@
       "strength": 1
     },
     {
-      "name": "quart",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
       "name": "cornmeal",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "vanilla",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "beef stock",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -235,7 +220,22 @@
       "strength": 1
     },
     {
-      "name": "extract",
+      "name": "egg wash",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "white sugar",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "beef stock",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "lard",
       "pairs_with": "flour",
       "strength": 1
     }

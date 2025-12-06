@@ -5,27 +5,27 @@
       "name": "tomato paste",
       "score": 56.36135548756358,
       "connects_a": [
-        "thyme",
-        "cloves",
+        "carrot",
+        "cumin",
         "onion"
       ],
       "connects_b": [
-        "thyme",
-        "cloves",
-        "onion"
+        "carrot",
+        "onion",
+        "caraway seeds"
       ]
     },
     {
       "name": "vanilla extract",
       "score": 54.86642295882098,
       "connects_a": [
-        "cream",
-        "1",
-        "egg"
+        "butter",
+        "cinnamon",
+        "rum"
       ],
       "connects_b": [
-        "cream",
-        "coffee",
+        "purpose flour",
+        "butter",
         "egg yolks"
       ]
     },
@@ -33,13 +33,13 @@
       "name": "confectioners",
       "score": 54.28165797633385,
       "connects_a": [
-        "cream",
-        "1",
-        "egg"
+        "butter",
+        "cinnamon",
+        "rum"
       ],
       "connects_b": [
-        "cream",
-        "more",
+        "purpose flour",
+        "butter",
         "egg yolks"
       ]
     },
@@ -47,13 +47,13 @@
       "name": "at",
       "score": 54.21508898175742,
       "connects_a": [
-        "cream",
-        "1",
-        "egg"
+        "butter",
+        "kosher sea salt",
+        "rum"
       ],
       "connects_b": [
-        "cream",
-        "more",
+        "purpose flour",
+        "butter",
         "egg yolks"
       ]
     },
@@ -61,41 +61,41 @@
       "name": "sticks",
       "score": 45.15915269433451,
       "connects_a": [
-        "1",
-        "egg",
+        "butter",
+        "cinnamon",
         "rum"
       ],
       "connects_b": [
-        "more",
-        "egg yolks",
-        "egg"
+        "purpose flour",
+        "butter",
+        "egg yolks"
       ]
     },
     {
       "name": "allspice",
       "score": 40.178216211918716,
       "connects_a": [
-        "thyme",
-        "cloves",
-        "ginger"
+        "cumin",
+        "kosher sea salt",
+        "cinnamon"
       ],
       "connects_b": [
-        "thyme",
+        "kosher sea salt",
         "cloves",
-        "raisins"
+        "thyme"
       ]
     },
     {
       "name": "filling",
       "score": 40.06143930228706,
       "connects_a": [
-        "cream",
-        "flour",
+        "butter",
+        "cinnamon",
         "egg"
       ],
       "connects_b": [
-        "cream",
-        "flour",
+        "purpose flour",
+        "butter",
         "egg yolks"
       ]
     },
@@ -103,73 +103,48 @@
       "name": "cake flour",
       "score": 40.04934523390399,
       "connects_a": [
-        "cream",
-        "1",
-        "egg"
+        "butter",
+        "rum",
+        "1"
       ],
       "connects_b": [
-        "cream",
+        "butter",
         "egg yolks",
-        "egg"
+        "2"
       ]
     },
     {
       "name": "bay leaf",
       "score": 36.323983727736966,
       "connects_a": [
-        "thyme",
-        "onion",
-        "parsley"
+        "carrot",
+        "cumin",
+        "onion"
       ],
       "connects_b": [
-        "thyme",
+        "carrot",
         "onion",
-        "parsley"
+        "thyme"
       ]
     },
     {
       "name": "file powder",
       "score": 36.07311478775284,
       "connects_a": [
-        "thyme",
         "onion",
+        "vegetable oil",
         "bell pepper"
       ],
       "connects_b": [
-        "thyme",
+        "purpose flour",
         "onion",
-        "garlic"
+        "vegetable oil"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "basil chiffonade",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cherry tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "chipotle puree",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cubanelle peppers",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "oregano leaves",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "canned tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -179,17 +154,42 @@
       "strength": 1
     },
     {
+      "name": "cherry tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "oregano leaves",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "basil chiffonade",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "roasted tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pinch saffron",
+      "name": "eggplants",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "chorizo sausage",
+      "name": "mussels",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cubanelle peppers",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "canned tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     }
@@ -206,22 +206,12 @@
       "strength": 1
     },
     {
-      "name": "palm",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "head fennel",
+      "name": "finely parsley",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
       "name": "sirloin",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "finely parsley",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -236,12 +226,22 @@
       "strength": 1
     },
     {
-      "name": "and half",
+      "name": "palm",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "head fennel",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "almond flour",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "smith",
+      "name": "cooking apples",
       "pairs_with": "butter",
       "strength": 1
     }

@@ -5,70 +5,70 @@
       "name": "garam masala",
       "score": 298.678913895808,
       "connects_a": [
+        "chicken",
         "tomato paste",
-        "onion",
         "tomatoes"
       ],
       "connects_b": [
-        "cardamom",
+        "coriander",
         "basmati rice",
-        "yogurt"
+        "tomatoes"
       ]
     },
     {
       "name": "turmeric",
       "score": 140.27138876594466,
       "connects_a": [
-        "tomato paste",
         "chicken",
-        "oil"
+        "tomato paste",
+        "tomatoes"
       ],
       "connects_b": [
-        "cardamom",
-        "basmati rice",
-        "yogurt"
+        "coriander",
+        "garam masala",
+        "basmati rice"
       ]
     },
     {
       "name": "cumin",
       "score": 121.04472965063738,
       "connects_a": [
+        "chicken",
         "tomato paste",
-        "bell pepper",
-        "chicken"
+        "sodium chicken broth"
       ],
       "connects_b": [
+        "coconut milk",
         "mustard seeds",
-        "cumin seeds",
-        "tumeric"
+        "coriander"
       ]
     },
     {
       "name": "tomato paste",
       "score": 112.72271097512716,
       "connects_a": [
-        "thyme",
-        "cloves",
-        "chuck"
+        "carrot",
+        "worcestershire sauce",
+        "beef broth"
       ],
       "connects_b": [
-        "cloves",
-        "onion",
-        "turmeric"
+        "garam masala",
+        "tomatoes",
+        "cumin"
       ]
     },
     {
       "name": "tumeric",
       "score": 108.30571841336612,
       "connects_a": [
-        "onion",
-        "chicken breasts",
-        "garlic"
+        "tomatoes",
+        "oil",
+        "onion"
       ],
       "connects_b": [
         "mustard seeds",
-        "cumin seeds",
-        "onion"
+        "coriander",
+        "garam masala"
       ]
     },
     {
@@ -76,27 +76,27 @@
       "score": 105.12955374558379,
       "connects_a": [
         "chicken",
-        "oil",
-        "paprika"
+        "tomatoes",
+        "oil"
       ],
       "connects_b": [
-        "cardamom",
-        "basmati rice",
-        "yogurt"
+        "coriander",
+        "garam masala",
+        "basmati rice"
       ]
     },
     {
       "name": "bay leaf",
       "score": 99.89095525127665,
       "connects_a": [
-        "chicken broth",
         "tomato paste",
-        "thyme"
+        "carrot",
+        "beef broth"
       ],
       "connects_b": [
-        "onion",
-        "cardamom",
-        "turmeric"
+        "cinnamon sticks",
+        "garam masala",
+        "basmati rice"
       ]
     },
     {
@@ -104,52 +104,52 @@
       "score": 95.05281438514625,
       "connects_a": [
         "chicken",
-        "bay leaf",
+        "tomatoes",
         "oil"
       ],
       "connects_b": [
-        "cardamom",
-        "cilantro",
-        "potatoes"
+        "coriander",
+        "garam masala",
+        "tomatoes"
       ]
     },
     {
       "name": "mustard seeds",
       "score": 76.05919209893314,
       "connects_a": [
-        "oil",
+        "potatoes",
         "tomatoes",
-        "potatoes"
+        "oil"
       ],
       "connects_b": [
-        "yogurt",
-        "chilies",
-        "cilantro"
+        "coriander",
+        "garam masala",
+        "tomatoes"
       ]
     },
     {
       "name": "allspice",
       "score": 66.29405674966588,
       "connects_a": [
-        "thyme",
-        "cloves",
-        "vinegar"
+        "bay leaf",
+        "vinegar",
+        "cloves"
       ],
       "connects_b": [
-        "cloves",
-        "cardamom",
-        "coriander"
+        "cinnamon sticks",
+        "coriander",
+        "mustard seeds"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "pasta",
+      "name": "anchovy fillets",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "anchovy fillets",
+      "name": "[extra",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -159,7 +159,7 @@
       "strength": 1
     },
     {
-      "name": "[extra",
+      "name": "pasta",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -174,6 +174,16 @@
       "strength": 1
     },
     {
+      "name": "sirloin",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "beef chuck",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
       "name": "stock",
       "pairs_with": "cloves",
       "strength": 1
@@ -182,19 +192,14 @@
       "name": "piquillo peppers",
       "pairs_with": "cloves",
       "strength": 1
-    },
-    {
-      "name": "sirloin",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "allspice berries",
-      "pairs_with": "cloves",
-      "strength": 1
     }
   ],
   "novel_from_b": [
+    {
+      "name": "petite",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
     {
       "name": "couscous",
       "pairs_with": "olive oil",
@@ -207,11 +212,6 @@
     },
     {
       "name": "petite",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cardamom pods",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -241,7 +241,7 @@
       "strength": 1
     },
     {
-      "name": "petite",
+      "name": "cardamom pods",
       "pairs_with": "cloves",
       "strength": 1
     }

@@ -5,97 +5,97 @@
       "name": "tomato paste",
       "score": 40.25811106254541,
       "connects_a": [
-        "cloves",
-        "onion",
-        "oregano"
+        "worcestershire sauce",
+        "tomatoes",
+        "cumin"
       ],
       "connects_b": [
+        "bell pepper",
         "thyme",
-        "onion",
-        "bell pepper"
+        "onion"
       ]
     },
     {
       "name": "celery",
       "score": 40.099289707331415,
       "connects_a": [
-        "onion",
-        "oregano",
-        "bell pepper"
+        "onion powder",
+        "worcestershire sauce",
+        "tomatoes"
       ],
       "connects_b": [
+        "bell pepper",
         "thyme",
-        "onion",
-        "bell pepper"
+        "onion"
       ]
     },
     {
       "name": "andouille sausage",
       "score": 40.05294464325283,
       "connects_a": [
-        "onion",
-        "oregano",
-        "bell pepper"
+        "onion powder",
+        "worcestershire sauce",
+        "tomatoes"
       ],
       "connects_b": [
+        "bell pepper",
         "thyme",
-        "onion",
-        "bell pepper"
+        "onion"
       ]
     },
     {
       "name": "file powder",
       "score": 36.07311478775284,
       "connects_a": [
-        "onion",
+        "onion powder",
         "tomatoes",
-        "bell pepper"
+        "onion"
       ],
       "connects_b": [
-        "thyme",
-        "onion",
-        "bell pepper"
+        "bell pepper",
+        "leaves",
+        "thyme"
       ]
     },
     {
       "name": "garam masala",
       "score": 33.18654598842311,
       "connects_a": [
-        "onion",
-        "ginger",
-        "cumin"
+        "tomatoes",
+        "cumin",
+        "onion"
       ],
       "connects_b": [
-        "onion",
         "potatoes",
-        "oil"
+        "oil",
+        "onion"
       ]
     },
     {
       "name": "cans tomatoes",
       "score": 32.07108530923594,
       "connects_a": [
-        "cloves",
+        "seasoning",
         "onion",
-        "pepper flakes"
+        "oregano"
       ],
       "connects_b": [
         "olive oil",
-        "onion",
-        "leaves"
+        "leaves",
+        "onion"
       ]
     },
     {
       "name": "cayenne pepper",
       "score": 30.196121400082372,
       "connects_a": [
-        "mayonnaise",
-        "oregano",
-        "bell pepper"
+        "ketchup",
+        "onion powder",
+        "worcestershire sauce"
       ],
       "connects_b": [
-        "thyme",
         "bell pepper",
+        "thyme",
         "oregano"
       ]
     },
@@ -103,13 +103,13 @@
       "name": "creole seasoning",
       "score": 30.016203989797052,
       "connects_a": [
-        "mayonnaise",
-        "oregano",
-        "bell pepper"
+        "onion powder",
+        "worcestershire sauce",
+        "tomatoes"
       ],
       "connects_b": [
-        "thyme",
         "bell pepper",
+        "thyme",
         "oregano"
       ]
     },
@@ -117,42 +117,32 @@
       "name": "salsa",
       "score": 28.08204280352667,
       "connects_a": [
-        "oregano",
-        "bell pepper",
-        "cumin"
+        "tomatoes",
+        "cumin",
+        "oregano"
       ],
       "connects_b": [
-        "cream",
+        "bell pepper",
         "beans",
-        "bell pepper"
+        "cream"
       ]
     },
     {
       "name": "cumin",
       "score": 27.463930256867304,
       "connects_a": [
-        "oregano",
-        "bell pepper",
-        "lime"
+        "onion powder",
+        "tomatoes",
+        "oregano"
       ],
       "connects_b": [
-        "beans",
         "bell pepper",
+        "beans",
         "oregano"
       ]
     }
   ],
   "novel_from_a": [
-    {
-      "name": "[extra",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "oregano leaves",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
     {
       "name": "plum tomatoes",
       "pairs_with": "olive oil",
@@ -164,22 +154,17 @@
       "strength": 1
     },
     {
-      "name": "chicken base",
-      "pairs_with": "onion",
+      "name": "[extra",
+      "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "lentil",
-      "pairs_with": "onion",
+      "name": "oregano leaves",
+      "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "tomato paste",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "coriander powder",
+      "name": "beef stock",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -189,14 +174,29 @@
       "strength": 1
     },
     {
-      "name": "ginger paste",
+      "name": "beef",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "sandwich rolls",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "lentil",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "coriander powder",
       "pairs_with": "onion",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "crusty bread",
+      "name": "handful pine nuts",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -206,17 +206,17 @@
       "strength": 1
     },
     {
-      "name": "arugula",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "reggiano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "handful pine nuts",
+      "name": "crusty bread",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "arugula",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -226,7 +226,7 @@
       "strength": 1
     },
     {
-      "name": "crusty bread",
+      "name": "black beans",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -236,7 +236,7 @@
       "strength": 1
     },
     {
-      "name": "black beans",
+      "name": "crusty bread",
       "pairs_with": "cloves",
       "strength": 1
     },

@@ -5,14 +5,14 @@
       "name": "fish sauce",
       "score": 199.94668352773874,
       "connects_a": [
-        "cilantro leaves",
-        "pineapple",
-        "ginger"
+        "coconut milk",
+        "carrot",
+        "scallions"
       ],
       "connects_b": [
-        "shrimp",
-        "hoisin sauce",
-        "rice vinegar"
+        "peanut oil",
+        "noodles",
+        "carrot"
       ]
     },
     {
@@ -20,13 +20,13 @@
       "score": 190.4355767199084,
       "connects_a": [
         "honey",
-        "pineapple",
-        "ginger"
+        "carrot",
+        "scallions"
       ],
       "connects_b": [
-        "rice wine",
-        "honey",
-        "soy sauce"
+        "carrot",
+        "spice powder",
+        "ginger"
       ]
     },
     {
@@ -34,41 +34,41 @@
       "score": 176.1345609266229,
       "connects_a": [
         "honey",
-        "ginger",
-        "rice"
+        "carrot",
+        "scallions"
       ],
       "connects_b": [
-        "rice wine",
-        "honey",
-        "soy sauce"
+        "carrot",
+        "spice powder",
+        "ginger"
       ]
     },
     {
       "name": "bean sprouts",
       "score": 170.36075684649006,
       "connects_a": [
-        "cilantro leaves",
-        "ginger",
-        "lime"
+        "coconut milk",
+        "carrot",
+        "scallions"
       ],
       "connects_b": [
-        "shrimp",
-        "hoisin sauce",
-        "canola oil"
+        "peanut oil",
+        "sesame oil",
+        "carrot"
       ]
     },
     {
       "name": "sriracha",
       "score": 162.19170615455494,
       "connects_a": [
-        "cilantro leaves",
         "honey",
-        "ginger"
+        "carrot",
+        "scallions"
       ],
       "connects_b": [
         "honey",
-        "hoisin sauce",
-        "corn starch"
+        "peanut oil",
+        "sesame oil"
       ]
     },
     {
@@ -76,100 +76,90 @@
       "score": 162.13675460139876,
       "connects_a": [
         "honey",
-        "pineapple",
-        "ginger"
+        "coconut milk",
+        "carrot"
       ],
       "connects_b": [
-        "pepper flakes",
         "honey",
-        "hoisin sauce"
+        "peanut oil",
+        "noodles"
       ]
     },
     {
       "name": "ginger",
       "score": 128.3129489729121,
       "connects_a": [
-        "pineapple",
+        "coconut milk",
         "scallions",
-        "garlic"
+        "pineapple"
       ],
       "connects_b": [
-        "rice wine",
-        "hoisin sauce",
-        "corn starch"
+        "peanut oil",
+        "sesame oil",
+        "scallions"
       ]
     },
     {
       "name": "snow peas",
       "score": 128.058937965695,
       "connects_a": [
-        "bell pepper",
-        "ginger",
-        "rice"
+        "carrot",
+        "scallions",
+        "vegetable oil"
       ],
       "connects_b": [
-        "shrimp",
-        "corn starch",
-        "rice vinegar"
+        "sesame oil",
+        "carrot",
+        "soy sauce"
       ]
     },
     {
       "name": "cabbage",
       "score": 120.46677677574276,
       "connects_a": [
-        "cilantro leaves",
-        "ginger",
-        "lime"
+        "carrot",
+        "scallions",
+        "ginger"
       ],
       "connects_b": [
-        "rice wine",
-        "hoisin sauce",
-        "corn starch"
+        "peanut oil",
+        "noodles",
+        "carrot"
       ]
     },
     {
       "name": "peanut oil",
       "score": 112.25313081908865,
       "connects_a": [
-        "cilantro leaves",
-        "ginger",
-        "lime"
+        "coconut milk",
+        "scallions",
+        "ginger"
       ],
       "connects_b": [
-        "rice wine",
-        "shrimp",
-        "hoisin sauce"
+        "sesame oil",
+        "scallions",
+        "spice powder"
       ]
     }
   ],
   "novel_from_a": [
-    {
-      "name": "basil chiffonade",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
     {
       "name": "chipotle puree",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "oregano leaves",
+      "name": "or finely",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "allspice berries",
+      "name": "slab bacon",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "scotch bonnet peppers",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "serrano chili",
+      "name": "serrano",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -179,7 +169,17 @@
       "strength": 1
     },
     {
-      "name": "bunch cilantro",
+      "name": "oregano leaves",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "basil chiffonade",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "beef chuck",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -189,19 +189,14 @@
       "strength": 1
     },
     {
-      "name": "pinch saffron",
+      "name": "chipotle chile",
       "pairs_with": "cloves",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "heads garlic",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "palm",
+      "name": "petite",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -211,12 +206,12 @@
       "strength": 1
     },
     {
-      "name": "cremini",
+      "name": "spun",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "squid",
+      "name": "heads garlic",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -231,17 +226,22 @@
       "strength": 1
     },
     {
+      "name": "squid",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "spaghetti",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "spun",
+      "name": "palm",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "anchovies",
+      "name": "cremini",
       "pairs_with": "olive oil",
       "strength": 1
     }

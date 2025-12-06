@@ -5,125 +5,125 @@
       "name": "fish sauce",
       "score": 116.13064952368664,
       "connects_a": [
-        "vinegar",
-        "chicken breasts",
-        "vegetable oil"
+        "carrot",
+        "vegetable oil",
+        "vinegar"
       ],
       "connects_b": [
-        "bean sprouts",
-        "thai basil",
-        "cilantro"
+        "carrot",
+        "ginger",
+        "lime juice"
       ]
     },
     {
       "name": "noodles",
       "score": 108.06860723273158,
       "connects_a": [
-        "chicken broth",
-        "vinegar",
-        "beef broth"
+        "carrot",
+        "beef broth",
+        "sodium chicken broth"
       ],
       "connects_b": [
-        "fish sauce",
-        "bean sprouts",
-        "ginger"
+        "peanut oil",
+        "carrot",
+        "soy sauce"
       ]
     },
     {
       "name": "bean sprouts",
       "score": 100.21220990970004,
       "connects_a": [
-        "chicken breasts",
+        "carrot",
         "vegetable oil",
         "mushrooms"
       ],
       "connects_b": [
-        "cilantro",
-        "soy sauce",
-        "peanut oil"
+        "carrot",
+        "fish sauce",
+        "ginger"
       ]
     },
     {
       "name": "garam masala",
       "score": 88.4974559691283,
       "connects_a": [
+        "chicken",
         "tomato paste",
-        "onion",
         "tomatoes"
       ],
       "connects_b": [
-        "onion",
+        "coconut milk",
         "chiles",
-        "ginger"
+        "onion"
       ]
     },
     {
       "name": "oyster sauce",
       "score": 84.05400522986518,
       "connects_a": [
-        "chicken broth",
-        "chicken breasts",
-        "vegetable oil"
+        "oil",
+        "vegetable oil",
+        "garlic"
       ],
       "connects_b": [
-        "fish sauce",
-        "bean sprouts",
-        "ginger"
+        "peanut oil",
+        "scallions",
+        "soy sauce"
       ]
     },
     {
       "name": "andouille sausage",
       "score": 78.10324205434303,
       "connects_a": [
-        "chicken broth",
+        "chicken",
         "tomato paste",
-        "thyme"
+        "worcestershire sauce"
       ],
       "connects_b": [
         "onion",
-        "bell pepper",
-        "chicken breasts"
+        "garlic",
+        "bell pepper"
       ]
     },
     {
       "name": "ribs celery",
       "score": 72.52472813718039,
       "connects_a": [
-        "chicken broth",
-        "cloves",
-        "tomato paste"
+        "chicken",
+        "tomato paste",
+        "carrot"
       ],
       "connects_b": [
-        "cloves",
-        "onion",
-        "bell pepper"
+        "scallions",
+        "carrot",
+        "onion"
       ]
     },
     {
       "name": "chicken thighs",
       "score": 72.20002632899737,
       "connects_a": [
-        "chicken broth",
         "tomato paste",
-        "bell pepper"
+        "carrot",
+        "sodium chicken broth"
       ],
       "connects_b": [
-        "fish sauce",
-        "cilantro leaves",
-        "bell pepper"
+        "coconut milk",
+        "carrot",
+        "soy sauce"
       ]
     },
     {
       "name": "celery",
       "score": 70.17375698782998,
       "connects_a": [
-        "chicken broth",
         "tomato paste",
-        "thyme"
+        "carrot",
+        "worcestershire sauce"
       ],
       "connects_b": [
+        "carrot",
         "onion",
-        "bell pepper",
         "garlic"
       ]
     },
@@ -131,25 +131,25 @@
       "name": "chile",
       "score": 68.29319226158017,
       "connects_a": [
-        "cloves",
         "vinegar",
+        "cloves",
         "noodles"
       ],
       "connects_b": [
-        "fish sauce",
-        "cloves",
-        "bean sprouts"
+        "peanut oil",
+        "chiles",
+        "soy sauce"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "piquillo peppers",
+      "name": "[extra",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "[extra",
+      "name": "piquillo peppers",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -161,6 +161,11 @@
     {
       "name": "capers",
       "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "beef chuck",
+      "pairs_with": "cloves",
       "strength": 1
     },
     {
@@ -179,34 +184,19 @@
       "strength": 1
     },
     {
-      "name": "beef chuck",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
       "name": "rigatoni",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "chicken base",
+      "name": "beef stock",
       "pairs_with": "onion",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "crusty bread",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "parmigiano",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "couscous",
+      "name": "center cut",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -216,22 +206,12 @@
       "strength": 1
     },
     {
-      "name": "arugula",
+      "name": "linguine",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "hearts",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "grape tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "linguini",
+      "name": "palm",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -241,7 +221,27 @@
       "strength": 1
     },
     {
-      "name": "spaghetti",
+      "name": "porcini mushrooms",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "reggiano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "linguini",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "crusty bread",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cherry tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     }

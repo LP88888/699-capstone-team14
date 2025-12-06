@@ -5,111 +5,111 @@
       "name": "cumin",
       "score": 91.54643418955769,
       "connects_a": [
-        "oregano",
         "greek yogurt",
-        "bell pepper"
+        "tomatoes",
+        "yogurt"
       ],
       "connects_b": [
-        "jalapeno",
-        "cilantro leaves",
-        "oregano"
+        "beans",
+        "flour tortillas",
+        "tomatoes"
       ]
     },
     {
       "name": "corn tortillas",
       "score": 85.29839015057263,
       "connects_a": [
-        "more",
+        "tomatoes",
         "onion",
         "oregano"
       ],
       "connects_b": [
-        "jalapeno",
-        "more",
-        "cilantro leaves"
+        "tomatoes",
+        "cumin",
+        "salsa"
       ]
     },
     {
       "name": "garam masala",
       "score": 81.45788560794763,
       "connects_a": [
-        "spinach",
-        "onion",
-        "greek yogurt"
+        "greek yogurt",
+        "tomatoes",
+        "yogurt"
       ],
       "connects_b": [
-        "onion",
+        "tomatoes",
         "cumin",
-        "chicken breasts"
+        "onion"
       ]
     },
     {
       "name": "oregano",
       "score": 72.40333124383577,
       "connects_a": [
-        "cheese crumbles",
-        "kalamata olives",
-        "kalamata"
+        "feta cheese",
+        "wine vinegar",
+        "kalamata olives"
       ],
       "connects_b": [
-        "bell pepper",
-        "cumin",
-        "salsa"
+        "flour tortillas",
+        "tomatoes",
+        "cumin"
       ]
     },
     {
       "name": "salsa",
       "score": 64.18752640806096,
       "connects_a": [
-        "chicken breasts",
         "bell pepper",
-        "tomatoes"
+        "tomatoes",
+        "chicken breasts"
       ],
       "connects_b": [
-        "jalapeno",
-        "cream",
-        "cilantro leaves"
+        "beans",
+        "flour tortillas",
+        "tomatoes"
       ]
     },
     {
       "name": "cucumber",
       "score": 56.08423141770763,
       "connects_a": [
-        "cheese crumbles",
-        "oregano",
-        "kalamata"
+        "feta cheese",
+        "wine vinegar",
+        "kalamata olives"
       ],
       "connects_b": [
+        "tomatoes",
         "lime",
-        "avocado",
-        "tomatoes"
+        "oregano"
       ]
     },
     {
       "name": "cilantro",
       "score": 52.301477902125065,
       "connects_a": [
+        "yogurt",
         "chicken breasts",
-        "greek yogurt",
-        "yogurt"
+        "greek yogurt"
       ],
       "connects_b": [
-        "jalapeno",
-        "corn",
-        "corn tortillas"
+        "beans",
+        "flour tortillas",
+        "corn"
       ]
     },
     {
       "name": "romaine",
       "score": 50.034172712826155,
       "connects_a": [
-        "cheese crumbles",
-        "kalamata olives",
-        "oregano"
+        "feta cheese",
+        "wine vinegar",
+        "lemon"
       ],
       "connects_b": [
-        "cilantro leaves",
         "oregano",
+        "cilantro leaves",
         "lime"
       ]
     },
@@ -117,39 +117,44 @@
       "name": "andouille sausage",
       "score": 48.0635335719034,
       "connects_a": [
+        "tomatoes",
         "onion",
-        "oregano",
-        "bell pepper"
+        "oregano"
       ],
       "connects_b": [
+        "tomatoes",
         "onion",
-        "oregano",
-        "bell pepper"
+        "oregano"
       ]
     },
     {
       "name": "chile",
       "score": 45.194024290751585,
       "connects_a": [
+        "yogurt",
         "cloves",
-        "grain sea salt",
         "mint"
       ],
       "connects_b": [
-        "cloves",
-        "cilantro leaves",
-        "corn tortillas"
+        "flour tortillas",
+        "cumin",
+        "vegetable oil"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "crusty bread",
+      "name": "pepperoncini peppers",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "head fennel",
+      "name": "san marzano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "for drizzling",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -159,17 +164,7 @@
       "strength": 1
     },
     {
-      "name": "reggiano cheese",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "kalamata olives",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pepperoncini peppers",
+      "name": "oregano leaves",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -179,12 +174,17 @@
       "strength": 1
     },
     {
-      "name": "oregano leaves",
+      "name": "marzano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "montreal steak",
+      "name": "[extra",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "piquillo peppers",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -206,16 +206,6 @@
       "strength": 1
     },
     {
-      "name": "chorizo sausage",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pass",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "mussels",
       "pairs_with": "olive oil",
       "strength": 1
@@ -226,12 +216,17 @@
       "strength": 1
     },
     {
-      "name": "sauvignon",
-      "pairs_with": "cloves",
+      "name": "pass",
+      "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "tuttorosso",
+      "name": "chorizo sausage",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "snapper fillets",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -241,7 +236,12 @@
       "strength": 1
     },
     {
-      "name": "sea bass",
+      "name": "or finely",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "bundle",
       "pairs_with": "cloves",
       "strength": 1
     }

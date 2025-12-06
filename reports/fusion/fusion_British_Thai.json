@@ -5,14 +5,14 @@
       "name": "bean sprouts",
       "score": 80.16976792776003,
       "connects_a": [
-        "mushrooms",
         "beaten",
-        "carrot"
+        "carrot",
+        "mushrooms"
       ],
       "connects_b": [
-        "cilantro",
-        "soy sauce",
-        "peanut oil"
+        "carrot",
+        "fish sauce",
+        "ginger"
       ]
     },
     {
@@ -20,13 +20,13 @@
       "score": 72.21538659644355,
       "connects_a": [
         "tomato paste",
-        "more",
+        "carrot",
         "cloves"
       ],
       "connects_b": [
-        "fish sauce",
-        "more",
-        "cloves"
+        "wine vinegar",
+        "peanut oil",
+        "carrot"
       ]
     },
     {
@@ -35,12 +35,12 @@
       "connects_a": [
         "tomato paste",
         "onion",
-        "cayenne pepper"
+        "vegetable oil"
       ],
       "connects_b": [
-        "onion",
+        "coconut milk",
         "chiles",
-        "ginger"
+        "onion"
       ]
     },
     {
@@ -52,9 +52,9 @@
         "vegetable oil"
       ],
       "connects_b": [
-        "fish sauce",
-        "cloves",
-        "bean sprouts"
+        "peanut oil",
+        "chiles",
+        "soy sauce"
       ]
     },
     {
@@ -65,9 +65,9 @@
         "vegetable oil"
       ],
       "connects_b": [
-        "bean sprouts",
-        "thai basil",
-        "cilantro"
+        "carrot",
+        "ginger",
+        "lime juice"
       ]
     },
     {
@@ -75,13 +75,13 @@
       "score": 42.306091413355226,
       "connects_a": [
         "tomato paste",
-        "cloves",
-        "onion"
+        "carrot",
+        "worcestershire sauce"
       ],
       "connects_b": [
-        "cloves",
-        "onion",
-        "bell pepper"
+        "scallions",
+        "carrot",
+        "onion"
       ]
     },
     {
@@ -93,23 +93,23 @@
         "vegetable oil"
       ],
       "connects_b": [
-        "fish sauce",
-        "cloves",
-        "cilantro leaves"
+        "coconut milk",
+        "peanut oil",
+        "limes"
       ]
     },
     {
       "name": "stalk lemongrass",
       "score": 40.05181047590817,
       "connects_a": [
-        "more",
-        "vegetable oil",
-        "leaves"
+        "leaves",
+        "cloves",
+        "more"
       ],
       "connects_b": [
-        "cilantro leaves",
-        "fish sauce",
-        "chiles"
+        "coconut milk",
+        "chiles",
+        "vegetable oil"
       ]
     },
     {
@@ -121,39 +121,29 @@
         "carrot"
       ],
       "connects_b": [
-        "1",
-        "fish sauce",
-        "more"
+        "peanut oil",
+        "carrot",
+        "soy sauce"
       ]
     },
     {
       "name": "tomato paste",
       "score": 36.23229995629087,
       "connects_a": [
-        "cloves",
-        "onion",
-        "parsley"
+        "carrot",
+        "worcestershire sauce",
+        "wine"
       ],
       "connects_b": [
+        "bell pepper",
         "cloves",
-        "onion",
-        "bell pepper"
+        "carrot"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "head fennel",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "for drizzling",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "spun",
+      "name": "prosciutto",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -163,17 +153,17 @@
       "strength": 1
     },
     {
-      "name": "capers",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "canned tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "prosciutto",
+      "name": "head fennel",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "for drizzling",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -183,29 +173,29 @@
       "strength": 1
     },
     {
-      "name": "head fennel",
+      "name": "spun",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "capers",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "ribs celery",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "for drizzling",
+      "name": "head fennel",
       "pairs_with": "cloves",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "pasta",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "parmigiano",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "couscous",
+      "name": "center cut",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -215,22 +205,32 @@
       "strength": 1
     },
     {
+      "name": "linguine",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "palm",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "anchovy fillets",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "arugula",
+      "name": "porcini mushrooms",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "hearts",
+      "name": "pasta",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "grape tomatoes",
+      "name": "reggiano",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -240,7 +240,7 @@
       "strength": 1
     },
     {
-      "name": "spaghetti",
+      "name": "cherry tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     }

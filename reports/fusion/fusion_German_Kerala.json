@@ -5,12 +5,12 @@
       "name": "garam masala",
       "score": 35.1978518059033,
       "connects_a": [
-        "onion",
         "bay leaf",
-        "lemon juice"
+        "onion",
+        "vegetable oil"
       ],
       "connects_b": [
-        "cumin seeds",
+        "oil",
         "onion",
         "chili powder"
       ]
@@ -19,26 +19,26 @@
       "name": "cardamom",
       "score": 24.359174425734455,
       "connects_a": [
-        "nutmeg",
         "cinnamon",
-        "bay leaf"
+        "bay leaf",
+        "nutmeg"
       ],
       "connects_b": [
-        "cumin seeds",
-        "chilli",
-        "seeds"
+        "powder",
+        "oil",
+        "chilli"
       ]
     },
     {
       "name": "tumeric",
       "score": 20.056614520993726,
       "connects_a": [
-        "cinnamon",
-        "onion",
-        "garlic"
+        "garlic",
+        "potatoes",
+        "onion"
       ],
       "connects_b": [
-        "cumin seeds",
+        "oil",
         "onion",
         "chili powder"
       ]
@@ -47,50 +47,50 @@
       "name": "coriander powder",
       "score": 20.039053808835284,
       "connects_a": [
-        "cinnamon",
+        "garlic",
         "onion",
-        "garlic"
+        "leaves"
       ],
       "connects_b": [
-        "cumin seeds",
+        "oil",
         "onion",
-        "chili powder"
+        "leaves"
       ]
     },
     {
       "name": "vanilla",
       "score": 18.023538188324444,
       "connects_a": [
-        "cream",
-        "flour",
-        "egg yolks"
+        "cocoa powder",
+        "egg whites",
+        "nutmeg"
       ],
       "connects_b": [
-        "banana",
-        "flour"
+        "flour",
+        "banana"
       ]
     },
     {
       "name": "mustard seeds",
       "score": 16.01246149451224,
       "connects_a": [
-        "cider vinegar",
+        "potatoes",
         "wine vinegar",
-        "potatoes"
+        "cider vinegar"
       ],
       "connects_b": [
-        "chili powder",
+        "peas",
         "cumin seeds",
-        "peas"
+        "oil"
       ]
     },
     {
       "name": "vanilla extract",
       "score": 12.192538435293551,
       "connects_a": [
-        "cream",
-        "egg yolks",
-        "purpose flour"
+        "purpose flour",
+        "cocoa powder",
+        "butter"
       ],
       "connects_b": [
         "banana"
@@ -100,9 +100,9 @@
       "name": "beef stock",
       "score": 12.04417907965786,
       "connects_a": [
-        "flour",
-        "onion",
-        "carrot"
+        "carrot",
+        "wine",
+        "bay leaf"
       ],
       "connects_b": [
         "flour",
@@ -113,9 +113,9 @@
       "name": "celery",
       "score": 12.029786912199423,
       "connects_a": [
-        "onion",
-        "parsley",
-        "bacon"
+        "carrot",
+        "bay leaf",
+        "onion"
       ],
       "connects_b": [
         "rice",
@@ -131,9 +131,9 @@
         "bay leaf"
       ],
       "connects_b": [
-        "chili powder",
+        "peas",
         "cumin seeds",
-        "peas"
+        "oil"
       ]
     }
   ],
@@ -144,17 +144,12 @@
       "strength": 1
     },
     {
-      "name": "celery",
+      "name": "beef broth",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "chicken bouillon",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "tomato paste",
+      "name": "andouille sausage",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -164,12 +159,22 @@
       "strength": 1
     },
     {
-      "name": "tomato soup",
+      "name": "lentils",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "ham hocks",
+      "name": "chicken bouillon",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "beef chuck",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "ribs celery",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -179,12 +184,7 @@
       "strength": 1
     },
     {
-      "name": "stalks celery",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "beef stock",
+      "name": "celery ribs",
       "pairs_with": "onion",
       "strength": 1
     }
@@ -206,11 +206,6 @@
       "strength": 1
     },
     {
-      "name": "wheat",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
       "name": "ragi",
       "pairs_with": "flour",
       "strength": 1
@@ -226,6 +221,11 @@
       "strength": 1
     },
     {
+      "name": "wheat",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
       "name": "banana",
       "pairs_with": "vanilla extract",
       "strength": 1
@@ -236,7 +236,7 @@
       "strength": 1
     },
     {
-      "name": "salt coriander",
+      "name": "pudina",
       "pairs_with": "leaves",
       "strength": 1
     }

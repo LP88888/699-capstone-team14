@@ -5,126 +5,126 @@
       "name": "garam masala",
       "score": 153.86489503723442,
       "connects_a": [
-        "spinach",
-        "onion",
-        "greek yogurt"
+        "greek yogurt",
+        "tomatoes",
+        "yogurt"
       ],
       "connects_b": [
         "mustard seeds",
-        "cumin seeds",
-        "onion"
+        "coriander",
+        "tomatoes"
       ]
     },
     {
       "name": "tumeric",
       "score": 75.21230445372647,
       "connects_a": [
-        "onion",
         "tomatoes",
-        "chicken breasts"
+        "onion",
+        "cinnamon"
       ],
       "connects_b": [
         "mustard seeds",
-        "cumin seeds",
-        "onion"
+        "coriander",
+        "garam masala"
       ]
     },
     {
       "name": "greek yogurt",
       "score": 63.25282592600208,
       "connects_a": [
-        "cheese crumbles",
-        "oregano",
-        "lemon"
+        "feta cheese",
+        "lemon",
+        "yogurt"
       ],
       "connects_b": [
-        "cardamom",
-        "turmeric",
-        "coriander"
+        "coriander",
+        "garam masala",
+        "cumin"
       ]
     },
     {
       "name": "cumin",
       "score": 61.03095612637179,
       "connects_a": [
-        "oregano",
         "greek yogurt",
-        "bell pepper"
+        "tomatoes",
+        "yogurt"
       ],
       "connects_b": [
         "mustard seeds",
-        "cumin seeds",
-        "cardamom"
+        "coriander",
+        "garam masala"
       ]
     },
     {
       "name": "coriander powder",
       "score": 60.11716142650585,
       "connects_a": [
-        "onion",
         "tomatoes",
-        "leaves"
+        "cinnamon",
+        "onion"
       ],
       "connects_b": [
-        "cumin seeds",
-        "onion",
-        "cardamom"
+        "garam masala",
+        "tomatoes",
+        "cumin"
       ]
     },
     {
       "name": "turmeric",
       "score": 56.10855550637787,
       "connects_a": [
-        "greek yogurt",
+        "tomatoes",
         "yogurt",
-        "mint"
+        "greek yogurt"
       ],
       "connects_b": [
         "mustard seeds",
-        "cumin seeds",
-        "cardamom"
+        "coriander",
+        "garam masala"
       ]
     },
     {
       "name": "coriander",
       "score": 55.14214932716317,
       "connects_a": [
-        "tomatoes",
         "greek yogurt",
-        "mint"
+        "tomatoes",
+        "yogurt"
       ],
       "connects_b": [
         "mustard seeds",
-        "cumin seeds",
-        "cardamom"
+        "garam masala",
+        "tomatoes"
       ]
     },
     {
       "name": "chile",
       "score": 50.21558254527954,
       "connects_a": [
+        "yogurt",
         "cloves",
-        "grain sea salt",
         "mint"
       ],
       "connects_b": [
         "mustard seeds",
-        "cloves",
-        "cumin seeds"
+        "coriander",
+        "garam masala"
       ]
     },
     {
       "name": "cardamom",
       "score": 48.71834885146891,
       "connects_a": [
-        "greek yogurt",
         "yogurt",
-        "cinnamon"
+        "cinnamon",
+        "greek yogurt"
       ],
       "connects_b": [
         "carom",
-        "cumin seeds",
-        "chilli"
+        "coriander",
+        "garam masala"
       ]
     },
     {
@@ -132,19 +132,29 @@
       "score": 45.12481133271237,
       "connects_a": [
         "greek yogurt",
-        "mint",
-        "dill"
+        "dill",
+        "lemon juice"
       ],
       "connects_b": [
         "mustard seeds",
-        "cumin seeds",
-        "cardamom"
+        "coriander",
+        "garam masala"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "head fennel",
+      "name": "san marzano",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "onion finely",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "for drizzling",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -154,17 +164,22 @@
       "strength": 1
     },
     {
-      "name": "beef lean",
+      "name": "oregano leaves",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "evoo",
+      "name": "beef chuck",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "escarole",
+      "name": "roasted tomatoes",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "ribs celery",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -174,29 +189,14 @@
       "strength": 1
     },
     {
-      "name": "oregano leaves",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "montreal steak",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "sirloin",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "roasted tomatoes",
+      "name": "marzano",
       "pairs_with": "cloves",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "lamb shanks",
+      "name": "cans chickpeas",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -206,7 +206,7 @@
       "strength": 1
     },
     {
-      "name": "cans chickpeas",
+      "name": "lamb shanks",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -216,32 +216,32 @@
       "strength": 1
     },
     {
-      "name": "serrano chili",
+      "name": "broth",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "bunch cilantro",
+      "name": "have",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "pinch sugar",
+      "name": "piece ginger",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "serrano",
+      "name": "halibut fillet",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "bundle",
+      "name": "cardamom pods",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "lamb shanks",
+      "name": "chipotle puree",
       "pairs_with": "cloves",
       "strength": 1
     }

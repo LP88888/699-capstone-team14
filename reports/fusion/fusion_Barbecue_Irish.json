@@ -5,69 +5,69 @@
       "name": "tomato paste",
       "score": 80.51622212509082,
       "connects_a": [
-        "cloves",
-        "onion",
-        "oregano"
+        "worcestershire sauce",
+        "tomatoes",
+        "cumin"
       ],
       "connects_b": [
-        "thyme",
-        "cloves",
-        "onion"
+        "carrot",
+        "onion",
+        "caraway seeds"
       ]
     },
     {
       "name": "file powder",
       "score": 54.10967218162927,
       "connects_a": [
-        "onion",
+        "onion powder",
         "tomatoes",
-        "bell pepper"
+        "onion"
       ],
       "connects_b": [
-        "thyme",
+        "purpose flour",
         "onion",
-        "garlic"
+        "vegetable oil"
       ]
     },
     {
       "name": "onion powder",
       "score": 50.176435087305926,
       "connects_a": [
-        "mayonnaise",
-        "oregano",
-        "cumin"
+        "ketchup",
+        "worcestershire sauce",
+        "seasoning"
       ],
       "connects_b": [
-        "thyme",
-        "buttermilk",
-        "2"
+        "kosher sea salt",
+        "2",
+        "buttermilk"
       ]
     },
     {
       "name": "celery",
       "score": 50.124112134164264,
       "connects_a": [
-        "onion",
-        "oregano",
-        "bell pepper"
+        "onion powder",
+        "worcestershire sauce",
+        "tomatoes"
       ],
       "connects_b": [
-        "thyme",
+        "carrot",
         "onion",
-        "parsley"
+        "garlic"
       ]
     },
     {
       "name": "yellow onions",
       "score": 48.06632033059652,
       "connects_a": [
-        "pepper flakes",
-        "oregano",
-        "bell pepper"
+        "onion powder",
+        "worcestershire sauce",
+        "oregano"
       ],
       "connects_b": [
-        "thyme",
-        "parsley",
+        "carrot",
+        "kosher sea salt",
         "2"
       ]
     },
@@ -75,74 +75,79 @@
       "name": "garam masala",
       "score": 44.24872798456415,
       "connects_a": [
-        "onion",
-        "ginger",
-        "cumin"
+        "tomatoes",
+        "cumin",
+        "onion"
       ],
       "connects_b": [
-        "onion",
         "garlic",
-        "potatoes"
+        "potatoes",
+        "onion"
       ]
     },
     {
       "name": "cornmeal",
       "score": 42.172326230004444,
       "connects_a": [
-        "mayonnaise",
         "rosemary",
+        "onion powder",
         "seasoning"
       ],
       "connects_b": [
-        "thyme",
-        "flour",
-        "egg"
+        "purpose flour",
+        "kosher sea salt",
+        "buttermilk"
       ]
     },
     {
       "name": "cans tomatoes",
       "score": 40.088856636544925,
       "connects_a": [
-        "cloves",
+        "seasoning",
         "onion",
-        "pepper flakes"
+        "oregano"
       ],
       "connects_b": [
-        "cloves",
-        "onion",
-        "leaves"
+        "carrot",
+        "olive oil",
+        "onion"
       ]
     },
     {
       "name": "bay leaf",
       "score": 36.323983727736966,
       "connects_a": [
-        "onion",
-        "oregano",
+        "rosemary",
+        "tomatoes",
         "cumin"
       ],
       "connects_b": [
-        "thyme",
+        "carrot",
         "onion",
-        "parsley"
+        "thyme"
       ]
     },
     {
       "name": "sriracha",
       "score": 36.04260136767887,
       "connects_a": [
-        "mayonnaise",
-        "honey",
+        "ketchup",
+        "soy sauce",
         "ginger"
       ],
       "connects_b": [
-        "carrot",
-        "honey",
-        "cabbage"
+        "garlic",
+        "cabbage",
+        "carrot"
       ]
     }
   ],
   "novel_from_a": [
+    {
+      "name": "sandwich rolls",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
     {
       "name": "cherry tomatoes",
       "pairs_with": "olive oil",
@@ -159,11 +164,6 @@
       "strength": 1
     },
     {
-      "name": "sandwich rolls",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "chipotle chile",
       "pairs_with": "cloves",
       "strength": 1
@@ -174,17 +174,17 @@
       "strength": 1
     },
     {
-      "name": "pecans",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
       "name": "gruyere cheese",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "chicken base",
+      "name": "pecans",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "sandwich rolls",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -195,6 +195,21 @@
     }
   ],
   "novel_from_b": [
+    {
+      "name": "sherry vinegar",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "bunch kale",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "olives",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
     {
       "name": "palm",
       "pairs_with": "olive oil",
@@ -211,37 +226,22 @@
       "strength": 1
     },
     {
-      "name": "olives",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "bunch kale",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "sherry vinegar",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "palm",
+      "name": "slab bacon",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "head fennel",
+      "name": "stock",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "allspice berries",
+      "name": "sprigs thyme",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "finely parsley",
+      "name": "beef chuck",
       "pairs_with": "cloves",
       "strength": 1
     }

@@ -5,152 +5,157 @@
       "name": "celery",
       "score": 230.57091581715562,
       "connects_a": [
-        "onion",
-        "oregano",
-        "bell pepper"
+        "onion powder",
+        "worcestershire sauce",
+        "tomatoes"
       ],
       "connects_b": [
-        "chicken broth",
-        "cajun seasoning",
-        "oregano"
+        "onion powder",
+        "creole seasoning",
+        "tomatoes"
       ]
     },
     {
       "name": "andouille sausage",
       "score": 210.27795937707737,
       "connects_a": [
-        "onion",
-        "oregano",
-        "bell pepper"
+        "onion powder",
+        "worcestershire sauce",
+        "tomatoes"
       ],
       "connects_b": [
-        "chicken broth",
-        "cajun seasoning",
-        "oregano"
+        "onion powder",
+        "creole seasoning",
+        "tomatoes"
       ]
     },
     {
       "name": "creole seasoning",
       "score": 190.10262526871466,
       "connects_a": [
-        "mayonnaise",
-        "oregano",
-        "bell pepper"
+        "onion powder",
+        "worcestershire sauce",
+        "tomatoes"
       ],
       "connects_b": [
-        "chicken broth",
-        "oregano",
-        "hot sauce"
+        "onion powder",
+        "tomatoes",
+        "oregano"
       ]
     },
     {
       "name": "cayenne pepper",
       "score": 150.98060700041185,
       "connects_a": [
-        "mayonnaise",
-        "oregano",
-        "bell pepper"
+        "ketchup",
+        "onion powder",
+        "worcestershire sauce"
       ],
       "connects_b": [
-        "thyme",
-        "celery",
-        "andouille sausage"
+        "okra",
+        "onion powder",
+        "worcestershire sauce"
       ]
     },
     {
       "name": "tomato paste",
       "score": 140.90338871890893,
       "connects_a": [
-        "cloves",
-        "onion",
-        "oregano"
+        "worcestershire sauce",
+        "tomatoes",
+        "cumin"
       ],
       "connects_b": [
-        "thyme",
-        "cloves",
-        "celery"
+        "okra",
+        "worcestershire sauce",
+        "tomatoes"
       ]
     },
     {
       "name": "cajun seasoning",
       "score": 136.06045956481054,
       "connects_a": [
-        "mayonnaise",
-        "bell pepper",
-        "worcestershire sauce"
+        "onion powder",
+        "worcestershire sauce",
+        "tomatoes"
       ],
       "connects_b": [
-        "chicken broth",
-        "thyme",
-        "celery"
+        "okra",
+        "onion powder",
+        "worcestershire sauce"
       ]
     },
     {
       "name": "file powder",
       "score": 135.27418045407316,
       "connects_a": [
-        "onion",
+        "onion powder",
         "tomatoes",
-        "bell pepper"
+        "onion"
       ],
       "connects_b": [
-        "thyme",
-        "celery",
-        "onion"
+        "okra",
+        "purpose flour",
+        "onion powder"
       ]
     },
     {
       "name": "hot sauce",
       "score": 130.51148794166406,
       "connects_a": [
-        "mayonnaise",
-        "bell pepper",
+        "ketchup",
+        "onion powder",
         "worcestershire sauce"
       ],
       "connects_b": [
-        "thyme",
-        "celery",
-        "andouille sausage"
+        "okra",
+        "onion powder",
+        "worcestershire sauce"
       ]
     },
     {
       "name": "garlic powder",
       "score": 121.23019051154748,
       "connects_a": [
-        "mayonnaise",
-        "oregano",
-        "cumin"
+        "ketchup",
+        "breast halves",
+        "onion powder"
       ],
       "connects_b": [
-        "thyme",
-        "celery",
-        "cajun seasoning"
+        "onion powder",
+        "worcestershire sauce",
+        "creole seasoning"
       ]
     },
     {
       "name": "onion powder",
       "score": 120.42344420953422,
       "connects_a": [
-        "mayonnaise",
-        "oregano",
-        "cumin"
+        "ketchup",
+        "worcestershire sauce",
+        "seasoning"
       ],
       "connects_b": [
-        "thyme",
-        "celery",
-        "andouille sausage"
+        "worcestershire sauce",
+        "creole seasoning",
+        "oregano"
       ]
     }
   ],
   "novel_from_a": [
+    {
+      "name": "sirloin",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
     {
       "name": "chipotle chile",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "sirloin",
-      "pairs_with": "cloves",
+      "name": "gruyere cheese",
+      "pairs_with": "butter",
       "strength": 1
     },
     {
@@ -159,8 +164,8 @@
       "strength": 1
     },
     {
-      "name": "gruyere cheese",
-      "pairs_with": "butter",
+      "name": "beef stock",
+      "pairs_with": "onion",
       "strength": 1
     },
     {
@@ -179,12 +184,7 @@
       "strength": 1
     },
     {
-      "name": "beef stock",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "pecans",
+      "name": "maple syrup",
       "pairs_with": "egg",
       "strength": 1
     },
@@ -196,27 +196,7 @@
   ],
   "novel_from_b": [
     {
-      "name": "pasta",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "romano cheese",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "spaghetti",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "reggiano cheese",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "linguine",
+      "name": "olives",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -226,7 +206,17 @@
       "strength": 1
     },
     {
-      "name": "fettuccine",
+      "name": "penne pasta",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "linguini",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "reggiano cheese",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -236,12 +226,22 @@
       "strength": 1
     },
     {
-      "name": "capers",
+      "name": "chorizo",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "olives",
+      "name": "spaghetti",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "couscous",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "romano cheese",
       "pairs_with": "olive oil",
       "strength": 1
     }

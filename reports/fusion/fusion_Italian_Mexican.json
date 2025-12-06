@@ -5,12 +5,12 @@
       "name": "can tomatoes",
       "score": 84.49441628721962,
       "connects_a": [
-        "cloves",
-        "optional",
-        "pepper flakes"
+        "basil",
+        "mozzarella cheese",
+        "seasoning"
       ],
       "connects_b": [
-        "cloves",
+        "cumin",
         "onion",
         "oregano"
       ]
@@ -19,54 +19,54 @@
       "name": "tomato paste",
       "score": 70.45169435945446,
       "connects_a": [
-        "cloves",
-        "onion",
-        "parsley"
+        "basil",
+        "carrot",
+        "tomatoes"
       ],
       "connects_b": [
-        "cloves",
-        "onion",
-        "oregano"
+        "tomatoes",
+        "cumin",
+        "onion"
       ]
     },
     {
       "name": "corn tortillas",
       "score": 68.2387121204581,
       "connects_a": [
-        "more",
+        "tomatoes",
         "onion",
-        "tomatoes"
+        "oregano"
       ],
       "connects_b": [
-        "jalapeno",
-        "more",
-        "cilantro leaves"
+        "tomatoes",
+        "cumin",
+        "salsa"
       ]
     },
     {
       "name": "salsa",
       "score": 64.18752640806096,
       "connects_a": [
-        "cream",
         "bell pepper",
-        "tomatoes"
+        "tomatoes",
+        "cream"
       ],
       "connects_b": [
-        "jalapeno",
-        "cream",
-        "cilantro leaves"
+        "beans",
+        "flour tortillas",
+        "tomatoes"
       ]
     },
     {
       "name": "cans tomatoes",
       "score": 50.11107079568116,
       "connects_a": [
-        "cloves",
-        "optional",
-        "pepper flakes"
+        "carrot",
+        "seasoning",
+        "onion"
       ],
       "connects_b": [
-        "cloves",
+        "olive oil",
         "onion",
         "oregano"
       ]
@@ -75,27 +75,27 @@
       "name": "celery",
       "score": 49.12162989148098,
       "connects_a": [
-        "onion",
-        "parsley",
-        "oregano"
+        "carrot",
+        "tomatoes",
+        "onion"
       ],
       "connects_b": [
+        "tomatoes",
         "onion",
-        "oregano",
-        "bell pepper"
+        "oregano"
       ]
     },
     {
       "name": "at",
       "score": 48.191190206006596,
       "connects_a": [
-        "cream",
-        "more",
-        "1"
+        "purpose flour",
+        "butter",
+        "kosher sea salt"
       ],
       "connects_b": [
-        "cream",
-        "more",
+        "butter",
+        "kosher sea salt",
         "1"
       ]
     },
@@ -103,14 +103,14 @@
       "name": "plum tomatoes",
       "score": 48.09296792051511,
       "connects_a": [
-        "cloves",
-        "pepper flakes",
-        "spaghetti"
+        "basil",
+        "freshly",
+        "olive oil"
       ],
       "connects_b": [
         "jalapeno",
-        "cilantro leaves",
-        "cloves"
+        "olive oil",
+        "cilantro"
       ]
     },
     {
@@ -122,29 +122,34 @@
         "oregano"
       ],
       "connects_b": [
-        "jalapeno",
-        "cilantro leaves",
-        "oregano"
+        "beans",
+        "flour tortillas",
+        "tomatoes"
       ]
     },
     {
       "name": "confectioners",
       "score": 42.21906731492633,
       "connects_a": [
-        "cream",
-        "more",
+        "purpose flour",
+        "butter",
         "1"
       ],
       "connects_b": [
-        "cream",
-        "more",
+        "butter",
+        "cinnamon",
         "1"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "crusty bread",
+      "name": "for drizzling",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cubanelle peppers",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -154,22 +159,7 @@
       "strength": 1
     },
     {
-      "name": "pasta",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pancetta",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "crusty rolls",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cannellini",
+      "name": "marzano",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -179,7 +169,22 @@
       "strength": 1
     },
     {
-      "name": "ricotta salata",
+      "name": "orecchiette",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "morel mushrooms",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "center cut",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "linguine",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -187,21 +192,16 @@
       "name": "pinenuts",
       "pairs_with": "olive oil",
       "strength": 1
-    },
-    {
-      "name": "of handfuls",
-      "pairs_with": "olive oil",
-      "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "cotija cheese",
+      "name": "chipotles",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "chipotles",
+      "name": "cotija cheese",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -226,12 +226,12 @@
       "strength": 1
     },
     {
-      "name": "masa harina",
+      "name": "pinto",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "pinto",
+      "name": "masa harina",
       "pairs_with": "onion",
       "strength": 1
     },

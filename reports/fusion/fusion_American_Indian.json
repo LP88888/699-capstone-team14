@@ -5,198 +5,213 @@
       "name": "garam masala",
       "score": 136.76879558865284,
       "connects_a": [
-        "onion",
+        "tomatoes",
         "cumin",
-        "lemon juice"
+        "onion"
       ],
       "connects_b": [
         "mustard seeds",
-        "cumin seeds",
-        "onion"
+        "coriander",
+        "tomatoes"
       ]
     },
     {
       "name": "tumeric",
       "score": 90.25476534447176,
       "connects_a": [
-        "onion",
+        "tomatoes",
         "cumin",
-        "garlic"
+        "onion"
       ],
       "connects_b": [
         "mustard seeds",
-        "cumin seeds",
-        "onion"
+        "coriander",
+        "garam masala"
       ]
     },
     {
       "name": "coriander powder",
       "score": 72.14059371180701,
       "connects_a": [
-        "onion",
         "tomatoes",
-        "leaves"
+        "cumin",
+        "cinnamon"
       ],
       "connects_b": [
-        "cumin seeds",
-        "onion",
-        "cardamom"
+        "garam masala",
+        "tomatoes",
+        "cumin"
       ]
     },
     {
       "name": "mustard seeds",
       "score": 70.05451903849105,
       "connects_a": [
-        "cumin",
-        "vegetable oil",
-        "wine vinegar"
+        "wine vinegar",
+        "tomatoes",
+        "cumin"
       ],
       "connects_b": [
-        "cumin seeds",
-        "tomatoes",
-        "turmeric"
+        "coriander",
+        "garam masala",
+        "tomatoes"
       ]
     },
     {
       "name": "cardamom pods",
       "score": 66.13565368032968,
       "connects_a": [
-        "cloves",
-        "optional",
-        "cumin"
+        "tomatoes",
+        "cumin",
+        "cinnamon"
       ],
       "connects_b": [
-        "cloves",
-        "cumin seeds",
-        "turmeric"
+        "coriander",
+        "garam masala",
+        "tomatoes"
       ]
     },
     {
       "name": "chilies",
       "score": 56.03113269019147,
       "connects_a": [
-        "cumin",
-        "cinnamon",
-        "tomatoes"
+        "potatoes",
+        "tomatoes",
+        "cumin"
       ],
       "connects_b": [
         "mustard seeds",
-        "cumin seeds",
-        "cardamom"
+        "coriander",
+        "garam masala"
       ]
     },
     {
       "name": "chiles",
       "score": 55.26249642594055,
       "connects_a": [
-        "cloves",
         "taste",
+        "cumin",
         "2"
       ],
       "connects_b": [
         "mustard seeds",
-        "cloves",
-        "cumin seeds"
+        "coriander",
+        "garam masala"
       ]
     },
     {
       "name": "tomato paste",
       "score": 42.271016615672686,
       "connects_a": [
-        "cloves",
-        "onion",
-        "parsley"
+        "carrot",
+        "tomatoes",
+        "cumin"
       ],
       "connects_b": [
-        "cloves",
-        "onion",
-        "turmeric"
+        "garam masala",
+        "tomatoes",
+        "cumin"
       ]
     },
     {
       "name": "turmeric",
       "score": 42.081416629783405,
       "connects_a": [
-        "cumin",
         "tomatoes",
+        "cumin",
         "vegetable oil"
       ],
       "connects_b": [
         "mustard seeds",
-        "cumin seeds",
-        "cardamom"
+        "coriander",
+        "garam masala"
       ]
     },
     {
       "name": "cumin seeds",
       "score": 42.051821498233515,
       "connects_a": [
-        "cumin",
+        "potatoes",
         "tomatoes",
-        "potatoes"
+        "cumin"
       ],
       "connects_b": [
         "mustard seeds",
-        "cardamom",
-        "tomatoes"
+        "coriander",
+        "garam masala"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "pecorino cheese",
+      "name": "snapper fillets",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "sirloin",
+      "name": "pass",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "slab bacon",
+      "name": "jalapeno chile",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "leaves finely",
+      "name": "to each",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "pine",
+      "name": "san marzano",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "head fennel",
+      "name": "anchovy paste",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "sodium",
+      "name": "beef chuck",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "mussels",
+      "name": "squid",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "veal",
+      "name": "bunch basil",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "chipotle chile",
+      "name": "onion finely",
       "pairs_with": "cloves",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "kasuri methi",
+      "name": "sambar",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "lentil",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "paneer",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "coriander powder",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -206,7 +221,7 @@
       "strength": 1
     },
     {
-      "name": "lentil",
+      "name": "kasuri methi",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -217,21 +232,6 @@
     },
     {
       "name": "capsicum",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "paneer",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "sambar",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "coriander powder",
       "pairs_with": "onion",
       "strength": 1
     },

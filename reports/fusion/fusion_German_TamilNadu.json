@@ -5,36 +5,36 @@
       "name": "cardamom",
       "score": 15.224484016084034,
       "connects_a": [
-        "nutmeg",
         "cinnamon",
-        "bay leaf"
+        "bay leaf",
+        "nutmeg"
       ],
       "connects_b": [
-        "chilli",
-        "seeds",
-        "oil"
+        "powder",
+        "oil",
+        "chilli"
       ]
     },
     {
       "name": "garam masala",
       "score": 14.07914072236132,
       "connects_a": [
-        "onion",
         "bay leaf",
-        "lemon juice"
+        "onion",
+        "vegetable oil"
       ],
       "connects_b": [
-        "onion",
-        "oil"
+        "oil",
+        "onion"
       ]
     },
     {
       "name": "beef stock",
       "score": 12.04417907965786,
       "connects_a": [
-        "flour",
-        "onion",
-        "carrot"
+        "carrot",
+        "wine",
+        "bay leaf"
       ],
       "connects_b": [
         "flour",
@@ -45,14 +45,14 @@
       "name": "coriander powder",
       "score": 12.023432285301169,
       "connects_a": [
-        "cinnamon",
+        "garlic",
         "onion",
-        "garlic"
+        "leaves"
       ],
       "connects_b": [
-        "onion",
         "leaves",
-        "oil"
+        "oil",
+        "onion"
       ]
     },
     {
@@ -62,31 +62,31 @@
         "flour"
       ],
       "connects_b": [
-        "chilli",
-        "flour",
-        "oil salt"
+        "finger",
+        "fenugreek",
+        "powder"
       ]
     },
     {
       "name": "bay leaf",
       "score": 10.089995479926934,
       "connects_a": [
-        "onion",
-        "parsley",
-        "bacon"
+        "carrot",
+        "wine",
+        "onion"
       ],
       "connects_b": [
-        "onion",
-        "beans"
+        "beans",
+        "onion"
       ]
     },
     {
       "name": "can tomatoes",
       "score": 10.05885908181186,
       "connects_a": [
-        "cloves",
-        "onion",
-        "parsley"
+        "wine",
+        "bay leaf",
+        "onion"
       ],
       "connects_b": [
         "onion",
@@ -97,39 +97,39 @@
       "name": "cans tomatoes",
       "score": 10.022214159136231,
       "connects_a": [
-        "cloves",
-        "onion",
-        "leaves"
+        "carrot",
+        "olive oil",
+        "onion"
       ],
       "connects_b": [
-        "onion",
-        "leaves"
+        "leaves",
+        "onion"
       ]
     },
     {
       "name": "file powder",
       "score": 10.02030966326468,
       "connects_a": [
+        "purpose flour",
         "onion",
-        "garlic",
         "vegetable oil"
       ],
       "connects_b": [
-        "onion",
-        "leaves"
+        "leaves",
+        "onion"
       ]
     },
     {
       "name": "evoo",
       "score": 10.008119347930965,
       "connects_a": [
-        "cloves",
+        "wine",
         "onion",
-        "wine"
+        "bay leaf"
       ],
       "connects_b": [
-        "onion",
-        "leaves"
+        "leaves",
+        "onion"
       ]
     }
   ],
@@ -145,7 +145,17 @@
       "strength": 1
     },
     {
-      "name": "celery",
+      "name": "beef broth",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "andouille sausage",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "lentils",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -155,17 +165,12 @@
       "strength": 1
     },
     {
-      "name": "tomato paste",
+      "name": "beef chuck",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "tomato soup",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "ham hocks",
+      "name": "ribs celery",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -175,12 +180,7 @@
       "strength": 1
     },
     {
-      "name": "stalks celery",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "beef stock",
+      "name": "celery ribs",
       "pairs_with": "onion",
       "strength": 1
     }
@@ -197,7 +197,7 @@
       "strength": 1
     },
     {
-      "name": "wheat",
+      "name": "carom",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -207,12 +207,12 @@
       "strength": 1
     },
     {
-      "name": "carom",
+      "name": "finger",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "finger",
+      "name": "wheat",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -232,7 +232,7 @@
       "strength": 1
     },
     {
-      "name": "salt coriander",
+      "name": "pudina",
       "pairs_with": "leaves",
       "strength": 1
     }

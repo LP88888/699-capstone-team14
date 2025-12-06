@@ -5,151 +5,156 @@
       "name": "confectioners",
       "score": 91.47464584900705,
       "connects_a": [
-        "cream",
-        "egg yolks",
-        "purpose flour"
+        "purpose flour",
+        "cocoa powder",
+        "butter"
       ],
       "connects_b": [
-        "1",
-        "more",
-        "egg"
+        "purpose flour",
+        "butter",
+        "cinnamon"
       ]
     },
     {
       "name": "vanilla extract",
       "score": 73.15523061176131,
       "connects_a": [
-        "cream",
-        "egg yolks",
-        "purpose flour"
+        "purpose flour",
+        "cocoa powder",
+        "butter"
       ],
       "connects_b": [
-        "1",
-        "egg",
-        "milk"
+        "purpose flour",
+        "butter",
+        "cinnamon"
       ]
     },
     {
       "name": "sticks",
       "score": 66.23342395169061,
       "connects_a": [
-        "egg yolks",
-        "egg",
-        "2"
+        "purpose flour",
+        "cocoa powder",
+        "butter"
       ],
       "connects_b": [
-        "1",
-        "more",
-        "egg"
+        "purpose flour",
+        "butter",
+        "cinnamon"
       ]
     },
     {
       "name": "garam masala",
       "score": 63.35613325062594,
       "connects_a": [
-        "onion",
         "bay leaf",
-        "lemon juice"
+        "onion",
+        "vegetable oil"
       ],
       "connects_b": [
-        "spinach",
-        "onion",
-        "greek yogurt"
+        "greek yogurt",
+        "tomatoes",
+        "yogurt"
       ]
     },
     {
       "name": "at",
       "score": 54.21508898175742,
       "connects_a": [
-        "cream",
-        "egg yolks",
-        "purpose flour"
+        "purpose flour",
+        "cocoa powder",
+        "butter"
       ],
       "connects_b": [
-        "1",
-        "more",
-        "egg"
+        "purpose flour",
+        "butter",
+        "1"
       ]
     },
     {
       "name": "almond extract",
       "score": 54.060099135343485,
       "connects_a": [
-        "egg yolks",
         "purpose flour",
-        "egg"
+        "butter",
+        "egg whites"
       ],
       "connects_b": [
-        "1",
-        "egg",
-        "milk"
+        "purpose flour",
+        "butter",
+        "cinnamon"
       ]
     },
     {
       "name": "room temp",
       "score": 50.03629785395146,
       "connects_a": [
-        "egg yolks",
         "purpose flour",
-        "egg"
+        "cocoa powder",
+        "butter"
       ],
       "connects_b": [
-        "egg",
-        "milk",
-        "butter"
+        "purpose flour",
+        "butter",
+        "cinnamon"
       ]
     },
     {
       "name": "ice water",
       "score": 48.244685781984174,
       "connects_a": [
-        "flour",
-        "egg yolks",
-        "egg"
+        "purpose flour",
+        "butter",
+        "nutmeg"
       ],
       "connects_b": [
-        "1",
-        "more",
-        "egg"
+        "purpose flour",
+        "butter",
+        "cinnamon"
       ]
     },
     {
       "name": "whole milk",
       "score": 45.131783279157894,
       "connects_a": [
-        "egg yolks",
-        "egg",
-        "2"
+        "purpose flour",
+        "cocoa powder",
+        "butter"
       ],
       "connects_b": [
-        "more",
-        "egg",
-        "butter"
+        "purpose flour",
+        "butter",
+        "cinnamon"
       ]
     },
     {
       "name": "filling",
       "score": 45.069119215072945,
       "connects_a": [
-        "cream",
-        "flour",
+        "purpose flour",
+        "butter",
         "egg yolks"
       ],
       "connects_b": [
-        "egg",
-        "milk",
-        "butter"
+        "purpose flour",
+        "butter",
+        "cinnamon"
       ]
     }
   ],
   "novel_from_a": [
+    {
+      "name": "dutch process",
+      "pairs_with": "butter",
+      "strength": 1
+    },
     {
       "name": "bosc pears",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "corn syrup",
+      "name": "cooking apples",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -159,22 +164,17 @@
       "strength": 1
     },
     {
-      "name": "dutch process",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "believe",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "percent milk",
+      "name": "graham cracker crumbs",
       "pairs_with": "butter",
       "strength": 1
     },
     {
       "name": "calvados",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "ca",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -189,59 +189,59 @@
       "strength": 1
     },
     {
-      "name": "ca",
+      "name": "percent milk",
       "pairs_with": "butter",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
+      "name": "petite",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "pizza",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "crusty bread",
+      "name": "pepperoncini peppers",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "heads garlic",
+      "name": "plum tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "palm",
+      "name": "sherry vinegar",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "head fennel",
+      "name": "san marzano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "handful pine nuts",
+      "name": "couscous",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cherry tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "for drizzling",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
       "name": "anchovy paste",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "reggiano cheese",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "kalamata olives",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pepperoncini peppers",
       "pairs_with": "olive oil",
       "strength": 1
     }

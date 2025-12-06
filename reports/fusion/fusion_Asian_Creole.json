@@ -6,41 +6,41 @@
       "score": 119.15751031367718,
       "connects_a": [
         "onion",
-        "bell pepper",
-        "chicken breasts"
+        "garlic",
+        "bell pepper"
       ],
       "connects_b": [
-        "thyme",
-        "celery",
-        "onion"
+        "onion powder",
+        "worcestershire sauce",
+        "creole seasoning"
       ]
     },
     {
       "name": "chili sauce",
       "score": 104.18348836628064,
       "connects_a": [
-        "fish sauce",
-        "oyster sauce",
-        "hoisin sauce"
+        "peanut oil",
+        "sesame oil",
+        "scallions"
       ],
       "connects_b": [
-        "mayonnaise",
-        "celery",
-        "andouille sausage"
+        "onion powder",
+        "worcestershire sauce",
+        "creole seasoning"
       ]
     },
     {
       "name": "celery",
       "score": 102.2531887536951,
       "connects_a": [
+        "carrot",
         "onion",
-        "bell pepper",
-        "rice"
+        "garlic"
       ],
       "connects_b": [
-        "thyme",
-        "onion",
-        "andouille sausage"
+        "onion powder",
+        "worcestershire sauce",
+        "creole seasoning"
       ]
     },
     {
@@ -48,13 +48,13 @@
       "score": 90.12299919886672,
       "connects_a": [
         "onion",
-        "bell pepper",
-        "chicken breasts"
+        "vegetable oil",
+        "bell pepper"
       ],
       "connects_b": [
-        "thyme",
-        "celery",
-        "onion"
+        "purpose flour",
+        "worcestershire sauce",
+        "tomatoes"
       ]
     },
     {
@@ -62,104 +62,114 @@
       "score": 84.1706011714233,
       "connects_a": [
         "onion",
-        "bell pepper",
-        "garlic"
+        "vegetable oil",
+        "bell pepper"
       ],
       "connects_b": [
-        "thyme",
-        "celery",
-        "onion"
+        "purpose flour",
+        "onion powder",
+        "tomatoes"
       ]
     },
     {
       "name": "yellow onion",
       "score": 70.04045389559045,
       "connects_a": [
-        "pepper flakes",
         "2",
+        "garlic",
         "bell pepper"
       ],
       "connects_b": [
-        "kosher sea salt",
-        "thyme",
-        "celery"
+        "onion powder",
+        "worcestershire sauce",
+        "kosher sea salt"
       ]
     },
     {
       "name": "creole seasoning",
       "score": 68.03672904353999,
       "connects_a": [
-        "shrimp",
+        "garlic",
         "rice",
-        "bell pepper"
+        "shrimp"
       ],
       "connects_b": [
-        "thyme",
-        "mayonnaise",
-        "celery"
+        "onion powder",
+        "worcestershire sauce",
+        "tomatoes"
       ]
     },
     {
       "name": "chicken thighs",
       "score": 66.18335746824758,
       "connects_a": [
-        "fish sauce",
-        "oyster sauce",
-        "rice vinegar"
+        "carrot",
+        "soy sauce",
+        "scallions"
       ],
       "connects_b": [
         "celery",
-        "paprika",
-        "bell pepper"
+        "bell pepper",
+        "vegetable oil"
       ]
     },
     {
       "name": "yellow onions",
       "score": 65.08980878101612,
       "connects_a": [
-        "pepper flakes",
+        "carrot",
         "2",
-        "bell pepper"
+        "garlic"
       ],
       "connects_b": [
-        "kosher sea salt",
-        "thyme",
-        "celery"
+        "onion powder",
+        "worcestershire sauce",
+        "kosher sea salt"
       ]
     },
     {
       "name": "shiitake",
       "score": 64.04744545427715,
       "connects_a": [
-        "oyster sauce",
-        "hoisin sauce",
-        "shrimp"
+        "peanut oil",
+        "sesame oil",
+        "carrot"
       ],
       "connects_b": [
-        "thyme",
         "shrimp",
-        "celery"
+        "thyme",
+        "chicken stock"
       ]
     }
   ],
   "novel_from_a": [
+    {
+      "name": "handful pine nuts",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
     {
       "name": "bunch kale",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pasta",
+      "name": "pass",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "some",
+      "name": "center cut",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pancetta",
+      "name": "linguine",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "chipotle puree",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -169,34 +179,24 @@
       "strength": 1
     },
     {
-      "name": "crusty rolls",
+      "name": "anchovy paste",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "couscous",
+      "name": "pasta",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "sandwich rolls",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "head fennel",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "montreal steak",
+      "name": "brussels sprouts",
       "pairs_with": "olive oil",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "capers",
+      "name": "roasted tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -206,12 +206,7 @@
       "strength": 1
     },
     {
-      "name": "roasted tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "romano cheese",
+      "name": "fettuccine",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -221,12 +216,17 @@
       "strength": 1
     },
     {
-      "name": "fettuccine",
+      "name": "romano cheese",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "allspice berries",
+      "name": "capers",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pasilla chiles",
       "pairs_with": "cloves",
       "strength": 1
     },

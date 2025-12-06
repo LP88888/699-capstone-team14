@@ -5,41 +5,41 @@
       "name": "celery",
       "score": 160.39715882932566,
       "connects_a": [
-        "thyme",
-        "onion",
-        "parsley"
+        "onion powder",
+        "worcestershire sauce",
+        "tomatoes"
       ],
       "connects_b": [
-        "onion",
-        "parsley",
-        "paprika"
+        "carrot",
+        "tomatoes",
+        "onion"
       ]
     },
     {
       "name": "andouille sausage",
       "score": 153.2025132604421,
       "connects_a": [
-        "thyme",
-        "celery",
-        "onion"
+        "onion powder",
+        "worcestershire sauce",
+        "tomatoes"
       ],
       "connects_b": [
+        "tomatoes",
         "onion",
-        "paprika",
-        "bell pepper"
+        "garlic"
       ]
     },
     {
       "name": "creole seasoning",
       "score": 128.0691370231341,
       "connects_a": [
-        "thyme",
-        "mayonnaise",
-        "celery"
+        "onion powder",
+        "worcestershire sauce",
+        "tomatoes"
       ],
       "connects_b": [
-        "parsley",
-        "paprika",
+        "tomatoes",
+        "garlic",
         "bell pepper"
       ]
     },
@@ -47,83 +47,83 @@
       "name": "yellow onions",
       "score": 117.16165580582901,
       "connects_a": [
-        "kosher sea salt",
-        "thyme",
-        "celery"
+        "onion powder",
+        "worcestershire sauce",
+        "kosher sea salt"
       ],
       "connects_b": [
-        "parsley",
-        "paprika",
-        "2"
+        "carrot",
+        "wine",
+        "kosher sea salt"
       ]
     },
     {
       "name": "grits",
       "score": 112.43817201060622,
       "connects_a": [
-        "cream",
-        "more",
-        "parsley"
+        "onion powder",
+        "butter",
+        "scallions"
       ],
       "connects_b": [
-        "more",
-        "parsley",
-        "paprika"
+        "butter",
+        "2",
+        "bell pepper"
       ]
     },
     {
       "name": "yellow onion",
       "score": 112.06472623294471,
       "connects_a": [
-        "kosher sea salt",
-        "thyme",
-        "celery"
+        "onion powder",
+        "worcestershire sauce",
+        "kosher sea salt"
       ],
       "connects_b": [
-        "paprika",
-        "2",
-        "wine"
+        "wine",
+        "kosher sea salt",
+        "2"
       ]
     },
     {
       "name": "tomato paste",
       "score": 108.6968998688726,
       "connects_a": [
-        "thyme",
-        "cloves",
-        "celery"
+        "worcestershire sauce",
+        "tomatoes",
+        "onion"
       ],
       "connects_b": [
-        "cloves",
-        "onion",
-        "parsley"
+        "carrot",
+        "tomatoes",
+        "cumin"
       ]
     },
     {
       "name": "chorizo",
       "score": 108.19932230162934,
       "connects_a": [
-        "cloves",
-        "parsley",
-        "paprika"
+        "tomatoes",
+        "olive oil",
+        "bell pepper"
       ],
       "connects_b": [
-        "cloves",
-        "parsley",
-        "paprika"
+        "olives",
+        "tomatoes",
+        "wine"
       ]
     },
     {
       "name": "file powder",
       "score": 91.18481793570858,
       "connects_a": [
-        "thyme",
-        "celery",
-        "onion"
+        "purpose flour",
+        "onion powder",
+        "tomatoes"
       ],
       "connects_b": [
-        "onion",
         "tomatoes",
+        "onion",
         "bell pepper"
       ]
     },
@@ -131,20 +131,20 @@
       "name": "okra",
       "score": 90.12299919886672,
       "connects_a": [
-        "thyme",
-        "celery",
-        "onion"
+        "purpose flour",
+        "worcestershire sauce",
+        "tomatoes"
       ],
       "connects_b": [
+        "tomatoes",
         "onion",
-        "bell pepper",
-        "rice"
+        "bell pepper"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "roma",
+      "name": "chipotle puree",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -154,27 +154,17 @@
       "strength": 1
     },
     {
-      "name": "chipotle puree",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "pasta",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "penne pasta",
+      "name": "fettuccine",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "by hand",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "linguine",
+      "name": "cannellini beans",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -184,7 +174,17 @@
       "strength": 1
     },
     {
-      "name": "fettuccine",
+      "name": "linguine",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "penne pasta",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "roma",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -201,17 +201,32 @@
       "strength": 1
     },
     {
-      "name": "heads garlic",
+      "name": "sherry vinegar",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "palm",
+      "name": "pancetta",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "kalamata olives",
+      "name": "san marzano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "chorizo",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "grigio",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "for drizzling",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -221,27 +236,12 @@
       "strength": 1
     },
     {
-      "name": "montreal steak",
+      "name": "pimenton",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "center cut",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "finely oregano",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "artichokes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "chorizo",
+      "name": "littleneck clams",
       "pairs_with": "olive oil",
       "strength": 1
     }

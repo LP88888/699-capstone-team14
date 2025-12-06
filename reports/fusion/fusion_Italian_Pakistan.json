@@ -5,84 +5,84 @@
       "name": "garam masala",
       "score": 108.61051414393017,
       "connects_a": [
-        "onion",
-        "lemon juice",
-        "garlic"
+        "garlic",
+        "tomatoes",
+        "onion"
       ],
       "connects_b": [
-        "cardamom",
+        "coriander",
         "basmati rice",
-        "yogurt"
+        "tomatoes"
       ]
     },
     {
       "name": "tomato paste",
       "score": 70.45169435945446,
       "connects_a": [
-        "cloves",
-        "onion",
-        "parsley"
+        "basil",
+        "carrot",
+        "tomatoes"
       ],
       "connects_b": [
-        "cloves",
-        "onion",
-        "turmeric"
+        "garam masala",
+        "tomatoes",
+        "cumin"
       ]
     },
     {
       "name": "coriander powder",
       "score": 64.1249721882729,
       "connects_a": [
-        "onion",
         "garlic",
+        "tomatoes",
         "leaves"
       ],
       "connects_b": [
-        "cumin seeds",
+        "garam masala",
         "tumeric",
-        "onion"
+        "tomatoes"
       ]
     },
     {
       "name": "can tomatoes",
       "score": 56.32961085814641,
       "connects_a": [
-        "cloves",
-        "optional",
-        "pepper flakes"
+        "basil",
+        "mozzarella cheese",
+        "seasoning"
       ],
       "connects_b": [
         "cumin",
         "cloves",
-        "chili powder"
+        "onion"
       ]
     },
     {
       "name": "bay leaf",
       "score": 54.485975591605445,
       "connects_a": [
-        "onion",
-        "parsley",
-        "oregano"
+        "carrot",
+        "tomatoes",
+        "wine"
       ],
       "connects_b": [
-        "onion",
-        "cardamom",
-        "turmeric"
+        "cinnamon sticks",
+        "garam masala",
+        "basmati rice"
       ]
     },
     {
       "name": "tumeric",
       "score": 54.15285920668306,
       "connects_a": [
-        "onion",
         "garlic",
-        "tomatoes"
+        "tomatoes",
+        "onion"
       ],
       "connects_b": [
         "mustard seeds",
-        "cumin seeds",
-        "onion"
+        "coriander",
+        "garam masala"
       ]
     },
     {
@@ -94,37 +94,37 @@
         "oregano"
       ],
       "connects_b": [
+        "coconut milk",
         "mustard seeds",
-        "cumin seeds",
-        "tumeric"
+        "coriander"
       ]
     },
     {
       "name": "tomato sauce",
       "score": 45.062111144443456,
       "connects_a": [
-        "oregano",
-        "parmesan cheese",
-        "bell pepper"
+        "basil",
+        "mozzarella cheese",
+        "seasoning"
       ],
       "connects_b": [
+        "garam masala",
         "cumin",
-        "chili powder",
-        "cayenne pepper"
+        "cilantro"
       ]
     },
     {
       "name": "cardamom pods",
       "score": 42.086325069300706,
       "connects_a": [
+        "tomatoes",
         "cloves",
-        "optional",
-        "tomatoes"
+        "optional"
       ],
       "connects_b": [
-        "cloves",
-        "cumin seeds",
-        "turmeric"
+        "cinnamon sticks",
+        "coriander",
+        "garam masala"
       ]
     },
     {
@@ -132,64 +132,64 @@
       "score": 42.03657647848653,
       "connects_a": [
         "freshly",
-        "spaghetti",
-        "tomatoes"
+        "tomatoes",
+        "spaghetti"
       ],
       "connects_b": [
-        "cumin seeds",
-        "tumeric",
-        "cardamom"
+        "cinnamon sticks",
+        "coriander",
+        "garam masala"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "[extra",
+      "name": "pass",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "ricotta salata",
+      "name": "sherry vinegar",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "head fennel",
+      "name": "san marzano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "radicchio",
+      "name": "anchovy paste",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "mussels",
+      "name": "baby arugula",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pizza",
+      "name": "linguini",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "chipotle puree",
+      "name": "squid",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "marzano",
+      "name": "chianti",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "morel mushrooms",
+      "name": "fettuccine",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pecorino",
+      "name": "romano cheese",
       "pairs_with": "olive oil",
       "strength": 1
     }
@@ -206,12 +206,7 @@
       "strength": 1
     },
     {
-      "name": "kasuri methi",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "paneer",
+      "name": "garam masala",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -221,7 +216,12 @@
       "strength": 1
     },
     {
-      "name": "garam masala",
+      "name": "paneer",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "kasuri methi",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -241,7 +241,7 @@
       "strength": 1
     },
     {
-      "name": "corn starch",
+      "name": "coriander powder",
       "pairs_with": "garlic",
       "strength": 1
     }

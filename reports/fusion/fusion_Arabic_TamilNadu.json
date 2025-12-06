@@ -5,13 +5,13 @@
       "name": "garam masala",
       "score": 28.15828144472264,
       "connects_a": [
+        "chicken",
         "tomato paste",
-        "onion",
-        "cayenne"
+        "coriander"
       ],
       "connects_b": [
-        "onion",
-        "oil"
+        "oil",
+        "onion"
       ]
     },
     {
@@ -21,9 +21,9 @@
         "olive"
       ],
       "connects_b": [
-        "arhar dal",
-        "powder",
-        "leaves coriander"
+        "fenugreek",
+        "finger",
+        "powder"
       ]
     },
     {
@@ -34,32 +34,32 @@
         "olive"
       ],
       "connects_b": [
-        "chilli",
-        "flour",
-        "oil salt"
+        "finger",
+        "fenugreek",
+        "powder"
       ]
     },
     {
       "name": "cardamom",
       "score": 20.29931202144538,
       "connects_a": [
-        "cumin",
+        "yogurt",
         "coriander",
-        "yogurt"
+        "cumin"
       ],
       "connects_b": [
-        "chilli",
-        "seeds",
-        "oil"
+        "powder",
+        "oil",
+        "chilli"
       ]
     },
     {
       "name": "olive",
       "score": 18.083793290073274,
       "connects_a": [
-        "pepper bell",
-        "mint",
-        "salt pepper"
+        "salt pepper",
+        "lamb",
+        "tomato"
       ],
       "connects_b": [
         "chilli",
@@ -73,22 +73,22 @@
         "olive"
       ],
       "connects_b": [
-        "brinjal",
-        "chillies",
-        "gram"
+        "fenugreek",
+        "finger",
+        "powder"
       ]
     },
     {
       "name": "chili powder",
       "score": 15.174571935536115,
       "connects_a": [
-        "coriander",
         "chicken",
+        "coriander",
         "cumin"
       ],
       "connects_b": [
-        "gram",
         "dhania",
+        "gram",
         "oil"
       ]
     },
@@ -97,20 +97,20 @@
       "score": 14.125993671897708,
       "connects_a": [
         "tomato paste",
-        "onion",
-        "parsley"
+        "carrot",
+        "tomato"
       ],
       "connects_b": [
-        "onion",
-        "beans"
+        "beans",
+        "onion"
       ]
     },
     {
       "name": "cumin",
       "score": 12.206191225274358,
       "connects_a": [
+        "chicken",
         "tomato paste",
-        "cayenne",
         "coriander"
       ],
       "connects_b": [
@@ -122,7 +122,7 @@
       "score": 12.04417907965786,
       "connects_a": [
         "tomato paste",
-        "flour",
+        "carrot",
         "onion"
       ],
       "connects_b": [
@@ -138,17 +138,7 @@
       "strength": 1
     },
     {
-      "name": "celery",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "lentil",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "tomato paste",
+      "name": "beef",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -158,12 +148,12 @@
       "strength": 1
     },
     {
-      "name": "beef",
+      "name": "okra",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "tumeric",
+      "name": "lentil",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -173,12 +163,22 @@
       "strength": 1
     },
     {
-      "name": "okra",
+      "name": "tumeric",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "almond",
+      "name": "tomato paste",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "celery",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "basmati",
       "pairs_with": "powder",
       "strength": 1
     }
@@ -205,11 +205,6 @@
       "strength": 1
     },
     {
-      "name": "cumin seeds",
-      "pairs_with": "cumin",
-      "strength": 1
-    },
-    {
       "name": "bell pepper",
       "pairs_with": "cumin",
       "strength": 1
@@ -220,12 +215,17 @@
       "strength": 1
     },
     {
-      "name": "flour all",
-      "pairs_with": "flour",
+      "name": "cumin seeds",
+      "pairs_with": "cumin",
       "strength": 1
     },
     {
       "name": "carom",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "flour all",
       "pairs_with": "flour",
       "strength": 1
     },

@@ -5,27 +5,27 @@
       "name": "confectioners",
       "score": 66.34424863774137,
       "connects_a": [
-        "cream",
-        "more",
-        "1"
+        "purpose flour",
+        "butter",
+        "nutmeg"
       ],
       "connects_b": [
-        "cream",
-        "1",
-        "egg"
+        "butter",
+        "cinnamon",
+        "rum"
       ]
     },
     {
       "name": "tomato paste",
       "score": 63.406524923509025,
       "connects_a": [
-        "cloves",
-        "onion",
-        "parsley"
+        "carrot",
+        "worcestershire sauce",
+        "wine"
       ],
       "connects_b": [
-        "thyme",
-        "cloves",
+        "carrot",
+        "cumin",
         "onion"
       ]
     },
@@ -33,14 +33,14 @@
       "name": "at",
       "score": 60.23898775750824,
       "connects_a": [
-        "cream",
-        "more",
-        "1"
+        "purpose flour",
+        "butter",
+        "egg yolks"
       ],
       "connects_b": [
-        "cream",
-        "1",
-        "egg"
+        "butter",
+        "kosher sea salt",
+        "rum"
       ]
     },
     {
@@ -48,13 +48,13 @@
       "score": 60.082900413245646,
       "connects_a": [
         "tomato paste",
-        "parsley",
-        "2"
+        "carrot",
+        "worcestershire sauce"
       ],
       "connects_b": [
-        "thyme",
-        "parsley",
-        "bell pepper"
+        "carrot",
+        "kosher sea salt",
+        "garlic"
       ]
     },
     {
@@ -63,26 +63,26 @@
       "connects_a": [
         "tomato paste",
         "onion",
-        "cayenne pepper"
+        "vegetable oil"
       ],
       "connects_b": [
-        "onion",
-        "ginger",
-        "cumin"
+        "coconut milk",
+        "cumin",
+        "onion"
       ]
     },
     {
       "name": "ice water",
       "score": 50.25488102290018,
       "connects_a": [
-        "1",
-        "more",
-        "flour"
+        "purpose flour",
+        "butter",
+        "nutmeg"
       ],
       "connects_b": [
-        "1",
-        "flour",
-        "egg"
+        "butter",
+        "cinnamon",
+        "1"
       ]
     },
     {
@@ -90,12 +90,12 @@
       "score": 49.35710664891443,
       "connects_a": [
         "tomato paste",
-        "cloves",
-        "onion"
+        "carrot",
+        "worcestershire sauce"
       ],
       "connects_b": [
-        "thyme",
-        "cloves",
+        "carrot",
+        "scallions",
         "onion"
       ]
     },
@@ -104,27 +104,27 @@
       "score": 49.12162989148098,
       "connects_a": [
         "tomato paste",
-        "onion",
-        "parsley"
+        "carrot",
+        "worcestershire sauce"
       ],
       "connects_b": [
-        "thyme",
+        "carrot",
         "onion",
-        "parsley"
+        "garlic"
       ]
     },
     {
       "name": "vanilla extract",
       "score": 48.770153741174205,
       "connects_a": [
-        "cream",
-        "1",
-        "egg yolks"
+        "purpose flour",
+        "butter",
+        "nutmeg"
       ],
       "connects_b": [
-        "cream",
-        "1",
-        "egg"
+        "butter",
+        "cinnamon",
+        "rum"
       ]
     },
     {
@@ -132,19 +132,24 @@
       "score": 48.03672617094407,
       "connects_a": [
         "tomato paste",
-        "onion",
-        "parsley"
+        "carrot",
+        "worcestershire sauce"
       ],
       "connects_b": [
-        "thyme",
+        "carrot",
         "onion",
-        "parsley"
+        "bell pepper"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "crusty bread",
+      "name": "prosciutto",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "turn",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -159,7 +164,12 @@
       "strength": 1
     },
     {
-      "name": "cremini",
+      "name": "arugula leaves",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "crusty bread",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -169,59 +179,29 @@
       "strength": 1
     },
     {
-      "name": "turn",
+      "name": "cremini",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "prosciutto",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "arugula leaves",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "crusty bread",
+      "name": "bundle",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "head fennel",
+      "name": "sodium",
       "pairs_with": "cloves",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "basil chiffonade",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cherry tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "chipotle puree",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "cubanelle peppers",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "oregano leaves",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "olives",
+      "name": "sherry vinegar",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -231,12 +211,32 @@
       "strength": 1
     },
     {
+      "name": "cherry tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "oregano leaves",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "basil chiffonade",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "roasted tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pinch saffron",
+      "name": "eggplants",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cubanelle peppers",
       "pairs_with": "olive oil",
       "strength": 1
     },

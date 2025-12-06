@@ -5,56 +5,56 @@
       "name": "garam masala",
       "score": 154.87054794597452,
       "connects_a": [
+        "chicken",
         "tomato paste",
-        "cumin seeds",
-        "onion"
+        "coriander"
       ],
       "connects_b": [
-        "onion",
-        "ginger",
-        "cumin"
+        "tomatoes",
+        "cumin",
+        "onion"
       ]
     },
     {
       "name": "chiles",
       "score": 98.46772090440315,
       "connects_a": [
-        "cloves",
-        "cumin seeds",
-        "cilantro leaves"
+        "coriander",
+        "coarsely",
+        "coriander seeds"
       ],
       "connects_b": [
-        "cloves",
-        "ginger",
-        "cumin"
+        "cumin",
+        "vegetable oil",
+        "cilantro"
       ]
     },
     {
       "name": "cumin",
       "score": 91.54643418955769,
       "connects_a": [
+        "chicken",
         "tomato paste",
-        "cilantro leaves",
-        "cumin seeds"
+        "coriander"
       ],
       "connects_b": [
-        "oregano",
-        "bell pepper",
-        "lime"
+        "onion powder",
+        "tomatoes",
+        "oregano"
       ]
     },
     {
       "name": "tomato paste",
       "score": 90.58074989072718,
       "connects_a": [
-        "cloves",
-        "onion",
-        "parsley"
+        "carrot",
+        "tomatoes",
+        "cumin"
       ],
       "connects_b": [
-        "cloves",
-        "onion",
-        "oregano"
+        "worcestershire sauce",
+        "tomatoes",
+        "cumin"
       ]
     },
     {
@@ -62,39 +62,39 @@
       "score": 80.19857941466283,
       "connects_a": [
         "tomato paste",
-        "onion",
-        "parsley"
+        "carrot",
+        "tomatoes"
       ],
       "connects_b": [
-        "onion",
-        "oregano",
-        "bell pepper"
+        "onion powder",
+        "worcestershire sauce",
+        "tomatoes"
       ]
     },
     {
       "name": "chili powder",
       "score": 72.83794529057336,
       "connects_a": [
-        "cumin seeds",
-        "turmeric",
-        "coriander"
+        "chicken",
+        "coriander",
+        "coriander seeds"
       ],
       "connects_b": [
-        "cumin",
-        "worcestershire sauce",
-        "barbecue sauce"
+        "ketchup",
+        "onion powder",
+        "worcestershire sauce"
       ]
     },
     {
       "name": "turmeric",
       "score": 72.13957136534297,
       "connects_a": [
+        "chicken",
         "tomato paste",
-        "cilantro leaves",
-        "cumin seeds"
+        "coriander"
       ],
       "connects_b": [
-        "ginger",
+        "tomatoes",
         "cumin",
         "vegetable oil"
       ]
@@ -103,78 +103,58 @@
       "name": "chile",
       "score": 70.30181556339134,
       "connects_a": [
-        "cloves",
-        "cumin seeds",
-        "cilantro leaves"
+        "coriander",
+        "coarsely",
+        "coriander seeds"
       ],
       "connects_b": [
-        "cloves",
-        "grain sea salt",
-        "cumin"
+        "soy sauce",
+        "cumin",
+        "grain sea salt"
       ]
     },
     {
       "name": "coriander",
       "score": 70.1809173254804,
       "connects_a": [
-        "cilantro leaves",
-        "cumin seeds",
-        "turmeric"
+        "chicken",
+        "tomatoes",
+        "cumin"
       ],
       "connects_b": [
-        "ginger",
+        "tomatoes",
         "cumin",
-        "garlic powder"
+        "cilantro"
       ]
     },
     {
       "name": "andouille sausage",
       "score": 70.09265312569245,
       "connects_a": [
+        "chicken",
         "tomato paste",
-        "onion",
-        "paprika"
+        "tomatoes"
       ],
       "connects_b": [
-        "onion",
-        "oregano",
-        "bell pepper"
+        "onion powder",
+        "worcestershire sauce",
+        "tomatoes"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "palm",
+      "name": "chorizo",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "handful pine nuts",
+      "name": "couscous",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "brussels sprouts",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "kalamata olives",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "montreal steak",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "canned tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "olives",
+      "name": "eggplants",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -184,17 +164,42 @@
       "strength": 1
     },
     {
-      "name": "chorizo",
+      "name": "handful pine nuts",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pinch saffron",
+      "name": "mussels",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "canned tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "beefsteak tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "brussels sprouts",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "olives",
       "pairs_with": "olive oil",
       "strength": 1
     }
   ],
   "novel_from_b": [
+    {
+      "name": "sandwich rolls",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
     {
       "name": "[extra",
       "pairs_with": "olive oil",
@@ -206,8 +211,8 @@
       "strength": 1
     },
     {
-      "name": "sandwich rolls",
-      "pairs_with": "olive oil",
+      "name": "sirloin",
+      "pairs_with": "cloves",
       "strength": 1
     },
     {
@@ -221,12 +226,7 @@
       "strength": 1
     },
     {
-      "name": "sirloin",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "pecans",
+      "name": "nutmeg",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -236,7 +236,7 @@
       "strength": 1
     },
     {
-      "name": "nutmeg",
+      "name": "pecans",
       "pairs_with": "butter",
       "strength": 1
     },

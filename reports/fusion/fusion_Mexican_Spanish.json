@@ -5,13 +5,13 @@
       "name": "corn tortillas",
       "score": 119.41774621080168,
       "connects_a": [
-        "jalapeno",
-        "more",
-        "cilantro leaves"
+        "tomatoes",
+        "cumin",
+        "salsa"
       ],
       "connects_b": [
-        "more",
-        "onion",
+        "coarsely",
+        "tomatoes",
         "cumin"
       ]
     },
@@ -19,130 +19,135 @@
       "name": "chipotle pepper",
       "score": 91.0829468785986,
       "connects_a": [
-        "jalapeno",
-        "kosher sea salt",
-        "cilantro leaves"
+        "chicken stock",
+        "flour tortillas",
+        "cumin"
       ],
       "connects_b": [
-        "honey",
-        "paprika",
-        "cumin"
+        "wine vinegar",
+        "cumin",
+        "kosher sea salt"
       ]
     },
     {
       "name": "chiles",
       "score": 78.37226765860659,
       "connects_a": [
-        "cloves",
-        "cilantro leaves",
-        "corn tortillas"
+        "flour tortillas",
+        "chicken breasts",
+        "cumin"
       ],
       "connects_b": [
-        "cloves",
+        "coarsely",
         "taste",
-        "2"
+        "cumin"
       ]
     },
     {
       "name": "chorizo",
       "score": 72.13288153441955,
       "connects_a": [
-        "cloves",
-        "bell pepper",
-        "rice"
+        "tomatoes",
+        "olive oil",
+        "bell pepper"
       ],
       "connects_b": [
-        "cloves",
-        "parsley",
-        "paprika"
+        "olives",
+        "tomatoes",
+        "wine"
       ]
     },
     {
       "name": "andouille sausage",
       "score": 72.0953003578551,
       "connects_a": [
+        "tomatoes",
         "onion",
-        "oregano",
-        "bell pepper"
+        "oregano"
       ],
       "connects_b": [
+        "tomatoes",
         "onion",
-        "paprika",
-        "bell pepper"
+        "garlic"
       ]
     },
     {
       "name": "celery",
       "score": 70.17375698782998,
       "connects_a": [
+        "tomatoes",
         "onion",
-        "oregano",
-        "bell pepper"
+        "oregano"
       ],
       "connects_b": [
-        "onion",
-        "parsley",
-        "paprika"
+        "carrot",
+        "tomatoes",
+        "onion"
       ]
     },
     {
       "name": "jalapeno peppers",
       "score": 70.06847527615635,
       "connects_a": [
-        "cilantro leaves",
-        "corn",
-        "corn tortillas"
+        "beans",
+        "flour tortillas",
+        "tomatoes"
       ],
       "connects_b": [
-        "bell pepper",
+        "tomatoes",
         "cumin",
-        "rice"
+        "bell pepper"
       ]
     },
     {
       "name": "tomato paste",
       "score": 63.406524923509025,
       "connects_a": [
-        "cloves",
-        "onion",
-        "oregano"
+        "tomatoes",
+        "cumin",
+        "onion"
       ],
       "connects_b": [
-        "cloves",
-        "onion",
-        "parsley"
+        "carrot",
+        "tomatoes",
+        "cumin"
       ]
     },
     {
       "name": "garam masala",
       "score": 63.35613325062594,
       "connects_a": [
-        "onion",
+        "tomatoes",
         "cumin",
-        "chicken breasts"
+        "onion"
       ],
       "connects_b": [
-        "onion",
-        "paprika",
-        "cumin"
+        "tomatoes",
+        "cumin",
+        "onion"
       ]
     },
     {
       "name": "tortilla chips",
       "score": 56.13546443723868,
       "connects_a": [
-        "jalapeno",
-        "cream",
-        "cilantro leaves"
+        "beans",
+        "tomatoes",
+        "cumin"
       ],
       "connects_b": [
-        "cumin",
-        "chicken stock",
-        "bell pepper"
+        "bell pepper",
+        "tomatoes",
+        "cumin"
       ]
     }
   ],
   "novel_from_a": [
+    {
+      "name": "petite",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
     {
       "name": "chipotle puree",
       "pairs_with": "olive oil",
@@ -154,12 +159,12 @@
       "strength": 1
     },
     {
-      "name": "arugula leaves",
+      "name": "pecorino",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pecorino",
+      "name": "arugula leaves",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -170,11 +175,6 @@
     },
     {
       "name": "petite",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "tuttorosso",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -184,34 +184,39 @@
       "strength": 1
     },
     {
-      "name": "cotija cheese",
+      "name": "pasilla chiles",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "porcini mushrooms",
+      "name": "onion finely",
       "pairs_with": "cloves",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "crusty bread",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "kalamata olives",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "anchovy fillets",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "pepperoncini peppers",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pancetta",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "san marzano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "grigio",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "for drizzling",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -221,27 +226,22 @@
       "strength": 1
     },
     {
-      "name": "montreal steak",
+      "name": "anchovy fillets",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "center cut",
+      "name": "pimenton",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pinch saffron",
+      "name": "littleneck clams",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "bunch kale",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "for drizzling",
+      "name": "clam broth",
       "pairs_with": "olive oil",
       "strength": 1
     }

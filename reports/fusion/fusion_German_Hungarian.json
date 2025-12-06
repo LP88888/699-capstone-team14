@@ -5,55 +5,55 @@
       "name": "tomato paste",
       "score": 112.72271097512716,
       "connects_a": [
-        "cloves",
-        "onion",
-        "parsley"
+        "carrot",
+        "wine",
+        "onion"
       ],
       "connects_b": [
-        "thyme",
-        "cloves",
-        "chuck"
+        "carrot",
+        "worcestershire sauce",
+        "beef broth"
       ]
     },
     {
       "name": "celery",
       "score": 84.20850838539597,
       "connects_a": [
-        "onion",
-        "parsley",
-        "bacon"
+        "carrot",
+        "bay leaf",
+        "onion"
       ],
       "connects_b": [
-        "chicken broth",
         "tomato paste",
-        "thyme"
+        "carrot",
+        "worcestershire sauce"
       ]
     },
     {
       "name": "beef broth",
       "score": 78.09113165649515,
       "connects_a": [
-        "onion",
         "carrot",
-        "wine"
+        "wine",
+        "bay leaf"
       ],
       "connects_b": [
         "tomato paste",
-        "thyme",
-        "onion"
+        "carrot",
+        "worcestershire sauce"
       ]
     },
     {
       "name": "garam masala",
       "score": 77.43527397298726,
       "connects_a": [
-        "onion",
         "bay leaf",
-        "lemon juice"
+        "onion",
+        "vegetable oil"
       ],
       "connects_b": [
+        "chicken",
         "tomato paste",
-        "onion",
         "tomatoes"
       ]
     },
@@ -61,55 +61,55 @@
       "name": "ribs celery",
       "score": 72.52472813718039,
       "connects_a": [
-        "cloves",
-        "onion",
-        "parsley"
+        "carrot",
+        "wine",
+        "bay leaf"
       ],
       "connects_b": [
-        "chicken broth",
-        "cloves",
-        "tomato paste"
+        "chicken",
+        "tomato paste",
+        "carrot"
       ]
     },
     {
       "name": "beef stock",
       "score": 72.26507447794717,
       "connects_a": [
-        "flour",
-        "onion",
-        "carrot"
+        "carrot",
+        "wine",
+        "bay leaf"
       ],
       "connects_b": [
         "tomato paste",
-        "thyme",
-        "flour"
+        "carrot",
+        "worcestershire sauce"
       ]
     },
     {
       "name": "can tomatoes",
       "score": 65.38258403177709,
       "connects_a": [
-        "cloves",
-        "onion",
-        "parsley"
+        "wine",
+        "bay leaf",
+        "onion"
       ],
       "connects_b": [
-        "chicken broth",
-        "cloves",
-        "tomato paste"
+        "chicken",
+        "tomato paste",
+        "worcestershire sauce"
       ]
     },
     {
       "name": "confectioners",
       "score": 65.33903274929074,
       "connects_a": [
-        "cream",
-        "egg yolks",
-        "purpose flour"
+        "purpose flour",
+        "cocoa powder",
+        "butter"
       ],
       "connects_b": [
-        "cream",
-        "egg",
+        "purpose flour",
+        "butter",
         "milk"
       ]
     },
@@ -117,13 +117,13 @@
       "name": "vanilla extract",
       "score": 60.962692176467755,
       "connects_a": [
-        "cream",
-        "egg yolks",
-        "purpose flour"
+        "purpose flour",
+        "cocoa powder",
+        "butter"
       ],
       "connects_b": [
-        "cream",
-        "egg",
+        "purpose flour",
+        "butter",
         "milk"
       ]
     },
@@ -131,14 +131,14 @@
       "name": "celery ribs",
       "score": 60.04590771368009,
       "connects_a": [
-        "onion",
-        "parsley",
-        "wine"
+        "carrot",
+        "wine",
+        "bay leaf"
       ],
       "connects_b": [
-        "chicken broth",
         "tomato paste",
-        "thyme"
+        "carrot",
+        "worcestershire sauce"
       ]
     }
   ],
@@ -149,12 +149,7 @@
       "strength": 1
     },
     {
-      "name": "escarole",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "montreal steak",
+      "name": "ribs celery",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -164,8 +159,18 @@
       "strength": 1
     },
     {
-      "name": "ribs celery",
+      "name": "montreal steak",
       "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "escarole",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "dutch process",
+      "pairs_with": "butter",
       "strength": 1
     },
     {
@@ -174,7 +179,12 @@
       "strength": 1
     },
     {
-      "name": "corn syrup",
+      "name": "raspberry jam",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "phyllo dough",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -182,41 +192,11 @@
       "name": "muscovado sugar",
       "pairs_with": "butter",
       "strength": 1
-    },
-    {
-      "name": "delicious apples",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "cold",
-      "pairs_with": "butter",
-      "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "pasta",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "anchovy fillets",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "piquillo peppers",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "[extra",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "fettuccine",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -226,22 +206,42 @@
       "strength": 1
     },
     {
+      "name": "[extra",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "piquillo peppers",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pasta",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "fettuccine",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "sirloin",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
       "name": "chile",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
+      "name": "plum tomatoes",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
       "name": "stock",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "chiles",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "piquillo peppers",
       "pairs_with": "cloves",
       "strength": 1
     }

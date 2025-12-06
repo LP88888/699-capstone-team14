@@ -5,9 +5,9 @@
       "name": "can tomatoes",
       "score": 26.153033612710836,
       "connects_a": [
-        "chicken broth",
-        "cloves",
-        "tomato paste"
+        "chicken",
+        "tomato paste",
+        "worcestershire sauce"
       ],
       "connects_b": [
         "onion",
@@ -19,8 +19,8 @@
       "score": 24.08835815931572,
       "connects_a": [
         "tomato paste",
-        "thyme",
-        "flour"
+        "carrot",
+        "worcestershire sauce"
       ],
       "connects_b": [
         "flour",
@@ -31,26 +31,26 @@
       "name": "bay leaf",
       "score": 22.197990055839256,
       "connects_a": [
-        "chicken broth",
         "tomato paste",
-        "thyme"
+        "carrot",
+        "beef broth"
       ],
       "connects_b": [
-        "onion",
-        "beans"
+        "beans",
+        "onion"
       ]
     },
     {
       "name": "garam masala",
       "score": 22.124363992282074,
       "connects_a": [
+        "chicken",
         "tomato paste",
-        "onion",
         "tomatoes"
       ],
       "connects_b": [
-        "onion",
-        "oil"
+        "oil",
+        "onion"
       ]
     },
     {
@@ -61,18 +61,18 @@
         "oil"
       ],
       "connects_b": [
-        "chilli",
-        "flour",
-        "oil salt"
+        "finger",
+        "fenugreek",
+        "powder"
       ]
     },
     {
       "name": "tomato paste",
       "score": 16.103244425018165,
       "connects_a": [
-        "thyme",
-        "cloves",
-        "chuck"
+        "carrot",
+        "worcestershire sauce",
+        "beef broth"
       ],
       "connects_b": [
         "onion"
@@ -82,13 +82,13 @@
       "name": "file powder",
       "score": 16.032495461223487,
       "connects_a": [
-        "thyme",
-        "onion",
-        "bell pepper"
+        "purpose flour",
+        "tomatoes",
+        "onion"
       ],
       "connects_b": [
-        "onion",
-        "leaves"
+        "leaves",
+        "onion"
       ]
     },
     {
@@ -99,9 +99,9 @@
         "oil"
       ],
       "connects_b": [
-        "chilli",
-        "flour",
-        "oil salt"
+        "fenugreek",
+        "powder",
+        "oil"
       ]
     },
     {
@@ -111,9 +111,9 @@
         "oil"
       ],
       "connects_b": [
-        "chilli",
-        "chillies",
-        "gram"
+        "fenugreek",
+        "urad dal",
+        "powder"
       ]
     },
     {
@@ -121,8 +121,8 @@
       "score": 15.061184500087231,
       "connects_a": [
         "tomato paste",
-        "bay leaf",
-        "worcestershire sauce"
+        "worcestershire sauce",
+        "tomatoes"
       ],
       "connects_b": [
         "beans",
@@ -133,32 +133,32 @@
   ],
   "novel_from_a": [
     {
-      "name": "celery",
+      "name": "beef broth",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "tomato paste",
+      "name": "stock",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "tomato soup",
+      "name": "lentils",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "kidney beans",
+      "name": "beef chuck",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "ham hocks",
+      "name": "navy beans",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "chicken base",
+      "name": "bacon fat",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -173,12 +173,12 @@
       "strength": 1
     },
     {
-      "name": "beef stock",
+      "name": "celery ribs",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "sodium beef broth",
+      "name": "stewing",
       "pairs_with": "onion",
       "strength": 1
     }
@@ -200,7 +200,7 @@
       "strength": 1
     },
     {
-      "name": "wheat",
+      "name": "carom",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -210,12 +210,12 @@
       "strength": 1
     },
     {
-      "name": "carom",
+      "name": "finger",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "finger",
+      "name": "wheat",
       "pairs_with": "flour",
       "strength": 1
     },

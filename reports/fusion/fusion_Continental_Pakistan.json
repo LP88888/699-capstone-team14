@@ -5,84 +5,84 @@
       "name": "garam masala",
       "score": 81.45788560794763,
       "connects_a": [
-        "onion",
         "potatoes",
-        "oil"
+        "oil",
+        "onion"
       ],
       "connects_b": [
-        "cardamom",
+        "coriander",
         "basmati rice",
-        "yogurt"
+        "tomatoes"
       ]
     },
     {
       "name": "cardamom",
       "score": 81.19724808578152,
       "connects_a": [
-        "chilli",
-        "seeds",
-        "oil"
+        "powder",
+        "oil",
+        "chilli"
       ],
       "connects_b": [
-        "cumin seeds",
-        "tumeric",
-        "turmeric"
+        "cinnamon sticks",
+        "coriander",
+        "garam masala"
       ]
     },
     {
       "name": "tumeric",
       "score": 54.15285920668306,
       "connects_a": [
-        "onion",
         "potatoes",
-        "oil"
+        "oil",
+        "onion"
       ],
       "connects_b": [
         "mustard seeds",
-        "cumin seeds",
-        "onion"
+        "coriander",
+        "garam masala"
       ]
     },
     {
       "name": "cumin",
       "score": 51.87631270741602,
       "connects_a": [
-        "beans",
         "bell pepper",
+        "beans",
         "oregano"
       ],
       "connects_b": [
+        "coconut milk",
         "mustard seeds",
-        "cumin seeds",
-        "tumeric"
+        "coriander"
       ]
     },
     {
       "name": "coriander powder",
       "score": 48.093729141204676,
       "connects_a": [
-        "onion",
         "leaves",
-        "oil"
+        "oil",
+        "onion"
       ],
       "connects_b": [
-        "cumin seeds",
+        "garam masala",
         "tumeric",
-        "onion"
+        "tomatoes"
       ]
     },
     {
       "name": "dhania",
       "score": 43.674732118464405,
       "connects_a": [
-        "chilli",
-        "oats",
-        "oil salt"
+        "finger",
+        "pepper powder",
+        "bell"
       ],
       "connects_b": [
-        "chili powder",
         "peas",
-        "cardamom"
+        "cardamom",
+        "chili powder"
       ]
     },
     {
@@ -93,9 +93,9 @@
         "oil"
       ],
       "connects_b": [
-        "cardamom",
-        "basmati rice",
-        "yogurt"
+        "coriander",
+        "garam masala",
+        "basmati rice"
       ]
     },
     {
@@ -106,9 +106,9 @@
         "oil"
       ],
       "connects_b": [
-        "yogurt",
-        "chilies",
-        "cilantro"
+        "coriander",
+        "garam masala",
+        "tomatoes"
       ]
     },
     {
@@ -119,29 +119,29 @@
         "oil"
       ],
       "connects_b": [
-        "cardamom",
-        "cilantro",
-        "potatoes"
+        "coriander",
+        "garam masala",
+        "tomatoes"
       ]
     },
     {
       "name": "bay leaf",
       "score": 36.323983727736966,
       "connects_a": [
+        "beans",
         "thyme",
-        "onion",
-        "beans"
+        "onion"
       ],
       "connects_b": [
-        "onion",
-        "cardamom",
-        "turmeric"
+        "cinnamon sticks",
+        "garam masala",
+        "basmati rice"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "crusty bread",
+      "name": "handful pine nuts",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -151,17 +151,12 @@
       "strength": 1
     },
     {
-      "name": "arugula",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "reggiano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "handful pine nuts",
+      "name": "crusty bread",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -171,12 +166,17 @@
       "strength": 1
     },
     {
+      "name": "arugula",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "arugula leaves",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "crusty bread",
+      "name": "black beans",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -186,12 +186,17 @@
       "strength": 1
     },
     {
-      "name": "black beans",
+      "name": "crusty bread",
       "pairs_with": "cloves",
       "strength": 1
     }
   ],
   "novel_from_b": [
+    {
+      "name": "petite",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
     {
       "name": "plum tomatoes",
       "pairs_with": "olive oil",
@@ -204,11 +209,6 @@
     },
     {
       "name": "lamb shanks",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "petite",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -228,17 +228,17 @@
       "strength": 1
     },
     {
-      "name": "celery",
+      "name": "petite",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "chicken bouillon",
+      "name": "beef",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "lentil",
+      "name": "okra",
       "pairs_with": "onion",
       "strength": 1
     }

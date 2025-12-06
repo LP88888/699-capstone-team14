@@ -5,13 +5,13 @@
       "name": "confectioners",
       "score": 90.46942996055641,
       "connects_a": [
-        "cream",
-        "more",
-        "1"
+        "purpose flour",
+        "chocolate",
+        "butter"
       ],
       "connects_b": [
-        "cream",
-        "more",
+        "butter",
+        "cinnamon",
         "1"
       ]
     },
@@ -19,13 +19,13 @@
       "name": "at",
       "score": 78.31068408476071,
       "connects_a": [
-        "cream",
-        "more",
-        "1"
+        "purpose flour",
+        "chocolate",
+        "butter"
       ],
       "connects_b": [
-        "cream",
-        "more",
+        "butter",
+        "kosher sea salt",
         "1"
       ]
     },
@@ -33,70 +33,70 @@
       "name": "vanilla extract",
       "score": 60.962692176467755,
       "connects_a": [
-        "cream",
-        "1",
-        "maple syrup"
+        "purpose flour",
+        "chocolate",
+        "butter"
       ],
       "connects_b": [
-        "cream",
-        "1",
-        "egg"
+        "butter",
+        "cinnamon",
+        "1"
       ]
     },
     {
       "name": "whole milk",
       "score": 60.17571103887719,
       "connects_a": [
-        "more",
-        "maple syrup",
-        "egg yolks"
+        "purpose flour",
+        "chocolate",
+        "butter"
       ],
       "connects_b": [
-        "more",
-        "egg",
-        "butter"
+        "butter",
+        "kosher sea salt",
+        "cinnamon"
       ]
     },
     {
       "name": "sticks",
       "score": 55.19451995974218,
       "connects_a": [
-        "1",
-        "more",
-        "egg yolks"
+        "purpose flour",
+        "chocolate",
+        "butter"
       ],
       "connects_b": [
-        "1",
-        "more",
-        "egg"
+        "butter",
+        "cinnamon",
+        "1"
       ]
     },
     {
       "name": "garam masala",
       "score": 54.30525707196509,
       "connects_a": [
-        "onion",
         "bay leaf",
-        "lemon juice"
+        "onion",
+        "vegetable oil"
       ],
       "connects_b": [
-        "onion",
+        "tomatoes",
         "cumin",
-        "chicken breasts"
+        "onion"
       ]
     },
     {
       "name": "chiles",
       "score": 52.24817843907106,
       "connects_a": [
+        "shallots",
         "cloves",
-        "2",
-        "shallots"
+        "2"
       ],
       "connects_b": [
-        "cloves",
-        "cilantro leaves",
-        "corn tortillas"
+        "flour tortillas",
+        "chicken breasts",
+        "cumin"
       ]
     },
     {
@@ -108,63 +108,43 @@
         "vegetable oil"
       ],
       "connects_b": [
-        "jalapeno",
-        "more",
-        "cilantro leaves"
+        "tomatoes",
+        "cumin",
+        "salsa"
       ]
     },
     {
       "name": "ice water",
       "score": 50.25488102290018,
       "connects_a": [
-        "1",
-        "more",
-        "flour"
+        "purpose flour",
+        "butter",
+        "nutmeg"
       ],
       "connects_b": [
-        "1",
-        "more",
-        "egg"
+        "butter",
+        "cinnamon",
+        "1"
       ]
     },
     {
       "name": "tomato paste",
       "score": 49.31618605161813,
       "connects_a": [
-        "thyme",
-        "cloves",
+        "carrot",
+        "wine",
         "onion"
       ],
       "connects_b": [
-        "cloves",
-        "onion",
-        "oregano"
+        "tomatoes",
+        "cumin",
+        "onion"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "crusty bread",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pasta",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pancetta",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "crusty rolls",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cannellini",
+      "name": "marzano",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -174,22 +154,42 @@
       "strength": 1
     },
     {
-      "name": "sandwich rolls",
+      "name": "morel mushrooms",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "head fennel",
+      "name": "linguine",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "reggiano cheese",
+      "name": "anchovy paste",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
       "name": "anchovy fillets",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "clam broth",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pasta",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cannellini",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "baby arugula",
       "pairs_with": "olive oil",
       "strength": 1
     }
@@ -201,7 +201,7 @@
       "strength": 1
     },
     {
-      "name": "finely oregano",
+      "name": "for seasoning",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -211,7 +211,12 @@
       "strength": 1
     },
     {
-      "name": "squid",
+      "name": "pecorino",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "finely oregano",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -221,27 +226,22 @@
       "strength": 1
     },
     {
-      "name": "pecorino",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "orzo pasta",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "for seasoning",
+      "name": "squid",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "tuttorosso",
+      "name": "chipotle puree",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "chipotle puree",
+      "name": "pasilla chiles",
       "pairs_with": "cloves",
       "strength": 1
     }

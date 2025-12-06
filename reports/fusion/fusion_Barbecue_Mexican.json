@@ -5,144 +5,149 @@
       "name": "cumin",
       "score": 137.31965128433652,
       "connects_a": [
-        "oregano",
-        "bell pepper",
-        "lime"
+        "onion powder",
+        "tomatoes",
+        "oregano"
       ],
       "connects_b": [
-        "jalapeno",
-        "cilantro leaves",
-        "oregano"
+        "beans",
+        "flour tortillas",
+        "tomatoes"
       ]
     },
     {
       "name": "corn tortillas",
       "score": 136.4774242409162,
       "connects_a": [
-        "onion",
-        "oregano",
-        "cumin"
+        "tomatoes",
+        "cumin",
+        "onion"
       ],
       "connects_b": [
-        "jalapeno",
-        "more",
-        "cilantro leaves"
+        "tomatoes",
+        "cumin",
+        "salsa"
       ]
     },
     {
       "name": "chipotle pepper",
       "score": 117.10664598676964,
       "connects_a": [
-        "mayonnaise",
-        "honey",
+        "ketchup",
+        "worcestershire sauce",
         "cumin"
       ],
       "connects_b": [
-        "jalapeno",
-        "kosher sea salt",
-        "cilantro leaves"
+        "chicken stock",
+        "flour tortillas",
+        "cumin"
       ]
     },
     {
       "name": "salsa",
       "score": 112.32817121410667,
       "connects_a": [
-        "oregano",
-        "bell pepper",
-        "cumin"
+        "tomatoes",
+        "cumin",
+        "oregano"
       ],
       "connects_b": [
-        "jalapeno",
-        "cream",
-        "cilantro leaves"
+        "beans",
+        "flour tortillas",
+        "tomatoes"
       ]
     },
     {
       "name": "garam masala",
       "score": 99.55963796526933,
       "connects_a": [
-        "onion",
-        "ginger",
-        "cumin"
+        "tomatoes",
+        "cumin",
+        "onion"
       ],
       "connects_b": [
-        "onion",
+        "tomatoes",
         "cumin",
-        "chicken breasts"
+        "onion"
       ]
     },
     {
       "name": "chiles",
       "score": 91.43431226837436,
       "connects_a": [
-        "cloves",
-        "ginger",
-        "cumin"
+        "cumin",
+        "vegetable oil",
+        "cilantro"
       ],
       "connects_b": [
-        "cloves",
-        "cilantro leaves",
-        "corn tortillas"
+        "flour tortillas",
+        "chicken breasts",
+        "cumin"
       ]
     },
     {
       "name": "tortilla chips",
       "score": 84.20319665585802,
       "connects_a": [
-        "bell pepper",
+        "tomatoes",
         "cumin",
-        "lime"
+        "vegetable oil"
       ],
       "connects_b": [
-        "jalapeno",
-        "cream",
-        "cilantro leaves"
+        "beans",
+        "tomatoes",
+        "cumin"
       ]
     },
     {
       "name": "flour tortillas",
       "score": 84.05994987782056,
       "connects_a": [
-        "oregano",
+        "tomatoes",
         "cumin",
-        "lime"
+        "oregano"
       ],
       "connects_b": [
-        "jalapeno",
-        "cilantro leaves",
-        "corn"
+        "beans",
+        "tomatoes",
+        "cumin"
       ]
     },
     {
       "name": "andouille sausage",
       "score": 80.10588928650566,
       "connects_a": [
-        "onion",
-        "oregano",
-        "bell pepper"
+        "onion powder",
+        "worcestershire sauce",
+        "tomatoes"
       ],
       "connects_b": [
+        "tomatoes",
         "onion",
-        "oregano",
-        "bell pepper"
+        "oregano"
       ]
     },
     {
       "name": "tomato paste",
       "score": 70.45169435945446,
       "connects_a": [
-        "cloves",
-        "onion",
-        "oregano"
+        "worcestershire sauce",
+        "tomatoes",
+        "cumin"
       ],
       "connects_b": [
-        "cloves",
-        "onion",
-        "oregano"
+        "tomatoes",
+        "cumin",
+        "onion"
       ]
     }
   ],
   "novel_from_a": [
+    {
+      "name": "sandwich rolls",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
     {
       "name": "[extra",
       "pairs_with": "olive oil",
@@ -154,8 +159,8 @@
       "strength": 1
     },
     {
-      "name": "sandwich rolls",
-      "pairs_with": "olive oil",
+      "name": "sirloin",
+      "pairs_with": "cloves",
       "strength": 1
     },
     {
@@ -164,13 +169,13 @@
       "strength": 1
     },
     {
-      "name": "sirloin",
-      "pairs_with": "cloves",
+      "name": "gruyere cheese",
+      "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "gruyere cheese",
-      "pairs_with": "butter",
+      "name": "sandwich rolls",
+      "pairs_with": "onion",
       "strength": 1
     },
     {
@@ -187,46 +192,26 @@
       "name": "ginger paste",
       "pairs_with": "onion",
       "strength": 1
-    },
-    {
-      "name": "sandwich rolls",
-      "pairs_with": "onion",
-      "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "finely oregano",
+      "name": "chorizo",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "artichokes",
+      "name": "handful pine nuts",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "romano cheese",
+      "name": "pass",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "some",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "parmigiano",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "sherry vinegar",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "couscous",
+      "name": "romano",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -236,12 +221,27 @@
       "strength": 1
     },
     {
-      "name": "canned tomatoes",
+      "name": "palm",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "chorizo",
+      "name": "petite",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "chipotle puree",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "sherry vinegar",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "mussels",
       "pairs_with": "olive oil",
       "strength": 1
     }

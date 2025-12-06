@@ -5,83 +5,83 @@
       "name": "tomato paste",
       "score": 90.58074989072718,
       "connects_a": [
-        "cloves",
-        "onion",
-        "oregano"
+        "worcestershire sauce",
+        "tomatoes",
+        "cumin"
       ],
       "connects_b": [
-        "cloves",
-        "onion",
-        "parsley"
+        "carrot",
+        "worcestershire sauce",
+        "wine"
       ]
     },
     {
       "name": "yellow onions",
       "score": 80.11053388432754,
       "connects_a": [
-        "pepper flakes",
-        "oregano",
-        "bell pepper"
+        "onion powder",
+        "worcestershire sauce",
+        "oregano"
       ],
       "connects_b": [
         "tomato paste",
-        "parsley",
-        "2"
+        "carrot",
+        "worcestershire sauce"
       ]
     },
     {
       "name": "garam masala",
       "score": 77.43527397298726,
       "connects_a": [
-        "onion",
-        "ginger",
-        "cumin"
+        "tomatoes",
+        "cumin",
+        "onion"
       ],
       "connects_b": [
         "tomato paste",
         "onion",
-        "cayenne pepper"
+        "vegetable oil"
       ]
     },
     {
       "name": "celery",
       "score": 70.17375698782998,
       "connects_a": [
-        "onion",
-        "oregano",
-        "bell pepper"
+        "onion powder",
+        "worcestershire sauce",
+        "tomatoes"
       ],
       "connects_b": [
         "tomato paste",
-        "onion",
-        "parsley"
+        "carrot",
+        "worcestershire sauce"
       ]
     },
     {
       "name": "can tomatoes",
       "score": 56.32961085814641,
       "connects_a": [
-        "cloves",
-        "onion",
-        "pepper flakes"
+        "worcestershire sauce",
+        "seasoning",
+        "cumin"
       ],
       "connects_b": [
         "tomato paste",
-        "cloves",
-        "onion"
+        "worcestershire sauce",
+        "wine"
       ]
     },
     {
       "name": "cans tomatoes",
       "score": 56.124399291162895,
       "connects_a": [
-        "cloves",
+        "seasoning",
         "onion",
-        "pepper flakes"
+        "oregano"
       ],
       "connects_b": [
         "tomato paste",
-        "cloves",
+        "carrot",
         "onion"
       ]
     },
@@ -89,27 +89,27 @@
       "name": "celery ribs",
       "score": 56.042847199434746,
       "connects_a": [
-        "mayonnaise",
-        "onion",
-        "bell pepper"
+        "rosemary",
+        "worcestershire sauce",
+        "tomatoes"
       ],
       "connects_b": [
         "tomato paste",
-        "onion",
-        "parsley"
+        "carrot",
+        "worcestershire sauce"
       ]
     },
     {
       "name": "yellow onion",
       "score": 56.032363116472354,
       "connects_a": [
-        "pepper flakes",
-        "oregano",
-        "bell pepper"
+        "onion powder",
+        "worcestershire sauce",
+        "oregano"
       ],
       "connects_b": [
         "tomato paste",
-        "2",
+        "worcestershire sauce",
         "wine"
       ]
     },
@@ -117,32 +117,37 @@
       "name": "file powder",
       "score": 54.10967218162927,
       "connects_a": [
-        "onion",
+        "onion powder",
         "tomatoes",
-        "bell pepper"
+        "onion"
       ],
       "connects_b": [
+        "purpose flour",
         "onion",
-        "cayenne pepper",
-        "garlic"
+        "vegetable oil"
       ]
     },
     {
       "name": "onion powder",
       "score": 50.176435087305926,
       "connects_a": [
-        "mayonnaise",
-        "oregano",
-        "cumin"
+        "ketchup",
+        "worcestershire sauce",
+        "seasoning"
       ],
       "connects_b": [
-        "2",
         "worcestershire sauce",
-        "cayenne pepper"
+        "kosher sea salt",
+        "2"
       ]
     }
   ],
   "novel_from_a": [
+    {
+      "name": "sandwich rolls",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
     {
       "name": "cherry tomatoes",
       "pairs_with": "olive oil",
@@ -159,8 +164,8 @@
       "strength": 1
     },
     {
-      "name": "sandwich rolls",
-      "pairs_with": "olive oil",
+      "name": "sirloin",
+      "pairs_with": "cloves",
       "strength": 1
     },
     {
@@ -174,17 +179,12 @@
       "strength": 1
     },
     {
-      "name": "sirloin",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
       "name": "gruyere cheese",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "chicken base",
+      "name": "sandwich rolls",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -196,42 +196,7 @@
   ],
   "novel_from_b": [
     {
-      "name": "crusty bread",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "head fennel",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "capers",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "canned tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "for drizzling",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cremini",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "arugula leaves",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "turn",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -241,7 +206,42 @@
       "strength": 1
     },
     {
+      "name": "canned tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "prosciutto",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "turn",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "arugula leaves",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "spun",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "head fennel",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "crusty bread",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cremini",
       "pairs_with": "olive oil",
       "strength": 1
     }

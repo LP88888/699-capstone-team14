@@ -5,56 +5,56 @@
       "name": "chile",
       "score": 153.65968258855537,
       "connects_a": [
-        "vinegar",
-        "cayenne",
-        "coriander"
+        "coriander",
+        "cumin",
+        "cayenne"
       ],
       "connects_b": [
-        "fish sauce",
-        "cloves",
-        "bean sprouts"
+        "peanut oil",
+        "chiles",
+        "soy sauce"
       ]
     },
     {
       "name": "fish sauce",
       "score": 139.35677942842398,
       "connects_a": [
-        "vinegar",
-        "mint",
-        "vegetable oil"
+        "carrot",
+        "vegetable oil",
+        "cilantro"
       ],
       "connects_b": [
-        "bean sprouts",
-        "thai basil",
-        "cilantro"
+        "carrot",
+        "ginger",
+        "lime juice"
       ]
     },
     {
       "name": "garam masala",
       "score": 112.63312577889056,
       "connects_a": [
+        "chicken",
         "tomato paste",
-        "onion",
-        "cayenne"
+        "coriander"
       ],
       "connects_b": [
-        "onion",
+        "coconut milk",
         "chiles",
-        "ginger"
+        "onion"
       ]
     },
     {
       "name": "cumin",
       "score": 97.64952980219486,
       "connects_a": [
+        "chicken",
         "tomato paste",
-        "cayenne",
         "coriander"
       ],
       "connects_b": [
-        "cilantro leaves",
+        "coconut milk",
         "chiles",
-        "bell pepper"
+        "limes"
       ]
     },
     {
@@ -66,9 +66,9 @@
         "carrot"
       ],
       "connects_b": [
-        "cilantro",
-        "soy sauce",
-        "peanut oil"
+        "carrot",
+        "fish sauce",
+        "ginger"
       ]
     },
     {
@@ -76,13 +76,13 @@
       "score": 72.20002632899737,
       "connects_a": [
         "tomato paste",
-        "cayenne",
-        "coriander"
+        "coriander",
+        "carrot"
       ],
       "connects_b": [
-        "fish sauce",
-        "cilantro leaves",
-        "bell pepper"
+        "coconut milk",
+        "carrot",
+        "soy sauce"
       ]
     },
     {
@@ -90,12 +90,12 @@
       "score": 70.40583563747605,
       "connects_a": [
         "coriander",
-        "mint",
+        "tomato",
         "cumin"
       ],
       "connects_b": [
-        "fish sauce",
-        "bean sprouts",
+        "coconut milk",
+        "scallions",
         "chiles"
       ]
     },
@@ -108,23 +108,23 @@
         "yogurt"
       ],
       "connects_b": [
-        "fish sauce",
-        "cloves",
-        "cilantro leaves"
+        "coconut milk",
+        "peanut oil",
+        "limes"
       ]
     },
     {
       "name": "turmeric",
       "score": 66.12794041823106,
       "connects_a": [
+        "chicken",
         "tomato paste",
-        "cayenne",
         "coriander"
       ],
       "connects_b": [
-        "cilantro leaves",
+        "coconut milk",
         "chiles",
-        "ginger"
+        "vegetable oil"
       ]
     },
     {
@@ -132,13 +132,13 @@
       "score": 65.04969579676414,
       "connects_a": [
         "chicken",
-        "garlic",
-        "cilantro"
+        "carrot",
+        "garlic"
       ],
       "connects_b": [
-        "fish sauce",
-        "bean sprouts",
-        "canola oil"
+        "peanut oil",
+        "carrot",
+        "soy sauce"
       ]
     }
   ],
@@ -159,22 +159,7 @@
       "strength": 1
     },
     {
-      "name": "lentil",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
       "name": "tomato puree",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "tumeric",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "garam masala",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -184,34 +169,64 @@
       "strength": 1
     },
     {
-      "name": "cream cheese",
+      "name": "lentil",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "garam masala",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "tumeric",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "shortening",
       "pairs_with": "egg",
       "strength": 1
     },
     {
-      "name": "pastry",
+      "name": "applesauce",
       "pairs_with": "egg",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "and half",
+      "name": "lobster stock",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "bosc pears",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "muscovado sugar",
+      "name": "filling",
       "pairs_with": "butter",
       "strength": 1
     },
     {
       "name": "sticks",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "tomato concasse",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "room temp",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "whole milk",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "arborio rice",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -226,22 +241,7 @@
       "strength": 1
     },
     {
-      "name": "tomato concasse",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "cold",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "arborio rice",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "lobster stock",
+      "name": "and half",
       "pairs_with": "butter",
       "strength": 1
     }
