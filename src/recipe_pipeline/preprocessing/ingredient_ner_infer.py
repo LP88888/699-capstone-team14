@@ -151,27 +151,27 @@ def run(
     logger.info("Batch size: %s  | Processes: %s", batch_size, n_process)
 
     try:
-        # df_wide, df_tall = run_full_inference_from_config(
-        #     text_col=text_col,
-        #     out_base=out_base,
-        #     data_path=input_path,
-        #     sample_n=sample_n,
-        #     sample_frac=sample_frac,
-        #     head_n=head_n,
-        #     batch_size=batch_size,
-        #     n_process=n_process,
-        #     use_spacy_normalizer=use_spacy_normalizer,
-        #     spacy_model=spacy_model,
-        # )
+        df_wide, df_tall = run_full_inference_from_config(
+            text_col=text_col,
+            out_base=out_base,
+            data_path=input_path,
+            sample_n=sample_n,
+            sample_frac=sample_frac,
+            head_n=head_n,
+            batch_size=batch_size,
+            n_process=n_process,
+            use_spacy_normalizer=use_spacy_normalizer,
+            spacy_model=spacy_model,
+        )
         wide_path = Path(out_base).with_name(Path(out_base).stem + "_wide.parquet")
         tall_path = Path(out_base).with_name(Path(out_base).stem + "_tall.parquet")
 
         # Load wide_path
         df_wide = pd.read_parquet(wide_path)
         df_tall = pd.read_parquet(tall_path)
-        # logger.info("Inference complete. Processed %s rows / %s entities.", len(df_wide), len(df_tall))
-        # logger.info("Wide output: %s", wide_path)
-        # logger.info("Tall output: %s", tall_path)
+        logger.info("Inference complete. Processed %s rows / %s entities.", len(df_wide), len(df_tall))
+        logger.info("Wide output: %s", wide_path)
+        logger.info("Tall output: %s", tall_path)
 
         combined_written: Optional[str] = None
         if combined_dataset:
