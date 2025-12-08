@@ -2,16 +2,30 @@
   "pair": "American + Continental",
   "bridges": [
     {
+      "name": "confectioners",
+      "score": 30.156476653518805,
+      "connects_a": [
+        "vanilla extract",
+        "1",
+        "purpose flour"
+      ],
+      "connects_b": [
+        "cream",
+        "egg",
+        "almonds"
+      ]
+    },
+    {
       "name": "tomato paste",
       "score": 28.18067774378179,
       "connects_a": [
-        "parsley",
-        "bell pepper",
-        "cloves"
+        "tomatoes",
+        "onion",
+        "bell pepper"
       ],
       "connects_b": [
         "onion",
-        "thyme",
+        "bell pepper",
         "oregano"
       ]
     },
@@ -19,13 +33,13 @@
       "name": "file powder",
       "score": 28.0568670571411,
       "connects_a": [
-        "purpose flour",
-        "bell pepper",
-        "leaves"
+        "tomatoes",
+        "leaves",
+        "purpose flour"
       ],
       "connects_b": [
         "onion",
-        "leaves",
+        "bell pepper",
         "thyme"
       ]
     },
@@ -33,27 +47,27 @@
       "name": "garam masala",
       "score": 24.135669809762263,
       "connects_a": [
-        "lemon juice",
         "tomatoes",
-        "garlic"
+        "vegetable oil",
+        "onion"
       ],
       "connects_b": [
         "onion",
-        "oil",
-        "potatoes"
+        "potatoes",
+        "oil"
       ]
     },
     {
       "name": "celery",
       "score": 24.059573824398846,
       "connects_a": [
-        "parsley",
-        "bell pepper",
-        "tomatoes"
+        "tomatoes",
+        "onion",
+        "bell pepper"
       ],
       "connects_b": [
         "onion",
-        "thyme",
+        "bell pepper",
         "oregano"
       ]
     },
@@ -61,109 +75,116 @@
       "name": "cans tomatoes",
       "score": 24.053313981926955,
       "connects_a": [
-        "cloves",
         "leaves",
-        "olive oil"
+        "onion",
+        "cloves"
       ],
       "connects_b": [
         "onion",
-        "olive oil",
+        "oregano",
         "leaves"
+      ]
+    },
+    {
+      "name": "filling",
+      "score": 24.036863581372238,
+      "connects_a": [
+        "vanilla extract",
+        "flour",
+        "purpose flour"
+      ],
+      "connects_b": [
+        "flour",
+        "cream",
+        "egg"
+      ]
+    },
+    {
+      "name": "vanilla extract",
+      "score": 21.336942261763713,
+      "connects_a": [
+        "1",
+        "purpose flour",
+        "butter"
+      ],
+      "connects_b": [
+        "cream",
+        "egg",
+        "almonds"
       ]
     },
     {
       "name": "ribs celery",
       "score": 21.153045706677613,
       "connects_a": [
-        "parsley",
+        "onion",
         "bell pepper",
         "cloves"
       ],
       "connects_b": [
         "onion",
-        "thyme",
-        "bell pepper"
+        "bell pepper",
+        "thyme"
       ]
     },
     {
       "name": "palm",
       "score": 21.080806414780156,
       "connects_a": [
-        "parsley",
-        "bell pepper",
-        "cloves"
+        "lemon",
+        "onion",
+        "bell pepper"
       ],
       "connects_b": [
         "onion",
-        "olive oil",
-        "bell pepper"
-      ]
-    },
-    {
-      "name": "bay leaf",
-      "score": 20.179990959853868,
-      "connects_a": [
-        "parsley",
-        "tomatoes",
-        "carrot"
-      ],
-      "connects_b": [
-        "beans",
-        "thyme",
-        "oregano"
-      ]
-    },
-    {
-      "name": "confectioners",
-      "score": 20.104317769012535,
-      "connects_a": [
-        "1",
-        "butter",
-        "milk"
-      ],
-      "connects_b": [
-        "cream",
-        "almonds"
-      ]
-    },
-    {
-      "name": "can tomatoes",
-      "score": 18.105946347261348,
-      "connects_a": [
-        "parsley",
         "bell pepper",
-        "cloves"
-      ],
-      "connects_b": [
-        "onion",
-        "oregano",
-        "bell pepper"
+        "olive oil"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "spaghetti",
+      "name": "bucatini",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "san marzano",
+      "name": "basil chiffonade",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pepperoncini peppers",
+      "name": "pimenton",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "parmigiano",
+      "name": "pass",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "spun",
+      "name": "anchovy paste",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "grape tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "grigio",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "littleneck clams",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "giardiniera",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -171,29 +192,19 @@
       "name": "baby arugula",
       "pairs_with": "olive oil",
       "strength": 1
-    },
-    {
-      "name": "cans chickpeas",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cannellini beans",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "crusty rolls",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "olives",
-      "pairs_with": "olive oil",
-      "strength": 1
     }
   ],
   "novel_from_b": [
+    {
+      "name": "maida sooji",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "ragi",
+      "pairs_with": "flour",
+      "strength": 1
+    },
     {
       "name": "seeds powder",
       "pairs_with": "flour",
@@ -210,22 +221,12 @@
       "strength": 1
     },
     {
-      "name": "maida sooji",
+      "name": "carom",
       "pairs_with": "flour",
       "strength": 1
     },
     {
       "name": "flour all",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "ragi",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "carom",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -240,7 +241,7 @@
       "strength": 1
     },
     {
-      "name": "salt pepper",
+      "name": "pepper bell",
       "pairs_with": "garlic",
       "strength": 1
     }

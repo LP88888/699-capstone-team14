@@ -135,6 +135,18 @@ def run(context: PipelineContext, *, force: bool = False) -> StageResult:
         "gujarati": "Indian",
         "goan": "Indian",
         "jharkhand": "Indian",
+        # Cajun synonyms
+        "cajun & creole": "Cajun",
+        "cajun and creole": "Cajun",
+        # Indian subregions collapsed to Indian
+        "karnataka": "Indian",
+        "kerala": "Indian",
+        "tamil nadu": "Indian",
+        "maharashtrian": "Indian",
+        "maharashtra": "Indian",
+        "gujarati": "Indian",
+        "goan": "Indian",
+        "jharkhand": "Indian",
     }
 
     def _normalize_whitespace(s: str) -> str:
@@ -234,13 +246,13 @@ def run(context: PipelineContext, *, force: bool = False) -> StageResult:
 
     df[cuisine_col] = df[cuisine_col].apply(_to_label)
     df = df[df[cuisine_col] != ""]
-    # Strip stray bracket/brace/paren characters and drop any remaining noisy labels
-    df[cuisine_col] = df[cuisine_col].str.strip("[]{}() ")
-    df = df[~df[cuisine_col].str.contains(r"[\\[\\]{}]", regex=True)]
 
     # Optional parent collapse before filtering/evaluation
     if apply_parent_for_training and parent_map_norm:
         df[cuisine_col] = df[cuisine_col].apply(to_parent_label)
+    # Strip stray bracket/brace/paren characters and drop any remaining noisy labels
+    df[cuisine_col] = df[cuisine_col].str.strip("[]{}() ")
+    df = df[~df[cuisine_col].str.contains(r"[\\[\\]{}]", regex=True)]
 
     # Filter to labels with sufficient support
     label_counts = df[cuisine_col].value_counts()
@@ -310,6 +322,9 @@ def run(context: PipelineContext, *, force: bool = False) -> StageResult:
     X_train_tf, X_test_tf, y_train_tf, y_test_tf = train_test_split(
         X_tfidf, y, test_size=0.2, random_state=42, stratify=y
     )
+    # Split (same seed across feature spaces to keep splits aligned)
+    X_train, X_test, y_train, y_test = train_test_split(X_features, y, test_size=0.2, random_state=42)
+    X_train_tf, X_test_tf, y_train_tf, y_test_tf = train_test_split(X_tfidf, y, test_size=0.2, random_state=42)
     
     # 1. Logistic Regression
     logger.info("Training Logistic Regression...")

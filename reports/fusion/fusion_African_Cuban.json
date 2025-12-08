@@ -6,12 +6,12 @@
       "score": 122.06191225274358,
       "connects_a": [
         "chicken",
-        "turmeric",
-        "bell pepper"
+        "tomatoes",
+        "tomato paste"
       ],
       "connects_b": [
-        "beans",
-        "bell pepper",
+        "tomatoes",
+        "cilantro",
         "dill pickles"
       ]
     },
@@ -19,13 +19,13 @@
       "name": "garam masala",
       "score": 98.55398505652924,
       "connects_a": [
-        "lemon juice",
         "chicken",
-        "turmeric"
+        "tomatoes",
+        "coriander seeds"
       ],
       "connects_b": [
         "tomatoes",
-        "garlic",
+        "cilantro",
         "vegetable oil"
       ]
     },
@@ -33,12 +33,12 @@
       "name": "chiles",
       "score": 84.40090363234556,
       "connects_a": [
-        "roughly",
-        "turmeric",
-        "cloves"
+        "coriander seeds",
+        "ginger",
+        "roughly"
       ],
       "connects_b": [
-        "lime juice",
+        "cilantro",
         "vegetable oil",
         "lime"
       ]
@@ -47,27 +47,27 @@
       "name": "tomato paste",
       "score": 81.52267490165445,
       "connects_a": [
-        "parsley",
-        "turmeric",
+        "tomatoes",
+        "onion",
         "bell pepper"
       ],
       "connects_b": [
-        "bell pepper",
-        "cloves",
-        "tomatoes"
+        "tomatoes",
+        "pork",
+        "wine"
       ]
     },
     {
       "name": "corn tortillas",
       "score": 72.25275400989682,
       "connects_a": [
-        "roughly",
         "tomatoes",
-        "cilantro leaves"
+        "roughly",
+        "vegetable oil"
       ],
       "connects_b": [
         "tomatoes",
-        "lime juice",
+        "cilantro",
         "vegetable oil"
       ]
     },
@@ -75,81 +75,76 @@
       "name": "jalapeno peppers",
       "score": 72.07043171261796,
       "connects_a": [
-        "scallions",
-        "turmeric",
-        "bell pepper"
+        "tomatoes",
+        "tomato paste",
+        "scallions"
       ],
       "connects_b": [
-        "beans",
+        "tomatoes",
         "rice",
-        "bell pepper"
+        "cilantro"
       ]
     },
     {
       "name": "chile",
       "score": 70.30181556339134,
       "connects_a": [
+        "coriander seeds",
         "roughly",
-        "turmeric",
-        "cloves"
+        "vegetable oil"
       ],
       "connects_b": [
-        "lime juice",
+        "cilantro",
         "vegetable oil",
-        "lime"
+        "canola oil"
       ]
     },
     {
       "name": "can tomatoes",
       "score": 64.3766981235959,
       "connects_a": [
-        "parsley",
         "chicken",
-        "bell pepper"
+        "tomato paste",
+        "onion"
       ],
       "connects_b": [
-        "bell pepper",
-        "cloves",
-        "olives"
+        "wine",
+        "onion",
+        "bell pepper"
       ]
     },
     {
       "name": "allspice",
       "score": 63.28069053377198,
       "connects_a": [
+        "ginger",
         "roughly",
-        "cloves",
         "paprika"
       ],
       "connects_b": [
         "rum",
-        "mustard",
-        "bay leaf"
+        "orange",
+        "mustard"
       ]
     },
     {
       "name": "bay leaf",
       "score": 60.5399728795616,
       "connects_a": [
-        "parsley",
-        "turmeric",
-        "coriander seeds"
+        "tomatoes",
+        "coriander seeds",
+        "tomato paste"
       ],
       "connects_b": [
-        "beans",
         "tomatoes",
-        "oregano"
+        "wine",
+        "onion"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "artichokes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "turkey sausage",
+      "name": "cans chickpeas",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -159,17 +154,17 @@
       "strength": 1
     },
     {
-      "name": "fennel bulb",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "brussels sprouts",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "squid",
+      "name": "eggplants",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "turkey sausage",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -179,7 +174,17 @@
       "strength": 1
     },
     {
-      "name": "cans chickpeas",
+      "name": "fennel bulb",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "squid",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "artichokes",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -187,36 +192,16 @@
       "name": "palm",
       "pairs_with": "olive oil",
       "strength": 1
-    },
-    {
-      "name": "couscous",
-      "pairs_with": "olive oil",
-      "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "oregano leaves",
+      "name": "crusty bread",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "capers",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "chipotle puree",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cubanelle peppers",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "crusty rolls",
+      "name": "sandwich rolls",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -226,7 +211,12 @@
       "strength": 1
     },
     {
-      "name": "finely oregano",
+      "name": "oregano leaves",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "canned tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -236,12 +226,22 @@
       "strength": 1
     },
     {
-      "name": "crusty bread",
+      "name": "finely oregano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "chorizo sausage",
+      "name": "crusty rolls",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "capers",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cubanelle peppers",
       "pairs_with": "olive oil",
       "strength": 1
     }
