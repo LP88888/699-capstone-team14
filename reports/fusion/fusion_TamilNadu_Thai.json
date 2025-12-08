@@ -5,14 +5,14 @@
       "name": "peanuts",
       "score": 60.64010496074657,
       "connects_a": [
-        "dhania",
         "rai",
+        "dhania",
         "dal"
       ],
       "connects_b": [
-        "ginger",
-        "shrimp",
-        "peanut oil"
+        "soy sauce",
+        "scallions",
+        "limes"
       ]
     },
     {
@@ -20,8 +20,8 @@
       "score": 25.996864356228812,
       "connects_a": [
         "black",
-        "channa dal",
-        "leaves coriander"
+        "mullangi",
+        "hing"
       ],
       "connects_b": [
         "peanuts"
@@ -31,13 +31,13 @@
       "name": "mango",
       "score": 25.17561520058016,
       "connects_a": [
-        "dhania",
+        "seeds",
         "fenugreek",
-        "seeds"
+        "powder"
       ],
       "connects_b": [
-        "coconut milk",
-        "cilantro",
+        "limes",
+        "lime juice",
         "lime"
       ]
     },
@@ -45,9 +45,9 @@
       "name": "red",
       "score": 17.062607043542002,
       "connects_a": [
-        "dhania",
         "black",
-        "rai"
+        "salt coriander",
+        "seeds"
       ],
       "connects_b": [
         "peanuts"
@@ -62,7 +62,7 @@
       ],
       "connects_b": [
         "chiles",
-        "ginger",
+        "garlic",
         "vegetable oil"
       ]
     },
@@ -70,9 +70,9 @@
       "name": "dal",
       "score": 16.011856203120843,
       "connects_a": [
-        "dhania",
-        "rai",
-        "salt coriander"
+        "salt coriander",
+        "leaves coriander",
+        "seeds"
       ],
       "connects_b": [
         "peanuts"
@@ -85,9 +85,9 @@
         "beans"
       ],
       "connects_b": [
+        "juice",
         "chiles",
-        "ginger",
-        "peanuts"
+        "scallions"
       ]
     },
     {
@@ -97,9 +97,9 @@
         "onion"
       ],
       "connects_b": [
+        "juice",
         "chiles",
-        "canola oil",
-        "more"
+        "limes"
       ]
     },
     {
@@ -110,9 +110,9 @@
         "leaves"
       ],
       "connects_b": [
-        "shrimp",
-        "vegetable oil",
-        "bell pepper"
+        "bell pepper",
+        "leaves",
+        "garlic"
       ]
     },
     {
@@ -125,7 +125,7 @@
       ],
       "connects_b": [
         "onion",
-        "ginger",
+        "leaves",
         "garlic"
       ]
     }
@@ -137,22 +137,12 @@
       "strength": 1
     },
     {
-      "name": "murungai",
-      "pairs_with": "leaves",
-      "strength": 1
-    },
-    {
-      "name": "pudina",
-      "pairs_with": "leaves",
-      "strength": 1
-    },
-    {
       "name": "oil coriander",
       "pairs_with": "leaves",
       "strength": 1
     },
     {
-      "name": "pudina salt",
+      "name": "pudina",
       "pairs_with": "leaves",
       "strength": 1
     },
@@ -163,6 +153,16 @@
     },
     {
       "name": "cloves cardamom",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
+      "name": "murungai",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
+      "name": "pudina salt",
       "pairs_with": "leaves",
       "strength": 1
     },
@@ -184,12 +184,7 @@
   ],
   "novel_from_b": [
     {
-      "name": "olive",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "ginger coriander",
+      "name": "kabuli",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -199,17 +194,27 @@
       "strength": 1
     },
     {
-      "name": "kabuli",
+      "name": "ginger coriander",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "tomatillos",
+      "name": "olive",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "corn tortillas",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "tomato paste",
+      "name": "shrimp stock",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "stock",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -219,17 +224,12 @@
       "strength": 1
     },
     {
-      "name": "celery",
+      "name": "beef",
       "pairs_with": "onion",
       "strength": 1
     },
     {
       "name": "palm",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "beef broth",
       "pairs_with": "onion",
       "strength": 1
     }

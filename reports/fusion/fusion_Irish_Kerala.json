@@ -6,13 +6,13 @@
       "score": 20.113058174801886,
       "connects_a": [
         "onion",
-        "vegetable oil",
+        "potatoes",
         "garlic"
       ],
       "connects_b": [
         "chili powder",
         "peas",
-        "onion"
+        "cumin seeds"
       ]
     },
     {
@@ -20,13 +20,13 @@
       "score": 15.042460890745295,
       "connects_a": [
         "onion",
-        "garlic",
-        "potatoes"
+        "potatoes",
+        "garlic"
       ],
       "connects_b": [
         "chili powder",
         "peas",
-        "onion"
+        "cumin seeds"
       ]
     },
     {
@@ -34,26 +34,26 @@
       "score": 15.029290356626463,
       "connects_a": [
         "onion",
-        "garlic",
-        "leaves"
+        "leaves",
+        "garlic"
       ],
       "connects_b": [
+        "leaves",
         "chili powder",
-        "onion",
-        "oil"
+        "cumin seeds"
       ]
     },
     {
       "name": "bay leaf",
       "score": 12.107994575912322,
       "connects_a": [
-        "carrot",
-        "beef",
-        "thyme"
+        "parsley",
+        "russet potatoes",
+        "carrot"
       ],
       "connects_b": [
-        "onion",
-        "beans"
+        "beans",
+        "onion"
       ]
     },
     {
@@ -61,8 +61,8 @@
       "score": 12.04417907965786,
       "connects_a": [
         "carrot",
-        "beef",
-        "flour"
+        "thyme",
+        "beef"
       ],
       "connects_b": [
         "onion",
@@ -73,9 +73,9 @@
       "name": "file powder",
       "score": 12.024371595917614,
       "connects_a": [
-        "vegetable oil",
-        "thyme",
-        "onion"
+        "purpose flour",
+        "leaves",
+        "garlic"
       ],
       "connects_b": [
         "onion",
@@ -86,9 +86,9 @@
       "name": "vanilla",
       "score": 12.01569212554963,
       "connects_a": [
-        "egg",
         "buttermilk",
-        "milk"
+        "milk",
+        "egg yolks"
       ],
       "connects_b": [
         "flour",
@@ -102,18 +102,18 @@
         "flour"
       ],
       "connects_b": [
-        "dhania",
-        "mango",
-        "dal"
+        "seeds",
+        "oil salt",
+        "fenugreek"
       ]
     },
     {
       "name": "celery",
       "score": 10.024822426832854,
       "connects_a": [
-        "carrot",
-        "thyme",
-        "parsley"
+        "parsley",
+        "garlic",
+        "carrot"
       ],
       "connects_b": [
         "onion",
@@ -124,8 +124,8 @@
       "name": "cans tomatoes",
       "score": 10.022214159136231,
       "connects_a": [
-        "carrot",
         "cloves",
+        "leaves",
         "olive oil"
       ],
       "connects_b": [
@@ -136,12 +136,12 @@
   ],
   "novel_from_a": [
     {
-      "name": "green pepper",
+      "name": "beef chuck",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "in juice",
+      "name": "chicken bouillon",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -156,12 +156,22 @@
       "strength": 1
     },
     {
-      "name": "roux",
+      "name": "in juice",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "celery ribs",
+      "name": "green pepper",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "beef stock",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "tomato paste",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -172,16 +182,6 @@
     },
     {
       "name": "navy beans",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "bay leaf",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "tomato paste",
       "pairs_with": "onion",
       "strength": 1
     }
@@ -198,6 +198,11 @@
       "strength": 1
     },
     {
+      "name": "flour all",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
       "name": "finger",
       "pairs_with": "flour",
       "strength": 1
@@ -208,17 +213,12 @@
       "strength": 1
     },
     {
-      "name": "flour all",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "coconut",
+      "name": "banana",
       "pairs_with": "vanilla extract",
       "strength": 1
     },
     {
-      "name": "banana",
+      "name": "coconut",
       "pairs_with": "vanilla extract",
       "strength": 1
     },
@@ -228,12 +228,12 @@
       "strength": 1
     },
     {
-      "name": "oil coriander",
+      "name": "salt coriander",
       "pairs_with": "leaves",
       "strength": 1
     },
     {
-      "name": "moringa",
+      "name": "oil coriander",
       "pairs_with": "leaves",
       "strength": 1
     }

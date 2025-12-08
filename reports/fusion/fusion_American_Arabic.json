@@ -5,27 +5,27 @@
       "name": "garam masala",
       "score": 112.63312577889056,
       "connects_a": [
-        "cinnamon",
-        "vegetable oil",
-        "cumin"
+        "lemon juice",
+        "tomatoes",
+        "garlic"
       ],
       "connects_b": [
-        "tomato paste",
-        "cinnamon",
-        "vegetable oil"
+        "lemon juice",
+        "tomato",
+        "chicken"
       ]
     },
     {
       "name": "tomato paste",
       "score": 49.31618605161813,
       "connects_a": [
-        "carrot",
-        "cumin",
-        "bell pepper"
+        "parsley",
+        "bell pepper",
+        "cloves"
       ],
       "connects_b": [
-        "carrot",
-        "cumin",
+        "parsley",
+        "lamb",
         "paprika"
       ]
     },
@@ -33,54 +33,54 @@
       "name": "palm",
       "score": 42.16161282956031,
       "connects_a": [
-        "cumin",
+        "parsley",
         "bell pepper",
         "cloves"
       ],
       "connects_b": [
-        "cumin",
-        "paprika",
-        "coriander"
+        "parsley",
+        "lemon",
+        "paprika"
       ]
     },
     {
       "name": "celery",
       "score": 42.10425419269799,
       "connects_a": [
-        "carrot",
+        "parsley",
         "bell pepper",
-        "parsley"
+        "tomatoes"
       ],
       "connects_b": [
-        "tomato paste",
-        "carrot",
-        "paprika"
+        "parsley",
+        "paprika",
+        "garlic"
       ]
     },
     {
       "name": "confectioners",
       "score": 40.20863553802507,
       "connects_a": [
-        "egg",
-        "more",
+        "1",
+        "butter",
         "milk"
       ],
       "connects_b": [
-        "egg",
         "cinnamon",
-        "milk"
+        "egg",
+        "butter"
       ]
     },
     {
       "name": "filling",
       "score": 40.06143930228706,
       "connects_a": [
-        "egg",
+        "butter",
         "milk",
-        "cinnamon"
+        "purpose flour"
       ],
       "connects_b": [
-        "egg",
+        "butter",
         "milk",
         "cinnamon"
       ]
@@ -89,13 +89,13 @@
       "name": "tumeric",
       "score": 36.1019061377887,
       "connects_a": [
-        "cinnamon",
-        "cumin",
-        "onion"
+        "tomatoes",
+        "garlic",
+        "cinnamon"
       ],
       "connects_b": [
+        "garlic",
         "cinnamon",
-        "cumin",
         "coriander"
       ]
     },
@@ -103,68 +103,73 @@
       "name": "cardamom pods",
       "score": 36.07399291654346,
       "connects_a": [
-        "optional",
-        "cinnamon",
-        "vegetable oil"
+        "tomatoes",
+        "vegetable oil",
+        "cinnamon"
       ],
       "connects_b": [
-        "cinnamon",
         "vegetable oil",
-        "cumin"
+        "cinnamon",
+        "yogurt"
       ]
     },
     {
       "name": "yellow onions",
       "score": 36.04974024794739,
       "connects_a": [
-        "carrot",
+        "parsley",
         "bell pepper",
-        "kosher sea salt"
+        "garlic"
       ],
       "connects_b": [
-        "tomato paste",
-        "carrot",
-        "paprika"
+        "parsley",
+        "paprika",
+        "garlic"
       ]
     },
     {
       "name": "tahini",
       "score": 36.02367087889418,
       "connects_a": [
-        "honey",
-        "cumin",
-        "lemon juice"
+        "lemon juice",
+        "parsley",
+        "lemon"
       ],
       "connects_b": [
-        "cumin",
         "lemon juice",
+        "parsley",
         "lemon"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "grits",
+      "name": "glace",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "arborio rice",
+      "name": "room temp",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "i",
+      "name": "candies",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "smith",
+      "name": "sage leaves",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "pecans",
+      "name": "crawfish",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "tomato concasse",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -174,22 +179,17 @@
       "strength": 1
     },
     {
-      "name": "pecan halves",
+      "name": "peeled and",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "almond extract",
+      "name": "cooking apples",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "phyllo dough",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "popcorn",
+      "name": "veal stock",
       "pairs_with": "butter",
       "strength": 1
     }

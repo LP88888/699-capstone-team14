@@ -5,56 +5,56 @@
       "name": "ginger",
       "score": 164.97379153660125,
       "connects_a": [
+        "shaoxing",
         "oyster sauce",
-        "canola oil",
-        "pork"
+        "soy sauce"
       ],
       "connects_b": [
-        "cardamom",
         "garam masala",
-        "yogurt"
+        "turmeric",
+        "mustard seeds"
       ]
     },
     {
       "name": "chili pepper",
       "score": 110.04167498468748,
       "connects_a": [
-        "ginger",
-        "rice vinegar",
-        "shaoxing"
+        "shaoxing",
+        "soy sauce",
+        "corn starch"
       ],
       "connects_b": [
-        "ginger",
         "garam masala",
-        "coriander"
+        "turmeric",
+        "mustard seeds"
       ]
     },
     {
       "name": "garam masala",
       "score": 102.57659669148961,
       "connects_a": [
-        "ginger",
+        "garlic",
         "vegetable oil",
         "chicken breasts"
       ],
       "connects_b": [
-        "ginger",
-        "cardamom",
-        "potatoes"
+        "turmeric",
+        "mustard seeds",
+        "tomatoes"
       ]
     },
     {
       "name": "oyster sauce",
       "score": 88.05657690747782,
       "connects_a": [
-        "shrimp",
-        "mushrooms",
-        "chicken broth"
+        "shaoxing",
+        "scallions",
+        "sodium soy sauce"
       ],
       "connects_b": [
         "oil",
-        "vegetable oil",
-        "ginger"
+        "garlic",
+        "vegetable oil"
       ]
     },
     {
@@ -62,27 +62,27 @@
       "score": 80.34493207244725,
       "connects_a": [
         "oyster sauce",
-        "canola oil",
-        "rice vinegar"
+        "soy sauce",
+        "vegetable oil"
       ],
       "connects_b": [
-        "vegetable oil",
-        "cumin",
-        "garam masala"
+        "garam masala",
+        "turmeric",
+        "mustard seeds"
       ]
     },
     {
       "name": "tumeric",
       "score": 75.21230445372647,
       "connects_a": [
-        "ginger",
+        "garlic",
         "chicken breasts",
-        "onion"
+        "ginger"
       ],
       "connects_b": [
-        "ginger",
-        "cardamom",
-        "cumin"
+        "garam masala",
+        "mustard seeds",
+        "tomatoes"
       ]
     },
     {
@@ -90,41 +90,41 @@
       "score": 70.746789120871,
       "connects_a": [
         "oyster sauce",
-        "ginger",
-        "shrimp"
+        "soy sauce",
+        "scallions"
       ],
       "connects_b": [
-        "dhania",
+        "masala",
         "ginger",
-        "dal"
+        "cilantro"
       ]
     },
     {
       "name": "cilantro",
       "score": 70.40583563747605,
       "connects_a": [
-        "ginger",
-        "rice vinegar",
-        "sodium soy sauce"
+        "scallions",
+        "sodium soy sauce",
+        "chicken breasts"
       ],
       "connects_b": [
-        "ginger",
-        "mango",
-        "cumin"
+        "garam masala",
+        "turmeric",
+        "mustard seeds"
       ]
     },
     {
       "name": "chiles",
       "score": 66.31499571112866,
       "connects_a": [
-        "ginger",
-        "rice vinegar",
-        "vegetable oil"
+        "vegetable oil",
+        "chicken breasts",
+        "rice vinegar"
       ],
       "connects_b": [
-        "ginger",
-        "vegetable oil",
-        "cumin"
+        "garam masala",
+        "turmeric",
+        "mustard seeds"
       ]
     },
     {
@@ -132,19 +132,39 @@
       "score": 66.18335746824758,
       "connects_a": [
         "oyster sauce",
-        "chicken broth",
-        "rice vinegar"
+        "soy sauce",
+        "scallions"
       ],
       "connects_b": [
-        "vegetable oil",
         "garam masala",
-        "yogurt"
+        "turmeric",
+        "vegetable oil"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "depending",
+      "name": "sodium",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "mussels",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "handfuls",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "racks",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "cremini",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -154,37 +174,17 @@
       "strength": 1
     },
     {
-      "name": "squid",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
       "name": "tomatillos",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "snapper fillets",
+      "name": "to each",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
       "name": "black beans",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "anchovies",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "ribs celery",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "mussels",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -196,22 +196,27 @@
   ],
   "novel_from_b": [
     {
-      "name": "cardamom pods",
+      "name": "ancho chile",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "leg",
+      "name": "tails",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "finely oregano",
+      "name": "crusty bread",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "have",
+      "name": "saffron threads",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "scotch bonnet",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -226,22 +231,17 @@
       "strength": 1
     },
     {
-      "name": "eggplants",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "bunch cilantro",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "saffron threads",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
       "name": "hair pasta",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "cardamom pods",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "serrano",
       "pairs_with": "cloves",
       "strength": 1
     }

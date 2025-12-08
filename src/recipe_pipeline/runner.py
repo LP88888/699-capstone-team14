@@ -18,7 +18,7 @@ PIPELINE_ORDER: List[StageName] = [
     # "ingredient_post_map",
     # "ingredient_encoding",
     # "cuisine_normalization",
-    # "ingredients_summary",
+    "ingredients_summary",
     # "cuisine_classifier",
     "analysis_baseline",
     "analysis_pmi",

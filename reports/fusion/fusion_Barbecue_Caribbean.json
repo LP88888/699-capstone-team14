@@ -5,70 +5,70 @@
       "name": "garam masala",
       "score": 88.4974559691283,
       "connects_a": [
-        "ginger",
-        "vegetable oil",
-        "cumin"
+        "lemon juice",
+        "cayenne pepper",
+        "tomatoes"
       ],
       "connects_b": [
-        "ginger",
-        "cinnamon",
-        "vegetable oil"
+        "garlic",
+        "vegetable oil",
+        "cinnamon"
       ]
     },
     {
       "name": "cumin",
       "score": 82.39179077060192,
       "connects_a": [
-        "paprika",
+        "garlic powder",
         "bell pepper",
-        "garlic powder"
+        "cayenne pepper"
       ],
       "connects_b": [
-        "plantains",
         "bell pepper",
-        "coconut milk"
+        "lime juice",
+        "cilantro leaves"
       ]
     },
     {
       "name": "sriracha",
       "score": 81.09585307727747,
       "connects_a": [
-        "honey",
-        "ginger",
-        "soy sauce"
+        "soy sauce",
+        "cilantro",
+        "garlic"
       ],
       "connects_b": [
-        "honey",
-        "ginger",
-        "carrot"
+        "scallions",
+        "garlic",
+        "lime juice"
       ]
     },
     {
       "name": "fish sauce",
       "score": 77.75704359412062,
       "connects_a": [
-        "ginger",
-        "vegetable oil",
-        "soy sauce"
+        "soy sauce",
+        "pineapple",
+        "vegetable oil"
       ],
       "connects_b": [
-        "canola oil",
-        "ginger",
-        "carrot"
+        "pineapple",
+        "scallions",
+        "cilantro leaves"
       ]
     },
     {
       "name": "chipotle pepper",
       "score": 72.06562829955054,
       "connects_a": [
-        "honey",
         "worcestershire sauce",
-        "cumin"
+        "paprika",
+        "lime"
       ],
       "connects_b": [
-        "honey",
-        "canola oil",
-        "cumin"
+        "kosher sea salt",
+        "cilantro leaves",
+        "lime juice"
       ]
     },
     {
@@ -76,80 +76,80 @@
       "score": 70.45169435945446,
       "connects_a": [
         "worcestershire sauce",
-        "cumin",
-        "barbecue sauce"
+        "bell pepper",
+        "cloves"
       ],
       "connects_b": [
-        "carrot",
-        "cumin",
-        "bell pepper"
+        "parsley",
+        "bell pepper",
+        "cloves"
       ]
     },
     {
       "name": "celery",
       "score": 70.17375698782998,
       "connects_a": [
-        "onion powder",
-        "worcestershire sauce",
-        "bell pepper"
+        "garlic powder",
+        "bell pepper",
+        "worcestershire sauce"
       ],
       "connects_b": [
-        "carrot",
-        "bell pepper",
-        "thyme"
+        "parsley",
+        "rice",
+        "bell pepper"
       ]
     },
     {
       "name": "rice vinegar",
       "score": 70.16047563365046,
       "connects_a": [
-        "honey",
-        "ginger",
-        "soy sauce"
+        "soy sauce",
+        "pineapple",
+        "chicken breasts"
       ],
       "connects_b": [
-        "honey",
-        "canola oil",
-        "ginger"
+        "pineapple",
+        "scallions",
+        "rice"
       ]
     },
     {
       "name": "corn tortillas",
       "score": 64.22467023101939,
       "connects_a": [
+        "tomatoes",
         "vegetable oil",
-        "cumin",
-        "chicken breasts"
+        "lime"
       ],
       "connects_b": [
-        "canola oil",
+        "cilantro leaves",
         "vegetable oil",
-        "cumin"
+        "lime juice"
       ]
     },
     {
       "name": "hoisin sauce",
       "score": 64.04893124604469,
       "connects_a": [
-        "honey",
-        "ginger",
-        "soy sauce"
+        "soy sauce",
+        "pepper flakes",
+        "garlic"
       ],
       "connects_b": [
-        "honey",
-        "canola oil",
-        "ginger"
+        "scallions",
+        "rice",
+        "garlic"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "[extra",
+      "name": "sandwich rolls",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "sandwich rolls",
+      "name": "[extra",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -159,23 +159,13 @@
       "strength": 1
     },
     {
-      "name": "gruyere cheese",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
       "name": "pecans",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "chicken base",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "lentil",
-      "pairs_with": "onion",
+      "name": "gruyere cheese",
+      "pairs_with": "butter",
       "strength": 1
     },
     {
@@ -189,6 +179,16 @@
       "strength": 1
     },
     {
+      "name": "lentil",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "chicken base",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
       "name": "coriander powder",
       "pairs_with": "onion",
       "strength": 1
@@ -196,12 +196,27 @@
   ],
   "novel_from_b": [
     {
-      "name": "olives",
+      "name": "capers",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "reggiano",
+      "name": "chipotle puree",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "roasted tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pinch saffron",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "fennel bulb",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -211,37 +226,22 @@
       "strength": 1
     },
     {
+      "name": "canned tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "basil chiffonade",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "by hand",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "chorizo sausage",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "bunch kale",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "hearts",
+      "name": "cubanelle peppers",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
       "name": "mussels",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "chorizo",
       "pairs_with": "olive oil",
       "strength": 1
     }

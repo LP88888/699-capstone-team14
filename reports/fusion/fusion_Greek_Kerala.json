@@ -5,54 +5,54 @@
       "name": "garam masala",
       "score": 45.254380893304244,
       "connects_a": [
-        "spinach",
-        "cinnamon",
-        "lemon juice"
+        "lemon juice",
+        "tomatoes",
+        "garlic"
       ],
       "connects_b": [
         "chili powder",
         "peas",
-        "onion"
+        "cumin seeds"
       ]
     },
     {
       "name": "tumeric",
       "score": 25.070768151242156,
       "connects_a": [
-        "cinnamon",
-        "chicken breasts",
-        "onion"
+        "tomatoes",
+        "garlic",
+        "cinnamon"
       ],
       "connects_b": [
         "chili powder",
         "peas",
-        "onion"
+        "cumin seeds"
       ]
     },
     {
       "name": "coriander powder",
       "score": 25.048817261044103,
       "connects_a": [
-        "cinnamon",
-        "onion",
-        "tomatoes"
+        "leaves",
+        "tomatoes",
+        "garlic"
       ],
       "connects_b": [
+        "leaves",
         "chili powder",
-        "onion",
-        "oil"
+        "cumin seeds"
       ]
     },
     {
       "name": "cardamom",
       "score": 24.359174425734455,
       "connects_a": [
-        "cinnamon",
         "greek yogurt",
-        "yogurt"
+        "yogurt",
+        "cinnamon"
       ],
       "connects_b": [
-        "dhania",
+        "seeds",
         "chili powder",
         "peas"
       ]
@@ -61,13 +61,13 @@
       "name": "cumin",
       "score": 18.309286837911536,
       "connects_a": [
-        "yogurt",
         "bell pepper",
+        "tomatoes",
         "mint"
       ],
       "connects_b": [
-        "chili powder",
         "beans",
+        "chili powder",
         "cumin seeds"
       ]
     },
@@ -80,8 +80,8 @@
         "yogurt"
       ],
       "connects_b": [
-        "chili powder",
         "beans",
+        "chili powder",
         "mango"
       ]
     },
@@ -89,13 +89,13 @@
       "name": "turmeric",
       "score": 16.031015858965105,
       "connects_a": [
-        "tomatoes",
         "greek yogurt",
+        "tomatoes",
         "yogurt"
       ],
       "connects_b": [
-        "oil",
         "chili powder",
+        "oil",
         "peas"
       ]
     },
@@ -103,27 +103,27 @@
       "name": "coriander",
       "score": 15.038767998317228,
       "connects_a": [
+        "tomatoes",
         "cinnamon",
-        "yogurt",
         "mint"
       ],
       "connects_b": [
         "chili powder",
-        "cumin seeds",
-        "chillies"
+        "chillies",
+        "cumin seeds"
       ]
     },
     {
       "name": "coriander seeds",
       "score": 15.021098403492308,
       "connects_a": [
-        "honey",
         "cinnamon",
-        "yogurt"
+        "wine vinegar",
+        "grain sea salt"
       ],
       "connects_b": [
-        "oil",
         "chili powder",
+        "oil",
         "cumin seeds"
       ]
     },
@@ -131,20 +131,20 @@
       "name": "jalapeno peppers",
       "score": 15.014673273462073,
       "connects_a": [
+        "mint",
         "tomatoes",
-        "bell pepper",
-        "mint"
+        "bell pepper"
       ],
       "connects_b": [
-        "mango",
-        "chili powder",
-        "rice"
+        "beans",
+        "rice",
+        "chili powder"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "dry",
+      "name": "kabuli",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -154,27 +154,7 @@
       "strength": 1
     },
     {
-      "name": "olive",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
       "name": "methi",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "greek",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "virgin",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "pepper powder",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -184,12 +164,32 @@
       "strength": 1
     },
     {
-      "name": "kabuli",
+      "name": "olive",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
       "name": "baingan",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "dry",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "brinjal",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "pepper powder",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "greek",
       "pairs_with": "dhania",
       "strength": 1
     }
@@ -221,17 +221,12 @@
       "strength": 1
     },
     {
-      "name": "oil coriander",
-      "pairs_with": "leaves",
-      "strength": 1
-    },
-    {
-      "name": "moringa",
-      "pairs_with": "leaves",
-      "strength": 1
-    },
-    {
       "name": "salt coriander",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
+      "name": "oil coriander",
       "pairs_with": "leaves",
       "strength": 1
     },
@@ -242,6 +237,11 @@
     },
     {
       "name": "pudina salt",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
+      "name": "moringa",
       "pairs_with": "leaves",
       "strength": 1
     }

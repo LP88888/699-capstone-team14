@@ -5,13 +5,13 @@
       "name": "celery",
       "score": 102.2531887536951,
       "connects_a": [
-        "tomatoes",
-        "creole seasoning",
-        "onion powder"
+        "parsley",
+        "andouille sausage",
+        "rice"
       ],
       "connects_b": [
-        "bay leaf",
-        "carrot",
+        "parsley",
+        "garlic",
         "bacon"
       ]
     },
@@ -19,13 +19,13 @@
       "name": "tomato paste",
       "score": 91.58720266729081,
       "connects_a": [
-        "celery",
-        "worcestershire sauce",
-        "paprika"
+        "stalks celery",
+        "parsley",
+        "andouille sausage"
       ],
       "connects_b": [
-        "wine",
-        "bay leaf",
+        "parsley",
+        "cloves",
         "carrot"
       ]
     },
@@ -33,27 +33,27 @@
       "name": "thyme",
       "score": 70.36519638344016,
       "connects_a": [
-        "celery",
-        "creole seasoning",
-        "shrimp"
+        "stalks celery",
+        "parsley",
+        "andouille sausage"
       ],
       "connects_b": [
+        "parsley",
         "wine",
-        "bay leaf",
-        "2"
+        "bacon"
       ]
     },
     {
       "name": "file powder",
       "score": 70.14216764285275,
       "connects_a": [
-        "celery",
-        "onion powder",
-        "shrimp"
+        "andouille sausage",
+        "purpose flour",
+        "bell pepper"
       ],
       "connects_b": [
-        "vegetable oil",
-        "onion",
+        "purpose flour",
+        "leaves",
         "garlic"
       ]
     },
@@ -61,13 +61,13 @@
       "name": "confectioners",
       "score": 65.33903274929074,
       "connects_a": [
-        "egg",
-        "2",
-        "butter"
+        "butter",
+        "purpose flour",
+        "2"
       ],
       "connects_b": [
-        "egg",
-        "nutmeg",
+        "almonds",
+        "butter",
         "milk"
       ]
     },
@@ -75,55 +75,55 @@
       "name": "yellow onions",
       "score": 65.08980878101612,
       "connects_a": [
-        "celery",
-        "onion powder",
-        "worcestershire sauce"
+        "parsley",
+        "worcestershire sauce",
+        "bell pepper"
       ],
       "connects_b": [
-        "wine",
-        "carrot",
-        "2"
+        "parsley",
+        "2",
+        "garlic"
       ]
     },
     {
       "name": "grits",
       "score": 60.234735005681905,
       "connects_a": [
-        "shrimp",
-        "paprika",
-        "bell pepper"
+        "parsley",
+        "andouille sausage",
+        "butter"
       ],
       "connects_b": [
-        "milk",
-        "2",
-        "butter"
+        "parsley",
+        "butter",
+        "milk"
       ]
     },
     {
       "name": "cornmeal",
       "score": 55.225665301196294,
       "connects_a": [
-        "egg",
-        "hot sauce",
-        "creole seasoning"
+        "stalks celery",
+        "purpose flour",
+        "cayenne pepper"
       ],
       "connects_b": [
-        "egg",
         "milk",
-        "flour"
+        "purpose flour",
+        "yeast"
       ]
     },
     {
       "name": "ribs celery",
       "score": 54.39354610288529,
       "connects_a": [
-        "shrimp",
+        "parsley",
         "worcestershire sauce",
         "bell pepper"
       ],
       "connects_b": [
-        "wine",
-        "bay leaf",
+        "parsley",
+        "cloves",
         "carrot"
       ]
     },
@@ -131,30 +131,45 @@
       "name": "andouille sausage",
       "score": 51.06750442014736,
       "connects_a": [
-        "celery",
-        "creole seasoning",
-        "tomatoes"
+        "stalks celery",
+        "rice",
+        "worcestershire sauce"
       ],
       "connects_b": [
         "onion",
-        "bay leaf",
-        "garlic"
+        "garlic",
+        "bay leaf"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "olives",
+      "name": "oregano leaves",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "reggiano",
+      "name": "artichokes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "spaghetti",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "roasted tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
       "name": "parmigiano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "canned tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -169,27 +184,12 @@
       "strength": 1
     },
     {
-      "name": "chorizo sausage",
+      "name": "mussels",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "spaghetti",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "artichokes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "oregano leaves",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "heads garlic",
+      "name": "beefsteak tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     }
@@ -201,12 +201,12 @@
       "strength": 1
     },
     {
-      "name": "escarole",
+      "name": "montreal steak",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "montreal steak",
+      "name": "escarole",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -216,32 +216,32 @@
       "strength": 1
     },
     {
-      "name": "muscovado sugar",
+      "name": "graham cracker crumbs",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "percent milk",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "confectioners",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "cooking apples",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "corn syrup",
+      "name": "granny smith apples",
       "pairs_with": "butter",
       "strength": 1
     },
     {
       "name": "almond flour",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "filling",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "dutch process",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "believe",
       "pairs_with": "butter",
       "strength": 1
     }

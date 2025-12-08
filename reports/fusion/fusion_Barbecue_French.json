@@ -6,12 +6,12 @@
       "score": 70.45169435945446,
       "connects_a": [
         "worcestershire sauce",
-        "cumin",
-        "barbecue sauce"
+        "bell pepper",
+        "cloves"
       ],
       "connects_b": [
-        "wine",
-        "bay leaf",
+        "parsley",
+        "cloves",
         "carrot"
       ]
     },
@@ -19,13 +19,13 @@
       "name": "garam masala",
       "score": 66.37309197684623,
       "connects_a": [
-        "ginger",
-        "vegetable oil",
-        "cumin"
+        "lemon juice",
+        "cayenne pepper",
+        "tomatoes"
       ],
       "connects_b": [
-        "bay leaf",
-        "cinnamon",
+        "lemon juice",
+        "garlic",
         "vegetable oil"
       ]
     },
@@ -33,27 +33,27 @@
       "name": "celery",
       "score": 60.14893456099712,
       "connects_a": [
-        "onion powder",
-        "worcestershire sauce",
-        "bell pepper"
+        "garlic powder",
+        "bell pepper",
+        "worcestershire sauce"
       ],
       "connects_b": [
-        "bay leaf",
-        "carrot",
-        "thyme"
+        "parsley",
+        "garlic",
+        "carrot"
       ]
     },
     {
       "name": "yellow onions",
       "score": 56.07737371902927,
       "connects_a": [
-        "onion powder",
         "worcestershire sauce",
-        "bell pepper"
+        "bell pepper",
+        "cayenne pepper"
       ],
       "connects_b": [
-        "wine",
-        "carrot",
+        "parsley",
+        "garlic",
         "kosher sea salt"
       ]
     },
@@ -61,13 +61,13 @@
       "name": "granulated",
       "score": 54.18960719938287,
       "connects_a": [
+        "seasoning",
         "worcestershire sauce",
-        "paprika",
         "cayenne pepper"
       ],
       "connects_b": [
-        "nutmeg",
-        "cinnamon",
+        "1",
+        "maple syrup",
         "chocolate"
       ]
     },
@@ -75,76 +75,76 @@
       "name": "file powder",
       "score": 54.10967218162927,
       "connects_a": [
-        "onion powder",
-        "vegetable oil",
-        "bell pepper"
+        "bell pepper",
+        "cayenne pepper",
+        "paprika"
       ],
       "connects_b": [
-        "vegetable oil",
-        "thyme",
-        "onion"
+        "purpose flour",
+        "leaves",
+        "garlic"
       ]
     },
     {
       "name": "capers",
       "score": 49.09553426512236,
       "connects_a": [
-        "rosemary",
         "lemon juice",
-        "mayonnaise"
+        "tomatoes",
+        "pepper flakes"
       ],
       "connects_b": [
+        "shallots",
         "lemon juice",
-        "dijon mustard",
-        "lemon"
+        "parsley"
       ]
     },
     {
       "name": "yellow onion",
       "score": 48.02773981411916,
       "connects_a": [
-        "onion powder",
         "worcestershire sauce",
-        "bell pepper"
+        "bell pepper",
+        "cayenne pepper"
       ],
       "connects_b": [
-        "wine",
-        "dijon mustard",
-        "kosher sea salt"
+        "garlic",
+        "kosher sea salt",
+        "wine"
       ]
     },
     {
       "name": "allspice",
       "score": 42.18712702251465,
       "connects_a": [
-        "ginger",
-        "cumin",
-        "cloves"
+        "garlic powder",
+        "cayenne pepper",
+        "paprika"
       ],
       "connects_b": [
-        "nutmeg",
+        "kosher sea salt",
         "cinnamon",
-        "bay leaf"
+        "thyme"
       ]
     },
     {
       "name": "celery ribs",
       "score": 42.03213539957606,
       "connects_a": [
-        "rosemary",
         "worcestershire sauce",
-        "bell pepper"
+        "bell pepper",
+        "cayenne pepper"
       ],
       "connects_b": [
-        "wine",
-        "bay leaf",
-        "carrot"
+        "parsley",
+        "carrot",
+        "thyme"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "lentil",
+      "name": "chicken base",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -154,7 +154,7 @@
       "strength": 1
     },
     {
-      "name": "chicken base",
+      "name": "lentil",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -174,12 +174,12 @@
       "strength": 1
     },
     {
-      "name": "guacamole",
+      "name": "tortilla chips",
       "pairs_with": "cream",
       "strength": 1
     },
     {
-      "name": "tortilla chips",
+      "name": "guacamole",
       "pairs_with": "cream",
       "strength": 1
     },
@@ -189,49 +189,29 @@
       "strength": 1
     },
     {
-      "name": "®",
+      "name": "marinade",
       "pairs_with": "garlic",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "head fennel",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "chianti",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "canned tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "spaghetti",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "salami",
+      "name": "turkey sausage",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "morel mushrooms",
+      "name": "parmigiano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "anchovies",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "clam broth",
+      "name": "cannellini",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -241,7 +221,27 @@
       "strength": 1
     },
     {
-      "name": "some",
+      "name": "baby arugula",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "grigio",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "morel mushrooms",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "grape tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "arugula",
       "pairs_with": "olive oil",
       "strength": 1
     }

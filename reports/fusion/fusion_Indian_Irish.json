@@ -5,13 +5,13 @@
       "name": "garam masala",
       "score": 68.38439779432642,
       "connects_a": [
-        "ginger",
-        "cardamom",
-        "potatoes"
+        "turmeric",
+        "mustard seeds",
+        "tomatoes"
       ],
       "connects_b": [
         "onion",
-        "vegetable oil",
+        "potatoes",
         "garlic"
       ]
     },
@@ -19,13 +19,13 @@
       "name": "tomato paste",
       "score": 48.3097332750545,
       "connects_a": [
-        "cumin",
         "garam masala",
+        "turmeric",
         "cloves"
       ],
       "connects_b": [
-        "carrot",
-        "beef",
+        "parsley",
+        "russet potatoes",
         "cloves"
       ]
     },
@@ -33,148 +33,123 @@
       "name": "tumeric",
       "score": 45.12738267223588,
       "connects_a": [
-        "ginger",
-        "cardamom",
-        "cumin"
+        "garam masala",
+        "mustard seeds",
+        "tomatoes"
       ],
       "connects_b": [
         "onion",
-        "garlic",
-        "potatoes"
+        "potatoes",
+        "garlic"
       ]
     },
     {
       "name": "bay leaf",
       "score": 36.323983727736966,
       "connects_a": [
-        "cardamom",
-        "cumin",
-        "garam masala"
+        "garam masala",
+        "turmeric",
+        "tomatoes"
       ],
       "connects_b": [
-        "carrot",
-        "beef",
-        "thyme"
+        "parsley",
+        "russet potatoes",
+        "carrot"
       ]
     },
     {
       "name": "coriander powder",
       "score": 36.07029685590351,
       "connects_a": [
-        "ginger",
-        "cardamom",
-        "turmeric"
+        "garam masala",
+        "turmeric",
+        "tomatoes"
       ],
       "connects_b": [
         "onion",
-        "garlic",
-        "leaves"
+        "leaves",
+        "garlic"
       ]
     },
     {
       "name": "allspice",
       "score": 35.15593918542888,
       "connects_a": [
-        "ginger",
+        "mustard seeds",
         "cardamom",
-        "cumin"
+        "chili powder"
       ],
       "connects_b": [
         "raisins",
-        "beef",
-        "cloves"
+        "kosher sea salt",
+        "thyme"
       ]
     },
     {
       "name": "chiles",
       "score": 33.15749785556433,
       "connects_a": [
-        "ginger",
-        "vegetable oil",
-        "cumin"
+        "garam masala",
+        "turmeric",
+        "mustard seeds"
       ],
       "connects_b": [
-        "2",
+        "cloves",
         "vegetable oil",
-        "cloves"
+        "2"
       ]
     },
     {
       "name": "cardamom pods",
       "score": 33.06782684016484,
       "connects_a": [
-        "ginger",
-        "vegetable oil",
-        "cumin"
+        "garam masala",
+        "turmeric",
+        "cloves"
       ],
       "connects_b": [
-        "vegetable oil",
+        "cloves",
         "raisins",
-        "cloves"
+        "vegetable oil"
       ]
     },
     {
       "name": "file powder",
       "score": 30.06092898979404,
       "connects_a": [
-        "vegetable oil",
-        "onion",
-        "tomatoes"
+        "leaves",
+        "tomatoes",
+        "garlic"
       ],
       "connects_b": [
-        "vegetable oil",
-        "thyme",
-        "onion"
+        "purpose flour",
+        "leaves",
+        "garlic"
       ]
     },
     {
       "name": "curry powder",
       "score": 30.014359424774288,
       "connects_a": [
-        "ginger",
-        "potatoes",
-        "cumin"
+        "garam masala",
+        "turmeric",
+        "mustard seeds"
       ],
       "connects_b": [
         "carrot",
-        "raisins",
-        "potatoes"
+        "potatoes",
+        "raisins"
       ]
     }
   ],
   "novel_from_a": [
-    {
-      "name": "canned tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
     {
       "name": "spaghetti",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "finely oregano",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pinch saffron",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "fennel bulb",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "eggplants",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cans chickpeas",
+      "name": "cherry tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -184,24 +159,59 @@
       "strength": 1
     },
     {
+      "name": "crusty bread",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cans chickpeas",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pinch saffron",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "finely oregano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "handful pine nuts",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "couscous",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "petite",
+      "name": "canned tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "head fennel",
+      "name": "beef chuck",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
       "name": "chipotles",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "slab bacon",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "head fennel",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -221,17 +231,7 @@
       "strength": 1
     },
     {
-      "name": "beef chuck",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "slab bacon",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "cooking apples",
+      "name": "almond flour",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -241,7 +241,7 @@
       "strength": 1
     },
     {
-      "name": "corn syrup",
+      "name": "rutabaga",
       "pairs_with": "butter",
       "strength": 1
     }

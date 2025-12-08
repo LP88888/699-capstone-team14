@@ -6,12 +6,12 @@
       "score": 80.51622212509082,
       "connects_a": [
         "worcestershire sauce",
-        "cumin",
-        "barbecue sauce"
+        "bell pepper",
+        "cloves"
       ],
       "connects_b": [
-        "carrot",
-        "beef",
+        "parsley",
+        "russet potatoes",
         "cloves"
       ]
     },
@@ -19,69 +19,69 @@
       "name": "file powder",
       "score": 54.10967218162927,
       "connects_a": [
-        "onion powder",
-        "vegetable oil",
-        "bell pepper"
+        "bell pepper",
+        "cayenne pepper",
+        "paprika"
       ],
       "connects_b": [
-        "vegetable oil",
-        "thyme",
-        "onion"
+        "purpose flour",
+        "leaves",
+        "garlic"
       ]
     },
     {
       "name": "onion powder",
       "score": 50.176435087305926,
       "connects_a": [
-        "worcestershire sauce",
-        "cumin",
-        "paprika"
+        "seasoning",
+        "garlic powder",
+        "worcestershire sauce"
       ],
       "connects_b": [
         "buttermilk",
-        "beef",
-        "kosher sea salt"
+        "kosher sea salt",
+        "thyme"
       ]
     },
     {
       "name": "celery",
       "score": 50.124112134164264,
       "connects_a": [
-        "onion powder",
-        "worcestershire sauce",
-        "bell pepper"
+        "garlic powder",
+        "bell pepper",
+        "worcestershire sauce"
       ],
       "connects_b": [
-        "carrot",
-        "thyme",
-        "parsley"
+        "parsley",
+        "garlic",
+        "carrot"
       ]
     },
     {
       "name": "yellow onions",
       "score": 48.06632033059652,
       "connects_a": [
-        "onion powder",
         "worcestershire sauce",
-        "bell pepper"
+        "bell pepper",
+        "cayenne pepper"
       ],
       "connects_b": [
-        "carrot",
-        "kosher sea salt",
-        "2"
+        "parsley",
+        "garlic",
+        "kosher sea salt"
       ]
     },
     {
       "name": "garam masala",
       "score": 44.24872798456415,
       "connects_a": [
-        "ginger",
-        "vegetable oil",
-        "cumin"
+        "lemon juice",
+        "cayenne pepper",
+        "tomatoes"
       ],
       "connects_b": [
         "onion",
-        "vegetable oil",
+        "potatoes",
         "garlic"
       ]
     },
@@ -89,27 +89,27 @@
       "name": "cornmeal",
       "score": 42.172326230004444,
       "connects_a": [
-        "mayonnaise",
+        "seasoning",
         "garlic powder",
         "cayenne pepper"
       ],
       "connects_b": [
-        "egg",
         "buttermilk",
-        "milk"
+        "milk",
+        "purpose flour"
       ]
     },
     {
       "name": "cans tomatoes",
       "score": 40.088856636544925,
       "connects_a": [
-        "onion",
+        "seasoning",
         "cloves",
-        "pepper flakes"
+        "leaves"
       ],
       "connects_b": [
-        "carrot",
         "cloves",
+        "leaves",
         "olive oil"
       ]
     },
@@ -117,26 +117,26 @@
       "name": "bay leaf",
       "score": 36.323983727736966,
       "connects_a": [
-        "rosemary",
-        "cumin",
-        "paprika"
+        "tomatoes",
+        "paprika",
+        "oregano"
       ],
       "connects_b": [
-        "carrot",
-        "beef",
-        "thyme"
+        "parsley",
+        "russet potatoes",
+        "carrot"
       ]
     },
     {
       "name": "sriracha",
       "score": 36.04260136767887,
       "connects_a": [
-        "honey",
-        "ginger",
-        "soy sauce"
+        "soy sauce",
+        "cilantro",
+        "garlic"
       ],
       "connects_b": [
-        "cabbage",
+        "carrot",
         "honey",
         "garlic"
       ]
@@ -144,17 +144,12 @@
   ],
   "novel_from_a": [
     {
-      "name": "[extra",
+      "name": "sandwich rolls",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
       "name": "oregano leaves",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "sandwich rolls",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -164,8 +159,8 @@
       "strength": 1
     },
     {
-      "name": "oregano leaves",
-      "pairs_with": "cloves",
+      "name": "[extra",
+      "pairs_with": "olive oil",
       "strength": 1
     },
     {
@@ -174,8 +169,8 @@
       "strength": 1
     },
     {
-      "name": "gruyere cheese",
-      "pairs_with": "butter",
+      "name": "oregano leaves",
+      "pairs_with": "cloves",
       "strength": 1
     },
     {
@@ -184,24 +179,39 @@
       "strength": 1
     },
     {
-      "name": "chicken base",
+      "name": "gruyere cheese",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "sandwich rolls",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "lentil",
+      "name": "ginger paste",
       "pairs_with": "onion",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "olives",
+      "name": "capers",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
       "name": "head fennel",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "olives",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "sherry vinegar",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -216,32 +226,22 @@
       "strength": 1
     },
     {
-      "name": "capers",
-      "pairs_with": "olive oil",
+      "name": "beef chuck",
+      "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "sherry vinegar",
-      "pairs_with": "olive oil",
+      "name": "leg",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "allspice berries",
+      "pairs_with": "cloves",
       "strength": 1
     },
     {
       "name": "inch piece",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "head fennel",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "chipotles",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "pork shoulder",
       "pairs_with": "cloves",
       "strength": 1
     }

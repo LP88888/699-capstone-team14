@@ -5,55 +5,55 @@
       "name": "cabbage",
       "score": 96.37342142059421,
       "connects_a": [
-        "apples",
-        "cider vinegar",
+        "wine vinegar",
+        "bacon",
         "carrot"
       ],
       "connects_b": [
-        "canola oil",
-        "ginger",
-        "peanuts"
+        "soy sauce",
+        "scallions",
+        "limes"
       ]
     },
     {
       "name": "bean sprouts",
       "score": 80.16976792776003,
       "connects_a": [
-        "cabbage",
-        "vegetable oil",
-        "carrot"
+        "carrot",
+        "wine vinegar",
+        "vegetable oil"
       ],
       "connects_b": [
-        "shrimp",
-        "shallots",
-        "lime"
+        "scallions",
+        "cilantro leaves",
+        "lime juice"
       ]
     },
     {
       "name": "fish sauce",
       "score": 69.67838971421199,
       "connects_a": [
-        "cabbage",
+        "carrot",
         "vegetable oil",
-        "carrot"
+        "cabbage"
       ],
       "connects_b": [
-        "shrimp",
-        "shallots",
-        "lime"
+        "scallions",
+        "cilantro leaves",
+        "lime juice"
       ]
     },
     {
       "name": "garam masala",
       "score": 56.31656288944528,
       "connects_a": [
-        "cinnamon",
-        "bay leaf",
+        "lemon juice",
+        "garlic",
         "vegetable oil"
       ],
       "connects_b": [
         "chiles",
-        "ginger",
+        "garlic",
         "vegetable oil"
       ]
     },
@@ -61,95 +61,95 @@
       "name": "chile",
       "score": 51.21989419618512,
       "connects_a": [
-        "cider vinegar",
+        "cloves",
         "vegetable oil",
-        "cloves"
+        "cider vinegar"
       ],
       "connects_b": [
+        "juice",
         "chiles",
-        "canola oil",
-        "vegetable oil"
+        "shallots"
       ]
     },
     {
       "name": "julienned",
       "score": 51.12371390106204,
       "connects_a": [
-        "cabbage",
         "carrot",
+        "cabbage",
         "wine vinegar"
       ],
       "connects_b": [
+        "juice",
         "chiles",
-        "canola oil",
-        "ginger"
+        "shallots"
       ]
     },
     {
       "name": "inch piece",
       "score": 48.1435910642957,
       "connects_a": [
-        "cabbage",
         "carrot",
-        "wine vinegar"
+        "cloves",
+        "cabbage"
       ],
       "connects_b": [
-        "canola oil",
-        "more",
-        "carrot"
+        "soy sauce",
+        "scallions",
+        "limes"
       ]
     },
     {
       "name": "sriracha",
       "score": 48.05680182357183,
       "connects_a": [
-        "cabbage",
         "carrot",
-        "garlic"
+        "garlic",
+        "cabbage"
       ],
       "connects_b": [
-        "ginger",
-        "peanuts",
-        "shrimp"
+        "soy sauce",
+        "scallions",
+        "fish sauce"
       ]
     },
     {
       "name": "chiles",
       "score": 42.20045181617278,
       "connects_a": [
-        "2",
+        "cloves",
         "vegetable oil",
-        "cloves"
+        "2"
       ],
       "connects_b": [
-        "ginger",
-        "vegetable oil",
-        "peanut oil"
+        "juice",
+        "shallots",
+        "limes"
       ]
     },
     {
       "name": "confectioners",
       "score": 39.20341964957444,
       "connects_a": [
-        "egg",
-        "nutmeg",
+        "almonds",
+        "butter",
         "milk"
       ],
       "connects_b": [
+        "1",
         "egg",
-        "more",
-        "1"
+        "more"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "montreal steak",
+      "name": "capers",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "capers",
+      "name": "montreal steak",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -160,11 +160,6 @@
     },
     {
       "name": "montreal steak",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "ribs celery",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -174,54 +169,49 @@
       "strength": 1
     },
     {
-      "name": "round steak",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "celery ribs",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "bouquet garni",
-      "pairs_with": "onion",
+      "name": "ribs celery",
+      "pairs_with": "cloves",
       "strength": 1
     },
     {
       "name": "beef chuck",
       "pairs_with": "onion",
       "strength": 1
+    },
+    {
+      "name": "chicken bouillon",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "round steak",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "beef stock",
+      "pairs_with": "onion",
+      "strength": 1
     }
   ],
   "novel_from_b": [
-    {
-      "name": "linguini",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
     {
       "name": "spaghetti",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "plum tomatoes",
+      "name": "parmigiano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "fennel bulb",
+      "name": "grape tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "al dente",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "eggplants",
+      "name": "cherry tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -231,17 +221,27 @@
       "strength": 1
     },
     {
-      "name": "olives",
+      "name": "hearts",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "reggiano",
+      "name": "crusty bread",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "parmigiano",
+      "name": "kalamata olives",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "linguini",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "anchovy fillets",
       "pairs_with": "olive oil",
       "strength": 1
     }

@@ -5,14 +5,14 @@
       "name": "cumin",
       "score": 109.85572102746922,
       "connects_a": [
-        "paprika",
+        "garlic powder",
         "bell pepper",
-        "garlic powder"
+        "cayenne pepper"
       ],
       "connects_b": [
-        "dill pickles",
-        "pork shoulder",
-        "bay leaf"
+        "beans",
+        "bell pepper",
+        "dill pickles"
       ]
     },
     {
@@ -20,146 +20,146 @@
       "score": 90.58074989072718,
       "connects_a": [
         "worcestershire sauce",
-        "cumin",
-        "barbecue sauce"
+        "bell pepper",
+        "cloves"
       ],
       "connects_b": [
-        "wine",
-        "pork",
-        "bay leaf"
+        "bell pepper",
+        "cloves",
+        "tomatoes"
       ]
     },
     {
       "name": "andouille sausage",
       "score": 80.10588928650566,
       "connects_a": [
-        "onion powder",
         "worcestershire sauce",
-        "bell pepper"
+        "bell pepper",
+        "cayenne pepper"
       ],
       "connects_b": [
-        "canola oil",
-        "tomatoes",
-        "bay leaf"
+        "rice",
+        "bell pepper",
+        "tomatoes"
       ]
     },
     {
       "name": "garam masala",
       "score": 77.43527397298726,
       "connects_a": [
-        "ginger",
-        "vegetable oil",
-        "cumin"
+        "lemon juice",
+        "cayenne pepper",
+        "tomatoes"
       ],
       "connects_b": [
-        "bay leaf",
-        "vegetable oil",
-        "cumin"
+        "tomatoes",
+        "garlic",
+        "vegetable oil"
       ]
     },
     {
       "name": "corn tortillas",
       "score": 72.25275400989682,
       "connects_a": [
+        "tomatoes",
         "vegetable oil",
-        "cumin",
-        "chicken breasts"
+        "lime"
       ],
       "connects_b": [
-        "canola oil",
-        "vegetable oil",
-        "cumin"
+        "tomatoes",
+        "lime juice",
+        "vegetable oil"
       ]
     },
     {
       "name": "celery",
       "score": 70.17375698782998,
       "connects_a": [
-        "onion powder",
-        "worcestershire sauce",
-        "bell pepper"
+        "garlic powder",
+        "bell pepper",
+        "worcestershire sauce"
       ],
       "connects_b": [
-        "tomatoes",
-        "bay leaf",
-        "bell pepper"
+        "rice",
+        "bell pepper",
+        "tomatoes"
       ]
     },
     {
       "name": "tomato sauce",
       "score": 70.09661733580093,
       "connects_a": [
-        "worcestershire sauce",
-        "cumin",
-        "paprika"
+        "seasoning",
+        "garlic powder",
+        "bell pepper"
       ],
       "connects_b": [
-        "pork",
+        "bell pepper",
         "olives",
-        "bay leaf"
+        "oregano"
       ]
     },
     {
       "name": "can tomatoes",
       "score": 64.3766981235959,
       "connects_a": [
+        "seasoning",
         "worcestershire sauce",
-        "cumin",
         "bell pepper"
       ],
       "connects_b": [
-        "wine",
-        "olives",
-        "bay leaf"
+        "bell pepper",
+        "cloves",
+        "olives"
       ]
     },
     {
       "name": "oregano",
       "score": 64.35851666118735,
       "connects_a": [
-        "cumin",
-        "paprika",
-        "bell pepper"
+        "garlic powder",
+        "bell pepper",
+        "cayenne pepper"
       ],
       "connects_b": [
-        "olives",
-        "pork shoulder",
-        "bay leaf"
+        "bell pepper",
+        "tomatoes",
+        "olives"
       ]
     },
     {
       "name": "ketchup",
       "score": 63.24548537811447,
       "connects_a": [
-        "honey",
+        "garlic powder",
         "worcestershire sauce",
-        "hamburger buns"
+        "cayenne pepper"
       ],
       "connects_b": [
-        "canola oil",
+        "mustard",
         "dill pickles",
-        "pork"
+        "wine vinegar"
       ]
     }
   ],
   "novel_from_a": [
-    {
-      "name": "gruyere cheese",
-      "pairs_with": "butter",
-      "strength": 1
-    },
     {
       "name": "nutmeg",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "chicken base",
-      "pairs_with": "onion",
+      "name": "gruyere cheese",
+      "pairs_with": "butter",
       "strength": 1
     },
     {
       "name": "ginger paste",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "chicken base",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -169,22 +169,22 @@
       "strength": 1
     },
     {
-      "name": "muffins",
-      "pairs_with": "egg",
-      "strength": 1
-    },
-    {
       "name": "nutmeg",
       "pairs_with": "egg",
       "strength": 1
     },
     {
-      "name": "sausages",
-      "pairs_with": "bell pepper",
+      "name": "muffins",
+      "pairs_with": "egg",
       "strength": 1
     },
     {
       "name": "celery seeds",
+      "pairs_with": "bell pepper",
+      "strength": 1
+    },
+    {
+      "name": "sausages",
       "pairs_with": "bell pepper",
       "strength": 1
     },
@@ -196,7 +196,12 @@
   ],
   "novel_from_b": [
     {
-      "name": "olives",
+      "name": "capers",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "chipotle puree",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -206,32 +211,7 @@
       "strength": 1
     },
     {
-      "name": "crusty bread",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "chorizo sausage",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "hearts",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "handful pine nuts",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "finely oregano",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "montreal steak",
+      "name": "cubanelle peppers",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -241,7 +221,27 @@
       "strength": 1
     },
     {
+      "name": "montreal steak",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "crusty rolls",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "beefsteak tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "arugula",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "olives",
       "pairs_with": "olive oil",
       "strength": 1
     }

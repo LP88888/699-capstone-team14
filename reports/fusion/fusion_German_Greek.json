@@ -5,13 +5,13 @@
       "name": "confectioners",
       "score": 91.47464584900705,
       "connects_a": [
-        "egg",
-        "nutmeg",
+        "almonds",
+        "butter",
         "milk"
       ],
       "connects_b": [
-        "egg",
-        "more",
+        "1",
+        "butter",
         "milk"
       ]
     },
@@ -19,55 +19,55 @@
       "name": "vanilla extract",
       "score": 73.15523061176131,
       "connects_a": [
-        "egg",
-        "nutmeg",
-        "apples"
+        "almonds",
+        "butter",
+        "milk"
       ],
       "connects_b": [
-        "egg",
-        "milk",
-        "cinnamon"
+        "1",
+        "butter",
+        "milk"
       ]
     },
     {
       "name": "sticks",
       "score": 66.23342395169061,
       "connects_a": [
-        "egg",
-        "nutmeg",
-        "apples"
+        "almonds",
+        "butter",
+        "purpose flour"
       ],
       "connects_b": [
-        "egg",
-        "more",
-        "cinnamon"
+        "1",
+        "butter",
+        "purpose flour"
       ]
     },
     {
       "name": "garam masala",
       "score": 63.35613325062594,
       "connects_a": [
-        "cinnamon",
-        "bay leaf",
+        "lemon juice",
+        "garlic",
         "vegetable oil"
       ],
       "connects_b": [
-        "spinach",
-        "cinnamon",
-        "lemon juice"
+        "lemon juice",
+        "tomatoes",
+        "garlic"
       ]
     },
     {
       "name": "at",
       "score": 54.21508898175742,
       "connects_a": [
-        "egg",
+        "butter",
         "milk",
-        "vanilla extract"
+        "purpose flour"
       ],
       "connects_b": [
-        "egg",
-        "more",
+        "1",
+        "butter",
         "milk"
       ]
     },
@@ -75,55 +75,55 @@
       "name": "almond extract",
       "score": 54.060099135343485,
       "connects_a": [
-        "egg",
-        "milk",
-        "cinnamon"
+        "almonds",
+        "butter",
+        "milk"
       ],
       "connects_b": [
-        "egg",
-        "milk",
-        "cinnamon"
+        "1",
+        "butter",
+        "milk"
       ]
     },
     {
       "name": "room temp",
       "score": 50.03629785395146,
       "connects_a": [
-        "egg",
-        "nutmeg",
-        "milk"
+        "butter",
+        "milk",
+        "purpose flour"
       ],
       "connects_b": [
-        "egg",
+        "butter",
         "milk",
-        "cinnamon"
+        "purpose flour"
       ]
     },
     {
       "name": "ice water",
       "score": 48.244685781984174,
       "connects_a": [
-        "egg",
-        "nutmeg",
-        "cinnamon"
+        "butter",
+        "purpose flour",
+        "egg"
       ],
       "connects_b": [
-        "egg",
-        "more",
-        "cinnamon"
+        "1",
+        "butter",
+        "purpose flour"
       ]
     },
     {
       "name": "whole milk",
       "score": 45.131783279157894,
       "connects_a": [
-        "egg",
-        "nutmeg",
-        "cinnamon"
+        "butter",
+        "purpose flour",
+        "egg"
       ],
       "connects_b": [
-        "egg",
-        "more",
+        "butter",
+        "purpose flour",
         "cinnamon"
       ]
     },
@@ -131,40 +131,20 @@
       "name": "filling",
       "score": 45.069119215072945,
       "connects_a": [
-        "egg",
+        "butter",
         "milk",
-        "cinnamon"
+        "purpose flour"
       ],
       "connects_b": [
-        "egg",
+        "butter",
         "milk",
-        "cinnamon"
+        "purpose flour"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "percent milk",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "cooking apples",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "corn syrup",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
       "name": "graham cracker crumbs",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "i",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -174,12 +154,27 @@
       "strength": 1
     },
     {
-      "name": "ca",
+      "name": "believe",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "believe",
+      "name": "delicious apples",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "mcintosh apples",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "cooking apples",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "i",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -189,29 +184,29 @@
       "strength": 1
     },
     {
-      "name": "delicious apples",
+      "name": "calvados",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "percent milk",
       "pairs_with": "butter",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "linguini",
+      "name": "porcini mushrooms",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "head fennel",
+      "name": "oregano leaves",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "squid",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "canned tomatoes",
+      "name": "artichokes",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -221,27 +216,32 @@
       "strength": 1
     },
     {
-      "name": "finely oregano",
+      "name": "penne pasta",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "anchovies",
+      "name": "roasted tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "spun",
+      "name": "san marzano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "plum tomatoes",
+      "name": "orzo pasta",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "some",
+      "name": "pepperoncini peppers",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "fennel bulb",
       "pairs_with": "olive oil",
       "strength": 1
     }

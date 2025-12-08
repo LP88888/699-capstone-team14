@@ -5,186 +5,166 @@
       "name": "garam masala",
       "score": 153.86489503723442,
       "connects_a": [
-        "spinach",
-        "cinnamon",
-        "lemon juice"
+        "lemon juice",
+        "tomatoes",
+        "garlic"
       ],
       "connects_b": [
-        "ginger",
-        "cardamom",
-        "potatoes"
+        "turmeric",
+        "mustard seeds",
+        "tomatoes"
       ]
     },
     {
       "name": "tumeric",
       "score": 75.21230445372647,
       "connects_a": [
-        "cinnamon",
-        "chicken breasts",
-        "onion"
+        "tomatoes",
+        "garlic",
+        "cinnamon"
       ],
       "connects_b": [
-        "ginger",
-        "cardamom",
-        "cumin"
+        "garam masala",
+        "mustard seeds",
+        "tomatoes"
       ]
     },
     {
       "name": "greek yogurt",
       "score": 63.25282592600208,
       "connects_a": [
-        "cucumber",
+        "lemon juice",
         "cheese crumbles",
-        "lemon juice"
+        "lemon"
       ],
       "connects_b": [
-        "cardamom",
-        "cumin",
-        "garam masala"
+        "garam masala",
+        "turmeric",
+        "cardamom"
       ]
     },
     {
       "name": "cumin",
       "score": 61.03095612637179,
       "connects_a": [
-        "yogurt",
         "bell pepper",
+        "tomatoes",
         "mint"
       ],
       "connects_b": [
-        "cardamom",
         "garam masala",
-        "yogurt"
+        "turmeric",
+        "mustard seeds"
       ]
     },
     {
       "name": "coriander powder",
       "score": 60.11716142650585,
       "connects_a": [
-        "cinnamon",
-        "onion",
-        "tomatoes"
+        "leaves",
+        "tomatoes",
+        "garlic"
       ],
       "connects_b": [
-        "ginger",
-        "cardamom",
-        "turmeric"
+        "garam masala",
+        "turmeric",
+        "tomatoes"
       ]
     },
     {
       "name": "turmeric",
       "score": 56.10855550637787,
       "connects_a": [
-        "tomatoes",
         "greek yogurt",
+        "tomatoes",
         "yogurt"
       ],
       "connects_b": [
-        "ginger",
-        "cardamom",
-        "vegetable oil"
+        "garam masala",
+        "mustard seeds",
+        "tomatoes"
       ]
     },
     {
       "name": "coriander",
       "score": 55.14214932716317,
       "connects_a": [
+        "tomatoes",
         "cinnamon",
-        "yogurt",
         "mint"
       ],
       "connects_b": [
-        "ginger",
-        "cardamom",
-        "cumin"
+        "garam masala",
+        "turmeric",
+        "mustard seeds"
       ]
     },
     {
       "name": "chile",
       "score": 50.21558254527954,
       "connects_a": [
-        "cucumber",
-        "yogurt",
-        "mint"
+        "grain sea salt",
+        "mint",
+        "yogurt"
       ],
       "connects_b": [
-        "vegetable oil",
-        "cumin",
-        "garam masala"
+        "garam masala",
+        "turmeric",
+        "mustard seeds"
       ]
     },
     {
       "name": "cardamom",
       "score": 48.71834885146891,
       "connects_a": [
-        "cinnamon",
         "greek yogurt",
-        "yogurt"
+        "yogurt",
+        "cinnamon"
       ],
       "connects_b": [
         "dhania",
-        "ginger",
-        "cumin"
+        "seeds",
+        "garam masala"
       ]
     },
     {
       "name": "yogurt",
       "score": 45.12481133271237,
       "connects_a": [
-        "cucumber",
         "lemon juice",
-        "mint"
+        "mint",
+        "dill"
       ],
       "connects_b": [
-        "ginger",
-        "cardamom",
-        "cumin"
+        "garam masala",
+        "turmeric",
+        "mustard seeds"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "romano",
+      "name": "beef chuck",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "escarole",
+      "name": "shells",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "head fennel",
+      "name": "porcini mushrooms",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "reggiano",
+      "name": "oregano leaves",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "parmigiano",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "chipotles",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "sirloin",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "squid",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "leaves finely",
+      "name": "beef lean",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -192,21 +172,36 @@
       "name": "rigatoni",
       "pairs_with": "cloves",
       "strength": 1
+    },
+    {
+      "name": "roasted tomatoes",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "san marzano",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "evoo",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "seasoning blend",
+      "pairs_with": "cloves",
+      "strength": 1
     }
   ],
   "novel_from_b": [
-    {
-      "name": "pinch saffron",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
     {
       "name": "cans chickpeas",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "lamb shanks",
+      "name": "pinch saffron",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -216,32 +211,37 @@
       "strength": 1
     },
     {
-      "name": "broth",
+      "name": "lamb shanks",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "tails",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "cardamom pods",
+      "name": "scotch bonnet",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "fresno",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "halibut fillet",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "have",
+      "name": "piece ginger",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
       "name": "pinch saffron",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "hair pasta",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "cardamom pods",
       "pairs_with": "cloves",
       "strength": 1
     }

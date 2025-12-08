@@ -5,27 +5,27 @@
       "name": "chili powder",
       "score": 45.523715806608344,
       "connects_a": [
+        "garlic powder",
         "worcestershire sauce",
-        "cumin",
-        "paprika"
+        "cayenne pepper"
       ],
       "connects_b": [
-        "dhania",
         "jeera coriander",
-        "methi"
+        "methi",
+        "oil"
       ]
     },
     {
       "name": "garam masala",
       "score": 44.24872798456415,
       "connects_a": [
-        "ginger",
-        "vegetable oil",
-        "cumin"
+        "lemon juice",
+        "cayenne pepper",
+        "tomatoes"
       ],
       "connects_b": [
-        "oil",
         "chili powder",
+        "oil",
         "peas"
       ]
     },
@@ -33,13 +33,13 @@
       "name": "tumeric",
       "score": 32.09058323358996,
       "connects_a": [
-        "ginger",
-        "cumin",
-        "chicken breasts"
+        "cayenne pepper",
+        "tomatoes",
+        "garlic"
       ],
       "connects_b": [
-        "oil",
         "chili powder",
+        "oil",
         "peas"
       ]
     },
@@ -47,12 +47,12 @@
       "name": "cardamom",
       "score": 20.29931202144538,
       "connects_a": [
-        "cumin",
-        "ginger"
+        "ginger",
+        "cumin"
       ],
       "connects_b": [
-        "dhania",
-        "methi",
+        "seeds",
+        "seeds cloves",
         "chili powder"
       ]
     },
@@ -60,9 +60,9 @@
       "name": "cayenne pepper",
       "score": 20.130747600054914,
       "connects_a": [
-        "worcestershire sauce",
-        "cumin",
-        "barbecue sauce"
+        "garlic powder",
+        "bell pepper",
+        "worcestershire sauce"
       ],
       "connects_b": [
         "chili powder",
@@ -73,9 +73,9 @@
       "name": "onion powder",
       "score": 20.07057403492237,
       "connects_a": [
-        "worcestershire sauce",
-        "cumin",
-        "paprika"
+        "seasoning",
+        "garlic powder",
+        "worcestershire sauce"
       ],
       "connects_b": [
         "chili powder",
@@ -86,9 +86,9 @@
       "name": "cider vinegar",
       "score": 20.029750500343884,
       "connects_a": [
-        "honey",
+        "garlic powder",
         "worcestershire sauce",
-        "paprika"
+        "cayenne pepper"
       ],
       "connects_b": [
         "chili powder",
@@ -99,13 +99,13 @@
       "name": "cumin seeds",
       "score": 20.02467690392072,
       "connects_a": [
-        "ginger",
-        "cumin",
-        "cilantro"
+        "tomatoes",
+        "paprika",
+        "ginger"
       ],
       "connects_b": [
-        "oil",
         "chili powder",
+        "oil",
         "peas"
       ]
     },
@@ -113,13 +113,13 @@
       "name": "mustard seeds",
       "score": 20.0155768681403,
       "connects_a": [
-        "ginger",
+        "tomatoes",
         "vegetable oil",
-        "cumin"
+        "ginger"
       ],
       "connects_b": [
-        "oil",
         "chili powder",
+        "oil",
         "peas"
       ]
     },
@@ -127,13 +127,13 @@
       "name": "cumin",
       "score": 18.309286837911536,
       "connects_a": [
-        "paprika",
+        "garlic powder",
         "bell pepper",
-        "garlic powder"
+        "cayenne pepper"
       ],
       "connects_b": [
-        "chili powder",
-        "beans"
+        "beans",
+        "chili powder"
       ]
     }
   ],
@@ -154,32 +154,32 @@
       "strength": 1
     },
     {
-      "name": "chili pepper",
+      "name": "onion powder",
       "pairs_with": "chili powder",
       "strength": 1
     },
     {
-      "name": "worcestershire sauce",
+      "name": "tomato sauce",
       "pairs_with": "chili powder",
       "strength": 1
     },
     {
-      "name": "flour tortillas",
+      "name": "jalapeno peppers",
       "pairs_with": "chili powder",
       "strength": 1
     },
     {
-      "name": "barbecue sauce",
+      "name": "coriander seeds",
       "pairs_with": "chili powder",
       "strength": 1
     },
     {
-      "name": "cayenne pepper",
+      "name": "ketchup",
       "pairs_with": "chili powder",
       "strength": 1
     },
     {
-      "name": "cider vinegar",
+      "name": "celery salt",
       "pairs_with": "chili powder",
       "strength": 1
     },
@@ -216,17 +216,17 @@
       "strength": 1
     },
     {
-      "name": "palm",
-      "pairs_with": "bell pepper",
-      "strength": 1
-    },
-    {
       "name": "bell",
       "pairs_with": "bell pepper",
       "strength": 1
     },
     {
-      "name": "mustard seeds",
+      "name": "palm",
+      "pairs_with": "bell pepper",
+      "strength": 1
+    },
+    {
+      "name": "cashew",
       "pairs_with": "ginger",
       "strength": 1
     },
@@ -236,7 +236,7 @@
       "strength": 1
     },
     {
-      "name": "fenugreek seeds",
+      "name": "chili oil",
       "pairs_with": "ginger",
       "strength": 1
     }

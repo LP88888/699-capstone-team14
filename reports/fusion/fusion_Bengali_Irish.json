@@ -5,13 +5,13 @@
       "name": "garam masala",
       "score": 16.09044653984151,
       "connects_a": [
-        "oil",
         "chili powder",
+        "oil",
         "peas"
       ],
       "connects_b": [
         "onion",
-        "vegetable oil",
+        "potatoes",
         "garlic"
       ]
     },
@@ -24,30 +24,30 @@
       ],
       "connects_b": [
         "carrot",
-        "beef",
-        "flour"
+        "thyme",
+        "beef"
       ]
     },
     {
       "name": "tumeric",
       "score": 12.033968712596234,
       "connects_a": [
-        "oil",
         "chili powder",
+        "oil",
         "peas"
       ],
       "connects_b": [
         "onion",
-        "garlic",
-        "potatoes"
+        "potatoes",
+        "garlic"
       ]
     },
     {
       "name": "cardamom",
       "score": 10.14965601072269,
       "connects_a": [
-        "dhania",
-        "methi",
+        "seeds",
+        "seeds cloves",
         "chili powder"
       ],
       "connects_b": [
@@ -63,8 +63,8 @@
       ],
       "connects_b": [
         "raisins",
-        "beef",
-        "cloves"
+        "kosher sea salt",
+        "thyme"
       ]
     },
     {
@@ -76,17 +76,17 @@
       ],
       "connects_b": [
         "buttermilk",
-        "beef",
-        "kosher sea salt"
+        "kosher sea salt",
+        "thyme"
       ]
     },
     {
       "name": "carom",
       "score": 10.016921211824169,
       "connects_a": [
-        "dhania",
-        "wheat",
-        "jeera coriander"
+        "seeds",
+        "fenugreek",
+        "wheat"
       ],
       "connects_b": [
         "flour"
@@ -96,8 +96,8 @@
       "name": "wheat",
       "score": 9.027761262447557,
       "connects_a": [
-        "dhania",
-        "dal",
+        "seeds",
+        "oil salt",
         "fenugreek"
       ],
       "connects_b": [
@@ -108,23 +108,23 @@
       "name": "coriander powder",
       "score": 9.017574213975877,
       "connects_a": [
-        "oil",
         "chili powder",
+        "oil",
         "leaves"
       ],
       "connects_b": [
         "onion",
-        "garlic",
-        "leaves"
+        "leaves",
+        "garlic"
       ]
     },
     {
       "name": "finger",
       "score": 9.009209758432364,
       "connects_a": [
-        "dhania",
-        "wheat",
-        "oil salt"
+        "seeds",
+        "oil salt",
+        "fenugreek"
       ],
       "connects_b": [
         "flour"
@@ -138,6 +138,11 @@
       "strength": 1
     },
     {
+      "name": "sugar whole",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
       "name": "maida sooji",
       "pairs_with": "flour",
       "strength": 1
@@ -148,17 +153,12 @@
       "strength": 1
     },
     {
-      "name": "sugar whole",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
       "name": "carom",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "coconut",
+      "name": "orange zest",
       "pairs_with": "vanilla extract",
       "strength": 1
     },
@@ -168,7 +168,7 @@
       "strength": 1
     },
     {
-      "name": "orange zest",
+      "name": "coconut",
       "pairs_with": "vanilla extract",
       "strength": 1
     },
@@ -190,12 +190,7 @@
       "strength": 1
     },
     {
-      "name": "shortening",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "pastry flour",
+      "name": "biscuits",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -205,22 +200,22 @@
       "strength": 1
     },
     {
-      "name": "vanilla",
+      "name": "vegetable shortening",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "cold",
+      "name": "beef stock",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "chocolate chips",
+      "name": "buttermilk",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "biscuits",
+      "name": "cold butter",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -230,7 +225,12 @@
       "strength": 1
     },
     {
-      "name": "beef stock",
+      "name": "pastry flour",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "applesauce",
       "pairs_with": "flour",
       "strength": 1
     }

@@ -5,13 +5,13 @@
       "name": "dhania",
       "score": 203.81541655283388,
       "connects_a": [
-        "wheat",
-        "greek",
-        "finger"
+        "seeds",
+        "bell",
+        "oil salt"
       ],
       "connects_b": [
-        "wheat",
-        "mango",
+        "seeds",
+        "oil salt",
         "cardamom"
       ]
     },
@@ -19,69 +19,69 @@
       "name": "wheat",
       "score": 180.55522524895113,
       "connects_a": [
-        "dhania",
-        "oil",
-        "demerara"
+        "seeds",
+        "bell",
+        "oil salt"
       ],
       "connects_b": [
-        "dhania",
-        "mango",
-        "dal"
+        "seeds",
+        "oil salt",
+        "fenugreek"
       ]
     },
     {
       "name": "powder",
       "score": 148.78376897548318,
       "connects_a": [
-        "dhania",
-        "wheat",
-        "greek"
+        "seeds",
+        "bell",
+        "oil salt"
       ],
       "connects_b": [
-        "dhania",
-        "wheat",
-        "mango"
+        "seeds",
+        "oil salt",
+        "cardamom"
       ]
     },
     {
       "name": "chilli",
       "score": 145.3881751627879,
       "connects_a": [
-        "dhania",
-        "wheat",
-        "greek"
+        "seeds",
+        "bell",
+        "til"
       ],
       "connects_b": [
-        "dhania",
-        "wheat",
-        "mango"
+        "seeds",
+        "cardamom",
+        "fenugreek"
       ]
     },
     {
       "name": "seeds",
       "score": 121.84251952789923,
       "connects_a": [
-        "dhania",
-        "wheat",
-        "finger"
+        "bell",
+        "oil salt",
+        "til"
       ],
       "connects_b": [
-        "dhania",
-        "wheat",
-        "mango"
+        "oil salt",
+        "cardamom",
+        "fenugreek"
       ]
     },
     {
       "name": "bell",
       "score": 100.45381834408718,
       "connects_a": [
-        "dhania",
-        "wheat",
-        "bell pepper"
+        "beans",
+        "seeds",
+        "oil salt"
       ],
       "connects_b": [
-        "dhania",
-        "wheat",
+        "seeds",
+        "oil salt",
         "fenugreek"
       ]
     },
@@ -89,67 +89,67 @@
       "name": "fenugreek",
       "score": 99.29217670688857,
       "connects_a": [
-        "dhania",
-        "wheat",
-        "finger"
+        "seeds",
+        "bell",
+        "oil salt"
       ],
       "connects_b": [
-        "dhania",
-        "wheat",
-        "mango"
+        "seeds",
+        "oil salt",
+        "masala"
       ]
     },
     {
       "name": "powder red",
       "score": 98.04354869976174,
       "connects_a": [
-        "dhania",
-        "wheat",
-        "bell"
+        "seeds",
+        "bell",
+        "oil salt"
       ],
       "connects_b": [
-        "dhania",
-        "wheat",
-        "mango"
+        "seeds",
+        "oil salt",
+        "fenugreek"
       ]
     },
     {
       "name": "cardamom",
       "score": 81.19724808578152,
       "connects_a": [
-        "dhania",
         "seeds",
-        "powder"
+        "powder",
+        "oil"
       ],
       "connects_b": [
         "dhania",
-        "ginger",
-        "cumin"
+        "seeds",
+        "garam masala"
       ]
     },
     {
       "name": "carom",
       "score": 77.13029333104609,
       "connects_a": [
-        "dhania",
+        "seeds",
         "wheat",
-        "flour"
+        "powder"
       ],
       "connects_b": [
-        "dhania",
-        "wheat",
-        "cardamom"
+        "seeds",
+        "cardamom",
+        "fenugreek"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "reggiano",
+      "name": "black beans",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "black beans",
+      "name": "reggiano",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -186,37 +186,7 @@
   ],
   "novel_from_b": [
     {
-      "name": "canned tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "spaghetti",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "finely oregano",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "plum tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pinch saffron",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "fennel bulb",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "eggplants",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -226,12 +196,42 @@
       "strength": 1
     },
     {
+      "name": "pinch saffron",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "olives",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
+      "name": "finely oregano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "palm",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "couscous",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "canned tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "plum tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pizza",
       "pairs_with": "olive oil",
       "strength": 1
     }
