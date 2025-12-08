@@ -3,15 +3,44 @@
   "bridges": [
     {
       "name": "confectioners",
-      "score": 30.156476653518805,
+      "score": 45.234714980278206,
       "connects_a": [
         "cream",
+        "egg",
+        "almonds"
+      ],
+      "connects_b": [
+        "vanilla extract",
+        "1",
+        "egg whites"
+      ]
+    },
+    {
+      "name": "vanilla extract",
+      "score": 36.577615305880656,
+      "connects_a": [
+        "cream",
+        "egg",
         "almonds"
       ],
       "connects_b": [
         "1",
-        "maple syrup",
-        "chocolate"
+        "egg whites",
+        "egg"
+      ]
+    },
+    {
+      "name": "vanilla",
+      "score": 30.039230313874075,
+      "connects_a": [
+        "flour",
+        "cream",
+        "egg"
+      ],
+      "connects_b": [
+        "flour",
+        "egg whites",
+        "egg"
       ]
     },
     {
@@ -19,40 +48,54 @@
       "score": 28.18067774378179,
       "connects_a": [
         "onion",
-        "thyme",
+        "bell pepper",
         "oregano"
       ],
       "connects_b": [
-        "parsley",
-        "cloves",
-        "carrot"
+        "wine",
+        "onion",
+        "cloves"
       ]
     },
     {
       "name": "beef stock",
       "score": 28.103084519201673,
       "connects_a": [
-        "onion",
         "flour",
+        "onion",
         "potatoes"
       ],
       "connects_b": [
-        "bread",
-        "carrot",
-        "thyme"
+        "flour",
+        "wine",
+        "onion"
       ]
     },
     {
-      "name": "vanilla extract",
-      "score": 24.385076870587103,
+      "name": "filling",
+      "score": 27.04147152904377,
       "connects_a": [
+        "flour",
         "cream",
-        "almonds"
+        "egg"
       ],
       "connects_b": [
+        "vanilla extract",
+        "flour",
+        "purpose flour"
+      ]
+    },
+    {
+      "name": "at",
+      "score": 26.103561361586905,
+      "connects_a": [
+        "cream",
+        "egg"
+      ],
+      "connects_b": [
+        "vanilla extract",
         "1",
-        "maple syrup",
-        "chocolate"
+        "egg whites"
       ]
     },
     {
@@ -60,13 +103,13 @@
       "score": 24.059573824398846,
       "connects_a": [
         "onion",
-        "thyme",
+        "bell pepper",
         "oregano"
       ],
       "connects_b": [
-        "parsley",
+        "onion",
         "garlic",
-        "carrot"
+        "thyme"
       ]
     },
     {
@@ -74,69 +117,26 @@
       "score": 24.04874319183523,
       "connects_a": [
         "onion",
-        "leaves",
+        "bell pepper",
         "thyme"
       ],
       "connects_b": [
+        "leaves",
         "purpose flour",
-        "leaves",
-        "garlic"
+        "vegetable oil"
       ]
     },
     {
-      "name": "ribs celery",
-      "score": 21.153045706677613,
+      "name": "sticks",
+      "score": 22.07780798389687,
       "connects_a": [
-        "onion",
-        "thyme",
-        "bell pepper"
+        "egg",
+        "almonds"
       ],
       "connects_b": [
-        "parsley",
-        "cloves",
-        "carrot"
-      ]
-    },
-    {
-      "name": "yellow onions",
-      "score": 21.029015144635977,
-      "connects_a": [
-        "thyme",
-        "oregano",
-        "bell pepper"
-      ],
-      "connects_b": [
-        "parsley",
-        "garlic",
-        "kosher sea salt"
-      ]
-    },
-    {
-      "name": "bay leaf",
-      "score": 20.179990959853868,
-      "connects_a": [
-        "beans",
-        "thyme",
-        "oregano"
-      ],
-      "connects_b": [
-        "parsley",
-        "carrot",
-        "thyme"
-      ]
-    },
-    {
-      "name": "cans tomatoes",
-      "score": 20.044428318272463,
-      "connects_a": [
-        "onion",
-        "olive oil",
-        "leaves"
-      ],
-      "connects_b": [
-        "cloves",
-        "leaves",
-        "olive oil"
+        "vanilla extract",
+        "1",
+        "egg"
       ]
     }
   ],
@@ -152,17 +152,17 @@
       "strength": 1
     },
     {
+      "name": "maida sooji",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
       "name": "seeds powder",
       "pairs_with": "flour",
       "strength": 1
     },
     {
       "name": "pearl",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "maida sooji",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -177,69 +177,69 @@
       "strength": 1
     },
     {
-      "name": "salt pepper",
-      "pairs_with": "garlic",
-      "strength": 1
-    },
-    {
       "name": "essence",
       "pairs_with": "garlic",
       "strength": 1
     },
     {
-      "name": "salt coriander",
+      "name": "salt pepper",
+      "pairs_with": "garlic",
+      "strength": 1
+    },
+    {
+      "name": "oil coriander",
       "pairs_with": "leaves",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "spaghetti",
+      "name": "sandwich rolls",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "turkey sausage",
+      "name": "head fennel",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "parmigiano",
+      "name": "romano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "cannellini",
+      "name": "cans tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "spun",
+      "name": "anchovy fillets",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "baby arugula",
+      "name": "prosciutto",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "grigio",
+      "name": "pizza",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "morel mushrooms",
+      "name": "fennel bulb",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "grape tomatoes",
+      "name": "capers",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "chorizo",
+      "name": "linguine",
       "pairs_with": "olive oil",
       "strength": 1
     }
