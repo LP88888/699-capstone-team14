@@ -8,6 +8,7 @@ import numpy as np
 import pandas as pd
 from pathlib import Path
 import ast
+from sklearn.decomposition import TruncatedSVD
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
@@ -178,10 +179,21 @@ def run(context: PipelineContext, *, force: bool = False) -> StageResult:
     # TF-IDF
     logger.info("Vectorizing...")
     tfidf = TfidfVectorizer(max_features=params.get("max_features", 5000), min_df=5)
-    X = tfidf.fit_transform(df["text"])
+    X_tfidf = tfidf.fit_transform(df["text"])
+
+    # Optional dimensionality reduction (sparse-friendly)
+    use_svd = bool(params.get("use_svd", False))
+    svd_components = int(params.get("svd_components", 300))
+    if use_svd:
+        logger.info("Applying TruncatedSVD to %s components...", svd_components)
+        svd = TruncatedSVD(n_components=svd_components, random_state=42)
+        X_features = svd.fit_transform(X_tfidf)
+        logger.info("TruncatedSVD explained variance (approx): %.4f", float(svd.explained_variance_ratio_.sum()))
+    else:
+        X_features = X_tfidf
     
     # Split
-    X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+    X_train, X_test, y_train, y_test = train_test_split(X_features, y, test_size=0.2, random_state=42)
     
     # 1. Logistic Regression
     logger.info("Training Logistic Regression...")
@@ -234,9 +246,10 @@ def run(context: PipelineContext, *, force: bool = False) -> StageResult:
         )
         pd.DataFrame(report_parent).T.to_csv(out_dir / "classification_report_logreg_parent.csv")
     
-    # Top Features
-    top_feat = extract_top_features(clf, tfidf, clf.classes_)
-    top_feat.to_csv(out_dir / "top_features_logreg.csv", index=False)
+    # Top Features (only when using raw TF-IDF for interpretability)
+    if not use_svd:
+        top_feat = extract_top_features(clf, tfidf, clf.classes_)
+        top_feat.to_csv(out_dir / "top_features_logreg.csv", index=False)
     
     # 2. Random Forest (Subsampled)
     logger.info("Training Random Forest (Subsampled)...")
@@ -255,7 +268,7 @@ def run(context: PipelineContext, *, force: bool = False) -> StageResult:
     logger.info("Running KMeans...")
     k = params.get("kmeans_k", 20)
     kmeans = KMeans(n_clusters=k, n_init=5, random_state=42)
-    clusters = kmeans.fit_predict(X)
+    clusters = kmeans.fit_predict(X_features)
     
     # Save Cluster Assignments
     df_clusters = pd.DataFrame({

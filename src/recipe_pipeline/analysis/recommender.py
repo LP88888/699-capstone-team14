@@ -5,6 +5,26 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from typing import List, Tuple, Dict, Any, Set
 from pathlib import Path
 import json
+import re
+
+from ..ingrnorm.dedupe_map import _DROP_TOKENS, _DROP_SUBSTRINGS
+
+
+def _is_junk(token: str) -> bool:
+    """Guardrail to drop prep/measurement noise before ranking."""
+    if not token:
+        return True
+    low = str(token).strip().lower()
+    if not low:
+        return True
+    if low in _DROP_TOKENS or any(substr in low for substr in _DROP_SUBSTRINGS):
+        return True
+    # Drop measurement-like patterns (e.g., "28-ounce", "400g", "16 oz")
+    if re.search(r"\b\d+\s*(oz|ounce|ounces|g|gram|grams|ml|litre|liter)\b", low):
+        return True
+    if re.search(r"\d+-\s*ounce", low):
+        return True
+    return False
 
 class CuisineRecommender:
     """
@@ -16,14 +36,14 @@ class CuisineRecommender:
     """
     
     def __init__(
-        self, 
-        graph: nx.Graph, 
-        tfidf_matrix, 
-        tfidf_vectorizer: TfidfVectorizer,
+        self,
+        graph: nx.Graph,
         cuisine_ingredient_map: dict,
-        ingredient_counts: Counter,
-        centrality_dict: dict = None,
-        random_state: int = 42
+        tfidf_matrix=None,
+        tfidf_vectorizer: TfidfVectorizer | None = None,
+        ingredient_counts: Counter | None = None,
+        centrality_dict: dict | None = None,
+        random_state: int = 42,
     ):
         """
         Initialize the CuisineRecommender.
@@ -40,16 +60,19 @@ class CuisineRecommender:
         self.tfidf_matrix = tfidf_matrix
         self.tfidf_vectorizer = tfidf_vectorizer
         self.cuisine_ingredients = cuisine_ingredient_map
-        self.ingredient_counts = ingredient_counts
+        self.ingredient_counts = ingredient_counts or Counter()
         self.random_state = random_state
         
         # Compute centrality if not provided
         if centrality_dict is None:
-            # Check if graph is too large for full betweenness
-            k = min(500, len(self.G))
-            self.centrality = nx.betweenness_centrality(
-                self.G, k=k, seed=self.random_state
-            )
+            if len(self.G) > 0:
+                # Sampled betweenness for speed
+                k = min(500, len(self.G))
+                self.centrality = nx.betweenness_centrality(
+                    self.G, k=k, seed=self.random_state
+                )
+            else:
+                self.centrality = {}
         else:
             self.centrality = centrality_dict
         
@@ -93,9 +116,9 @@ class CuisineRecommender:
         Find bridge ingredients: nodes that have edges connecting to both 
         cuisine_a's and cuisine_b's top ingredients.
         """
-        # Get top ingredients for each cuisine
-        top_a_ings = {ing for ing, _ in self.get_top_ingredients(cuisine_a, top_n)}
-        top_b_ings = {ing for ing, _ in self.get_top_ingredients(cuisine_b, top_n)}
+        # Get top ingredients for each cuisine and drop junk tokens
+        top_a_ings = {ing for ing, _ in self.get_top_ingredients(cuisine_a, top_n) if not _is_junk(ing)}
+        top_b_ings = {ing for ing, _ in self.get_top_ingredients(cuisine_b, top_n) if not _is_junk(ing)}
         
         # 1. Get neighbors of Cuisine A's top ingredients
         # 2. Get neighbors of Cuisine B's top ingredients
@@ -114,6 +137,8 @@ class CuisineRecommender:
         
         bridges = []
         for node in candidates:
+            if _is_junk(node):
+                continue
             # Re-verify connections to specific top lists for scoring
             node_neighbors = set(self.G.neighbors(node))
             edges_to_a = node_neighbors & top_a_ings
@@ -138,20 +163,19 @@ class CuisineRecommender:
         Find novel ingredients: ingredients in cuisine_a that have never appeared 
         in cuisine_b but share an edge with a high-centrality ingredient in cuisine_b.
         """
-        # Get all ingredients for each cuisine
-        all_a = set(self.cuisine_ingredients.get(cuisine_a.lower(), {}).keys())
-        all_b = set(self.cuisine_ingredients.get(cuisine_b.lower(), {}).keys())
-        
-        # Also try case-insensitive matching if direct lookup failed
         c_map = {k.lower(): k for k in self.cuisines}
-        dict_a = self.cuisine_ingredients.get(c_map.get(cuisine_a.lower(), ""), {})
-        dict_b = self.cuisine_ingredients.get(c_map.get(cuisine_b.lower(), ""), {})
+        key_a = c_map.get(cuisine_a.lower())
+        key_b = c_map.get(cuisine_b.lower())
+        if not key_a or not key_b:
+            return []
+        dict_a = self.cuisine_ingredients.get(key_a, {})
+        dict_b = self.cuisine_ingredients.get(key_b, {})
         
         all_a = set(dict_a.keys())
         all_b = set(dict_b.keys())
         
         # Ingredients unique to A
-        novel_candidates = all_a - all_b
+        novel_candidates = {n for n in (all_a - all_b) if not _is_junk(n)}
         
         # High centrality items in B
         top_b_freq = [i[0] for i in self.cuisine_ingredients[c_map[cuisine_b.lower()]].most_common(top_n)]
@@ -190,7 +214,6 @@ class CuisineRecommender:
         Suggest fusion ingredients for combining two cuisines.
         """
         # Adjust top_n based on strictness (stricter = fewer ingredients considered)
-        top_n = int(50 * (1 - strictness * 0.5))  # Range: 25-50
         top_n = max(25, int(50 * (1 - strictness * 0.5)))
         bridges = self.find_bridge_ingredients(cuisine_a, cuisine_b, top_n)
         novel_a = self.find_novel_ingredients(cuisine_a, cuisine_b, top_n)
