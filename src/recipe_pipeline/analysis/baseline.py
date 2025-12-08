@@ -97,11 +97,19 @@ def run(context: PipelineContext, *, force: bool = False) -> StageResult:
     
     cuisine_col = data_cfg.get("cuisine_col", "cuisine_deduped")
     min_label_freq = int(params.get("min_label_freq", 10))
-    min_df = int(params.get("min_df", 5))
-    max_df_val = params.get("max_df", None)
-    max_df = float(max_df_val) if max_df_val is not None else None
+    min_df_raw = params.get("min_df", 5)
+    try:
+        min_df = float(min_df_raw)
+        if float(min_df_raw).is_integer():
+            min_df = int(min_df)
+    except Exception:
+        min_df = 5
+    max_df_raw = params.get("max_df", 1.0)
+    max_df = float(max_df_raw) if max_df_raw is not None else 1.0
     ngram_min = int(params.get("ngram_min", 1))
-    ngram_max = int(params.get("ngram_max", 1))
+    ngram_max = int(params.get("ngram_max", max(ngram_min, 1)))
+    if ngram_max < ngram_min:
+        ngram_max = ngram_min
     apply_parent_for_training = bool(params.get("apply_parent_for_training", False))
     cluster_use_parent_labels = bool(params.get("cluster_use_parent_labels", False))
     max_label_samples = params.get("max_label_samples")
@@ -189,6 +197,10 @@ def run(context: PipelineContext, *, force: bool = False) -> StageResult:
         "mediterranean": "Continental",
         "european": "Continental",
     }
+    if apply_parent_for_training and not parent_map_norm:
+        logger.warning("apply_parent_for_training enabled but no parent map found; training on original labels.")
+    if cluster_use_parent_labels and not parent_map_norm:
+        logger.warning("cluster_use_parent_labels enabled but no parent map found; clustering will use original labels.")
 
     def _to_label(val):
         # Normalize label to a single string with simple de-biasing/cleanup
@@ -292,8 +304,12 @@ def run(context: PipelineContext, *, force: bool = False) -> StageResult:
         X_features = X_tfidf
     
     # Split (same seed across feature spaces to keep splits aligned)
-    X_train, X_test, y_train, y_test = train_test_split(X_features, y, test_size=0.2, random_state=42)
-    X_train_tf, X_test_tf, y_train_tf, y_test_tf = train_test_split(X_tfidf, y, test_size=0.2, random_state=42)
+    X_train, X_test, y_train, y_test = train_test_split(
+        X_features, y, test_size=0.2, random_state=42, stratify=y
+    )
+    X_train_tf, X_test_tf, y_train_tf, y_test_tf = train_test_split(
+        X_tfidf, y, test_size=0.2, random_state=42, stratify=y
+    )
     
     # 1. Logistic Regression
     logger.info("Training Logistic Regression...")
@@ -366,6 +382,7 @@ def run(context: PipelineContext, *, force: bool = False) -> StageResult:
     k = params.get("kmeans_k", 20)
     kmeans = KMeans(n_clusters=k, n_init=5, random_state=42)
     clusters = kmeans.fit_predict(X_features)
+    cluster_labels = y_parent_full if (cluster_use_parent_labels and parent_map_norm) else y
     # Cluster metrics (silhouette/ARI)
     sil = None
     ari = None
@@ -381,7 +398,7 @@ def run(context: PipelineContext, *, force: bool = False) -> StageResult:
     
     # Save Cluster Assignments
     df_clusters = pd.DataFrame({
-        "cuisine": y,
+        "cuisine": cluster_labels,
         "cuisine_parent": y_parent_full if parent_map_norm else y,
         "cluster": clusters
     })

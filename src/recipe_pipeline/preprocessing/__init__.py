@@ -8,6 +8,7 @@ from . import (
     ingredient_ner_infer,
     ingredient_ner_train,
     ingredient_normalization,
+    cleanup_artifacts,
 )
 
 __all__ = [
@@ -18,4 +19,5 @@ __all__ = [
     "ingredient_ner_infer",
     "ingredient_ner_train",
     "ingredient_normalization",
+    "cleanup_artifacts",
 ]

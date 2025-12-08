@@ -337,20 +337,20 @@ pipeline:
       ingredients_col: "inferred_ingredients"
       cuisine_col: "cuisine_deduped"
     params:
-      max_features: 10000
+      max_features: 20000
       min_df: 5
       max_df: 0.9
       ngram_min: 1
       ngram_max: 2
-      use_svd: true
+      use_svd: false
       svd_components: 300
       svd_top_terms: 15
       svd_scatter_samples: 5000
       rf_max_samples: 20000
-      kmeans_k: 25
-      min_label_freq: 150
+      kmeans_k: 10
+      min_label_freq: 20
       parent_map_path: "./data/cuisine_normalized/cuisine_parent_map.json"
-      max_label_samples: 1500
+      max_label_samples: 3000
       apply_parent_for_training: true
       cluster_use_parent_labels: true
     output:
@@ -380,3 +380,12 @@ pipeline:
       max_cuisines: 30
     output:
       reports_dir: "./reports/fusion"
+
+  cleanup_artifacts:
+    enabled: false       # set to true to actually delete files
+    dry_run: true        # set false to delete instead of reporting
+    patterns:
+      - "./data/**/*.parquet"
+    keep_artifacts:
+      - cuisine_combined_encoded
+    keep: []             # add absolute/relative parquet paths to preserve
