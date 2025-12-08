@@ -5,13 +5,13 @@
       "name": "chili powder",
       "score": 27.314229483965008,
       "connects_a": [
+        "garlic powder",
         "worcestershire sauce",
-        "cumin",
-        "paprika"
+        "cayenne pepper"
       ],
       "connects_b": [
-        "dhania",
         "oil",
+        "dhania",
         "gram"
       ]
     },
@@ -19,9 +19,9 @@
       "name": "garam masala",
       "score": 22.124363992282074,
       "connects_a": [
-        "ginger",
-        "vegetable oil",
-        "cumin"
+        "lemon juice",
+        "cayenne pepper",
+        "tomatoes"
       ],
       "connects_b": [
         "onion",
@@ -32,13 +32,13 @@
       "name": "peanuts",
       "score": 20.213368320248858,
       "connects_a": [
-        "ginger",
         "soy sauce",
+        "lime",
         "chicken breasts"
       ],
       "connects_b": [
-        "dhania",
         "rai",
+        "dhania",
         "dal"
       ]
     },
@@ -46,9 +46,9 @@
       "name": "file powder",
       "score": 18.03655739387642,
       "connects_a": [
-        "onion powder",
-        "vegetable oil",
-        "bell pepper"
+        "bell pepper",
+        "cayenne pepper",
+        "paprika"
       ],
       "connects_b": [
         "onion",
@@ -59,9 +59,9 @@
       "name": "coriander powder",
       "score": 18.035148427951754,
       "connects_a": [
-        "ginger",
-        "cumin",
-        "onion"
+        "leaves",
+        "tomatoes",
+        "garlic"
       ],
       "connects_b": [
         "onion",
@@ -73,8 +73,8 @@
       "name": "can tomatoes",
       "score": 16.094174530898975,
       "connects_a": [
+        "seasoning",
         "worcestershire sauce",
-        "cumin",
         "bell pepper"
       ],
       "connects_b": [
@@ -86,9 +86,9 @@
       "name": "tumeric",
       "score": 16.04529161679498,
       "connects_a": [
-        "ginger",
-        "cumin",
-        "chicken breasts"
+        "cayenne pepper",
+        "tomatoes",
+        "garlic"
       ],
       "connects_b": [
         "onion",
@@ -99,9 +99,9 @@
       "name": "cans tomatoes",
       "score": 16.03554265461797,
       "connects_a": [
-        "onion",
+        "seasoning",
         "cloves",
-        "pepper flakes"
+        "leaves"
       ],
       "connects_b": [
         "onion",
@@ -112,52 +112,32 @@
       "name": "mango",
       "score": 15.105369120348096,
       "connects_a": [
-        "lime",
         "cilantro",
-        "pineapple"
+        "pineapple",
+        "lime"
       ],
       "connects_b": [
-        "dhania",
+        "seeds",
         "fenugreek",
-        "seeds"
+        "powder"
       ]
     },
     {
       "name": "can",
       "score": 15.061184500087231,
       "connects_a": [
+        "seasoning",
         "worcestershire sauce",
-        "cumin",
-        "pepper flakes"
+        "tomatoes"
       ],
       "connects_b": [
-        "beans",
         ")",
+        "beans",
         "("
       ]
     }
   ],
   "novel_from_a": [
-    {
-      "name": "chicken base",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "beef stock",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "lentil",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "tomato paste",
-      "pairs_with": "onion",
-      "strength": 1
-    },
     {
       "name": "beef broth",
       "pairs_with": "onion",
@@ -169,17 +149,37 @@
       "strength": 1
     },
     {
-      "name": "beef",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
       "name": "ginger paste",
       "pairs_with": "onion",
       "strength": 1
     },
     {
+      "name": "lentil",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "beef",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "chicken base",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
       "name": "coriander powder",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "beef stock",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "tomato paste",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -191,12 +191,12 @@
   ],
   "novel_from_b": [
     {
-      "name": "bay leaf",
+      "name": "sambar",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "sambar",
+      "name": "bay leaf",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -211,12 +211,12 @@
       "strength": 1
     },
     {
-      "name": "cashews",
+      "name": "cardamom",
       "pairs_with": "ginger",
       "strength": 1
     },
     {
-      "name": "cardamom",
+      "name": "cashews",
       "pairs_with": "ginger",
       "strength": 1
     },
@@ -236,7 +236,7 @@
       "strength": 1
     },
     {
-      "name": "murungai",
+      "name": "pudina",
       "pairs_with": "leaves",
       "strength": 1
     }

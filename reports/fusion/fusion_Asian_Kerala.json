@@ -5,14 +5,14 @@
       "name": "jalapeno peppers",
       "score": 55.05380200269427,
       "connects_a": [
-        "cabbage",
-        "shrimp",
-        "peanut oil"
+        "scallions",
+        "rice",
+        "bell pepper"
       ],
       "connects_b": [
-        "mango",
-        "chili powder",
-        "rice"
+        "beans",
+        "rice",
+        "chili powder"
       ]
     },
     {
@@ -20,12 +20,12 @@
       "score": 48.51208396859725,
       "connects_a": [
         "oyster sauce",
-        "ginger",
-        "shrimp"
+        "soy sauce",
+        "scallions"
       ],
       "connects_b": [
-        "dhania",
         "rai",
+        "dhania",
         "dal"
       ]
     },
@@ -33,13 +33,13 @@
       "name": "cilantro",
       "score": 44.255096686413516,
       "connects_a": [
-        "ginger",
-        "peanuts",
-        "rice vinegar"
+        "scallions",
+        "sodium soy sauce",
+        "fish sauce"
       ],
       "connects_b": [
-        "chili powder",
         "beans",
+        "chili powder",
         "mango"
       ]
     },
@@ -47,9 +47,9 @@
       "name": "corn starch",
       "score": 32.06351975342894,
       "connects_a": [
-        "cabbage",
         "oyster sauce",
-        "ginger"
+        "soy sauce",
+        "scallions"
       ],
       "connects_b": [
         "oil",
@@ -60,9 +60,9 @@
       "name": "soy sauce",
       "score": 30.82748487694929,
       "connects_a": [
-        "cabbage",
         "oyster sauce",
-        "honey"
+        "scallions",
+        "rice"
       ],
       "connects_b": [
         "oil",
@@ -73,27 +73,27 @@
       "name": "garam masala",
       "score": 30.16958726220283,
       "connects_a": [
-        "ginger",
+        "garlic",
         "vegetable oil",
         "chicken breasts"
       ],
       "connects_b": [
         "chili powder",
         "peas",
-        "onion"
+        "cumin seeds"
       ]
     },
     {
       "name": "chili pepper",
       "score": 30.011365904914765,
       "connects_a": [
-        "ginger",
-        "rice vinegar",
-        "peanut oil"
+        "soy sauce",
+        "fish sauce",
+        "garlic"
       ],
       "connects_b": [
-        "oil",
         "chili powder",
+        "oil",
         "cumin seeds"
       ]
     },
@@ -101,23 +101,23 @@
       "name": "tumeric",
       "score": 25.070768151242156,
       "connects_a": [
-        "ginger",
+        "garlic",
         "chicken breasts",
-        "cilantro"
+        "ginger"
       ],
       "connects_b": [
         "chili powder",
         "peas",
-        "onion"
+        "cumin seeds"
       ]
     },
     {
       "name": "pineapple",
       "score": 21.00862056432991,
       "connects_a": [
-        "ginger",
-        "rice vinegar",
-        "sodium soy sauce"
+        "rice",
+        "sodium soy sauce",
+        "fish sauce"
       ],
       "connects_b": [
         "rice",
@@ -132,15 +132,15 @@
         "peanuts"
       ],
       "connects_b": [
-        "urad dal",
-        "coconut coriander",
-        "chili powder"
+        "wheat",
+        "jeera whole",
+        "peas"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "dry",
+      "name": "gram flour",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -150,22 +150,7 @@
       "strength": 1
     },
     {
-      "name": "powder amchur",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "carom",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "haldi",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "olive",
+      "name": "green bell",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -175,17 +160,32 @@
       "strength": 1
     },
     {
+      "name": "powder amchur",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "bell",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
       "name": "button",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "virgin",
+      "name": "olive",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "green bell",
+      "name": "dry",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "brinjal",
       "pairs_with": "dhania",
       "strength": 1
     }
@@ -202,11 +202,6 @@
       "strength": 1
     },
     {
-      "name": "pudina salt",
-      "pairs_with": "leaves",
-      "strength": 1
-    },
-    {
       "name": "moringa",
       "pairs_with": "leaves",
       "strength": 1
@@ -217,17 +212,22 @@
       "strength": 1
     },
     {
+      "name": "pudina salt",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
       "name": "gram",
       "pairs_with": "peanuts",
       "strength": 1
     },
     {
-      "name": "rai",
+      "name": "dal",
       "pairs_with": "peanuts",
       "strength": 1
     },
     {
-      "name": "dal",
+      "name": "rai",
       "pairs_with": "peanuts",
       "strength": 1
     }

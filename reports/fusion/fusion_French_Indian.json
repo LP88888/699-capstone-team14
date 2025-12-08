@@ -5,42 +5,42 @@
       "name": "garam masala",
       "score": 102.57659669148961,
       "connects_a": [
-        "bay leaf",
-        "cinnamon",
+        "lemon juice",
+        "garlic",
         "vegetable oil"
       ],
       "connects_b": [
-        "ginger",
-        "cardamom",
-        "potatoes"
+        "turmeric",
+        "mustard seeds",
+        "tomatoes"
       ]
     },
     {
       "name": "cardamom",
       "score": 48.71834885146891,
       "connects_a": [
-        "cinnamon",
         "nutmeg",
+        "cinnamon",
         "bay leaf"
       ],
       "connects_b": [
         "dhania",
-        "ginger",
-        "cumin"
+        "seeds",
+        "garam masala"
       ]
     },
     {
       "name": "coriander powder",
       "score": 48.093729141204676,
       "connects_a": [
-        "cinnamon",
         "onion",
+        "leaves",
         "garlic"
       ],
       "connects_b": [
-        "ginger",
-        "cardamom",
-        "turmeric"
+        "garam masala",
+        "turmeric",
+        "tomatoes"
       ]
     },
     {
@@ -48,68 +48,68 @@
       "score": 45.12738267223588,
       "connects_a": [
         "onion",
-        "cinnamon",
-        "garlic"
+        "garlic",
+        "cinnamon"
       ],
       "connects_b": [
-        "ginger",
-        "cardamom",
-        "cumin"
+        "garam masala",
+        "mustard seeds",
+        "tomatoes"
       ]
     },
     {
       "name": "coriander seeds",
       "score": 45.06329521047693,
       "connects_a": [
-        "cinnamon",
-        "bay leaf",
-        "kosher sea salt"
+        "shallots",
+        "kosher sea salt",
+        "wine vinegar"
       ],
       "connects_b": [
-        "ginger",
         "garam masala",
-        "yogurt"
+        "turmeric",
+        "mustard seeds"
       ]
     },
     {
       "name": "chiles",
       "score": 44.209997140752435,
       "connects_a": [
-        "2",
-        "vegetable oil",
-        "shallots"
+        "cloves",
+        "shallots",
+        "vegetable oil"
       ],
       "connects_b": [
-        "ginger",
-        "vegetable oil",
-        "cumin"
+        "garam masala",
+        "turmeric",
+        "mustard seeds"
       ]
     },
     {
       "name": "cardamom pods",
       "score": 44.09043578688646,
       "connects_a": [
-        "bay leaf",
+        "cloves",
         "vegetable oil",
         "cinnamon"
       ],
       "connects_b": [
-        "ginger",
-        "vegetable oil",
-        "cumin"
+        "garam masala",
+        "turmeric",
+        "cloves"
       ]
     },
     {
       "name": "tomato paste",
       "score": 42.271016615672686,
       "connects_a": [
-        "wine",
-        "bay leaf",
+        "parsley",
+        "cloves",
         "carrot"
       ],
       "connects_b": [
-        "cumin",
         "garam masala",
+        "turmeric",
         "cloves"
       ]
     },
@@ -117,64 +117,44 @@
       "name": "allspice",
       "score": 42.18712702251465,
       "connects_a": [
-        "nutmeg",
+        "kosher sea salt",
         "cinnamon",
-        "bay leaf"
+        "thyme"
       ],
       "connects_b": [
-        "ginger",
+        "mustard seeds",
         "cardamom",
-        "cumin"
+        "chili powder"
       ]
     },
     {
       "name": "bay leaf",
       "score": 30.2699864397808,
       "connects_a": [
-        "wine",
+        "parsley",
         "carrot",
         "thyme"
       ],
       "connects_b": [
-        "cardamom",
-        "cumin",
-        "garam masala"
+        "garam masala",
+        "turmeric",
+        "tomatoes"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "jalapeno chile",
+      "name": "rigatoni",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "head fennel",
+      "name": "parmigiano",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "sirloin",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "shells",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "beef chuck",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "anchovies",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "veal",
+      "name": "cannellini",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -184,24 +164,44 @@
       "strength": 1
     },
     {
-      "name": "some",
+      "name": "racks",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "al dente",
+      "name": "grigio",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "onion finely",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "pasta shells",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "chorizo",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "chipotle chile",
       "pairs_with": "cloves",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "finely oregano",
+      "name": "cans chickpeas",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "cans chickpeas",
+      "name": "finely oregano",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -211,22 +211,17 @@
       "strength": 1
     },
     {
+      "name": "ancho chile",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
       "name": "white onion",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "fresno",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "finely oregano",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "piece ginger",
+      "name": "tails",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -236,12 +231,17 @@
       "strength": 1
     },
     {
+      "name": "piece ginger",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
       "name": "stalk lemongrass",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "ancho chile",
+      "name": "finely oregano",
       "pairs_with": "cloves",
       "strength": 1
     }

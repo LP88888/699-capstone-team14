@@ -5,28 +5,28 @@
       "name": "andouille sausage",
       "score": 147.19457156395416,
       "connects_a": [
-        "canola oil",
-        "shrimp",
-        "bell pepper"
+        "rice",
+        "bell pepper",
+        "garlic"
       ],
       "connects_b": [
-        "worcestershire sauce",
-        "cajun seasoning",
-        "shrimp"
+        "tomatoes",
+        "garlic",
+        "onion powder"
       ]
     },
     {
       "name": "celery",
       "score": 138.34254949029338,
       "connects_a": [
-        "shrimp",
-        "carrot",
-        "bell pepper"
+        "rice",
+        "bell pepper",
+        "garlic"
       ],
       "connects_b": [
-        "worcestershire sauce",
-        "cajun seasoning",
-        "shrimp"
+        "parsley",
+        "andouille sausage",
+        "garlic powder"
       ]
     },
     {
@@ -34,13 +34,13 @@
       "score": 130.2293604578508,
       "connects_a": [
         "oyster sauce",
-        "peanuts",
-        "shrimp"
+        "soy sauce",
+        "scallions"
       ],
       "connects_b": [
-        "celery",
-        "creole seasoning",
-        "worcestershire sauce"
+        "andouille sausage",
+        "cajun seasoning",
+        "okra"
       ]
     },
     {
@@ -48,41 +48,41 @@
       "score": 108.06860723273158,
       "connects_a": [
         "oyster sauce",
-        "ginger",
-        "peanuts"
+        "soy sauce",
+        "scallions"
       ],
       "connects_b": [
         "chili sauce",
-        "chicken broth",
-        "shrimp"
+        "paprika",
+        "vegetable oil"
       ]
     },
     {
       "name": "okra",
       "score": 102.13939909204896,
       "connects_a": [
-        "shrimp",
-        "vegetable oil",
-        "bell pepper"
+        "rice",
+        "bell pepper",
+        "vegetable oil"
       ],
       "connects_b": [
-        "hot sauce",
+        "andouille sausage",
         "chili sauce",
-        "celery"
+        "cajun seasoning"
       ]
     },
     {
       "name": "oyster sauce",
       "score": 102.06557777912201,
       "connects_a": [
-        "ginger",
-        "peanuts",
-        "shrimp"
+        "soy sauce",
+        "scallions",
+        "sodium soy sauce"
       ],
       "connects_b": [
         "chili sauce",
-        "chicken broth",
-        "shrimp"
+        "garlic",
+        "vegetable oil"
       ]
     },
     {
@@ -90,71 +90,61 @@
       "score": 96.07116818141573,
       "connects_a": [
         "oyster sauce",
-        "canola oil",
-        "ginger"
+        "soy sauce",
+        "scallions"
       ],
       "connects_b": [
         "chicken broth",
-        "celery",
-        "shrimp"
+        "chicken breasts",
+        "thyme"
       ]
     },
     {
       "name": "bean sprouts",
       "score": 92.19523311692403,
       "connects_a": [
-        "shrimp",
-        "mushrooms",
-        "lime"
+        "scallions",
+        "sodium soy sauce",
+        "lime juice"
       ],
       "connects_b": [
-        "vegetable oil",
+        "chicken breasts",
         "chili sauce",
-        "chicken breasts"
+        "vegetable oil"
       ]
     },
     {
       "name": "rice",
       "score": 90.2584995909799,
       "connects_a": [
-        "shrimp",
-        "rice vinegar",
+        "soy sauce",
+        "scallions",
         "sodium soy sauce"
       ],
       "connects_b": [
-        "chicken broth",
-        "celery",
-        "creole seasoning"
+        "andouille sausage",
+        "cajun seasoning",
+        "okra"
       ]
     },
     {
       "name": "file powder",
       "score": 90.18278696938211,
       "connects_a": [
-        "shrimp",
-        "vegetable oil",
-        "bell pepper"
+        "bell pepper",
+        "leaves",
+        "garlic"
       ],
       "connects_b": [
-        "celery",
-        "onion powder",
-        "leaves"
+        "andouille sausage",
+        "okra",
+        "purpose flour"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "head fennel",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "squid",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "anchovies",
+      "name": "parmigiano",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -164,17 +154,22 @@
       "strength": 1
     },
     {
-      "name": "some",
+      "name": "baby arugula",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "fennel bulb",
+      "name": "arugula",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "al dente",
+      "name": "hearts",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "chunk",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -184,24 +179,34 @@
       "strength": 1
     },
     {
-      "name": "eggplants",
+      "name": "brussels sprouts",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "arugula",
+      "name": "turn",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "anchovies",
       "pairs_with": "olive oil",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "romano cheese",
+      "name": "reggiano cheese",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "[extra",
+      "name": "capers",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "romano cheese",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -216,23 +221,8 @@
       "strength": 1
     },
     {
-      "name": "reggiano cheese",
+      "name": "[extra",
       "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "capers",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "andouille",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "chicken base",
-      "pairs_with": "onion",
       "strength": 1
     },
     {
@@ -241,7 +231,17 @@
       "strength": 1
     },
     {
-      "name": "ham hocks",
+      "name": "file powder",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "kidney beans",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "chicken base",
       "pairs_with": "onion",
       "strength": 1
     }

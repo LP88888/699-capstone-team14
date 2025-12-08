@@ -5,140 +5,140 @@
       "name": "celery",
       "score": 119.29538687931095,
       "connects_a": [
-        "tomato paste",
-        "carrot",
-        "paprika"
+        "parsley",
+        "paprika",
+        "garlic"
       ],
       "connects_b": [
-        "tomatoes",
-        "creole seasoning",
-        "onion powder"
+        "parsley",
+        "andouille sausage",
+        "rice"
       ]
     },
     {
       "name": "garam masala",
       "score": 98.55398505652924,
       "connects_a": [
-        "tomato paste",
-        "cinnamon",
-        "vegetable oil"
+        "lemon juice",
+        "tomato",
+        "chicken"
       ],
       "connects_b": [
-        "vegetable oil",
         "lemon juice",
-        "cayenne pepper"
+        "cayenne pepper",
+        "tomatoes"
       ]
     },
     {
       "name": "tomato paste",
       "score": 91.58720266729081,
       "connects_a": [
-        "carrot",
-        "cumin",
+        "parsley",
+        "lamb",
         "paprika"
       ],
       "connects_b": [
-        "celery",
-        "worcestershire sauce",
-        "paprika"
+        "stalks celery",
+        "parsley",
+        "andouille sausage"
       ]
     },
     {
       "name": "andouille sausage",
       "score": 85.11250736691227,
       "connects_a": [
-        "tomato paste",
+        "chicken",
         "paprika",
-        "onion"
+        "garlic"
       ],
       "connects_b": [
-        "celery",
-        "creole seasoning",
-        "tomatoes"
+        "stalks celery",
+        "rice",
+        "worcestershire sauce"
       ]
     },
     {
       "name": "yellow onions",
       "score": 78.10777053721934,
       "connects_a": [
-        "tomato paste",
-        "carrot",
-        "paprika"
+        "parsley",
+        "paprika",
+        "garlic"
       ],
       "connects_b": [
-        "celery",
-        "onion powder",
-        "worcestershire sauce"
+        "parsley",
+        "worcestershire sauce",
+        "bell pepper"
       ]
     },
     {
       "name": "cumin",
       "score": 73.23714735164614,
       "connects_a": [
-        "tomato paste",
         "chickpea",
-        "tomato"
+        "tomato",
+        "chicken"
       ],
       "connects_b": [
         "bell pepper",
         "cayenne pepper",
-        "paprika"
+        "tomatoes"
       ]
     },
     {
       "name": "bay leaf",
       "score": 70.62996835948854,
       "connects_a": [
-        "tomato paste",
-        "carrot",
-        "cumin"
+        "parsley",
+        "tomato",
+        "paprika"
       ],
       "connects_b": [
-        "celery",
-        "paprika",
-        "thyme"
+        "stalks celery",
+        "parsley",
+        "andouille sausage"
       ]
     },
     {
       "name": "oregano",
       "score": 70.39212759817367,
       "connects_a": [
-        "cucumber",
-        "tomato paste",
-        "cumin"
+        "lamb",
+        "paprika",
+        "cayenne"
       ],
       "connects_b": [
-        "celery",
-        "creole seasoning",
-        "bell pepper"
+        "andouille sausage",
+        "bell pepper",
+        "cayenne pepper"
       ]
     },
     {
       "name": "creole seasoning",
       "score": 68.03672904353999,
       "connects_a": [
-        "paprika",
-        "cayenne",
-        "garlic"
+        "parsley",
+        "garlic",
+        "cayenne"
       ],
       "connects_b": [
-        "celery",
-        "tomatoes",
-        "onion powder"
+        "parsley",
+        "andouille sausage",
+        "rice"
       ]
     },
     {
       "name": "cayenne",
       "score": 60.045811674975596,
       "connects_a": [
-        "tomato paste",
+        "paprika",
         "vegetable oil",
-        "cumin"
+        "yogurt"
       ],
       "connects_b": [
-        "celery",
-        "creole seasoning",
-        "worcestershire sauce"
+        "rice",
+        "worcestershire sauce",
+        "paprika"
       ]
     }
   ],
@@ -149,17 +149,17 @@
       "strength": 1
     },
     {
+      "name": "harissa",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
       "name": "sirloin",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
       "name": "pine",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "harissa",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -179,54 +179,24 @@
       "strength": 1
     },
     {
-      "name": "shortening",
-      "pairs_with": "egg",
-      "strength": 1
-    },
-    {
       "name": "applesauce",
       "pairs_with": "egg",
       "strength": 1
     },
     {
-      "name": "vanilla",
+      "name": "puff",
+      "pairs_with": "egg",
+      "strength": 1
+    },
+    {
+      "name": "pie crust",
       "pairs_with": "egg",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "gruyere cheese",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "and half",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "grits",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "cooking grits",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "crawfish tail",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "phyllo dough",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "whole milk",
+      "name": "crawfish",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -236,12 +206,42 @@
       "strength": 1
     },
     {
-      "name": "cold",
+      "name": "phyllo dough",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "veal stock",
+      "name": "tomato concasse",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "sticks",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "gruyere cheese",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "pecans",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "stone",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "cooking grits",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "at",
       "pairs_with": "butter",
       "strength": 1
     }

@@ -6,26 +6,26 @@
       "score": 162.10291084909736,
       "connects_a": [
         "oyster sauce",
-        "ginger",
-        "peanuts"
+        "soy sauce",
+        "scallions"
       ],
       "connects_b": [
-        "chicken broth",
-        "vinegar",
-        "carrot"
+        "mushrooms",
+        "beef broth",
+        "paprika"
       ]
     },
     {
       "name": "oyster sauce",
       "score": 119.07650740897569,
       "connects_a": [
-        "ginger",
-        "peanuts",
-        "shrimp"
+        "soy sauce",
+        "scallions",
+        "sodium soy sauce"
       ],
       "connects_b": [
-        "chicken broth",
         "mushrooms",
+        "garlic",
         "vegetable oil"
       ]
     },
@@ -33,84 +33,84 @@
       "name": "bean sprouts",
       "score": 115.24404139615504,
       "connects_a": [
-        "shrimp",
-        "mushrooms",
-        "lime"
+        "scallions",
+        "sodium soy sauce",
+        "lime juice"
       ],
       "connects_b": [
-        "carrot",
         "mushrooms",
-        "vegetable oil"
+        "vegetable oil",
+        "carrot"
       ]
     },
     {
       "name": "corn starch",
       "score": 112.22231913700129,
       "connects_a": [
-        "cabbage",
         "oyster sauce",
-        "ginger"
+        "soy sauce",
+        "scallions"
       ],
       "connects_b": [
-        "chicken broth",
-        "vinegar",
-        "mushrooms"
+        "mushrooms",
+        "beef broth",
+        "garlic"
       ]
     },
     {
       "name": "hoisin sauce",
       "score": 100.07645507194482,
       "connects_a": [
-        "rice",
-        "oyster sauce",
-        "canola oil"
+        "scallions",
+        "sodium soy sauce",
+        "garlic"
       ],
       "connects_b": [
-        "carrot",
-        "noodles",
-        "chicken breasts"
+        "chicken",
+        "garlic",
+        "carrot"
       ]
     },
     {
       "name": "fish sauce",
       "score": 95.93401482391505,
       "connects_a": [
-        "shrimp",
-        "lime",
-        "oyster sauce"
+        "scallions",
+        "sodium soy sauce",
+        "lime juice"
       ],
       "connects_b": [
-        "vinegar",
+        "vegetable oil",
         "carrot",
-        "vegetable oil"
+        "chicken breasts"
       ]
     },
     {
       "name": "andouille sausage",
       "score": 91.12044906340019,
       "connects_a": [
-        "canola oil",
-        "shrimp",
-        "bell pepper"
+        "rice",
+        "bell pepper",
+        "garlic"
       ],
       "connects_b": [
-        "chicken broth",
+        "chicken",
         "worcestershire sauce",
-        "tomato paste"
+        "bell pepper"
       ]
     },
     {
       "name": "sesame oil",
       "score": 90.35591386603895,
       "connects_a": [
-        "cabbage",
         "oyster sauce",
-        "honey"
+        "soy sauce",
+        "scallions"
       ],
       "connects_b": [
-        "vinegar",
         "mushrooms",
-        "noodles"
+        "garlic",
+        "chicken breasts"
       ]
     },
     {
@@ -118,58 +118,43 @@
       "score": 88.24447662433012,
       "connects_a": [
         "oyster sauce",
-        "carrot",
-        "vegetable oil"
+        "soy sauce",
+        "scallions"
       ],
       "connects_b": [
-        "chicken broth",
-        "tomato paste",
-        "bay leaf"
+        "bell pepper",
+        "paprika",
+        "vegetable oil"
       ]
     },
     {
       "name": "ribs celery",
       "score": 84.61218282671045,
       "connects_a": [
-        "shrimp",
-        "carrot",
-        "bell pepper"
+        "scallions",
+        "bell pepper",
+        "cloves"
       ],
       "connects_b": [
-        "wine",
-        "chicken broth",
+        "parsley",
+        "chicken",
         "worcestershire sauce"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "linguini",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "head fennel",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "squid",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "spaghetti",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "sandwich rolls",
+      "name": "turkey sausage",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "anchovies",
+      "name": "parmigiano",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -179,24 +164,44 @@
       "strength": 1
     },
     {
-      "name": "some",
+      "name": "baby arugula",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "fennel bulb",
+      "name": "grape tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "al dente",
+      "name": "cherry tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "arugula",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "chorizo",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "hearts",
       "pairs_with": "olive oil",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "[extra",
+      "name": "capers",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "anchovy fillets",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -211,13 +216,13 @@
       "strength": 1
     },
     {
-      "name": "capers",
+      "name": "[extra",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "anchovy fillets",
-      "pairs_with": "olive oil",
+      "name": "allspice berries",
+      "pairs_with": "cloves",
       "strength": 1
     },
     {
@@ -231,17 +236,12 @@
       "strength": 1
     },
     {
-      "name": "allspice berries",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
       "name": "bouquet garni",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "chicken base",
+      "name": "navy beans",
       "pairs_with": "onion",
       "strength": 1
     }

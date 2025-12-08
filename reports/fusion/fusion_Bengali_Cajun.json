@@ -9,23 +9,23 @@
         "mustard"
       ],
       "connects_b": [
-        "celery",
+        "cajun seasoning",
         "worcestershire sauce",
-        "cajun seasoning"
+        "bell pepper"
       ]
     },
     {
       "name": "garam masala",
       "score": 24.135669809762263,
       "connects_a": [
-        "oil",
         "chili powder",
+        "oil",
         "peas"
       ],
       "connects_b": [
-        "vegetable oil",
         "cayenne pepper",
-        "paprika"
+        "tomatoes",
+        "garlic"
       ]
     },
     {
@@ -36,22 +36,22 @@
         "mustard"
       ],
       "connects_b": [
-        "celery",
+        "cajun seasoning",
         "worcestershire sauce",
-        "cajun seasoning"
+        "cayenne pepper"
       ]
     },
     {
       "name": "chili powder",
       "score": 20.23276258071482,
       "connects_a": [
-        "dhania",
         "jeera coriander",
-        "methi"
+        "methi",
+        "oil"
       ],
       "connects_b": [
-        "paprika",
         "onion powder",
+        "paprika",
         "cayenne pepper"
       ]
     },
@@ -63,9 +63,9 @@
         "mustard"
       ],
       "connects_b": [
-        "celery",
+        "stalks celery",
         "cajun seasoning",
-        "paprika"
+        "cayenne pepper"
       ]
     },
     {
@@ -76,23 +76,23 @@
         "mustard"
       ],
       "connects_b": [
-        "celery",
         "cajun spice",
-        "worcestershire sauce"
+        "worcestershire sauce",
+        "cayenne pepper"
       ]
     },
     {
       "name": "tumeric",
       "score": 16.04529161679498,
       "connects_a": [
-        "oil",
         "chili powder",
+        "oil",
         "peas"
       ],
       "connects_b": [
         "onion",
-        "tomatoes",
-        "cayenne pepper"
+        "cayenne pepper",
+        "tomatoes"
       ]
     },
     {
@@ -104,8 +104,8 @@
       ],
       "connects_b": [
         "worcestershire sauce",
-        "mayonnaise",
-        "such as"
+        "cayenne pepper",
+        "paprika"
       ]
     },
     {
@@ -116,9 +116,9 @@
         "potatoes"
       ],
       "connects_b": [
-        "celery",
         "worcestershire sauce",
-        "flour"
+        "paprika",
+        "onion powder"
       ]
     },
     {
@@ -129,9 +129,9 @@
         "potatoes"
       ],
       "connects_b": [
-        "tomatoes",
-        "shrimp",
-        "paprika"
+        "parsley",
+        "rice",
+        "tomatoes"
       ]
     }
   ],
@@ -157,13 +157,23 @@
       "strength": 1
     },
     {
+      "name": "bell",
+      "pairs_with": "bell pepper",
+      "strength": 1
+    },
+    {
       "name": "palm",
       "pairs_with": "bell pepper",
       "strength": 1
     },
     {
-      "name": "bell",
-      "pairs_with": "bell pepper",
+      "name": "sugar whole",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "wheat",
+      "pairs_with": "flour",
       "strength": 1
     },
     {
@@ -175,32 +185,17 @@
       "name": "finger",
       "pairs_with": "flour",
       "strength": 1
-    },
-    {
-      "name": "sugar whole",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "carom",
-      "pairs_with": "flour",
-      "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "black",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
       "name": "french",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
       "name": "black",
-      "pairs_with": "powder",
+      "pairs_with": "dhania",
       "strength": 1
     },
     {
@@ -209,12 +204,22 @@
       "strength": 1
     },
     {
-      "name": "vanilla",
+      "name": "black",
+      "pairs_with": "powder",
+      "strength": 1
+    },
+    {
+      "name": "biscuits",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "ice water",
+      "name": "wondra",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "buttermilk",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -224,17 +229,12 @@
       "strength": 1
     },
     {
-      "name": "soda",
+      "name": "egg wash",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "self",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "warm water",
+      "name": "vegetable shortening",
       "pairs_with": "flour",
       "strength": 1
     }

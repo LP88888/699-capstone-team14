@@ -5,26 +5,26 @@
       "name": "garam masala",
       "score": 35.1978518059033,
       "connects_a": [
-        "cinnamon",
-        "bay leaf",
+        "lemon juice",
+        "garlic",
         "vegetable oil"
       ],
       "connects_b": [
         "chili powder",
         "peas",
-        "onion"
+        "cumin seeds"
       ]
     },
     {
       "name": "cardamom",
       "score": 24.359174425734455,
       "connects_a": [
-        "cinnamon",
         "nutmeg",
+        "cinnamon",
         "bay leaf"
       ],
       "connects_b": [
-        "dhania",
+        "seeds",
         "chili powder",
         "peas"
       ]
@@ -34,36 +34,36 @@
       "score": 20.056614520993726,
       "connects_a": [
         "onion",
-        "cinnamon",
+        "potatoes",
         "garlic"
       ],
       "connects_b": [
         "chili powder",
         "peas",
-        "onion"
+        "cumin seeds"
       ]
     },
     {
       "name": "coriander powder",
       "score": 20.039053808835284,
       "connects_a": [
-        "cinnamon",
         "onion",
+        "leaves",
         "garlic"
       ],
       "connects_b": [
+        "leaves",
         "chili powder",
-        "onion",
-        "oil"
+        "cumin seeds"
       ]
     },
     {
       "name": "vanilla",
       "score": 18.023538188324444,
       "connects_a": [
+        "milk",
         "egg",
-        "nutmeg",
-        "milk"
+        "cinnamon"
       ],
       "connects_b": [
         "flour",
@@ -74,13 +74,13 @@
       "name": "mustard seeds",
       "score": 16.01246149451224,
       "connects_a": [
-        "cider vinegar",
+        "potatoes",
         "vegetable oil",
         "wine vinegar"
       ],
       "connects_b": [
-        "oil",
         "chili powder",
+        "oil",
         "peas"
       ]
     },
@@ -88,9 +88,9 @@
       "name": "vanilla extract",
       "score": 12.192538435293551,
       "connects_a": [
-        "egg",
-        "nutmeg",
-        "apples"
+        "almonds",
+        "butter",
+        "milk"
       ],
       "connects_b": [
         "banana"
@@ -100,9 +100,9 @@
       "name": "beef stock",
       "score": 12.04417907965786,
       "connects_a": [
+        "carrot",
         "wine",
-        "bay leaf",
-        "carrot"
+        "onion"
       ],
       "connects_b": [
         "onion",
@@ -113,8 +113,8 @@
       "name": "celery",
       "score": 12.029786912199423,
       "connects_a": [
-        "bay leaf",
-        "carrot",
+        "parsley",
+        "garlic",
         "bacon"
       ],
       "connects_b": [
@@ -126,13 +126,13 @@
       "name": "chilies",
       "score": 12.006671290755316,
       "connects_a": [
-        "bay leaf",
+        "potatoes",
         "cinnamon",
-        "potatoes"
+        "bay leaf"
       ],
       "connects_b": [
-        "oil",
         "chili powder",
+        "oil",
         "peas"
       ]
     }
@@ -144,7 +144,12 @@
       "strength": 1
     },
     {
-      "name": "round steak",
+      "name": "beef chuck",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "chicken bouillon",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -159,17 +164,12 @@
       "strength": 1
     },
     {
-      "name": "celery ribs",
+      "name": "round steak",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "bouquet garni",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "bay leaf",
+      "name": "beef stock",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -179,12 +179,12 @@
       "strength": 1
     },
     {
-      "name": "beef chuck",
+      "name": "bouquet garni",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "ribs celery",
+      "name": "celery",
       "pairs_with": "onion",
       "strength": 1
     }
@@ -206,12 +206,7 @@
       "strength": 1
     },
     {
-      "name": "finger",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "ragi",
+      "name": "wheat",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -221,7 +216,12 @@
       "strength": 1
     },
     {
-      "name": "wheat",
+      "name": "finger",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "ragi",
       "pairs_with": "flour",
       "strength": 1
     },

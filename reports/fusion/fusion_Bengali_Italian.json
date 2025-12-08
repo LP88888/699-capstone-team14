@@ -5,14 +5,14 @@
       "name": "garam masala",
       "score": 16.09044653984151,
       "connects_a": [
-        "oil",
         "chili powder",
+        "oil",
         "peas"
       ],
       "connects_b": [
         "onion",
         "tomatoes",
-        "lemon juice"
+        "garlic"
       ]
     },
     {
@@ -22,30 +22,30 @@
         "chili powder"
       ],
       "connects_b": [
-        "wine",
-        "optional",
-        "spaghetti"
+        "seasoning",
+        "parsley",
+        "bell pepper"
       ]
     },
     {
       "name": "can",
       "score": 12.048947600069784,
       "connects_a": [
-        "chili powder",
-        "beans"
+        "beans",
+        "chili powder"
       ],
       "connects_b": [
         ")",
-        "parmigiano",
-        "pepper flakes"
+        "seasoning",
+        "tomatoes"
       ]
     },
     {
       "name": "tumeric",
       "score": 12.033968712596234,
       "connects_a": [
-        "oil",
         "chili powder",
+        "oil",
         "peas"
       ],
       "connects_b": [
@@ -58,49 +58,49 @@
       "name": "sprigs thyme",
       "score": 12.025529394861893,
       "connects_a": [
-        "leaves",
-        "potatoes"
+        "potatoes",
+        "leaves"
       ],
       "connects_b": [
-        "wine",
-        "carrot",
-        "cloves"
+        "lemon",
+        "leaves",
+        "carrot"
       ]
     },
     {
       "name": "coriander powder",
       "score": 12.023432285301169,
       "connects_a": [
-        "oil",
         "chili powder",
+        "oil",
         "leaves"
       ],
       "connects_b": [
         "onion",
-        "tomatoes",
-        "garlic"
+        "leaves",
+        "tomatoes"
       ]
     },
     {
       "name": "fillets",
       "score": 12.003789783732724,
       "connects_a": [
-        "mustard",
-        "potatoes"
+        "potatoes",
+        "mustard"
       ],
       "connects_b": [
-        "wine",
-        "optional",
-        "basil"
+        "parsley",
+        "lemon",
+        "pepper flakes"
       ]
     },
     {
       "name": "bell",
       "score": 10.045381834408717,
       "connects_a": [
-        "dhania",
-        "wheat",
-        "fenugreek"
+        "beans",
+        "seeds",
+        "oil salt"
       ],
       "connects_b": [
         "bell pepper"
@@ -114,9 +114,9 @@
         "potatoes"
       ],
       "connects_b": [
-        "wine",
         "carrot",
-        "parmigiano"
+        "parmigiano",
+        "wine"
       ]
     },
     {
@@ -126,20 +126,20 @@
         "leaves"
       ],
       "connects_b": [
-        "optional",
-        "carrot",
-        "onion"
+        "seasoning",
+        "cloves",
+        "leaves"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "oil coriander",
+      "name": "salt coriander",
       "pairs_with": "leaves",
       "strength": 1
     },
     {
-      "name": "water coriander",
+      "name": "oil coriander",
       "pairs_with": "leaves",
       "strength": 1
     },
@@ -149,7 +149,7 @@
       "strength": 1
     },
     {
-      "name": "salt coriander",
+      "name": "water coriander",
       "pairs_with": "leaves",
       "strength": 1
     },
@@ -159,12 +159,12 @@
       "strength": 1
     },
     {
-      "name": "cumin seeds",
+      "name": "cashew",
       "pairs_with": "tomatoes",
       "strength": 1
     },
     {
-      "name": "cashew",
+      "name": "cumin seeds",
       "pairs_with": "tomatoes",
       "strength": 1
     },
@@ -176,37 +176,7 @@
   ],
   "novel_from_b": [
     {
-      "name": "garlic coriander",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "virgin",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
       "name": "french",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "leaves whole",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "olive",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "black",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "green bell",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -216,12 +186,42 @@
       "strength": 1
     },
     {
+      "name": "virgin",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
       "name": "onion coriander",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
+      "name": "green bell",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
       "name": "chilli coriander",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "leaves whole",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "garlic coriander",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "button",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "fruit",
       "pairs_with": "dhania",
       "strength": 1
     }

@@ -5,83 +5,83 @@
       "name": "garam masala",
       "score": 98.55398505652924,
       "connects_a": [
-        "tomato paste",
-        "cinnamon",
-        "vegetable oil"
+        "lemon juice",
+        "tomato",
+        "chicken"
       ],
       "connects_b": [
-        "tomato paste",
-        "vegetable oil",
-        "peas"
+        "cayenne pepper",
+        "garlic",
+        "vegetable oil"
       ]
     },
     {
       "name": "tomato paste",
       "score": 63.406524923509025,
       "connects_a": [
-        "carrot",
-        "cumin",
+        "parsley",
+        "lamb",
         "paprika"
       ],
       "connects_b": [
-        "wine",
-        "worcestershire sauce",
-        "carrot"
+        "parsley",
+        "russet potatoes",
+        "worcestershire sauce"
       ]
     },
     {
       "name": "yellow onions",
       "score": 60.082900413245646,
       "connects_a": [
-        "tomato paste",
-        "carrot",
-        "paprika"
+        "parsley",
+        "paprika",
+        "garlic"
       ],
       "connects_b": [
-        "wine",
-        "tomato paste",
-        "worcestershire sauce"
+        "parsley",
+        "worcestershire sauce",
+        "cayenne pepper"
       ]
     },
     {
       "name": "beef stock",
       "score": 54.198805858460375,
       "connects_a": [
-        "tomato paste",
-        "carrot",
-        "flour"
+        "bread",
+        "paprika",
+        "carrot"
       ],
       "connects_b": [
-        "wine",
+        "mushrooms",
         "worcestershire sauce",
-        "tomato paste"
+        "carrot"
       ]
     },
     {
       "name": "veal",
       "score": 50.13627398035956,
       "connects_a": [
-        "egg",
+        "parsley",
         "milk",
-        "tomato paste"
+        "carrot"
       ],
       "connects_b": [
-        "egg",
-        "wine",
-        "milk"
+        "parsley",
+        "milk",
+        "wine"
       ]
     },
     {
       "name": "bay leaf",
       "score": 49.440977851641975,
       "connects_a": [
-        "tomato paste",
-        "carrot",
-        "cumin"
+        "parsley",
+        "tomato",
+        "paprika"
       ],
       "connects_b": [
-        "wine",
-        "tomato paste",
+        "parsley",
+        "russet potatoes",
         "carrot"
       ]
     },
@@ -89,28 +89,28 @@
       "name": "celery",
       "score": 49.12162989148098,
       "connects_a": [
-        "tomato paste",
-        "carrot",
-        "paprika"
+        "parsley",
+        "paprika",
+        "garlic"
       ],
       "connects_b": [
-        "tomato paste",
+        "parsley",
         "worcestershire sauce",
-        "carrot"
+        "cayenne pepper"
       ]
     },
     {
       "name": "confectioners",
       "score": 44.22949909182758,
       "connects_a": [
-        "egg",
         "cinnamon",
-        "milk"
+        "egg",
+        "butter"
       ],
       "connects_b": [
-        "egg",
-        "nutmeg",
-        "more"
+        "1",
+        "butter",
+        "milk"
       ]
     },
     {
@@ -119,26 +119,26 @@
       "connects_a": [
         "egg",
         "flour",
-        "cinnamon"
+        "butter"
       ],
       "connects_b": [
-        "egg",
-        "nutmeg",
-        "more"
+        "1",
+        "butter",
+        "purpose flour"
       ]
     },
     {
       "name": "filling",
       "score": 40.06143930228706,
       "connects_a": [
-        "egg",
+        "butter",
         "milk",
         "cinnamon"
       ],
       "connects_b": [
-        "egg",
+        "butter",
         "milk",
-        "vanilla extract"
+        "purpose flour"
       ]
     }
   ],
@@ -154,17 +154,17 @@
       "strength": 1
     },
     {
+      "name": "harissa",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
       "name": "sirloin",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
       "name": "pine",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "harissa",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -179,24 +179,24 @@
       "strength": 1
     },
     {
-      "name": "garam masala",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
       "name": "okra",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "applesauce",
+      "name": "garam masala",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "margarine",
       "pairs_with": "egg",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "and half",
+      "name": "lobster stock",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -206,17 +206,7 @@
       "strength": 1
     },
     {
-      "name": "confectioners",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "whole milk",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "freshly nutmeg",
+      "name": "graham cracker crumbs",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -226,12 +216,12 @@
       "strength": 1
     },
     {
-      "name": "cold",
+      "name": "tomato concasse",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "veal stock",
+      "name": "sticks",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -241,7 +231,17 @@
       "strength": 1
     },
     {
-      "name": "graham cracker crumbs",
+      "name": "freshly nutmeg",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "rutabaga",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "peeled and",
       "pairs_with": "butter",
       "strength": 1
     }

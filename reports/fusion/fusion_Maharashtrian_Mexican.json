@@ -6,13 +6,13 @@
       "score": 52.301477902125065,
       "connects_a": [
         "chili powder",
-        "mango",
-        "peanuts"
+        "peanuts",
+        "turmeric"
       ],
       "connects_b": [
+        "beans",
         "jalapeno",
-        "salsa",
-        "beans"
+        "tomatillos"
       ]
     },
     {
@@ -24,23 +24,23 @@
         "peas"
       ],
       "connects_b": [
-        "cinnamon",
-        "vegetable oil",
-        "cumin"
+        "tomatoes",
+        "garlic",
+        "vegetable oil"
       ]
     },
     {
       "name": "mango",
       "score": 42.29503353697467,
       "connects_a": [
-        "dhania",
-        "wheat",
-        "coconut"
+        "seeds",
+        "fenugreek",
+        "wheat"
       ],
       "connects_b": [
         "jalapeno",
-        "avocado",
-        "cilantro"
+        "lime juice",
+        "lime"
       ]
     },
     {
@@ -48,27 +48,27 @@
       "score": 42.04108516569381,
       "connects_a": [
         "chili powder",
-        "mango",
-        "turmeric"
+        "turmeric",
+        "mango"
       ],
       "connects_b": [
-        "tomatoes",
-        "salsa",
-        "flour tortillas"
+        "beans",
+        "rice",
+        "corn"
       ]
     },
     {
       "name": "lime juice",
       "score": 33.18366656505576,
       "connects_a": [
-        "coconut",
+        "peanuts",
         "mango",
-        "peanuts"
+        "coconut"
       ],
       "connects_b": [
         "jalapeno",
-        "salsa",
-        "flour tortillas"
+        "tomatillos",
+        "salsa"
       ]
     },
     {
@@ -79,37 +79,37 @@
         "turmeric"
       ],
       "connects_b": [
+        "beans",
         "jalapeno",
-        "salsa",
-        "beans"
+        "tomatillos"
       ]
     },
     {
       "name": "chili powder",
       "score": 30.34914387107223,
       "connects_a": [
-        "dhania",
-        "jeera coriander",
-        "gram"
+        "turmeric",
+        "gram",
+        "jeera coriander"
       ],
       "connects_b": [
         "jalapeno",
         "salsa",
-        "flour tortillas"
+        "cumin"
       ]
     },
     {
       "name": "lime",
       "score": 30.078153242042895,
       "connects_a": [
-        "coconut",
+        "peanuts",
         "mango",
-        "peanuts"
+        "coconut"
       ],
       "connects_b": [
         "jalapeno",
         "salsa",
-        "flour tortillas"
+        "cilantro leaves"
       ]
     },
     {
@@ -117,27 +117,27 @@
       "score": 30.03701535588108,
       "connects_a": [
         "turmeric",
-        "coconut",
-        "chili powder"
+        "chili powder",
+        "peas"
       ],
       "connects_b": [
-        "cumin",
-        "cilantro",
-        "cilantro leaves"
+        "tomatoes",
+        "cilantro leaves",
+        "cumin"
       ]
     },
     {
       "name": "tumeric",
       "score": 28.079260329391214,
       "connects_a": [
-        "oil",
         "chili powder",
+        "oil",
         "peas"
       ],
       "connects_b": [
-        "cinnamon",
-        "cumin",
-        "chicken breasts"
+        "tomatoes",
+        "garlic",
+        "cinnamon"
       ]
     }
   ],
@@ -148,22 +148,22 @@
       "strength": 1
     },
     {
-      "name": "cardamom",
-      "pairs_with": "cinnamon",
-      "strength": 1
-    },
-    {
       "name": "coriander powder",
       "pairs_with": "cinnamon",
       "strength": 1
     },
     {
       "name": "cardamom",
+      "pairs_with": "cinnamon",
+      "strength": 1
+    },
+    {
+      "name": "coriander powder",
       "pairs_with": "cumin",
       "strength": 1
     },
     {
-      "name": "coriander powder",
+      "name": "cardamom",
       "pairs_with": "cumin",
       "strength": 1
     },
@@ -173,12 +173,12 @@
       "strength": 1
     },
     {
-      "name": "oil coriander",
+      "name": "coriander powder",
       "pairs_with": "leaves",
       "strength": 1
     },
     {
-      "name": "coriander powder",
+      "name": "oil coriander",
       "pairs_with": "leaves",
       "strength": 1
     },
@@ -195,12 +195,7 @@
   ],
   "novel_from_b": [
     {
-      "name": "jeera whole",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "onion coriander",
+      "name": "kabuli",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -215,7 +210,7 @@
       "strength": 1
     },
     {
-      "name": "virgin",
+      "name": "jeera whole",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -225,22 +220,27 @@
       "strength": 1
     },
     {
-      "name": "kabuli",
+      "name": "virgin",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "jeera whole",
-      "pairs_with": "powder",
-      "strength": 1
-    },
-    {
-      "name": "pudina",
-      "pairs_with": "powder",
-      "strength": 1
-    },
-    {
       "name": "onion coriander",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "kabuli",
+      "pairs_with": "powder",
+      "strength": 1
+    },
+    {
+      "name": "jeera amchur",
+      "pairs_with": "powder",
+      "strength": 1
+    },
+    {
+      "name": "parangikai",
       "pairs_with": "powder",
       "strength": 1
     }

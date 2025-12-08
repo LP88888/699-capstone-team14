@@ -5,13 +5,13 @@
       "name": "tomato paste",
       "score": 28.18067774378179,
       "connects_a": [
-        "oregano",
+        "onion",
         "thyme",
-        "bell pepper"
+        "oregano"
       ],
       "connects_b": [
-        "wine",
-        "bay leaf",
+        "parsley",
+        "cloves",
         "carrot"
       ]
     },
@@ -23,8 +23,8 @@
         "almonds"
       ],
       "connects_b": [
-        "egg",
-        "nutmeg",
+        "almonds",
+        "butter",
         "milk"
       ]
     },
@@ -36,9 +36,9 @@
         "almonds"
       ],
       "connects_b": [
-        "egg",
-        "nutmeg",
-        "apples"
+        "almonds",
+        "butter",
+        "milk"
       ]
     },
     {
@@ -47,25 +47,25 @@
       "connects_a": [
         "onion",
         "flour",
-        "thyme"
+        "potatoes"
       ],
       "connects_b": [
+        "carrot",
         "wine",
-        "bay leaf",
-        "carrot"
+        "onion"
       ]
     },
     {
       "name": "celery",
       "score": 24.059573824398846,
       "connects_a": [
-        "oregano",
+        "onion",
         "thyme",
-        "bell pepper"
+        "oregano"
       ],
       "connects_b": [
-        "bay leaf",
-        "carrot",
+        "parsley",
+        "garlic",
         "bacon"
       ]
     },
@@ -78,8 +78,8 @@
         "potatoes"
       ],
       "connects_b": [
-        "cinnamon",
-        "bay leaf",
+        "lemon juice",
+        "garlic",
         "vegetable oil"
       ]
     },
@@ -87,12 +87,12 @@
       "name": "bay leaf",
       "score": 20.179990959853868,
       "connects_a": [
-        "oregano",
+        "beans",
         "thyme",
-        "beans"
+        "oregano"
       ],
       "connects_b": [
-        "wine",
+        "parsley",
         "carrot",
         "bacon"
       ]
@@ -101,13 +101,13 @@
       "name": "cans tomatoes",
       "score": 20.044428318272463,
       "connects_a": [
-        "oregano",
+        "onion",
         "olive oil",
         "leaves"
       ],
       "connects_b": [
-        "carrot",
         "cloves",
+        "leaves",
         "olive oil"
       ]
     },
@@ -116,12 +116,12 @@
       "score": 20.04061932652936,
       "connects_a": [
         "onion",
-        "thyme",
-        "bell pepper"
+        "leaves",
+        "thyme"
       ],
       "connects_b": [
-        "vegetable oil",
-        "onion",
+        "purpose flour",
+        "leaves",
         "garlic"
       ]
     },
@@ -134,15 +134,35 @@
         "bell pepper"
       ],
       "connects_b": [
-        "wine",
-        "bay leaf",
+        "parsley",
+        "cloves",
         "carrot"
       ]
     }
   ],
   "novel_from_a": [
     {
+      "name": "cherry tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "arugula",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "crusty bread",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "handful pine nuts",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pasta",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -158,31 +178,6 @@
     },
     {
       "name": "crusty bread",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pasta",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "handful pine nuts",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cherry tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "reggiano",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "crusty bread",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -190,21 +185,31 @@
       "name": "black beans",
       "pairs_with": "cloves",
       "strength": 1
+    },
+    {
+      "name": "reggiano",
+      "pairs_with": "cloves",
+      "strength": 1
     }
   ],
   "novel_from_b": [
-    {
-      "name": "montreal steak",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
     {
       "name": "capers",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "round steak",
+      "name": "montreal steak",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "beef chuck",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "chicken bouillon",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -219,17 +224,12 @@
       "strength": 1
     },
     {
-      "name": "celery ribs",
+      "name": "round steak",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "bouquet garni",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "bay leaf",
+      "name": "beef stock",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -239,7 +239,7 @@
       "strength": 1
     },
     {
-      "name": "beef chuck",
+      "name": "bouquet garni",
       "pairs_with": "onion",
       "strength": 1
     }

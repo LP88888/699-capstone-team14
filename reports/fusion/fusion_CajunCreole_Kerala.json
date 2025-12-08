@@ -5,9 +5,9 @@
       "name": "celery",
       "score": 46.11418316343113,
       "connects_a": [
-        "worcestershire sauce",
-        "cajun seasoning",
-        "shrimp"
+        "parsley",
+        "andouille sausage",
+        "garlic powder"
       ],
       "connects_b": [
         "onion",
@@ -18,9 +18,9 @@
       "name": "andouille sausage",
       "score": 42.05559187541547,
       "connects_a": [
-        "worcestershire sauce",
-        "cajun seasoning",
-        "shrimp"
+        "tomatoes",
+        "garlic",
+        "onion powder"
       ],
       "connects_b": [
         "onion",
@@ -31,23 +31,23 @@
       "name": "garam masala",
       "score": 35.1978518059033,
       "connects_a": [
-        "vegetable oil",
-        "chicken breasts",
-        "cayenne pepper"
+        "cayenne pepper",
+        "tomatoes",
+        "garlic"
       ],
       "connects_b": [
         "chili powder",
         "peas",
-        "onion"
+        "cumin seeds"
       ]
     },
     {
       "name": "okra",
       "score": 34.04646636401632,
       "connects_a": [
-        "hot sauce",
+        "andouille sausage",
         "chili sauce",
-        "celery"
+        "cajun seasoning"
       ],
       "connects_b": [
         "onion",
@@ -58,9 +58,9 @@
       "name": "file powder",
       "score": 30.06092898979404,
       "connects_a": [
-        "celery",
-        "onion powder",
-        "leaves"
+        "andouille sausage",
+        "okra",
+        "purpose flour"
       ],
       "connects_b": [
         "onion",
@@ -71,37 +71,37 @@
       "name": "tumeric",
       "score": 25.070768151242156,
       "connects_a": [
-        "chicken breasts",
         "cayenne pepper",
-        "onion"
+        "tomatoes",
+        "garlic"
       ],
       "connects_b": [
         "chili powder",
         "peas",
-        "onion"
+        "cumin seeds"
       ]
     },
     {
       "name": "jalapeno peppers",
       "score": 25.024455455770124,
       "connects_a": [
-        "tomatoes",
-        "shrimp",
-        "bell pepper"
+        "rice",
+        "bell pepper",
+        "tomatoes"
       ],
       "connects_b": [
-        "mango",
-        "chili powder",
-        "rice"
+        "beans",
+        "rice",
+        "chili powder"
       ]
     },
     {
       "name": "cayenne",
       "score": 24.018324669990236,
       "connects_a": [
-        "hot sauce",
-        "celery",
-        "creole seasoning"
+        "rice",
+        "garlic powder",
+        "worcestershire sauce"
       ],
       "connects_b": [
         "rice",
@@ -112,9 +112,9 @@
       "name": "can tomatoes",
       "score": 22.12948997998609,
       "connects_a": [
-        "hot sauce",
-        "celery",
-        "chicken broth"
+        "parsley",
+        "andouille sausage",
+        "worcestershire sauce"
       ],
       "connects_b": [
         "onion",
@@ -125,9 +125,9 @@
       "name": "celery ribs",
       "score": 22.016832828349365,
       "connects_a": [
-        "chicken broth",
-        "tomatoes",
-        "shrimp"
+        "parsley",
+        "rice",
+        "sausage"
       ],
       "connects_b": [
         "onion",
@@ -137,37 +137,22 @@
   ],
   "novel_from_a": [
     {
-      "name": "in juice",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "turkey stock",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
       "name": "beef",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "roux",
+      "name": "kidney beans",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "shrimp shells",
+      "name": "in juice",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "celery ribs",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "chorizo sausage",
+      "name": "crawfish",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -177,12 +162,27 @@
       "strength": 1
     },
     {
-      "name": "chicken base",
+      "name": "tomato paste",
       "pairs_with": "onion",
       "strength": 1
     },
     {
       "name": "navy beans",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "tumeric",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "bacon fat",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "celery",
       "pairs_with": "onion",
       "strength": 1
     }
@@ -199,12 +199,7 @@
       "strength": 1
     },
     {
-      "name": "finger",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "ragi",
+      "name": "wheat",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -214,12 +209,17 @@
       "strength": 1
     },
     {
+      "name": "finger",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
       "name": "soda",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "wheat",
+      "name": "ragi",
       "pairs_with": "flour",
       "strength": 1
     },

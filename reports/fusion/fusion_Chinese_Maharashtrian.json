@@ -6,12 +6,12 @@
       "score": 70.746789120871,
       "connects_a": [
         "oyster sauce",
-        "ginger",
-        "shrimp"
+        "soy sauce",
+        "scallions"
       ],
       "connects_b": [
-        "dhania",
         "rai",
+        "gram",
         "coconut"
       ]
     },
@@ -19,23 +19,23 @@
       "name": "chili pepper",
       "score": 55.02083749234374,
       "connects_a": [
-        "ginger",
-        "rice vinegar",
-        "shaoxing"
+        "shaoxing",
+        "soy sauce",
+        "corn starch"
       ],
       "connects_b": [
-        "coconut",
+        "turmeric",
         "chili powder",
-        "oil"
+        "peanuts"
       ]
     },
     {
       "name": "oyster sauce",
       "score": 44.02828845373891,
       "connects_a": [
-        "shrimp",
-        "mushrooms",
-        "chicken broth"
+        "shaoxing",
+        "scallions",
+        "sodium soy sauce"
       ],
       "connects_b": [
         "oil",
@@ -46,9 +46,9 @@
       "name": "corn starch",
       "score": 40.07939969178618,
       "connects_a": [
-        "mushrooms",
-        "rice",
-        "oyster sauce"
+        "shaoxing",
+        "scallions",
+        "sodium soy sauce"
       ],
       "connects_b": [
         "oil",
@@ -59,9 +59,9 @@
       "name": "soy sauce",
       "score": 39.04814751080243,
       "connects_a": [
-        "mushrooms",
-        "rice",
-        "oyster sauce"
+        "shaoxing",
+        "scallions",
+        "rice wine"
       ],
       "connects_b": [
         "oil",
@@ -72,9 +72,9 @@
       "name": "ginger",
       "score": 36.66084256368917,
       "connects_a": [
+        "shaoxing",
         "oyster sauce",
-        "canola oil",
-        "pork"
+        "soy sauce"
       ],
       "connects_b": [
         "peanuts",
@@ -86,33 +86,33 @@
       "score": 36.353942459588865,
       "connects_a": [
         "oyster sauce",
-        "canola oil",
-        "pork"
+        "soy sauce",
+        "scallions"
       ],
       "connects_b": [
-        "coconut",
-        "peanuts"
+        "peanuts",
+        "coconut"
       ]
     },
     {
       "name": "oil",
       "score": 35.169233724875575,
       "connects_a": [
-        "oyster sauce",
         "shaoxing",
+        "oyster sauce",
         "soy sauce"
       ],
       "connects_b": [
-        "wheat",
-        "dal",
-        "gram flour"
+        "turmeric",
+        "gram",
+        "chili powder"
       ]
     },
     {
       "name": "garam masala",
       "score": 30.16958726220283,
       "connects_a": [
-        "ginger",
+        "garlic",
         "vegetable oil",
         "chicken breasts"
       ],
@@ -126,35 +126,25 @@
       "name": "cilantro",
       "score": 28.16233425499042,
       "connects_a": [
-        "ginger",
-        "rice vinegar",
-        "sodium soy sauce"
+        "scallions",
+        "sodium soy sauce",
+        "chicken breasts"
       ],
       "connects_b": [
         "chili powder",
-        "mango",
-        "peanuts"
+        "peanuts",
+        "turmeric"
       ]
     }
   ],
   "novel_from_a": [
-    {
-      "name": "leaves whole",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
     {
       "name": "button",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "virgin",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "pepper powder",
+      "name": "leaves whole",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -164,17 +154,27 @@
       "strength": 1
     },
     {
+      "name": "pepper powder",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
       "name": "baby",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "salt water",
-      "pairs_with": "powder",
+      "name": "virgin",
+      "pairs_with": "dhania",
       "strength": 1
     },
     {
       "name": "basmati",
+      "pairs_with": "powder",
+      "strength": 1
+    },
+    {
+      "name": "salt water",
       "pairs_with": "powder",
       "strength": 1
     },
@@ -184,7 +184,7 @@
       "strength": 1
     },
     {
-      "name": "virgin",
+      "name": "baby",
       "pairs_with": "powder",
       "strength": 1
     }
@@ -206,17 +206,17 @@
       "strength": 1
     },
     {
+      "name": "pearl",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
       "name": "maida sooji",
       "pairs_with": "flour",
       "strength": 1
     },
     {
       "name": "finger",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "pearl",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -236,7 +236,7 @@
       "strength": 1
     },
     {
-      "name": "stone",
+      "name": "raw",
       "pairs_with": "shrimp",
       "strength": 1
     }

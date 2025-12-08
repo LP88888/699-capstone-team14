@@ -5,14 +5,14 @@
       "name": "olives",
       "score": 30.04539077782428,
       "connects_a": [
-        "oregano",
         "olive oil",
+        "oregano",
         "bell pepper"
       ],
       "connects_b": [
-        "cucumber",
-        "kalamata",
-        "bell pepper"
+        "bell pepper",
+        "tomatoes",
+        "kalamata olives"
       ]
     },
     {
@@ -23,9 +23,9 @@
         "oregano"
       ],
       "connects_b": [
+        "lemon juice",
         "cheese crumbles",
-        "olives",
-        "kalamata"
+        "tomatoes"
       ]
     },
     {
@@ -37,23 +37,23 @@
         "potatoes"
       ],
       "connects_b": [
-        "spinach",
-        "cinnamon",
-        "lemon juice"
+        "lemon juice",
+        "tomatoes",
+        "garlic"
       ]
     },
     {
       "name": "tomato paste",
       "score": 24.15486663752725,
       "connects_a": [
-        "oregano",
+        "onion",
         "thyme",
-        "bell pepper"
+        "oregano"
       ],
       "connects_b": [
+        "parsley",
         "bell pepper",
-        "cloves",
-        "parsley"
+        "cloves"
       ]
     },
     {
@@ -64,36 +64,36 @@
         "bell pepper"
       ],
       "connects_b": [
-        "cucumber",
+        "bell pepper",
         "cheese crumbles",
-        "olives"
+        "tomatoes"
       ]
     },
     {
       "name": "celery",
       "score": 24.059573824398846,
       "connects_a": [
-        "oregano",
+        "onion",
         "thyme",
-        "bell pepper"
+        "oregano"
       ],
       "connects_b": [
-        "bell pepper",
         "parsley",
-        "oregano"
+        "bell pepper",
+        "tomatoes"
       ]
     },
     {
       "name": "cans tomatoes",
       "score": 24.053313981926955,
       "connects_a": [
-        "oregano",
+        "onion",
         "olive oil",
         "leaves"
       ],
       "connects_b": [
-        "onion",
         "cloves",
+        "leaves",
         "olive oil"
       ]
     },
@@ -102,40 +102,40 @@
       "score": 24.04874319183523,
       "connects_a": [
         "onion",
-        "thyme",
-        "bell pepper"
+        "leaves",
+        "thyme"
       ],
       "connects_b": [
+        "purpose flour",
         "bell pepper",
-        "onion",
-        "tomatoes"
+        "leaves"
       ]
     },
     {
       "name": "andouille sausage",
       "score": 24.0317667859517,
       "connects_a": [
-        "oregano",
+        "onion",
         "thyme",
-        "bell pepper"
+        "oregano"
       ],
       "connects_b": [
         "bell pepper",
-        "chicken breasts",
-        "oregano"
+        "tomatoes",
+        "garlic"
       ]
     },
     {
       "name": "cherry tomatoes",
       "score": 22.01634551164942,
       "connects_a": [
-        "oregano",
-        "olive oil"
+        "olive oil",
+        "oregano"
       ],
       "connects_b": [
-        "cucumber",
         "cheese crumbles",
-        "olives"
+        "olives",
+        "kalamata olives"
       ]
     }
   ],
@@ -146,7 +146,7 @@
       "strength": 1
     },
     {
-      "name": "soda",
+      "name": "cocoa",
       "pairs_with": "egg",
       "strength": 1
     },
@@ -156,12 +156,12 @@
       "strength": 1
     },
     {
-      "name": "cocoa",
+      "name": "soda",
       "pairs_with": "egg",
       "strength": 1
     },
     {
-      "name": "soda",
+      "name": "bourbon",
       "pairs_with": "cinnamon",
       "strength": 1
     },
@@ -171,7 +171,7 @@
       "strength": 1
     },
     {
-      "name": "bourbon",
+      "name": "soda",
       "pairs_with": "cinnamon",
       "strength": 1
     },
@@ -186,44 +186,34 @@
       "strength": 1
     },
     {
-      "name": "pepper bell",
+      "name": "essence",
       "pairs_with": "garlic",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "linguini",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "head fennel",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "squid",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "canned tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "spaghetti",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "finely oregano",
+      "name": "san marzano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "anchovies",
+      "name": "orzo pasta",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pepperoncini peppers",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "parmigiano",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -233,12 +223,22 @@
       "strength": 1
     },
     {
-      "name": "plum tomatoes",
+      "name": "baby arugula",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "some",
+      "name": "grape tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pecorino",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "romano",
       "pairs_with": "olive oil",
       "strength": 1
     }

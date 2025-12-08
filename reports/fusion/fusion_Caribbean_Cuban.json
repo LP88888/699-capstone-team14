@@ -5,97 +5,97 @@
       "name": "cumin",
       "score": 109.85572102746922,
       "connects_a": [
-        "plantains",
         "bell pepper",
-        "coconut milk"
+        "lime juice",
+        "cilantro leaves"
       ],
       "connects_b": [
-        "dill pickles",
-        "pork shoulder",
-        "bay leaf"
+        "beans",
+        "bell pepper",
+        "dill pickles"
       ]
     },
     {
       "name": "corn tortillas",
       "score": 72.25275400989682,
       "connects_a": [
-        "canola oil",
+        "cilantro leaves",
         "vegetable oil",
-        "cumin"
+        "lime juice"
       ],
       "connects_b": [
-        "canola oil",
-        "vegetable oil",
-        "cumin"
+        "tomatoes",
+        "lime juice",
+        "vegetable oil"
       ]
     },
     {
       "name": "fish sauce",
       "score": 66.64889450924625,
       "connects_a": [
-        "canola oil",
-        "ginger",
-        "carrot"
+        "pineapple",
+        "scallions",
+        "cilantro leaves"
       ],
       "connects_b": [
-        "canola oil",
-        "pork",
-        "vegetable oil"
+        "lime juice",
+        "vegetable oil",
+        "lime"
       ]
     },
     {
       "name": "cabbage",
       "score": 64.24894761372947,
       "connects_a": [
-        "ginger",
-        "canola oil",
-        "carrot"
+        "scallions",
+        "lime juice",
+        "cilantro leaves"
       ],
       "connects_b": [
-        "canola oil",
-        "pork",
-        "mayonnaise"
+        "mustard",
+        "lime juice",
+        "wine vinegar"
       ]
     },
     {
       "name": "salsa",
       "score": 64.18752640806096,
       "connects_a": [
-        "cumin",
+        "scallions",
         "bell pepper",
-        "cilantro leaves"
+        "lime juice"
       ],
       "connects_b": [
-        "cumin",
+        "beans",
         "bell pepper",
-        "cilantro"
+        "tomatoes"
       ]
     },
     {
       "name": "tortilla chips",
       "score": 64.15481649970135,
       "connects_a": [
+        "bell pepper",
         "vegetable oil",
-        "cumin",
-        "bell pepper"
+        "cilantro leaves"
       ],
       "connects_b": [
-        "vegetable oil",
-        "cumin",
-        "bell pepper"
+        "beans",
+        "bell pepper",
+        "tomatoes"
       ]
     },
     {
       "name": "jalapeno peppers",
       "score": 64.06260596677151,
       "connects_a": [
-        "cumin",
-        "bell pepper",
-        "cilantro leaves"
+        "scallions",
+        "rice",
+        "bell pepper"
       ],
       "connects_b": [
-        "tomatoes",
-        "cumin",
+        "beans",
+        "rice",
         "bell pepper"
       ]
     },
@@ -103,48 +103,58 @@
       "name": "tomato paste",
       "score": 63.406524923509025,
       "connects_a": [
-        "carrot",
-        "cumin",
-        "bell pepper"
+        "parsley",
+        "bell pepper",
+        "cloves"
       ],
       "connects_b": [
-        "wine",
-        "pork",
-        "bay leaf"
+        "bell pepper",
+        "cloves",
+        "tomatoes"
       ]
     },
     {
       "name": "chile",
       "score": 63.271634007052214,
       "connects_a": [
-        "canola oil",
+        "cilantro leaves",
         "vegetable oil",
-        "cumin"
+        "lime juice"
       ],
       "connects_b": [
-        "canola oil",
+        "lime juice",
         "vegetable oil",
-        "cumin"
+        "lime"
       ]
     },
     {
       "name": "rice vinegar",
       "score": 60.13755054312897,
       "connects_a": [
-        "honey",
-        "canola oil",
-        "ginger"
+        "pineapple",
+        "scallions",
+        "rice"
       ],
       "connects_b": [
-        "canola oil",
-        "pork",
-        "orange juice"
+        "rice",
+        "lime juice",
+        "canola oil"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "reggiano",
+      "name": "roasted tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pinch saffron",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "fennel bulb",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -164,74 +174,29 @@
       "strength": 1
     },
     {
+      "name": "radicchio",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cans chickpeas",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "bunch kale",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "roasted tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pinch saffron",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "fennel bulb",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "eggplants",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "radicchio",
+      "name": "reggiano",
       "pairs_with": "olive oil",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "canned tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "crusty bread",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "[extra",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "handful pine nuts",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "finely oregano",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "sandwich rolls",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "montreal steak",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "beefsteak tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -241,8 +206,43 @@
       "strength": 1
     },
     {
+      "name": "beefsteak tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "arugula",
       "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "finely oregano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "crusty bread",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "sandwich rolls",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "handful pine nuts",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "[extra",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cotija cheese",
+      "pairs_with": "cloves",
       "strength": 1
     }
   ]

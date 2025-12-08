@@ -5,13 +5,13 @@
       "name": "confectioners",
       "score": 130.67806549858147,
       "connects_a": [
-        "egg",
-        "more",
+        "1",
+        "butter",
         "milk"
       ],
       "connects_b": [
-        "egg",
-        "nutmeg",
+        "almonds",
+        "butter",
         "milk"
       ]
     },
@@ -19,157 +19,142 @@
       "name": "sticks",
       "score": 88.31123193558749,
       "connects_a": [
-        "egg",
-        "more",
-        "cinnamon"
+        "1",
+        "butter",
+        "purpose flour"
       ],
       "connects_b": [
-        "egg",
-        "nutmeg",
-        "apples"
+        "almonds",
+        "butter",
+        "purpose flour"
       ]
     },
     {
       "name": "vanilla extract",
       "score": 85.34776904705485,
       "connects_a": [
-        "egg",
-        "milk",
-        "cinnamon"
+        "1",
+        "butter",
+        "milk"
       ],
       "connects_b": [
-        "egg",
-        "nutmeg",
-        "apples"
+        "almonds",
+        "butter",
+        "milk"
       ]
     },
     {
       "name": "at",
       "score": 81.32263347263613,
       "connects_a": [
-        "egg",
-        "more",
+        "1",
+        "butter",
         "milk"
       ],
       "connects_b": [
-        "egg",
+        "butter",
         "milk",
-        "vanilla extract"
+        "purpose flour"
       ]
     },
     {
       "name": "whole milk",
       "score": 72.21085324665263,
       "connects_a": [
-        "egg",
-        "more",
-        "cinnamon"
+        "butter",
+        "purpose flour",
+        "kosher sea salt"
       ],
       "connects_b": [
-        "egg",
-        "nutmeg",
-        "cinnamon"
+        "butter",
+        "purpose flour",
+        "egg"
       ]
     },
     {
       "name": "filling",
       "score": 72.1105907441167,
       "connects_a": [
-        "egg",
+        "butter",
         "milk",
-        "cinnamon"
+        "purpose flour"
       ],
       "connects_b": [
-        "egg",
+        "butter",
         "milk",
-        "cinnamon"
+        "purpose flour"
       ]
     },
     {
       "name": "ice water",
       "score": 64.32624770931223,
       "connects_a": [
-        "egg",
-        "more",
-        "cinnamon"
+        "1",
+        "butter",
+        "purpose flour"
       ],
       "connects_b": [
-        "egg",
-        "nutmeg",
-        "cinnamon"
+        "butter",
+        "purpose flour",
+        "egg"
       ]
     },
     {
       "name": "cake flour",
       "score": 63.07771874339878,
       "connects_a": [
-        "egg",
-        "milk",
-        "vanilla extract"
+        "1",
+        "butter",
+        "milk"
       ],
       "connects_b": [
-        "egg",
+        "butter",
         "milk",
-        "vanilla extract"
+        "egg yolks"
       ]
     },
     {
       "name": "almond extract",
       "score": 63.070115657900736,
       "connects_a": [
-        "egg",
-        "milk",
-        "cinnamon"
+        "1",
+        "butter",
+        "milk"
       ],
       "connects_b": [
-        "egg",
-        "milk",
-        "cinnamon"
+        "almonds",
+        "butter",
+        "milk"
       ]
     },
     {
       "name": "room temp",
       "score": 60.043557424741756,
       "connects_a": [
-        "egg",
+        "butter",
         "milk",
-        "cinnamon"
+        "purpose flour"
       ],
       "connects_b": [
-        "egg",
-        "nutmeg",
-        "milk"
+        "butter",
+        "milk",
+        "purpose flour"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "linguini",
+      "name": "spaghetti",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "salami",
+      "name": "san marzano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "al dente",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "eggplants",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "arugula",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pecorino",
+      "name": "pepperoncini peppers",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -179,17 +164,32 @@
       "strength": 1
     },
     {
-      "name": "basil chiffonade",
+      "name": "spun",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "parma",
+      "name": "baby arugula",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "by hand",
+      "name": "arugula",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cans chickpeas",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cannellini beans",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "crusty rolls",
       "pairs_with": "olive oil",
       "strength": 1
     }

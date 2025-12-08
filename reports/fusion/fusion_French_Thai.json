@@ -6,13 +6,13 @@
       "score": 80.16976792776003,
       "connects_a": [
         "carrot",
-        "vegetable oil",
-        "shallots"
+        "shallots",
+        "vegetable oil"
       ],
       "connects_b": [
-        "shrimp",
-        "shallots",
-        "lime"
+        "scallions",
+        "cilantro leaves",
+        "lime juice"
       ]
     },
     {
@@ -20,41 +20,41 @@
       "score": 69.67838971421199,
       "connects_a": [
         "carrot",
-        "vegetable oil",
-        "shallots"
+        "shallots",
+        "vegetable oil"
       ],
       "connects_b": [
-        "shrimp",
-        "shallots",
-        "lime"
+        "scallions",
+        "cilantro leaves",
+        "lime juice"
       ]
     },
     {
       "name": "chiles",
       "score": 56.26726908823037,
       "connects_a": [
-        "2",
-        "vegetable oil",
-        "shallots"
+        "cloves",
+        "shallots",
+        "vegetable oil"
       ],
       "connects_b": [
-        "ginger",
-        "vegetable oil",
-        "peanut oil"
+        "juice",
+        "shallots",
+        "limes"
       ]
     },
     {
       "name": "chile",
       "score": 51.21989419618512,
       "connects_a": [
-        "vegetable oil",
+        "cloves",
         "shallots",
-        "cloves"
+        "vegetable oil"
       ],
       "connects_b": [
+        "juice",
         "chiles",
-        "canola oil",
-        "vegetable oil"
+        "shallots"
       ]
     },
     {
@@ -66,22 +66,22 @@
         "wine vinegar"
       ],
       "connects_b": [
+        "juice",
         "chiles",
-        "canola oil",
-        "ginger"
+        "shallots"
       ]
     },
     {
       "name": "garam masala",
       "score": 48.271339619524525,
       "connects_a": [
-        "bay leaf",
-        "cinnamon",
+        "lemon juice",
+        "garlic",
         "vegetable oil"
       ],
       "connects_b": [
         "chiles",
-        "ginger",
+        "garlic",
         "vegetable oil"
       ]
     },
@@ -89,14 +89,14 @@
       "name": "head",
       "score": 48.21007893659926,
       "connects_a": [
-        "carrot",
-        "dijon mustard",
+        "shallots",
+        "lemon",
         "kosher sea salt"
       ],
       "connects_b": [
-        "canola oil",
-        "shrimp",
-        "carrot"
+        "shallots",
+        "scallions",
+        "fish sauce"
       ]
     },
     {
@@ -104,82 +104,52 @@
       "score": 48.1435910642957,
       "connects_a": [
         "carrot",
-        "more",
+        "cloves",
         "wine vinegar"
       ],
       "connects_b": [
-        "canola oil",
-        "more",
-        "carrot"
+        "soy sauce",
+        "scallions",
+        "limes"
       ]
     },
     {
       "name": "confectioners",
       "score": 45.234714980278206,
       "connects_a": [
-        "egg",
-        "nutmeg",
-        "more"
+        "1",
+        "maple syrup",
+        "chocolate"
       ],
       "connects_b": [
+        "1",
         "egg",
-        "more",
-        "1"
+        "more"
       ]
     },
     {
       "name": "ribs celery",
       "score": 42.306091413355226,
       "connects_a": [
-        "wine",
-        "bay leaf",
+        "parsley",
+        "cloves",
         "carrot"
       ],
       "connects_b": [
-        "shrimp",
-        "carrot",
-        "bell pepper"
+        "scallions",
+        "bell pepper",
+        "cloves"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "head fennel",
+      "name": "turkey sausage",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "chianti",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "canned tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "salami",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "sandwich rolls",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "morel mushrooms",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "anchovies",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "clam broth",
+      "name": "cannellini",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -189,7 +159,37 @@
       "strength": 1
     },
     {
-      "name": "some",
+      "name": "baby arugula",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "grigio",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "morel mushrooms",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "chorizo",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "romano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "roma",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cannellini beans",
       "pairs_with": "olive oil",
       "strength": 1
     }
@@ -197,11 +197,6 @@
   "novel_from_b": [
     {
       "name": "linguini",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "hearts",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -216,8 +211,8 @@
       "strength": 1
     },
     {
-      "name": "serrano chili",
-      "pairs_with": "cloves",
+      "name": "hearts",
+      "pairs_with": "olive oil",
       "strength": 1
     },
     {
@@ -226,7 +221,17 @@
       "strength": 1
     },
     {
-      "name": "piece ginger",
+      "name": "fresno",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "sodium",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "littleneck clams",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -236,12 +241,7 @@
       "strength": 1
     },
     {
-      "name": "tomatillos",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "fresno",
+      "name": "stalk lemongrass",
       "pairs_with": "cloves",
       "strength": 1
     }

@@ -5,97 +5,97 @@
       "name": "dhania",
       "score": 363.95610098720334,
       "connects_a": [
-        "wheat",
-        "greek",
-        "finger"
+        "seeds",
+        "bell",
+        "oil salt"
       ],
       "connects_b": [
         "black",
-        "channa dal",
-        "leaves coriander"
+        "mullangi",
+        "hing"
       ]
     },
     {
       "name": "powder",
       "score": 285.16889053634276,
       "connects_a": [
-        "dhania",
-        "wheat",
-        "greek"
+        "seeds",
+        "bell",
+        "oil salt"
       ],
       "connects_b": [
-        "dhania",
         "black",
-        "channa dal"
+        "mullangi",
+        "jeera whole"
       ]
     },
     {
       "name": "seeds",
       "score": 253.83858234979007,
       "connects_a": [
-        "dhania",
-        "wheat",
-        "finger"
+        "bell",
+        "oil salt",
+        "til"
       ],
       "connects_b": [
-        "dhania",
         "black",
-        "channa dal"
+        "mullangi",
+        "hing"
       ]
     },
     {
       "name": "chilli",
       "score": 205.96658148061618,
       "connects_a": [
-        "dhania",
-        "wheat",
-        "greek"
+        "seeds",
+        "bell",
+        "til"
       ],
       "connects_b": [
-        "dhania",
         "black",
-        "rai"
+        "leaves coriander",
+        "seeds"
       ]
     },
     {
       "name": "wheat",
       "score": 165.5089564782052,
       "connects_a": [
-        "dhania",
-        "oil",
-        "demerara"
+        "seeds",
+        "bell",
+        "oil salt"
       ],
       "connects_b": [
-        "dhania",
-        "dal",
-        "finger"
+        "seeds",
+        "oil salt",
+        "til"
       ]
     },
     {
       "name": "dal",
       "score": 128.09484962496674,
       "connects_a": [
-        "dhania",
-        "wheat",
-        "oil salt"
+        "seeds",
+        "oil salt",
+        "til"
       ],
       "connects_b": [
-        "dhania",
-        "rai",
-        "salt coriander"
+        "salt coriander",
+        "leaves coriander",
+        "seeds"
       ]
     },
     {
       "name": "fenugreek",
       "score": 126.37186126331272,
       "connects_a": [
-        "dhania",
-        "wheat",
-        "finger"
+        "seeds",
+        "bell",
+        "oil salt"
       ],
       "connects_b": [
-        "dhania",
         "black",
+        "seeds",
         "rai"
       ]
     },
@@ -103,27 +103,27 @@
       "name": "red",
       "score": 102.37564226125201,
       "connects_a": [
-        "dhania",
+        "seeds",
         "bell",
         "oil salt"
       ],
       "connects_b": [
-        "dhania",
         "black",
-        "rai"
+        "salt coriander",
+        "seeds"
       ]
     },
     {
       "name": "bell",
       "score": 70.31767284086102,
       "connects_a": [
-        "dhania",
-        "wheat",
-        "bell pepper"
+        "beans",
+        "seeds",
+        "oil salt"
       ],
       "connects_b": [
-        "dhania",
-        "fenugreek",
+        "beans",
+        "seeds",
         "oil salt"
       ]
     },
@@ -131,40 +131,40 @@
       "name": "gram",
       "score": 66.02659810978706,
       "connects_a": [
-        "dhania",
         "seeds",
+        "til",
         "powder"
       ],
       "connects_b": [
-        "dhania",
         "channa dal",
-        "dal"
+        "seeds",
+        "til"
       ]
     }
   ],
   "novel_from_a": [
+    {
+      "name": "gram flour",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "kabuli",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "green bell",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
     {
       "name": "onions green",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "rajma",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
       "name": "powder amchur",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "olive",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "masala",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -179,29 +179,49 @@
       "strength": 1
     },
     {
+      "name": "brown",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
       "name": "button",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "virgin",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "green bell",
+      "name": "olive",
       "pairs_with": "dhania",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
+      "name": "bottle gourd",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "asafoetida green",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "channa dal",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
       "name": "sambar",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "fenugreek",
+      "name": "seeds coriander",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "bhindi",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -211,37 +231,17 @@
       "strength": 1
     },
     {
+      "name": "haldi",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
       "name": "arhar dal",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "jeera green",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "urad",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "bottle gourd",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "rai",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "seeds cloves",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "leaves sunflower",
+      "name": "coconut coriander",
       "pairs_with": "dhania",
       "strength": 1
     }

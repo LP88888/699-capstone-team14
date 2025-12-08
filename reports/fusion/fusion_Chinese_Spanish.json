@@ -5,13 +5,13 @@
       "name": "hoisin sauce",
       "score": 110.0841005791393,
       "connects_a": [
-        "rice",
-        "oyster sauce",
-        "canola oil"
+        "shaoxing",
+        "scallions",
+        "sodium soy sauce"
       ],
       "connects_b": [
-        "honey",
-        "canola oil",
+        "rice",
+        "garlic",
         "carrot"
       ]
     },
@@ -20,12 +20,12 @@
       "score": 85.18037842324503,
       "connects_a": [
         "oyster sauce",
-        "canola oil",
-        "ginger"
+        "soy sauce",
+        "scallions"
       ],
       "connects_b": [
-        "canola oil",
-        "shrimp",
+        "taste",
+        "wine vinegar",
         "carrot"
       ]
     },
@@ -33,13 +33,13 @@
       "name": "snow peas",
       "score": 80.03683622855938,
       "connects_a": [
-        "cabbage",
-        "canola oil",
-        "ginger"
+        "soy sauce",
+        "scallions",
+        "rice"
       ],
       "connects_b": [
-        "canola oil",
-        "shrimp",
+        "rice",
+        "bell pepper",
         "carrot"
       ]
     },
@@ -47,13 +47,13 @@
       "name": "inch piece",
       "score": 78.23333547948052,
       "connects_a": [
-        "cabbage",
-        "canola oil",
-        "rice vinegar"
+        "soy sauce",
+        "scallions",
+        "rice"
       ],
       "connects_b": [
-        "canola oil",
-        "more",
+        "rice",
+        "wine vinegar",
         "carrot"
       ]
     },
@@ -61,12 +61,12 @@
       "name": "rice vinegar",
       "score": 76.17423068796336,
       "connects_a": [
-        "rice",
-        "oyster sauce",
-        "canola oil"
+        "scallions",
+        "sodium soy sauce",
+        "rice wine"
       ],
       "connects_b": [
-        "rice",
+        "carrot",
         "honey",
         "canola oil"
       ]
@@ -75,14 +75,14 @@
       "name": "andouille sausage",
       "score": 72.0953003578551,
       "connects_a": [
-        "chicken broth",
-        "canola oil",
-        "shrimp"
+        "rice",
+        "bell pepper",
+        "garlic"
       ],
       "connects_b": [
-        "canola oil",
-        "tomatoes",
-        "shrimp"
+        "rice",
+        "bell pepper",
+        "tomatoes"
       ]
     },
     {
@@ -90,8 +90,8 @@
       "score": 72.08520273535774,
       "connects_a": [
         "oyster sauce",
-        "honey",
-        "ginger"
+        "soy sauce",
+        "scallions"
       ],
       "connects_b": [
         "carrot",
@@ -103,12 +103,12 @@
       "name": "sodium soy sauce",
       "score": 72.0607798228439,
       "connects_a": [
-        "cabbage",
         "oyster sauce",
-        "honey"
+        "scallions",
+        "rice"
       ],
       "connects_b": [
-        "rice",
+        "carrot",
         "honey",
         "canola oil"
       ]
@@ -117,14 +117,14 @@
       "name": "celery",
       "score": 70.17375698782998,
       "connects_a": [
-        "chicken broth",
-        "shrimp",
-        "carrot"
+        "rice",
+        "bell pepper",
+        "garlic"
       ],
       "connects_b": [
-        "tomatoes",
-        "shrimp",
-        "carrot"
+        "parsley",
+        "rice",
+        "bell pepper"
       ]
     },
     {
@@ -132,24 +132,19 @@
       "score": 68.05041079516947,
       "connects_a": [
         "oyster sauce",
-        "canola oil",
-        "chicken broth"
+        "soy sauce",
+        "scallions"
       ],
       "connects_b": [
         "carrot",
-        "chicken stock",
-        "canola oil"
+        "canola oil",
+        "shrimp"
       ]
     }
   ],
   "novel_from_a": [
     {
       "name": "pasta",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "petite",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -164,8 +159,18 @@
       "strength": 1
     },
     {
+      "name": "petite",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "radicchio",
       "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "sodium",
+      "pairs_with": "cloves",
       "strength": 1
     },
     {
@@ -174,12 +179,7 @@
       "strength": 1
     },
     {
-      "name": "piece ginger",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "and finely",
+      "name": "cremini",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -196,17 +196,7 @@
   ],
   "novel_from_b": [
     {
-      "name": "jalapeno chile",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "romano",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "serrano chili",
+      "name": "fire",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -216,32 +206,42 @@
       "strength": 1
     },
     {
-      "name": "reggiano",
+      "name": "beef chuck",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "parmigiano",
+      "name": "leg",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "chipotles",
+      "name": "oregano leaves",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "saffron threads",
+      "name": "bunch cilantro",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "hair pasta",
+      "name": "shells",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "finely parsley",
+      "name": "roasted tomatoes",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "cover",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "san marzano",
       "pairs_with": "cloves",
       "strength": 1
     }

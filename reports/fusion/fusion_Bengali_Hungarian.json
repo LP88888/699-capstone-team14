@@ -5,14 +5,14 @@
       "name": "garam masala",
       "score": 44.24872798456415,
       "connects_a": [
-        "oil",
         "chili powder",
+        "oil",
         "peas"
       ],
       "connects_b": [
-        "tomato paste",
-        "bay leaf",
-        "potatoes"
+        "chicken",
+        "tomatoes",
+        "garlic"
       ]
     },
     {
@@ -23,73 +23,73 @@
         "potatoes"
       ],
       "connects_b": [
-        "wine",
+        "mushrooms",
         "worcestershire sauce",
-        "tomato paste"
+        "paprika"
       ]
     },
     {
       "name": "tumeric",
       "score": 24.06793742519247,
       "connects_a": [
-        "oil",
         "chili powder",
+        "oil",
         "peas"
       ],
       "connects_b": [
-        "chicken breasts",
-        "onion",
-        "tomatoes"
+        "tomatoes",
+        "garlic",
+        "chicken breasts"
       ]
     },
     {
       "name": "turmeric",
       "score": 21.040708314891702,
       "connects_a": [
-        "oil",
         "chili powder",
+        "oil",
         "peas"
       ],
       "connects_b": [
-        "tomato paste",
-        "bay leaf",
-        "vegetable oil"
+        "chicken",
+        "tomatoes",
+        "paprika"
       ]
     },
     {
       "name": "cardamom",
       "score": 20.29931202144538,
       "connects_a": [
-        "dhania",
-        "methi",
+        "seeds",
+        "seeds cloves",
         "chili powder"
       ],
       "connects_b": [
-        "bay leaf",
-        "oil"
+        "oil",
+        "bay leaf"
       ]
     },
     {
       "name": "chili powder",
       "score": 20.23276258071482,
       "connects_a": [
-        "dhania",
         "jeera coriander",
-        "methi"
+        "methi",
+        "oil"
       ],
       "connects_b": [
         "oil",
-        "chicken",
-        "paprika"
+        "paprika",
+        "chicken"
       ]
     },
     {
       "name": "carom",
       "score": 20.033842423648338,
       "connects_a": [
-        "dhania",
-        "wheat",
-        "jeera coriander"
+        "seeds",
+        "fenugreek",
+        "wheat"
       ],
       "connects_b": [
         "oil",
@@ -100,27 +100,27 @@
       "name": "cumin seeds",
       "score": 20.02467690392072,
       "connects_a": [
-        "oil",
         "chili powder",
+        "oil",
         "peas"
       ],
       "connects_b": [
-        "potatoes",
-        "paprika",
-        "oil"
+        "chicken",
+        "tomatoes",
+        "paprika"
       ]
     },
     {
       "name": "chilies",
       "score": 20.011118817925528,
       "connects_a": [
-        "oil",
         "chili powder",
+        "oil",
         "peas"
       ],
       "connects_b": [
         "chicken",
-        "bay leaf",
+        "tomatoes",
         "oil"
       ]
     },
@@ -128,8 +128,8 @@
       "name": "wheat",
       "score": 18.055522524895114,
       "connects_a": [
-        "dhania",
-        "dal",
+        "seeds",
+        "oil salt",
         "fenugreek"
       ],
       "connects_b": [
@@ -160,13 +160,23 @@
       "strength": 1
     },
     {
+      "name": "bell",
+      "pairs_with": "bell pepper",
+      "strength": 1
+    },
+    {
       "name": "palm",
       "pairs_with": "bell pepper",
       "strength": 1
     },
     {
-      "name": "bell",
-      "pairs_with": "bell pepper",
+      "name": "sugar whole",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "wheat",
+      "pairs_with": "flour",
       "strength": 1
     },
     {
@@ -178,16 +188,6 @@
       "name": "finger",
       "pairs_with": "flour",
       "strength": 1
-    },
-    {
-      "name": "sugar whole",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "carom",
-      "pairs_with": "flour",
-      "strength": 1
     }
   ],
   "novel_from_b": [
@@ -197,27 +197,7 @@
       "strength": 1
     },
     {
-      "name": "lard",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "vanilla sugar",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "shortening",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "vanilla",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "ice water",
+      "name": "beef stock",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -232,7 +212,27 @@
       "strength": 1
     },
     {
-      "name": "beef stock",
+      "name": "lard",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "vanilla sugar",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "ice water",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "vanilla",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "shortening",
       "pairs_with": "flour",
       "strength": 1
     },

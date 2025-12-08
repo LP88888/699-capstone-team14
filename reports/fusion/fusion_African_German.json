@@ -5,13 +5,13 @@
       "name": "garam masala",
       "score": 98.55398505652924,
       "connects_a": [
-        "ginger",
-        "tomato paste",
+        "lemon juice",
+        "chicken",
         "turmeric"
       ],
       "connects_b": [
-        "cinnamon",
-        "bay leaf",
+        "lemon juice",
+        "garlic",
         "vegetable oil"
       ]
     },
@@ -19,13 +19,13 @@
       "name": "tomato paste",
       "score": 63.406524923509025,
       "connects_a": [
-        "carrot",
-        "cumin",
-        "paprika"
+        "parsley",
+        "turmeric",
+        "bell pepper"
       ],
       "connects_b": [
-        "wine",
-        "bay leaf",
+        "parsley",
+        "cloves",
         "carrot"
       ]
     },
@@ -33,13 +33,13 @@
       "name": "ribs celery",
       "score": 54.39354610288529,
       "connects_a": [
-        "tomato paste",
-        "carrot",
-        "bell pepper"
+        "parsley",
+        "scallions",
+        "chicken"
       ],
       "connects_b": [
-        "wine",
-        "bay leaf",
+        "parsley",
+        "cloves",
         "carrot"
       ]
     },
@@ -47,12 +47,12 @@
       "name": "bay leaf",
       "score": 50.44997739963467,
       "connects_a": [
-        "tomato paste",
-        "carrot",
-        "cumin"
+        "parsley",
+        "turmeric",
+        "coriander seeds"
       ],
       "connects_b": [
-        "wine",
+        "parsley",
         "carrot",
         "bacon"
       ]
@@ -61,13 +61,13 @@
       "name": "celery",
       "score": 48.11914764879769,
       "connects_a": [
-        "tomato paste",
-        "carrot",
-        "paprika"
+        "parsley",
+        "bell pepper",
+        "tomatoes"
       ],
       "connects_b": [
-        "bay leaf",
-        "carrot",
+        "parsley",
+        "garlic",
         "bacon"
       ]
     },
@@ -75,41 +75,41 @@
       "name": "sprigs thyme",
       "score": 48.10211757944757,
       "connects_a": [
-        "tomato paste",
         "roughly",
-        "carrot"
+        "lemon",
+        "leaves"
       ],
       "connects_b": [
-        "wine",
         "leaves",
-        "bay leaf"
+        "carrot",
+        "wine"
       ]
     },
     {
       "name": "allspice",
       "score": 45.200493238408555,
       "connects_a": [
-        "ginger",
         "roughly",
-        "cinnamon"
+        "cloves",
+        "paprika"
       ],
       "connects_b": [
-        "nutmeg",
         "cinnamon",
-        "cider vinegar"
+        "cider vinegar",
+        "cloves"
       ]
     },
     {
       "name": "palm",
       "score": 44.169308678586994,
       "connects_a": [
-        "cumin",
-        "bell pepper",
-        "cloves"
+        "parsley",
+        "scallions",
+        "bell pepper"
       ],
       "connects_b": [
         "onion",
-        "olive oil",
+        "cloves",
         "parsley"
       ]
     },
@@ -117,14 +117,14 @@
       "name": "chiles",
       "score": 42.20045181617278,
       "connects_a": [
-        "ginger",
         "roughly",
-        "vegetable oil"
+        "turmeric",
+        "cloves"
       ],
       "connects_b": [
-        "2",
+        "cloves",
         "vegetable oil",
-        "cloves"
+        "2"
       ]
     },
     {
@@ -132,54 +132,39 @@
       "score": 40.26509982896944,
       "connects_a": [
         "roughly",
-        "turmeric",
-        "carrot"
+        "chicken",
+        "turmeric"
       ],
       "connects_b": [
-        "cider vinegar",
+        "carrot",
         "wine",
-        "carrot"
+        "cider vinegar"
       ]
     }
   ],
   "novel_from_a": [
-    {
-      "name": "olives",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "couscous",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "squid",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "kalamata olives",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "handful pine nuts",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
     {
       "name": "artichokes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "brussels sprouts",
+      "name": "turkey sausage",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "cherry tomatoes",
+      "name": "pinch saffron",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "fennel bulb",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "canned tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -192,6 +177,21 @@
       "name": "beefsteak tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
+    },
+    {
+      "name": "plum tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cherry tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "brussels sprouts",
+      "pairs_with": "olive oil",
+      "strength": 1
     }
   ],
   "novel_from_b": [
@@ -201,17 +201,12 @@
       "strength": 1
     },
     {
-      "name": "escarole",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "pork shoulder",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
       "name": "beef chuck",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "escarole",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -221,27 +216,32 @@
       "strength": 1
     },
     {
+      "name": "pork shoulder",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
       "name": "almond extract",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "muscovado sugar",
+      "name": "graham cracker crumbs",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "percent milk",
+      "name": "granny smith apples",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "confectioners",
+      "name": "almond flour",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "whole milk",
+      "name": "room temp",
       "pairs_with": "butter",
       "strength": 1
     }
