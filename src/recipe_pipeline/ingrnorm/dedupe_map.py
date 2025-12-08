@@ -31,8 +31,60 @@ _DROP_TOKENS = {
     "whole",
     "all",
     "sauce",
+    "piece",
+    "water",
+    "cut",
+    "peeled",
+    "water water",
+    "salt",
+    "for",
+    "minced",
+    "grated",
+    "slices",
+    "baking",
+    "cup",
+    "cups",
+    "thinly",
+    "sifted",
+    "melted",
+    "stick",
+    "28-ounce",
+    "couple",
+    "1 (",
+    "halved",
+    "sifted",
+    "plus",
+    "2"
+    "inch piece",
+    "seeded",
+    "turns",
+    "28-ounce",
+    "sugar",
+    "wrappers ",
+    "purpose",
+    "all",
+    "degrees",
+    "one",
+    "two",
+    "see"
+    "disclaimer",
+    "note",
+    "ingredient",
+    "ingredient note",
+    "network",
+    "eyeball",
+    "split",
+    "legs",
+    "thighs",
+    "food",
+    "inspirations",
+    "hellman",
+    "kitchen",
+    "pods"
+    
+
 }
-_DROP_SUBSTRINGS = {"spoon"}
+_DROP_SUBSTRINGS = {"spoon", "baking", "ounce", "pound", "cup", "slice",}
 
 
 def _dedupe_preserve_order(tokens):
@@ -64,7 +116,13 @@ def load_jsonl_map(path: Union[str, Path]) -> Dict[str, str]:
             if not line.strip():
                 continue
             obj = json.loads(line)
-            mapping[str(obj.get("from",""))] = str(obj.get("to",""))
+            raw_from = str(obj.get("from", "")).strip()
+            raw_to = str(obj.get("to", "")).strip()
+            if not raw_from or not raw_to:
+                continue
+            # store both original and lowercase key for flexible lookups
+            mapping[raw_from] = raw_to
+            mapping[raw_from.lower()] = raw_to
     return mapping
 
 def write_jsonl_map(mapping: Dict[str, str], out_path: Union[str, Path]) -> Path:

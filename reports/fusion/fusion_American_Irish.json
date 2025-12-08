@@ -1,0 +1,219 @@
+{
+  "pair": "American + Irish",
+  "bridges": [
+    {
+      "name": "confectioners",
+      "score": 90.46942996055641,
+      "connects_a": [
+        "milk",
+        "1",
+        "2"
+      ],
+      "connects_b": [
+        "milk",
+        "2",
+        "purpose flour"
+      ]
+    },
+    {
+      "name": "at",
+      "score": 81.32263347263613,
+      "connects_a": [
+        "milk",
+        "1",
+        "purpose flour"
+      ],
+      "connects_b": [
+        "milk",
+        "purpose flour",
+        "cream"
+      ]
+    },
+    {
+      "name": "sticks",
+      "score": 72.25464431093522,
+      "connects_a": [
+        "1",
+        "2",
+        "purpose flour"
+      ],
+      "connects_b": [
+        "2",
+        "purpose flour",
+        "buttermilk"
+      ]
+    },
+    {
+      "name": "whole milk",
+      "score": 64.18742510813567,
+      "connects_a": [
+        "2",
+        "purpose flour",
+        "vanilla extract"
+      ],
+      "connects_b": [
+        "2",
+        "purpose flour",
+        "vanilla extract"
+      ]
+    },
+    {
+      "name": "filling",
+      "score": 64.0983028836593,
+      "connects_a": [
+        "milk",
+        "purpose flour",
+        "flour"
+      ],
+      "connects_b": [
+        "milk",
+        "purpose flour",
+        "flour"
+      ]
+    },
+    {
+      "name": "vanilla extract",
+      "score": 64.01082678529114,
+      "connects_a": [
+        "milk",
+        "1",
+        "purpose flour"
+      ],
+      "connects_b": [
+        "coffee",
+        "milk",
+        "purpose flour"
+      ]
+    },
+    {
+      "name": "tomato paste",
+      "score": 56.36135548756358,
+      "connects_a": [
+        "bell pepper",
+        "cumin",
+        "tomatoes"
+      ],
+      "connects_b": [
+        "beef",
+        "thyme",
+        "carrot"
+      ]
+    },
+    {
+      "name": "ice water",
+      "score": 56.2854667456482,
+      "connects_a": [
+        "1",
+        "purpose flour",
+        "flour"
+      ],
+      "connects_b": [
+        "purpose flour",
+        "flour",
+        "vanilla extract"
+      ]
+    },
+    {
+      "name": "cake flour",
+      "score": 56.069083327465584,
+      "connects_a": [
+        "milk",
+        "1",
+        "2"
+      ],
+      "connects_b": [
+        "milk",
+        "2",
+        "buttermilk"
+      ]
+    },
+    {
+      "name": "vegetable shortening",
+      "score": 49.046639295489214,
+      "connects_a": [
+        "milk",
+        "2",
+        "purpose flour"
+      ],
+      "connects_b": [
+        "milk",
+        "2",
+        "purpose flour"
+      ]
+    }
+  ],
+  "novel_from_a": [
+    {
+      "name": "radicchio",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "mussels",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "linguini",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "romano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "for seasoning",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "morel mushrooms",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "roma",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "reggiano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pinenuts",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "salami",
+      "pairs_with": "olive oil",
+      "strength": 1
+    }
+  ],
+  "novel_from_b": [
+    {
+      "name": "lamb shoulder",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "thigh",
+      "pairs_with": "bell pepper",
+      "strength": 1
+    },
+    {
+      "name": "irish",
+      "pairs_with": "cream",
+      "strength": 1
+    },
+    {
+      "name": "thigh",
+      "pairs_with": "garlic",
+      "strength": 1
+    }
+  ]
+}
