@@ -5,13 +5,13 @@
       "name": "confectioners",
       "score": 143.74587204843962,
       "connects_a": [
-        "egg",
-        "nutmeg",
-        "more"
+        "1",
+        "butter",
+        "milk"
       ],
       "connects_b": [
-        "egg",
-        "nutmeg",
+        "almonds",
+        "butter",
         "milk"
       ]
     },
@@ -19,132 +19,162 @@
       "name": "sticks",
       "score": 99.35013592753592,
       "connects_a": [
-        "egg",
-        "nutmeg",
-        "more"
+        "1",
+        "butter",
+        "purpose flour"
       ],
       "connects_b": [
-        "egg",
-        "nutmeg",
-        "apples"
+        "almonds",
+        "butter",
+        "purpose flour"
       ]
     },
     {
       "name": "vanilla extract",
       "score": 97.54030748234841,
       "connects_a": [
-        "egg",
-        "nutmeg",
+        "1",
+        "butter",
         "milk"
       ],
       "connects_b": [
-        "egg",
-        "nutmeg",
-        "apples"
+        "almonds",
+        "butter",
+        "milk"
       ]
     },
     {
       "name": "at",
       "score": 90.35848163626235,
       "connects_a": [
-        "egg",
-        "more",
+        "1",
+        "butter",
         "milk"
       ],
       "connects_b": [
-        "egg",
+        "butter",
         "milk",
-        "vanilla extract"
+        "purpose flour"
       ]
     },
     {
       "name": "whole milk",
       "score": 90.26356655831579,
       "connects_a": [
-        "egg",
-        "nutmeg",
-        "more"
+        "butter",
+        "purpose flour",
+        "2"
       ],
       "connects_b": [
-        "egg",
-        "nutmeg",
-        "cinnamon"
+        "butter",
+        "purpose flour",
+        "egg"
       ]
     },
     {
       "name": "ice water",
       "score": 80.40780963664028,
       "connects_a": [
-        "egg",
-        "nutmeg",
-        "more"
+        "1",
+        "butter",
+        "purpose flour"
       ],
       "connects_b": [
-        "egg",
-        "nutmeg",
-        "cinnamon"
+        "butter",
+        "purpose flour",
+        "egg"
       ]
     },
     {
       "name": "filling",
       "score": 72.1105907441167,
       "connects_a": [
-        "egg",
+        "butter",
         "milk",
-        "vanilla extract"
+        "purpose flour"
       ],
       "connects_b": [
-        "egg",
+        "butter",
         "milk",
-        "cinnamon"
+        "purpose flour"
       ]
     },
     {
       "name": "cake flour",
       "score": 72.08882142102718,
       "connects_a": [
-        "egg",
-        "milk",
-        "vanilla extract"
+        "1",
+        "butter",
+        "milk"
       ],
       "connects_b": [
-        "egg",
+        "butter",
         "milk",
-        "vanilla extract"
+        "egg yolks"
       ]
     },
     {
       "name": "veal",
       "score": 70.19078357250338,
       "connects_a": [
-        "egg",
-        "wine",
-        "milk"
+        "parsley",
+        "milk",
+        "wine"
       ],
       "connects_b": [
-        "egg",
-        "wine",
-        "milk"
+        "parsley",
+        "milk",
+        "wine"
       ]
     },
     {
       "name": "room temp",
       "score": 70.05081699553205,
       "connects_a": [
-        "egg",
-        "nutmeg",
-        "milk"
+        "butter",
+        "milk",
+        "purpose flour"
       ],
       "connects_b": [
-        "egg",
-        "nutmeg",
-        "milk"
+        "butter",
+        "milk",
+        "purpose flour"
       ]
     }
   ],
   "novel_from_a": [
     {
+      "name": "canned tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "spun",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "mussels",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "plum tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "head fennel",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cremini",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "turn",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -159,37 +189,7 @@
       "strength": 1
     },
     {
-      "name": "turn",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "for drizzling",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "mussels",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "spun",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "arugula leaves",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "plum tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cremini",
       "pairs_with": "olive oil",
       "strength": 1
     }
@@ -198,16 +198,6 @@
     {
       "name": "montreal steak",
       "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "escarole",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "pork shoulder",
-      "pairs_with": "cloves",
       "strength": 1
     },
     {
@@ -221,27 +211,37 @@
       "strength": 1
     },
     {
+      "name": "escarole",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
       "name": "veal",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "muscovado sugar",
+      "name": "pork shoulder",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "granny smith apples",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "calvados",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "percent milk",
+      "name": "almond flour",
       "pairs_with": "butter",
       "strength": 1
     },
     {
       "name": "phyllo dough",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "filling",
       "pairs_with": "butter",
       "strength": 1
     }

@@ -5,83 +5,83 @@
       "name": "confectioners",
       "score": 99.51637295661206,
       "connects_a": [
-        "egg",
-        "nutmeg",
-        "more"
+        "1",
+        "butter",
+        "milk"
       ],
       "connects_b": [
-        "egg",
-        "more",
-        "milk"
+        "butter",
+        "milk",
+        "purpose flour"
       ]
     },
     {
       "name": "at",
       "score": 90.35848163626235,
       "connects_a": [
-        "egg",
-        "more",
+        "1",
+        "butter",
         "milk"
       ],
       "connects_b": [
-        "egg",
-        "more",
-        "milk"
+        "butter",
+        "milk",
+        "purpose flour"
       ]
     },
     {
       "name": "sticks",
       "score": 81.28647484980212,
       "connects_a": [
-        "egg",
-        "nutmeg",
-        "more"
+        "1",
+        "butter",
+        "purpose flour"
       ],
       "connects_b": [
-        "egg",
+        "buttermilk",
         "raisins",
-        "buttermilk"
+        "butter"
       ]
     },
     {
       "name": "whole milk",
       "score": 80.2342813851696,
       "connects_a": [
-        "egg",
-        "nutmeg",
-        "more"
+        "butter",
+        "purpose flour",
+        "2"
       ],
       "connects_b": [
-        "egg",
-        "more",
-        "vanilla extract"
+        "butter",
+        "purpose flour",
+        "kosher sea salt"
       ]
     },
     {
       "name": "vanilla extract",
       "score": 73.15523061176131,
       "connects_a": [
-        "egg",
-        "nutmeg",
+        "1",
+        "butter",
         "milk"
       ],
       "connects_b": [
-        "egg",
+        "buttermilk",
         "raisins",
-        "buttermilk"
+        "butter"
       ]
     },
     {
       "name": "tomato paste",
       "score": 72.46459991258175,
       "connects_a": [
-        "wine",
-        "worcestershire sauce",
-        "carrot"
+        "parsley",
+        "russet potatoes",
+        "worcestershire sauce"
       ],
       "connects_b": [
-        "carrot",
-        "beef",
+        "parsley",
+        "russet potatoes",
         "cloves"
       ]
     },
@@ -89,26 +89,26 @@
       "name": "ice water",
       "score": 70.35683343206024,
       "connects_a": [
-        "egg",
-        "nutmeg",
-        "more"
+        "1",
+        "butter",
+        "purpose flour"
       ],
       "connects_b": [
-        "egg",
-        "more",
-        "vanilla extract"
+        "butter",
+        "purpose flour",
+        "egg yolks"
       ]
     },
     {
       "name": "veal",
       "score": 70.19078357250338,
       "connects_a": [
-        "egg",
-        "wine",
-        "milk"
+        "parsley",
+        "milk",
+        "wine"
       ],
       "connects_b": [
-        "egg",
+        "parsley",
         "milk",
         "carrot"
       ]
@@ -117,27 +117,27 @@
       "name": "filling",
       "score": 64.0983028836593,
       "connects_a": [
-        "egg",
+        "butter",
         "milk",
-        "vanilla extract"
+        "purpose flour"
       ],
       "connects_b": [
-        "egg",
+        "butter",
         "milk",
-        "vanilla extract"
+        "purpose flour"
       ]
     },
     {
       "name": "cake flour",
       "score": 64.07895237424638,
       "connects_a": [
-        "egg",
-        "milk",
-        "vanilla extract"
+        "1",
+        "butter",
+        "milk"
       ],
       "connects_b": [
-        "egg",
         "buttermilk",
+        "butter",
         "milk"
       ]
     }
@@ -149,12 +149,22 @@
       "strength": 1
     },
     {
-      "name": "prosciutto",
+      "name": "turn",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
       "name": "cremini",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "canned tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "crusty bread",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -169,27 +179,17 @@
       "strength": 1
     },
     {
-      "name": "crusty bread",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "arugula leaves",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "turn",
+      "name": "prosciutto",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "ribs celery",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "for drizzling",
+      "name": "chiles",
       "pairs_with": "cloves",
       "strength": 1
     }
@@ -197,6 +197,11 @@
   "novel_from_b": [
     {
       "name": "olives",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "sherry vinegar",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -211,8 +216,18 @@
       "strength": 1
     },
     {
-      "name": "sherry vinegar",
-      "pairs_with": "olive oil",
+      "name": "beef chuck",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "leg",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "allspice berries",
+      "pairs_with": "cloves",
       "strength": 1
     },
     {
@@ -226,22 +241,7 @@
       "strength": 1
     },
     {
-      "name": "sirloin",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "pork shoulder",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "hair pasta",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "finely parsley",
+      "name": "slab bacon",
       "pairs_with": "cloves",
       "strength": 1
     }

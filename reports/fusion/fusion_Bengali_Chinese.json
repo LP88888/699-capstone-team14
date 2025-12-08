@@ -10,20 +10,20 @@
       ],
       "connects_b": [
         "oyster sauce",
-        "ginger",
-        "shrimp"
+        "soy sauce",
+        "scallions"
       ]
     },
     {
       "name": "garam masala",
       "score": 24.135669809762263,
       "connects_a": [
-        "oil",
         "chili powder",
+        "oil",
         "peas"
       ],
       "connects_b": [
-        "ginger",
+        "garlic",
         "vegetable oil",
         "chicken breasts"
       ]
@@ -35,30 +35,30 @@
         "oil"
       ],
       "connects_b": [
-        "shrimp",
-        "mushrooms",
-        "chicken broth"
+        "shaoxing",
+        "scallions",
+        "sodium soy sauce"
       ]
     },
     {
       "name": "chili pepper",
       "score": 22.008334996937496,
       "connects_a": [
-        "oil",
-        "chili powder"
+        "chili powder",
+        "oil"
       ],
       "connects_b": [
-        "ginger",
-        "rice vinegar",
-        "shaoxing"
+        "shaoxing",
+        "soy sauce",
+        "corn starch"
       ]
     },
     {
       "name": "cardamom",
       "score": 20.29931202144538,
       "connects_a": [
-        "dhania",
-        "methi",
+        "seeds",
+        "seeds cloves",
         "chili powder"
       ],
       "connects_b": [
@@ -70,14 +70,14 @@
       "name": "tumeric",
       "score": 20.056614520993726,
       "connects_a": [
-        "oil",
         "chili powder",
+        "oil",
         "peas"
       ],
       "connects_b": [
-        "ginger",
+        "garlic",
         "chicken breasts",
-        "onion"
+        "ginger"
       ]
     },
     {
@@ -87,18 +87,18 @@
         "oil"
       ],
       "connects_b": [
-        "mushrooms",
-        "rice",
-        "oyster sauce"
+        "shaoxing",
+        "scallions",
+        "sodium soy sauce"
       ]
     },
     {
       "name": "carom",
       "score": 20.033842423648338,
       "connects_a": [
-        "dhania",
-        "wheat",
-        "jeera coriander"
+        "seeds",
+        "fenugreek",
+        "wheat"
       ],
       "connects_b": [
         "oil",
@@ -112,17 +112,17 @@
         "oil"
       ],
       "connects_b": [
-        "mushrooms",
-        "rice",
-        "oyster sauce"
+        "shaoxing",
+        "scallions",
+        "rice wine"
       ]
     },
     {
       "name": "wheat",
       "score": 18.055522524895114,
       "connects_a": [
-        "dhania",
-        "dal",
+        "seeds",
+        "oil salt",
         "fenugreek"
       ],
       "connects_b": [
@@ -138,13 +138,18 @@
       "strength": 1
     },
     {
+      "name": "fenugreek seeds",
+      "pairs_with": "ginger",
+      "strength": 1
+    },
+    {
       "name": "mustard seeds",
       "pairs_with": "ginger",
       "strength": 1
     },
     {
-      "name": "fenugreek seeds",
-      "pairs_with": "ginger",
+      "name": "sugar whole",
+      "pairs_with": "flour",
       "strength": 1
     },
     {
@@ -158,22 +163,17 @@
       "strength": 1
     },
     {
-      "name": "sugar whole",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
       "name": "carom",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "water coriander",
+      "name": "fenugreek seeds",
       "pairs_with": "leaves",
       "strength": 1
     },
     {
-      "name": "fenugreek seeds",
+      "name": "water coriander",
       "pairs_with": "leaves",
       "strength": 1
     },
@@ -185,12 +185,37 @@
   ],
   "novel_from_b": [
     {
-      "name": "leaves whole",
+      "name": "green bell",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "french",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "button",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
       "name": "olive",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "leaves whole",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "fruit",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "pepper powder",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -205,32 +230,7 @@
       "strength": 1
     },
     {
-      "name": "button",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
       "name": "virgin",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "green bell",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "pepper powder",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "fruit",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "french",
       "pairs_with": "dhania",
       "strength": 1
     }

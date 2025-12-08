@@ -6,13 +6,13 @@
       "score": 30.21073824069619,
       "connects_a": [
         "jalapeno",
-        "avocado",
-        "cilantro"
+        "lime juice",
+        "lime"
       ],
       "connects_b": [
-        "dhania",
+        "seeds",
         "fenugreek",
-        "seeds"
+        "powder"
       ]
     },
     {
@@ -20,12 +20,12 @@
       "score": 20.213368320248858,
       "connects_a": [
         "cilantro leaves",
-        "chicken breasts",
-        "cilantro"
+        "lime juice",
+        "lime"
       ],
       "connects_b": [
-        "dhania",
         "rai",
+        "dhania",
         "dal"
       ]
     },
@@ -33,9 +33,9 @@
       "name": "monterey jack cheese",
       "score": 20.005703038280203,
       "connects_a": [
-        "salsa",
-        "flour tortillas",
-        "cumin"
+        "beans",
+        ")",
+        "salsa"
       ],
       "connects_b": [
         "beans",
@@ -48,11 +48,11 @@
       "connects_a": [
         "jalapeno",
         "salsa",
-        "flour tortillas"
+        "cumin"
       ],
       "connects_b": [
-        "dhania",
         "oil",
+        "dhania",
         "gram"
       ]
     },
@@ -60,9 +60,9 @@
       "name": "garam masala",
       "score": 18.101752357321697,
       "connects_a": [
-        "cinnamon",
-        "vegetable oil",
-        "cumin"
+        "tomatoes",
+        "garlic",
+        "vegetable oil"
       ],
       "connects_b": [
         "onion",
@@ -73,13 +73,13 @@
       "name": "can",
       "score": 18.073421400104678,
       "connects_a": [
-        "cumin",
-        "corn",
-        ")"
+        ")",
+        "beans",
+        "corn"
       ],
       "connects_b": [
-        "beans",
         ")",
+        "beans",
         "("
       ]
     },
@@ -87,9 +87,9 @@
       "name": "coriander powder",
       "score": 18.035148427951754,
       "connects_a": [
-        "cinnamon",
-        "cumin",
-        "onion"
+        "leaves",
+        "tomatoes",
+        "garlic"
       ],
       "connects_b": [
         "onion",
@@ -101,8 +101,8 @@
       "name": "corn tortillas",
       "score": 17.059678030114526,
       "connects_a": [
-        "more",
         "jalapeno",
+        "tomatillos",
         "salsa"
       ],
       "connects_b": [
@@ -113,9 +113,9 @@
       "name": "salsa",
       "score": 16.04688160201524,
       "connects_a": [
-        "jalapeno",
         "beans",
-        "flour tortillas"
+        "cilantro",
+        "jalapeno"
       ],
       "connects_b": [
         "beans"
@@ -125,9 +125,9 @@
       "name": "cumin",
       "score": 15.257739031592948,
       "connects_a": [
+        "beans",
         "jalapeno",
-        "salsa",
-        "beans"
+        "tomatillos"
       ],
       "connects_b": [
         "beans"
@@ -136,17 +136,27 @@
   ],
   "novel_from_a": [
     {
+      "name": "kabuli",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "green bell",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
       "name": "onions green",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "rajma",
+      "name": "olive",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "olive",
+      "name": "rajma",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -161,27 +171,17 @@
       "strength": 1
     },
     {
-      "name": "green bell",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "kabuli",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "tomatillos",
+      "name": "fire",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "tomato paste",
+      "name": "in juice",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "finely oregano",
+      "name": "corn tortillas",
       "pairs_with": "onion",
       "strength": 1
     }
@@ -223,12 +223,12 @@
       "strength": 1
     },
     {
-      "name": "moringa",
+      "name": "pudina salt",
       "pairs_with": "leaves",
       "strength": 1
     },
     {
-      "name": "pudina salt",
+      "name": "moringa",
       "pairs_with": "leaves",
       "strength": 1
     },

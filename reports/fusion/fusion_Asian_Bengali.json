@@ -6,8 +6,8 @@
       "score": 32.34138931239817,
       "connects_a": [
         "oyster sauce",
-        "ginger",
-        "shrimp"
+        "soy sauce",
+        "scallions"
       ],
       "connects_b": [
         "dhania",
@@ -18,13 +18,13 @@
       "name": "garam masala",
       "score": 24.135669809762263,
       "connects_a": [
-        "ginger",
+        "garlic",
         "vegetable oil",
         "chicken breasts"
       ],
       "connects_b": [
-        "oil",
         "chili powder",
+        "oil",
         "peas"
       ]
     },
@@ -32,26 +32,26 @@
       "name": "cilantro",
       "score": 22.127548343206758,
       "connects_a": [
-        "ginger",
-        "peanuts",
-        "rice vinegar"
+        "scallions",
+        "sodium soy sauce",
+        "fish sauce"
       ],
       "connects_b": [
-        "chili powder",
-        "beans"
+        "beans",
+        "chili powder"
       ]
     },
     {
       "name": "jalapeno peppers",
       "score": 22.021520801077706,
       "connects_a": [
-        "cabbage",
-        "shrimp",
-        "peanut oil"
+        "scallions",
+        "rice",
+        "bell pepper"
       ],
       "connects_b": [
-        "chili powder",
-        "beans"
+        "beans",
+        "chili powder"
       ]
     },
     {
@@ -61,22 +61,22 @@
         "peanuts"
       ],
       "connects_b": [
-        "chili powder",
-        "peas",
-        "wheat"
+        "curd",
+        "wheat",
+        "powder salt"
       ]
     },
     {
       "name": "tumeric",
       "score": 20.056614520993726,
       "connects_a": [
-        "ginger",
+        "garlic",
         "chicken breasts",
-        "cilantro"
+        "ginger"
       ],
       "connects_b": [
-        "oil",
         "chili powder",
+        "oil",
         "peas"
       ]
     },
@@ -84,9 +84,9 @@
       "name": "soaked",
       "score": 20.051318840911957,
       "connects_a": [
-        "canola oil",
-        "rice vinegar",
-        "mushrooms"
+        "mushrooms",
+        "cornstarch",
+        "fish sauce"
       ],
       "connects_b": [
         "beans",
@@ -97,27 +97,27 @@
       "name": "chili pepper",
       "score": 20.007577269943177,
       "connects_a": [
-        "ginger",
-        "rice vinegar",
-        "peanut oil"
+        "soy sauce",
+        "fish sauce",
+        "garlic"
       ],
       "connects_b": [
-        "oil",
-        "chili powder"
+        "chili powder",
+        "oil"
       ]
     },
     {
       "name": "mango",
       "score": 18.126442944417715,
       "connects_a": [
-        "lime",
         "cilantro",
-        "lime juice"
+        "lime juice",
+        "lime"
       ],
       "connects_b": [
-        "dhania",
-        "wheat",
-        "fenugreek"
+        "seeds",
+        "fenugreek",
+        "wheat"
       ]
     },
     {
@@ -125,8 +125,8 @@
       "score": 17.066126709896892,
       "connects_a": [
         "oyster sauce",
-        "canola oil",
-        "ginger"
+        "soy sauce",
+        "scallions"
       ],
       "connects_b": [
         "mustard"
@@ -135,27 +135,7 @@
   ],
   "novel_from_a": [
     {
-      "name": "haldi",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "olive",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "black",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "button",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "virgin",
+      "name": "gram flour",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -165,7 +145,17 @@
       "strength": 1
     },
     {
-      "name": "pepper powder",
+      "name": "french",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "button",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "olive",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -175,12 +165,22 @@
       "strength": 1
     },
     {
-      "name": "french",
+      "name": "haldi",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "gram flour",
+      "name": "pepper powder",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "black",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "virgin",
       "pairs_with": "dhania",
       "strength": 1
     }
@@ -222,12 +222,12 @@
       "strength": 1
     },
     {
-      "name": "water coriander",
+      "name": "fenugreek seeds",
       "pairs_with": "leaves",
       "strength": 1
     },
     {
-      "name": "fenugreek seeds",
+      "name": "water coriander",
       "pairs_with": "leaves",
       "strength": 1
     },

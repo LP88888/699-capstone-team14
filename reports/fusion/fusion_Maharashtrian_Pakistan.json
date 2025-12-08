@@ -5,14 +5,14 @@
       "name": "cardamom",
       "score": 146.15504655440674,
       "connects_a": [
-        "dhania",
-        "chili powder",
-        "peas"
+        "seeds",
+        "turmeric",
+        "chili powder"
       ],
       "connects_b": [
-        "basmati rice",
-        "ginger",
-        "tumeric"
+        "garam masala",
+        "turmeric",
+        "cinnamon sticks"
       ]
     },
     {
@@ -24,9 +24,9 @@
         "peas"
       ],
       "connects_b": [
-        "coriander",
-        "peas",
-        "chili powder"
+        "cinnamon sticks",
+        "tomatoes",
+        "cardamom"
       ]
     },
     {
@@ -34,13 +34,13 @@
       "score": 126.15546449470055,
       "connects_a": [
         "turmeric",
-        "coconut",
-        "chili powder"
+        "chili powder",
+        "peas"
       ],
       "connects_b": [
-        "garam masala",
-        "coriander",
-        "peas"
+        "cinnamon sticks",
+        "tomatoes",
+        "cardamom"
       ]
     },
     {
@@ -48,13 +48,13 @@
       "score": 114.08878814839971,
       "connects_a": [
         "turmeric",
-        "coconut",
-        "chili powder"
+        "chili powder",
+        "peas"
       ],
       "connects_b": [
-        "garam masala",
-        "coriander",
-        "peas"
+        "cinnamon sticks",
+        "tomatoes",
+        "vegetable oil"
       ]
     },
     {
@@ -66,79 +66,79 @@
         "peas"
       ],
       "connects_b": [
-        "garam masala",
-        "chili powder",
-        "peas"
+        "cinnamon sticks",
+        "tomatoes",
+        "cardamom"
       ]
     },
     {
       "name": "dhania",
       "score": 81.11021679143388,
       "connects_a": [
-        "(",
-        "chili powder",
+        "semolina",
+        "hing",
         "peas"
       ],
       "connects_b": [
-        "cardamom",
         "chili powder",
-        "peas"
+        "peas",
+        "cardamom"
       ]
     },
     {
       "name": "turmeric",
       "score": 80.15507929482553,
       "connects_a": [
+        "chili powder",
         "oil",
-        "coconut",
         "peas"
       ],
       "connects_b": [
-        "garam masala",
-        "coriander",
-        "peas"
+        "cinnamon sticks",
+        "tomatoes",
+        "cardamom"
       ]
     },
     {
       "name": "tumeric",
       "score": 72.2038122755774,
       "connects_a": [
-        "oil",
         "chili powder",
+        "oil",
         "peas"
       ],
       "connects_b": [
-        "ginger",
-        "cardamom",
-        "cinnamon"
+        "garam masala",
+        "mustard seeds",
+        "cayenne pepper"
       ]
     },
     {
       "name": "oil",
       "score": 70.33846744975115,
       "connects_a": [
-        "wheat",
-        "dal",
-        "gram flour"
+        "turmeric",
+        "gram",
+        "chili powder"
       ],
       "connects_b": [
-        "basmati rice",
-        "tumeric",
-        "cardamom"
+        "garam masala",
+        "turmeric",
+        "mustard seeds"
       ]
     },
     {
       "name": "chili powder",
       "score": 65.75647838732317,
       "connects_a": [
-        "dhania",
-        "jeera coriander",
-        "gram"
+        "turmeric",
+        "gram",
+        "jeera coriander"
       ],
       "connects_b": [
-        "tumeric",
-        "cardamom",
-        "cumin"
+        "garam masala",
+        "turmeric",
+        "mustard seeds"
       ]
     }
   ],
@@ -149,17 +149,7 @@
       "strength": 1
     },
     {
-      "name": "badi",
-      "pairs_with": "cardamom",
-      "strength": 1
-    },
-    {
-      "name": "seeds cloves",
-      "pairs_with": "cardamom",
-      "strength": 1
-    },
-    {
-      "name": "leaf",
+      "name": "chilli",
       "pairs_with": "cardamom",
       "strength": 1
     },
@@ -169,17 +159,17 @@
       "strength": 1
     },
     {
+      "name": "badi",
+      "pairs_with": "cardamom",
+      "strength": 1
+    },
+    {
       "name": "laung whole",
       "pairs_with": "cardamom",
       "strength": 1
     },
     {
-      "name": "chilli",
-      "pairs_with": "cardamom",
-      "strength": 1
-    },
-    {
-      "name": "carom",
+      "name": "leaf",
       "pairs_with": "cardamom",
       "strength": 1
     },
@@ -189,7 +179,17 @@
       "strength": 1
     },
     {
-      "name": "oil coriander",
+      "name": "carom",
+      "pairs_with": "cardamom",
+      "strength": 1
+    },
+    {
+      "name": "seeds cloves",
+      "pairs_with": "cardamom",
+      "strength": 1
+    },
+    {
+      "name": "salt coriander",
       "pairs_with": "leaves",
       "strength": 1
     }
@@ -201,12 +201,7 @@
       "strength": 1
     },
     {
-      "name": "shortening",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "pastry flour",
+      "name": "buttermilk",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -216,12 +211,12 @@
       "strength": 1
     },
     {
-      "name": "applesauce",
+      "name": "pastry flour",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "buttermilk",
+      "name": "applesauce",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -231,17 +226,22 @@
       "strength": 1
     },
     {
+      "name": "shortening",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
       "name": "pomegranate",
       "pairs_with": "seeds",
       "strength": 1
     },
     {
-      "name": "fenugreek seeds",
+      "name": "asafoetida",
       "pairs_with": "leaves",
       "strength": 1
     },
     {
-      "name": "asafoetida",
+      "name": "fenugreek seeds",
       "pairs_with": "leaves",
       "strength": 1
     }

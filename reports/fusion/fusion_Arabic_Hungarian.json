@@ -5,140 +5,140 @@
       "name": "garam masala",
       "score": 154.87054794597452,
       "connects_a": [
-        "tomato paste",
-        "cinnamon",
-        "vegetable oil"
+        "lemon juice",
+        "tomato",
+        "chicken"
       ],
       "connects_b": [
-        "tomato paste",
-        "bay leaf",
-        "potatoes"
+        "chicken",
+        "tomatoes",
+        "garlic"
       ]
     },
     {
       "name": "tomato paste",
       "score": 112.72271097512716,
       "connects_a": [
-        "carrot",
-        "cumin",
+        "parsley",
+        "lamb",
         "paprika"
       ],
       "connects_b": [
-        "wine",
-        "worcestershire sauce",
-        "bay leaf"
+        "parsley",
+        "beef broth",
+        "bell pepper"
       ]
     },
     {
       "name": "celery",
       "score": 98.24325978296196,
       "connects_a": [
-        "tomato paste",
-        "carrot",
-        "paprika"
+        "parsley",
+        "paprika",
+        "garlic"
       ],
       "connects_b": [
-        "chicken broth",
-        "worcestershire sauce",
-        "tomato paste"
+        "parsley",
+        "beef broth",
+        "bell pepper"
       ]
     },
     {
       "name": "cumin",
       "score": 85.44333857692051,
       "connects_a": [
-        "tomato paste",
         "chickpea",
-        "tomato"
+        "tomato",
+        "chicken"
       ],
       "connects_b": [
         "chicken",
-        "tomato paste",
-        "bay leaf"
+        "bell pepper",
+        "tomatoes"
       ]
     },
     {
       "name": "bay leaf",
       "score": 77.6929651954374,
       "connects_a": [
-        "tomato paste",
-        "carrot",
-        "cumin"
+        "parsley",
+        "tomato",
+        "paprika"
       ],
       "connects_b": [
-        "wine",
-        "chicken broth",
-        "tomato paste"
+        "parsley",
+        "beef broth",
+        "tomatoes"
       ]
     },
     {
       "name": "turmeric",
       "score": 77.14926382126957,
       "connects_a": [
-        "tomato paste",
-        "vegetable oil",
-        "cumin"
+        "tomato",
+        "chicken",
+        "paprika"
       ],
       "connects_b": [
-        "tomato paste",
-        "bay leaf",
-        "vegetable oil"
+        "chicken",
+        "tomatoes",
+        "paprika"
       ]
     },
     {
       "name": "beef stock",
       "score": 72.26507447794717,
       "connects_a": [
-        "tomato paste",
-        "carrot",
-        "flour"
+        "bread",
+        "paprika",
+        "carrot"
       ],
       "connects_b": [
-        "wine",
+        "mushrooms",
         "worcestershire sauce",
-        "tomato paste"
+        "paprika"
       ]
     },
     {
       "name": "can tomatoes",
       "score": 65.38258403177709,
       "connects_a": [
-        "tomato paste",
-        "cumin",
-        "parsley"
+        "parsley",
+        "chicken",
+        "cumin"
       ],
       "connects_b": [
-        "wine",
-        "chicken broth",
-        "worcestershire sauce"
+        "parsley",
+        "chicken",
+        "beef broth"
       ]
     },
     {
       "name": "andouille sausage",
       "score": 65.08603504528585,
       "connects_a": [
-        "tomato paste",
+        "chicken",
         "paprika",
-        "onion"
+        "garlic"
       ],
       "connects_b": [
-        "chicken broth",
+        "chicken",
         "worcestershire sauce",
-        "tomato paste"
+        "bell pepper"
       ]
     },
     {
       "name": "beef broth",
       "score": 65.07594304707929,
       "connects_a": [
-        "tomato paste",
-        "carrot",
-        "paprika"
+        "bread",
+        "paprika",
+        "carrot"
       ],
       "connects_b": [
-        "wine",
+        "mushrooms",
         "worcestershire sauce",
-        "tomato paste"
+        "paprika"
       ]
     }
   ],
@@ -154,6 +154,11 @@
       "strength": 1
     },
     {
+      "name": "harissa",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
       "name": "allspice",
       "pairs_with": "cloves",
       "strength": 1
@@ -164,17 +169,12 @@
       "strength": 1
     },
     {
-      "name": "harissa",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "lentil",
+      "name": "tomato puree",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "tomato puree",
+      "name": "lentil",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -189,14 +189,14 @@
       "strength": 1
     },
     {
-      "name": "pastry",
+      "name": "applesauce",
       "pairs_with": "egg",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "ice water",
+      "name": "pecans",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -206,18 +206,28 @@
       "strength": 1
     },
     {
-      "name": "filling",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
       "name": "glace",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "pecans",
+      "name": "filling",
       "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "ice water",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "sodium beef broth",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "beef broth",
+      "pairs_with": "onion",
       "strength": 1
     },
     {
@@ -226,22 +236,12 @@
       "strength": 1
     },
     {
-      "name": "chicken base",
+      "name": "beef chuck",
       "pairs_with": "onion",
       "strength": 1
     },
     {
       "name": "navy beans",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "beef stock",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "chicken livers",
       "pairs_with": "onion",
       "strength": 1
     }

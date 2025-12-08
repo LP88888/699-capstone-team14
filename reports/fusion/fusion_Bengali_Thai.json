@@ -5,13 +5,13 @@
       "name": "garam masala",
       "score": 32.18089307968302,
       "connects_a": [
-        "oil",
         "chili powder",
+        "oil",
         "peas"
       ],
       "connects_b": [
         "chiles",
-        "ginger",
+        "garlic",
         "vegetable oil"
       ]
     },
@@ -23,22 +23,22 @@
         "dal"
       ],
       "connects_b": [
-        "ginger",
-        "shrimp",
-        "peanut oil"
+        "soy sauce",
+        "scallions",
+        "limes"
       ]
     },
     {
       "name": "mango",
       "score": 30.21073824069619,
       "connects_a": [
-        "dhania",
-        "wheat",
-        "fenugreek"
+        "seeds",
+        "fenugreek",
+        "wheat"
       ],
       "connects_b": [
-        "coconut milk",
-        "cilantro",
+        "limes",
+        "lime juice",
         "lime"
       ]
     },
@@ -46,36 +46,36 @@
       "name": "cilantro",
       "score": 28.16233425499042,
       "connects_a": [
-        "chili powder",
-        "beans"
+        "beans",
+        "chili powder"
       ],
       "connects_b": [
+        "juice",
         "chiles",
-        "ginger",
-        "peanuts"
+        "scallions"
       ]
     },
     {
       "name": "mustard seeds",
       "score": 24.018692241768363,
       "connects_a": [
-        "oil",
         "chili powder",
+        "oil",
         "peas"
       ],
       "connects_b": [
         "chiles",
-        "ginger",
-        "vegetable oil"
+        "vegetable oil",
+        "wine vinegar"
       ]
     },
     {
       "name": "dhania",
       "score": 21.837366059232203,
       "connects_a": [
-        "chili powder",
-        "peas",
-        "wheat"
+        "curd",
+        "wheat",
+        "powder salt"
       ],
       "connects_b": [
         "peanuts"
@@ -85,27 +85,27 @@
       "name": "tumeric",
       "score": 20.056614520993726,
       "connects_a": [
-        "oil",
         "chili powder",
+        "oil",
         "peas"
       ],
       "connects_b": [
-        "ginger",
+        "garlic",
         "chicken breasts",
-        "cilantro"
+        "ginger"
       ]
     },
     {
       "name": "cumin seeds",
       "score": 20.02467690392072,
       "connects_a": [
-        "oil",
         "chili powder",
+        "oil",
         "peas"
       ],
       "connects_b": [
         "chiles",
-        "ginger",
+        "cilantro leaves",
         "coconut milk"
       ]
     },
@@ -113,27 +113,27 @@
       "name": "jalapeno peppers",
       "score": 20.019564364616098,
       "connects_a": [
-        "chili powder",
-        "beans"
+        "beans",
+        "chili powder"
       ],
       "connects_b": [
-        "shrimp",
-        "peanut oil",
-        "fish sauce"
+        "scallions",
+        "bell pepper",
+        "limes"
       ]
     },
     {
       "name": "turmeric",
       "score": 18.034892841335743,
       "connects_a": [
-        "oil",
         "chili powder",
+        "oil",
         "peas"
       ],
       "connects_b": [
         "chiles",
-        "ginger",
-        "vegetable oil"
+        "vegetable oil",
+        "cilantro leaves"
       ]
     }
   ],
@@ -164,7 +164,7 @@
       "strength": 1
     },
     {
-      "name": "masala",
+      "name": "gram",
       "pairs_with": "peanuts",
       "strength": 1
     },
@@ -174,34 +174,14 @@
       "strength": 1
     },
     {
-      "name": "gram",
+      "name": "masala",
       "pairs_with": "peanuts",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "garlic coriander",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "onion coriander",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "haldi",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "olive",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "black",
+      "name": "kabuli",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -211,7 +191,22 @@
       "strength": 1
     },
     {
-      "name": "urad",
+      "name": "french",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "garlic coriander",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "olive",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "haldi",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -221,12 +216,17 @@
       "strength": 1
     },
     {
-      "name": "french",
+      "name": "black",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "kabuli",
+      "name": "urad",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "onion coriander",
       "pairs_with": "dhania",
       "strength": 1
     }

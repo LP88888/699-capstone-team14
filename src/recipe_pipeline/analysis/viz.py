@@ -14,6 +14,7 @@ from pyvis.network import Network
 import numpy as np
 import json
 import re
+import matplotlib.pyplot as plt
 
 from ..core import PipelineContext, StageResult
 from ..utils import stage_logger
@@ -112,6 +113,119 @@ def _inject_ingredient_controls(html_text: str) -> str:
     # Insert UI elements inside body (after opening tag)
     return html_text.replace("<body>", "<body>" + panel).replace("</body>", script + "</body>")
 
+
+def _write_plot(fig, *, html_path: Path | None = None, png_path: Path | None = None, logger=None) -> None:
+    """Save plotly figure to HTML and PNG (PNG requires kaleido)."""
+    if html_path:
+        fig.write_html(str(html_path))
+    if png_path:
+        try:
+            fig.write_image(str(png_path), scale=2)
+        except Exception as exc:
+            if logger:
+                logger.warning("Failed to write PNG for %s: %s", png_path, exc)
+
+
+def plot_parent_confusion(preds_path: Path, html_path: Path, png_path: Path | None, *, top_n: int = None, logger=None) -> None:
+    """Parent-level confusion matrix using y_true_parent / y_pred_parent."""
+    df = pd.read_csv(preds_path)
+    if not {"y_true_parent", "y_pred_parent"}.issubset(df.columns):
+        return
+    counts = df["y_true_parent"].value_counts()
+    labels = list(counts.index if top_n is None else counts.head(top_n).index)
+    mask = df["y_true_parent"].isin(labels)
+    cm = confusion_matrix(df[mask]["y_true_parent"], df[mask]["y_pred_parent"], labels=labels)
+    fig = px.imshow(
+        cm,
+        x=labels,
+        y=labels,
+        color_continuous_scale="YlGn",
+        title="Parent-Level Confusion Matrix",
+        labels={"x": "Predicted", "y": "True"},
+    )
+    fig.update_layout(height=520, width=720)
+    _write_plot(fig, html_path=html_path, png_path=png_path, logger=logger)
+
+
+def plot_supports(report_path: Path, html_path: Path, png_path: Path | None, *, top_n: int = 30, logger=None) -> None:
+    """Bar chart of per-class support (sorted descending)."""
+    df = pd.read_csv(report_path)
+    if "support" not in df.columns:
+        return
+    df = df[~df["Unnamed: 0"].str.contains("avg|accuracy", case=False, na=False)].copy()
+    df["support"] = df["support"].astype(float)
+    df = df.sort_values("support", ascending=False)
+    if top_n:
+        df = df.head(top_n)
+    fig = px.bar(
+        df,
+        x="support",
+        y="Unnamed: 0",
+        orientation="h",
+        title="Per-Class Support (top)",
+        labels={"support": "Support", "Unnamed: 0": "Cuisine"},
+    )
+    fig.update_layout(height=700, template="simple_white")
+    _write_plot(fig, html_path=html_path, png_path=png_path, logger=logger)
+
+
+def plot_top_features_bar(top_feat_path: Path, html_path: Path, png_path: Path | None, *, top_cuisines: int = 8, top_n_terms: int = 8, logger=None) -> None:
+    """Facet barplots of top TF-IDF-weighted features per cuisine."""
+    df = pd.read_csv(top_feat_path)
+    if df.empty:
+        return
+    counts = df["cuisine"].value_counts().head(top_cuisines).index
+    plot_df = df[df["cuisine"].isin(counts) & (df["rank"] <= top_n_terms)].copy()
+    plot_df["feature_short"] = plot_df["feature"].apply(lambda t: t if len(str(t)) <= 18 else str(t)[:18] + "…")
+    fig = px.bar(
+        plot_df,
+        x="weight",
+        y="feature_short",
+        facet_col="cuisine",
+        facet_col_wrap=4,
+        orientation="h",
+        color="cuisine",
+        title=f"Top {top_n_terms} Features per Cuisine (sample of {top_cuisines})",
+        height=300 + 180 * ((len(counts) - 1) // 4),
+    )
+    fig.update_layout(showlegend=False, template="simple_white")
+    _write_plot(fig, html_path=html_path, png_path=png_path, logger=logger)
+
+
+def plot_ingredient_thumbnail(pmi_path: Path, nodes_path: Path, png_path: Path, *, max_edges: int = 80, logger=None) -> None:
+    """Static thumbnail of ingredient network for reports (non-interactive)."""
+    try:
+        df_pmi = pd.read_csv(pmi_path)
+        df_nodes = pd.read_csv(nodes_path).set_index("ingredient")
+    except Exception as exc:
+        if logger:
+            logger.warning("Ingredient thumbnail skipped: %s", exc)
+        return
+    edges = (
+        df_pmi.sort_values("pmi", ascending=False)
+        .head(max_edges)[["ingredient_a", "ingredient_b", "pmi"]]
+        .values
+    )
+    G = nx.Graph()
+    for a, b, w in edges:
+        G.add_edge(str(a), str(b), weight=float(w))
+    deg = dict(G.degree())
+    sizes = [np.log1p(deg.get(n, 1)) * 120 for n in G.nodes()]
+    colors = [deg.get(n, 1) for n in G.nodes()]
+    pos = nx.spring_layout(G, seed=42, k=0.4)
+    plt.figure(figsize=(10, 8))
+    nodes = nx.draw_networkx_nodes(G, pos, node_size=sizes, node_color=colors, cmap="YlGnBu", linewidths=0.3, edgecolors="white")
+    nx.draw_networkx_edges(G, pos, width=[np.log1p(d["weight"]) * 0.8 for _, _, d in G.edges(data=True)], alpha=0.4, edge_color="#94a3b8")
+    nx.draw_networkx_labels(G, pos, font_size=8, font_color="#0f172a")
+    plt.axis("off")
+    plt.title("Ingredient Network (thumbnail)")
+    plt.tight_layout()
+    try:
+        plt.savefig(png_path, dpi=200)
+    except Exception as exc:
+        if logger:
+            logger.warning("Failed to write ingredient thumbnail: %s", exc)
+    plt.close()
 
 def plot_ingredient_network(pmi_path: Path, centrality_path: Path, out_path: Path, title="Ingredient PMI Network"):
     """Generate an interactive ingredient network with bright colors and chained filtering."""
@@ -235,8 +349,18 @@ def plot_ingredient_network(pmi_path: Path, centrality_path: Path, out_path: Pat
     net.html = _inject_ingredient_controls(net.generate_html(notebook=False))
     out_path = Path(out_path)
     out_path.write_text(net.html, encoding="utf-8")
+    # Persist simple node metrics for reporting
+    metrics_rows = []
+    for n in G.nodes():
+        metrics_rows.append({
+            "ingredient": n,
+            "degree": degrees.get(n, 0),
+            "betweenness": df_nodes.loc[n, "betweenness"] if n in df_nodes.index else 0.0,
+        })
+    metrics_path = out_path.parent / "ingredient_network_metrics.csv"
+    pd.DataFrame(metrics_rows).to_csv(metrics_path, index=False)
 
-def plot_svd_variance(var_path: Path, out_path: Path) -> None:
+def plot_svd_variance(var_path: Path, html_path: Path, png_path: Path | None, logger=None) -> None:
     """Plot cumulative explained variance for SVD."""
     df = pd.read_csv(var_path)
     if df.empty:
@@ -260,9 +384,9 @@ def plot_svd_variance(var_path: Path, out_path: Path) -> None:
         hovermode="x unified",
         height=520,
     )
-    fig.write_html(str(out_path))
+    _write_plot(fig, html_path=html_path, png_path=png_path, logger=logger)
 
-def plot_svd_scatter(sample_path: Path, out_path: Path, *, max_labels: int = 18) -> None:
+def plot_svd_scatter(sample_path: Path, html_path: Path, png_path: Path | None, *, max_labels: int = 18, logger=None) -> None:
     """Plot a 2D scatter of sampled SVD projections colored by cuisine."""
     df = pd.read_csv(sample_path)
     if df.empty:
@@ -290,9 +414,9 @@ def plot_svd_scatter(sample_path: Path, out_path: Path, *, max_labels: int = 18)
         legend_title=label_col,
         height=700,
     )
-    fig.write_html(str(out_path))
+    _write_plot(fig, html_path=html_path, png_path=png_path, logger=logger)
 
-def plot_svd_component_terms(terms_path: Path, out_path: Path, *, max_components: int = 6, top_n: int = 8) -> None:
+def plot_svd_component_terms(terms_path: Path, html_path: Path, png_path: Path | None, *, max_components: int = 6, top_n: int = 8, logger=None) -> None:
     """Facet bar charts for top +/- terms per component."""
     df = pd.read_csv(terms_path)
     if df.empty:
@@ -330,7 +454,7 @@ def plot_svd_component_terms(terms_path: Path, out_path: Path, *, max_components
         height=450 + 180 * ((len(selected) - 1) // 3),
         legend_title="Direction",
     )
-    fig.write_html(str(out_path))
+    _write_plot(fig, html_path=html_path, png_path=png_path, logger=logger)
 
 def run(context: PipelineContext, *, force: bool = False) -> StageResult:
     cfg = context.stage("analysis_viz")
@@ -351,17 +475,32 @@ def run(context: PipelineContext, *, force: bool = False) -> StageResult:
     svd_var_path = baseline_report_dir / "svd_variance.csv"
     if svd_var_path.exists():
         logger.info("Generating SVD explained variance chart...")
-        plot_svd_variance(svd_var_path, viz_dir / "svd_explained_variance.html")
+        plot_svd_variance(
+            svd_var_path,
+            viz_dir / "svd_explained_variance.html",
+            viz_dir / "svd_explained_variance.png",
+            logger=logger,
+        )
 
     svd_proj_path = baseline_report_dir / "svd_projection_sample.csv"
     if svd_proj_path.exists():
         logger.info("Generating SVD scatter (sampled projections)...")
-        plot_svd_scatter(svd_proj_path, viz_dir / "svd_scatter.html")
+        plot_svd_scatter(
+            svd_proj_path,
+            viz_dir / "svd_scatter.html",
+            viz_dir / "svd_scatter.png",
+            logger=logger,
+        )
 
     svd_terms_path = baseline_report_dir / "svd_components_top_terms.csv"
     if svd_terms_path.exists():
         logger.info("Generating SVD component term panels...")
-        plot_svd_component_terms(svd_terms_path, viz_dir / "svd_component_terms.html")
+        plot_svd_component_terms(
+            svd_terms_path,
+            viz_dir / "svd_component_terms.html",
+            viz_dir / "svd_component_terms.png",
+            logger=logger,
+        )
 
     # 1. Confusion Matrix
     preds_path = baseline_report_dir / "y_pred_logreg.csv"
@@ -371,9 +510,21 @@ def run(context: PipelineContext, *, force: bool = False) -> StageResult:
         top_cuisines = df_preds["y_true"].value_counts().head(12).index
         mask = df_preds["y_true"].isin(top_cuisines)
         cm = confusion_matrix(df_preds[mask]["y_true"], df_preds[mask]["y_pred"], labels=top_cuisines)
-        fig = px.imshow(cm, x=top_cuisines, y=top_cuisines, color_continuous_scale="Blues", title="Confusion Matrix (Top 12)")
-        cm_path = (viz_dir / "confusion_matrix.html").resolve()
-        fig.write_html(str(cm_path))
+        fig = px.imshow(cm, x=top_cuisines, y=top_cuisines, color_continuous_scale="Greens", title="Confusion Matrix (Top 12)")
+        _write_plot(
+            fig,
+            html_path=(viz_dir / "confusion_matrix.html").resolve(),
+            png_path=(viz_dir / "confusion_matrix.png").resolve(),
+            logger=logger,
+        )
+        # Parent-level confusion
+        logger.info("Generating Parent-level Confusion Matrix...")
+        plot_parent_confusion(
+            preds_path,
+            (viz_dir / "confusion_matrix_parent.html").resolve(),
+            (viz_dir / "confusion_matrix_parent.png").resolve(),
+            logger=logger,
+        )
         
     # 2. Cluster Heatmap
     cluster_path = baseline_report_dir / "cluster_assignments.csv"
@@ -383,8 +534,34 @@ def run(context: PipelineContext, *, force: bool = False) -> StageResult:
         pivot = df_clust.pivot_table(index="cluster", columns="cuisine", aggfunc="size", fill_value=0)
         top_cols = pivot.sum().sort_values(ascending=False).head(15).index
         fig = px.imshow(pivot[top_cols], aspect="auto", title="Cluster vs Cuisine Heatmap")
-        clus_path = (viz_dir / "cluster_heatmap.html").resolve()
-        fig.write_html(str(clus_path))
+        _write_plot(
+            fig,
+            html_path=(viz_dir / "cluster_heatmap.html").resolve(),
+            png_path=(viz_dir / "cluster_heatmap.png").resolve(),
+            logger=logger,
+        )
+    
+    # 2b. Support chart
+    report_path = baseline_report_dir / "classification_report_logreg.csv"
+    if report_path.exists():
+        logger.info("Generating support chart...")
+        plot_supports(
+            report_path,
+            (viz_dir / "support_by_class.html").resolve(),
+            (viz_dir / "support_by_class.png").resolve(),
+            logger=logger,
+        )
+    
+    # 2c. Top features per cuisine (sampled)
+    top_feat_path = baseline_report_dir / "top_features_logreg.csv"
+    if top_feat_path.exists():
+        logger.info("Generating top-features facet plot...")
+        plot_top_features_bar(
+            top_feat_path,
+            (viz_dir / "top_features.html").resolve(),
+            (viz_dir / "top_features.png").resolve(),
+            logger=logger,
+        )
         
     # 3. Ingredient Network (The "Colleague Special")
     if pmi_path.exists() and nodes_path.exists():
@@ -398,6 +575,10 @@ def run(context: PipelineContext, *, force: bool = False) -> StageResult:
             shutil.copy(ing_path, public_dir / "ingredient_network.html")
         except Exception as exc:
             logger.warning("Failed to copy ingredient network to public: %s", exc)
+        # Static thumbnail for reports
+        thumb_path = (viz_dir / "ingredient_network.png").resolve()
+        logger.info("Generating ingredient network thumbnail...")
+        plot_ingredient_thumbnail(pmi_path, nodes_path, thumb_path, logger=logger)
             
     return StageResult(
         name="analysis_viz", 

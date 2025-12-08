@@ -6,13 +6,13 @@
       "score": 418.07033828527193,
       "connects_a": [
         "oyster sauce",
-        "canola oil",
-        "pork"
+        "soy sauce",
+        "scallions"
       ],
       "connects_b": [
-        "shrimp",
-        "shallots",
-        "lime"
+        "scallions",
+        "cilantro leaves",
+        "lime juice"
       ]
     },
     {
@@ -20,13 +20,13 @@
       "score": 340.7215136929801,
       "connects_a": [
         "oyster sauce",
-        "canola oil",
-        "ginger"
+        "soy sauce",
+        "scallions"
       ],
       "connects_b": [
-        "shrimp",
-        "shallots",
-        "lime"
+        "scallions",
+        "cilantro leaves",
+        "lime juice"
       ]
     },
     {
@@ -34,69 +34,69 @@
       "score": 288.34081094143096,
       "connects_a": [
         "oyster sauce",
-        "honey",
-        "ginger"
+        "soy sauce",
+        "scallions"
       ],
       "connects_b": [
-        "ginger",
-        "peanuts",
-        "shrimp"
+        "soy sauce",
+        "scallions",
+        "fish sauce"
       ]
     },
     {
       "name": "hoisin sauce",
       "score": 286.2186615057622,
       "connects_a": [
-        "rice",
-        "oyster sauce",
-        "canola oil"
+        "shaoxing",
+        "scallions",
+        "sodium soy sauce"
       ],
       "connects_b": [
-        "canola oil",
-        "ginger",
-        "peanuts"
+        "soy sauce",
+        "scallions",
+        "fish sauce"
       ]
     },
     {
       "name": "ginger",
       "score": 274.95631922766876,
       "connects_a": [
+        "shaoxing",
         "oyster sauce",
-        "canola oil",
-        "pork"
+        "soy sauce"
       ],
       "connects_b": [
         "chiles",
-        "canola oil",
-        "peanuts"
+        "soy sauce",
+        "scallions"
       ]
     },
     {
       "name": "rice vinegar",
       "score": 266.60980740787176,
       "connects_a": [
-        "rice",
-        "oyster sauce",
-        "canola oil"
+        "scallions",
+        "sodium soy sauce",
+        "rice wine"
       ],
       "connects_b": [
         "chiles",
-        "canola oil",
-        "ginger"
+        "soy sauce",
+        "scallions"
       ]
     },
     {
       "name": "oyster sauce",
       "score": 264.1697307224334,
       "connects_a": [
-        "shrimp",
-        "mushrooms",
-        "chicken broth"
+        "shaoxing",
+        "scallions",
+        "sodium soy sauce"
       ],
       "connects_b": [
-        "ginger",
-        "peanuts",
-        "shrimp"
+        "soy sauce",
+        "scallions",
+        "fish sauce"
       ]
     },
     {
@@ -104,47 +104,57 @@
       "score": 240.93355355148552,
       "connects_a": [
         "oyster sauce",
-        "canola oil",
-        "pork"
+        "soy sauce",
+        "scallions"
       ],
       "connects_b": [
-        "canola oil",
-        "ginger",
-        "peanuts"
+        "soy sauce",
+        "scallions",
+        "limes"
       ]
     },
     {
       "name": "scallions",
       "score": 240.883536881153,
       "connects_a": [
-        "cabbage",
+        "shaoxing",
         "oyster sauce",
-        "pork"
+        "soy sauce"
       ],
       "connects_b": [
-        "ginger",
-        "shrimp",
-        "curry paste"
+        "soy sauce",
+        "thai basil",
+        "limes"
       ]
     },
     {
       "name": "sodium soy sauce",
       "score": 216.18233946853167,
       "connects_a": [
-        "cabbage",
         "oyster sauce",
-        "honey"
+        "scallions",
+        "rice"
       ],
       "connects_b": [
-        "canola oil",
-        "ginger",
-        "peanuts"
+        "scallions",
+        "fish sauce",
+        "carrot"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "squid",
+      "name": "turkey sausage",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "spun",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "baby arugula",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -159,59 +169,54 @@
       "strength": 1
     },
     {
-      "name": "spun",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "turkey sausage",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "baby arugula",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "radicchio",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "sea bass",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "and finely",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
       "name": "squid",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "handfuls",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "halibut fillet",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "petite",
       "pairs_with": "cloves",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "serrano chili",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
       "name": "ancho chile",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "escarole",
+      "name": "leg",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "reggiano",
+      "name": "porcini mushrooms",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "bunch cilantro",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "cover",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -226,22 +231,17 @@
       "strength": 1
     },
     {
-      "name": "crusty bread",
+      "name": "littleneck clams",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "scotch bonnet",
+      "name": "escarole",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "leg",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "porcini mushrooms",
+      "name": "serrano",
       "pairs_with": "cloves",
       "strength": 1
     }

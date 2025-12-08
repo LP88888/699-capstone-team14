@@ -5,13 +5,13 @@
       "name": "confectioners",
       "score": 105.54766828731582,
       "connects_a": [
-        "egg",
-        "nutmeg",
-        "more"
+        "1",
+        "maple syrup",
+        "chocolate"
       ],
       "connects_b": [
-        "egg",
-        "more",
+        "1",
+        "butter",
         "milk"
       ]
     },
@@ -19,13 +19,13 @@
       "name": "at",
       "score": 104.41424544634762,
       "connects_a": [
-        "egg",
-        "more",
-        "milk"
+        "1",
+        "maple syrup",
+        "chocolate"
       ],
       "connects_b": [
-        "egg",
-        "more",
+        "1",
+        "butter",
         "milk"
       ]
     },
@@ -33,112 +33,112 @@
       "name": "whole milk",
       "score": 84.24599545442807,
       "connects_a": [
-        "egg",
-        "nutmeg",
-        "more"
+        "maple syrup",
+        "chocolate",
+        "butter"
       ],
       "connects_b": [
-        "egg",
-        "more",
-        "mozzarella cheese"
+        "butter",
+        "purpose flour",
+        "kosher sea salt"
       ]
     },
     {
       "name": "veal",
       "score": 77.20986192975371,
       "connects_a": [
-        "egg",
-        "wine",
-        "milk"
+        "parsley",
+        "milk",
+        "wine"
       ],
       "connects_b": [
-        "egg",
-        "wine",
-        "milk"
+        "parsley",
+        "milk",
+        "spaghetti"
       ]
     },
     {
       "name": "pancetta",
       "score": 77.09934531600935,
       "connects_a": [
-        "wine",
-        "more",
-        "bay leaf"
+        "shallots",
+        "parsley",
+        "wine"
       ],
       "connects_b": [
-        "wine",
-        "more",
-        "carrot"
+        "parsley",
+        "spaghetti",
+        "pepper flakes"
       ]
     },
     {
       "name": "vanilla extract",
       "score": 73.15523061176131,
       "connects_a": [
-        "egg",
-        "nutmeg",
-        "milk"
+        "1",
+        "maple syrup",
+        "chocolate"
       ],
       "connects_b": [
-        "egg",
-        "milk",
-        "butter"
+        "1",
+        "butter",
+        "milk"
       ]
     },
     {
       "name": "ribs celery",
       "score": 70.51015235559204,
       "connects_a": [
-        "wine",
-        "bay leaf",
+        "parsley",
+        "cloves",
         "carrot"
       ],
       "connects_b": [
-        "wine",
-        "optional",
-        "carrot"
+        "parsley",
+        "bell pepper",
+        "cloves"
       ]
     },
     {
       "name": "tomato paste",
       "score": 70.45169435945446,
       "connects_a": [
-        "wine",
-        "bay leaf",
+        "parsley",
+        "cloves",
         "carrot"
       ],
       "connects_b": [
-        "wine",
-        "carrot",
-        "spaghetti"
+        "parsley",
+        "bell pepper",
+        "cloves"
       ]
     },
     {
       "name": "can tomatoes",
       "score": 70.41201357268302,
       "connects_a": [
-        "wine",
-        "bay leaf",
-        "cloves"
+        "parsley",
+        "cloves",
+        "wine"
       ],
       "connects_b": [
-        "wine",
-        "optional",
-        "spaghetti"
+        "seasoning",
+        "parsley",
+        "bell pepper"
       ]
     },
     {
       "name": "ice water",
       "score": 60.30585722748021,
       "connects_a": [
-        "egg",
-        "nutmeg",
-        "more"
+        "1",
+        "butter",
+        "purpose flour"
       ],
       "connects_b": [
-        "egg",
-        "more",
-        "flour"
+        "1",
+        "butter",
+        "purpose flour"
       ]
     }
   ],
@@ -149,7 +149,7 @@
       "strength": 1
     },
     {
-      "name": "graham cracker crumbs",
+      "name": "candies",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -164,7 +164,7 @@
       "strength": 1
     },
     {
-      "name": "finely pecans",
+      "name": "delicious",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -174,17 +174,7 @@
       "strength": 1
     },
     {
-      "name": "mcintosh apples",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "muscovado sugar",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "delicious",
+      "name": "calvados",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -192,41 +182,31 @@
       "name": "challah",
       "pairs_with": "butter",
       "strength": 1
+    },
+    {
+      "name": "graham cracker crumbs",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "finely pecans",
+      "pairs_with": "butter",
+      "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "linguini",
+      "name": "san marzano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "squid",
+      "name": "orzo pasta",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "of handfuls",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "finely oregano",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "risotto",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "orecchiette",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cans chickpeas",
+      "name": "pepperoncini peppers",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -236,12 +216,32 @@
       "strength": 1
     },
     {
-      "name": "basil chiffonade",
+      "name": "hearts",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "by hand",
+      "name": "fettuccine",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pimenton",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cans chickpeas",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "orecchiette",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "mortadella",
       "pairs_with": "olive oil",
       "strength": 1
     }

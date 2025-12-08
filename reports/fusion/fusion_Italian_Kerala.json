@@ -5,9 +5,9 @@
       "name": "can tomatoes",
       "score": 28.164805429073205,
       "connects_a": [
-        "wine",
-        "optional",
-        "spaghetti"
+        "seasoning",
+        "parsley",
+        "bell pepper"
       ],
       "connects_b": [
         "onion",
@@ -20,21 +20,21 @@
       "connects_a": [
         "onion",
         "tomatoes",
-        "lemon juice"
+        "garlic"
       ],
       "connects_b": [
         "chili powder",
         "peas",
-        "onion"
+        "cumin seeds"
       ]
     },
     {
       "name": "cans tomatoes",
       "score": 20.044428318272463,
       "connects_a": [
-        "optional",
-        "carrot",
-        "onion"
+        "seasoning",
+        "cloves",
+        "leaves"
       ],
       "connects_b": [
         "onion",
@@ -46,13 +46,13 @@
       "score": 20.039053808835284,
       "connects_a": [
         "onion",
-        "tomatoes",
-        "garlic"
+        "leaves",
+        "tomatoes"
       ],
       "connects_b": [
+        "leaves",
         "chili powder",
-        "onion",
-        "oil"
+        "cumin seeds"
       ]
     },
     {
@@ -66,16 +66,16 @@
       "connects_b": [
         "chili powder",
         "peas",
-        "onion"
+        "cumin seeds"
       ]
     },
     {
       "name": "celery",
       "score": 14.034751397565994,
       "connects_a": [
-        "carrot",
+        "parsley",
         "bell pepper",
-        "parsley"
+        "tomatoes"
       ],
       "connects_b": [
         "onion",
@@ -86,26 +86,26 @@
       "name": "bay leaf",
       "score": 12.107994575912322,
       "connects_a": [
-        "wine",
-        "carrot",
-        "parsley"
+        "parsley",
+        "tomatoes",
+        "carrot"
       ],
       "connects_b": [
-        "onion",
-        "beans"
+        "beans",
+        "onion"
       ]
     },
     {
       "name": "mussels",
       "score": 12.0722696360578,
       "connects_a": [
-        "wine",
+        "parsley",
         "bell pepper",
-        "cloves"
+        "pepper flakes"
       ],
       "connects_b": [
-        "rice",
-        "peas"
+        "peas",
+        "rice"
       ]
     },
     {
@@ -113,21 +113,21 @@
       "score": 12.048947600069784,
       "connects_a": [
         ")",
-        "parmigiano",
-        "pepper flakes"
+        "seasoning",
+        "tomatoes"
       ],
       "connects_b": [
-        "chili powder",
-        "beans"
+        "beans",
+        "chili powder"
       ]
     },
     {
       "name": "file powder",
       "score": 12.024371595917614,
       "connects_a": [
+        "purpose flour",
         "bell pepper",
-        "onion",
-        "tomatoes"
+        "leaves"
       ],
       "connects_b": [
         "onion",
@@ -137,12 +137,22 @@
   ],
   "novel_from_a": [
     {
-      "name": "masala",
+      "name": "methi",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "til",
+      "name": "powder amchur",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "carom",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "pepper powder",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -157,7 +167,12 @@
       "strength": 1
     },
     {
-      "name": "bell",
+      "name": "green bell",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "chilli coriander",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -167,22 +182,7 @@
       "strength": 1
     },
     {
-      "name": "olive",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "methi",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "green bell",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "pepper powder",
+      "name": "brinjal",
       "pairs_with": "dhania",
       "strength": 1
     }
@@ -199,17 +199,12 @@
       "strength": 1
     },
     {
-      "name": "salt coriander",
+      "name": "oil coriander",
       "pairs_with": "leaves",
       "strength": 1
     },
     {
       "name": "pudina",
-      "pairs_with": "leaves",
-      "strength": 1
-    },
-    {
-      "name": "oil coriander",
       "pairs_with": "leaves",
       "strength": 1
     },
@@ -220,6 +215,11 @@
     },
     {
       "name": "cloves cardamom",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
+      "name": "salt coriander",
       "pairs_with": "leaves",
       "strength": 1
     },

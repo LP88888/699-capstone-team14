@@ -36,16 +36,20 @@ def clean_cuisine_name(text: str) -> str:
     1. Removes 'recipe' or 'recipes'.
     2. Removes directional terms (North, South, etc.).
     3. Standardizes whitespace and capitalization.
+    4. Strips bracket-like noise characters.
     
     Example: 
       "South Indian Recipes" -> "Indian"
       "Northern-Style Thai" -> "Style Thai" (Hyphens replaced by space)
+      "[American]" -> "American"
     """
     if not text:
         return ""
     
     # 1. Lowercase and replace hyphens with spaces (e.g. "south-indian")
     s = str(text).lower().replace("-", " ").strip()
+    # Strip bracket-like characters and surrounding punctuation
+    s = re.sub(r"^[\\[\\]{}()<>\\s]+|[\\[\\]{}()<>\\s]+$", "", s)
     
     # 2. Remove "recipe" or "recipes" (whole words)
     s = re.sub(r"\brecipes?\b", " ", s)
@@ -66,6 +70,7 @@ def _filter_and_normalize_cuisine_mapping(mapping: dict[str, str]) -> dict[str, 
     Post-process cuisine deduplication mapping to:
     1. Filter out non-cuisine entries (e.g., "friendly", "kid friendly")
     2. Normalize entries (e.g., "gujarati recipes" -> "gujarati")
+    3. Drop bracketed/noisy labels (e.g., "[american]")
     
     Args:
         mapping: Raw mapping from sbert_dedupe
@@ -75,6 +80,9 @@ def _filter_and_normalize_cuisine_mapping(mapping: dict[str, str]) -> dict[str, 
     """
     # Non-cuisine terms to exclude
     NON_CUISINES = {"friendly", "kid friendly"}
+    # Reject labels containing bracket characters
+    def _has_brackets(val: str) -> bool:
+        return "[" in val or "]" in val or "{" in val or "}" in val
     
     filtered_mapping = {}
     for src, tgt in mapping.items():
@@ -85,6 +93,8 @@ def _filter_and_normalize_cuisine_mapping(mapping: dict[str, str]) -> dict[str, 
         if not src_clean or not tgt_clean:
             continue
         if src_clean.lower() in NON_CUISINES or tgt_clean.lower() in NON_CUISINES:
+            continue
+        if _has_brackets(src_clean) or _has_brackets(tgt_clean):
             continue
         
         # Only add mapping if source and target are different
@@ -395,6 +405,8 @@ def run(
         if len(vocab) != len(vocab_filtered):
             logger.info("Filtered %s non-cuisine entries from vocab", len(vocab) - len(vocab_filtered))
         vocab = vocab_filtered
+        # Drop any bracketed/noisy labels that slipped through
+        vocab = {k: v for k, v in vocab.items() if "[" not in k and "]" not in k and "{" not in k and "}" not in k}
 
         if not vocab:
             raise ValueError("Vocabulary is empty. Check cuisine_clean column.")

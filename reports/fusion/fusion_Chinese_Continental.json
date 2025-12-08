@@ -5,14 +5,14 @@
       "name": "andouille sausage",
       "score": 32.042355714602266,
       "connects_a": [
-        "chicken broth",
-        "canola oil",
-        "shrimp"
+        "rice",
+        "bell pepper",
+        "garlic"
       ],
       "connects_b": [
-        "oregano",
+        "onion",
         "thyme",
-        "bell pepper"
+        "oregano"
       ]
     },
     {
@@ -23,32 +23,32 @@
         "flour"
       ],
       "connects_b": [
-        "dhania",
-        "oil",
-        "demerara"
+        "seeds",
+        "bell",
+        "oil salt"
       ]
     },
     {
       "name": "celery",
       "score": 28.06950279513199,
       "connects_a": [
-        "chicken broth",
-        "shrimp",
-        "carrot"
+        "rice",
+        "bell pepper",
+        "garlic"
       ],
       "connects_b": [
-        "oregano",
+        "onion",
         "thyme",
-        "bell pepper"
+        "oregano"
       ]
     },
     {
       "name": "ribs celery",
       "score": 24.17490937906013,
       "connects_a": [
-        "chicken broth",
-        "shrimp",
-        "carrot"
+        "scallions",
+        "bell pepper",
+        "cloves"
       ],
       "connects_b": [
         "onion",
@@ -60,23 +60,23 @@
       "name": "file powder",
       "score": 24.04874319183523,
       "connects_a": [
-        "shrimp",
-        "vegetable oil",
-        "bell pepper"
+        "bell pepper",
+        "leaves",
+        "garlic"
       ],
       "connects_b": [
         "onion",
-        "thyme",
-        "bell pepper"
+        "leaves",
+        "thyme"
       ]
     },
     {
       "name": "oyster sauce",
       "score": 22.014144226869455,
       "connects_a": [
-        "shrimp",
-        "mushrooms",
-        "chicken broth"
+        "shaoxing",
+        "scallions",
+        "sodium soy sauce"
       ],
       "connects_b": [
         "oil"
@@ -86,26 +86,26 @@
       "name": "tomato paste",
       "score": 20.129055531272705,
       "connects_a": [
-        "pork",
-        "carrot",
-        "bell pepper"
+        "bell pepper",
+        "cloves",
+        "carrot"
       ],
       "connects_b": [
-        "oregano",
+        "onion",
         "thyme",
-        "bell pepper"
+        "oregano"
       ]
     },
     {
       "name": "cans tomatoes",
       "score": 20.044428318272463,
       "connects_a": [
-        "carrot",
         "cloves",
+        "leaves",
         "pepper flakes"
       ],
       "connects_b": [
-        "oregano",
+        "onion",
         "olive oil",
         "leaves"
       ]
@@ -114,9 +114,9 @@
       "name": "corn starch",
       "score": 20.03969984589309,
       "connects_a": [
-        "mushrooms",
-        "rice",
-        "oyster sauce"
+        "shaoxing",
+        "scallions",
+        "sodium soy sauce"
       ],
       "connects_b": [
         "oil"
@@ -126,9 +126,9 @@
       "name": "soy sauce",
       "score": 19.524073755401215,
       "connects_a": [
-        "mushrooms",
-        "rice",
-        "oyster sauce"
+        "shaoxing",
+        "scallions",
+        "rice wine"
       ],
       "connects_b": [
         "oil"
@@ -137,17 +137,12 @@
   ],
   "novel_from_a": [
     {
-      "name": "squid",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "spaghetti",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "anchovies",
+      "name": "turkey sausage",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -157,22 +152,12 @@
       "strength": 1
     },
     {
-      "name": "plum tomatoes",
+      "name": "baby arugula",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "fennel bulb",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "petite",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "heads garlic",
+      "name": "anchovies",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -182,19 +167,34 @@
       "strength": 1
     },
     {
-      "name": "radicchio",
+      "name": "plum tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "heads garlic",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "fennel bulb",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "mussels",
       "pairs_with": "olive oil",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "reggiano",
+      "name": "crusty bread",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "crusty bread",
+      "name": "reggiano",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -204,17 +204,7 @@
       "strength": 1
     },
     {
-      "name": "vanilla",
-      "pairs_with": "egg",
-      "strength": 1
-    },
-    {
       "name": "margarine",
-      "pairs_with": "egg",
-      "strength": 1
-    },
-    {
-      "name": "icing",
       "pairs_with": "egg",
       "strength": 1
     },
@@ -225,6 +215,16 @@
     },
     {
       "name": "ricotta",
+      "pairs_with": "egg",
+      "strength": 1
+    },
+    {
+      "name": "vanilla",
+      "pairs_with": "egg",
+      "strength": 1
+    },
+    {
+      "name": "icing",
       "pairs_with": "egg",
       "strength": 1
     },

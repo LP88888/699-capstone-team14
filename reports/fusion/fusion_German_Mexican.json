@@ -5,13 +5,13 @@
       "name": "confectioners",
       "score": 78.40683929914888,
       "connects_a": [
-        "egg",
-        "nutmeg",
+        "almonds",
+        "butter",
         "milk"
       ],
       "connects_b": [
-        "egg",
-        "more",
+        "1",
+        "butter",
         "cinnamon"
       ]
     },
@@ -19,41 +19,41 @@
       "name": "garam masala",
       "score": 63.35613325062594,
       "connects_a": [
-        "cinnamon",
-        "bay leaf",
+        "lemon juice",
+        "garlic",
         "vegetable oil"
       ],
       "connects_b": [
-        "cinnamon",
-        "vegetable oil",
-        "cumin"
+        "tomatoes",
+        "garlic",
+        "vegetable oil"
       ]
     },
     {
       "name": "vanilla extract",
       "score": 60.962692176467755,
       "connects_a": [
-        "egg",
-        "nutmeg",
-        "apples"
+        "almonds",
+        "butter",
+        "milk"
       ],
       "connects_b": [
-        "egg",
-        "cinnamon",
-        "butter"
+        "1",
+        "butter",
+        "cinnamon"
       ]
     },
     {
       "name": "sticks",
       "score": 55.19451995974218,
       "connects_a": [
-        "egg",
-        "nutmeg",
-        "apples"
+        "almonds",
+        "butter",
+        "purpose flour"
       ],
       "connects_b": [
-        "egg",
-        "more",
+        "1",
+        "butter",
         "cinnamon"
       ]
     },
@@ -61,13 +61,13 @@
       "name": "at",
       "score": 54.21508898175742,
       "connects_a": [
-        "egg",
+        "butter",
         "milk",
-        "vanilla extract"
+        "purpose flour"
       ],
       "connects_b": [
-        "egg",
-        "more",
+        "1",
+        "butter",
         "kosher sea salt"
       ]
     },
@@ -76,12 +76,12 @@
       "score": 51.17903409034358,
       "connects_a": [
         "onion",
-        "cabbage",
-        "vegetable oil"
+        "vegetable oil",
+        "cabbage"
       ],
       "connects_b": [
-        "more",
         "jalapeno",
+        "tomatillos",
         "salsa"
       ]
     },
@@ -89,27 +89,27 @@
       "name": "tomato paste",
       "score": 49.31618605161813,
       "connects_a": [
-        "wine",
-        "bay leaf",
+        "parsley",
+        "cloves",
         "carrot"
       ],
       "connects_b": [
-        "cumin",
         "bell pepper",
-        "cloves"
+        "cloves",
+        "tomatoes"
       ]
     },
     {
       "name": "whole milk",
       "score": 45.131783279157894,
       "connects_a": [
-        "egg",
-        "nutmeg",
-        "cinnamon"
+        "butter",
+        "purpose flour",
+        "egg"
       ],
       "connects_b": [
-        "egg",
-        "more",
+        "butter",
+        "kosher sea salt",
         "cinnamon"
       ]
     },
@@ -117,28 +117,28 @@
       "name": "cabbage",
       "score": 42.163371871509966,
       "connects_a": [
-        "apples",
-        "cider vinegar",
+        "wine vinegar",
+        "bacon",
         "carrot"
       ],
       "connects_b": [
-        "flour tortillas",
+        "lime",
         "cilantro leaves",
-        "cilantro"
+        "lime juice"
       ]
     },
     {
       "name": "celery",
       "score": 42.10425419269799,
       "connects_a": [
-        "bay leaf",
-        "carrot",
+        "parsley",
+        "garlic",
         "bacon"
       ],
       "connects_b": [
-        "tomatoes",
+        "rice",
         "bell pepper",
-        "chicken stock"
+        "tomatoes"
       ]
     }
   ],
@@ -149,17 +149,12 @@
       "strength": 1
     },
     {
-      "name": "escarole",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
       "name": "montreal steak",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "ribs celery",
+      "name": "escarole",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -169,12 +164,22 @@
       "strength": 1
     },
     {
-      "name": "muscovado sugar",
+      "name": "ribs celery",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "graham cracker crumbs",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "percent milk",
+      "name": "granny smith apples",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "almond flour",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -184,44 +189,29 @@
       "strength": 1
     },
     {
-      "name": "cooking apples",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "almond flour",
+      "name": "dutch process",
       "pairs_with": "butter",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "squid",
+      "name": "orzo pasta",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "finely oregano",
+      "name": "parmigiano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "plum tomatoes",
+      "name": "grape tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "some",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "fennel bulb",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "eggplants",
+      "name": "cherry tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -231,7 +221,17 @@
       "strength": 1
     },
     {
+      "name": "chorizo",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "pecorino",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "romano",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -241,7 +241,7 @@
       "strength": 1
     },
     {
-      "name": "reggiano",
+      "name": "turn",
       "pairs_with": "olive oil",
       "strength": 1
     }

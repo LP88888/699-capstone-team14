@@ -5,37 +5,37 @@
       "name": "garam masala",
       "score": 55.31090998070518,
       "connects_a": [
-        "tomato paste",
-        "bay leaf",
-        "potatoes"
+        "chicken",
+        "tomatoes",
+        "garlic"
       ],
       "connects_b": [
         "chili powder",
         "peas",
-        "onion"
+        "cumin seeds"
       ]
     },
     {
       "name": "tumeric",
       "score": 30.08492178149059,
       "connects_a": [
-        "chicken breasts",
-        "onion",
-        "tomatoes"
+        "tomatoes",
+        "garlic",
+        "chicken breasts"
       ],
       "connects_b": [
         "chili powder",
         "peas",
-        "onion"
+        "cumin seeds"
       ]
     },
     {
       "name": "celery",
       "score": 28.06950279513199,
       "connects_a": [
-        "chicken broth",
-        "worcestershire sauce",
-        "tomato paste"
+        "parsley",
+        "beef broth",
+        "bell pepper"
       ],
       "connects_b": [
         "onion",
@@ -46,13 +46,13 @@
       "name": "turmeric",
       "score": 28.054277753188934,
       "connects_a": [
-        "tomato paste",
-        "bay leaf",
-        "vegetable oil"
+        "chicken",
+        "tomatoes",
+        "paprika"
       ],
       "connects_b": [
-        "oil",
         "chili powder",
+        "oil",
         "peas"
       ]
     },
@@ -60,9 +60,9 @@
       "name": "can tomatoes",
       "score": 26.153033612710836,
       "connects_a": [
-        "wine",
-        "chicken broth",
-        "worcestershire sauce"
+        "parsley",
+        "chicken",
+        "beef broth"
       ],
       "connects_b": [
         "onion",
@@ -73,9 +73,9 @@
       "name": "andouille sausage",
       "score": 26.03441401811434,
       "connects_a": [
-        "chicken broth",
+        "chicken",
         "worcestershire sauce",
-        "tomato paste"
+        "bell pepper"
       ],
       "connects_b": [
         "onion",
@@ -86,9 +86,9 @@
       "name": "beef stock",
       "score": 24.08835815931572,
       "connects_a": [
-        "wine",
+        "mushrooms",
         "worcestershire sauce",
-        "tomato paste"
+        "paprika"
       ],
       "connects_b": [
         "onion",
@@ -99,9 +99,9 @@
       "name": "celery ribs",
       "score": 24.018363085472036,
       "connects_a": [
-        "wine",
-        "chicken broth",
-        "tomato paste"
+        "parsley",
+        "worcestershire sauce",
+        "bell pepper"
       ],
       "connects_b": [
         "onion",
@@ -112,13 +112,13 @@
       "name": "bay leaf",
       "score": 22.197990055839256,
       "connects_a": [
-        "wine",
-        "chicken broth",
-        "tomato paste"
+        "parsley",
+        "beef broth",
+        "tomatoes"
       ],
       "connects_b": [
-        "onion",
-        "beans"
+        "beans",
+        "onion"
       ]
     },
     {
@@ -129,40 +129,30 @@
         "flour"
       ],
       "connects_b": [
-        "dhania",
-        "mango",
-        "dal"
+        "seeds",
+        "oil salt",
+        "fenugreek"
       ]
     }
   ],
   "novel_from_a": [
+    {
+      "name": "beef chuck",
+      "pairs_with": "onion",
+      "strength": 1
+    },
     {
       "name": "beef",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "celery ribs",
+      "name": "kidney beans",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "bouquet garni",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "chicken base",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "navy beans",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "bay leaf",
+      "name": "beef stock",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -172,17 +162,27 @@
       "strength": 1
     },
     {
+      "name": "bouquet garni",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "navy beans",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "bacon fat",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
       "name": "beef shoulder",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "garam masala",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "beef chuck",
+      "name": "celery",
       "pairs_with": "onion",
       "strength": 1
     }
@@ -209,12 +209,7 @@
       "strength": 1
     },
     {
-      "name": "finger",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "ragi",
+      "name": "wheat",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -224,12 +219,17 @@
       "strength": 1
     },
     {
+      "name": "finger",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
       "name": "soda",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "wheat",
+      "name": "ragi",
       "pairs_with": "flour",
       "strength": 1
     },

@@ -108,6 +108,18 @@ def run(context: PipelineContext, *, force: bool = False) -> StageResult:
         "middle eastern": "Middle Eastern",
         "east-asian": "East Asian",
         "east asian": "East Asian",
+        # Cajun synonyms
+        "cajun & creole": "Cajun",
+        "cajun and creole": "Cajun",
+        # Indian subregions collapsed to Indian
+        "karnataka": "Indian",
+        "kerala": "Indian",
+        "tamil nadu": "Indian",
+        "maharashtrian": "Indian",
+        "maharashtra": "Indian",
+        "gujarati": "Indian",
+        "goan": "Indian",
+        "jharkhand": "Indian",
     }
 
     def _normalize_whitespace(s: str) -> str:
@@ -194,6 +206,9 @@ def run(context: PipelineContext, *, force: bool = False) -> StageResult:
 
     df[cuisine_col] = df[cuisine_col].apply(_to_label)
     df = df[df[cuisine_col] != ""]
+    # Strip stray bracket/brace/paren characters and drop any remaining noisy labels
+    df[cuisine_col] = df[cuisine_col].str.strip("[]{}() ")
+    df = df[~df[cuisine_col].str.contains(r"[\\[\\]{}]", regex=True)]
 
     # Filter to labels with sufficient support
     label_counts = df[cuisine_col].value_counts()
@@ -250,8 +265,9 @@ def run(context: PipelineContext, *, force: bool = False) -> StageResult:
     else:
         X_features = X_tfidf
     
-    # Split
+    # Split (same seed across feature spaces to keep splits aligned)
     X_train, X_test, y_train, y_test = train_test_split(X_features, y, test_size=0.2, random_state=42)
+    X_train_tf, X_test_tf, y_train_tf, y_test_tf = train_test_split(X_tfidf, y, test_size=0.2, random_state=42)
     
     # 1. Logistic Regression
     logger.info("Training Logistic Regression...")
@@ -304,10 +320,14 @@ def run(context: PipelineContext, *, force: bool = False) -> StageResult:
         )
         pd.DataFrame(report_parent).T.to_csv(out_dir / "classification_report_logreg_parent.csv")
     
-    # Top Features (only when using raw TF-IDF for interpretability)
-    if not use_svd:
+    # Top Features (always from a TF-IDF model for interpretability)
+    if use_svd:
+        aux_clf = LogisticRegression(max_iter=500, n_jobs=-1, class_weight="balanced")
+        aux_clf.fit(X_train_tf, y_train_tf)
+        top_feat = extract_top_features(aux_clf, tfidf, aux_clf.classes_)
+    else:
         top_feat = extract_top_features(clf, tfidf, clf.classes_)
-        top_feat.to_csv(out_dir / "top_features_logreg.csv", index=False)
+    top_feat.to_csv(out_dir / "top_features_logreg.csv", index=False)
     
     # 2. Random Forest (Subsampled)
     logger.info("Training Random Forest (Subsampled)...")
@@ -327,6 +347,17 @@ def run(context: PipelineContext, *, force: bool = False) -> StageResult:
     k = params.get("kmeans_k", 20)
     kmeans = KMeans(n_clusters=k, n_init=5, random_state=42)
     clusters = kmeans.fit_predict(X_features)
+    # Cluster metrics (silhouette/ARI)
+    sil = None
+    ari = None
+    try:
+        sil = silhouette_score(X_features, clusters)
+    except Exception as e:
+        logger.warning("Silhouette score failed: %s", e)
+    try:
+        ari = adjusted_rand_score(y, clusters)
+    except Exception as e:
+        logger.warning("ARI failed: %s", e)
     
     # Save Cluster Assignments
     df_clusters = pd.DataFrame({
@@ -334,6 +365,11 @@ def run(context: PipelineContext, *, force: bool = False) -> StageResult:
         "cluster": clusters
     })
     df_clusters.to_csv(out_dir / "cluster_assignments.csv", index=False)
+    pd.DataFrame([{
+        "kmeans_k": k,
+        "silhouette": sil,
+        "ari": ari,
+    }]).to_csv(out_dir / "cluster_metrics.csv", index=False)
 
     outputs = {
         "report": str(out_dir / "classification_report_logreg.csv"),

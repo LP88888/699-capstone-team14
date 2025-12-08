@@ -5,42 +5,42 @@
       "name": "garam masala",
       "score": 40.22611634960377,
       "connects_a": [
-        "ginger",
-        "cinnamon",
-        "vegetable oil"
+        "garlic",
+        "vegetable oil",
+        "cinnamon"
       ],
       "connects_b": [
         "chili powder",
         "peas",
-        "onion"
+        "cumin seeds"
       ]
     },
     {
       "name": "jalapeno peppers",
       "score": 40.039128729232196,
       "connects_a": [
-        "cumin",
-        "bell pepper",
-        "cilantro leaves"
+        "scallions",
+        "rice",
+        "bell pepper"
       ],
       "connects_b": [
-        "mango",
-        "chili powder",
-        "rice"
+        "beans",
+        "rice",
+        "chili powder"
       ]
     },
     {
       "name": "mango",
       "score": 36.25288588883543,
       "connects_a": [
-        "coconut milk",
-        "orange juice",
-        "cilantro"
+        "pineapple",
+        "lime juice",
+        "lime"
       ],
       "connects_b": [
-        "dhania",
-        "wheat",
-        "fenugreek"
+        "seeds",
+        "fenugreek",
+        "wheat"
       ]
     },
     {
@@ -48,11 +48,11 @@
       "score": 32.47889923431261,
       "connects_a": [
         "cinnamon",
-        "cumin",
-        "ginger"
+        "ginger",
+        "allspice"
       ],
       "connects_b": [
-        "dhania",
+        "seeds",
         "chili powder",
         "peas"
       ]
@@ -61,41 +61,41 @@
       "name": "tumeric",
       "score": 30.08492178149059,
       "connects_a": [
-        "ginger",
+        "garlic",
         "cinnamon",
         "cumin"
       ],
       "connects_b": [
         "chili powder",
         "peas",
-        "onion"
+        "cumin seeds"
       ]
     },
     {
       "name": "coriander powder",
       "score": 30.058580713252926,
       "connects_a": [
-        "ginger",
-        "cinnamon",
-        "cumin"
+        "leaves",
+        "garlic",
+        "cinnamon"
       ],
       "connects_b": [
+        "leaves",
         "chili powder",
-        "onion",
-        "oil"
+        "cumin seeds"
       ]
     },
     {
       "name": "cilantro",
       "score": 28.16233425499042,
       "connects_a": [
-        "ginger",
-        "plantains",
-        "cumin"
+        "scallions",
+        "lime juice",
+        "lime"
       ],
       "connects_b": [
-        "chili powder",
         "beans",
+        "chili powder",
         "mango"
       ]
     },
@@ -103,13 +103,13 @@
       "name": "cumin",
       "score": 27.463930256867304,
       "connects_a": [
-        "plantains",
         "bell pepper",
-        "coconut milk"
+        "lime juice",
+        "cilantro leaves"
       ],
       "connects_b": [
-        "chili powder",
         "beans",
+        "chili powder",
         "cumin seeds"
       ]
     },
@@ -117,13 +117,13 @@
       "name": "turmeric",
       "score": 24.046523788447658,
       "connects_a": [
-        "ginger",
         "vegetable oil",
-        "cumin"
+        "cilantro leaves",
+        "coconut milk"
       ],
       "connects_b": [
-        "oil",
         "chili powder",
+        "oil",
         "peas"
       ]
     },
@@ -131,18 +131,23 @@
       "name": "mustard seeds",
       "score": 24.018692241768363,
       "connects_a": [
-        "ginger",
         "vegetable oil",
-        "cumin"
+        "coconut milk",
+        "allspice"
       ],
       "connects_b": [
-        "oil",
         "chili powder",
+        "oil",
         "peas"
       ]
     }
   ],
   "novel_from_a": [
+    {
+      "name": "bell",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
     {
       "name": "dry",
       "pairs_with": "dhania",
@@ -154,12 +159,7 @@
       "strength": 1
     },
     {
-      "name": "bell",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "green pepper",
+      "name": "beef chuck",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -174,22 +174,22 @@
       "strength": 1
     },
     {
-      "name": "knife blade",
+      "name": "kidney beans",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "celery ribs",
+      "name": "roasted tomatoes",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "chorizo sausage",
+      "name": "crawfish",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "corn tortillas",
+      "name": "pinch saffron",
       "pairs_with": "onion",
       "strength": 1
     }
@@ -216,12 +216,12 @@
       "strength": 1
     },
     {
-      "name": "oats",
+      "name": "soda",
       "pairs_with": "cinnamon",
       "strength": 1
     },
     {
-      "name": "soda",
+      "name": "oats",
       "pairs_with": "cinnamon",
       "strength": 1
     },
@@ -236,12 +236,12 @@
       "strength": 1
     },
     {
-      "name": "finger",
+      "name": "wheat",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "ragi",
+      "name": "flour all",
       "pairs_with": "flour",
       "strength": 1
     }

@@ -10,6 +10,8 @@ import pyarrow.parquet as pq
 
 _DROP_TOKENS = {
     # Prep words / measurements that add noise
+    "til",  # sesame synonym; drop noisy token
+    "extra",
     "chopped",
     "finely",
     "tablespoon",

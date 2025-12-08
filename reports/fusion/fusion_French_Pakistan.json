@@ -5,84 +5,84 @@
       "name": "garam masala",
       "score": 162.91577121589526,
       "connects_a": [
-        "bay leaf",
-        "cinnamon",
+        "lemon juice",
+        "garlic",
         "vegetable oil"
       ],
       "connects_b": [
-        "coriander",
-        "peas",
-        "chili powder"
+        "cinnamon sticks",
+        "tomatoes",
+        "cardamom"
       ]
     },
     {
       "name": "allspice",
       "score": 66.29405674966588,
       "connects_a": [
-        "nutmeg",
+        "kosher sea salt",
         "cinnamon",
-        "bay leaf"
+        "thyme"
       ],
       "connects_b": [
-        "ginger",
-        "cardamom",
-        "cinnamon"
+        "mustard seeds",
+        "cinnamon sticks",
+        "cayenne pepper"
       ]
     },
     {
       "name": "coriander powder",
       "score": 64.1249721882729,
       "connects_a": [
-        "cinnamon",
         "onion",
+        "leaves",
         "garlic"
       ],
       "connects_b": [
-        "ginger",
-        "tumeric",
-        "cinnamon"
+        "garam masala",
+        "turmeric",
+        "tomatoes"
       ]
     },
     {
       "name": "confectioners",
       "score": 60.31295330703761,
       "connects_a": [
-        "egg",
-        "nutmeg",
-        "more"
+        "1",
+        "maple syrup",
+        "chocolate"
       ],
       "connects_b": [
         "cinnamon",
         "cream",
-        "milk"
+        "butter"
       ]
     },
     {
       "name": "coriander seeds",
       "score": 60.08439361396923,
       "connects_a": [
-        "cinnamon",
-        "bay leaf",
-        "kosher sea salt"
+        "shallots",
+        "kosher sea salt",
+        "wine vinegar"
       ],
       "connects_b": [
-        "ginger",
-        "cinnamon",
-        "cinnamon sticks"
+        "garam masala",
+        "turmeric",
+        "mustard seeds"
       ]
     },
     {
       "name": "cardamom pods",
       "score": 56.115100092400944,
       "connects_a": [
-        "bay leaf",
+        "cloves",
         "vegetable oil",
         "cinnamon"
       ],
       "connects_b": [
-        "basmati rice",
-        "ginger",
-        "cinnamon"
+        "garam masala",
+        "turmeric",
+        "cinnamon sticks"
       ]
     },
     {
@@ -90,40 +90,40 @@
       "score": 54.15285920668306,
       "connects_a": [
         "onion",
-        "cinnamon",
-        "garlic"
+        "garlic",
+        "cinnamon"
       ],
       "connects_b": [
-        "ginger",
-        "cardamom",
-        "cinnamon"
+        "garam masala",
+        "mustard seeds",
+        "cayenne pepper"
       ]
     },
     {
       "name": "chiles",
       "score": 52.24817843907106,
       "connects_a": [
-        "2",
-        "vegetable oil",
-        "shallots"
+        "cloves",
+        "shallots",
+        "vegetable oil"
       ],
       "connects_b": [
-        "ginger",
-        "cinnamon sticks",
-        "vegetable oil"
+        "garam masala",
+        "turmeric",
+        "mustard seeds"
       ]
     },
     {
       "name": "tomato paste",
       "score": 49.31618605161813,
       "connects_a": [
-        "wine",
-        "bay leaf",
+        "parsley",
+        "cloves",
         "carrot"
       ],
       "connects_b": [
-        "cumin",
         "garam masala",
+        "turmeric",
         "cloves"
       ]
     },
@@ -131,45 +131,50 @@
       "name": "vanilla extract",
       "score": 48.770153741174205,
       "connects_a": [
-        "egg",
-        "nutmeg",
-        "milk"
+        "1",
+        "maple syrup",
+        "chocolate"
       ],
       "connects_b": [
         "cinnamon",
         "cream",
-        "milk"
+        "butter"
       ]
     }
   ],
   "novel_from_a": [
-    {
-      "name": "head fennel",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "chianti",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "canned tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
     {
       "name": "spaghetti",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "salami",
+      "name": "turkey sausage",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "sandwich rolls",
+      "name": "parmigiano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cannellini",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "spun",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "baby arugula",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "grigio",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -179,29 +184,19 @@
       "strength": 1
     },
     {
-      "name": "anchovies",
+      "name": "grape tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "clam broth",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "spun",
+      "name": "cherry tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "paneer",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "corn tortillas",
+      "name": "kasuri methi",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -211,12 +206,17 @@
       "strength": 1
     },
     {
-      "name": "lentil",
+      "name": "ginger paste",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "capsicum",
+      "name": "paneer",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "lentil",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -226,17 +226,17 @@
       "strength": 1
     },
     {
-      "name": "ginger paste",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "kasuri methi",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
       "name": "kidney beans",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "capsicum",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "corn tortillas",
       "pairs_with": "onion",
       "strength": 1
     },

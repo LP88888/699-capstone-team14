@@ -27,6 +27,7 @@
 1) Create/activate a virtualenv (or your preferred env).
 2) Install the project in editable mode:
    ```sh
+   pip install -r requirements.txt
    pip install -e .
    ```
 3) Run the pipeline:

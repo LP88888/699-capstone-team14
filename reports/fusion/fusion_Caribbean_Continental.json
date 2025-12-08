@@ -5,69 +5,69 @@
       "name": "salsa",
       "score": 32.09376320403048,
       "connects_a": [
-        "cumin",
+        "scallions",
         "bell pepper",
-        "cilantro leaves"
+        "lime juice"
       ],
       "connects_b": [
-        "oregano",
+        "beans",
         "cream",
-        "beans"
+        "oregano"
       ]
     },
     {
       "name": "mango",
       "score": 30.21073824069619,
       "connects_a": [
-        "coconut milk",
-        "orange juice",
-        "cilantro"
+        "pineapple",
+        "lime juice",
+        "lime"
       ],
       "connects_b": [
-        "dhania",
+        "seeds",
         "wheat",
-        "seeds"
+        "powder"
       ]
     },
     {
       "name": "tomato paste",
       "score": 28.18067774378179,
       "connects_a": [
-        "carrot",
-        "cumin",
-        "bell pepper"
+        "parsley",
+        "bell pepper",
+        "cloves"
       ],
       "connects_b": [
-        "oregano",
+        "onion",
         "thyme",
-        "bell pepper"
+        "oregano"
       ]
     },
     {
       "name": "celery",
       "score": 28.06950279513199,
       "connects_a": [
-        "carrot",
-        "bell pepper",
-        "thyme"
+        "parsley",
+        "rice",
+        "bell pepper"
       ],
       "connects_b": [
-        "oregano",
+        "onion",
         "thyme",
-        "bell pepper"
+        "oregano"
       ]
     },
     {
       "name": "cumin",
       "score": 27.463930256867304,
       "connects_a": [
-        "plantains",
         "bell pepper",
-        "coconut milk"
+        "lime juice",
+        "cilantro leaves"
       ],
       "connects_b": [
-        "oregano",
         "beans",
+        "oregano",
         "bell pepper"
       ]
     },
@@ -75,23 +75,23 @@
       "name": "bay leaf",
       "score": 24.215989151824644,
       "connects_a": [
+        "parsley",
         "carrot",
-        "cumin",
         "thyme"
       ],
       "connects_b": [
-        "oregano",
+        "beans",
         "thyme",
-        "beans"
+        "oregano"
       ]
     },
     {
       "name": "garam masala",
       "score": 24.135669809762263,
       "connects_a": [
-        "ginger",
-        "cinnamon",
-        "vegetable oil"
+        "garlic",
+        "vegetable oil",
+        "cinnamon"
       ],
       "connects_b": [
         "onion",
@@ -103,13 +103,13 @@
       "name": "tortilla chips",
       "score": 24.058056187388008,
       "connects_a": [
+        "bell pepper",
         "vegetable oil",
-        "cumin",
-        "bell pepper"
+        "cilantro leaves"
       ],
       "connects_b": [
-        "cream",
         "beans",
+        "cream",
         "bell pepper"
       ]
     },
@@ -117,34 +117,59 @@
       "name": "file powder",
       "score": 24.04874319183523,
       "connects_a": [
-        "vegetable oil",
         "bell pepper",
-        "thyme"
+        "leaves",
+        "garlic"
       ],
       "connects_b": [
         "onion",
-        "thyme",
-        "bell pepper"
+        "leaves",
+        "thyme"
       ]
     },
     {
       "name": "andouille sausage",
       "score": 24.0317667859517,
       "connects_a": [
-        "canola oil",
+        "rice",
         "bell pepper",
-        "thyme"
+        "garlic"
       ],
       "connects_b": [
-        "oregano",
+        "onion",
         "thyme",
-        "bell pepper"
+        "oregano"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "olives",
+      "name": "oregano leaves",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "capers",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "chipotle puree",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "roasted tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pinch saffron",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "fennel bulb",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -154,42 +179,17 @@
       "strength": 1
     },
     {
+      "name": "canned tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "basil chiffonade",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "by hand",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "chorizo sausage",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "bunch kale",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "hearts",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "oregano leaves",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "mussels",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "chorizo",
+      "name": "cubanelle peppers",
       "pairs_with": "olive oil",
       "strength": 1
     }
@@ -201,12 +201,12 @@
       "strength": 1
     },
     {
-      "name": "arugula leaves",
+      "name": "crusty bread",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "crusty bread",
+      "name": "handful pine nuts",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -216,7 +216,7 @@
       "strength": 1
     },
     {
-      "name": "handful pine nuts",
+      "name": "arugula leaves",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -231,12 +231,12 @@
       "strength": 1
     },
     {
-      "name": "soda",
+      "name": "cocoa",
       "pairs_with": "egg",
       "strength": 1
     },
     {
-      "name": "cream cheese",
+      "name": "chocolate chips",
       "pairs_with": "egg",
       "strength": 1
     },

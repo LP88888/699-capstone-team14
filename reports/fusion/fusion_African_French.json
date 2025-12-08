@@ -5,13 +5,13 @@
       "name": "garam masala",
       "score": 84.47484433416793,
       "connects_a": [
-        "ginger",
-        "tomato paste",
+        "lemon juice",
+        "chicken",
         "turmeric"
       ],
       "connects_b": [
-        "bay leaf",
-        "cinnamon",
+        "lemon juice",
+        "garlic",
         "vegetable oil"
       ]
     },
@@ -19,13 +19,13 @@
       "name": "ribs celery",
       "score": 63.459137120032835,
       "connects_a": [
-        "tomato paste",
-        "carrot",
-        "bell pepper"
+        "parsley",
+        "scallions",
+        "chicken"
       ],
       "connects_b": [
-        "wine",
-        "bay leaf",
+        "parsley",
+        "cloves",
         "carrot"
       ]
     },
@@ -33,13 +33,13 @@
       "name": "tomato paste",
       "score": 63.406524923509025,
       "connects_a": [
-        "carrot",
-        "cumin",
-        "paprika"
+        "parsley",
+        "turmeric",
+        "bell pepper"
       ],
       "connects_b": [
-        "wine",
-        "bay leaf",
+        "parsley",
+        "cloves",
         "carrot"
       ]
     },
@@ -48,12 +48,12 @@
       "score": 60.39764974345416,
       "connects_a": [
         "roughly",
-        "turmeric",
-        "carrot"
+        "chicken",
+        "turmeric"
       ],
       "connects_b": [
-        "wine",
-        "bay leaf",
+        "shallots",
+        "kosher sea salt",
         "carrot"
       ]
     },
@@ -61,41 +61,41 @@
       "name": "chiles",
       "score": 56.26726908823037,
       "connects_a": [
-        "ginger",
         "roughly",
-        "vegetable oil"
+        "turmeric",
+        "cloves"
       ],
       "connects_b": [
-        "2",
-        "vegetable oil",
-        "shallots"
+        "cloves",
+        "shallots",
+        "vegetable oil"
       ]
     },
     {
       "name": "sprigs thyme",
       "score": 56.119137176022164,
       "connects_a": [
-        "tomato paste",
         "roughly",
-        "carrot"
+        "lemon",
+        "leaves"
       ],
       "connects_b": [
-        "wine",
-        "bay leaf",
-        "carrot"
+        "shallots",
+        "lemon",
+        "leaves"
       ]
     },
     {
       "name": "yellow onions",
       "score": 56.07737371902927,
       "connects_a": [
-        "tomato paste",
-        "carrot",
-        "paprika"
+        "parsley",
+        "bell pepper",
+        "2"
       ],
       "connects_b": [
-        "wine",
-        "carrot",
+        "parsley",
+        "garlic",
         "kosher sea salt"
       ]
     },
@@ -103,56 +103,46 @@
       "name": "palm",
       "score": 55.21163584823374,
       "connects_a": [
-        "cumin",
-        "bell pepper",
-        "cloves"
+        "parsley",
+        "scallions",
+        "bell pepper"
       ],
       "connects_b": [
+        "parsley",
         "cloves",
-        "lemon",
-        "olive oil"
+        "lemon"
       ]
     },
     {
       "name": "allspice",
       "score": 54.24059188609027,
       "connects_a": [
-        "ginger",
         "roughly",
-        "cinnamon"
+        "cloves",
+        "paprika"
       ],
       "connects_b": [
-        "nutmeg",
+        "kosher sea salt",
         "cinnamon",
-        "bay leaf"
+        "thyme"
       ]
     },
     {
       "name": "bay leaf",
       "score": 50.44997739963467,
       "connects_a": [
-        "tomato paste",
-        "carrot",
-        "cumin"
+        "parsley",
+        "turmeric",
+        "coriander seeds"
       ],
       "connects_b": [
-        "wine",
+        "parsley",
         "carrot",
         "thyme"
       ]
     }
   ],
   "novel_from_a": [
-    {
-      "name": "squid",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "brussels sprouts",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
     {
       "name": "montreal steak",
       "pairs_with": "olive oil",
@@ -164,12 +154,32 @@
       "strength": 1
     },
     {
-      "name": "scotch bonnet",
+      "name": "brussels sprouts",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "squid",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "montreal steak",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
       "name": "scotch bonnet peppers",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "fire",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "scotch bonnet",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -182,46 +192,36 @@
       "name": "squid",
       "pairs_with": "cloves",
       "strength": 1
-    },
-    {
-      "name": "montreal steak",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "fire",
-      "pairs_with": "cloves",
-      "strength": 1
     }
   ],
   "novel_from_b": [
-    {
-      "name": "head fennel",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "chianti",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "canned tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
     {
       "name": "spaghetti",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "salami",
+      "name": "parmigiano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "sandwich rolls",
+      "name": "cannellini",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "spun",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "baby arugula",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "grigio",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -231,17 +231,17 @@
       "strength": 1
     },
     {
-      "name": "anchovies",
+      "name": "grape tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "clam broth",
+      "name": "arugula",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "spun",
+      "name": "romano",
       "pairs_with": "olive oil",
       "strength": 1
     }

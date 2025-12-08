@@ -5,13 +5,13 @@
       "name": "confectioners",
       "score": 78.40683929914888,
       "connects_a": [
-        "egg",
-        "nutmeg",
+        "almonds",
+        "butter",
         "milk"
       ],
       "connects_b": [
-        "egg",
-        "more",
+        "1",
+        "butter",
         "2"
       ]
     },
@@ -19,55 +19,55 @@
       "name": "tomato paste",
       "score": 63.406524923509025,
       "connects_a": [
-        "wine",
-        "bay leaf",
+        "parsley",
+        "cloves",
         "carrot"
       ],
       "connects_b": [
-        "wine",
-        "carrot",
-        "cumin"
+        "parsley",
+        "bell pepper",
+        "cloves"
       ]
     },
     {
       "name": "celery",
       "score": 60.14893456099712,
       "connects_a": [
-        "bay leaf",
-        "carrot",
+        "parsley",
+        "garlic",
         "bacon"
       ],
       "connects_b": [
-        "tomatoes",
-        "shrimp",
-        "carrot"
+        "parsley",
+        "rice",
+        "bell pepper"
       ]
     },
     {
       "name": "chorizo",
       "score": 60.1107346120163,
       "connects_a": [
-        "wine",
-        "bay leaf",
-        "cloves"
+        "parsley",
+        "olive oil",
+        "wine"
       ],
       "connects_b": [
-        "wine",
-        "tomatoes",
-        "olives"
+        "parsley",
+        "rice",
+        "bell pepper"
       ]
     },
     {
       "name": "sticks",
       "score": 55.19451995974218,
       "connects_a": [
-        "egg",
-        "nutmeg",
-        "apples"
+        "almonds",
+        "butter",
+        "purpose flour"
       ],
       "connects_b": [
-        "egg",
-        "more",
+        "1",
+        "butter",
         "2"
       ]
     },
@@ -75,13 +75,13 @@
       "name": "mussels",
       "score": 50.30112348357417,
       "connects_a": [
-        "wine",
-        "bay leaf",
-        "cloves"
+        "parsley",
+        "olive oil",
+        "wine"
       ],
       "connects_b": [
-        "wine",
-        "shrimp",
+        "parsley",
+        "rice",
         "bell pepper"
       ]
     },
@@ -89,55 +89,55 @@
       "name": "garam masala",
       "score": 49.27699252826462,
       "connects_a": [
-        "cinnamon",
-        "bay leaf",
+        "lemon juice",
+        "garlic",
         "vegetable oil"
       ],
       "connects_b": [
-        "cumin",
         "lemon juice",
-        "peas"
+        "tomatoes",
+        "garlic"
       ]
     },
     {
       "name": "ribs celery",
       "score": 48.34981875812026,
       "connects_a": [
-        "wine",
-        "bay leaf",
+        "parsley",
+        "cloves",
         "carrot"
       ],
       "connects_b": [
-        "wine",
-        "shrimp",
-        "carrot"
+        "parsley",
+        "bell pepper",
+        "cloves"
       ]
     },
     {
       "name": "bay leaf",
       "score": 45.404979659671206,
       "connects_a": [
-        "wine",
+        "parsley",
         "carrot",
         "bacon"
       ],
       "connects_b": [
-        "wine",
-        "carrot",
-        "cumin"
+        "parsley",
+        "tomatoes",
+        "paprika"
       ]
     },
     {
       "name": "at",
       "score": 45.17924081813118,
       "connects_a": [
-        "egg",
+        "butter",
         "milk",
-        "vanilla extract"
+        "purpose flour"
       ],
       "connects_b": [
-        "egg",
-        "more",
+        "1",
+        "butter",
         "kosher sea salt"
       ]
     }
@@ -149,27 +149,12 @@
       "strength": 1
     },
     {
-      "name": "muscovado sugar",
+      "name": "graham cracker crumbs",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "percent milk",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "phyllo dough",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "cooking apples",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "corn syrup",
+      "name": "granny smith apples",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -179,69 +164,84 @@
       "strength": 1
     },
     {
+      "name": "phyllo dough",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "dutch process",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "believe",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
       "name": "raspberry jam",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "graham cracker crumbs",
+      "name": "pecans",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "i",
+      "name": "delicious apples",
       "pairs_with": "butter",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "squid",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "chianti",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "canned tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "spaghetti",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "finely oregano",
+      "name": "turkey sausage",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "risotto",
+      "name": "san marzano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "anchovies",
+      "name": "pepperoncini peppers",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "clam broth",
+      "name": "parmigiano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "plum tomatoes",
+      "name": "cannellini",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "some",
+      "name": "baby arugula",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "grigio",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "grape tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cherry tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     }

@@ -5,42 +5,42 @@
       "name": "jalapeno peppers",
       "score": 70.06847527615635,
       "connects_a": [
-        "mango",
-        "chili powder",
-        "rice"
+        "beans",
+        "rice",
+        "chili powder"
       ],
       "connects_b": [
-        "tomatoes",
-        "salsa",
-        "flour tortillas"
+        "beans",
+        "rice",
+        "corn"
       ]
     },
     {
       "name": "cilantro",
       "score": 52.301477902125065,
       "connects_a": [
-        "chili powder",
         "beans",
+        "chili powder",
         "mango"
       ],
       "connects_b": [
+        "beans",
         "jalapeno",
-        "salsa",
-        "beans"
+        "tomatillos"
       ]
     },
     {
       "name": "cumin",
       "score": 45.77321709477884,
       "connects_a": [
-        "chili powder",
         "beans",
+        "chili powder",
         "cumin seeds"
       ],
       "connects_b": [
+        "beans",
         "jalapeno",
-        "salsa",
-        "beans"
+        "tomatillos"
       ]
     },
     {
@@ -49,26 +49,26 @@
       "connects_a": [
         "chili powder",
         "peas",
-        "onion"
+        "cumin seeds"
       ],
       "connects_b": [
-        "cinnamon",
-        "vegetable oil",
-        "cumin"
+        "tomatoes",
+        "garlic",
+        "vegetable oil"
       ]
     },
     {
       "name": "mango",
       "score": 36.25288588883543,
       "connects_a": [
-        "dhania",
-        "wheat",
-        "fenugreek"
+        "seeds",
+        "fenugreek",
+        "wheat"
       ],
       "connects_b": [
         "jalapeno",
-        "avocado",
-        "cilantro"
+        "lime juice",
+        "lime"
       ]
     },
     {
@@ -77,52 +77,52 @@
       "connects_a": [
         "chili powder",
         "peas",
-        "onion"
+        "cumin seeds"
       ],
       "connects_b": [
-        "cinnamon",
-        "cumin",
-        "chicken breasts"
+        "tomatoes",
+        "garlic",
+        "cinnamon"
       ]
     },
     {
       "name": "salsa",
       "score": 32.09376320403048,
       "connects_a": [
-        "chili powder",
-        "beans"
+        "beans",
+        "chili powder"
       ],
       "connects_b": [
-        "jalapeno",
         "beans",
-        "flour tortillas"
+        "cilantro",
+        "jalapeno"
       ]
     },
     {
       "name": "coriander powder",
       "score": 30.058580713252926,
       "connects_a": [
+        "leaves",
         "chili powder",
-        "onion",
-        "oil"
+        "cumin seeds"
       ],
       "connects_b": [
-        "cinnamon",
-        "cumin",
-        "onion"
+        "leaves",
+        "tomatoes",
+        "garlic"
       ]
     },
     {
       "name": "flour tortillas",
       "score": 28.019983292606852,
       "connects_a": [
-        "chili powder",
-        "beans"
+        "beans",
+        "chili powder"
       ],
       "connects_b": [
+        "beans",
         "jalapeno",
-        "salsa",
-        "beans"
+        "corn"
       ]
     },
     {
@@ -133,9 +133,9 @@
         "mango"
       ],
       "connects_b": [
+        "beans",
         "jalapeno",
-        "salsa",
-        "beans"
+        "corn"
       ]
     }
   ],
@@ -161,12 +161,12 @@
       "strength": 1
     },
     {
-      "name": "moringa",
+      "name": "pudina salt",
       "pairs_with": "leaves",
       "strength": 1
     },
     {
-      "name": "pudina salt",
+      "name": "moringa",
       "pairs_with": "leaves",
       "strength": 1
     },
@@ -178,32 +178,17 @@
   ],
   "novel_from_b": [
     {
-      "name": "dry",
+      "name": "kabuli",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "rajma",
+      "name": "green bell",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "carom",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "leaves whole",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "olive",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "masala",
+      "name": "chilli coriander",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -213,7 +198,7 @@
       "strength": 1
     },
     {
-      "name": "greek",
+      "name": "bell",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -223,7 +208,22 @@
       "strength": 1
     },
     {
-      "name": "virgin",
+      "name": "olive",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "rajma",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "dry",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "leaves whole",
       "pairs_with": "dhania",
       "strength": 1
     }

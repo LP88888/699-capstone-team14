@@ -5,14 +5,14 @@
       "name": "garam masala",
       "score": 162.91577121589526,
       "connects_a": [
-        "vegetable oil",
         "cayenne pepper",
-        "paprika"
+        "tomatoes",
+        "garlic"
       ],
       "connects_b": [
-        "coriander",
-        "peas",
-        "chili powder"
+        "cinnamon sticks",
+        "tomatoes",
+        "cardamom"
       ]
     },
     {
@@ -21,25 +21,25 @@
       "connects_a": [
         "bell pepper",
         "cayenne pepper",
-        "paprika"
+        "tomatoes"
       ],
       "connects_b": [
-        "basmati rice",
-        "tumeric",
-        "cardamom"
+        "garam masala",
+        "turmeric",
+        "mustard seeds"
       ]
     },
     {
       "name": "tomato paste",
       "score": 84.54203323134537,
       "connects_a": [
-        "celery",
-        "worcestershire sauce",
-        "paprika"
+        "stalks celery",
+        "parsley",
+        "worcestershire sauce"
       ],
       "connects_b": [
-        "cumin",
         "garam masala",
+        "turmeric",
         "cloves"
       ]
     },
@@ -47,13 +47,13 @@
       "name": "bay leaf",
       "score": 81.72896338740817,
       "connects_a": [
-        "celery",
-        "paprika",
-        "thyme"
+        "stalks celery",
+        "parsley",
+        "tomatoes"
       ],
       "connects_b": [
-        "basmati rice",
-        "cardamom",
+        "garam masala",
+        "turmeric",
         "cinnamon sticks"
       ]
     },
@@ -61,28 +61,28 @@
       "name": "file powder",
       "score": 78.15841537346449,
       "connects_a": [
-        "celery",
-        "onion powder",
-        "shrimp"
+        "purpose flour",
+        "bell pepper",
+        "cayenne pepper"
       ],
       "connects_b": [
-        "vegetable oil",
         "cayenne pepper",
-        "onion"
+        "tomatoes",
+        "garlic"
       ]
     },
     {
       "name": "paprika",
       "score": 72.68645075716746,
       "connects_a": [
-        "celery",
         "cajun spice",
-        "worcestershire sauce"
+        "worcestershire sauce",
+        "cayenne pepper"
       ],
       "connects_b": [
-        "cumin",
         "garam masala",
-        "yogurt"
+        "turmeric",
+        "cayenne pepper"
       ]
     },
     {
@@ -90,71 +90,96 @@
       "score": 72.2038122755774,
       "connects_a": [
         "onion",
-        "tomatoes",
-        "cayenne pepper"
+        "cayenne pepper",
+        "tomatoes"
       ],
       "connects_b": [
-        "ginger",
-        "cardamom",
-        "cinnamon"
+        "garam masala",
+        "mustard seeds",
+        "cayenne pepper"
       ]
     },
     {
       "name": "cayenne",
       "score": 72.0549740099707,
       "connects_a": [
-        "celery",
+        "rice",
         "worcestershire sauce",
-        "vegetable oil"
+        "paprika"
       ],
       "connects_b": [
-        "vegetable oil",
-        "cumin",
-        "garam masala"
+        "garam masala",
+        "turmeric",
+        "mustard seeds"
       ]
     },
     {
       "name": "andouille sausage",
       "score": 68.09000589352982,
       "connects_a": [
-        "celery",
-        "tomatoes",
-        "onion powder"
+        "stalks celery",
+        "rice",
+        "cajun seasoning"
       ],
       "connects_b": [
         "onion",
-        "tomatoes",
-        "cayenne pepper"
+        "cayenne pepper",
+        "tomatoes"
       ]
     },
     {
       "name": "allspice",
       "score": 66.29405674966588,
       "connects_a": [
-        "cloves",
-        "kosher sea salt",
-        "thyme"
+        "cayenne pepper",
+        "paprika",
+        "kosher sea salt"
       ],
       "connects_b": [
-        "ginger",
-        "cardamom",
-        "cinnamon"
+        "mustard seeds",
+        "cinnamon sticks",
+        "cayenne pepper"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "pasta",
+      "name": "oregano leaves",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "olives",
+      "name": "capers",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "reggiano",
+      "name": "chipotle puree",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "penne pasta",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "roasted tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "orzo pasta",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pepperoncini peppers",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "fennel bulb",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -164,59 +189,34 @@
       "strength": 1
     },
     {
-      "name": "cannellini beans",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "by hand",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "crusty bread",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "bunch kale",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "handful pine nuts",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pepperoncini peppers",
+      "name": "canned tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
+      "name": "petite",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "lamb shanks",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
+      "name": "chiles",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
       "name": "petite",
-      "pairs_with": "olive oil",
+      "pairs_with": "cloves",
       "strength": 1
     },
     {
       "name": "serrano",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "lamb shanks",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "petite",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -231,17 +231,17 @@
       "strength": 1
     },
     {
-      "name": "chiles",
+      "name": "lamb shanks",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "vanilla extract",
+      "name": "granny smith apples",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "granny smith apples",
+      "name": "vanilla extract",
       "pairs_with": "butter",
       "strength": 1
     }
