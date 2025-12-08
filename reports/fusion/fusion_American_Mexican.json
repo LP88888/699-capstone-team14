@@ -5,27 +5,27 @@
       "name": "corn tortillas",
       "score": 85.29839015057263,
       "connects_a": [
-        "cumin",
-        "tomatoes",
-        "vegetable oil"
+        "more",
+        "vegetable oil",
+        "cumin"
       ],
       "connects_b": [
-        "cilantro leaves",
+        "more",
         "jalapeno",
-        "jalapeno peppers"
+        "salsa"
       ]
     },
     {
       "name": "chipotle pepper",
       "score": 78.07109732451309,
       "connects_a": [
-        "cumin",
         "honey",
-        "kosher sea salt"
+        "cumin",
+        "dijon mustard"
       ],
       "connects_b": [
-        "cilantro leaves",
         "jalapeno",
+        "flour tortillas",
         "cumin"
       ]
     },
@@ -33,83 +33,83 @@
       "name": "garam masala",
       "score": 72.40700942928679,
       "connects_a": [
-        "cumin",
-        "tomatoes",
-        "potatoes"
+        "cinnamon",
+        "vegetable oil",
+        "cumin"
       ],
       "connects_b": [
-        "jalapeno peppers",
-        "cumin",
-        "onion"
+        "cinnamon",
+        "vegetable oil",
+        "cumin"
       ]
     },
     {
       "name": "tortilla chips",
       "score": 70.16933054654835,
       "connects_a": [
-        "bell pepper",
+        "vegetable oil",
         "cumin",
-        "tomatoes"
+        "bell pepper"
       ],
       "connects_b": [
         "jalapeno",
-        "bell pepper",
-        "beans"
+        "salsa",
+        "vegetable oil"
       ]
     },
     {
       "name": "chiles",
       "score": 65.31022304883882,
       "connects_a": [
+        "vegetable oil",
         "cumin",
-        "2",
-        "taste"
+        "cloves"
       ],
       "connects_b": [
-        "cilantro leaves",
-        "cumin",
-        "corn tortillas"
+        "vegetable oil",
+        "flour tortillas",
+        "cumin"
       ]
     },
     {
       "name": "salsa",
       "score": 64.18752640806096,
       "connects_a": [
-        "bell pepper",
+        "tomatoes",
         "cumin",
-        "tomatoes"
+        "bell pepper"
       ],
       "connects_b": [
         "jalapeno",
-        "bell pepper",
-        "beans"
+        "beans",
+        "flour tortillas"
       ]
     },
     {
       "name": "confectioners",
       "score": 60.31295330703761,
       "connects_a": [
-        "milk",
-        "1",
-        "2"
+        "egg",
+        "more",
+        "milk"
       ],
       "connects_b": [
-        "1",
-        "cream",
-        "butter"
+        "egg",
+        "more",
+        "cinnamon"
       ]
     },
     {
       "name": "at",
       "score": 54.21508898175742,
       "connects_a": [
-        "milk",
-        "1",
-        "purpose flour"
+        "egg",
+        "more",
+        "milk"
       ],
       "connects_b": [
-        "1",
-        "cream",
+        "egg",
+        "more",
         "kosher sea salt"
       ]
     },
@@ -117,54 +117,34 @@
       "name": "tomato paste",
       "score": 49.31618605161813,
       "connects_a": [
-        "bell pepper",
+        "carrot",
         "cumin",
-        "tomatoes"
+        "bell pepper"
       ],
       "connects_b": [
-        "bell pepper",
         "cumin",
-        "onion"
+        "bell pepper",
+        "cloves"
       ]
     },
     {
       "name": "ancho chile",
       "score": 45.131520074348266,
       "connects_a": [
-        "cumin",
-        "tomatoes",
-        "vegetable oil"
+        "cinnamon",
+        "vegetable oil",
+        "cumin"
       ],
       "connects_b": [
-        "cilantro leaves",
-        "cumin",
-        "tomatoes"
+        "cinnamon",
+        "vegetable oil",
+        "cumin"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "radicchio",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "linguini",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "morel mushrooms",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "roma",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pinenuts",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -174,12 +154,12 @@
       "strength": 1
     },
     {
-      "name": "pepperoncini peppers",
+      "name": "al dente",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "giardiniera",
+      "name": "basil chiffonade",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -189,7 +169,27 @@
       "strength": 1
     },
     {
-      "name": "spun",
+      "name": "by hand",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pepperoncini peppers",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "anchovy paste",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pinenuts",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "kalamata olives",
       "pairs_with": "olive oil",
       "strength": 1
     }
@@ -206,12 +206,12 @@
       "strength": 1
     },
     {
-      "name": "flour all",
+      "name": "sugar whole",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "sugar whole",
+      "name": "flour all",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -231,17 +231,17 @@
       "strength": 1
     },
     {
+      "name": "pudina",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
       "name": "powder mint",
       "pairs_with": "leaves",
       "strength": 1
     },
     {
       "name": "salt coriander",
-      "pairs_with": "leaves",
-      "strength": 1
-    },
-    {
-      "name": "pudina",
       "pairs_with": "leaves",
       "strength": 1
     }

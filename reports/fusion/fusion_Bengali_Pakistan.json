@@ -5,98 +5,98 @@
       "name": "cardamom",
       "score": 162.39449617156305,
       "connects_a": [
-        "chili powder",
-        "oil",
-        "methi"
+        "dhania",
+        "methi",
+        "chili powder"
       ],
       "connects_b": [
-        "cumin seeds",
-        "chili powder",
-        "cumin"
+        "basmati rice",
+        "ginger",
+        "tumeric"
       ]
     },
     {
       "name": "garam masala",
       "score": 108.61051414393017,
       "connects_a": [
-        "peas",
+        "oil",
         "chili powder",
-        "oil"
+        "peas"
       ],
       "connects_b": [
-        "cumin seeds",
-        "chili powder",
-        "potatoes"
+        "coriander",
+        "peas",
+        "chili powder"
       ]
     },
     {
       "name": "cumin seeds",
       "score": 84.10364299646703,
       "connects_a": [
-        "peas",
+        "oil",
         "chili powder",
-        "oil"
+        "peas"
       ],
       "connects_b": [
-        "chili powder",
         "garam masala",
-        "potatoes"
+        "coriander",
+        "peas"
       ]
     },
     {
       "name": "mustard seeds",
       "score": 76.05919209893314,
       "connects_a": [
-        "peas",
+        "oil",
         "chili powder",
-        "oil"
+        "peas"
       ],
       "connects_b": [
-        "cumin seeds",
-        "chili powder",
-        "garam masala"
+        "garam masala",
+        "coriander",
+        "peas"
       ]
     },
     {
       "name": "chilies",
       "score": 76.042251508117,
       "connects_a": [
-        "peas",
+        "oil",
         "chili powder",
-        "oil"
+        "peas"
       ],
       "connects_b": [
-        "cumin seeds",
+        "garam masala",
         "chili powder",
-        "garam masala"
+        "peas"
       ]
     },
     {
       "name": "tumeric",
       "score": 72.2038122755774,
       "connects_a": [
-        "peas",
+        "oil",
         "chili powder",
-        "oil"
+        "peas"
       ],
       "connects_b": [
-        "cumin seeds",
-        "chili powder",
-        "cumin"
+        "ginger",
+        "cardamom",
+        "cinnamon"
       ]
     },
     {
       "name": "chili powder",
       "score": 65.75647838732317,
       "connects_a": [
+        "dhania",
         "jeera coriander",
-        "oil",
         "methi"
       ],
       "connects_b": [
-        "cumin seeds",
-        "cumin",
-        "turmeric"
+        "tumeric",
+        "cardamom",
+        "cumin"
       ]
     },
     {
@@ -104,41 +104,41 @@
       "score": 65.5120981776966,
       "connects_a": [
         "chili powder",
-        "yellow",
-        "fenugreek"
+        "peas",
+        "wheat"
       ],
       "connects_b": [
-        "peas",
+        "cardamom",
         "chili powder",
-        "cardamom"
+        "peas"
       ]
     },
     {
       "name": "turmeric",
       "score": 60.116309471119145,
       "connects_a": [
-        "peas",
+        "oil",
         "chili powder",
-        "oil"
+        "peas"
       ],
       "connects_b": [
-        "cumin seeds",
-        "chili powder",
-        "garam masala"
+        "garam masala",
+        "coriander",
+        "peas"
       ]
     },
     {
       "name": "coriander powder",
       "score": 48.093729141204676,
       "connects_a": [
+        "oil",
         "chili powder",
-        "leaves",
-        "oil"
+        "leaves"
       ],
       "connects_b": [
-        "cumin seeds",
-        "chili powder",
-        "cumin"
+        "ginger",
+        "tumeric",
+        "cinnamon"
       ]
     }
   ],
@@ -159,17 +159,17 @@
       "strength": 1
     },
     {
-      "name": "oats",
-      "pairs_with": "cinnamon",
-      "strength": 1
-    },
-    {
       "name": "cherries",
       "pairs_with": "cinnamon",
       "strength": 1
     },
     {
       "name": "apple",
+      "pairs_with": "cinnamon",
+      "strength": 1
+    },
+    {
+      "name": "oats",
       "pairs_with": "cinnamon",
       "strength": 1
     },
@@ -189,7 +189,7 @@
       "strength": 1
     },
     {
-      "name": "carom",
+      "name": "elaichi cloves",
       "pairs_with": "cardamom",
       "strength": 1
     }
@@ -211,17 +211,22 @@
       "strength": 1
     },
     {
-      "name": "applesauce",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
       "name": "shortening",
       "pairs_with": "flour",
       "strength": 1
     },
     {
+      "name": "pastry flour",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
       "name": "yeast",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "applesauce",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -232,11 +237,6 @@
     },
     {
       "name": "soda",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "pastry flour",
       "pairs_with": "flour",
       "strength": 1
     },

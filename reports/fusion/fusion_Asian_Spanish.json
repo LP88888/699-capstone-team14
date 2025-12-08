@@ -5,13 +5,13 @@
       "name": "bean sprouts",
       "score": 115.24404139615504,
       "connects_a": [
-        "rice vinegar",
-        "scallions",
-        "hoisin sauce"
+        "shrimp",
+        "mushrooms",
+        "lime"
       ],
       "connects_b": [
+        "canola oil",
         "shrimp",
-        "taste",
         "carrot"
       ]
     },
@@ -19,27 +19,27 @@
       "name": "inch piece",
       "score": 102.30513101162836,
       "connects_a": [
-        "scallions",
-        "mushrooms",
-        "sesame oil"
+        "cabbage",
+        "canola oil",
+        "carrot"
       ],
       "connects_b": [
-        "rice",
-        "carrot",
-        "more"
+        "canola oil",
+        "more",
+        "carrot"
       ]
     },
     {
       "name": "hoisin sauce",
       "score": 100.07645507194482,
       "connects_a": [
-        "rice vinegar",
-        "garlic",
-        "scallions"
+        "rice",
+        "oyster sauce",
+        "canola oil"
       ],
       "connects_b": [
-        "rice",
         "honey",
+        "canola oil",
         "carrot"
       ]
     },
@@ -47,104 +47,109 @@
       "name": "sriracha",
       "score": 80.09466970595305,
       "connects_a": [
-        "rice vinegar",
-        "garlic",
-        "scallions"
+        "shrimp",
+        "lime",
+        "oyster sauce"
       ],
       "connects_b": [
+        "carrot",
         "honey",
-        "garlic",
-        "shrimp"
+        "garlic"
       ]
     },
     {
       "name": "snow peas",
       "score": 80.03683622855938,
       "connects_a": [
-        "scallions",
-        "mushrooms",
-        "bell pepper"
+        "cabbage",
+        "canola oil",
+        "ginger"
       ],
       "connects_b": [
-        "bell pepper",
-        "rice",
-        "shrimp"
+        "canola oil",
+        "shrimp",
+        "carrot"
       ]
     },
     {
       "name": "rice vinegar",
       "score": 76.17423068796336,
       "connects_a": [
-        "scallions",
-        "hoisin sauce",
-        "rice"
+        "rice",
+        "oyster sauce",
+        "canola oil"
       ],
       "connects_b": [
-        "honey",
         "rice",
-        "carrot"
+        "honey",
+        "canola oil"
       ]
     },
     {
       "name": "sodium soy sauce",
       "score": 72.0607798228439,
       "connects_a": [
-        "scallions",
-        "sesame oil",
-        "rice"
+        "cabbage",
+        "oyster sauce",
+        "honey"
       ],
       "connects_b": [
-        "honey",
         "rice",
-        "carrot"
+        "honey",
+        "canola oil"
       ]
     },
     {
       "name": "mussels",
       "score": 70.42157287700384,
       "connects_a": [
-        "bell pepper",
-        "rice",
-        "shrimp"
+        "shrimp",
+        "fish sauce",
+        "bell pepper"
       ],
       "connects_b": [
-        "bell pepper",
-        "rice",
-        "shrimp"
+        "wine",
+        "shrimp",
+        "bell pepper"
       ]
     },
     {
       "name": "julienned",
       "score": 70.16980339361456,
       "connects_a": [
-        "scallions",
-        "sesame oil",
-        "rice vinegar"
+        "canola oil",
+        "ginger",
+        "peanuts"
       ],
       "connects_b": [
-        "sherry vinegar",
-        "taste",
-        "carrot"
+        "canola oil",
+        "carrot",
+        "taste"
       ]
     },
     {
       "name": "piece ginger",
       "score": 70.14699342730262,
       "connects_a": [
-        "scallions",
-        "sesame oil",
-        "hoisin sauce"
+        "canola oil",
+        "rice vinegar",
+        "sodium soy sauce"
       ],
       "connects_b": [
-        "rice",
-        "carrot",
-        "more"
+        "canola oil",
+        "more",
+        "carrot"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "radicchio",
+      "name": "linguini",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "head fennel",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -154,12 +159,27 @@
       "strength": 1
     },
     {
+      "name": "spun",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "al dente",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "basil chiffonade",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "linguini",
+      "name": "anchovy paste",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "radicchio",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -172,61 +192,11 @@
       "name": "broccoli rabe",
       "pairs_with": "olive oil",
       "strength": 1
-    },
-    {
-      "name": "al dente",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "anchovy paste",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cremini",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "spun",
-      "pairs_with": "olive oil",
-      "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "roasted tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "kalamata olives",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "grigio",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "capers",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "anchovy fillets",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "piquillo peppers",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "risotto",
+      "name": "romano",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -236,12 +206,42 @@
       "strength": 1
     },
     {
+      "name": "canned tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cannellini",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "crusty bread",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "kalamata olives",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pepperoncini peppers",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "artichokes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "finely oregano",
+      "name": "pimenton",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "san marzano",
       "pairs_with": "olive oil",
       "strength": 1
     }

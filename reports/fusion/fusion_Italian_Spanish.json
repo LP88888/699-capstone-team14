@@ -5,55 +5,55 @@
       "name": "can tomatoes",
       "score": 112.65922171629282,
       "connects_a": [
-        "freshly",
-        "bell pepper",
-        "mozzarella cheese"
+        "wine",
+        "optional",
+        "spaghetti"
       ],
       "connects_b": [
-        "coarsely",
-        "bell pepper",
-        "olives"
+        "wine",
+        "olives",
+        "cumin"
       ]
     },
     {
       "name": "tomato paste",
       "score": 90.58074989072718,
       "connects_a": [
-        "bell pepper",
-        "tomatoes",
-        "carrot"
+        "wine",
+        "carrot",
+        "spaghetti"
       ],
       "connects_b": [
-        "bell pepper",
-        "cumin",
-        "tomatoes"
+        "wine",
+        "carrot",
+        "cumin"
       ]
     },
     {
       "name": "ribs celery",
       "score": 80.58303126353377,
       "connects_a": [
-        "bell pepper",
-        "about",
-        "optional"
+        "wine",
+        "optional",
+        "carrot"
       ],
       "connects_b": [
-        "bell pepper",
+        "wine",
         "shrimp",
-        "onion"
+        "carrot"
       ]
     },
     {
       "name": "chorizo",
       "score": 72.13288153441955,
       "connects_a": [
+        "wine",
         "bell pepper",
-        "tomatoes",
-        "parsley"
+        "cloves"
       ],
       "connects_b": [
-        "bell pepper",
-        "rice",
+        "wine",
+        "tomatoes",
         "olives"
       ]
     },
@@ -61,110 +61,105 @@
       "name": "yellow onions",
       "score": 72.09948049589478,
       "connects_a": [
-        "bell pepper",
+        "wine",
         "carrot",
-        "parsley"
+        "bell pepper"
       ],
       "connects_b": [
-        "bell pepper",
-        "2",
-        "carrot"
+        "wine",
+        "carrot",
+        "paprika"
       ]
     },
     {
       "name": "celery",
       "score": 70.17375698782998,
       "connects_a": [
+        "carrot",
         "bell pepper",
-        "tomatoes",
-        "carrot"
+        "parsley"
       ],
       "connects_b": [
-        "bell pepper",
-        "rice",
-        "shrimp"
+        "tomatoes",
+        "shrimp",
+        "carrot"
       ]
     },
     {
       "name": "veal",
       "score": 66.17988165407462,
       "connects_a": [
-        "parmesan cheese",
-        "freshly",
+        "egg",
+        "wine",
         "milk"
       ],
       "connects_b": [
-        "2",
-        "carrot",
-        "parsley"
+        "egg",
+        "wine",
+        "carrot"
       ]
     },
     {
       "name": "pancetta",
       "score": 66.085153128008,
       "connects_a": [
-        "parmesan cheese",
-        "freshly",
-        "pepper flakes"
+        "wine",
+        "more",
+        "carrot"
       ],
       "connects_b": [
-        "olive oil",
-        "carrot",
-        "parsley"
+        "wine",
+        "more",
+        "carrot"
       ]
     },
     {
       "name": "capers",
       "score": 64.12477944832308,
       "connects_a": [
-        "pepper flakes",
-        "tomatoes",
-        "parsley"
+        "spaghetti",
+        "lemon juice",
+        "lemon"
       ],
       "connects_b": [
-        "coarsely",
         "olives",
-        "wine vinegar"
+        "lemon juice",
+        "lemon"
       ]
     },
     {
       "name": "mussels",
       "score": 60.361348180289006,
       "connects_a": [
+        "wine",
         "bell pepper",
-        "olive oil",
-        "parsley"
+        "cloves"
       ],
       "connects_b": [
-        "bell pepper",
-        "rice",
-        "shrimp"
+        "wine",
+        "shrimp",
+        "bell pepper"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "arugula leaves",
+      "name": "linguini",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "bucatini",
+      "name": "head fennel",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pecorino",
+      "name": "salami",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "radicchio",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "[extra",
+      "name": "of handfuls",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -174,29 +169,34 @@
       "strength": 1
     },
     {
-      "name": "fettuccine",
+      "name": "morel mushrooms",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "micro greens",
+      "name": "spun",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "basil chiffonade",
+      "name": "al dente",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "cannellini beans",
+      "name": "orecchiette",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pecorino",
       "pairs_with": "olive oil",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "scotch bonnet",
+      "name": "chipotles",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -206,7 +206,7 @@
       "strength": 1
     },
     {
-      "name": "chipotles",
+      "name": "scotch bonnet",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -221,22 +221,22 @@
       "strength": 1
     },
     {
-      "name": "garam masala",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "masa harina",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
       "name": "tomatillos",
       "pairs_with": "onion",
       "strength": 1
     },
     {
       "name": "bouquet garni",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "garam masala",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "masa harina",
       "pairs_with": "onion",
       "strength": 1
     },

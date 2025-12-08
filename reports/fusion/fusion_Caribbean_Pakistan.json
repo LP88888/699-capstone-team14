@@ -5,14 +5,14 @@
       "name": "garam masala",
       "score": 217.22102828786035,
       "connects_a": [
-        "coconut milk",
-        "cumin",
-        "ginger"
+        "ginger",
+        "cinnamon",
+        "vegetable oil"
       ],
       "connects_b": [
-        "cumin seeds",
-        "chili powder",
-        "potatoes"
+        "coriander",
+        "peas",
+        "chili powder"
       ]
     },
     {
@@ -20,161 +20,131 @@
       "score": 155.62893812224806,
       "connects_a": [
         "plantains",
-        "coconut milk",
-        "bell pepper"
+        "bell pepper",
+        "coconut milk"
       ],
       "connects_b": [
-        "cumin seeds",
-        "chili powder",
-        "coconut milk"
+        "basmati rice",
+        "tumeric",
+        "cardamom"
       ]
     },
     {
       "name": "coriander",
       "score": 140.3618346509608,
       "connects_a": [
-        "cilantro leaves",
-        "coconut milk",
+        "ginger",
+        "cinnamon",
         "cumin"
       ],
       "connects_b": [
-        "cumin seeds",
+        "garam masala",
         "chili powder",
-        "garam masala"
+        "mustard seeds"
       ]
     },
     {
       "name": "turmeric",
       "score": 120.23261894223829,
       "connects_a": [
-        "cilantro leaves",
-        "coconut milk",
+        "ginger",
+        "vegetable oil",
         "cumin"
       ],
       "connects_b": [
-        "cumin seeds",
-        "chili powder",
-        "garam masala"
+        "garam masala",
+        "coriander",
+        "peas"
       ]
     },
     {
       "name": "chiles",
       "score": 117.55840148790989,
       "connects_a": [
-        "cilantro leaves",
-        "coconut milk",
+        "ginger",
+        "vegetable oil",
         "cumin"
       ],
       "connects_b": [
-        "cumin seeds",
-        "coconut milk",
-        "cumin"
+        "ginger",
+        "cinnamon sticks",
+        "vegetable oil"
       ]
     },
     {
       "name": "curry powder",
       "score": 117.05600175661972,
       "connects_a": [
-        "cilantro leaves",
-        "coconut milk",
+        "ginger",
+        "carrot",
         "cumin"
       ],
       "connects_b": [
-        "cumin seeds",
-        "coconut milk",
-        "cumin"
+        "basmati rice",
+        "ginger",
+        "potatoes"
       ]
     },
     {
       "name": "mustard seeds",
       "score": 114.08878814839971,
       "connects_a": [
-        "coconut milk",
-        "cumin",
-        "ginger"
+        "ginger",
+        "vegetable oil",
+        "cumin"
       ],
       "connects_b": [
-        "cumin seeds",
-        "chili powder",
-        "garam masala"
+        "garam masala",
+        "coriander",
+        "peas"
       ]
     },
     {
       "name": "ginger",
       "score": 114.05595464258853,
       "connects_a": [
-        "scallions",
+        "canola oil",
         "coconut milk",
-        "pineapple"
+        "cilantro"
       ],
       "connects_b": [
-        "cumin seeds",
-        "coconut milk",
-        "curry powder"
+        "basmati rice",
+        "tumeric",
+        "cardamom"
       ]
     },
     {
       "name": "tumeric",
       "score": 108.30571841336612,
       "connects_a": [
-        "cumin",
         "ginger",
-        "garlic"
+        "cinnamon",
+        "cumin"
       ],
       "connects_b": [
-        "cumin seeds",
-        "chili powder",
-        "cumin"
+        "ginger",
+        "cardamom",
+        "cinnamon"
       ]
     },
     {
       "name": "cumin seeds",
       "score": 105.12955374558379,
       "connects_a": [
-        "cilantro leaves",
-        "coconut milk",
-        "cumin"
+        "ginger",
+        "cumin",
+        "coconut milk"
       ],
       "connects_b": [
-        "chili powder",
         "garam masala",
-        "potatoes"
+        "coriander",
+        "peas"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "roasted tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "eggplants",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cubanelle peppers",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "canned tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "capers",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "radicchio",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "oregano leaves",
+      "name": "olives",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -184,12 +154,42 @@
       "strength": 1
     },
     {
+      "name": "parmigiano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "basil chiffonade",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "by hand",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "chorizo sausage",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "bunch kale",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "hearts",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "olives",
+      "name": "oregano leaves",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cherry tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     }
@@ -211,12 +211,17 @@
       "strength": 1
     },
     {
-      "name": "leg",
+      "name": "lamb shanks",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "lamb shanks",
+      "name": "petite",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "leg",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -231,12 +236,7 @@
       "strength": 1
     },
     {
-      "name": "petite",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "kasuri methi",
+      "name": "paneer",
       "pairs_with": "onion",
       "strength": 1
     },

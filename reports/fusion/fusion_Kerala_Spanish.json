@@ -5,13 +5,13 @@
       "name": "garam masala",
       "score": 35.1978518059033,
       "connects_a": [
-        "cumin seeds",
         "chili powder",
-        "oil"
+        "peas",
+        "onion"
       ],
       "connects_b": [
         "cumin",
-        "tomatoes",
+        "lemon juice",
         "peas"
       ]
     },
@@ -19,54 +19,54 @@
       "name": "tumeric",
       "score": 25.070768151242156,
       "connects_a": [
-        "cumin seeds",
         "chili powder",
-        "oil"
+        "peas",
+        "onion"
       ],
       "connects_b": [
         "cumin",
-        "tomatoes",
-        "peas"
+        "peas",
+        "onion"
       ]
     },
     {
       "name": "coriander powder",
       "score": 25.048817261044103,
       "connects_a": [
-        "cumin seeds",
         "chili powder",
+        "onion",
         "oil"
       ],
       "connects_b": [
         "cumin",
-        "tomatoes",
-        "garlic"
+        "onion",
+        "tomatoes"
       ]
     },
     {
       "name": "jalapeno peppers",
       "score": 25.024455455770124,
       "connects_a": [
-        "cumin seeds",
+        "mango",
         "chili powder",
-        "mango"
+        "rice"
       ],
       "connects_b": [
-        "bell pepper",
-        "rice",
-        "shrimp"
+        "tomatoes",
+        "shrimp",
+        "cumin"
       ]
     },
     {
       "name": "chorizo",
       "score": 24.044293844806518,
       "connects_a": [
-        "peas",
-        "rice"
+        "rice",
+        "peas"
       ],
       "connects_b": [
-        "bell pepper",
-        "rice",
+        "wine",
+        "tomatoes",
         "olives"
       ]
     },
@@ -74,9 +74,9 @@
       "name": "dhania",
       "score": 20.79749148498305,
       "connects_a": [
-        "chili powder",
         "urad dal",
-        "fenugreek"
+        "coconut coriander",
+        "chili powder"
       ],
       "connects_b": [
         "peas"
@@ -86,38 +86,38 @@
       "name": "mussels",
       "score": 20.12044939342967,
       "connects_a": [
-        "peas",
-        "rice"
+        "rice",
+        "peas"
       ],
       "connects_b": [
-        "bell pepper",
-        "rice",
-        "shrimp"
+        "wine",
+        "shrimp",
+        "bell pepper"
       ]
     },
     {
       "name": "celery",
       "score": 20.049644853665708,
       "connects_a": [
-        "rice",
-        "onion"
+        "onion",
+        "rice"
       ],
       "connects_b": [
-        "bell pepper",
-        "rice",
-        "shrimp"
+        "tomatoes",
+        "shrimp",
+        "carrot"
       ]
     },
     {
       "name": "clams",
       "score": 20.045430545057936,
       "connects_a": [
-        "peas",
-        "rice"
+        "rice",
+        "peas"
       ],
       "connects_b": [
-        "rice",
-        "shrimp",
+        "wine",
+        "tomatoes",
         "chorizo"
       ]
     },
@@ -125,13 +125,13 @@
       "name": "bay leaf",
       "score": 18.161991863868483,
       "connects_a": [
-        "beans",
-        "onion"
+        "onion",
+        "beans"
       ],
       "connects_b": [
-        "cumin",
-        "chorizo",
-        "onion"
+        "wine",
+        "carrot",
+        "cumin"
       ]
     }
   ],
@@ -147,7 +147,17 @@
       "strength": 1
     },
     {
+      "name": "pudina",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
       "name": "oil coriander",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
+      "name": "moringa",
       "pairs_with": "leaves",
       "strength": 1
     },
@@ -157,12 +167,7 @@
       "strength": 1
     },
     {
-      "name": "cloves cardamom",
-      "pairs_with": "leaves",
-      "strength": 1
-    },
-    {
-      "name": "pudina",
+      "name": "leaves mint",
       "pairs_with": "leaves",
       "strength": 1
     },
@@ -172,12 +177,7 @@
       "strength": 1
     },
     {
-      "name": "leaves mint",
-      "pairs_with": "leaves",
-      "strength": 1
-    },
-    {
-      "name": "moringa",
+      "name": "cloves cardamom",
       "pairs_with": "leaves",
       "strength": 1
     }
@@ -194,22 +194,12 @@
       "strength": 1
     },
     {
-      "name": "roasted tomatoes",
+      "name": "tomatillos",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "beef chuck",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "green pepper",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "ribs celery",
+      "name": "tomato paste",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -219,17 +209,27 @@
       "strength": 1
     },
     {
-      "name": "tomatillos",
+      "name": "beef chuck",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "beef stock",
+      "name": "celery rib",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "tomato paste",
+      "name": "chicken bouillon",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "pinch saffron",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "masa harina",
       "pairs_with": "onion",
       "strength": 1
     }

@@ -5,39 +5,39 @@
       "name": "bay leaf",
       "score": 12.107994575912322,
       "connects_a": [
+        "carrot",
         "beef",
-        "thyme",
-        "carrot"
+        "thyme"
       ],
       "connects_b": [
-        "beans",
-        "onion"
+        "onion",
+        "beans"
       ]
     },
     {
       "name": "beef stock",
       "score": 12.04417907965786,
       "connects_a": [
+        "carrot",
         "beef",
-        "thyme",
         "flour"
       ],
       "connects_b": [
-        "flour",
-        "onion"
+        "onion",
+        "flour"
       ]
     },
     {
       "name": "file powder",
       "score": 12.024371595917614,
       "connects_a": [
-        "purpose flour",
+        "vegetable oil",
         "thyme",
-        "vegetable oil"
+        "onion"
       ],
       "connects_b": [
-        "leaves",
-        "onion"
+        "onion",
+        "leaves"
       ]
     },
     {
@@ -47,45 +47,45 @@
         "flour"
       ],
       "connects_b": [
+        "dhania",
         "dal",
-        "finger",
-        "oil"
+        "finger"
       ]
     },
     {
       "name": "cans tomatoes",
       "score": 10.022214159136231,
       "connects_a": [
-        "olive oil",
         "carrot",
-        "cloves"
+        "cloves",
+        "olive oil"
       ],
       "connects_b": [
-        "leaves",
-        "onion"
+        "onion",
+        "leaves"
       ]
     },
     {
       "name": "coriander powder",
       "score": 9.017574213975877,
       "connects_a": [
+        "onion",
         "garlic",
-        "leaves",
-        "onion"
+        "leaves"
       ],
       "connects_b": [
-        "leaves",
+        "onion",
         "oil",
-        "onion"
+        "leaves"
       ]
     },
     {
       "name": "tomato paste",
       "score": 8.051622212509082,
       "connects_a": [
+        "carrot",
         "beef",
-        "thyme",
-        "carrot"
+        "cloves"
       ],
       "connects_b": [
         "onion"
@@ -95,39 +95,39 @@
       "name": "can tomatoes",
       "score": 8.047087265449488,
       "connects_a": [
+        "onion",
         "beef",
-        "cloves",
         "parsley"
       ],
       "connects_b": [
-        "(",
-        "onion"
+        "onion",
+        "("
       ]
     },
     {
       "name": "garam masala",
       "score": 8.045223269920754,
       "connects_a": [
+        "onion",
         "vegetable oil",
-        "garlic",
-        "potatoes"
+        "garlic"
       ],
       "connects_b": [
-        "oil",
-        "onion"
+        "onion",
+        "oil"
       ]
     },
     {
       "name": "crawfish tail",
       "score": 8.013726264243175,
       "connects_a": [
+        "onion",
         "garlic",
-        "butter",
-        "leaves"
+        "butter"
       ],
       "connects_b": [
-        "leaves",
-        "onion"
+        "onion",
+        "leaves"
       ]
     }
   ],
@@ -138,32 +138,17 @@
       "strength": 1
     },
     {
-      "name": "bacon fat",
+      "name": "green pepper",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "roux",
+      "name": "in juice",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "stock",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "lamb shoulder",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "beef chuck",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "chicken bouillon",
+      "name": "stalks celery",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -173,12 +158,27 @@
       "strength": 1
     },
     {
-      "name": "green pepper",
+      "name": "roux",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "sodium beef broth",
+      "name": "celery ribs",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "bouquet garni",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "navy beans",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "tomato paste",
       "pairs_with": "onion",
       "strength": 1
     }
@@ -187,6 +187,11 @@
     {
       "name": "sambar",
       "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "finger",
+      "pairs_with": "flour",
       "strength": 1
     },
     {
@@ -200,17 +205,12 @@
       "strength": 1
     },
     {
-      "name": "finger",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "banana",
+      "name": "coconut",
       "pairs_with": "vanilla extract",
       "strength": 1
     },
     {
-      "name": "coconut",
+      "name": "banana",
       "pairs_with": "vanilla extract",
       "strength": 1
     },
@@ -225,12 +225,12 @@
       "strength": 1
     },
     {
-      "name": "oil coriander",
+      "name": "murungai",
       "pairs_with": "leaves",
       "strength": 1
     },
     {
-      "name": "murungai",
+      "name": "pudina",
       "pairs_with": "leaves",
       "strength": 1
     }

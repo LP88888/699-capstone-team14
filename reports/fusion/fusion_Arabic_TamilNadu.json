@@ -5,13 +5,13 @@
       "name": "garam masala",
       "score": 28.15828144472264,
       "connects_a": [
-        "cayenne",
-        "cumin",
-        "tomato"
+        "tomato paste",
+        "cinnamon",
+        "vegetable oil"
       ],
       "connects_b": [
-        "oil",
-        "onion"
+        "onion",
+        "oil"
       ]
     },
     {
@@ -21,9 +21,9 @@
         "olive"
       ],
       "connects_b": [
-        "urad dal",
-        "(",
-        "leaves sunflower"
+        "black",
+        "channa dal",
+        "leaves coriander"
       ]
     },
     {
@@ -34,32 +34,32 @@
         "flour"
       ],
       "connects_b": [
+        "dhania",
         "dal",
-        "finger",
-        "oil"
+        "finger"
       ]
     },
     {
       "name": "cardamom",
       "score": 20.29931202144538,
       "connects_a": [
+        "cinnamon",
         "coriander",
-        "yogurt",
         "cumin"
       ],
       "connects_b": [
-        "oil",
         "dhania",
-        "chilli"
+        "seeds",
+        "powder"
       ]
     },
     {
       "name": "olive",
       "score": 18.083793290073274,
       "connects_a": [
-        "lamb",
-        "tomato",
-        "tahini"
+        "salt pepper",
+        "cucumber",
+        "pepper bell"
       ],
       "connects_b": [
         "dhania",
@@ -73,9 +73,9 @@
         "olive"
       ],
       "connects_b": [
-        "chillies",
-        "leaves coriander",
-        "dal"
+        "dhania",
+        "black",
+        "rai"
       ]
     },
     {
@@ -83,8 +83,8 @@
       "score": 15.174571935536115,
       "connects_a": [
         "cumin",
-        "chicken",
-        "paprika"
+        "coriander",
+        "cilantro"
       ],
       "connects_b": [
         "dhania",
@@ -96,22 +96,22 @@
       "name": "bay leaf",
       "score": 14.125993671897708,
       "connects_a": [
-        "cumin",
-        "tomato",
-        "carrot"
+        "tomato paste",
+        "carrot",
+        "cumin"
       ],
       "connects_b": [
-        "beans",
-        "onion"
+        "onion",
+        "beans"
       ]
     },
     {
       "name": "cumin",
       "score": 12.206191225274358,
       "connects_a": [
-        "cayenne",
-        "lamb",
-        "tahini"
+        "tomato paste",
+        "chickpea",
+        "tomato"
       ],
       "connects_b": [
         "beans"
@@ -121,13 +121,13 @@
       "name": "beef stock",
       "score": 12.04417907965786,
       "connects_a": [
-        "bread",
-        "flour",
-        "carrot"
+        "tomato paste",
+        "carrot",
+        "flour"
       ],
       "connects_b": [
-        "flour",
-        "onion"
+        "onion",
+        "flour"
       ]
     }
   ],
@@ -138,22 +138,7 @@
       "strength": 1
     },
     {
-      "name": "celery",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "garam masala",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "beef",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "tomato puree",
+      "name": "lentil",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -163,12 +148,27 @@
       "strength": 1
     },
     {
+      "name": "tomato puree",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
       "name": "tumeric",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "lentil",
+      "name": "garam masala",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "celery",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "beef",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -178,7 +178,7 @@
       "strength": 1
     },
     {
-      "name": "almond",
+      "name": "basmati",
       "pairs_with": "powder",
       "strength": 1
     }
@@ -210,13 +210,18 @@
       "strength": 1
     },
     {
+      "name": "cumin seeds",
+      "pairs_with": "cumin",
+      "strength": 1
+    },
+    {
       "name": "beans",
       "pairs_with": "cumin",
       "strength": 1
     },
     {
-      "name": "cumin seeds",
-      "pairs_with": "cumin",
+      "name": "finger",
+      "pairs_with": "flour",
       "strength": 1
     },
     {
@@ -226,11 +231,6 @@
     },
     {
       "name": "carom",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "finger",
       "pairs_with": "flour",
       "strength": 1
     }

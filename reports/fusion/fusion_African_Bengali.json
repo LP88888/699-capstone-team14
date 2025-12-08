@@ -5,28 +5,28 @@
       "name": "cardamom",
       "score": 81.19724808578152,
       "connects_a": [
-        "cumin seeds",
-        "cumin",
-        "turmeric"
+        "dhania",
+        "ginger",
+        "cinnamon"
       ],
       "connects_b": [
-        "chili powder",
-        "oil",
-        "methi"
+        "dhania",
+        "methi",
+        "chili powder"
       ]
     },
     {
       "name": "garam masala",
       "score": 56.31656288944528,
       "connects_a": [
-        "cumin seeds",
-        "cumin",
+        "ginger",
+        "tomato paste",
         "turmeric"
       ],
       "connects_b": [
-        "peas",
+        "oil",
         "chili powder",
-        "oil"
+        "peas"
       ]
     },
     {
@@ -37,22 +37,22 @@
         "powder"
       ],
       "connects_b": [
-        "onion nigella",
-        "yellow",
-        "fenugreek"
+        "dhania",
+        "wheat",
+        "yellow"
       ]
     },
     {
       "name": "chili powder",
       "score": 40.46552516142964,
       "connects_a": [
-        "cumin seeds",
-        "cumin",
-        "turmeric"
+        "dhania",
+        "turmeric",
+        "cumin"
       ],
       "connects_b": [
+        "dhania",
         "jeera coriander",
-        "oil",
         "methi"
       ]
     },
@@ -60,28 +60,28 @@
       "name": "turmeric",
       "score": 36.06978568267149,
       "connects_a": [
-        "cumin seeds",
-        "cilantro leaves",
-        "couscous"
+        "ginger",
+        "tomato paste",
+        "vegetable oil"
       ],
       "connects_b": [
-        "peas",
+        "oil",
         "chili powder",
-        "oil"
+        "peas"
       ]
     },
     {
       "name": "cumin seeds",
       "score": 36.0444184270573,
       "connects_a": [
-        "cilantro leaves",
-        "cumin",
-        "turmeric"
+        "ginger",
+        "turmeric",
+        "cumin"
       ],
       "connects_b": [
-        "peas",
+        "oil",
         "chili powder",
-        "oil"
+        "peas"
       ]
     },
     {
@@ -92,37 +92,37 @@
         "powder"
       ],
       "connects_b": [
-        "onion nigella",
-        "ginger green",
-        "jeera coriander"
+        "dhania",
+        "wheat",
+        "yellow"
       ]
     },
     {
       "name": "mustard seeds",
       "score": 32.02492298902448,
       "connects_a": [
-        "cumin seeds",
-        "cumin",
-        "turmeric"
+        "ginger",
+        "vegetable oil",
+        "cumin"
       ],
       "connects_b": [
-        "peas",
+        "oil",
         "chili powder",
-        "oil"
+        "peas"
       ]
     },
     {
       "name": "chilies",
       "score": 32.01779010868084,
       "connects_a": [
-        "cumin seeds",
-        "cumin",
-        "turmeric"
+        "ginger",
+        "turmeric",
+        "cinnamon"
       ],
       "connects_b": [
-        "peas",
+        "oil",
         "chili powder",
-        "oil"
+        "peas"
       ]
     },
     {
@@ -130,57 +130,17 @@
       "score": 30.136145503226153,
       "connects_a": [
         "dhania",
-        "bell pepper",
-        "powder"
+        "powder",
+        "bell pepper"
       ],
       "connects_b": [
-        "beans",
-        "methi",
-        "powder"
+        "dhania",
+        "wheat",
+        "fenugreek"
       ]
     }
   ],
   "novel_from_a": [
-    {
-      "name": "leaves whole",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "olive",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "french",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "seeds coriander",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "green bell",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "onion coriander",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "kabuli",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "virgin",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
     {
       "name": "black",
       "pairs_with": "dhania",
@@ -190,11 +150,61 @@
       "name": "pepper powder",
       "pairs_with": "dhania",
       "strength": 1
+    },
+    {
+      "name": "kabuli",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "seeds coriander",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "onion coriander",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "virgin",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "green bell",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "french",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "leaves whole",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "olive",
+      "pairs_with": "dhania",
+      "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "oats",
+      "name": "urad dal",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "jeera whole",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "masala",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -204,12 +214,22 @@
       "strength": 1
     },
     {
-      "name": "water coriander",
+      "name": "laung cardamom",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "powder amchur",
+      "name": "rai",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "patta",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "water coriander",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -219,27 +239,7 @@
       "strength": 1
     },
     {
-      "name": "bhindi",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "haldi green",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "mullangi",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "onion green",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "jeera",
+      "name": "chillies coriander",
       "pairs_with": "dhania",
       "strength": 1
     }

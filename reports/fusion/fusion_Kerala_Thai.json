@@ -5,28 +5,28 @@
       "name": "cilantro",
       "score": 56.32466850998084,
       "connects_a": [
-        "cumin seeds",
         "chili powder",
-        "beans"
+        "beans",
+        "mango"
       ],
       "connects_b": [
-        "scallions",
-        "coconut milk",
-        "fish sauce"
+        "chiles",
+        "ginger",
+        "peanuts"
       ]
     },
     {
       "name": "jalapeno peppers",
       "score": 50.04891091154025,
       "connects_a": [
-        "cumin seeds",
+        "mango",
         "chili powder",
-        "mango"
+        "rice"
       ],
       "connects_b": [
-        "scallions",
-        "cilantro leaves",
-        "bell pepper"
+        "shrimp",
+        "peanut oil",
+        "fish sauce"
       ]
     },
     {
@@ -34,67 +34,67 @@
       "score": 45.48007872055993,
       "connects_a": [
         "dhania",
-        "dal",
-        "rai"
+        "rai",
+        "dal"
       ],
       "connects_b": [
-        "scallions",
-        "coconut milk",
-        "noodles"
+        "ginger",
+        "shrimp",
+        "peanut oil"
       ]
     },
     {
       "name": "garam masala",
       "score": 40.22611634960377,
       "connects_a": [
-        "cumin seeds",
         "chili powder",
-        "oil"
+        "peas",
+        "onion"
       ],
       "connects_b": [
-        "coconut milk",
-        "onion",
-        "ginger"
+        "chiles",
+        "ginger",
+        "vegetable oil"
       ]
     },
     {
       "name": "mango",
       "score": 30.21073824069619,
       "connects_a": [
+        "dhania",
         "wheat",
-        "fenugreek",
-        "dhania"
+        "fenugreek"
       ],
       "connects_b": [
         "coconut milk",
-        "lime juice",
-        "cilantro"
+        "cilantro",
+        "lime"
       ]
     },
     {
       "name": "coconut milk",
       "score": 30.080489017640147,
       "connects_a": [
-        "cumin seeds",
-        "mango"
+        "mango",
+        "cumin seeds"
       ],
       "connects_b": [
-        "cilantro leaves",
-        "shrimp",
-        "fish sauce"
+        "chiles",
+        "ginger",
+        "shrimp"
       ]
     },
     {
       "name": "chili pepper",
       "score": 27.010229314423288,
       "connects_a": [
-        "cumin seeds",
+        "oil",
         "chili powder",
-        "oil"
+        "cumin seeds"
       ],
       "connects_b": [
-        "coconut milk",
-        "soy sauce",
+        "ginger",
+        "peanut oil",
         "fish sauce"
       ]
     },
@@ -102,42 +102,42 @@
       "name": "tumeric",
       "score": 25.070768151242156,
       "connects_a": [
-        "cumin seeds",
         "chili powder",
-        "oil"
+        "peas",
+        "onion"
       ],
       "connects_b": [
-        "onion",
         "ginger",
-        "garlic"
+        "chicken breasts",
+        "cilantro"
       ]
     },
     {
       "name": "cumin",
       "score": 24.412382450548716,
       "connects_a": [
-        "cumin seeds",
         "chili powder",
-        "beans"
+        "beans",
+        "cumin seeds"
       ],
       "connects_b": [
-        "cilantro leaves",
-        "coconut milk",
-        "bell pepper"
+        "chiles",
+        "bell pepper",
+        "coconut milk"
       ]
     },
     {
       "name": "turmeric",
       "score": 24.046523788447658,
       "connects_a": [
-        "cumin seeds",
+        "oil",
         "chili powder",
-        "oil"
+        "peas"
       ],
       "connects_b": [
-        "cilantro leaves",
-        "coconut milk",
-        "ginger"
+        "chiles",
+        "ginger",
+        "vegetable oil"
       ]
     }
   ],
@@ -195,7 +195,22 @@
   ],
   "novel_from_b": [
     {
-      "name": "green bell",
+      "name": "dry",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "cardamom",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "haldi",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "olive",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -210,37 +225,22 @@
       "strength": 1
     },
     {
-      "name": "haldi",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "bell",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "dry",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "olive",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
       "name": "juice coriander",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "cardamom",
+      "name": "green bell",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "brinjal",
+      "name": "channa dal",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "pepper powder",
       "pairs_with": "dhania",
       "strength": 1
     }

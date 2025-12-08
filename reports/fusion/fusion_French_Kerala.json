@@ -6,40 +6,40 @@
       "score": 30.16958726220283,
       "connects_a": [
         "bay leaf",
-        "garlic",
+        "cinnamon",
         "vegetable oil"
       ],
       "connects_b": [
-        "cumin seeds",
         "chili powder",
-        "oil"
+        "peas",
+        "onion"
       ]
     },
     {
       "name": "cardamom",
       "score": 24.359174425734455,
       "connects_a": [
-        "bay leaf",
+        "cinnamon",
         "nutmeg",
-        "cinnamon"
+        "bay leaf"
       ],
       "connects_b": [
-        "cumin seeds",
+        "dhania",
         "chili powder",
-        "oil"
+        "peas"
       ]
     },
     {
       "name": "coriander powder",
       "score": 20.039053808835284,
       "connects_a": [
-        "garlic",
-        "leaves",
-        "cinnamon"
+        "cinnamon",
+        "onion",
+        "garlic"
       ],
       "connects_b": [
-        "cumin seeds",
         "chili powder",
+        "onion",
         "oil"
       ]
     },
@@ -47,9 +47,9 @@
       "name": "vanilla",
       "score": 20.026153542582716,
       "connects_a": [
-        "milk",
-        "maple syrup",
-        "flour"
+        "egg",
+        "nutmeg",
+        "milk"
       ],
       "connects_b": [
         "flour",
@@ -60,50 +60,50 @@
       "name": "tumeric",
       "score": 15.042460890745295,
       "connects_a": [
-        "garlic",
         "onion",
-        "cinnamon"
+        "cinnamon",
+        "garlic"
       ],
       "connects_b": [
-        "cumin seeds",
         "chili powder",
-        "oil"
+        "peas",
+        "onion"
       ]
     },
     {
       "name": "coriander seeds",
       "score": 15.021098403492308,
       "connects_a": [
-        "shallots",
+        "cinnamon",
         "bay leaf",
         "kosher sea salt"
       ],
       "connects_b": [
-        "cumin seeds",
+        "oil",
         "chili powder",
-        "oil"
+        "cumin seeds"
       ]
     },
     {
       "name": "beef stock",
       "score": 14.051542259600836,
       "connects_a": [
-        "bread",
-        "thyme",
-        "bay leaf"
+        "wine",
+        "bay leaf",
+        "carrot"
       ],
       "connects_b": [
-        "flour",
-        "onion"
+        "onion",
+        "flour"
       ]
     },
     {
       "name": "vanilla extract",
       "score": 12.192538435293551,
       "connects_a": [
-        "milk",
-        "1",
-        "maple syrup"
+        "egg",
+        "nutmeg",
+        "milk"
       ],
       "connects_b": [
         "banana"
@@ -113,32 +113,52 @@
       "name": "mussels",
       "score": 12.0722696360578,
       "connects_a": [
-        "shallots",
+        "wine",
         "bay leaf",
-        "parsley"
+        "cloves"
       ],
       "connects_b": [
-        "peas",
-        "rice"
+        "rice",
+        "peas"
       ]
     },
     {
       "name": "celery",
       "score": 12.029786912199423,
       "connects_a": [
-        "thyme",
         "bay leaf",
-        "carrot"
+        "carrot",
+        "thyme"
       ],
       "connects_b": [
-        "rice",
-        "onion"
+        "onion",
+        "rice"
       ]
     }
   ],
   "novel_from_a": [
     {
+      "name": "dry",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "cardamom",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
       "name": "leaves whole",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "olive",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "masala",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -153,37 +173,17 @@
       "strength": 1
     },
     {
-      "name": "bell",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "dry",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "olive",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "cardamom",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "masala",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
       "name": "button",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
       "name": "pepper powder",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "bell",
       "pairs_with": "dhania",
       "strength": 1
     }
@@ -200,17 +200,12 @@
       "strength": 1
     },
     {
+      "name": "moringa",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
       "name": "salt coriander",
-      "pairs_with": "leaves",
-      "strength": 1
-    },
-    {
-      "name": "cloves cardamom",
-      "pairs_with": "leaves",
-      "strength": 1
-    },
-    {
-      "name": "pudina salt",
       "pairs_with": "leaves",
       "strength": 1
     },
@@ -220,7 +215,12 @@
       "strength": 1
     },
     {
-      "name": "moringa",
+      "name": "pudina salt",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
+      "name": "cloves cardamom",
       "pairs_with": "leaves",
       "strength": 1
     }

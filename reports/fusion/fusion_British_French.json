@@ -5,144 +5,149 @@
       "name": "confectioners",
       "score": 165.86062159435343,
       "connects_a": [
-        "milk",
-        "1",
-        "2"
+        "egg",
+        "nutmeg",
+        "more"
       ],
       "connects_b": [
-        "milk",
-        "1",
-        "maple syrup"
+        "egg",
+        "nutmeg",
+        "more"
       ]
     },
     {
       "name": "at",
       "score": 130.51780680793453,
       "connects_a": [
-        "milk",
-        "1",
-        "purpose flour"
+        "egg",
+        "more",
+        "milk"
       ],
       "connects_b": [
-        "milk",
-        "1",
-        "maple syrup"
+        "egg",
+        "more",
+        "milk"
       ]
     },
     {
       "name": "whole milk",
       "score": 120.35142207775438,
       "connects_a": [
-        "2",
-        "purpose flour",
-        "beaten"
+        "egg",
+        "nutmeg",
+        "more"
       ],
       "connects_b": [
-        "maple syrup",
-        "2",
-        "purpose flour"
+        "egg",
+        "nutmeg",
+        "more"
       ]
     },
     {
       "name": "ice water",
       "score": 100.50976204580036,
       "connects_a": [
-        "1",
-        "purpose flour",
-        "beaten"
+        "egg",
+        "nutmeg",
+        "more"
       ],
       "connects_b": [
-        "1",
-        "purpose flour",
-        "flour"
+        "egg",
+        "nutmeg",
+        "more"
       ]
     },
     {
       "name": "sticks",
       "score": 99.35013592753592,
       "connects_a": [
-        "1",
-        "2",
-        "purpose flour"
+        "egg",
+        "nutmeg",
+        "more"
       ],
       "connects_b": [
-        "1",
-        "2",
-        "purpose flour"
+        "egg",
+        "nutmeg",
+        "more"
       ]
     },
     {
       "name": "vanilla extract",
       "score": 97.54030748234841,
       "connects_a": [
-        "milk",
-        "1",
-        "purpose flour"
+        "egg",
+        "nutmeg",
+        "milk"
       ],
       "connects_b": [
-        "milk",
-        "1",
-        "maple syrup"
+        "egg",
+        "nutmeg",
+        "milk"
       ]
     },
     {
       "name": "cake flour",
       "score": 80.09869046780798,
       "connects_a": [
+        "egg",
         "milk",
-        "1",
-        "2"
+        "vanilla extract"
       ],
       "connects_b": [
+        "egg",
         "milk",
-        "1",
-        "2"
+        "chocolate"
       ]
     },
     {
       "name": "filling",
       "score": 72.1105907441167,
       "connects_a": [
+        "egg",
         "milk",
-        "purpose flour",
-        "flour"
+        "vanilla extract"
       ],
       "connects_b": [
+        "egg",
         "milk",
-        "purpose flour",
-        "flour"
+        "cinnamon"
       ]
     },
     {
       "name": "veal",
       "score": 70.19078357250338,
       "connects_a": [
-        "beef",
-        "milk",
-        "2"
+        "egg",
+        "wine",
+        "milk"
       ],
       "connects_b": [
-        "milk",
-        "2",
-        "carrot"
+        "egg",
+        "wine",
+        "milk"
       ]
     },
     {
       "name": "corn syrup",
       "score": 70.11569053420071,
       "connects_a": [
+        "nutmeg",
         "milk",
-        "1",
-        "cream"
+        "vanilla extract"
       ],
       "connects_b": [
+        "nutmeg",
         "milk",
-        "1",
-        "cream"
+        "cinnamon"
       ]
     }
   ],
   "novel_from_a": [
+    {
+      "name": "for drizzling",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
     {
       "name": "arugula leaves",
       "pairs_with": "olive oil",
@@ -150,7 +155,7 @@
     },
     {
       "name": "for drizzling",
-      "pairs_with": "olive oil",
+      "pairs_with": "cloves",
       "strength": 1
     },
     {
@@ -159,17 +164,12 @@
       "strength": 1
     },
     {
-      "name": "for drizzling",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "rutabaga",
+      "name": "lobster stock",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "lobster stock",
+      "name": "rutabaga",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -179,6 +179,11 @@
       "strength": 1
     },
     {
+      "name": "beef brisket",
+      "pairs_with": "carrot",
+      "strength": 1
+    },
+    {
       "name": "rutabaga",
       "pairs_with": "carrot",
       "strength": 1
@@ -187,46 +192,26 @@
       "name": "sodium",
       "pairs_with": "carrot",
       "strength": 1
-    },
-    {
-      "name": "beef brisket",
-      "pairs_with": "carrot",
-      "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "roasted tomatoes",
+      "name": "chianti",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "eggplants",
+      "name": "canned tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "some",
+      "name": "spaghetti",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "grigio",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "radicchio",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "[extra",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "arugula",
+      "name": "salami",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -236,12 +221,27 @@
       "strength": 1
     },
     {
-      "name": "cannellini beans",
+      "name": "morel mushrooms",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "porcini mushrooms",
+      "name": "anchovies",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "clam broth",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "some",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pinch saffron",
       "pairs_with": "olive oil",
       "strength": 1
     }

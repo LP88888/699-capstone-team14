@@ -5,51 +5,51 @@
       "name": "garam masala",
       "score": 55.31090998070518,
       "connects_a": [
-        "oil",
+        "tomato paste",
         "bay leaf",
-        "tomatoes"
+        "potatoes"
       ],
       "connects_b": [
+        "turmeric",
         "chili powder",
-        "oil",
-        "turmeric"
+        "peas"
       ]
     },
     {
       "name": "cumin seeds",
       "score": 30.03701535588108,
       "connects_a": [
-        "oil",
-        "tomatoes",
-        "potatoes"
+        "potatoes",
+        "paprika",
+        "oil"
       ],
       "connects_b": [
-        "chili powder",
         "turmeric",
-        "oil"
+        "coconut",
+        "chili powder"
       ]
     },
     {
       "name": "turmeric",
       "score": 28.054277753188934,
       "connects_a": [
-        "oil",
+        "tomato paste",
         "bay leaf",
-        "tomatoes"
+        "vegetable oil"
       ],
       "connects_b": [
-        "peas",
-        "chili powder",
-        "oil"
+        "oil",
+        "coconut",
+        "peas"
       ]
     },
     {
       "name": "can tomatoes",
       "score": 26.153033612710836,
       "connects_a": [
-        "beef broth",
-        "beef",
-        "bell pepper"
+        "wine",
+        "chicken broth",
+        "worcestershire sauce"
       ],
       "connects_b": [
         "chili powder",
@@ -64,46 +64,46 @@
         "flour"
       ],
       "connects_b": [
+        "dhania",
         "mango",
-        "dal",
-        "oil"
+        "dal"
       ]
     },
     {
       "name": "chilies",
       "score": 25.013898522406908,
       "connects_a": [
-        "oil",
+        "chicken",
         "bay leaf",
-        "tomatoes"
+        "oil"
       ],
       "connects_b": [
+        "turmeric",
         "chili powder",
-        "oil",
-        "turmeric"
+        "peas"
       ]
     },
     {
       "name": "chili pepper",
       "score": 25.009471587428973,
       "connects_a": [
-        "oil",
         "vinegar",
-        "garlic"
+        "chicken breasts",
+        "oil"
       ],
       "connects_b": [
+        "coconut",
         "chili powder",
-        "oil",
-        "turmeric"
+        "oil"
       ]
     },
     {
       "name": "beef stock",
       "score": 24.08835815931572,
       "connects_a": [
-        "mushrooms",
-        "beef",
-        "bay leaf"
+        "wine",
+        "worcestershire sauce",
+        "tomato paste"
       ],
       "connects_b": [
         "flour",
@@ -114,28 +114,28 @@
       "name": "tumeric",
       "score": 24.06793742519247,
       "connects_a": [
-        "oil",
-        "tomatoes",
-        "potatoes"
+        "chicken breasts",
+        "onion",
+        "tomatoes"
       ],
       "connects_b": [
-        "peas",
+        "oil",
         "chili powder",
-        "oil"
+        "peas"
       ]
     },
     {
       "name": "mustard seeds",
       "score": 24.018692241768363,
       "connects_a": [
-        "vegetable oil",
+        "oil",
         "tomatoes",
-        "oil"
+        "vegetable oil"
       ],
       "connects_b": [
-        "chili powder",
         "turmeric",
-        "oil"
+        "coconut",
+        "chili powder"
       ]
     }
   ],
@@ -146,32 +146,7 @@
       "strength": 1
     },
     {
-      "name": "ice water",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "shortening",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "yeast",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "filling",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "beef stock",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "vanilla",
+      "name": "lard",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -181,12 +156,37 @@
       "strength": 1
     },
     {
-      "name": "lard",
+      "name": "shortening",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "chiffonade",
+      "name": "vanilla",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "ice water",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "filling",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "yeast",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "beef stock",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "juniper berries",
       "pairs_with": "leaves",
       "strength": 1
     }
@@ -218,12 +218,7 @@
       "strength": 1
     },
     {
-      "name": "flour all",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "carom",
+      "name": "maida sooji",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -233,12 +228,17 @@
       "strength": 1
     },
     {
-      "name": "maida sooji",
+      "name": "pearl",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "pearl",
+      "name": "flour all",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "carom",
       "pairs_with": "flour",
       "strength": 1
     }

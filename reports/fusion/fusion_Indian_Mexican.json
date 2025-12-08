@@ -5,27 +5,27 @@
       "name": "garam masala",
       "score": 153.86489503723442,
       "connects_a": [
-        "cumin seeds",
-        "chili powder",
-        "cumin"
+        "ginger",
+        "cardamom",
+        "potatoes"
       ],
       "connects_b": [
-        "jalapeno peppers",
-        "cumin",
-        "onion"
+        "cinnamon",
+        "vegetable oil",
+        "cumin"
       ]
     },
     {
       "name": "cumin",
       "score": 152.57739031592948,
       "connects_a": [
-        "cumin seeds",
-        "chili powder",
-        "turmeric"
+        "cardamom",
+        "garam masala",
+        "yogurt"
       ],
       "connects_b": [
         "jalapeno",
-        "bell pepper",
+        "salsa",
         "beans"
       ]
     },
@@ -33,116 +33,141 @@
       "name": "chiles",
       "score": 143.68249070744542,
       "connects_a": [
-        "cumin seeds",
-        "cumin",
-        "turmeric"
+        "ginger",
+        "vegetable oil",
+        "cumin"
       ],
       "connects_b": [
-        "cilantro leaves",
-        "cumin",
-        "corn tortillas"
+        "vegetable oil",
+        "flour tortillas",
+        "cumin"
       ]
     },
     {
       "name": "cilantro",
       "score": 130.75369475531267,
       "connects_a": [
-        "cumin seeds",
-        "chili powder",
-        "mango"
+        "ginger",
+        "mango",
+        "cumin"
       ],
       "connects_b": [
         "jalapeno",
-        "beans",
-        "cumin"
+        "salsa",
+        "beans"
       ]
     },
     {
       "name": "jalapeno peppers",
       "score": 126.12325549708142,
       "connects_a": [
-        "cumin seeds",
-        "chili powder",
-        "mango"
+        "mango",
+        "cumin",
+        "garam masala"
       ],
       "connects_b": [
-        "cilantro leaves",
-        "bell pepper",
-        "rice"
+        "tomatoes",
+        "salsa",
+        "flour tortillas"
       ]
     },
     {
       "name": "tumeric",
       "score": 105.29722623521705,
       "connects_a": [
-        "cumin seeds",
-        "chili powder",
+        "ginger",
+        "cardamom",
         "cumin"
       ],
       "connects_b": [
+        "cinnamon",
         "cumin",
-        "onion",
-        "tomatoes"
+        "chicken breasts"
       ]
     },
     {
       "name": "chile",
       "score": 90.38804858150317,
       "connects_a": [
-        "cumin seeds",
+        "vegetable oil",
         "cumin",
-        "turmeric"
+        "garam masala"
       ],
       "connects_b": [
-        "cilantro leaves",
-        "cumin",
-        "corn tortillas"
+        "vegetable oil",
+        "flour tortillas",
+        "cumin"
       ]
     },
     {
       "name": "corn tortillas",
       "score": 85.29839015057263,
       "connects_a": [
+        "vegetable oil",
         "cumin",
-        "tomatoes",
-        "vegetable oil"
+        "cilantro"
       ],
       "connects_b": [
-        "cilantro leaves",
+        "more",
         "jalapeno",
-        "jalapeno peppers"
+        "salsa"
       ]
     },
     {
       "name": "turmeric",
       "score": 84.16283325956681,
       "connects_a": [
-        "cumin seeds",
-        "chili powder",
-        "cumin"
+        "ginger",
+        "cardamom",
+        "vegetable oil"
       ],
       "connects_b": [
-        "cilantro leaves",
+        "vegetable oil",
         "cumin",
-        "tomatoes"
+        "cilantro"
       ]
     },
     {
       "name": "coriander",
       "score": 77.19900905802844,
       "connects_a": [
-        "cumin seeds",
-        "chili powder",
+        "ginger",
+        "cardamom",
         "cumin"
       ],
       "connects_b": [
-        "cilantro leaves",
         "jalapeno",
+        "cinnamon",
         "cumin"
       ]
     }
   ],
   "novel_from_a": [
+    {
+      "name": "canned tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "spaghetti",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pinch saffron",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cans chickpeas",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "crusty bread",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
     {
       "name": "[extra",
       "pairs_with": "olive oil",
@@ -154,22 +179,7 @@
       "strength": 1
     },
     {
-      "name": "cans chickpeas",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pinch saffron",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "lamb shanks",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "crusty bread",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -179,69 +189,59 @@
       "strength": 1
     },
     {
-      "name": "spaghetti",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "leg",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "serrano",
+      "name": "inch piece",
       "pairs_with": "cloves",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "chipotle chile",
+      "name": "jalapeno chile",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "herbes",
+      "name": "romano",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "roasted tomatoes",
+      "name": "depending",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "onion finely",
+      "name": "reggiano",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "tuttorosso",
+      "name": "parmigiano",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "beef chuck",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "snapper fillets",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "some",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "seasoning blend",
+      "name": "chipotles",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
       "name": "squid",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "chipotle chile",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "chorizo sausage",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "tomatillos",
       "pairs_with": "cloves",
       "strength": 1
     }

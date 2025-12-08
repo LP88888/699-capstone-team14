@@ -5,55 +5,55 @@
       "name": "garam masala",
       "score": 35.1978518059033,
       "connects_a": [
+        "cinnamon",
         "bay leaf",
-        "potatoes",
-        "garlic"
+        "vegetable oil"
       ],
       "connects_b": [
-        "cumin seeds",
         "chili powder",
-        "oil"
+        "peas",
+        "onion"
       ]
     },
     {
       "name": "cardamom",
       "score": 24.359174425734455,
       "connects_a": [
-        "bay leaf",
+        "cinnamon",
         "nutmeg",
-        "cinnamon"
+        "bay leaf"
       ],
       "connects_b": [
-        "cumin seeds",
+        "dhania",
         "chili powder",
-        "oil"
+        "peas"
       ]
     },
     {
       "name": "tumeric",
       "score": 20.056614520993726,
       "connects_a": [
-        "garlic",
         "onion",
-        "potatoes"
+        "cinnamon",
+        "garlic"
       ],
       "connects_b": [
-        "cumin seeds",
         "chili powder",
-        "oil"
+        "peas",
+        "onion"
       ]
     },
     {
       "name": "coriander powder",
       "score": 20.039053808835284,
       "connects_a": [
-        "garlic",
-        "leaves",
-        "cinnamon"
+        "cinnamon",
+        "onion",
+        "garlic"
       ],
       "connects_b": [
-        "cumin seeds",
         "chili powder",
+        "onion",
         "oil"
       ]
     },
@@ -61,9 +61,9 @@
       "name": "vanilla",
       "score": 18.023538188324444,
       "connects_a": [
-        "milk",
-        "cocoa powder",
-        "flour"
+        "egg",
+        "nutmeg",
+        "milk"
       ],
       "connects_b": [
         "flour",
@@ -74,22 +74,22 @@
       "name": "mustard seeds",
       "score": 16.01246149451224,
       "connects_a": [
+        "cider vinegar",
         "vegetable oil",
-        "wine vinegar",
-        "potatoes"
+        "wine vinegar"
       ],
       "connects_b": [
-        "cumin seeds",
+        "oil",
         "chili powder",
-        "oil"
+        "peas"
       ]
     },
     {
       "name": "vanilla extract",
       "score": 12.192538435293551,
       "connects_a": [
-        "milk",
-        "cocoa powder",
+        "egg",
+        "nutmeg",
         "apples"
       ],
       "connects_b": [
@@ -100,26 +100,26 @@
       "name": "beef stock",
       "score": 12.04417907965786,
       "connects_a": [
+        "wine",
         "bay leaf",
-        "flour",
         "carrot"
       ],
       "connects_b": [
-        "flour",
-        "onion"
+        "onion",
+        "flour"
       ]
     },
     {
       "name": "celery",
       "score": 12.029786912199423,
       "connects_a": [
-        "bacon",
         "bay leaf",
-        "carrot"
+        "carrot",
+        "bacon"
       ],
       "connects_b": [
-        "rice",
-        "onion"
+        "onion",
+        "rice"
       ]
     },
     {
@@ -127,13 +127,13 @@
       "score": 12.006671290755316,
       "connects_a": [
         "bay leaf",
-        "potatoes",
-        "cinnamon"
+        "cinnamon",
+        "potatoes"
       ],
       "connects_b": [
-        "cumin seeds",
+        "oil",
         "chili powder",
-        "oil"
+        "peas"
       ]
     }
   ],
@@ -149,17 +149,7 @@
       "strength": 1
     },
     {
-      "name": "lentils",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "beef chuck",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "chicken bouillon",
+      "name": "stalks celery",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -169,17 +159,27 @@
       "strength": 1
     },
     {
-      "name": "tomato soup",
+      "name": "celery ribs",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "sodium beef broth",
+      "name": "bouquet garni",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "celery",
+      "name": "bay leaf",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "tomato paste",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "beef chuck",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -206,7 +206,7 @@
       "strength": 1
     },
     {
-      "name": "flour all",
+      "name": "finger",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -216,7 +216,7 @@
       "strength": 1
     },
     {
-      "name": "finger",
+      "name": "flour all",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -236,7 +236,7 @@
       "strength": 1
     },
     {
-      "name": "oil coriander",
+      "name": "pudina",
       "pairs_with": "leaves",
       "strength": 1
     }

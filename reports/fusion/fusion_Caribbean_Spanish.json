@@ -5,42 +5,42 @@
       "name": "celery",
       "score": 70.17375698782998,
       "connects_a": [
+        "carrot",
         "bell pepper",
-        "rice",
         "thyme"
       ],
       "connects_b": [
-        "bell pepper",
-        "rice",
-        "shrimp"
+        "tomatoes",
+        "shrimp",
+        "carrot"
       ]
     },
     {
       "name": "tomato paste",
       "score": 63.406524923509025,
       "connects_a": [
-        "bell pepper",
+        "carrot",
         "cumin",
-        "thyme"
+        "bell pepper"
       ],
       "connects_b": [
-        "bell pepper",
-        "cumin",
-        "tomatoes"
+        "wine",
+        "carrot",
+        "cumin"
       ]
     },
     {
       "name": "palm",
       "score": 63.24241924434047,
       "connects_a": [
-        "scallions",
+        "cumin",
         "bell pepper",
-        "cumin"
+        "cloves"
       ],
       "connects_b": [
-        "bell pepper",
         "cumin",
-        "onion"
+        "paprika",
+        "bell pepper"
       ]
     },
     {
@@ -48,12 +48,12 @@
       "score": 60.1107346120163,
       "connects_a": [
         "bell pepper",
-        "rice",
-        "parsley"
+        "cloves",
+        "olive oil"
       ],
       "connects_b": [
-        "bell pepper",
-        "rice",
+        "wine",
+        "tomatoes",
         "olives"
       ]
     },
@@ -61,27 +61,27 @@
       "name": "ribs celery",
       "score": 56.40812188447363,
       "connects_a": [
-        "scallions",
+        "carrot",
         "bell pepper",
-        "thyme"
+        "cloves"
       ],
       "connects_b": [
-        "bell pepper",
+        "wine",
         "shrimp",
-        "onion"
+        "carrot"
       ]
     },
     {
       "name": "garam masala",
       "score": 56.31656288944528,
       "connects_a": [
-        "coconut milk",
-        "cumin",
-        "ginger"
+        "ginger",
+        "cinnamon",
+        "vegetable oil"
       ],
       "connects_b": [
         "cumin",
-        "tomatoes",
+        "lemon juice",
         "peas"
       ]
     },
@@ -89,77 +89,62 @@
       "name": "corn tortillas",
       "score": 56.196586452141965,
       "connects_a": [
-        "cilantro leaves",
-        "cumin",
-        "lime juice"
+        "canola oil",
+        "vegetable oil",
+        "cumin"
       ],
       "connects_b": [
-        "coarsely",
-        "cumin",
-        "onion"
+        "canola oil",
+        "more",
+        "cumin"
       ]
     },
     {
       "name": "chipotle pepper",
       "score": 56.051044232983756,
       "connects_a": [
-        "cilantro leaves",
-        "cumin",
-        "honey"
+        "honey",
+        "canola oil",
+        "cumin"
       ],
       "connects_b": [
-        "cumin",
-        "wine vinegar",
-        "honey"
+        "honey",
+        "canola oil",
+        "cumin"
       ]
     },
     {
       "name": "bay leaf",
       "score": 54.485975591605445,
       "connects_a": [
+        "carrot",
         "cumin",
-        "thyme",
-        "carrot"
+        "thyme"
       ],
       "connects_b": [
-        "cumin",
-        "chorizo",
-        "onion"
+        "wine",
+        "carrot",
+        "cumin"
       ]
     },
     {
       "name": "chiles",
       "score": 54.257723763650716,
       "connects_a": [
-        "cilantro leaves",
-        "coconut milk",
+        "ginger",
+        "vegetable oil",
         "cumin"
       ],
       "connects_b": [
-        "coarsely",
         "cumin",
+        "cloves",
         "2"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "cubanelle peppers",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "radicchio",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "basil chiffonade",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "chipotle puree",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -169,7 +154,32 @@
       "strength": 1
     },
     {
-      "name": "scotch bonnet peppers",
+      "name": "cubanelle peppers",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "chipotle puree",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "radicchio",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "inch piece",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "piece ginger",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "basil chiffonade",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -179,59 +189,19 @@
       "strength": 1
     },
     {
-      "name": "white onion",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "pinch sugar",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "allspice berries",
+      "name": "by hand",
       "pairs_with": "cloves",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "crusty rolls",
+      "name": "romano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "beefsteak tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "kalamata olives",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "montreal steak",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "some",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "grigio",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "handful pine nuts",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "anchovy fillets",
+      "name": "couscous",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -241,7 +211,37 @@
       "strength": 1
     },
     {
-      "name": "piquillo peppers",
+      "name": "squid",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "chianti",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "canned tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cannellini",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "crusty bread",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "kalamata olives",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "spaghetti",
       "pairs_with": "olive oil",
       "strength": 1
     }

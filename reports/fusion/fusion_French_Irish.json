@@ -5,55 +5,55 @@
       "name": "confectioners",
       "score": 135.70414494083462,
       "connects_a": [
-        "milk",
-        "1",
-        "maple syrup"
+        "egg",
+        "nutmeg",
+        "more"
       ],
       "connects_b": [
-        "milk",
-        "2",
-        "purpose flour"
+        "egg",
+        "more",
+        "milk"
       ]
     },
     {
       "name": "at",
       "score": 117.46602612714106,
       "connects_a": [
-        "milk",
-        "1",
-        "maple syrup"
+        "egg",
+        "more",
+        "milk"
       ],
       "connects_b": [
-        "milk",
-        "purpose flour",
-        "cream"
+        "egg",
+        "more",
+        "milk"
       ]
     },
     {
       "name": "vanilla extract",
       "score": 109.73284591764197,
       "connects_a": [
-        "milk",
-        "1",
-        "maple syrup"
+        "egg",
+        "nutmeg",
+        "milk"
       ],
       "connects_b": [
-        "coffee",
-        "milk",
-        "purpose flour"
+        "egg",
+        "raisins",
+        "buttermilk"
       ]
     },
     {
       "name": "sticks",
       "score": 99.35013592753592,
       "connects_a": [
-        "1",
-        "2",
-        "purpose flour"
+        "egg",
+        "nutmeg",
+        "more"
       ],
       "connects_b": [
-        "2",
-        "purpose flour",
+        "egg",
+        "raisins",
         "buttermilk"
       ]
     },
@@ -61,13 +61,13 @@
       "name": "whole milk",
       "score": 96.2811376622035,
       "connects_a": [
-        "maple syrup",
-        "2",
-        "purpose flour"
+        "egg",
+        "nutmeg",
+        "more"
       ],
       "connects_b": [
-        "2",
-        "purpose flour",
+        "egg",
+        "more",
         "vanilla extract"
       ]
     },
@@ -75,55 +75,55 @@
       "name": "cake flour",
       "score": 80.09869046780798,
       "connects_a": [
+        "egg",
         "milk",
-        "1",
-        "2"
+        "chocolate"
       ],
       "connects_b": [
-        "milk",
-        "2",
-        "buttermilk"
+        "egg",
+        "buttermilk",
+        "milk"
       ]
     },
     {
       "name": "cocoa powder",
       "score": 72.12863399232403,
       "connects_a": [
+        "egg",
         "milk",
-        "1",
-        "purpose flour"
+        "chocolate"
       ],
       "connects_b": [
-        "coffee",
-        "milk",
-        "purpose flour"
+        "egg",
+        "buttermilk",
+        "milk"
       ]
     },
     {
       "name": "filling",
       "score": 72.1105907441167,
       "connects_a": [
+        "egg",
         "milk",
-        "purpose flour",
-        "flour"
+        "cinnamon"
       ],
       "connects_b": [
+        "egg",
         "milk",
-        "purpose flour",
-        "flour"
+        "vanilla extract"
       ]
     },
     {
       "name": "ice water",
       "score": 70.35683343206024,
       "connects_a": [
-        "1",
-        "purpose flour",
-        "flour"
+        "egg",
+        "nutmeg",
+        "more"
       ],
       "connects_b": [
-        "purpose flour",
-        "flour",
+        "egg",
+        "more",
         "vanilla extract"
       ]
     },
@@ -131,50 +131,35 @@
       "name": "room temp",
       "score": 70.05081699553205,
       "connects_a": [
-        "milk",
-        "purpose flour",
-        "chocolate"
+        "egg",
+        "nutmeg",
+        "milk"
       ],
       "connects_b": [
-        "milk",
-        "purpose flour",
-        "buttermilk"
+        "egg",
+        "buttermilk",
+        "milk"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "roasted tomatoes",
+      "name": "chianti",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "eggplants",
+      "name": "canned tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "some",
+      "name": "spaghetti",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "grigio",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "radicchio",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "[extra",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "arugula",
+      "name": "salami",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -184,12 +169,27 @@
       "strength": 1
     },
     {
-      "name": "mussels",
+      "name": "morel mushrooms",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "cannellini beans",
+      "name": "anchovies",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "clam broth",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "spun",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "some",
       "pairs_with": "olive oil",
       "strength": 1
     }
@@ -201,13 +201,18 @@
       "strength": 1
     },
     {
+      "name": "bunch kale",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
       "name": "chipotles",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "bunch kale",
-      "pairs_with": "cloves",
+      "name": "rutabaga",
+      "pairs_with": "butter",
       "strength": 1
     },
     {
@@ -217,11 +222,6 @@
     },
     {
       "name": "stone",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "rutabaga",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -241,7 +241,7 @@
       "strength": 1
     },
     {
-      "name": "spring roll wrappers",
+      "name": "beef brisket",
       "pairs_with": "carrot",
       "strength": 1
     }

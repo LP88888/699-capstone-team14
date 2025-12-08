@@ -6,55 +6,55 @@
       "score": 30.16958726220283,
       "connects_a": [
         "bay leaf",
-        "garlic",
+        "cinnamon",
         "vegetable oil"
       ],
       "connects_b": [
+        "turmeric",
         "chili powder",
-        "oil",
-        "turmeric"
+        "peas"
       ]
     },
     {
       "name": "cardamom",
       "score": 27.404071228951263,
       "connects_a": [
-        "bay leaf",
+        "cinnamon",
         "nutmeg",
-        "cinnamon"
+        "bay leaf"
       ],
       "connects_b": [
+        "dhania",
         "chili powder",
-        "turmeric",
-        "oil"
+        "peas"
       ]
     },
     {
       "name": "coriander seeds",
       "score": 20.02813120465641,
       "connects_a": [
-        "shallots",
+        "cinnamon",
         "bay leaf",
         "kosher sea salt"
       ],
       "connects_b": [
         "oil",
-        "chili powder",
-        "turmeric"
+        "coconut",
+        "chili powder"
       ]
     },
     {
       "name": "coriander powder",
       "score": 16.031243047068227,
       "connects_a": [
-        "garlic",
-        "leaves",
-        "cinnamon"
+        "cinnamon",
+        "onion",
+        "garlic"
       ],
       "connects_b": [
         "oil",
         "chili powder",
-        "leaves"
+        "turmeric"
       ]
     },
     {
@@ -65,18 +65,18 @@
         "shallots"
       ],
       "connects_b": [
+        "dhania",
         "mango",
-        "fenugreek",
-        "peanuts"
+        "fenugreek"
       ]
     },
     {
       "name": "beef stock",
       "score": 14.051542259600836,
       "connects_a": [
-        "bread",
-        "thyme",
-        "bay leaf"
+        "wine",
+        "bay leaf",
+        "carrot"
       ],
       "connects_b": [
         "flour",
@@ -87,7 +87,7 @@
       "name": "sprigs thyme",
       "score": 14.029784294005541,
       "connects_a": [
-        "shallots",
+        "wine",
         "bay leaf",
         "carrot"
       ],
@@ -103,18 +103,18 @@
         "flour"
       ],
       "connects_b": [
+        "dhania",
         "mango",
-        "dal",
-        "oil"
+        "dal"
       ]
     },
     {
       "name": "vanilla extract",
       "score": 12.192538435293551,
       "connects_a": [
-        "milk",
-        "1",
-        "maple syrup"
+        "egg",
+        "nutmeg",
+        "milk"
       ],
       "connects_b": [
         "coconut"
@@ -124,35 +124,25 @@
       "name": "tumeric",
       "score": 12.033968712596234,
       "connects_a": [
-        "garlic",
         "onion",
-        "cinnamon"
+        "cinnamon",
+        "garlic"
       ],
       "connects_b": [
-        "peas",
+        "oil",
         "chili powder",
-        "oil"
+        "peas"
       ]
     }
   ],
   "novel_from_a": [
-    {
-      "name": "leaves whole",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
     {
       "name": "onion coriander",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "oats",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "fruit",
+      "name": "leaves whole",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -162,18 +152,23 @@
       "strength": 1
     },
     {
-      "name": "baby",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
       "name": "pepper powder",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "onion coriander",
-      "pairs_with": "powder",
+      "name": "fruit",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "oats",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "baby",
+      "pairs_with": "dhania",
       "strength": 1
     },
     {
@@ -182,7 +177,12 @@
       "strength": 1
     },
     {
-      "name": "jeera chaat",
+      "name": "onion coriander",
+      "pairs_with": "powder",
+      "strength": 1
+    },
+    {
+      "name": "button",
       "pairs_with": "powder",
       "strength": 1
     }
@@ -199,17 +199,17 @@
       "strength": 1
     },
     {
-      "name": "carom",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
       "name": "maida sooji",
       "pairs_with": "flour",
       "strength": 1
     },
     {
       "name": "pearl",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "carom",
       "pairs_with": "flour",
       "strength": 1
     },

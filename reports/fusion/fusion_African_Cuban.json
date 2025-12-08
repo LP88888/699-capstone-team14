@@ -5,55 +5,55 @@
       "name": "cumin",
       "score": 122.06191225274358,
       "connects_a": [
-        "cumin seeds",
-        "cilantro leaves",
+        "tomato paste",
+        "turmeric",
         "bell pepper"
       ],
       "connects_b": [
-        "plantains",
         "dill pickles",
-        "bell pepper"
+        "pork shoulder",
+        "bay leaf"
       ]
     },
     {
       "name": "garam masala",
       "score": 98.55398505652924,
       "connects_a": [
-        "cumin seeds",
-        "cumin",
+        "ginger",
+        "tomato paste",
         "turmeric"
       ],
       "connects_b": [
-        "cumin",
         "bay leaf",
-        "tomatoes"
+        "vegetable oil",
+        "cumin"
       ]
     },
     {
       "name": "chiles",
       "score": 84.40090363234556,
       "connects_a": [
-        "cumin seeds",
-        "coarsely",
-        "cilantro leaves"
+        "ginger",
+        "roughly",
+        "vegetable oil"
       ],
       "connects_b": [
+        "vegetable oil",
         "cumin",
-        "lime juice",
-        "vegetable oil"
+        "cloves"
       ]
     },
     {
       "name": "tomato paste",
       "score": 81.52267490165445,
       "connects_a": [
-        "bell pepper",
+        "carrot",
         "cumin",
-        "turmeric"
+        "paprika"
       ],
       "connects_b": [
-        "bell pepper",
-        "cumin",
+        "wine",
+        "pork",
         "bay leaf"
       ]
     },
@@ -61,95 +61,90 @@
       "name": "corn tortillas",
       "score": 72.25275400989682,
       "connects_a": [
-        "cilantro leaves",
-        "coarsely",
+        "roughly",
+        "vegetable oil",
         "cumin"
       ],
       "connects_b": [
-        "cumin",
-        "tomatoes",
-        "lime juice"
+        "canola oil",
+        "vegetable oil",
+        "cumin"
       ]
     },
     {
       "name": "jalapeno peppers",
       "score": 72.07043171261796,
       "connects_a": [
-        "cumin seeds",
-        "cilantro leaves",
+        "tomato paste",
+        "cumin",
         "bell pepper"
       ],
       "connects_b": [
-        "bell pepper",
-        "rice",
-        "beans"
+        "tomatoes",
+        "cumin",
+        "bell pepper"
       ]
     },
     {
       "name": "chile",
       "score": 70.30181556339134,
       "connects_a": [
-        "cumin seeds",
-        "coarsely",
-        "cilantro leaves"
+        "roughly",
+        "vegetable oil",
+        "cumin"
       ],
       "connects_b": [
-        "cumin",
-        "lime juice",
-        "vegetable oil"
+        "canola oil",
+        "vegetable oil",
+        "cumin"
       ]
     },
     {
       "name": "can tomatoes",
       "score": 64.3766981235959,
       "connects_a": [
-        "coarsely",
-        "bell pepper",
-        "cumin"
+        "tomato paste",
+        "cumin",
+        "bell pepper"
       ],
       "connects_b": [
-        "bell pepper",
+        "wine",
         "olives",
-        "cumin"
+        "bay leaf"
       ]
     },
     {
       "name": "allspice",
       "score": 63.28069053377198,
       "connects_a": [
-        "coarsely",
-        "cumin",
-        "roughly"
+        "ginger",
+        "roughly",
+        "cinnamon"
       ],
       "connects_b": [
-        "cumin",
         "bay leaf",
-        "orange juice"
+        "cumin",
+        "cloves"
       ]
     },
     {
       "name": "bay leaf",
       "score": 60.5399728795616,
       "connects_a": [
-        "cumin",
-        "turmeric",
-        "coriander seeds"
+        "tomato paste",
+        "carrot",
+        "cumin"
       ],
       "connects_b": [
-        "beans",
+        "wine",
         "cumin",
-        "tomatoes"
+        "oregano"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "kalamata olives",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "eggplants",
+      "name": "couscous",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -159,12 +154,17 @@
       "strength": 1
     },
     {
+      "name": "kalamata olives",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "artichokes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pinch saffron",
+      "name": "brussels sprouts",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -174,12 +174,12 @@
       "strength": 1
     },
     {
-      "name": "cans chickpeas",
+      "name": "pinch saffron",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "couscous",
+      "name": "turkey sausage",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -189,24 +189,29 @@
       "strength": 1
     },
     {
-      "name": "turkey sausage",
+      "name": "eggplants",
       "pairs_with": "olive oil",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "crusty rolls",
+      "name": "canned tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "cubanelle peppers",
+      "name": "crusty bread",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "capers",
+      "name": "chorizo sausage",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "hearts",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -221,7 +226,7 @@
       "strength": 1
     },
     {
-      "name": "arugula",
+      "name": "finely oregano",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -231,17 +236,12 @@
       "strength": 1
     },
     {
-      "name": "hearts",
+      "name": "cubanelle peppers",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "finely oregano",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "sherry vinegar",
+      "name": "capers",
       "pairs_with": "olive oil",
       "strength": 1
     }

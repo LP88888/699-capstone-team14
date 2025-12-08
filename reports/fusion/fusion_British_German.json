@@ -5,41 +5,41 @@
       "name": "confectioners",
       "score": 143.74587204843962,
       "connects_a": [
-        "milk",
-        "1",
-        "2"
+        "egg",
+        "nutmeg",
+        "more"
       ],
       "connects_b": [
-        "milk",
-        "cocoa powder",
-        "2"
+        "egg",
+        "nutmeg",
+        "milk"
       ]
     },
     {
       "name": "sticks",
       "score": 99.35013592753592,
       "connects_a": [
-        "1",
-        "2",
-        "purpose flour"
+        "egg",
+        "nutmeg",
+        "more"
       ],
       "connects_b": [
-        "cocoa powder",
-        "apples",
-        "2"
+        "egg",
+        "nutmeg",
+        "apples"
       ]
     },
     {
       "name": "vanilla extract",
       "score": 97.54030748234841,
       "connects_a": [
-        "milk",
-        "1",
-        "purpose flour"
+        "egg",
+        "nutmeg",
+        "milk"
       ],
       "connects_b": [
-        "milk",
-        "cocoa powder",
+        "egg",
+        "nutmeg",
         "apples"
       ]
     },
@@ -47,119 +47,104 @@
       "name": "at",
       "score": 90.35848163626235,
       "connects_a": [
-        "milk",
-        "1",
-        "purpose flour"
+        "egg",
+        "more",
+        "milk"
       ],
       "connects_b": [
+        "egg",
         "milk",
-        "cocoa powder",
-        "purpose flour"
+        "vanilla extract"
       ]
     },
     {
       "name": "whole milk",
       "score": 90.26356655831579,
       "connects_a": [
-        "2",
-        "purpose flour",
-        "beaten"
+        "egg",
+        "nutmeg",
+        "more"
       ],
       "connects_b": [
-        "cocoa powder",
-        "2",
-        "purpose flour"
+        "egg",
+        "nutmeg",
+        "cinnamon"
       ]
     },
     {
       "name": "ice water",
       "score": 80.40780963664028,
       "connects_a": [
-        "1",
-        "purpose flour",
-        "beaten"
+        "egg",
+        "nutmeg",
+        "more"
       ],
       "connects_b": [
-        "purpose flour",
-        "flour",
-        "vanilla extract"
+        "egg",
+        "nutmeg",
+        "cinnamon"
       ]
     },
     {
       "name": "filling",
       "score": 72.1105907441167,
       "connects_a": [
+        "egg",
         "milk",
-        "purpose flour",
-        "flour"
+        "vanilla extract"
       ],
       "connects_b": [
+        "egg",
         "milk",
-        "purpose flour",
-        "flour"
+        "cinnamon"
       ]
     },
     {
       "name": "cake flour",
       "score": 72.08882142102718,
       "connects_a": [
+        "egg",
         "milk",
-        "1",
-        "2"
+        "vanilla extract"
       ],
       "connects_b": [
+        "egg",
         "milk",
-        "cocoa powder",
-        "2"
+        "vanilla extract"
       ]
     },
     {
       "name": "veal",
       "score": 70.19078357250338,
       "connects_a": [
-        "beef",
-        "milk",
-        "2"
+        "egg",
+        "wine",
+        "milk"
       ],
       "connects_b": [
-        "milk",
-        "2",
-        "carrot"
+        "egg",
+        "wine",
+        "milk"
       ]
     },
     {
       "name": "room temp",
       "score": 70.05081699553205,
       "connects_a": [
-        "milk",
-        "purpose flour",
-        "vanilla extract"
+        "egg",
+        "nutmeg",
+        "milk"
       ],
       "connects_b": [
-        "milk",
-        "cocoa powder",
-        "purpose flour"
+        "egg",
+        "nutmeg",
+        "milk"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "arugula leaves",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "canned tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "head fennel",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "mussels",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -169,12 +154,22 @@
       "strength": 1
     },
     {
+      "name": "prosciutto",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "turn",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "cremini",
+      "name": "for drizzling",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "mussels",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -184,12 +179,17 @@
       "strength": 1
     },
     {
-      "name": "prosciutto",
+      "name": "arugula leaves",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "for drizzling",
+      "name": "plum tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cremini",
       "pairs_with": "olive oil",
       "strength": 1
     }
@@ -201,22 +201,7 @@
       "strength": 1
     },
     {
-      "name": "montreal steak",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "beef chuck",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
       "name": "escarole",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "veal",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -226,12 +211,27 @@
       "strength": 1
     },
     {
-      "name": "raspberry jam",
+      "name": "beef chuck",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "montreal steak",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "veal",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "muscovado sugar",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "ice water",
+      "name": "calvados",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -241,7 +241,7 @@
       "strength": 1
     },
     {
-      "name": "cake flour",
+      "name": "phyllo dough",
       "pairs_with": "butter",
       "strength": 1
     }

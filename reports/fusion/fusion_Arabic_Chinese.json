@@ -5,126 +5,126 @@
       "name": "hoisin sauce",
       "score": 110.0841005791393,
       "connects_a": [
+        "cucumber",
         "carrot",
-        "garlic",
-        "chicken"
+        "cilantro"
       ],
       "connects_b": [
-        "rice vinegar",
-        "garlic",
-        "shaoxing"
+        "rice",
+        "oyster sauce",
+        "canola oil"
       ]
     },
     {
       "name": "fish sauce",
       "score": 109.06182737876658,
       "connects_a": [
+        "cucumber",
         "vinegar",
-        "carrot",
-        "vegetable oil"
+        "carrot"
       ],
       "connects_b": [
-        "scallions",
-        "noodles",
-        "hoisin sauce"
+        "oyster sauce",
+        "canola oil",
+        "pork"
       ]
     },
     {
       "name": "chicken thighs",
       "score": 88.24447662433012,
       "connects_a": [
-        "cayenne",
-        "yogurt",
-        "carrot"
+        "tomato paste",
+        "carrot",
+        "vegetable oil"
       ],
       "connects_b": [
-        "scallions",
-        "bell pepper",
-        "rice"
+        "oyster sauce",
+        "chicken broth",
+        "rice vinegar"
       ]
     },
     {
       "name": "garam masala",
       "score": 84.47484433416793,
       "connects_a": [
-        "cayenne",
-        "cumin",
-        "tomato"
+        "tomato paste",
+        "cinnamon",
+        "vegetable oil"
       ],
       "connects_b": [
-        "oil",
         "ginger",
-        "vegetable oil"
+        "vegetable oil",
+        "chicken breasts"
       ]
     },
     {
       "name": "ginger",
       "score": 73.32168512737834,
       "connects_a": [
+        "cilantro",
         "coriander",
-        "garlic",
-        "yogurt"
+        "garlic"
       ],
       "connects_b": [
-        "scallions",
-        "noodles",
-        "rice vinegar"
+        "oyster sauce",
+        "canola oil",
+        "pork"
       ]
     },
     {
       "name": "chile",
       "score": 72.31043886520253,
       "connects_a": [
-        "cayenne",
-        "cumin",
-        "vinegar"
+        "cucumber",
+        "vinegar",
+        "vegetable oil"
       ],
       "connects_b": [
-        "noodles",
-        "rice vinegar",
-        "soy sauce"
+        "oyster sauce",
+        "canola oil",
+        "rice vinegar"
       ]
     },
     {
       "name": "bean sprouts",
       "score": 68.14430273859602,
       "connects_a": [
+        "carrot",
         "vegetable oil",
-        "cucumber",
-        "carrot"
+        "cucumber"
       ],
       "connects_b": [
-        "scallions",
-        "mushrooms",
-        "noodles"
+        "oyster sauce",
+        "canola oil",
+        "ginger"
       ]
     },
     {
       "name": "noodles",
       "score": 68.0431971465347,
       "connects_a": [
-        "vegetable oil",
         "carrot",
+        "vegetable oil",
         "vinegar"
       ],
       "connects_b": [
-        "scallions",
-        "mushrooms",
-        "sesame oil"
+        "oyster sauce",
+        "chicken broth",
+        "pork"
       ]
     },
     {
       "name": "rice vinegar",
       "score": 57.13067301597252,
       "connects_a": [
-        "cucumber",
         "carrot",
+        "cucumber",
         "cilantro"
       ],
       "connects_b": [
-        "scallions",
-        "noodles",
-        "hoisin sauce"
+        "rice",
+        "oyster sauce",
+        "canola oil"
       ]
     },
     {
@@ -132,13 +132,13 @@
       "score": 55.02083749234374,
       "connects_a": [
         "vinegar",
-        "garlic",
-        "chicken"
+        "coriander",
+        "cilantro"
       ],
       "connects_b": [
-        "sesame oil",
+        "ginger",
         "rice vinegar",
-        "soy sauce"
+        "shaoxing"
       ]
     }
   ],
@@ -154,11 +154,6 @@
       "strength": 1
     },
     {
-      "name": "garam masala",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
       "name": "tomato puree",
       "pairs_with": "onion",
       "strength": 1
@@ -169,17 +164,17 @@
       "strength": 1
     },
     {
+      "name": "garam masala",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
       "name": "okra",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "pie crust",
-      "pairs_with": "egg",
-      "strength": 1
-    },
-    {
-      "name": "vanilla",
+      "name": "shortening",
       "pairs_with": "egg",
       "strength": 1
     },
@@ -189,34 +184,19 @@
       "strength": 1
     },
     {
-      "name": "shortening",
+      "name": "vanilla",
+      "pairs_with": "egg",
+      "strength": 1
+    },
+    {
+      "name": "pie crust",
       "pairs_with": "egg",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "filling",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "whole milk",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "at",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "bosc pears",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "almond flour",
+      "name": "arborio rice",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -226,12 +206,7 @@
       "strength": 1
     },
     {
-      "name": "peeled and",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "arborio rice",
+      "name": "veal stock",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -241,7 +216,32 @@
       "strength": 1
     },
     {
-      "name": "confectioners",
+      "name": "sticks",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "whole milk",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "almond flour",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "peeled and",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "filling",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "at",
       "pairs_with": "butter",
       "strength": 1
     }

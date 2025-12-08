@@ -5,27 +5,27 @@
       "name": "confectioners",
       "score": 196.01709824787224,
       "connects_a": [
-        "milk",
-        "1",
-        "maple syrup"
+        "egg",
+        "nutmeg",
+        "more"
       ],
       "connects_b": [
-        "milk",
-        "cocoa powder",
-        "2"
+        "egg",
+        "nutmeg",
+        "milk"
       ]
     },
     {
       "name": "vanilla extract",
       "score": 146.31046122352262,
       "connects_a": [
-        "milk",
-        "1",
-        "maple syrup"
+        "egg",
+        "nutmeg",
+        "milk"
       ],
       "connects_b": [
-        "milk",
-        "cocoa powder",
+        "egg",
+        "nutmeg",
         "apples"
       ]
     },
@@ -33,148 +33,138 @@
       "name": "sticks",
       "score": 121.42794391143279,
       "connects_a": [
-        "1",
-        "2",
-        "purpose flour"
+        "egg",
+        "nutmeg",
+        "more"
       ],
       "connects_b": [
-        "cocoa powder",
-        "apples",
-        "2"
+        "egg",
+        "nutmeg",
+        "apples"
       ]
     },
     {
       "name": "at",
       "score": 117.46602612714106,
       "connects_a": [
-        "milk",
-        "1",
-        "maple syrup"
+        "egg",
+        "more",
+        "milk"
       ],
       "connects_b": [
+        "egg",
         "milk",
-        "cocoa powder",
-        "purpose flour"
+        "vanilla extract"
       ]
     },
     {
       "name": "whole milk",
       "score": 108.31627986997894,
       "connects_a": [
-        "maple syrup",
-        "2",
-        "purpose flour"
+        "egg",
+        "nutmeg",
+        "more"
       ],
       "connects_b": [
-        "cocoa powder",
-        "2",
-        "purpose flour"
+        "egg",
+        "nutmeg",
+        "cinnamon"
       ]
     },
     {
       "name": "room temp",
       "score": 100.07259570790292,
       "connects_a": [
-        "milk",
-        "purpose flour",
-        "chocolate"
+        "egg",
+        "nutmeg",
+        "milk"
       ],
       "connects_b": [
-        "milk",
-        "cocoa powder",
-        "purpose flour"
+        "egg",
+        "nutmeg",
+        "milk"
       ]
     },
     {
       "name": "softened",
       "score": 90.22856937668978,
       "connects_a": [
-        "maple syrup",
-        "purpose flour",
-        "chocolate"
+        "egg",
+        "nutmeg",
+        "cinnamon"
       ],
       "connects_b": [
-        "cocoa powder",
-        "purpose flour",
-        "vanilla extract"
+        "egg",
+        "nutmeg",
+        "cinnamon"
       ]
     },
     {
       "name": "corn syrup",
       "score": 90.14874497254377,
       "connects_a": [
+        "nutmeg",
         "milk",
-        "1",
-        "cream"
+        "cinnamon"
       ],
       "connects_b": [
+        "nutmeg",
         "milk",
-        "cocoa powder",
-        "cream"
+        "cinnamon"
       ]
     },
     {
       "name": "vanilla",
       "score": 90.11769094162223,
       "connects_a": [
-        "milk",
-        "maple syrup",
-        "flour"
+        "egg",
+        "nutmeg",
+        "milk"
       ],
       "connects_b": [
-        "milk",
-        "cocoa powder",
-        "flour"
+        "egg",
+        "nutmeg",
+        "milk"
       ]
     },
     {
       "name": "cake flour",
       "score": 90.11102677628398,
       "connects_a": [
+        "egg",
         "milk",
-        "1",
-        "2"
+        "chocolate"
       ],
       "connects_b": [
+        "egg",
         "milk",
-        "cocoa powder",
-        "2"
+        "vanilla extract"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "roasted tomatoes",
+      "name": "head fennel",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "eggplants",
+      "name": "chianti",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "some",
+      "name": "canned tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "grigio",
+      "name": "spaghetti",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "radicchio",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "[extra",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "arugula",
+      "name": "salami",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -184,12 +174,22 @@
       "strength": 1
     },
     {
-      "name": "mussels",
+      "name": "morel mushrooms",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "cannellini beans",
+      "name": "anchovies",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "clam broth",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "spun",
       "pairs_with": "olive oil",
       "strength": 1
     }
@@ -211,12 +211,12 @@
       "strength": 1
     },
     {
-      "name": "round steak",
+      "name": "chicken bouillon",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "chicken bouillon",
+      "name": "round steak",
       "pairs_with": "onion",
       "strength": 1
     },

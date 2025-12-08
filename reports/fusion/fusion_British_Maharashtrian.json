@@ -5,14 +5,14 @@
       "name": "garam masala",
       "score": 35.1978518059033,
       "connects_a": [
-        "cayenne pepper",
-        "potatoes",
+        "tomato paste",
+        "vegetable oil",
         "peas"
       ],
       "connects_b": [
+        "turmeric",
         "chili powder",
-        "oil",
-        "turmeric"
+        "peas"
       ]
     },
     {
@@ -22,45 +22,45 @@
         "peas"
       ],
       "connects_b": [
+        "(",
         "chili powder",
-        "chillies coriander",
-        "chilli coriander"
+        "peas"
       ]
     },
     {
       "name": "tumeric",
       "score": 20.056614520993726,
       "connects_a": [
+        "peas",
         "cayenne pepper",
-        "potatoes",
-        "peas"
+        "onion"
       ],
       "connects_b": [
-        "peas",
+        "oil",
         "chili powder",
-        "oil"
+        "peas"
       ]
     },
     {
       "name": "cardamom",
       "score": 18.269380819300842,
       "connects_a": [
-        "peas",
-        "nutmeg"
+        "nutmeg",
+        "peas"
       ],
       "connects_b": [
+        "dhania",
         "chili powder",
-        "turmeric",
-        "oil"
+        "peas"
       ]
     },
     {
       "name": "beef stock",
       "score": 18.06626861948679,
       "connects_a": [
-        "mushrooms",
-        "beef",
-        "flour"
+        "wine",
+        "worcestershire sauce",
+        "tomato paste"
       ],
       "connects_b": [
         "flour",
@@ -76,18 +76,18 @@
         "potatoes"
       ],
       "connects_b": [
-        "chili powder",
         "turmeric",
-        "oil"
+        "coconut",
+        "chili powder"
       ]
     },
     {
       "name": "sprigs thyme",
       "score": 16.03403919314919,
       "connects_a": [
-        "grain sea salt",
-        "carrot",
-        "potatoes"
+        "wine",
+        "leaves",
+        "tomato paste"
       ],
       "connects_b": [
         "leaves",
@@ -101,17 +101,17 @@
         "peas"
       ],
       "connects_b": [
-        "mango",
-        "chili powder",
-        "jeera coriander"
+        "dhania",
+        "wheat",
+        "rai"
       ]
     },
     {
       "name": "can tomatoes",
       "score": 14.082402714536602,
       "connects_a": [
-        "beef",
-        "parsley",
+        "wine",
+        "tomato paste",
         "worcestershire sauce"
       ],
       "connects_b": [
@@ -126,9 +126,9 @@
         "flour"
       ],
       "connects_b": [
+        "dhania",
         "mango",
-        "dal",
-        "oil"
+        "dal"
       ]
     }
   ],
@@ -144,7 +144,12 @@
       "strength": 1
     },
     {
-      "name": "dry yeast",
+      "name": "lard",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "vanilla sugar",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -154,17 +159,17 @@
       "strength": 1
     },
     {
-      "name": "buttermilk",
+      "name": "dry yeast",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "soda",
+      "name": "cold",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "cod",
+      "name": "chocolate chips",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -174,12 +179,7 @@
       "strength": 1
     },
     {
-      "name": "beef stock",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "vanilla sugar",
+      "name": "cod",
       "pairs_with": "flour",
       "strength": 1
     }
@@ -201,6 +201,21 @@
       "strength": 1
     },
     {
+      "name": "maida sooji",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "finger",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "pearl",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
       "name": "flour all",
       "pairs_with": "flour",
       "strength": 1
@@ -211,27 +226,12 @@
       "strength": 1
     },
     {
-      "name": "finger",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "maida sooji",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "pearl",
+      "name": "wheat",
       "pairs_with": "flour",
       "strength": 1
     },
     {
       "name": "demerara",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "wheat",
       "pairs_with": "flour",
       "strength": 1
     }

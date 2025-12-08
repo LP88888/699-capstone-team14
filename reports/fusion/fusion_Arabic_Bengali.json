@@ -5,65 +5,65 @@
       "name": "garam masala",
       "score": 56.31656288944528,
       "connects_a": [
-        "cayenne",
-        "cumin",
-        "tomato"
+        "tomato paste",
+        "cinnamon",
+        "vegetable oil"
       ],
       "connects_b": [
-        "peas",
+        "oil",
         "chili powder",
-        "oil"
+        "peas"
       ]
     },
     {
       "name": "cardamom",
       "score": 40.59862404289076,
       "connects_a": [
+        "cinnamon",
         "coriander",
-        "yogurt",
         "cumin"
       ],
       "connects_b": [
-        "chili powder",
-        "oil",
-        "methi"
+        "dhania",
+        "methi",
+        "chili powder"
       ]
     },
     {
       "name": "turmeric",
       "score": 33.06397020911553,
       "connects_a": [
-        "cayenne",
-        "cumin",
-        "tomato"
+        "tomato paste",
+        "vegetable oil",
+        "cumin"
       ],
       "connects_b": [
-        "peas",
+        "oil",
         "chili powder",
-        "oil"
+        "peas"
       ]
     },
     {
       "name": "cumin seeds",
       "score": 28.03454766548901,
       "connects_a": [
-        "cayenne",
         "cumin",
-        "yogurt"
+        "yogurt",
+        "coriander"
       ],
       "connects_b": [
-        "peas",
+        "oil",
         "chili powder",
-        "oil"
+        "peas"
       ]
     },
     {
       "name": "olive",
       "score": 27.125689935109914,
       "connects_a": [
-        "lamb",
-        "tomato",
-        "tahini"
+        "salt pepper",
+        "cucumber",
+        "pepper bell"
       ],
       "connects_b": [
         "dhania",
@@ -76,12 +76,12 @@
       "score": 25.290953225893524,
       "connects_a": [
         "cumin",
-        "chicken",
-        "paprika"
+        "coriander",
+        "cilantro"
       ],
       "connects_b": [
+        "dhania",
         "jeera coriander",
-        "oil",
         "methi"
       ]
     },
@@ -89,9 +89,9 @@
       "name": "cumin",
       "score": 24.412382450548716,
       "connects_a": [
-        "cayenne",
-        "lamb",
-        "tahini"
+        "tomato paste",
+        "chickpea",
+        "tomato"
       ],
       "connects_b": [
         "chili powder",
@@ -102,28 +102,28 @@
       "name": "tumeric",
       "score": 24.06793742519247,
       "connects_a": [
+        "cinnamon",
         "cumin",
-        "garlic",
-        "cilantro"
+        "coriander"
       ],
       "connects_b": [
-        "peas",
+        "oil",
         "chili powder",
-        "oil"
+        "peas"
       ]
     },
     {
       "name": "mustard seeds",
       "score": 24.018692241768363,
       "connects_a": [
-        "cayenne",
+        "vegetable oil",
         "cumin",
         "yogurt"
       ],
       "connects_b": [
-        "peas",
+        "oil",
         "chili powder",
-        "oil"
+        "peas"
       ]
     },
     {
@@ -134,8 +134,8 @@
       ],
       "connects_b": [
         "chili powder",
-        "yellow",
-        "fenugreek"
+        "peas",
+        "wheat"
       ]
     }
   ],
@@ -151,12 +151,7 @@
       "strength": 1
     },
     {
-      "name": "vanilla",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "applesauce",
+      "name": "yeast",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -166,7 +161,12 @@
       "strength": 1
     },
     {
-      "name": "yeast",
+      "name": "applesauce",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "vanilla",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -176,17 +176,17 @@
       "strength": 1
     },
     {
-      "name": "allspice",
+      "name": "chili pepper",
       "pairs_with": "chili powder",
       "strength": 1
     },
     {
-      "name": "cumin",
+      "name": "chicken",
       "pairs_with": "chili powder",
       "strength": 1
     },
     {
-      "name": "paprika",
+      "name": "cilantro",
       "pairs_with": "chili powder",
       "strength": 1
     }
@@ -198,12 +198,12 @@
       "strength": 1
     },
     {
-      "name": "cocoa",
+      "name": "bread crumbs",
       "pairs_with": "egg",
       "strength": 1
     },
     {
-      "name": "bread crumbs",
+      "name": "cocoa",
       "pairs_with": "egg",
       "strength": 1
     },
@@ -213,13 +213,18 @@
       "strength": 1
     },
     {
+      "name": "cherries",
+      "pairs_with": "cinnamon",
+      "strength": 1
+    },
+    {
       "name": "oats",
       "pairs_with": "cinnamon",
       "strength": 1
     },
     {
-      "name": "cherries",
-      "pairs_with": "cinnamon",
+      "name": "mustard seeds",
+      "pairs_with": "cumin",
       "strength": 1
     },
     {
@@ -228,17 +233,12 @@
       "strength": 1
     },
     {
-      "name": "beans",
-      "pairs_with": "cumin",
-      "strength": 1
-    },
-    {
-      "name": "palm",
-      "pairs_with": "cumin",
-      "strength": 1
-    },
-    {
       "name": "cumin seeds",
+      "pairs_with": "cumin",
+      "strength": 1
+    },
+    {
+      "name": "beans",
       "pairs_with": "cumin",
       "strength": 1
     }

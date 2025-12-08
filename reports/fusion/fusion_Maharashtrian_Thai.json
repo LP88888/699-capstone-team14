@@ -5,42 +5,42 @@
       "name": "peanuts",
       "score": 75.80013120093321,
       "connects_a": [
-        "dal",
-        "gram",
-        "dhania"
+        "dhania",
+        "rai",
+        "coconut"
       ],
       "connects_b": [
-        "scallions",
-        "coconut milk",
-        "noodles"
+        "ginger",
+        "shrimp",
+        "peanut oil"
       ]
     },
     {
       "name": "coconut milk",
       "score": 60.160978035280294,
       "connects_a": [
+        "coconut",
         "mango",
-        "turmeric",
-        "coconut"
+        "peanuts"
       ],
       "connects_b": [
-        "cilantro leaves",
-        "shrimp",
-        "fish sauce"
+        "chiles",
+        "ginger",
+        "shrimp"
       ]
     },
     {
       "name": "cilantro",
       "score": 56.32466850998084,
       "connects_a": [
-        "mango",
         "chili powder",
-        "turmeric"
+        "mango",
+        "peanuts"
       ],
       "connects_b": [
-        "scallions",
-        "coconut milk",
-        "fish sauce"
+        "chiles",
+        "ginger",
+        "peanuts"
       ]
     },
     {
@@ -51,36 +51,36 @@
         "peanuts"
       ],
       "connects_b": [
-        "thai basil",
-        "bean sprouts",
-        "scallions"
+        "shrimp",
+        "shallots",
+        "lime"
       ]
     },
     {
       "name": "lime",
       "score": 45.11722986306434,
       "connects_a": [
-        "mango",
         "coconut",
+        "mango",
         "peanuts"
       ],
       "connects_b": [
-        "scallions",
-        "coconut milk",
-        "noodles"
+        "chiles",
+        "canola oil",
+        "peanuts"
       ]
     },
     {
       "name": "chili pepper",
       "score": 45.01704885737215,
       "connects_a": [
+        "coconut",
         "chili powder",
-        "oil",
-        "turmeric"
+        "oil"
       ],
       "connects_b": [
-        "coconut milk",
-        "soy sauce",
+        "ginger",
+        "peanut oil",
         "fish sauce"
       ]
     },
@@ -88,56 +88,56 @@
       "name": "garam masala",
       "score": 40.22611634960377,
       "connects_a": [
+        "turmeric",
         "chili powder",
-        "oil",
-        "turmeric"
+        "peas"
       ],
       "connects_b": [
-        "coconut milk",
-        "onion",
-        "ginger"
+        "chiles",
+        "ginger",
+        "vegetable oil"
       ]
     },
     {
       "name": "lime juice",
       "score": 36.20036352551538,
       "connects_a": [
-        "mango",
         "coconut",
+        "mango",
         "peanuts"
       ],
       "connects_b": [
-        "coconut milk",
-        "cilantro leaves",
-        "fish sauce"
+        "chiles",
+        "curry paste",
+        "peanut oil"
       ]
     },
     {
       "name": "mustard seeds",
       "score": 36.028038362652545,
       "connects_a": [
-        "chili powder",
         "turmeric",
-        "oil"
+        "coconut",
+        "chili powder"
       ],
       "connects_b": [
-        "coconut milk",
-        "wine vinegar",
-        "ginger"
+        "chiles",
+        "ginger",
+        "vegetable oil"
       ]
     },
     {
       "name": "mango",
       "score": 35.24586128081222,
       "connects_a": [
+        "dhania",
         "wheat",
-        "fenugreek",
-        "dhania"
+        "coconut"
       ],
       "connects_b": [
         "coconut milk",
-        "lime juice",
-        "cilantro"
+        "cilantro",
+        "lime"
       ]
     }
   ],
@@ -153,7 +153,7 @@
       "strength": 1
     },
     {
-      "name": "raw",
+      "name": "rai",
       "pairs_with": "peanuts",
       "strength": 1
     },
@@ -163,7 +163,7 @@
       "strength": 1
     },
     {
-      "name": "rai",
+      "name": "raw",
       "pairs_with": "peanuts",
       "strength": 1
     },
@@ -180,22 +180,12 @@
   ],
   "novel_from_b": [
     {
-      "name": "onion coriander",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "urad",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
       "name": "jeera whole",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "oats",
+      "name": "onion coriander",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -205,12 +195,7 @@
       "strength": 1
     },
     {
-      "name": "kabuli",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "baby",
+      "name": "urad",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -220,12 +205,27 @@
       "strength": 1
     },
     {
-      "name": "onion coriander",
+      "name": "oats",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "baby",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "kabuli",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "jeera whole",
       "pairs_with": "powder",
       "strength": 1
     },
     {
-      "name": "urad",
+      "name": "onion coriander",
       "pairs_with": "powder",
       "strength": 1
     }

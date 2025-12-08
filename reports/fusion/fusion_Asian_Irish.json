@@ -5,41 +5,41 @@
       "name": "sriracha",
       "score": 80.09466970595305,
       "connects_a": [
-        "rice vinegar",
-        "garlic",
-        "scallions"
+        "shrimp",
+        "lime",
+        "oyster sauce"
       ],
       "connects_b": [
+        "cabbage",
         "honey",
-        "garlic",
-        "cabbage"
+        "garlic"
       ]
     },
     {
       "name": "hoisin sauce",
       "score": 80.06116405755586,
       "connects_a": [
-        "rice vinegar",
-        "garlic",
-        "scallions"
+        "rice",
+        "oyster sauce",
+        "canola oil"
       ],
       "connects_b": [
+        "cabbage",
         "honey",
-        "garlic",
-        "cabbage"
+        "garlic"
       ]
     },
     {
       "name": "bean sprouts",
       "score": 69.14642483769302,
       "connects_a": [
-        "rice vinegar",
-        "scallions",
-        "hoisin sauce"
+        "shrimp",
+        "mushrooms",
+        "lime"
       ],
       "connects_b": [
-        "vegetable oil",
         "cabbage",
+        "vegetable oil",
         "carrot"
       ]
     },
@@ -47,13 +47,13 @@
       "name": "inch piece",
       "score": 68.20342067441891,
       "connects_a": [
-        "scallions",
-        "mushrooms",
-        "sesame oil"
+        "cabbage",
+        "canola oil",
+        "carrot"
       ],
       "connects_b": [
-        "cloves",
         "cabbage",
+        "carrot",
         "more"
       ]
     },
@@ -61,13 +61,13 @@
       "name": "fish sauce",
       "score": 57.56040889434903,
       "connects_a": [
-        "rice vinegar",
-        "scallions",
-        "hoisin sauce"
+        "shrimp",
+        "lime",
+        "oyster sauce"
       ],
       "connects_b": [
-        "vegetable oil",
         "cabbage",
+        "vegetable oil",
         "carrot"
       ]
     },
@@ -75,13 +75,13 @@
       "name": "rice vinegar",
       "score": 57.13067301597252,
       "connects_a": [
-        "scallions",
-        "hoisin sauce",
-        "rice"
+        "rice",
+        "oyster sauce",
+        "canola oil"
       ],
       "connects_b": [
-        "honey",
         "cabbage",
+        "honey",
         "carrot"
       ]
     },
@@ -89,27 +89,27 @@
       "name": "sesame oil",
       "score": 54.21354831962337,
       "connects_a": [
-        "scallions",
-        "mushrooms",
-        "hoisin sauce"
+        "cabbage",
+        "oyster sauce",
+        "honey"
       ],
       "connects_b": [
+        "cabbage",
         "honey",
-        "garlic",
-        "cabbage"
+        "garlic"
       ]
     },
     {
       "name": "sodium soy sauce",
       "score": 54.045584867132916,
       "connects_a": [
-        "scallions",
-        "sesame oil",
-        "rice"
+        "cabbage",
+        "oyster sauce",
+        "honey"
       ],
       "connects_b": [
-        "honey",
         "cabbage",
+        "honey",
         "carrot"
       ]
     },
@@ -117,13 +117,13 @@
       "name": "noodles",
       "score": 54.03430361636579,
       "connects_a": [
-        "scallions",
-        "mushrooms",
-        "sesame oil"
+        "oyster sauce",
+        "ginger",
+        "peanuts"
       ],
       "connects_b": [
-        "vegetable oil",
         "cabbage",
+        "vegetable oil",
         "carrot"
       ]
     },
@@ -131,35 +131,30 @@
       "name": "rice wine",
       "score": 52.01341331568814,
       "connects_a": [
-        "scallions",
-        "mushrooms",
-        "sesame oil"
+        "oyster sauce",
+        "honey",
+        "ginger"
       ],
       "connects_b": [
+        "cabbage",
         "honey",
-        "garlic",
-        "cabbage"
+        "beef"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "eggplants",
+      "name": "linguini",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "some",
+      "name": "squid",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "radicchio",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "arugula",
+      "name": "spaghetti",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -169,27 +164,32 @@
       "strength": 1
     },
     {
-      "name": "mussels",
+      "name": "anchovies",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "basil chiffonade",
+      "name": "spun",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "linguini",
+      "name": "some",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "chorizo sausage",
+      "name": "fennel bulb",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "turkey sausage",
+      "name": "al dente",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "crusty rolls",
       "pairs_with": "olive oil",
       "strength": 1
     }
@@ -206,16 +206,6 @@
       "strength": 1
     },
     {
-      "name": "allspice berries",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "palm",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
       "name": "slab bacon",
       "pairs_with": "cloves",
       "strength": 1
@@ -226,22 +216,32 @@
       "strength": 1
     },
     {
-      "name": "stewing",
+      "name": "allspice berries",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "palm",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "bouquet garni",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "roux",
+      "name": "navy beans",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "ham hocks",
       "pairs_with": "onion",
       "strength": 1
     },
     {
       "name": "lamb shoulder",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "palm",
       "pairs_with": "onion",
       "strength": 1
     }

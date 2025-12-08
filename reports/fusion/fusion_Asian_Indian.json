@@ -5,110 +5,110 @@
       "name": "ginger",
       "score": 146.6433702547567,
       "connects_a": [
-        "scallions",
-        "sesame oil",
-        "hoisin sauce"
+        "oyster sauce",
+        "canola oil",
+        "peanuts"
       ],
       "connects_b": [
-        "cumin seeds",
-        "turmeric",
-        "mustard seeds"
+        "cardamom",
+        "garam masala",
+        "yogurt"
       ]
     },
     {
       "name": "chiles",
       "score": 121.5774921370692,
       "connects_a": [
+        "ginger",
         "rice vinegar",
-        "fish sauce",
-        "2"
+        "vegetable oil"
       ],
       "connects_b": [
-        "cumin seeds",
-        "cumin",
-        "turmeric"
+        "ginger",
+        "vegetable oil",
+        "cumin"
       ]
     },
     {
       "name": "chile",
       "score": 120.51739810867089,
       "connects_a": [
-        "rice vinegar",
         "oyster sauce",
-        "soy sauce"
+        "canola oil",
+        "rice vinegar"
       ],
       "connects_b": [
-        "cumin seeds",
+        "vegetable oil",
         "cumin",
-        "turmeric"
+        "garam masala"
       ]
     },
     {
       "name": "cilantro",
       "score": 110.63774171603379,
       "connects_a": [
-        "scallions",
-        "hoisin sauce",
+        "ginger",
+        "peanuts",
         "rice vinegar"
       ],
       "connects_b": [
-        "cumin seeds",
-        "chili powder",
-        "mango"
+        "ginger",
+        "mango",
+        "cumin"
       ]
     },
     {
       "name": "garam masala",
       "score": 102.57659669148961,
       "connects_a": [
-        "onion",
         "ginger",
-        "vegetable oil"
+        "vegetable oil",
+        "chicken breasts"
       ],
       "connects_b": [
-        "cumin seeds",
-        "chili powder",
-        "cumin"
+        "ginger",
+        "cardamom",
+        "potatoes"
       ]
     },
     {
       "name": "chili pepper",
       "score": 100.03788634971589,
       "connects_a": [
-        "sesame oil",
+        "ginger",
         "rice vinegar",
-        "soy sauce"
+        "peanut oil"
       ],
       "connects_b": [
-        "cumin seeds",
-        "chili powder",
-        "turmeric"
+        "ginger",
+        "garam masala",
+        "coriander"
       ]
     },
     {
       "name": "jalapeno peppers",
       "score": 99.09684360484968,
       "connects_a": [
-        "scallions",
-        "bell pepper",
-        "hoisin sauce"
+        "cabbage",
+        "shrimp",
+        "peanut oil"
       ],
       "connects_b": [
-        "cumin seeds",
-        "chili powder",
-        "mango"
+        "mango",
+        "cumin",
+        "garam masala"
       ]
     },
     {
       "name": "coconut milk",
       "score": 90.24146705292044,
       "connects_a": [
+        "ginger",
         "shrimp",
-        "fish sauce",
         "sodium soy sauce"
       ],
       "connects_b": [
-        "cumin seeds",
+        "ginger",
         "mango",
         "cumin"
       ]
@@ -117,59 +117,49 @@
       "name": "peanuts",
       "score": 80.85347328099543,
       "connects_a": [
-        "scallions",
-        "sesame oil",
-        "hoisin sauce"
+        "oyster sauce",
+        "ginger",
+        "shrimp"
       ],
       "connects_b": [
-        "dal",
+        "dhania",
         "ginger",
-        "dhania"
+        "dal"
       ]
     },
     {
       "name": "curry powder",
       "score": 80.03829179939811,
       "connects_a": [
+        "ginger",
         "shrimp",
-        "fish sauce",
-        "ginger"
+        "carrot"
       ],
       "connects_b": [
-        "cumin seeds",
-        "cumin",
-        "turmeric"
+        "ginger",
+        "potatoes",
+        "cumin"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "beef chuck",
+      "name": "jalapeno chile",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "snapper fillets",
+      "name": "head fennel",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "some",
+      "name": "sirloin",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "black beans",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "ribs celery",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "mussels",
+      "name": "squid",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -179,24 +169,34 @@
       "strength": 1
     },
     {
-      "name": "basil chiffonade",
+      "name": "shells",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "chorizo sausage",
+      "name": "beef chuck",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "wheat spaghetti",
+      "name": "anchovies",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "veal",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "handfuls",
       "pairs_with": "cloves",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "[extra",
+      "name": "canned tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -206,12 +206,7 @@
       "strength": 1
     },
     {
-      "name": "pizza",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "petite",
+      "name": "pinch saffron",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -221,12 +216,7 @@
       "strength": 1
     },
     {
-      "name": "pinch saffron",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "lamb shanks",
+      "name": "petite",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -241,8 +231,18 @@
       "strength": 1
     },
     {
-      "name": "allspice berries",
-      "pairs_with": "cloves",
+      "name": "[extra",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "lamb shanks",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pizza",
+      "pairs_with": "olive oil",
       "strength": 1
     }
   ]

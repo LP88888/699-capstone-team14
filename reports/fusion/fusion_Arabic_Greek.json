@@ -5,27 +5,27 @@
       "name": "garam masala",
       "score": 126.71226650125188,
       "connects_a": [
-        "cayenne",
-        "cumin",
-        "tomato"
+        "tomato paste",
+        "cinnamon",
+        "vegetable oil"
       ],
       "connects_b": [
         "spinach",
-        "yogurt",
-        "tomatoes"
+        "cinnamon",
+        "lemon juice"
       ]
     },
     {
       "name": "mint",
       "score": 90.07117542511496,
       "connects_a": [
-        "lamb",
-        "olive",
-        "cumin"
+        "cucumber",
+        "cumin",
+        "lemon juice"
       ],
       "connects_b": [
-        "cherry tomatoes",
-        "dill",
+        "cucumber",
+        "lemon juice",
         "yogurt"
       ]
     },
@@ -33,83 +33,83 @@
       "name": "oregano",
       "score": 84.4705531178084,
       "connects_a": [
-        "cayenne",
-        "lamb",
+        "cucumber",
+        "tomato paste",
         "cumin"
       ],
       "connects_b": [
-        "bell pepper",
-        "olives",
-        "cheese crumbles"
+        "cucumber",
+        "cheese crumbles",
+        "olives"
       ]
     },
     {
       "name": "cucumber",
       "score": 84.12634712656144,
       "connects_a": [
-        "olive",
         "vinegar",
-        "tomato"
+        "lemon juice",
+        "yogurt"
       ],
       "connects_b": [
-        "cherry tomatoes",
+        "cheese crumbles",
         "olives",
-        "dill"
+        "kalamata"
       ]
     },
     {
       "name": "feta cheese",
       "score": 75.01588055905363,
       "connects_a": [
-        "parsley",
-        "mint",
-        "lemon juice"
+        "cucumber",
+        "lemon juice",
+        "mint"
       ],
       "connects_b": [
-        "cherry tomatoes",
-        "olives",
-        "dill"
+        "cucumber",
+        "spinach",
+        "olives"
       ]
     },
     {
       "name": "cumin",
       "score": 73.23714735164614,
       "connects_a": [
-        "cayenne",
-        "lamb",
-        "tahini"
+        "tomato paste",
+        "chickpea",
+        "tomato"
       ],
       "connects_b": [
-        "bell pepper",
         "yogurt",
-        "tomatoes"
+        "bell pepper",
+        "mint"
       ]
     },
     {
       "name": "greek yogurt",
       "score": 72.28894391543095,
       "connects_a": [
+        "cucumber",
         "cumin",
-        "yogurt",
-        "coriander"
+        "lemon juice"
       ],
       "connects_b": [
-        "dill",
+        "cucumber",
         "cheese crumbles",
-        "yogurt"
+        "lemon juice"
       ]
     },
     {
       "name": "yogurt",
       "score": 55.152547184426226,
       "connects_a": [
-        "cayenne",
-        "lamb",
-        "olive"
+        "cucumber",
+        "cumin",
+        "lemon juice"
       ],
       "connects_b": [
-        "dill",
-        "greek yogurt",
+        "cucumber",
+        "lemon juice",
         "mint"
       ]
     },
@@ -117,12 +117,12 @@
       "name": "dill",
       "score": 50.04334916182117,
       "connects_a": [
-        "yogurt",
-        "mint",
-        "lemon juice"
+        "cucumber",
+        "lemon juice",
+        "yogurt"
       ],
       "connects_b": [
-        "cherry tomatoes",
+        "cucumber",
         "spinach",
         "cheese crumbles"
       ]
@@ -131,14 +131,14 @@
       "name": "lamb",
       "score": 48.02477494789687,
       "connects_a": [
-        "olive",
-        "cumin",
-        "yogurt"
+        "tomato paste",
+        "cinnamon",
+        "cumin"
       ],
       "connects_b": [
+        "cinnamon",
         "yogurt",
-        "tomatoes",
-        "parsley"
+        "mint"
       ]
     }
   ],
@@ -149,12 +149,12 @@
       "strength": 1
     },
     {
-      "name": "tumeric",
+      "name": "lentil",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "lentil",
+      "name": "tumeric",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -174,11 +174,6 @@
       "strength": 1
     },
     {
-      "name": "pie crust",
-      "pairs_with": "cinnamon",
-      "strength": 1
-    },
-    {
       "name": "mace",
       "pairs_with": "cinnamon",
       "strength": 1
@@ -189,24 +184,49 @@
       "strength": 1
     },
     {
-      "name": "fennel",
+      "name": "pie crust",
+      "pairs_with": "cinnamon",
+      "strength": 1
+    },
+    {
+      "name": "pepper bell",
       "pairs_with": "parsley",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "granny smith apples",
+      "name": "grits",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "filling",
+      "name": "arborio rice",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "heavy cream",
+      "name": "room temp",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "cold",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "ice water",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "pecans",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "sticks",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -216,27 +236,7 @@
       "strength": 1
     },
     {
-      "name": "whole milk",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "pastry sheets",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "grits",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "raspberry jam",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "room temp",
+      "name": "almond extract",
       "pairs_with": "butter",
       "strength": 1
     },

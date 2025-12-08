@@ -5,69 +5,69 @@
       "name": "confectioners",
       "score": 77.40162341069826,
       "connects_a": [
-        "milk",
-        "1",
-        "2"
+        "egg",
+        "nutmeg",
+        "more"
       ],
       "connects_b": [
-        "milk",
-        "1",
-        "purpose flour"
+        "egg",
+        "more",
+        "milk"
       ]
     },
     {
       "name": "garam masala",
       "score": 63.35613325062594,
       "connects_a": [
-        "cayenne pepper",
-        "potatoes",
+        "tomato paste",
+        "vegetable oil",
         "peas"
       ],
       "connects_b": [
         "spinach",
-        "yogurt",
-        "tomatoes"
+        "cinnamon",
+        "lemon juice"
       ]
     },
     {
       "name": "ice water",
       "score": 60.30585722748021,
       "connects_a": [
-        "1",
-        "purpose flour",
-        "beaten"
+        "egg",
+        "nutmeg",
+        "more"
       ],
       "connects_b": [
-        "1",
-        "purpose flour",
-        "butter"
+        "egg",
+        "more",
+        "cinnamon"
       ]
     },
     {
       "name": "at",
       "score": 60.23898775750824,
       "connects_a": [
-        "milk",
-        "1",
-        "purpose flour"
+        "egg",
+        "more",
+        "milk"
       ],
       "connects_b": [
-        "milk",
-        "1",
-        "purpose flour"
+        "egg",
+        "more",
+        "milk"
       ]
     },
     {
       "name": "tomato paste",
       "score": 54.3484499344363,
       "connects_a": [
-        "beef",
-        "cayenne pepper",
+        "wine",
+        "worcestershire sauce",
         "carrot"
       ],
       "connects_b": [
         "bell pepper",
-        "tomatoes",
+        "cloves",
         "parsley"
       ]
     },
@@ -75,56 +75,56 @@
       "name": "sticks",
       "score": 54.19098323320141,
       "connects_a": [
-        "1",
-        "2",
-        "purpose flour"
+        "egg",
+        "nutmeg",
+        "more"
       ],
       "connects_b": [
-        "1",
-        "purpose flour",
-        "butter"
+        "egg",
+        "more",
+        "cinnamon"
       ]
     },
     {
       "name": "whole milk",
       "score": 50.14642586573099,
       "connects_a": [
-        "2",
-        "purpose flour",
-        "beaten"
+        "egg",
+        "nutmeg",
+        "more"
       ],
       "connects_b": [
-        "purpose flour",
-        "butter",
-        "more"
+        "egg",
+        "more",
+        "cinnamon"
       ]
     },
     {
       "name": "veal",
       "score": 50.13627398035956,
       "connects_a": [
-        "beef",
-        "milk",
-        "2"
+        "egg",
+        "wine",
+        "milk"
       ],
       "connects_b": [
+        "egg",
         "milk",
-        "parsley",
-        "oregano"
+        "cloves"
       ]
     },
     {
       "name": "vanilla extract",
       "score": 48.770153741174205,
       "connects_a": [
-        "milk",
-        "1",
-        "purpose flour"
+        "egg",
+        "nutmeg",
+        "milk"
       ],
       "connects_b": [
+        "egg",
         "milk",
-        "1",
-        "purpose flour"
+        "cinnamon"
       ]
     },
     {
@@ -133,12 +133,12 @@
       "connects_a": [
         "2",
         "beef",
-        "tomato paste"
+        "cayenne pepper"
       ],
       "connects_b": [
-        "bell pepper",
-        "olives",
-        "cheese crumbles"
+        "cucumber",
+        "cheese crumbles",
+        "olives"
       ]
     }
   ],
@@ -164,12 +164,12 @@
       "strength": 1
     },
     {
-      "name": "sodium",
+      "name": "mussels",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "mussels",
+      "name": "sodium",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -179,49 +179,39 @@
       "strength": 1
     },
     {
+      "name": "graham cracker crumbs",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "lobster stock",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
       "name": "peeled and",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "tomato concasse",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "veal stock",
       "pairs_with": "butter",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "roasted tomatoes",
+      "name": "linguini",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pecorino",
+      "name": "squid",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "eggplants",
+      "name": "canned tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "some",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "[extra",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "arugula",
+      "name": "spaghetti",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -231,17 +221,27 @@
       "strength": 1
     },
     {
-      "name": "linguini",
+      "name": "anchovies",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "porcini mushrooms",
+      "name": "some",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "romano",
+      "name": "fennel bulb",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "al dente",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "eggplants",
       "pairs_with": "olive oil",
       "strength": 1
     }

@@ -5,14 +5,14 @@
       "name": "garam masala",
       "score": 20.113058174801886,
       "connects_a": [
+        "onion",
         "vegetable oil",
-        "garlic",
-        "potatoes"
+        "garlic"
       ],
       "connects_b": [
+        "turmeric",
         "chili powder",
-        "oil",
-        "turmeric"
+        "peas"
       ]
     },
     {
@@ -22,17 +22,17 @@
         "flour"
       ],
       "connects_b": [
+        "dhania",
         "mango",
-        "dal",
-        "oil"
+        "dal"
       ]
     },
     {
       "name": "beef stock",
       "score": 12.04417907965786,
       "connects_a": [
+        "carrot",
         "beef",
-        "thyme",
         "flour"
       ],
       "connects_b": [
@@ -44,28 +44,28 @@
       "name": "tumeric",
       "score": 12.033968712596234,
       "connects_a": [
+        "onion",
         "garlic",
-        "potatoes",
-        "onion"
+        "potatoes"
       ],
       "connects_b": [
-        "peas",
+        "oil",
         "chili powder",
-        "oil"
+        "peas"
       ]
     },
     {
       "name": "coriander powder",
       "score": 12.023432285301169,
       "connects_a": [
+        "onion",
         "garlic",
-        "leaves",
-        "onion"
+        "leaves"
       ],
       "connects_b": [
         "oil",
         "chili powder",
-        "leaves"
+        "turmeric"
       ]
     },
     {
@@ -76,9 +76,9 @@
         "potatoes"
       ],
       "connects_b": [
-        "chili powder",
         "turmeric",
-        "oil"
+        "coconut",
+        "chili powder"
       ]
     },
     {
@@ -89,18 +89,18 @@
         "potatoes"
       ],
       "connects_b": [
-        "chili powder",
         "turmeric",
-        "oil"
+        "coconut",
+        "chili powder"
       ]
     },
     {
       "name": "vanilla extract",
       "score": 9.144403826470164,
       "connects_a": [
-        "coffee",
-        "milk",
-        "purpose flour"
+        "egg",
+        "raisins",
+        "buttermilk"
       ],
       "connects_b": [
         "coconut"
@@ -113,9 +113,9 @@
         "raisins"
       ],
       "connects_b": [
+        "dhania",
         "chili powder",
-        "turmeric",
-        "oil"
+        "peas"
       ]
     },
     {
@@ -125,31 +125,21 @@
         "flour"
       ],
       "connects_b": [
-        "jeera coriander",
-        "oil",
-        "wheat"
+        "dhania",
+        "wheat",
+        "jeera coriander"
       ]
     }
   ],
   "novel_from_a": [
-    {
-      "name": "oats",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
     {
       "name": "fruit",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "cold butter",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "applesauce",
-      "pairs_with": "flour",
+      "name": "oats",
+      "pairs_with": "dhania",
       "strength": 1
     },
     {
@@ -158,17 +148,27 @@
       "strength": 1
     },
     {
-      "name": "yeast",
+      "name": "pastry flour",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "buttermilk",
+      "name": "egg wash",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "soda",
+      "name": "vanilla",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "cold",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "chocolate chips",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -178,7 +178,7 @@
       "strength": 1
     },
     {
-      "name": "pastry flour",
+      "name": "yeast",
       "pairs_with": "flour",
       "strength": 1
     }
@@ -195,12 +195,7 @@
       "strength": 1
     },
     {
-      "name": "flour all",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "carom",
+      "name": "maida sooji",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -210,12 +205,17 @@
       "strength": 1
     },
     {
-      "name": "maida sooji",
+      "name": "pearl",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "pearl",
+      "name": "flour all",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "carom",
       "pairs_with": "flour",
       "strength": 1
     },

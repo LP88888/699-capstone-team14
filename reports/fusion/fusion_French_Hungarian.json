@@ -5,112 +5,112 @@
       "name": "tomato paste",
       "score": 112.72271097512716,
       "connects_a": [
-        "thyme",
+        "wine",
         "bay leaf",
         "carrot"
       ],
       "connects_b": [
-        "beef broth",
-        "beef",
-        "bell pepper"
+        "wine",
+        "worcestershire sauce",
+        "bay leaf"
       ]
     },
     {
       "name": "ribs celery",
       "score": 84.61218282671045,
       "connects_a": [
-        "thyme",
+        "wine",
         "bay leaf",
         "carrot"
       ],
       "connects_b": [
-        "bell pepper",
-        "bay leaf",
-        "thyme"
+        "wine",
+        "chicken broth",
+        "worcestershire sauce"
       ]
     },
     {
       "name": "beef stock",
       "score": 84.30925355760502,
       "connects_a": [
-        "bread",
-        "thyme",
-        "bay leaf"
+        "wine",
+        "bay leaf",
+        "carrot"
       ],
       "connects_b": [
-        "mushrooms",
-        "beef",
-        "bay leaf"
+        "wine",
+        "worcestershire sauce",
+        "tomato paste"
       ]
     },
     {
       "name": "celery",
       "score": 84.20850838539597,
       "connects_a": [
-        "thyme",
         "bay leaf",
-        "carrot"
+        "carrot",
+        "thyme"
       ],
       "connects_b": [
-        "beef broth",
-        "bell pepper",
-        "bay leaf"
+        "chicken broth",
+        "worcestershire sauce",
+        "tomato paste"
       ]
     },
     {
       "name": "beef broth",
       "score": 78.09113165649515,
       "connects_a": [
-        "bread",
-        "thyme",
-        "bay leaf"
+        "wine",
+        "bay leaf",
+        "carrot"
       ],
       "connects_b": [
-        "mushrooms",
-        "beef",
-        "noodles"
+        "wine",
+        "worcestershire sauce",
+        "tomato paste"
       ]
     },
     {
       "name": "confectioners",
       "score": 75.391191633797,
       "connects_a": [
-        "milk",
-        "1",
-        "maple syrup"
+        "egg",
+        "nutmeg",
+        "more"
       ],
       "connects_b": [
+        "egg",
         "milk",
-        "purpose flour",
-        "cream"
+        "butter"
       ]
     },
     {
       "name": "celery ribs",
       "score": 72.05508925641611,
       "connects_a": [
-        "thyme",
+        "wine",
         "bay leaf",
         "carrot"
       ],
       "connects_b": [
-        "beef",
-        "bell pepper",
-        "bay leaf"
+        "wine",
+        "chicken broth",
+        "tomato paste"
       ]
     },
     {
       "name": "stalks celery",
       "score": 66.68811854210708,
       "connects_a": [
-        "thyme",
+        "wine",
         "bay leaf",
         "carrot"
       ],
       "connects_b": [
-        "beef broth",
-        "bay leaf",
-        "thyme"
+        "wine",
+        "chicken broth",
+        "tomato paste"
       ]
     },
     {
@@ -118,58 +118,53 @@
       "score": 66.37309197684623,
       "connects_a": [
         "bay leaf",
-        "garlic",
+        "cinnamon",
         "vegetable oil"
       ],
       "connects_b": [
-        "oil",
+        "tomato paste",
         "bay leaf",
-        "tomatoes"
+        "potatoes"
       ]
     },
     {
       "name": "can tomatoes",
       "score": 65.38258403177709,
       "connects_a": [
+        "wine",
         "bay leaf",
-        "parsley",
         "cloves"
       ],
       "connects_b": [
-        "beef broth",
-        "beef",
-        "bell pepper"
+        "wine",
+        "chicken broth",
+        "worcestershire sauce"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "roasted tomatoes",
+      "name": "head fennel",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "eggplants",
+      "name": "chianti",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "some",
+      "name": "canned tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "grigio",
+      "name": "spaghetti",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "radicchio",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "arugula",
+      "name": "salami",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -179,17 +174,22 @@
       "strength": 1
     },
     {
-      "name": "mussels",
+      "name": "morel mushrooms",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "cannellini beans",
+      "name": "anchovies",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "porcini mushrooms",
+      "name": "clam broth",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "spun",
       "pairs_with": "olive oil",
       "strength": 1
     }
@@ -201,17 +201,12 @@
       "strength": 1
     },
     {
-      "name": "capsicum",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "catsup",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
       "name": "chicken base",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "capsicum",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -221,17 +216,22 @@
       "strength": 1
     },
     {
+      "name": "catsup",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "beansprouts",
+      "pairs_with": "egg",
+      "strength": 1
+    },
+    {
       "name": "lemon extract",
       "pairs_with": "egg",
       "strength": 1
     },
     {
-      "name": "beansprouts",
-      "pairs_with": "egg",
-      "strength": 1
-    },
-    {
-      "name": "beansprouts",
+      "name": "beef brisket",
       "pairs_with": "carrot",
       "strength": 1
     },
@@ -241,7 +241,7 @@
       "strength": 1
     },
     {
-      "name": "beef brisket",
+      "name": "beansprouts",
       "pairs_with": "carrot",
       "strength": 1
     }

@@ -5,28 +5,28 @@
       "name": "garam masala",
       "score": 35.1978518059033,
       "connects_a": [
-        "cayenne pepper",
-        "tomatoes",
-        "vegetable oil"
+        "vegetable oil",
+        "chicken breasts",
+        "cayenne pepper"
       ],
       "connects_b": [
+        "turmeric",
         "chili powder",
-        "oil",
-        "turmeric"
+        "peas"
       ]
     },
     {
       "name": "chili powder",
       "score": 25.290953225893524,
       "connects_a": [
-        "cayenne pepper",
-        "onion powder",
-        "garlic powder"
+        "worcestershire sauce",
+        "garlic powder",
+        "cayenne pepper"
       ],
       "connects_b": [
-        "oil",
+        "dhania",
         "jeera coriander",
-        "turmeric"
+        "gram"
       ]
     },
     {
@@ -34,8 +34,8 @@
       "score": 22.12948997998609,
       "connects_a": [
         "hot sauce",
-        "bell pepper",
-        "andouille sausage"
+        "celery",
+        "chicken broth"
       ],
       "connects_b": [
         "chili powder",
@@ -46,9 +46,9 @@
       "name": "paprika",
       "score": 20.19068076587985,
       "connects_a": [
-        "hot sauce",
-        "cayenne pepper",
-        "andouille sausage"
+        "celery",
+        "creole seasoning",
+        "worcestershire sauce"
       ],
       "connects_b": [
         "chili powder",
@@ -59,51 +59,51 @@
       "name": "tumeric",
       "score": 20.056614520993726,
       "connects_a": [
+        "chicken breasts",
         "cayenne pepper",
-        "tomatoes",
-        "garlic"
+        "onion"
       ],
       "connects_b": [
-        "peas",
+        "oil",
         "chili powder",
-        "oil"
+        "peas"
       ]
     },
     {
       "name": "coriander powder",
       "score": 16.031243047068227,
       "connects_a": [
-        "garlic",
+        "onion",
         "tomatoes",
-        "leaves"
+        "garlic"
       ],
       "connects_b": [
         "oil",
         "chili powder",
-        "leaves"
+        "turmeric"
       ]
     },
     {
       "name": "peanuts",
       "score": 15.160026240186642,
       "connects_a": [
-        "shrimp",
         "chili sauce",
-        "chicken breasts"
+        "chicken breasts",
+        "shrimp"
       ],
       "connects_b": [
-        "dal",
-        "gram",
-        "dhania"
+        "dhania",
+        "rai",
+        "coconut"
       ]
     },
     {
       "name": "cayenne pepper",
       "score": 15.098060700041186,
       "connects_a": [
-        "hot sauce",
-        "bell pepper",
-        "shrimp"
+        "chili sauce",
+        "celery",
+        "creole seasoning"
       ],
       "connects_b": [
         "chili powder"
@@ -113,9 +113,9 @@
       "name": "file powder",
       "score": 15.03046449489702,
       "connects_a": [
-        "bell pepper",
-        "shrimp",
-        "cayenne pepper"
+        "celery",
+        "onion powder",
+        "leaves"
       ],
       "connects_b": [
         "leaves"
@@ -125,13 +125,13 @@
       "name": "jalapeno peppers",
       "score": 15.014673273462073,
       "connects_a": [
-        "hot sauce",
-        "bell pepper",
-        "rice"
+        "tomatoes",
+        "shrimp",
+        "bell pepper"
       ],
       "connects_b": [
-        "mango",
         "chili powder",
+        "mango",
         "turmeric"
       ]
     }
@@ -143,17 +143,12 @@
       "strength": 1
     },
     {
+      "name": "lard",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
       "name": "ice water",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "cornmeal",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "buttermilk",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -163,18 +158,13 @@
       "strength": 1
     },
     {
-      "name": "lard",
+      "name": "buttermilk",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "shrimp stock",
-      "pairs_with": "leaves",
-      "strength": 1
-    },
-    {
-      "name": "file powder",
-      "pairs_with": "leaves",
+      "name": "cornmeal",
+      "pairs_with": "flour",
       "strength": 1
     },
     {
@@ -184,6 +174,16 @@
     },
     {
       "name": "sprigs thyme",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
+      "name": "file powder",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
+      "name": "shrimp stock",
       "pairs_with": "leaves",
       "strength": 1
     }
@@ -210,6 +210,21 @@
       "strength": 1
     },
     {
+      "name": "maida sooji",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "finger",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "pearl",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
       "name": "flour all",
       "pairs_with": "flour",
       "strength": 1
@@ -220,22 +235,7 @@
       "strength": 1
     },
     {
-      "name": "finger",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "maida sooji",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "pearl",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "demerara",
+      "name": "wheat",
       "pairs_with": "flour",
       "strength": 1
     }

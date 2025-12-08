@@ -6,13 +6,13 @@
       "score": 30.21073824069619,
       "connects_a": [
         "jalapeno",
-        "lime juice",
+        "avocado",
         "cilantro"
       ],
       "connects_b": [
-        "fenugreek",
         "dhania",
-        "chilli"
+        "fenugreek",
+        "seeds"
       ]
     },
     {
@@ -20,26 +20,26 @@
       "score": 20.213368320248858,
       "connects_a": [
         "cilantro leaves",
-        "lime juice",
-        "chicken breasts"
+        "chicken breasts",
+        "cilantro"
       ],
       "connects_b": [
         "dhania",
-        "dal",
-        "gram"
+        "rai",
+        "dal"
       ]
     },
     {
       "name": "monterey jack cheese",
       "score": 20.005703038280203,
       "connects_a": [
-        ")",
-        "cilantro leaves",
-        "beans"
+        "salsa",
+        "flour tortillas",
+        "cumin"
       ],
       "connects_b": [
-        ")",
-        "beans"
+        "beans",
+        ")"
       ]
     },
     {
@@ -47,7 +47,7 @@
       "score": 18.20948632264334,
       "connects_a": [
         "jalapeno",
-        "cumin",
+        "salsa",
         "flour tortillas"
       ],
       "connects_b": [
@@ -60,50 +60,50 @@
       "name": "garam masala",
       "score": 18.101752357321697,
       "connects_a": [
-        "jalapeno peppers",
-        "cumin",
-        "onion"
+        "cinnamon",
+        "vegetable oil",
+        "cumin"
       ],
       "connects_b": [
-        "oil",
-        "onion"
+        "onion",
+        "oil"
       ]
     },
     {
       "name": "can",
       "score": 18.073421400104678,
       "connects_a": [
-        ")",
-        "beans",
-        "cumin"
+        "cumin",
+        "corn",
+        ")"
       ],
       "connects_b": [
+        "beans",
         ")",
-        "(",
-        "beans"
+        "("
       ]
     },
     {
       "name": "coriander powder",
       "score": 18.035148427951754,
       "connects_a": [
+        "cinnamon",
         "cumin",
-        "tomatoes",
-        "garlic"
+        "onion"
       ],
       "connects_b": [
-        "leaves",
+        "onion",
         "oil",
-        "onion"
+        "leaves"
       ]
     },
     {
       "name": "corn tortillas",
       "score": 17.059678030114526,
       "connects_a": [
-        "cilantro leaves",
+        "more",
         "jalapeno",
-        "jalapeno peppers"
+        "salsa"
       ],
       "connects_b": [
         "onion"
@@ -114,8 +114,8 @@
       "score": 16.04688160201524,
       "connects_a": [
         "jalapeno",
-        "bell pepper",
-        "beans"
+        "beans",
+        "flour tortillas"
       ],
       "connects_b": [
         "beans"
@@ -126,7 +126,7 @@
       "score": 15.257739031592948,
       "connects_a": [
         "jalapeno",
-        "bell pepper",
+        "salsa",
         "beans"
       ],
       "connects_b": [
@@ -136,17 +136,12 @@
   ],
   "novel_from_a": [
     {
-      "name": "green bell",
+      "name": "onions green",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
       "name": "rajma",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "virgin",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -161,7 +156,12 @@
       "strength": 1
     },
     {
-      "name": "onions green",
+      "name": "virgin",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "green bell",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -171,17 +171,17 @@
       "strength": 1
     },
     {
-      "name": "roasted tomatoes",
+      "name": "tomatillos",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "capsicum",
+      "name": "tomato paste",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "beef chuck",
+      "name": "finely oregano",
       "pairs_with": "onion",
       "strength": 1
     }
@@ -193,12 +193,12 @@
       "strength": 1
     },
     {
-      "name": "oats",
+      "name": "cardamom",
       "pairs_with": "cinnamon",
       "strength": 1
     },
     {
-      "name": "cardamom",
+      "name": "oats",
       "pairs_with": "cinnamon",
       "strength": 1
     },
@@ -213,17 +213,17 @@
       "strength": 1
     },
     {
-      "name": "oil coriander",
-      "pairs_with": "leaves",
-      "strength": 1
-    },
-    {
       "name": "murungai",
       "pairs_with": "leaves",
       "strength": 1
     },
     {
-      "name": "cloves cardamom",
+      "name": "oil coriander",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
+      "name": "moringa",
       "pairs_with": "leaves",
       "strength": 1
     },
@@ -233,7 +233,7 @@
       "strength": 1
     },
     {
-      "name": "moringa",
+      "name": "cloves cardamom",
       "pairs_with": "leaves",
       "strength": 1
     }

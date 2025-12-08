@@ -8,6 +8,7 @@ import networkx as nx
 import plotly.express as px
 from sklearn.metrics import confusion_matrix
 from pathlib import Path
+import shutil
 import seaborn as sns
 from pyvis.network import Network
 import numpy as np
@@ -235,6 +236,102 @@ def plot_ingredient_network(pmi_path: Path, centrality_path: Path, out_path: Pat
     out_path = Path(out_path)
     out_path.write_text(net.html, encoding="utf-8")
 
+def plot_svd_variance(var_path: Path, out_path: Path) -> None:
+    """Plot cumulative explained variance for SVD."""
+    df = pd.read_csv(var_path)
+    if df.empty:
+        return
+    fig = px.area(
+        df,
+        x="component",
+        y="cumulative_explained_variance",
+        hover_data={"explained_variance_ratio": ":.4f", "cumulative_explained_variance": ":.4f"},
+        labels={
+            "component": "Component",
+            "cumulative_explained_variance": "Cumulative Explained Variance",
+            "explained_variance_ratio": "Explained Variance Ratio",
+        },
+        title="TruncatedSVD Explained Variance",
+    )
+    fig.update_traces(mode="lines+markers")
+    fig.update_layout(
+        template="simple_white",
+        yaxis=dict(range=[0, 1]),
+        hovermode="x unified",
+        height=520,
+    )
+    fig.write_html(str(out_path))
+
+def plot_svd_scatter(sample_path: Path, out_path: Path, *, max_labels: int = 18) -> None:
+    """Plot a 2D scatter of sampled SVD projections colored by cuisine."""
+    df = pd.read_csv(sample_path)
+    if df.empty:
+        return
+    label_cols = [c for c in df.columns if not c.startswith("svd_")]
+    label_col = label_cols[0] if label_cols else "label"
+    if label_col not in df.columns:
+        df[label_col] = ""
+    top_labels = df[label_col].value_counts().head(max_labels).index
+    mask = df[label_col].isin(top_labels)
+    plot_df = df[mask].copy()
+    fig = px.scatter(
+        plot_df,
+        x="svd_1",
+        y="svd_2",
+        color=label_col,
+        opacity=0.7,
+        hover_data={label_col: True, "svd_1": ":.3f", "svd_2": ":.3f"},
+        title="SVD Projection (sampled, colored by cuisine)",
+        color_discrete_sequence=px.colors.qualitative.Dark24,
+    )
+    fig.update_traces(marker=dict(size=7, line=dict(width=0)))
+    fig.update_layout(
+        template="simple_white",
+        legend_title=label_col,
+        height=700,
+    )
+    fig.write_html(str(out_path))
+
+def plot_svd_component_terms(terms_path: Path, out_path: Path, *, max_components: int = 6, top_n: int = 8) -> None:
+    """Facet bar charts for top +/- terms per component."""
+    df = pd.read_csv(terms_path)
+    if df.empty:
+        return
+    selected = sorted(df["component"].unique())[:max_components]
+    panels = []
+    for comp in selected:
+        comp_df = df[df["component"] == comp]
+        pos = comp_df[comp_df["direction"] == "positive"].nlargest(top_n, "weight")
+        neg = comp_df[comp_df["direction"] == "negative"].nsmallest(top_n, "weight")
+        comp_panel = pd.concat([pos, neg], axis=0)
+        if comp_panel.empty:
+            continue
+        comp_panel = comp_panel.copy()
+        comp_panel["component_label"] = f"Component {comp}"
+        comp_panel["term_display"] = comp_panel["term"].apply(lambda t: t[:18] + "…" if isinstance(t, str) and len(t) > 20 else t)
+        panels.append(comp_panel)
+
+    if not panels:
+        return
+    plot_df = pd.concat(panels, axis=0)
+    fig = px.bar(
+        plot_df,
+        x="weight",
+        y="term_display",
+        color="direction",
+        facet_col="component_label",
+        facet_col_wrap=3,
+        orientation="h",
+        color_discrete_map={"positive": "#0ea5e9", "negative": "#f97316"},
+        title=f"SVD Components: Top +/-{top_n} terms (sample of {len(selected)} components)",
+    )
+    fig.update_layout(
+        template="simple_white",
+        height=450 + 180 * ((len(selected) - 1) // 3),
+        legend_title="Direction",
+    )
+    fig.write_html(str(out_path))
+
 def run(context: PipelineContext, *, force: bool = False) -> StageResult:
     cfg = context.stage("analysis_viz")
     logger = stage_logger(context, "analysis_viz", force=force)
@@ -250,6 +347,22 @@ def run(context: PipelineContext, *, force: bool = False) -> StageResult:
     viz_dir = Path(cfg.get("output", {}).get("viz_dir", "reports/viz_phase2")).resolve()
     viz_dir.mkdir(parents=True, exist_ok=True)
     
+    # 0. TruncatedSVD visuals
+    svd_var_path = baseline_report_dir / "svd_variance.csv"
+    if svd_var_path.exists():
+        logger.info("Generating SVD explained variance chart...")
+        plot_svd_variance(svd_var_path, viz_dir / "svd_explained_variance.html")
+
+    svd_proj_path = baseline_report_dir / "svd_projection_sample.csv"
+    if svd_proj_path.exists():
+        logger.info("Generating SVD scatter (sampled projections)...")
+        plot_svd_scatter(svd_proj_path, viz_dir / "svd_scatter.html")
+
+    svd_terms_path = baseline_report_dir / "svd_components_top_terms.csv"
+    if svd_terms_path.exists():
+        logger.info("Generating SVD component term panels...")
+        plot_svd_component_terms(svd_terms_path, viz_dir / "svd_component_terms.html")
+
     # 1. Confusion Matrix
     preds_path = baseline_report_dir / "y_pred_logreg.csv"
     if preds_path.exists():

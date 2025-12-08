@@ -5,55 +5,55 @@
       "name": "garam masala",
       "score": 77.43527397298726,
       "connects_a": [
-        "cumin",
-        "cayenne pepper",
-        "onion"
+        "ginger",
+        "vegetable oil",
+        "cumin"
       ],
       "connects_b": [
+        "cinnamon",
         "bay leaf",
-        "potatoes",
-        "garlic"
+        "vegetable oil"
       ]
     },
     {
       "name": "tomato paste",
       "score": 70.45169435945446,
       "connects_a": [
-        "bell pepper",
+        "worcestershire sauce",
         "cumin",
-        "cayenne pepper"
+        "barbecue sauce"
       ],
       "connects_b": [
+        "wine",
         "bay leaf",
-        "carrot",
-        "parsley"
+        "carrot"
       ]
     },
     {
       "name": "celery",
       "score": 60.14893456099712,
       "connects_a": [
-        "bell pepper",
-        "cayenne pepper",
-        "onion powder"
+        "onion powder",
+        "worcestershire sauce",
+        "bell pepper"
       ],
       "connects_b": [
-        "bacon",
         "bay leaf",
-        "carrot"
+        "carrot",
+        "bacon"
       ]
     },
     {
       "name": "file powder",
       "score": 45.091393484691054,
       "connects_a": [
-        "bell pepper",
-        "cayenne pepper",
-        "onion powder"
+        "onion powder",
+        "vegetable oil",
+        "bell pepper"
       ],
       "connects_b": [
-        "purpose flour",
         "vegetable oil",
+        "onion",
         "garlic"
       ]
     },
@@ -61,13 +61,13 @@
       "name": "can tomatoes",
       "score": 40.23543632724744,
       "connects_a": [
-        "seasoning",
-        "bell pepper",
-        "cumin"
+        "worcestershire sauce",
+        "cumin",
+        "bell pepper"
       ],
       "connects_b": [
+        "wine",
         "bay leaf",
-        "parsley",
         "cloves"
       ]
     },
@@ -75,74 +75,84 @@
       "name": "cans tomatoes",
       "score": 40.088856636544925,
       "connects_a": [
-        "seasoning",
-        "olive oil",
-        "grain sea salt"
+        "onion",
+        "cloves",
+        "pepper flakes"
       ],
       "connects_b": [
-        "olive oil",
         "carrot",
-        "cloves"
+        "cloves",
+        "olive oil"
       ]
     },
     {
       "name": "yellow onions",
       "score": 40.05526694216377,
       "connects_a": [
-        "bell pepper",
-        "cayenne pepper",
-        "onion powder"
+        "onion powder",
+        "worcestershire sauce",
+        "bell pepper"
       ],
       "connects_b": [
-        "2",
+        "wine",
         "carrot",
-        "parsley"
+        "2"
       ]
     },
     {
       "name": "granulated",
       "score": 36.12640479958858,
       "connects_a": [
-        "seasoning",
-        "cayenne pepper",
-        "ketchup"
+        "worcestershire sauce",
+        "paprika",
+        "cayenne pepper"
       ],
       "connects_b": [
-        "cocoa powder",
-        "vanilla extract",
-        "egg whites"
+        "nutmeg",
+        "cinnamon",
+        "vanilla extract"
       ]
     },
     {
       "name": "thyme",
       "score": 35.18259819172008,
       "connects_a": [
-        "cayenne pepper",
-        "onion powder",
+        "rosemary",
+        "worcestershire sauce",
         "garlic powder"
       ],
       "connects_b": [
-        "bacon",
-        "2",
-        "bay leaf"
+        "wine",
+        "bay leaf",
+        "2"
       ]
     },
     {
       "name": "allspice",
       "score": 35.15593918542888,
       "connects_a": [
+        "ginger",
         "cumin",
-        "cayenne pepper",
-        "onion powder"
+        "cloves"
       ],
       "connects_b": [
-        "bay leaf",
         "nutmeg",
-        "cloves"
+        "cinnamon",
+        "cider vinegar"
       ]
     }
   ],
   "novel_from_a": [
+    {
+      "name": "[extra",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "oregano leaves",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
     {
       "name": "sandwich rolls",
       "pairs_with": "olive oil",
@@ -154,27 +164,12 @@
       "strength": 1
     },
     {
-      "name": "[extra",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "plum tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
       "name": "oregano leaves",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "chipotle chile",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "plum tomatoes",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -184,7 +179,12 @@
       "strength": 1
     },
     {
-      "name": "oregano leaves",
+      "name": "plum tomatoes",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "chipotle chile",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -206,27 +206,7 @@
       "strength": 1
     },
     {
-      "name": "montreal steak",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "beef chuck",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "ribs celery",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
       "name": "escarole",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "veal",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -236,12 +216,32 @@
       "strength": 1
     },
     {
-      "name": "sticks",
+      "name": "beef chuck",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "montreal steak",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "ribs celery",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "veal",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "almond extract",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "raspberry jam",
+      "name": "muscovado sugar",
       "pairs_with": "butter",
       "strength": 1
     }

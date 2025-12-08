@@ -5,186 +5,146 @@
       "name": "garam masala",
       "score": 217.22102828786035,
       "connects_a": [
-        "cumin",
-        "tomatoes",
-        "potatoes"
+        "cinnamon",
+        "vegetable oil",
+        "cumin"
       ],
       "connects_b": [
-        "cumin seeds",
-        "chili powder",
-        "potatoes"
+        "coriander",
+        "peas",
+        "chili powder"
       ]
     },
     {
       "name": "tumeric",
       "score": 108.30571841336612,
       "connects_a": [
+        "cinnamon",
         "cumin",
-        "tomatoes",
-        "potatoes"
+        "onion"
       ],
       "connects_b": [
-        "cumin seeds",
-        "chili powder",
-        "cumin"
+        "ginger",
+        "cardamom",
+        "cinnamon"
       ]
     },
     {
       "name": "coriander powder",
       "score": 96.18745828240935,
       "connects_a": [
+        "cinnamon",
         "cumin",
-        "tomatoes",
-        "garlic"
+        "onion"
       ],
       "connects_b": [
-        "cumin seeds",
-        "chili powder",
-        "cumin"
+        "ginger",
+        "tumeric",
+        "cinnamon"
       ]
     },
     {
       "name": "mustard seeds",
       "score": 95.07399012366643,
       "connects_a": [
+        "vegetable oil",
         "cumin",
-        "tomatoes",
-        "potatoes"
+        "tomatoes"
       ],
       "connects_b": [
-        "cumin seeds",
-        "chili powder",
-        "garam masala"
+        "garam masala",
+        "coriander",
+        "peas"
       ]
     },
     {
       "name": "cardamom pods",
       "score": 84.17265013860141,
       "connects_a": [
-        "cumin",
         "optional",
-        "tomatoes"
+        "cinnamon",
+        "vegetable oil"
       ],
       "connects_b": [
-        "cumin seeds",
-        "cumin",
-        "turmeric"
+        "basmati rice",
+        "ginger",
+        "cinnamon"
       ]
     },
     {
       "name": "chilies",
       "score": 76.042251508117,
       "connects_a": [
-        "cumin",
+        "cinnamon",
         "tomatoes",
-        "potatoes"
+        "cumin"
       ],
       "connects_b": [
-        "cumin seeds",
+        "garam masala",
         "chili powder",
-        "garam masala"
+        "peas"
       ]
     },
     {
       "name": "chiles",
       "score": 65.31022304883882,
       "connects_a": [
+        "vegetable oil",
         "cumin",
-        "2",
-        "taste"
+        "cloves"
       ],
       "connects_b": [
-        "cumin seeds",
-        "coconut milk",
-        "cumin"
+        "ginger",
+        "cinnamon sticks",
+        "vegetable oil"
       ]
     },
     {
       "name": "cumin seeds",
       "score": 63.077732247350276,
       "connects_a": [
-        "cumin",
         "tomatoes",
+        "cumin",
         "potatoes"
       ],
       "connects_b": [
-        "chili powder",
         "garam masala",
-        "potatoes"
+        "coriander",
+        "peas"
       ]
     },
     {
       "name": "coriander",
       "score": 60.15507199326891,
       "connects_a": [
-        "cumin",
+        "cinnamon",
         "tomatoes",
-        "cinnamon"
+        "cumin"
       ],
       "connects_b": [
-        "cumin seeds",
+        "garam masala",
         "chili powder",
-        "garam masala"
+        "mustard seeds"
       ]
     },
     {
       "name": "turmeric",
       "score": 60.116309471119145,
       "connects_a": [
+        "tomatoes",
         "vegetable oil",
-        "cumin",
-        "tomatoes"
+        "cumin"
       ],
       "connects_b": [
-        "cumin seeds",
-        "chili powder",
-        "garam masala"
+        "garam masala",
+        "coriander",
+        "peas"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "radicchio",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "mussels",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "linguini",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "romano",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "for seasoning",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "morel mushrooms",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "roma",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "reggiano",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pinenuts",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -192,11 +152,71 @@
       "name": "salami",
       "pairs_with": "olive oil",
       "strength": 1
+    },
+    {
+      "name": "al dente",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "eggplants",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "arugula",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pecorino",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "parmigiano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "basil chiffonade",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "parma",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "by hand",
+      "pairs_with": "olive oil",
+      "strength": 1
     }
   ],
   "novel_from_b": [
     {
+      "name": "paneer",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
       "name": "coriander powder",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "lentil",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "ginger paste",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "capsicum",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -207,26 +227,6 @@
     },
     {
       "name": "lamb shoulder",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "capsicum",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "ginger paste",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "paneer",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "lentil",
       "pairs_with": "onion",
       "strength": 1
     },

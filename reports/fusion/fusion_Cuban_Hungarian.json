@@ -5,166 +5,166 @@
       "name": "tomato paste",
       "score": 144.9291998251635,
       "connects_a": [
-        "bell pepper",
-        "cumin",
+        "wine",
+        "pork",
         "bay leaf"
       ],
       "connects_b": [
-        "beef broth",
-        "beef",
-        "bell pepper"
+        "wine",
+        "worcestershire sauce",
+        "bay leaf"
       ]
     },
     {
       "name": "can tomatoes",
       "score": 104.61213445084334,
       "connects_a": [
-        "bell pepper",
+        "wine",
         "olives",
-        "cumin"
+        "bay leaf"
       ],
       "connects_b": [
-        "beef broth",
-        "beef",
-        "bell pepper"
+        "wine",
+        "chicken broth",
+        "worcestershire sauce"
       ]
     },
     {
       "name": "andouille sausage",
       "score": 104.13765607245736,
       "connects_a": [
-        "bell pepper",
-        "rice",
+        "canola oil",
+        "tomatoes",
         "bay leaf"
       ],
       "connects_b": [
-        "bell pepper",
-        "bay leaf",
-        "thyme"
+        "chicken broth",
+        "worcestershire sauce",
+        "tomato paste"
       ]
     },
     {
       "name": "celery",
       "score": 98.24325978296196,
       "connects_a": [
-        "bell pepper",
-        "rice",
-        "bay leaf"
+        "tomatoes",
+        "bay leaf",
+        "bell pepper"
       ],
       "connects_b": [
-        "beef broth",
-        "bell pepper",
-        "bay leaf"
+        "chicken broth",
+        "worcestershire sauce",
+        "tomato paste"
       ]
     },
     {
       "name": "cumin",
       "score": 85.44333857692051,
       "connects_a": [
-        "plantains",
         "dill pickles",
-        "bell pepper"
+        "pork shoulder",
+        "bay leaf"
       ],
       "connects_b": [
-        "bell pepper",
-        "bay leaf",
-        "tomatoes"
+        "chicken",
+        "tomato paste",
+        "bay leaf"
       ]
     },
     {
       "name": "celery ribs",
       "score": 84.06427079915213,
       "connects_a": [
-        "bell pepper",
-        "rice",
+        "wine",
+        "tomatoes",
         "bay leaf"
       ],
       "connects_b": [
-        "beef",
-        "bell pepper",
-        "bay leaf"
+        "wine",
+        "chicken broth",
+        "tomato paste"
       ]
     },
     {
       "name": "garam masala",
       "score": 77.43527397298726,
       "connects_a": [
-        "cumin",
         "bay leaf",
-        "tomatoes"
+        "vegetable oil",
+        "cumin"
       ],
       "connects_b": [
-        "oil",
+        "tomato paste",
         "bay leaf",
-        "tomatoes"
+        "potatoes"
       ]
     },
     {
       "name": "bay leaf",
       "score": 66.59397016751777,
       "connects_a": [
-        "beans",
+        "wine",
         "cumin",
-        "tomatoes"
+        "oregano"
       ],
       "connects_b": [
-        "beef broth",
-        "beef",
-        "thyme"
+        "wine",
+        "chicken broth",
+        "tomato paste"
       ]
     },
     {
       "name": "chorizo",
       "score": 64.11811691948405,
       "connects_a": [
-        "bell pepper",
-        "rice",
+        "wine",
+        "tomatoes",
         "olives"
       ],
       "connects_b": [
-        "bell pepper",
+        "wine",
         "bay leaf",
-        "tomatoes"
+        "paprika"
       ]
     },
     {
       "name": "ribs celery",
       "score": 60.43727344765032,
       "connects_a": [
-        "bell pepper",
+        "wine",
         "bay leaf",
-        "cloves"
+        "bell pepper"
       ],
       "connects_b": [
-        "bell pepper",
-        "bay leaf",
-        "thyme"
+        "wine",
+        "chicken broth",
+        "worcestershire sauce"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "crusty rolls",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "beefsteak tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "montreal steak",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cubanelle peppers",
+      "name": "olives",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
       "name": "canned tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "crusty bread",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "chorizo sausage",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "hearts",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -179,7 +179,7 @@
       "strength": 1
     },
     {
-      "name": "arugula",
+      "name": "finely oregano",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -189,7 +189,7 @@
       "strength": 1
     },
     {
-      "name": "hearts",
+      "name": "montreal steak",
       "pairs_with": "olive oil",
       "strength": 1
     }
@@ -197,11 +197,6 @@
   "novel_from_b": [
     {
       "name": "pasta",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "anchovy fillets",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -216,7 +211,12 @@
       "strength": 1
     },
     {
-      "name": "veal",
+      "name": "anchovy fillets",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "rigatoni",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -226,8 +226,13 @@
       "strength": 1
     },
     {
-      "name": "rigatoni",
+      "name": "veal",
       "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "ice water",
+      "pairs_with": "butter",
       "strength": 1
     },
     {
@@ -236,12 +241,7 @@
       "strength": 1
     },
     {
-      "name": "nutmeg",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "ice water",
+      "name": "glace",
       "pairs_with": "butter",
       "strength": 1
     }

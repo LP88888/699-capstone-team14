@@ -5,14 +5,14 @@
       "name": "garam masala",
       "score": 119.67269614007122,
       "connects_a": [
-        "cayenne pepper",
-        "tomatoes",
-        "vegetable oil"
+        "vegetable oil",
+        "chicken breasts",
+        "cayenne pepper"
       ],
       "connects_b": [
-        "cumin seeds",
-        "chili powder",
-        "cumin"
+        "ginger",
+        "cardamom",
+        "potatoes"
       ]
     },
     {
@@ -20,40 +20,40 @@
       "score": 96.07329867996094,
       "connects_a": [
         "hot sauce",
-        "rice",
-        "garlic powder"
+        "celery",
+        "creole seasoning"
       ],
       "connects_b": [
-        "cumin seeds",
+        "vegetable oil",
         "cumin",
-        "turmeric"
+        "garam masala"
       ]
     },
     {
       "name": "tomato paste",
       "score": 84.54203323134537,
       "connects_a": [
-        "bell pepper",
-        "cayenne pepper",
-        "andouille sausage"
+        "celery",
+        "worcestershire sauce",
+        "paprika"
       ],
       "connects_b": [
         "cumin",
-        "turmeric",
-        "tomatoes"
+        "garam masala",
+        "cloves"
       ]
     },
     {
       "name": "tumeric",
       "score": 75.21230445372647,
       "connects_a": [
+        "chicken breasts",
         "cayenne pepper",
-        "tomatoes",
-        "garlic"
+        "onion"
       ],
       "connects_b": [
-        "cumin seeds",
-        "chili powder",
+        "ginger",
+        "cardamom",
         "cumin"
       ]
     },
@@ -61,14 +61,14 @@
       "name": "file powder",
       "score": 75.15232247448509,
       "connects_a": [
-        "bell pepper",
-        "shrimp",
-        "cayenne pepper"
+        "celery",
+        "onion powder",
+        "leaves"
       ],
       "connects_b": [
-        "tomatoes",
         "vegetable oil",
-        "garlic"
+        "onion",
+        "tomatoes"
       ]
     },
     {
@@ -76,80 +76,75 @@
       "score": 71.20278214743375,
       "connects_a": [
         "bell pepper",
-        "cayenne pepper",
-        "onion powder"
+        "garlic powder",
+        "cayenne pepper"
       ],
       "connects_b": [
-        "cumin seeds",
-        "chili powder",
-        "turmeric"
+        "cardamom",
+        "garam masala",
+        "yogurt"
       ]
     },
     {
       "name": "paprika",
       "score": 70.66738268057948,
       "connects_a": [
-        "hot sauce",
-        "cayenne pepper",
-        "andouille sausage"
+        "celery",
+        "creole seasoning",
+        "worcestershire sauce"
       ],
       "connects_b": [
-        "cumin seeds",
-        "chili powder",
-        "cumin"
+        "cumin",
+        "garam masala",
+        "yogurt"
       ]
     },
     {
       "name": "celery",
       "score": 69.17127474514669,
       "connects_a": [
-        "andouille sausage",
-        "garlic powder",
-        "parsley"
+        "worcestershire sauce",
+        "cajun seasoning",
+        "shrimp"
       ],
       "connects_b": [
-        "garlic",
+        "onion",
         "tomatoes",
-        "onion"
+        "garlic"
       ]
     },
     {
       "name": "andouille sausage",
       "score": 63.08338781312321,
       "connects_a": [
-        "garlic",
-        "bell pepper",
-        "rice"
+        "worcestershire sauce",
+        "cajun seasoning",
+        "shrimp"
       ],
       "connects_b": [
-        "garlic",
+        "onion",
         "tomatoes",
-        "onion"
+        "garlic"
       ]
     },
     {
       "name": "chili powder",
       "score": 60.69828774214446,
       "connects_a": [
-        "cayenne pepper",
-        "onion powder",
-        "garlic powder"
+        "worcestershire sauce",
+        "garlic powder",
+        "cayenne pepper"
       ],
       "connects_b": [
-        "cumin seeds",
-        "cumin",
-        "turmeric"
+        "dhania",
+        "cardamom",
+        "cumin"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "chorizo sausage",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "wheat spaghetti",
+      "name": "oregano leaves",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -159,13 +154,13 @@
       "strength": 1
     },
     {
-      "name": "oregano leaves",
+      "name": "wheat spaghetti",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "crawfish",
-      "pairs_with": "butter",
+      "name": "chorizo sausage",
+      "pairs_with": "cloves",
       "strength": 1
     },
     {
@@ -174,34 +169,34 @@
       "strength": 1
     },
     {
-      "name": "bacon fat",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "roux",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "chorizo sausage",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
       "name": "crawfish",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "corn tortillas",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "andouille",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "chicken base",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "navy beans",
       "pairs_with": "onion",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "eggplants",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "arugula",
+      "name": "canned tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -211,7 +206,7 @@
       "strength": 1
     },
     {
-      "name": "handful pine nuts",
+      "name": "pinch saffron",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -221,12 +216,7 @@
       "strength": 1
     },
     {
-      "name": "pizza",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "petite",
+      "name": "eggplants",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -236,12 +226,22 @@
       "strength": 1
     },
     {
-      "name": "canned tomatoes",
+      "name": "arugula",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pinch saffron",
+      "name": "petite",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "palm",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "crusty bread",
       "pairs_with": "olive oil",
       "strength": 1
     }

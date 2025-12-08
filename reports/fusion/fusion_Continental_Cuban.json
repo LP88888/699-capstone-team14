@@ -6,26 +6,26 @@
       "score": 36.61857367582307,
       "connects_a": [
         "oregano",
-        "bell pepper",
-        "beans"
+        "beans",
+        "bell pepper"
       ],
       "connects_b": [
-        "plantains",
         "dill pickles",
-        "bell pepper"
+        "pork shoulder",
+        "bay leaf"
       ]
     },
     {
       "name": "tomato paste",
       "score": 36.23229995629087,
       "connects_a": [
+        "oregano",
         "thyme",
-        "bell pepper",
-        "oregano"
+        "bell pepper"
       ],
       "connects_b": [
-        "bell pepper",
-        "cumin",
+        "wine",
+        "pork",
         "bay leaf"
       ]
     },
@@ -34,26 +34,26 @@
       "score": 32.09376320403048,
       "connects_a": [
         "oregano",
-        "bell pepper",
+        "cream",
         "beans"
       ],
       "connects_b": [
+        "cumin",
         "bell pepper",
-        "beans",
-        "cumin"
+        "cilantro"
       ]
     },
     {
       "name": "andouille sausage",
       "score": 32.042355714602266,
       "connects_a": [
+        "oregano",
         "thyme",
-        "bell pepper",
-        "oregano"
+        "bell pepper"
       ],
       "connects_b": [
-        "bell pepper",
-        "rice",
+        "canola oil",
+        "tomatoes",
         "bay leaf"
       ]
     },
@@ -61,14 +61,14 @@
       "name": "celery",
       "score": 28.06950279513199,
       "connects_a": [
+        "oregano",
         "thyme",
-        "bell pepper",
-        "oregano"
+        "bell pepper"
       ],
       "connects_b": [
-        "bell pepper",
-        "rice",
-        "bay leaf"
+        "tomatoes",
+        "bay leaf",
+        "bell pepper"
       ]
     },
     {
@@ -80,9 +80,9 @@
         "beans"
       ],
       "connects_b": [
-        "beans",
+        "wine",
         "cumin",
-        "tomatoes"
+        "oregano"
       ]
     },
     {
@@ -94,62 +94,62 @@
         "onion"
       ],
       "connects_b": [
-        "bell pepper",
+        "wine",
         "olives",
-        "cumin"
+        "bay leaf"
       ]
     },
     {
       "name": "tortilla chips",
       "score": 24.058056187388008,
       "connects_a": [
-        "bell pepper",
+        "cream",
         "beans",
-        "cream"
+        "bell pepper"
       ],
       "connects_b": [
-        "bell pepper",
-        "beans",
-        "cumin"
+        "vegetable oil",
+        "cumin",
+        "bell pepper"
       ]
     },
     {
       "name": "file powder",
       "score": 24.04874319183523,
       "connects_a": [
+        "onion",
         "thyme",
-        "bell pepper",
-        "leaves"
+        "bell pepper"
       ],
       "connects_b": [
+        "vegetable oil",
         "bell pepper",
-        "tomatoes",
-        "vegetable oil"
+        "onion"
       ]
     },
     {
       "name": "garam masala",
       "score": 21.11871108354198,
       "connects_a": [
+        "onion",
         "oil",
-        "potatoes",
-        "onion"
+        "potatoes"
       ],
       "connects_b": [
-        "cumin",
         "bay leaf",
-        "tomatoes"
+        "vegetable oil",
+        "cumin"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "arugula leaves",
+      "name": "reggiano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "reggiano",
+      "name": "arugula leaves",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -164,7 +164,7 @@
       "strength": 1
     },
     {
-      "name": "chocolate chips",
+      "name": "icing",
       "pairs_with": "egg",
       "strength": 1
     },
@@ -174,7 +174,7 @@
       "strength": 1
     },
     {
-      "name": "icing",
+      "name": "chocolate chips",
       "pairs_with": "egg",
       "strength": 1
     },
@@ -196,22 +196,7 @@
   ],
   "novel_from_b": [
     {
-      "name": "crusty rolls",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "beefsteak tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "montreal steak",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cubanelle peppers",
+      "name": "olives",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -221,7 +206,12 @@
       "strength": 1
     },
     {
-      "name": "capers",
+      "name": "chorizo sausage",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "hearts",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -236,12 +226,22 @@
       "strength": 1
     },
     {
+      "name": "finely oregano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "sandwich rolls",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "hearts",
+      "name": "montreal steak",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "mussels",
       "pairs_with": "olive oil",
       "strength": 1
     }

@@ -5,83 +5,83 @@
       "name": "tomato paste",
       "score": 40.25811106254541,
       "connects_a": [
-        "bell pepper",
+        "worcestershire sauce",
         "cumin",
-        "cayenne pepper"
+        "barbecue sauce"
       ],
       "connects_b": [
+        "oregano",
         "thyme",
-        "bell pepper",
-        "oregano"
+        "bell pepper"
       ]
     },
     {
       "name": "celery",
       "score": 40.099289707331415,
       "connects_a": [
-        "bell pepper",
-        "cayenne pepper",
-        "onion powder"
+        "onion powder",
+        "worcestershire sauce",
+        "bell pepper"
       ],
       "connects_b": [
+        "oregano",
         "thyme",
-        "bell pepper",
-        "oregano"
+        "bell pepper"
       ]
     },
     {
       "name": "andouille sausage",
       "score": 40.05294464325283,
       "connects_a": [
-        "bell pepper",
-        "cayenne pepper",
-        "onion powder"
+        "onion powder",
+        "worcestershire sauce",
+        "bell pepper"
       ],
       "connects_b": [
+        "oregano",
         "thyme",
-        "bell pepper",
-        "oregano"
+        "bell pepper"
       ]
     },
     {
       "name": "file powder",
       "score": 36.07311478775284,
       "connects_a": [
-        "bell pepper",
-        "cayenne pepper",
-        "onion powder"
+        "onion powder",
+        "vegetable oil",
+        "bell pepper"
       ],
       "connects_b": [
+        "onion",
         "thyme",
-        "bell pepper",
-        "leaves"
+        "bell pepper"
       ]
     },
     {
       "name": "garam masala",
       "score": 33.18654598842311,
       "connects_a": [
-        "cumin",
-        "cayenne pepper",
-        "onion"
+        "ginger",
+        "vegetable oil",
+        "cumin"
       ],
       "connects_b": [
+        "onion",
         "oil",
-        "potatoes",
-        "onion"
+        "potatoes"
       ]
     },
     {
       "name": "cans tomatoes",
       "score": 32.07108530923594,
       "connects_a": [
-        "seasoning",
-        "olive oil",
-        "grain sea salt"
+        "onion",
+        "cloves",
+        "pepper flakes"
       ],
       "connects_b": [
         "oregano",
-        "onion",
+        "olive oil",
         "leaves"
       ]
     },
@@ -89,41 +89,41 @@
       "name": "cayenne pepper",
       "score": 30.196121400082372,
       "connects_a": [
-        "bell pepper",
+        "worcestershire sauce",
         "cumin",
-        "ketchup"
+        "barbecue sauce"
       ],
       "connects_b": [
+        "oregano",
         "thyme",
-        "bell pepper",
-        "oregano"
+        "bell pepper"
       ]
     },
     {
       "name": "creole seasoning",
       "score": 30.016203989797052,
       "connects_a": [
-        "bell pepper",
-        "cayenne pepper",
-        "garlic powder"
+        "onion powder",
+        "worcestershire sauce",
+        "bell pepper"
       ],
       "connects_b": [
+        "oregano",
         "thyme",
-        "bell pepper",
-        "oregano"
+        "bell pepper"
       ]
     },
     {
       "name": "salsa",
       "score": 28.08204280352667,
       "connects_a": [
-        "bell pepper",
         "cumin",
-        "tomatoes"
+        "bell pepper",
+        "chicken breasts"
       ],
       "connects_b": [
         "oregano",
-        "bell pepper",
+        "cream",
         "beans"
       ]
     },
@@ -131,30 +131,20 @@
       "name": "cumin",
       "score": 27.463930256867304,
       "connects_a": [
+        "paprika",
         "bell pepper",
-        "cayenne pepper",
-        "onion powder"
+        "garlic powder"
       ],
       "connects_b": [
         "oregano",
-        "bell pepper",
-        "beans"
+        "beans",
+        "bell pepper"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "sandwich rolls",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "[extra",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "plum tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -164,12 +154,17 @@
       "strength": 1
     },
     {
-      "name": "beef broth",
-      "pairs_with": "onion",
+      "name": "sandwich rolls",
+      "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "coriander powder",
+      "name": "plum tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "chicken base",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -179,39 +174,39 @@
       "strength": 1
     },
     {
+      "name": "lentil",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "tomato paste",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "beef broth",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
       "name": "sandwich rolls",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "chicken base",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "beef",
       "pairs_with": "onion",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "arugula leaves",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "arugula",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "handful pine nuts",
+      "name": "reggiano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "reggiano",
+      "name": "arugula leaves",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -226,8 +221,8 @@
       "strength": 1
     },
     {
-      "name": "black beans",
-      "pairs_with": "cloves",
+      "name": "handful pine nuts",
+      "pairs_with": "olive oil",
       "strength": 1
     },
     {
@@ -237,6 +232,11 @@
     },
     {
       "name": "crusty bread",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "black beans",
       "pairs_with": "cloves",
       "strength": 1
     },

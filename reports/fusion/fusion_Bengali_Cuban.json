@@ -5,14 +5,14 @@
       "name": "garam masala",
       "score": 28.15828144472264,
       "connects_a": [
-        "peas",
+        "oil",
         "chili powder",
-        "oil"
+        "peas"
       ],
       "connects_b": [
-        "cumin",
         "bay leaf",
-        "tomatoes"
+        "vegetable oil",
+        "cumin"
       ]
     },
     {
@@ -23,32 +23,32 @@
         "beans"
       ],
       "connects_b": [
-        "plantains",
         "dill pickles",
-        "bell pepper"
+        "pork shoulder",
+        "bay leaf"
       ]
     },
     {
       "name": "mango",
       "score": 24.168590592556953,
       "connects_a": [
+        "dhania",
         "wheat",
-        "fenugreek",
-        "dhania"
+        "fenugreek"
       ],
       "connects_b": [
+        "lime",
         "orange juice",
-        "lime juice",
-        "lime"
+        "cilantro"
       ]
     },
     {
       "name": "cardamom",
       "score": 20.29931202144538,
       "connects_a": [
-        "chili powder",
-        "oil",
-        "methi"
+        "dhania",
+        "methi",
+        "chili powder"
       ],
       "connects_b": [
         "bay leaf",
@@ -59,41 +59,41 @@
       "name": "bell",
       "score": 20.090763668817434,
       "connects_a": [
-        "beans",
-        "methi",
-        "powder"
+        "dhania",
+        "wheat",
+        "fenugreek"
       ],
       "connects_b": [
-        "bell pepper",
-        "beans"
+        "beans",
+        "bell pepper"
       ]
     },
     {
       "name": "tumeric",
       "score": 20.056614520993726,
       "connects_a": [
-        "peas",
+        "oil",
         "chili powder",
-        "oil"
+        "peas"
       ],
       "connects_b": [
         "cumin",
-        "tomatoes",
-        "garlic"
+        "cilantro",
+        "onion"
       ]
     },
     {
       "name": "mustard seeds",
       "score": 20.0155768681403,
       "connects_a": [
-        "peas",
+        "oil",
         "chili powder",
-        "oil"
+        "peas"
       ],
       "connects_b": [
+        "vegetable oil",
         "cumin",
-        "tomatoes",
-        "vegetable oil"
+        "cilantro"
       ]
     },
     {
@@ -104,9 +104,9 @@
         "beans"
       ],
       "connects_b": [
+        "cumin",
         "bell pepper",
-        "beans",
-        "cumin"
+        "cilantro"
       ]
     },
     {
@@ -117,9 +117,9 @@
         "beans"
       ],
       "connects_b": [
-        "bell pepper",
-        "rice",
-        "beans"
+        "tomatoes",
+        "cumin",
+        "bell pepper"
       ]
     },
     {
@@ -130,9 +130,9 @@
         "beans"
       ],
       "connects_b": [
-        "beans",
         "cumin",
-        "tomatoes"
+        "orange juice",
+        "cilantro"
       ]
     }
   ],
@@ -153,12 +153,12 @@
       "strength": 1
     },
     {
-      "name": "bell",
+      "name": "palm",
       "pairs_with": "bell pepper",
       "strength": 1
     },
     {
-      "name": "palm",
+      "name": "bell",
       "pairs_with": "bell pepper",
       "strength": 1
     },
@@ -205,7 +205,7 @@
       "strength": 1
     },
     {
-      "name": "cornmeal",
+      "name": "lard",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -215,12 +215,17 @@
       "strength": 1
     },
     {
-      "name": "yeast",
+      "name": "egg wash",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "soda",
+      "name": "vanilla",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "white sugar",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -230,12 +235,7 @@
       "strength": 1
     },
     {
-      "name": "beef stock",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "quart",
+      "name": "yeast",
       "pairs_with": "flour",
       "strength": 1
     }
