@@ -5,94 +5,94 @@
       "name": "cayenne pepper",
       "score": 30.196121400082372,
       "connects_a": [
-        "mustard",
-        "chili powder"
+        "chili powder",
+        "mustard"
       ],
       "connects_b": [
-        "hot sauce",
-        "bell pepper",
-        "shrimp"
+        "chili sauce",
+        "celery",
+        "creole seasoning"
       ]
     },
     {
       "name": "garam masala",
       "score": 28.15828144472264,
       "connects_a": [
-        "peas",
+        "oil",
         "chili powder",
-        "oil"
+        "peas"
       ],
       "connects_b": [
-        "cayenne pepper",
-        "tomatoes",
-        "vegetable oil"
+        "vegetable oil",
+        "chicken breasts",
+        "cayenne pepper"
       ]
     },
     {
       "name": "chili powder",
       "score": 25.290953225893524,
       "connects_a": [
+        "dhania",
         "jeera coriander",
-        "oil",
         "methi"
       ],
       "connects_b": [
-        "cayenne pepper",
-        "onion powder",
-        "garlic powder"
+        "worcestershire sauce",
+        "garlic powder",
+        "cayenne pepper"
       ]
     },
     {
       "name": "worcestershire sauce",
       "score": 24.17069201436246,
       "connects_a": [
-        "mustard",
-        "chili powder"
+        "chili powder",
+        "mustard"
       ],
       "connects_b": [
-        "hot sauce",
-        "cayenne pepper",
-        "andouille sausage"
+        "chili sauce",
+        "celery",
+        "creole seasoning"
       ]
     },
     {
       "name": "onion powder",
       "score": 24.084688841906846,
       "connects_a": [
-        "mustard",
-        "chili powder"
+        "chili powder",
+        "mustard"
       ],
       "connects_b": [
-        "hot sauce",
-        "cayenne pepper",
-        "andouille sausage"
+        "chili sauce",
+        "celery",
+        "creole seasoning"
       ]
     },
     {
       "name": "paprika",
       "score": 20.19068076587985,
       "connects_a": [
-        "mustard",
-        "chili powder"
+        "chili powder",
+        "mustard"
       ],
       "connects_b": [
-        "hot sauce",
-        "cayenne pepper",
-        "andouille sausage"
+        "celery",
+        "creole seasoning",
+        "worcestershire sauce"
       ]
     },
     {
       "name": "tumeric",
       "score": 20.056614520993726,
       "connects_a": [
-        "peas",
+        "oil",
         "chili powder",
-        "oil"
+        "peas"
       ],
       "connects_b": [
+        "chicken breasts",
         "cayenne pepper",
-        "tomatoes",
-        "garlic"
+        "onion"
       ]
     },
     {
@@ -102,9 +102,9 @@
         "leaves"
       ],
       "connects_b": [
-        "bell pepper",
-        "shrimp",
-        "cayenne pepper"
+        "celery",
+        "onion powder",
+        "leaves"
       ]
     },
     {
@@ -116,21 +116,21 @@
       ],
       "connects_b": [
         "bell pepper",
-        "cayenne pepper",
-        "onion powder"
+        "garlic powder",
+        "cayenne pepper"
       ]
     },
     {
       "name": "ketchup",
       "score": 14.054552306247661,
       "connects_a": [
-        "mustard",
-        "chili powder"
+        "chili powder",
+        "mustard"
       ],
       "connects_b": [
-        "hot sauce",
-        "cayenne pepper",
-        "onion powder"
+        "chili sauce",
+        "worcestershire sauce",
+        "garlic powder"
       ]
     }
   ],
@@ -156,13 +156,23 @@
       "strength": 1
     },
     {
+      "name": "palm",
+      "pairs_with": "bell pepper",
+      "strength": 1
+    },
+    {
       "name": "bell",
       "pairs_with": "bell pepper",
       "strength": 1
     },
     {
-      "name": "palm",
-      "pairs_with": "bell pepper",
+      "name": "maida sooji",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "finger",
+      "pairs_with": "flour",
       "strength": 1
     },
     {
@@ -174,31 +184,16 @@
       "name": "carom",
       "pairs_with": "flour",
       "strength": 1
-    },
-    {
-      "name": "finger",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "maida sooji",
-      "pairs_with": "flour",
-      "strength": 1
     }
   ],
   "novel_from_b": [
     {
+      "name": "lard",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
       "name": "ice water",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "cornmeal",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "buttermilk",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -208,18 +203,13 @@
       "strength": 1
     },
     {
-      "name": "lard",
+      "name": "buttermilk",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "shrimp stock",
-      "pairs_with": "leaves",
-      "strength": 1
-    },
-    {
-      "name": "file powder",
-      "pairs_with": "leaves",
+      "name": "cornmeal",
+      "pairs_with": "flour",
       "strength": 1
     },
     {
@@ -233,7 +223,17 @@
       "strength": 1
     },
     {
-      "name": "cider vinegar",
+      "name": "file powder",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
+      "name": "shrimp stock",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
+      "name": "chili pepper",
       "pairs_with": "chili powder",
       "strength": 1
     }

@@ -5,37 +5,37 @@
       "name": "garam masala",
       "score": 30.16958726220283,
       "connects_a": [
+        "vegetable oil",
         "cayenne pepper",
-        "tomatoes",
-        "vegetable oil"
+        "paprika"
       ],
       "connects_b": [
+        "turmeric",
         "chili powder",
-        "oil",
-        "turmeric"
+        "peas"
       ]
     },
     {
       "name": "chili powder",
       "score": 20.23276258071482,
       "connects_a": [
+        "paprika",
         "onion powder",
-        "worcestershire sauce",
         "cayenne pepper"
       ],
       "connects_b": [
-        "oil",
+        "dhania",
         "jeera coriander",
-        "turmeric"
+        "gram"
       ]
     },
     {
       "name": "paprika",
       "score": 18.171612689291866,
       "connects_a": [
-        "hot sauce",
-        "cayenne pepper",
-        "2"
+        "celery",
+        "cajun spice",
+        "worcestershire sauce"
       ],
       "connects_b": [
         "chili powder",
@@ -46,9 +46,9 @@
       "name": "can tomatoes",
       "score": 18.105946347261348,
       "connects_a": [
-        "hot sauce",
-        "bell pepper",
-        "celery"
+        "celery",
+        "worcestershire sauce",
+        "bell pepper"
       ],
       "connects_b": [
         "chili powder",
@@ -59,13 +59,13 @@
       "name": "jalapeno peppers",
       "score": 18.01760792815449,
       "connects_a": [
-        "scallions",
         "hot sauce",
-        "bell pepper"
+        "tomatoes",
+        "shrimp"
       ],
       "connects_b": [
-        "mango",
         "chili powder",
+        "mango",
         "turmeric"
       ]
     },
@@ -73,37 +73,37 @@
       "name": "tumeric",
       "score": 16.04529161679498,
       "connects_a": [
-        "garlic",
+        "onion",
         "tomatoes",
         "cayenne pepper"
       ],
       "connects_b": [
-        "peas",
+        "oil",
         "chili powder",
-        "oil"
+        "peas"
       ]
     },
     {
       "name": "coriander powder",
       "score": 16.031243047068227,
       "connects_a": [
-        "garlic",
+        "onion",
         "tomatoes",
-        "leaves"
+        "garlic"
       ],
       "connects_b": [
         "oil",
         "chili powder",
-        "leaves"
+        "turmeric"
       ]
     },
     {
       "name": "beef stock",
       "score": 14.051542259600836,
       "connects_a": [
-        "onion powder",
-        "thyme",
-        "celery"
+        "celery",
+        "worcestershire sauce",
+        "flour"
       ],
       "connects_b": [
         "flour",
@@ -114,9 +114,9 @@
       "name": "clams",
       "score": 14.031801381540555,
       "connects_a": [
-        "rice",
+        "tomatoes",
         "shrimp",
-        "thyme"
+        "paprika"
       ],
       "connects_b": [
         "peas",
@@ -130,9 +130,9 @@
         "flour"
       ],
       "connects_b": [
+        "dhania",
         "mango",
-        "dal",
-        "oil"
+        "dal"
       ]
     }
   ],
@@ -148,27 +148,7 @@
       "strength": 1
     },
     {
-      "name": "cornmeal",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "soda",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "beef stock",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "pinch cayenne",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "f",
+      "name": "vanilla",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -178,12 +158,32 @@
       "strength": 1
     },
     {
-      "name": "buttermilk",
+      "name": "yeast",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "soda",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "self",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "warm water",
       "pairs_with": "flour",
       "strength": 1
     },
     {
       "name": "biscuits",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "crabs",
       "pairs_with": "flour",
       "strength": 1
     }
@@ -205,6 +205,21 @@
       "strength": 1
     },
     {
+      "name": "maida sooji",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "finger",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "pearl",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
       "name": "flour all",
       "pairs_with": "flour",
       "strength": 1
@@ -215,27 +230,12 @@
       "strength": 1
     },
     {
-      "name": "finger",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "maida sooji",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "pearl",
+      "name": "wheat",
       "pairs_with": "flour",
       "strength": 1
     },
     {
       "name": "demerara",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "wheat",
       "pairs_with": "flour",
       "strength": 1
     }

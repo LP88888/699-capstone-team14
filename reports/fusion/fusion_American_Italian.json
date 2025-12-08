@@ -5,83 +5,83 @@
       "name": "can tomatoes",
       "score": 84.49441628721962,
       "connects_a": [
-        "bell pepper",
+        "optional",
         "cumin",
-        "optional"
+        "bell pepper"
       ],
       "connects_b": [
-        "freshly",
-        "bell pepper",
-        "mozzarella cheese"
+        "wine",
+        "optional",
+        "spaghetti"
       ]
     },
     {
       "name": "at",
       "score": 72.28678530900989,
       "connects_a": [
-        "milk",
-        "1",
-        "purpose flour"
+        "egg",
+        "more",
+        "milk"
       ],
       "connects_b": [
-        "milk",
-        "1",
-        "purpose flour"
+        "egg",
+        "more",
+        "milk"
       ]
     },
     {
       "name": "ribs celery",
       "score": 70.51015235559204,
       "connects_a": [
-        "bell pepper",
-        "about",
-        "optional"
+        "optional",
+        "carrot",
+        "about"
       ],
       "connects_b": [
-        "bell pepper",
-        "about",
-        "optional"
+        "wine",
+        "optional",
+        "carrot"
       ]
     },
     {
       "name": "tomato paste",
       "score": 70.45169435945446,
       "connects_a": [
-        "bell pepper",
+        "carrot",
         "cumin",
-        "tomatoes"
+        "bell pepper"
       ],
       "connects_b": [
-        "bell pepper",
-        "tomatoes",
-        "carrot"
+        "wine",
+        "carrot",
+        "spaghetti"
       ]
     },
     {
       "name": "confectioners",
       "score": 70.36511219154387,
       "connects_a": [
-        "milk",
-        "1",
-        "2"
+        "egg",
+        "more",
+        "milk"
       ],
       "connects_b": [
-        "milk",
-        "1",
-        "purpose flour"
+        "egg",
+        "more",
+        "milk"
       ]
     },
     {
       "name": "veal",
       "score": 66.17988165407462,
       "connects_a": [
+        "egg",
         "milk",
-        "2",
         "carrot"
       ],
       "connects_b": [
-        "parmesan cheese",
-        "freshly",
+        "egg",
+        "wine",
         "milk"
       ]
     },
@@ -89,14 +89,14 @@
       "name": "capers",
       "score": 64.12477944832308,
       "connects_a": [
-        "wine vinegar",
-        "tomatoes",
-        "parsley"
+        "lemon juice",
+        "dijon mustard",
+        "lemon"
       ],
       "connects_b": [
-        "pepper flakes",
-        "tomatoes",
-        "parsley"
+        "spaghetti",
+        "lemon juice",
+        "lemon"
       ]
     },
     {
@@ -104,57 +104,52 @@
       "score": 60.133284954817384,
       "connects_a": [
         "optional",
-        "onion",
-        "carrot"
+        "carrot",
+        "cloves"
       ],
       "connects_b": [
-        "pepper flakes",
-        "seasoning",
-        "optional"
+        "optional",
+        "carrot",
+        "onion"
       ]
     },
     {
       "name": "whole milk",
       "score": 56.16399696961871,
       "connects_a": [
-        "2",
-        "purpose flour",
-        "vanilla extract"
+        "egg",
+        "more",
+        "cinnamon"
       ],
       "connects_b": [
-        "freshly",
-        "mozzarella cheese",
-        "purpose flour"
+        "egg",
+        "more",
+        "mozzarella cheese"
       ]
     },
     {
       "name": "ice water",
       "score": 48.244685781984174,
       "connects_a": [
-        "1",
-        "purpose flour",
-        "flour"
+        "egg",
+        "more",
+        "cinnamon"
       ],
       "connects_b": [
-        "1",
-        "purpose flour",
+        "egg",
+        "more",
         "flour"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "tomatillos",
+      "name": "chipotles",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
       "name": "cotija cheese",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "chipotles",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -169,17 +164,17 @@
       "strength": 1
     },
     {
-      "name": "candies",
+      "name": "tomatillos",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "pecan halves",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "finely pecans",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "crawfish",
+      "name": "muscovado sugar",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -189,7 +184,12 @@
       "strength": 1
     },
     {
-      "name": "creme",
+      "name": "crawfish",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "dutch process",
       "pairs_with": "butter",
       "strength": 1
     }
@@ -206,12 +206,12 @@
       "strength": 1
     },
     {
-      "name": "capsicum",
+      "name": "lamb shoulder",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "lamb shoulder",
+      "name": "capsicum",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -221,7 +221,7 @@
       "strength": 1
     },
     {
-      "name": "sugar whole",
+      "name": "seeds powder",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -231,17 +231,17 @@
       "strength": 1
     },
     {
-      "name": "seeds powder",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "flour all",
+      "name": "sugar whole",
       "pairs_with": "flour",
       "strength": 1
     },
     {
       "name": "carom",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "pearl",
       "pairs_with": "flour",
       "strength": 1
     }

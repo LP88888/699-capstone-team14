@@ -5,13 +5,13 @@
       "name": "chorizo",
       "score": 96.17717537922607,
       "connects_a": [
-        "bell pepper",
-        "rice",
+        "wine",
+        "tomatoes",
         "olives"
       ],
       "connects_b": [
-        "bell pepper",
-        "rice",
+        "wine",
+        "tomatoes",
         "olives"
       ]
     },
@@ -19,27 +19,27 @@
       "name": "tomato paste",
       "score": 81.52267490165445,
       "connects_a": [
-        "bell pepper",
-        "cumin",
+        "wine",
+        "pork",
         "bay leaf"
       ],
       "connects_b": [
-        "bell pepper",
-        "cumin",
-        "tomatoes"
+        "wine",
+        "carrot",
+        "cumin"
       ]
     },
     {
       "name": "andouille sausage",
       "score": 72.0953003578551,
       "connects_a": [
-        "bell pepper",
-        "rice",
+        "canola oil",
+        "tomatoes",
         "bay leaf"
       ],
       "connects_b": [
-        "bell pepper",
-        "rice",
+        "canola oil",
+        "tomatoes",
         "shrimp"
       ]
     },
@@ -47,83 +47,83 @@
       "name": "celery",
       "score": 70.17375698782998,
       "connects_a": [
-        "bell pepper",
-        "rice",
-        "bay leaf"
+        "tomatoes",
+        "bay leaf",
+        "bell pepper"
       ],
       "connects_b": [
-        "bell pepper",
-        "rice",
-        "shrimp"
+        "tomatoes",
+        "shrimp",
+        "carrot"
       ]
     },
     {
       "name": "can tomatoes",
       "score": 64.3766981235959,
       "connects_a": [
-        "bell pepper",
+        "wine",
         "olives",
-        "cumin"
+        "bay leaf"
       ],
       "connects_b": [
-        "coarsely",
-        "bell pepper",
-        "olives"
+        "wine",
+        "olives",
+        "cumin"
       ]
     },
     {
       "name": "corn tortillas",
       "score": 63.22115975865971,
       "connects_a": [
-        "cumin",
-        "tomatoes",
-        "lime juice"
+        "canola oil",
+        "vegetable oil",
+        "cumin"
       ],
       "connects_b": [
-        "coarsely",
-        "cumin",
-        "onion"
+        "canola oil",
+        "more",
+        "cumin"
       ]
     },
     {
       "name": "mussels",
       "score": 60.361348180289006,
       "connects_a": [
-        "bell pepper",
-        "rice",
-        "bay leaf"
+        "wine",
+        "bay leaf",
+        "bell pepper"
       ],
       "connects_b": [
-        "bell pepper",
-        "rice",
-        "shrimp"
+        "wine",
+        "shrimp",
+        "bell pepper"
       ]
     },
     {
       "name": "oregano",
       "score": 56.31370207853893,
       "connects_a": [
-        "plantains",
-        "bell pepper",
-        "olives"
+        "olives",
+        "pork shoulder",
+        "bay leaf"
       ],
       "connects_b": [
-        "bell pepper",
         "olives",
-        "cumin"
+        "cumin",
+        "bell pepper"
       ]
     },
     {
       "name": "celery ribs",
       "score": 56.042847199434746,
       "connects_a": [
-        "bell pepper",
-        "rice",
+        "wine",
+        "tomatoes",
         "bay leaf"
       ],
       "connects_b": [
-        "bell pepper",
-        "rice",
+        "wine",
+        "tomatoes",
         "shrimp"
       ]
     },
@@ -131,23 +131,18 @@
       "name": "bay leaf",
       "score": 54.485975591605445,
       "connects_a": [
-        "beans",
+        "wine",
         "cumin",
-        "tomatoes"
+        "oregano"
       ],
       "connects_b": [
-        "cumin",
-        "chorizo",
-        "onion"
+        "wine",
+        "carrot",
+        "cumin"
       ]
     }
   ],
   "novel_from_a": [
-    {
-      "name": "cubanelle peppers",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
     {
       "name": "[extra",
       "pairs_with": "olive oil",
@@ -159,27 +154,22 @@
       "strength": 1
     },
     {
+      "name": "cubanelle peppers",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "chipotle puree",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
+      "name": "inch piece",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
       "name": "white onion",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "pinch sugar",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "allspice berries",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "2 medium",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -192,36 +182,36 @@
       "name": "cotija cheese",
       "pairs_with": "cloves",
       "strength": 1
+    },
+    {
+      "name": "sodium",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "allspice berries",
+      "pairs_with": "cloves",
+      "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "roasted tomatoes",
+      "name": "romano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "kalamata olives",
+      "name": "reggiano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "eggplants",
+      "name": "parmigiano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "some",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "grigio",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "anchovy fillets",
+      "name": "couscous",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -231,17 +221,27 @@
       "strength": 1
     },
     {
-      "name": "piquillo peppers",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "squid",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pancetta",
+      "name": "chianti",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cannellini",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "kalamata olives",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "bunch kale",
       "pairs_with": "olive oil",
       "strength": 1
     }

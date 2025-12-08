@@ -5,13 +5,13 @@
       "name": "celery",
       "score": 115.28545790857781,
       "connects_a": [
-        "andouille sausage",
-        "garlic powder",
-        "parsley"
+        "worcestershire sauce",
+        "cajun seasoning",
+        "shrimp"
       ],
       "connects_b": [
-        "thyme",
         "carrot",
+        "thyme",
         "parsley"
       ]
     },
@@ -19,56 +19,56 @@
       "name": "tomato paste",
       "score": 112.72271097512716,
       "connects_a": [
-        "bell pepper",
-        "cayenne pepper",
-        "andouille sausage"
+        "celery",
+        "worcestershire sauce",
+        "paprika"
       ],
       "connects_b": [
+        "carrot",
         "beef",
-        "thyme",
-        "carrot"
+        "cloves"
       ]
     },
     {
       "name": "file powder",
       "score": 90.18278696938211,
       "connects_a": [
-        "bell pepper",
-        "shrimp",
-        "cayenne pepper"
+        "celery",
+        "onion powder",
+        "leaves"
       ],
       "connects_b": [
-        "purpose flour",
+        "vegetable oil",
         "thyme",
-        "vegetable oil"
+        "onion"
       ]
     },
     {
       "name": "grits",
       "score": 72.28168200681829,
       "connects_a": [
-        "hot sauce",
-        "bell pepper",
-        "shrimp"
+        "shrimp",
+        "cajun seasoning",
+        "paprika"
       ],
       "connects_b": [
+        "more",
         "milk",
-        "2",
-        "parsley"
+        "2"
       ]
     },
     {
       "name": "cornmeal",
       "score": 70.28721038334074,
       "connects_a": [
+        "egg",
         "hot sauce",
-        "cayenne pepper",
-        "garlic powder"
+        "creole seasoning"
       ],
       "connects_b": [
-        "milk",
-        "purpose flour",
-        "thyme"
+        "egg",
+        "buttermilk",
+        "milk"
       ]
     },
     {
@@ -76,105 +76,90 @@
       "score": 68.09293272803264,
       "connects_a": [
         "hot sauce",
-        "bell pepper",
-        "rice"
+        "chili sauce",
+        "celery"
       ],
       "connects_b": [
+        "onion",
         "vegetable oil",
-        "thyme",
-        "purpose flour"
+        "thyme"
       ]
     },
     {
       "name": "yellow onions",
       "score": 66.09119045457021,
       "connects_a": [
-        "bell pepper",
-        "cayenne pepper",
-        "onion powder"
+        "celery",
+        "onion powder",
+        "worcestershire sauce"
       ],
       "connects_b": [
-        "2",
-        "thyme",
-        "carrot"
+        "carrot",
+        "kosher sea salt",
+        "2"
       ]
     },
     {
       "name": "andouille sausage",
       "score": 63.08338781312321,
       "connects_a": [
-        "garlic",
-        "bell pepper",
-        "rice"
+        "worcestershire sauce",
+        "cajun seasoning",
+        "shrimp"
       ],
       "connects_b": [
-        "garlic",
+        "onion",
         "thyme",
-        "onion"
+        "garlic"
       ]
     },
     {
       "name": "bay leaf",
       "score": 60.5399728795616,
       "connects_a": [
-        "andouille sausage",
-        "thyme",
-        "onion"
+        "chicken broth",
+        "celery",
+        "paprika"
       ],
       "connects_b": [
+        "carrot",
         "beef",
-        "thyme",
-        "carrot"
+        "thyme"
       ]
     },
     {
       "name": "onion powder",
       "score": 60.21172210476711,
       "connects_a": [
-        "hot sauce",
-        "cayenne pepper",
-        "andouille sausage"
+        "chili sauce",
+        "celery",
+        "creole seasoning"
       ],
       "connects_b": [
+        "buttermilk",
         "beef",
-        "2",
-        "thyme"
+        "kosher sea salt"
       ]
     }
   ],
   "novel_from_a": [
-    {
-      "name": "reggiano cheese",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "chorizo sausage",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
     {
       "name": "romano cheese",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "sandwich rolls",
+      "name": "linguini",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "penne pasta",
+      "name": "spaghetti",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "grape tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cherry tomatoes",
+      "name": "[extra",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -184,12 +169,27 @@
       "strength": 1
     },
     {
-      "name": "linguine",
+      "name": "turkey sausage",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "turkey sausage",
+      "name": "grape tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "couscous",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "oregano leaves",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "penne pasta",
       "pairs_with": "olive oil",
       "strength": 1
     }
@@ -201,7 +201,7 @@
       "strength": 1
     },
     {
-      "name": "sherry vinegar",
+      "name": "bunch kale",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -211,17 +211,12 @@
       "strength": 1
     },
     {
-      "name": "bunch kale",
+      "name": "sherry vinegar",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "stock",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "beef chuck",
+      "name": "inch piece",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -231,7 +226,12 @@
       "strength": 1
     },
     {
-      "name": "allspice berries",
+      "name": "chipotles",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "sirloin",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -241,7 +241,7 @@
       "strength": 1
     },
     {
-      "name": "sirloin",
+      "name": "finely parsley",
       "pairs_with": "cloves",
       "strength": 1
     }

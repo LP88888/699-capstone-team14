@@ -5,9 +5,9 @@
       "name": "chili powder",
       "score": 27.314229483965008,
       "connects_a": [
+        "worcestershire sauce",
         "cumin",
-        "cayenne pepper",
-        "ketchup"
+        "paprika"
       ],
       "connects_b": [
         "dhania",
@@ -19,93 +19,93 @@
       "name": "garam masala",
       "score": 22.124363992282074,
       "connects_a": [
-        "cumin",
-        "cayenne pepper",
-        "onion"
+        "ginger",
+        "vegetable oil",
+        "cumin"
       ],
       "connects_b": [
-        "oil",
-        "onion"
+        "onion",
+        "oil"
       ]
     },
     {
       "name": "peanuts",
       "score": 20.213368320248858,
       "connects_a": [
-        "soy sauce",
         "ginger",
+        "soy sauce",
         "chicken breasts"
       ],
       "connects_b": [
         "dhania",
-        "dal",
-        "gram"
+        "rai",
+        "dal"
       ]
     },
     {
       "name": "file powder",
       "score": 18.03655739387642,
       "connects_a": [
-        "bell pepper",
-        "cayenne pepper",
-        "onion powder"
+        "onion powder",
+        "vegetable oil",
+        "bell pepper"
       ],
       "connects_b": [
-        "leaves",
-        "onion"
+        "onion",
+        "leaves"
       ]
     },
     {
       "name": "coriander powder",
       "score": 18.035148427951754,
       "connects_a": [
+        "ginger",
         "cumin",
-        "tomatoes",
-        "ginger"
+        "onion"
       ],
       "connects_b": [
-        "leaves",
+        "onion",
         "oil",
-        "onion"
+        "leaves"
       ]
     },
     {
       "name": "can tomatoes",
       "score": 16.094174530898975,
       "connects_a": [
-        "seasoning",
-        "bell pepper",
-        "cumin"
+        "worcestershire sauce",
+        "cumin",
+        "bell pepper"
       ],
       "connects_b": [
-        "(",
-        "onion"
+        "onion",
+        "("
       ]
     },
     {
       "name": "tumeric",
       "score": 16.04529161679498,
       "connects_a": [
+        "ginger",
         "cumin",
-        "cayenne pepper",
-        "onion"
+        "chicken breasts"
       ],
       "connects_b": [
-        "oil",
-        "onion"
+        "onion",
+        "oil"
       ]
     },
     {
       "name": "cans tomatoes",
       "score": 16.03554265461797,
       "connects_a": [
-        "seasoning",
-        "olive oil",
-        "grain sea salt"
+        "onion",
+        "cloves",
+        "pepper flakes"
       ],
       "connects_b": [
-        "leaves",
-        "onion"
+        "onion",
+        "leaves"
       ]
     },
     {
@@ -113,38 +113,33 @@
       "score": 15.105369120348096,
       "connects_a": [
         "lime",
-        "pineapple",
-        "cilantro"
+        "cilantro",
+        "pineapple"
       ],
       "connects_b": [
-        "fenugreek",
         "dhania",
-        "chilli"
+        "fenugreek",
+        "seeds"
       ]
     },
     {
       "name": "can",
       "score": 15.061184500087231,
       "connects_a": [
-        "seasoning",
+        "worcestershire sauce",
         "cumin",
-        "tomatoes"
+        "pepper flakes"
       ],
       "connects_b": [
+        "beans",
         ")",
-        "(",
-        "beans"
+        "("
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "beef broth",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "coriander powder",
+      "name": "chicken base",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -154,17 +149,7 @@
       "strength": 1
     },
     {
-      "name": "sandwich rolls",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "chicken base",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "beef",
+      "name": "lentil",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -174,12 +159,27 @@
       "strength": 1
     },
     {
+      "name": "beef broth",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "sandwich rolls",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "beef",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
       "name": "ginger paste",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "lentil",
+      "name": "coriander powder",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -191,12 +191,12 @@
   ],
   "novel_from_b": [
     {
-      "name": "sambar",
+      "name": "bay leaf",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "bay leaf",
+      "name": "sambar",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -211,12 +211,12 @@
       "strength": 1
     },
     {
-      "name": "cardamom",
+      "name": "cashews",
       "pairs_with": "ginger",
       "strength": 1
     },
     {
-      "name": "cashews",
+      "name": "cardamom",
       "pairs_with": "ginger",
       "strength": 1
     },
@@ -236,7 +236,7 @@
       "strength": 1
     },
     {
-      "name": "oil coriander",
+      "name": "murungai",
       "pairs_with": "leaves",
       "strength": 1
     }

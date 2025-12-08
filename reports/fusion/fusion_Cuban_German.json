@@ -5,55 +5,55 @@
       "name": "tomato paste",
       "score": 63.406524923509025,
       "connects_a": [
-        "bell pepper",
-        "cumin",
+        "wine",
+        "pork",
         "bay leaf"
       ],
       "connects_b": [
+        "wine",
         "bay leaf",
-        "carrot",
-        "parsley"
+        "carrot"
       ]
     },
     {
       "name": "confectioners",
       "score": 52.2712261994326,
       "connects_a": [
-        "butter",
-        "orange",
-        "rum"
+        "egg",
+        "rum",
+        "butter"
       ],
       "connects_b": [
-        "milk",
-        "cocoa powder",
-        "2"
+        "egg",
+        "nutmeg",
+        "milk"
       ]
     },
     {
       "name": "garam masala",
       "score": 49.27699252826462,
       "connects_a": [
-        "cumin",
         "bay leaf",
-        "tomatoes"
+        "vegetable oil",
+        "cumin"
       ],
       "connects_b": [
+        "cinnamon",
         "bay leaf",
-        "potatoes",
-        "garlic"
+        "vegetable oil"
       ]
     },
     {
       "name": "cabbage",
       "score": 48.186710710297106,
       "connects_a": [
-        "lime juice",
-        "cilantro",
-        "wine vinegar"
+        "canola oil",
+        "pork",
+        "mayonnaise"
       ],
       "connects_b": [
-        "bacon",
         "apples",
+        "cider vinegar",
         "carrot"
       ]
     },
@@ -61,27 +61,27 @@
       "name": "celery",
       "score": 42.10425419269799,
       "connects_a": [
-        "bell pepper",
-        "rice",
-        "bay leaf"
+        "tomatoes",
+        "bay leaf",
+        "bell pepper"
       ],
       "connects_b": [
-        "bacon",
         "bay leaf",
-        "carrot"
+        "carrot",
+        "bacon"
       ]
     },
     {
       "name": "can tomatoes",
       "score": 40.23543632724744,
       "connects_a": [
-        "bell pepper",
+        "wine",
         "olives",
-        "cumin"
+        "bay leaf"
       ],
       "connects_b": [
+        "wine",
         "bay leaf",
-        "parsley",
         "cloves"
       ]
     },
@@ -89,13 +89,13 @@
       "name": "chorizo",
       "score": 40.073823074677534,
       "connects_a": [
-        "bell pepper",
-        "rice",
+        "wine",
+        "tomatoes",
         "olives"
       ],
       "connects_b": [
+        "wine",
         "bay leaf",
-        "parsley",
         "cloves"
       ]
     },
@@ -103,13 +103,13 @@
       "name": "vanilla extract",
       "score": 36.577615305880656,
       "connects_a": [
-        "butter",
+        "egg",
         "rum",
-        "egg"
+        "butter"
       ],
       "connects_b": [
-        "milk",
-        "cocoa powder",
+        "egg",
+        "nutmeg",
         "apples"
       ]
     },
@@ -117,49 +117,54 @@
       "name": "beef chuck",
       "score": 36.028358761172036,
       "connects_a": [
-        "cumin",
+        "wine",
         "bay leaf",
-        "oregano"
+        "cumin"
       ],
       "connects_b": [
+        "wine",
         "bay leaf",
-        "carrot",
-        "parsley"
+        "carrot"
       ]
     },
     {
       "name": "allspice",
       "score": 35.15593918542888,
       "connects_a": [
-        "cumin",
         "bay leaf",
-        "orange juice"
+        "cumin",
+        "cloves"
       ],
       "connects_b": [
-        "bay leaf",
         "nutmeg",
-        "cloves"
+        "cinnamon",
+        "cider vinegar"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "crusty rolls",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "beefsteak tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cubanelle peppers",
+      "name": "olives",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
       "name": "canned tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "crusty bread",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "chorizo sausage",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "hearts",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -179,7 +184,7 @@
       "strength": 1
     },
     {
-      "name": "arugula",
+      "name": "finely oregano",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -187,21 +192,16 @@
       "name": "sandwich rolls",
       "pairs_with": "olive oil",
       "strength": 1
-    },
-    {
-      "name": "hearts",
-      "pairs_with": "olive oil",
-      "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "ribs celery",
+      "name": "escarole",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "escarole",
+      "name": "ribs celery",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -211,12 +211,7 @@
       "strength": 1
     },
     {
-      "name": "raspberry jam",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "ice water",
+      "name": "muscovado sugar",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -226,22 +221,27 @@
       "strength": 1
     },
     {
-      "name": "nutmeg",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "believe",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
       "name": "phyllo dough",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "granny smith apples",
+      "name": "cooking apples",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "corn syrup",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "almond flour",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "raspberry jam",
       "pairs_with": "butter",
       "strength": 1
     }

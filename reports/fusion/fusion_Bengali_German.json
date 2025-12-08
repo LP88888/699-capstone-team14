@@ -5,56 +5,56 @@
       "name": "cardamom",
       "score": 30.448968032168068,
       "connects_a": [
-        "chili powder",
-        "oil",
-        "methi"
+        "dhania",
+        "methi",
+        "chili powder"
       ],
       "connects_b": [
-        "bay leaf",
+        "cinnamon",
         "nutmeg",
-        "cinnamon"
+        "bay leaf"
       ]
     },
     {
       "name": "garam masala",
       "score": 28.15828144472264,
       "connects_a": [
-        "peas",
+        "oil",
         "chili powder",
-        "oil"
+        "peas"
       ],
       "connects_b": [
+        "cinnamon",
         "bay leaf",
-        "potatoes",
-        "garlic"
+        "vegetable oil"
       ]
     },
     {
       "name": "tumeric",
       "score": 16.04529161679498,
       "connects_a": [
-        "peas",
+        "oil",
         "chili powder",
-        "oil"
+        "peas"
       ],
       "connects_b": [
-        "garlic",
         "onion",
-        "potatoes"
+        "cinnamon",
+        "garlic"
       ]
     },
     {
       "name": "mustard seeds",
       "score": 16.01246149451224,
       "connects_a": [
-        "peas",
+        "oil",
         "chili powder",
-        "oil"
+        "peas"
       ],
       "connects_b": [
+        "cider vinegar",
         "vegetable oil",
-        "wine vinegar",
-        "potatoes"
+        "wine vinegar"
       ]
     },
     {
@@ -65,8 +65,8 @@
         "potatoes"
       ],
       "connects_b": [
+        "wine",
         "bay leaf",
-        "flour",
         "carrot"
       ]
     },
@@ -78,59 +78,59 @@
         "potatoes"
       ],
       "connects_b": [
-        "bay leaf",
-        "carrot",
-        "potatoes"
+        "wine",
+        "leaves",
+        "bay leaf"
       ]
     },
     {
       "name": "coriander powder",
       "score": 12.023432285301169,
       "connects_a": [
+        "oil",
         "chili powder",
-        "leaves",
-        "oil"
+        "leaves"
       ],
       "connects_b": [
-        "garlic",
-        "leaves",
-        "cinnamon"
+        "cinnamon",
+        "onion",
+        "garlic"
       ]
     },
     {
       "name": "chilies",
       "score": 12.006671290755316,
       "connects_a": [
-        "peas",
+        "oil",
         "chili powder",
-        "oil"
+        "peas"
       ],
       "connects_b": [
         "bay leaf",
-        "potatoes",
-        "cinnamon"
+        "cinnamon",
+        "potatoes"
       ]
     },
     {
       "name": "allspice",
       "score": 10.044554052979679,
       "connects_a": [
-        "mustard",
-        "chili powder"
+        "chili powder",
+        "mustard"
       ],
       "connects_b": [
-        "bay leaf",
         "nutmeg",
-        "cloves"
+        "cinnamon",
+        "cider vinegar"
       ]
     },
     {
       "name": "carom",
       "score": 10.016921211824169,
       "connects_a": [
-        "jeera coriander",
-        "oil",
-        "methi"
+        "dhania",
+        "wheat",
+        "jeera coriander"
       ],
       "connects_b": [
         "flour"
@@ -159,12 +159,7 @@
       "strength": 1
     },
     {
-      "name": "sugar whole",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "carom",
+      "name": "maida sooji",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -174,7 +169,12 @@
       "strength": 1
     },
     {
-      "name": "maida sooji",
+      "name": "sugar whole",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "carom",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -191,12 +191,12 @@
   ],
   "novel_from_b": [
     {
-      "name": "french",
+      "name": "fruit",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "fruit",
+      "name": "french",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -206,22 +206,12 @@
       "strength": 1
     },
     {
-      "name": "cold butter",
+      "name": "lard",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "applesauce",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "ice water",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "cornmeal",
+      "name": "vanilla sugar",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -231,12 +221,22 @@
       "strength": 1
     },
     {
-      "name": "yeast",
+      "name": "pastry flour",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "buttermilk",
+      "name": "vanilla",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "cold",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "chocolate chips",
       "pairs_with": "flour",
       "strength": 1
     }

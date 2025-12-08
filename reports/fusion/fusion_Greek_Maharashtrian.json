@@ -6,13 +6,13 @@
       "score": 45.254380893304244,
       "connects_a": [
         "spinach",
-        "yogurt",
-        "tomatoes"
+        "cinnamon",
+        "lemon juice"
       ],
       "connects_b": [
+        "turmeric",
         "chili powder",
-        "oil",
-        "turmeric"
+        "peas"
       ]
     },
     {
@@ -20,41 +20,41 @@
       "score": 27.404071228951263,
       "connects_a": [
         "cinnamon",
-        "yogurt",
-        "greek yogurt"
+        "greek yogurt",
+        "yogurt"
       ],
       "connects_b": [
+        "dhania",
         "chili powder",
-        "turmeric",
-        "oil"
+        "peas"
       ]
     },
     {
       "name": "tumeric",
       "score": 20.056614520993726,
       "connects_a": [
-        "tomatoes",
-        "garlic",
-        "chicken breasts"
+        "cinnamon",
+        "chicken breasts",
+        "onion"
       ],
       "connects_b": [
-        "peas",
+        "oil",
         "chili powder",
-        "oil"
+        "peas"
       ]
     },
     {
       "name": "coriander powder",
       "score": 20.039053808835284,
       "connects_a": [
-        "tomatoes",
-        "garlic",
-        "leaves"
+        "cinnamon",
+        "onion",
+        "tomatoes"
       ],
       "connects_b": [
         "oil",
         "chili powder",
-        "leaves"
+        "turmeric"
       ]
     },
     {
@@ -62,82 +62,82 @@
       "score": 20.02813120465641,
       "connects_a": [
         "honey",
-        "yogurt",
-        "grain sea salt"
+        "cinnamon",
+        "yogurt"
       ],
       "connects_b": [
         "oil",
-        "chili powder",
-        "turmeric"
+        "coconut",
+        "chili powder"
       ]
     },
     {
       "name": "mustard seeds",
       "score": 18.014019181326272,
       "connects_a": [
-        "yogurt",
         "tomatoes",
+        "yogurt",
         "wine vinegar"
       ],
       "connects_b": [
-        "chili powder",
         "turmeric",
-        "oil"
+        "coconut",
+        "chili powder"
       ]
     },
     {
       "name": "cilantro",
       "score": 16.092762431423097,
       "connects_a": [
-        "mint",
-        "yogurt",
-        "chicken breasts"
+        "greek yogurt",
+        "chicken breasts",
+        "yogurt"
       ],
       "connects_b": [
-        "mango",
         "chili powder",
-        "turmeric"
+        "mango",
+        "peanuts"
       ]
     },
     {
       "name": "olive",
       "score": 16.074482924509578,
       "connects_a": [
+        "cucumber",
         "lemon juice",
-        "mint",
-        "cucumber"
+        "yogurt"
       ],
       "connects_b": [
         "dhania",
         "wheat",
-        "bell"
+        "chilli"
       ]
     },
     {
       "name": "turmeric",
       "score": 16.031015858965105,
       "connects_a": [
-        "mint",
-        "yogurt",
-        "tomatoes"
+        "tomatoes",
+        "greek yogurt",
+        "yogurt"
       ],
       "connects_b": [
-        "peas",
-        "chili powder",
-        "oil"
+        "oil",
+        "coconut",
+        "peas"
       ]
     },
     {
       "name": "coriander",
       "score": 15.038767998317228,
       "connects_a": [
+        "cinnamon",
         "yogurt",
-        "tomatoes",
-        "greek yogurt"
+        "mint"
       ],
       "connects_b": [
-        "chillies",
         "chili powder",
+        "chillies",
         "turmeric"
       ]
     }
@@ -145,6 +145,16 @@
   "novel_from_a": [
     {
       "name": "virgin",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "pepper powder",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "fruit",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -159,16 +169,6 @@
       "strength": 1
     },
     {
-      "name": "fruit",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "pepper powder",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
       "name": "virgin",
       "pairs_with": "powder",
       "strength": 1
@@ -179,17 +179,17 @@
       "strength": 1
     },
     {
-      "name": "cornmeal",
+      "name": "vanilla",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "filling",
+      "name": "cold",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "beef stock",
+      "name": "ice water",
       "pairs_with": "flour",
       "strength": 1
     }
@@ -216,17 +216,17 @@
       "strength": 1
     },
     {
+      "name": "coriander powder",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
       "name": "salt coriander",
       "pairs_with": "leaves",
       "strength": 1
     },
     {
       "name": "leaves mint",
-      "pairs_with": "leaves",
-      "strength": 1
-    },
-    {
-      "name": "coriander powder",
       "pairs_with": "leaves",
       "strength": 1
     },

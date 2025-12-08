@@ -5,83 +5,83 @@
       "name": "andouille sausage",
       "score": 119.15751031367718,
       "connects_a": [
-        "bell pepper",
-        "rice",
-        "shrimp"
+        "canola oil",
+        "shrimp",
+        "bell pepper"
       ],
       "connects_b": [
-        "hot sauce",
-        "bell pepper",
-        "rice"
+        "celery",
+        "creole seasoning",
+        "tomatoes"
       ]
     },
     {
       "name": "chili sauce",
       "score": 104.18348836628064,
       "connects_a": [
-        "scallions",
-        "sesame oil",
-        "hoisin sauce"
+        "oyster sauce",
+        "peanuts",
+        "shrimp"
       ],
       "connects_b": [
-        "shrimp",
-        "cayenne pepper",
-        "andouille sausage"
+        "celery",
+        "creole seasoning",
+        "shrimp"
       ]
     },
     {
       "name": "celery",
       "score": 102.2531887536951,
       "connects_a": [
-        "bell pepper",
-        "rice",
-        "shrimp"
+        "shrimp",
+        "carrot",
+        "bell pepper"
       ],
       "connects_b": [
-        "hot sauce",
-        "bell pepper",
-        "rice"
+        "tomatoes",
+        "creole seasoning",
+        "onion powder"
       ]
     },
     {
       "name": "okra",
       "score": 90.12299919886672,
       "connects_a": [
-        "bell pepper",
-        "rice",
-        "shrimp"
+        "shrimp",
+        "vegetable oil",
+        "bell pepper"
       ],
       "connects_b": [
         "hot sauce",
-        "bell pepper",
-        "rice"
+        "celery",
+        "tomatoes"
       ]
     },
     {
       "name": "file powder",
       "score": 84.1706011714233,
       "connects_a": [
-        "bell pepper",
         "shrimp",
-        "vegetable oil"
+        "vegetable oil",
+        "bell pepper"
       ],
       "connects_b": [
-        "bell pepper",
-        "shrimp",
-        "cayenne pepper"
+        "celery",
+        "onion powder",
+        "shrimp"
       ]
     },
     {
       "name": "yellow onion",
       "score": 70.04045389559045,
       "connects_a": [
-        "bell pepper",
         "shrimp",
+        "bell pepper",
         "2"
       ],
       "connects_b": [
-        "hot sauce",
-        "bell pepper",
+        "celery",
+        "onion powder",
         "shrimp"
       ]
     },
@@ -89,67 +89,72 @@
       "name": "creole seasoning",
       "score": 68.03672904353999,
       "connects_a": [
+        "rice",
         "garlic",
-        "bell pepper",
-        "rice"
+        "bell pepper"
       ],
       "connects_b": [
-        "hot sauce",
-        "bell pepper",
-        "rice"
+        "celery",
+        "tomatoes",
+        "onion powder"
       ]
     },
     {
       "name": "chicken thighs",
       "score": 66.18335746824758,
       "connects_a": [
-        "scallions",
-        "bell pepper",
-        "rice"
+        "oyster sauce",
+        "carrot",
+        "vegetable oil"
       ],
       "connects_b": [
-        "bell pepper",
-        "rice",
-        "celery"
+        "celery",
+        "vegetable oil",
+        "bell pepper"
       ]
     },
     {
       "name": "yellow onions",
       "score": 65.08980878101612,
       "connects_a": [
+        "carrot",
         "bell pepper",
-        "2",
-        "carrot"
+        "2"
       ],
       "connects_b": [
-        "bell pepper",
-        "cayenne pepper",
-        "2"
+        "celery",
+        "onion powder",
+        "worcestershire sauce"
       ]
     },
     {
       "name": "shiitake",
       "score": 64.04744545427715,
       "connects_a": [
-        "scallions",
-        "mushrooms",
-        "sesame oil"
+        "oyster sauce",
+        "canola oil",
+        "ginger"
       ],
       "connects_b": [
-        "shrimp",
         "thyme",
+        "chicken stock",
         "celery"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "some",
+      "name": "linguini",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "radicchio",
+      "name": "head fennel",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "squid",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -159,12 +164,27 @@
       "strength": 1
     },
     {
-      "name": "linguini",
+      "name": "anchovies",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "turkey sausage",
+      "name": "spun",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "some",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "fennel bulb",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "al dente",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -172,36 +192,11 @@
       "name": "crusty rolls",
       "pairs_with": "olive oil",
       "strength": 1
-    },
-    {
-      "name": "montreal steak",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "handful pine nuts",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pass",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "bunch kale",
-      "pairs_with": "olive oil",
-      "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "roasted tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "capers",
+      "name": "cannellini",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -211,7 +206,12 @@
       "strength": 1
     },
     {
-      "name": "fettuccine",
+      "name": "capers",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "roasted tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -221,27 +221,27 @@
       "strength": 1
     },
     {
-      "name": "cannellini",
+      "name": "fettuccine",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "roasted tomatoes",
+      "name": "ancho chile",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "seasoning blend",
+      "name": "depending",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "cannellini",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
       "name": "pasilla chiles",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "allspice berries",
       "pairs_with": "cloves",
       "strength": 1
     }

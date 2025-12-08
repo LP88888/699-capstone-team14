@@ -5,26 +5,26 @@
       "name": "bean sprouts",
       "score": 68.14430273859602,
       "connects_a": [
-        "scallions",
-        "mushrooms",
-        "noodles"
+        "oyster sauce",
+        "canola oil",
+        "ginger"
       ],
       "connects_b": [
+        "carrot",
         "vegetable oil",
-        "shallots",
-        "carrot"
+        "shallots"
       ]
     },
     {
       "name": "ribs celery",
       "score": 56.40812188447363,
       "connects_a": [
-        "scallions",
-        "bell pepper",
-        "shrimp"
+        "chicken broth",
+        "shrimp",
+        "carrot"
       ],
       "connects_b": [
-        "thyme",
+        "wine",
         "bay leaf",
         "carrot"
       ]
@@ -33,13 +33,13 @@
       "name": "fish sauce",
       "score": 54.53091368938329,
       "connects_a": [
-        "scallions",
-        "noodles",
-        "hoisin sauce"
+        "oyster sauce",
+        "canola oil",
+        "pork"
       ],
       "connects_b": [
-        "vegetable oil",
         "carrot",
+        "vegetable oil",
         "shallots"
       ]
     },
@@ -47,27 +47,27 @@
       "name": "inch piece",
       "score": 52.15555698632034,
       "connects_a": [
-        "scallions",
-        "mushrooms",
-        "sesame oil"
+        "cabbage",
+        "canola oil",
+        "rice vinegar"
       ],
       "connects_b": [
-        "cloves",
+        "carrot",
         "more",
-        "carrot"
+        "wine vinegar"
       ]
     },
     {
       "name": "shiitake",
       "score": 51.037808096377105,
       "connects_a": [
-        "scallions",
-        "mushrooms",
-        "sesame oil"
+        "oyster sauce",
+        "canola oil",
+        "chicken broth"
       ],
       "connects_b": [
-        "thyme",
         "carrot",
+        "thyme",
         "shallots"
       ]
     },
@@ -75,22 +75,22 @@
       "name": "hoisin sauce",
       "score": 44.033640231655724,
       "connects_a": [
-        "rice vinegar",
-        "garlic",
-        "shaoxing"
+        "rice",
+        "oyster sauce",
+        "canola oil"
       ],
       "connects_b": [
-        "garlic",
-        "carrot"
+        "carrot",
+        "garlic"
       ]
     },
     {
       "name": "oyster sauce",
       "score": 44.02828845373891,
       "connects_a": [
-        "rice vinegar",
-        "garlic",
-        "shaoxing"
+        "shrimp",
+        "mushrooms",
+        "chicken broth"
       ],
       "connects_b": [
         "vegetable oil",
@@ -101,23 +101,23 @@
       "name": "celery",
       "score": 42.10425419269799,
       "connects_a": [
-        "bell pepper",
-        "rice",
-        "shrimp"
+        "chicken broth",
+        "shrimp",
+        "carrot"
       ],
       "connects_b": [
-        "thyme",
         "bay leaf",
-        "carrot"
+        "carrot",
+        "thyme"
       ]
     },
     {
       "name": "corn starch",
       "score": 40.07939969178618,
       "connects_a": [
-        "rice vinegar",
-        "garlic",
-        "shaoxing"
+        "mushrooms",
+        "rice",
+        "oyster sauce"
       ],
       "connects_b": [
         "garlic",
@@ -128,13 +128,13 @@
       "name": "garam masala",
       "score": 36.203504714643394,
       "connects_a": [
-        "oil",
         "ginger",
-        "vegetable oil"
+        "vegetable oil",
+        "chicken breasts"
       ],
       "connects_b": [
         "bay leaf",
-        "garlic",
+        "cinnamon",
         "vegetable oil"
       ]
     }
@@ -146,22 +146,17 @@
       "strength": 1
     },
     {
+      "name": "piece ginger",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
       "name": "squid",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
       "name": "white onion",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "stalk lemongrass",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "black beans",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -176,12 +171,7 @@
       "strength": 1
     },
     {
-      "name": "wheat spaghetti",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "piece ginger",
+      "name": "black beans",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -189,36 +179,36 @@
       "name": "sodium",
       "pairs_with": "cloves",
       "strength": 1
+    },
+    {
+      "name": "stalk lemongrass",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "wheat spaghetti",
+      "pairs_with": "cloves",
+      "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "roasted tomatoes",
+      "name": "jalapeno chile",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "beef chuck",
+      "name": "head fennel",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "eggplants",
+      "name": "cardamom pods",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "some",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "grigio",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "allspice berries",
+      "name": "shells",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -228,17 +218,27 @@
       "strength": 1
     },
     {
+      "name": "beef chuck",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
       "name": "have",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "cannellini beans",
+      "name": "allspice berries",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "escarole",
+      "name": "some",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "pinch saffron",
       "pairs_with": "cloves",
       "strength": 1
     }

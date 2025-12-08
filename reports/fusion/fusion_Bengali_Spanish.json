@@ -5,13 +5,13 @@
       "name": "garam masala",
       "score": 28.15828144472264,
       "connects_a": [
-        "peas",
+        "oil",
         "chili powder",
-        "oil"
+        "peas"
       ],
       "connects_b": [
         "cumin",
-        "tomatoes",
+        "lemon juice",
         "peas"
       ]
     },
@@ -20,8 +20,8 @@
       "score": 21.837366059232203,
       "connects_a": [
         "chili powder",
-        "yellow",
-        "fenugreek"
+        "peas",
+        "wheat"
       ],
       "connects_b": [
         "peas"
@@ -31,9 +31,9 @@
       "name": "cardamom",
       "score": 20.29931202144538,
       "connects_a": [
-        "chili powder",
-        "oil",
-        "methi"
+        "dhania",
+        "methi",
+        "chili powder"
       ],
       "connects_b": [
         "peas",
@@ -44,9 +44,9 @@
       "name": "bell",
       "score": 20.090763668817434,
       "connects_a": [
-        "beans",
-        "methi",
-        "powder"
+        "dhania",
+        "wheat",
+        "fenugreek"
       ],
       "connects_b": [
         "peas",
@@ -57,14 +57,14 @@
       "name": "tumeric",
       "score": 20.056614520993726,
       "connects_a": [
-        "peas",
+        "oil",
         "chili powder",
-        "oil"
+        "peas"
       ],
       "connects_b": [
         "cumin",
-        "tomatoes",
-        "peas"
+        "peas",
+        "onion"
       ]
     },
     {
@@ -75,8 +75,8 @@
         "potatoes"
       ],
       "connects_b": [
-        "rice",
-        "shrimp",
+        "wine",
+        "tomatoes",
         "chorizo"
       ]
     },
@@ -84,42 +84,42 @@
       "name": "cumin seeds",
       "score": 16.019741523136577,
       "connects_a": [
-        "peas",
+        "oil",
         "chili powder",
-        "oil"
+        "peas"
       ],
       "connects_b": [
+        "tomatoes",
         "peas",
-        "cumin",
-        "tomatoes"
+        "cumin"
       ]
     },
     {
       "name": "mustard seeds",
       "score": 16.01246149451224,
       "connects_a": [
-        "peas",
+        "oil",
         "chili powder",
-        "oil"
+        "peas"
       ],
       "connects_b": [
+        "tomatoes",
         "peas",
-        "cumin",
-        "tomatoes"
+        "cumin"
       ]
     },
     {
       "name": "coriander powder",
       "score": 15.029290356626463,
       "connects_a": [
+        "oil",
         "chili powder",
-        "leaves",
-        "oil"
+        "leaves"
       ],
       "connects_b": [
         "cumin",
-        "tomatoes",
-        "garlic"
+        "onion",
+        "tomatoes"
       ]
     },
     {
@@ -130,9 +130,9 @@
         "potatoes"
       ],
       "connects_b": [
-        "coarsely",
+        "wine",
         "carrot",
-        "leaves"
+        "cloves"
       ]
     }
   ],
@@ -200,7 +200,22 @@
       "strength": 1
     },
     {
-      "name": "cornmeal",
+      "name": "vanilla",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "cold",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "ice water",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "yeast",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -210,27 +225,12 @@
       "strength": 1
     },
     {
-      "name": "cod",
+      "name": "warm water",
       "pairs_with": "flour",
       "strength": 1
     },
     {
       "name": "filling",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "beef stock",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "pinch cayenne",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "quart",
       "pairs_with": "flour",
       "strength": 1
     }

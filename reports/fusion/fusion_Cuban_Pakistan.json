@@ -5,56 +5,56 @@
       "name": "cumin",
       "score": 207.50525082966408,
       "connects_a": [
-        "plantains",
         "dill pickles",
-        "bell pepper"
+        "pork shoulder",
+        "bay leaf"
       ],
       "connects_b": [
-        "cumin seeds",
-        "chili powder",
-        "coconut milk"
+        "basmati rice",
+        "tumeric",
+        "cardamom"
       ]
     },
     {
       "name": "garam masala",
       "score": 190.06839975187782,
       "connects_a": [
-        "cumin",
         "bay leaf",
-        "tomatoes"
+        "vegetable oil",
+        "cumin"
       ],
       "connects_b": [
-        "cumin seeds",
-        "chili powder",
-        "potatoes"
+        "coriander",
+        "peas",
+        "chili powder"
       ]
     },
     {
       "name": "turmeric",
       "score": 100.19384911853192,
       "connects_a": [
-        "cumin",
         "bay leaf",
-        "tomatoes"
+        "vegetable oil",
+        "cumin"
       ],
       "connects_b": [
-        "cumin seeds",
-        "chili powder",
-        "garam masala"
+        "garam masala",
+        "coriander",
+        "peas"
       ]
     },
     {
       "name": "mustard seeds",
       "score": 95.07399012366643,
       "connects_a": [
+        "vegetable oil",
         "cumin",
-        "tomatoes",
-        "vegetable oil"
+        "cilantro"
       ],
       "connects_b": [
-        "cumin seeds",
-        "chili powder",
-        "garam masala"
+        "garam masala",
+        "coriander",
+        "peas"
       ]
     },
     {
@@ -62,41 +62,41 @@
       "score": 90.25476534447176,
       "connects_a": [
         "cumin",
-        "tomatoes",
-        "garlic"
+        "cilantro",
+        "onion"
       ],
       "connects_b": [
-        "cumin seeds",
-        "chili powder",
-        "cumin"
+        "ginger",
+        "cardamom",
+        "cinnamon"
       ]
     },
     {
       "name": "cilantro",
       "score": 84.48700276497127,
       "connects_a": [
+        "pork shoulder",
         "plantains",
-        "beans",
         "cumin"
       ],
       "connects_b": [
-        "cumin seeds",
-        "chili powder",
-        "coconut milk"
+        "basmati rice",
+        "ginger",
+        "tumeric"
       ]
     },
     {
       "name": "cardamom pods",
       "score": 84.17265013860141,
       "connects_a": [
-        "cumin",
         "bay leaf",
-        "tomatoes"
+        "vegetable oil",
+        "cumin"
       ],
       "connects_b": [
-        "cumin seeds",
-        "cumin",
-        "turmeric"
+        "basmati rice",
+        "ginger",
+        "cinnamon"
       ]
     },
     {
@@ -104,62 +104,47 @@
       "score": 80.15621523534114,
       "connects_a": [
         "cumin",
-        "tomatoes",
-        "garlic"
+        "onion",
+        "tomatoes"
       ],
       "connects_b": [
-        "cumin seeds",
-        "chili powder",
-        "cumin"
+        "ginger",
+        "tumeric",
+        "cinnamon"
       ]
     },
     {
       "name": "chiles",
       "score": 78.37226765860659,
       "connects_a": [
+        "vegetable oil",
         "cumin",
-        "lime juice",
-        "vegetable oil"
+        "cloves"
       ],
       "connects_b": [
-        "cumin seeds",
-        "coconut milk",
-        "cumin"
+        "ginger",
+        "cinnamon sticks",
+        "vegetable oil"
       ]
     },
     {
       "name": "allspice",
       "score": 77.34306620794354,
       "connects_a": [
-        "cumin",
         "bay leaf",
-        "orange juice"
+        "cumin",
+        "cloves"
       ],
       "connects_b": [
-        "chili powder",
-        "curry powder",
-        "cumin"
+        "ginger",
+        "cardamom",
+        "cinnamon"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "crusty rolls",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "beefsteak tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "montreal steak",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cubanelle peppers",
+      "name": "olives",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -169,7 +154,17 @@
       "strength": 1
     },
     {
-      "name": "capers",
+      "name": "crusty bread",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "chorizo sausage",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "hearts",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -189,7 +184,12 @@
       "strength": 1
     },
     {
-      "name": "arugula",
+      "name": "finely oregano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "sandwich rolls",
       "pairs_with": "olive oil",
       "strength": 1
     }
@@ -211,22 +211,22 @@
       "strength": 1
     },
     {
-      "name": "leg",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
       "name": "lamb shanks",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "cardamom pods",
+      "name": "petite",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "petite",
+      "name": "leg",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "cardamom pods",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -241,7 +241,7 @@
       "strength": 1
     },
     {
-      "name": "kasuri methi",
+      "name": "paneer",
       "pairs_with": "onion",
       "strength": 1
     }

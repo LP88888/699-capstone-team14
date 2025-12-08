@@ -5,42 +5,42 @@
       "name": "andouille sausage",
       "score": 102.13500884029472,
       "connects_a": [
-        "hot sauce",
-        "bell pepper",
-        "rice"
+        "celery",
+        "creole seasoning",
+        "tomatoes"
       ],
       "connects_b": [
-        "bell pepper",
+        "canola oil",
         "shrimp",
-        "garlic"
+        "bell pepper"
       ]
     },
     {
       "name": "celery",
       "score": 85.21099062807926,
       "connects_a": [
-        "hot sauce",
-        "bell pepper",
-        "rice"
+        "tomatoes",
+        "creole seasoning",
+        "onion powder"
       ],
       "connects_b": [
-        "bell pepper",
         "shrimp",
-        "carrot"
+        "carrot",
+        "bell pepper"
       ]
     },
     {
       "name": "file powder",
       "score": 84.1706011714233,
       "connects_a": [
-        "bell pepper",
-        "shrimp",
-        "cayenne pepper"
+        "celery",
+        "onion powder",
+        "shrimp"
       ],
       "connects_b": [
-        "bell pepper",
         "shrimp",
-        "vegetable oil"
+        "vegetable oil",
+        "bell pepper"
       ]
     },
     {
@@ -48,83 +48,83 @@
       "score": 75.10249933238894,
       "connects_a": [
         "hot sauce",
-        "bell pepper",
-        "rice"
+        "celery",
+        "tomatoes"
       ],
       "connects_b": [
-        "bell pepper",
         "shrimp",
-        "vegetable oil"
+        "vegetable oil",
+        "bell pepper"
       ]
     },
     {
       "name": "shrimp",
       "score": 72.6623782826578,
       "connects_a": [
-        "hot sauce",
-        "bell pepper",
-        "rice"
+        "celery",
+        "creole seasoning",
+        "bell pepper"
       ],
       "connects_b": [
-        "scallions",
-        "coconut milk",
-        "bell pepper"
+        "peanuts",
+        "curry paste",
+        "peanut oil"
       ]
     },
     {
       "name": "chili sauce",
       "score": 72.12703040742505,
       "connects_a": [
-        "shrimp",
-        "cayenne pepper",
-        "andouille sausage"
+        "celery",
+        "creole seasoning",
+        "shrimp"
       ],
       "connects_b": [
-        "scallions",
-        "noodles",
-        "soy sauce"
+        "peanuts",
+        "shrimp",
+        "peanut oil"
       ]
     },
     {
       "name": "corn tortillas",
       "score": 60.21062834158067,
       "connects_a": [
-        "tomatoes",
-        "oregano",
-        "vegetable oil"
+        "vegetable oil",
+        "chicken stock",
+        "oregano"
       ],
       "connects_b": [
-        "cilantro leaves",
-        "onion",
-        "lime juice"
+        "chiles",
+        "canola oil",
+        "more"
       ]
     },
     {
       "name": "tabasco sauce",
       "score": 60.06535260343525,
       "connects_a": [
-        "hot sauce",
-        "bell pepper",
-        "rice"
+        "celery",
+        "shrimp",
+        "worcestershire sauce"
       ],
       "connects_b": [
-        "cilantro leaves",
+        "shrimp",
         "bell pepper",
-        "shrimp"
+        "cilantro leaves"
       ]
     },
     {
       "name": "garam masala",
       "score": 56.31656288944528,
       "connects_a": [
-        "cayenne pepper",
-        "tomatoes",
-        "garlic"
+        "vegetable oil",
+        "lemon juice",
+        "cayenne pepper"
       ],
       "connects_b": [
-        "coconut milk",
-        "onion",
-        "ginger"
+        "chiles",
+        "ginger",
+        "vegetable oil"
       ]
     },
     {
@@ -133,53 +133,23 @@
       "connects_a": [
         "2",
         "vegetable oil",
-        "cloves"
+        "chicken stock"
       ],
       "connects_b": [
-        "cilantro leaves",
-        "coconut milk",
-        "fish sauce"
+        "ginger",
+        "vegetable oil",
+        "peanut oil"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "roasted tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "canned tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "capers",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "oregano leaves",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "artichokes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "chorizo",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "fettuccine",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "basil chiffonade",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cannellini",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -189,49 +159,54 @@
       "strength": 1
     },
     {
+      "name": "artichokes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "oregano leaves",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "chorizo",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "capers",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "roasted tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "romano cheese",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "fettuccine",
       "pairs_with": "olive oil",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "kalamata olives",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "linguine",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "anchovy fillets",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "hearts",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "center cut",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "palm",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "grape tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "linguini",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pasta",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "couscous",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -241,7 +216,32 @@
       "strength": 1
     },
     {
+      "name": "kalamata olives",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "hearts",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "porcini mushrooms",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "linguine",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "palm",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "anchovy fillets",
       "pairs_with": "olive oil",
       "strength": 1
     }

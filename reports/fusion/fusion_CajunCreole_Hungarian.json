@@ -5,56 +5,56 @@
       "name": "celery",
       "score": 322.79928214401787,
       "connects_a": [
-        "andouille sausage",
-        "garlic powder",
-        "parsley"
+        "worcestershire sauce",
+        "cajun seasoning",
+        "shrimp"
       ],
       "connects_b": [
-        "beef broth",
-        "bell pepper",
-        "bay leaf"
+        "chicken broth",
+        "worcestershire sauce",
+        "tomato paste"
       ]
     },
     {
       "name": "andouille sausage",
       "score": 273.3613471902006,
       "connects_a": [
-        "garlic",
-        "bell pepper",
-        "rice"
+        "worcestershire sauce",
+        "cajun seasoning",
+        "shrimp"
       ],
       "connects_b": [
-        "bell pepper",
-        "bay leaf",
-        "thyme"
+        "chicken broth",
+        "worcestershire sauce",
+        "tomato paste"
       ]
     },
     {
       "name": "tomato paste",
       "score": 225.4454219502543,
       "connects_a": [
-        "bell pepper",
-        "cayenne pepper",
-        "andouille sausage"
+        "celery",
+        "worcestershire sauce",
+        "paprika"
       ],
       "connects_b": [
-        "beef broth",
-        "beef",
-        "bell pepper"
+        "wine",
+        "worcestershire sauce",
+        "bay leaf"
       ]
     },
     {
       "name": "creole seasoning",
       "score": 171.0923627418432,
       "connects_a": [
-        "andouille sausage",
-        "garlic powder",
-        "parsley"
+        "worcestershire sauce",
+        "shrimp",
+        "bell pepper"
       ],
       "connects_b": [
-        "bell pepper",
-        "thyme",
-        "chicken broth"
+        "chicken broth",
+        "worcestershire sauce",
+        "paprika"
       ]
     },
     {
@@ -62,13 +62,13 @@
       "score": 153.20909863807344,
       "connects_a": [
         "hot sauce",
-        "bell pepper",
-        "rice"
+        "chili sauce",
+        "celery"
       ],
       "connects_b": [
-        "bell pepper",
-        "purpose flour",
-        "thyme"
+        "tomato paste",
+        "worcestershire sauce",
+        "vegetable oil"
       ]
     },
     {
@@ -76,27 +76,27 @@
       "score": 143.84168486990959,
       "connects_a": [
         "hot sauce",
-        "bell pepper",
-        "andouille sausage"
+        "celery",
+        "chicken broth"
       ],
       "connects_b": [
-        "beef broth",
-        "beef",
-        "bell pepper"
+        "wine",
+        "chicken broth",
+        "worcestershire sauce"
       ]
     },
     {
       "name": "celery ribs",
       "score": 132.1009969700962,
       "connects_a": [
-        "bell pepper",
-        "rice",
+        "chicken broth",
+        "tomatoes",
         "shrimp"
       ],
       "connects_b": [
-        "beef",
-        "bell pepper",
-        "bay leaf"
+        "wine",
+        "chicken broth",
+        "tomato paste"
       ]
     },
     {
@@ -104,13 +104,13 @@
       "score": 128.6677876725763,
       "connects_a": [
         "hot sauce",
-        "shrimp",
-        "cayenne pepper"
+        "celery",
+        "creole seasoning"
       ],
       "connects_b": [
-        "beef broth",
-        "bay leaf",
-        "parsley"
+        "wine",
+        "tomato paste",
+        "worcestershire sauce"
       ]
     },
     {
@@ -118,68 +118,48 @@
       "score": 122.26155066052964,
       "connects_a": [
         "hot sauce",
-        "andouille sausage",
-        "thyme"
+        "chicken broth",
+        "worcestershire sauce"
       ],
       "connects_b": [
-        "beef broth",
-        "bay leaf",
-        "thyme"
+        "wine",
+        "chicken broth",
+        "tomato paste"
       ]
     },
     {
       "name": "ribs celery",
       "score": 120.87454689530064,
       "connects_a": [
-        "hot sauce",
-        "bell pepper",
+        "chicken broth",
+        "worcestershire sauce",
         "shrimp"
       ],
       "connects_b": [
-        "bell pepper",
-        "bay leaf",
-        "thyme"
+        "wine",
+        "chicken broth",
+        "worcestershire sauce"
       ]
     }
   ],
   "novel_from_a": [
-    {
-      "name": "reggiano cheese",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "chorizo sausage",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
     {
       "name": "romano cheese",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "sandwich rolls",
+      "name": "linguini",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "penne pasta",
+      "name": "spaghetti",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "grape tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cherry tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "linguine",
+      "name": "olives",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -189,39 +169,49 @@
       "strength": 1
     },
     {
-      "name": "linguini",
+      "name": "grape tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "couscous",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "oregano leaves",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "penne pasta",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "sandwich rolls",
       "pairs_with": "olive oil",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "anchovy fillets",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "piquillo peppers",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "stock",
+      "name": "anchovy fillets",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "rigatoni",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "allspice berries",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "beef chuck",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "chiles",
+      "name": "piquillo peppers",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -236,12 +226,22 @@
       "strength": 1
     },
     {
-      "name": "piquillo peppers",
+      "name": "stock",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "rigatoni",
+      "name": "beef chuck",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "allspice berries",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "chiles",
       "pairs_with": "cloves",
       "strength": 1
     }

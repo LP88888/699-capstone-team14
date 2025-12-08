@@ -5,13 +5,13 @@
       "name": "andouille sausage",
       "score": 136.18001178705964,
       "connects_a": [
-        "hot sauce",
-        "bell pepper",
-        "rice"
+        "celery",
+        "tomatoes",
+        "onion powder"
       ],
       "connects_b": [
-        "bell pepper",
-        "rice",
+        "chicken broth",
+        "canola oil",
         "shrimp"
       ]
     },
@@ -19,28 +19,28 @@
       "name": "celery",
       "score": 112.27801118052795,
       "connects_a": [
-        "hot sauce",
-        "bell pepper",
-        "rice"
+        "tomatoes",
+        "onion powder",
+        "worcestershire sauce"
       ],
       "connects_b": [
-        "bell pepper",
-        "rice",
-        "shrimp"
+        "chicken broth",
+        "shrimp",
+        "carrot"
       ]
     },
     {
       "name": "chili sauce",
       "score": 108.1905456111376,
       "connects_a": [
-        "scallions",
-        "shrimp",
-        "cayenne pepper"
+        "celery",
+        "worcestershire sauce",
+        "cajun seasoning"
       ],
       "connects_b": [
-        "scallions",
-        "noodles",
-        "hoisin sauce"
+        "oyster sauce",
+        "shrimp",
+        "rice vinegar"
       ]
     },
     {
@@ -48,141 +48,101 @@
       "score": 90.12299919886672,
       "connects_a": [
         "hot sauce",
-        "bell pepper",
-        "rice"
+        "celery",
+        "tomatoes"
       ],
       "connects_b": [
-        "bell pepper",
-        "rice",
-        "shrimp"
+        "shrimp",
+        "vegetable oil",
+        "bell pepper"
       ]
     },
     {
       "name": "sriracha",
       "score": 90.10650341919718,
       "connects_a": [
-        "scallions",
         "shrimp",
-        "garlic"
+        "mayonnaise",
+        "such as"
       ],
       "connects_b": [
-        "scallions",
-        "noodles",
-        "hoisin sauce"
+        "oyster sauce",
+        "honey",
+        "ginger"
       ]
     },
     {
       "name": "chicken thighs",
       "score": 88.24447662433012,
       "connects_a": [
-        "scallions",
-        "bell pepper",
-        "rice"
+        "celery",
+        "vegetable oil",
+        "bell pepper"
       ],
       "connects_b": [
-        "scallions",
-        "bell pepper",
-        "rice"
+        "oyster sauce",
+        "chicken broth",
+        "rice vinegar"
       ]
     },
     {
       "name": "oyster sauce",
       "score": 88.05657690747782,
       "connects_a": [
-        "scallions",
+        "vegetable oil",
         "garlic",
-        "vegetable oil"
+        "scallions"
       ],
       "connects_b": [
-        "rice vinegar",
-        "garlic",
-        "shaoxing"
+        "shrimp",
+        "mushrooms",
+        "chicken broth"
       ]
     },
     {
       "name": "shiitake",
       "score": 85.06301349396185,
       "connects_a": [
-        "scallions",
+        "celery",
         "shrimp",
         "thyme"
       ],
       "connects_b": [
-        "scallions",
-        "mushrooms",
-        "sesame oil"
+        "oyster sauce",
+        "canola oil",
+        "chicken broth"
       ]
     },
     {
       "name": "ribs celery",
       "score": 80.58303126353377,
       "connects_a": [
-        "scallions",
         "hot sauce",
-        "bell pepper"
+        "worcestershire sauce",
+        "shrimp"
       ],
       "connects_b": [
-        "scallions",
-        "bell pepper",
-        "shrimp"
+        "chicken broth",
+        "shrimp",
+        "carrot"
       ]
     },
     {
       "name": "creole seasoning",
       "score": 80.0432106394588,
       "connects_a": [
-        "hot sauce",
-        "bell pepper",
-        "rice"
+        "celery",
+        "tomatoes",
+        "onion powder"
       ],
       "connects_b": [
-        "bell pepper",
-        "rice",
-        "shrimp"
+        "chicken broth",
+        "shrimp",
+        "bell pepper"
       ]
     }
   ],
   "novel_from_a": [
-    {
-      "name": "roasted tomatoes",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "beef chuck",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "eggplants",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "scotch bonnet peppers",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "piquillo peppers",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "oregano leaves",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "seasoning blend",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "tails",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
     {
       "name": "serrano chili",
       "pairs_with": "cloves",
@@ -192,41 +152,51 @@
       "name": "reggiano",
       "pairs_with": "cloves",
       "strength": 1
+    },
+    {
+      "name": "parmigiano",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "cannellini beans",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "by hand",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "crusty bread",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "shells",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "bunch kale",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "leg",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "tails",
+      "pairs_with": "cloves",
+      "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "petite",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "squid",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "palm",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cremini",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "spun",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "turkey sausage",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "heads garlic",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -236,12 +206,42 @@
       "strength": 1
     },
     {
-      "name": "stock",
+      "name": "petite",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "heads garlic",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "spun",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "palm",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "turkey sausage",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cremini",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "inch piece",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "palmful",
+      "name": "piece ginger",
       "pairs_with": "cloves",
       "strength": 1
     }

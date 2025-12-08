@@ -5,140 +5,140 @@
       "name": "celery",
       "score": 161.39964107200893,
       "connects_a": [
-        "cayenne",
+        "tomato paste",
         "carrot",
-        "parsley"
+        "paprika"
       ],
       "connects_b": [
-        "andouille sausage",
-        "garlic powder",
-        "parsley"
+        "worcestershire sauce",
+        "cajun seasoning",
+        "shrimp"
       ]
     },
     {
       "name": "andouille sausage",
       "score": 105.13897968853868,
       "connects_a": [
-        "garlic",
-        "chicken",
-        "paprika"
+        "tomato paste",
+        "paprika",
+        "onion"
       ],
       "connects_b": [
-        "garlic",
-        "bell pepper",
-        "rice"
+        "worcestershire sauce",
+        "cajun seasoning",
+        "shrimp"
       ]
     },
     {
       "name": "tomato paste",
       "score": 98.63237210323626,
       "connects_a": [
-        "cayenne",
-        "lamb",
-        "cumin"
+        "carrot",
+        "cumin",
+        "paprika"
       ],
       "connects_b": [
-        "bell pepper",
-        "cayenne pepper",
-        "andouille sausage"
+        "celery",
+        "worcestershire sauce",
+        "paprika"
       ]
     },
     {
       "name": "garam masala",
       "score": 98.55398505652924,
       "connects_a": [
-        "cayenne",
-        "cumin",
-        "tomato"
+        "tomato paste",
+        "cinnamon",
+        "vegetable oil"
       ],
       "connects_b": [
-        "cayenne pepper",
-        "tomatoes",
-        "vegetable oil"
+        "vegetable oil",
+        "chicken breasts",
+        "cayenne pepper"
       ]
     },
     {
       "name": "cumin",
       "score": 85.44333857692051,
       "connects_a": [
-        "cayenne",
-        "lamb",
-        "tahini"
+        "tomato paste",
+        "chickpea",
+        "tomato"
       ],
       "connects_b": [
         "bell pepper",
-        "cayenne pepper",
-        "onion powder"
+        "garlic powder",
+        "cayenne pepper"
       ]
     },
     {
       "name": "oregano",
       "score": 77.43134035799103,
       "connects_a": [
-        "cayenne",
-        "lamb",
+        "cucumber",
+        "tomato paste",
         "cumin"
       ],
       "connects_b": [
-        "bell pepper",
-        "cayenne pepper",
-        "andouille sausage"
+        "celery",
+        "creole seasoning",
+        "bell pepper"
       ]
     },
     {
       "name": "creole seasoning",
       "score": 76.04105010748586,
       "connects_a": [
-        "garlic",
+        "paprika",
         "cayenne",
-        "parsley"
+        "garlic"
       ],
       "connects_b": [
-        "andouille sausage",
-        "garlic powder",
-        "parsley"
+        "worcestershire sauce",
+        "shrimp",
+        "bell pepper"
       ]
     },
     {
       "name": "cayenne",
       "score": 72.0549740099707,
       "connects_a": [
-        "cumin",
-        "yogurt",
-        "vegetable oil"
+        "tomato paste",
+        "vegetable oil",
+        "cumin"
       ],
       "connects_b": [
         "hot sauce",
-        "rice",
-        "garlic powder"
+        "celery",
+        "creole seasoning"
       ]
     },
     {
       "name": "bay leaf",
       "score": 70.62996835948854,
       "connects_a": [
-        "cumin",
-        "tomato",
-        "carrot"
+        "tomato paste",
+        "carrot",
+        "cumin"
       ],
       "connects_b": [
-        "andouille sausage",
-        "thyme",
-        "onion"
+        "chicken broth",
+        "celery",
+        "paprika"
       ]
     },
     {
       "name": "yellow onions",
       "score": 66.09119045457021,
       "connects_a": [
-        "cayenne",
+        "tomato paste",
         "carrot",
-        "parsley"
+        "paprika"
       ],
       "connects_b": [
-        "bell pepper",
-        "cayenne pepper",
-        "onion powder"
+        "celery",
+        "onion powder",
+        "worcestershire sauce"
       ]
     }
   ],
@@ -149,12 +149,12 @@
       "strength": 1
     },
     {
-      "name": "pine",
+      "name": "sirloin",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "sirloin",
+      "name": "pine",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -169,7 +169,7 @@
       "strength": 1
     },
     {
-      "name": "garam masala",
+      "name": "lentil",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -179,22 +179,27 @@
       "strength": 1
     },
     {
-      "name": "lentil",
+      "name": "garam masala",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "vanilla",
+      "name": "vanilla extract",
       "pairs_with": "egg",
       "strength": 1
     },
     {
-      "name": "applesauce",
+      "name": "pastry",
       "pairs_with": "egg",
       "strength": 1
     }
   ],
   "novel_from_b": [
+    {
+      "name": "grits",
+      "pairs_with": "butter",
+      "strength": 1
+    },
     {
       "name": "ice water",
       "pairs_with": "butter",
@@ -206,12 +211,12 @@
       "strength": 1
     },
     {
-      "name": "grits",
-      "pairs_with": "butter",
+      "name": "in juice",
+      "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "bacon fat",
+      "name": "turkey stock",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -221,27 +226,22 @@
       "strength": 1
     },
     {
-      "name": "capsicum",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "andouille",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "shrimp stock",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "file powder",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
       "name": "shrimp shells",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "celery ribs",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "chorizo sausage",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "corn tortillas",
       "pairs_with": "onion",
       "strength": 1
     }

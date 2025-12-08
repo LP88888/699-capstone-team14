@@ -5,26 +5,26 @@
       "name": "celery",
       "score": 138.34254949029338,
       "connects_a": [
-        "andouille sausage",
-        "garlic powder",
-        "parsley"
+        "worcestershire sauce",
+        "cajun seasoning",
+        "shrimp"
       ],
       "connects_b": [
-        "thyme",
         "bay leaf",
-        "carrot"
+        "carrot",
+        "thyme"
       ]
     },
     {
       "name": "tomato paste",
       "score": 98.63237210323626,
       "connects_a": [
-        "bell pepper",
-        "cayenne pepper",
-        "andouille sausage"
+        "celery",
+        "worcestershire sauce",
+        "paprika"
       ],
       "connects_b": [
-        "thyme",
+        "wine",
         "bay leaf",
         "carrot"
       ]
@@ -33,27 +33,27 @@
       "name": "file powder",
       "score": 90.18278696938211,
       "connects_a": [
-        "bell pepper",
-        "shrimp",
-        "cayenne pepper"
+        "celery",
+        "onion powder",
+        "leaves"
       ],
       "connects_b": [
-        "purpose flour",
+        "vegetable oil",
         "thyme",
-        "vegetable oil"
+        "onion"
       ]
     },
     {
       "name": "andouille sausage",
       "score": 84.11118375083095,
       "connects_a": [
-        "garlic",
-        "bell pepper",
-        "rice"
+        "worcestershire sauce",
+        "cajun seasoning",
+        "shrimp"
       ],
       "connects_b": [
+        "onion",
         "thyme",
-        "garlic",
         "bay leaf"
       ]
     },
@@ -62,67 +62,67 @@
       "score": 80.4173672953602,
       "connects_a": [
         "hot sauce",
-        "shrimp",
-        "cayenne pepper"
+        "celery",
+        "creole seasoning"
       ],
       "connects_b": [
-        "shallots",
-        "2",
-        "bay leaf"
+        "wine",
+        "bay leaf",
+        "2"
       ]
     },
     {
       "name": "yellow onions",
       "score": 77.10638886366525,
       "connects_a": [
-        "bell pepper",
-        "cayenne pepper",
-        "onion powder"
+        "celery",
+        "onion powder",
+        "worcestershire sauce"
       ],
       "connects_b": [
-        "2",
-        "thyme",
-        "carrot"
+        "wine",
+        "carrot",
+        "kosher sea salt"
       ]
     },
     {
       "name": "grits",
       "score": 72.28168200681829,
       "connects_a": [
-        "hot sauce",
-        "bell pepper",
-        "shrimp"
+        "shrimp",
+        "cajun seasoning",
+        "paprika"
       ],
       "connects_b": [
+        "more",
         "milk",
-        "2",
-        "parsley"
+        "2"
       ]
     },
     {
       "name": "yellow onion",
       "score": 72.04160972117874,
       "connects_a": [
-        "hot sauce",
-        "bell pepper",
+        "celery",
+        "onion powder",
         "shrimp"
       ],
       "connects_b": [
-        "2",
-        "thyme",
-        "garlic"
+        "wine",
+        "dijon mustard",
+        "kosher sea salt"
       ]
     },
     {
       "name": "ribs celery",
       "score": 70.51015235559204,
       "connects_a": [
-        "hot sauce",
-        "bell pepper",
+        "chicken broth",
+        "worcestershire sauce",
         "shrimp"
       ],
       "connects_b": [
-        "thyme",
+        "wine",
         "bay leaf",
         "carrot"
       ]
@@ -132,13 +132,13 @@
       "score": 68.09293272803264,
       "connects_a": [
         "hot sauce",
-        "bell pepper",
-        "rice"
+        "chili sauce",
+        "celery"
       ],
       "connects_b": [
+        "onion",
         "vegetable oil",
-        "thyme",
-        "purpose flour"
+        "thyme"
       ]
     }
   ],
@@ -159,17 +159,7 @@
       "strength": 1
     },
     {
-      "name": "capsicum",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "chicken base",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "pinto beans",
+      "name": "corn tortillas",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -179,29 +169,69 @@
       "strength": 1
     },
     {
+      "name": "chicken base",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "capsicum",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "tumeric",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
       "name": "shrimp stock",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "file powder",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "kidney beans",
+      "name": "pinto beans",
       "pairs_with": "onion",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "roasted tomatoes",
+      "name": "head fennel",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "eggplants",
+      "name": "chianti",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "canned tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "salami",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "morel mushrooms",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "anchovies",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "clam broth",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "spun",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -211,37 +241,7 @@
       "strength": 1
     },
     {
-      "name": "grigio",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "radicchio",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "arugula",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "mussels",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cannellini beans",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "porcini mushrooms",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "romano",
+      "name": "pinch saffron",
       "pairs_with": "olive oil",
       "strength": 1
     }

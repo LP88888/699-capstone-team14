@@ -5,14 +5,14 @@
       "name": "peanuts",
       "score": 56.5974312966968,
       "connects_a": [
-        "scallions",
-        "noodles",
-        "hoisin sauce"
+        "oyster sauce",
+        "ginger",
+        "shrimp"
       ],
       "connects_b": [
         "dhania",
-        "dal",
-        "gram"
+        "rai",
+        "dal"
       ]
     },
     {
@@ -20,13 +20,13 @@
       "score": 30.14505747846478,
       "connects_a": [
         "oyster sauce",
-        "soy sauce",
-        "corn starch"
+        "shaoxing",
+        "soy sauce"
       ],
       "connects_b": [
-        "urad dal",
+        "channa dal",
         "dal",
-        "gram"
+        "finger"
       ]
     },
     {
@@ -37,18 +37,18 @@
         "flour"
       ],
       "connects_b": [
+        "dhania",
         "dal",
-        "finger",
-        "oil"
+        "finger"
       ]
     },
     {
       "name": "oyster sauce",
       "score": 22.014144226869455,
       "connects_a": [
-        "rice vinegar",
-        "garlic",
-        "shaoxing"
+        "shrimp",
+        "mushrooms",
+        "chicken broth"
       ],
       "connects_b": [
         "oil"
@@ -58,9 +58,9 @@
       "name": "corn starch",
       "score": 20.03969984589309,
       "connects_a": [
-        "rice vinegar",
-        "garlic",
-        "shaoxing"
+        "mushrooms",
+        "rice",
+        "oyster sauce"
       ],
       "connects_b": [
         "oil"
@@ -70,9 +70,9 @@
       "name": "soy sauce",
       "score": 19.524073755401215,
       "connects_a": [
-        "rice vinegar",
-        "shaoxing",
-        "scallions"
+        "mushrooms",
+        "rice",
+        "oyster sauce"
       ],
       "connects_b": [
         "oil"
@@ -82,13 +82,13 @@
       "name": "finger",
       "score": 16.01637290387976,
       "connects_a": [
-        "flour",
-        "oil"
+        "oil",
+        "flour"
       ],
       "connects_b": [
-        "oil",
+        "dhania",
         "oil salt",
-        "flour"
+        "fenugreek"
       ]
     },
     {
@@ -98,18 +98,18 @@
         "oil"
       ],
       "connects_b": [
-        "chillies",
-        "leaves coriander",
-        "urad dal"
+        "dhania",
+        "rai",
+        "salt coriander"
       ]
     },
     {
       "name": "rice wine",
       "score": 16.00412717405789,
       "connects_a": [
-        "scallions",
-        "mushrooms",
-        "sesame oil"
+        "oyster sauce",
+        "honey",
+        "pork"
       ],
       "connects_b": [
         "oil"
@@ -119,33 +119,18 @@
       "name": "coriander powder",
       "score": 15.029290356626463,
       "connects_a": [
-        "oil",
         "ginger",
-        "garlic"
+        "onion",
+        "oil"
       ],
       "connects_b": [
-        "leaves",
+        "onion",
         "oil",
-        "onion"
+        "leaves"
       ]
     }
   ],
   "novel_from_a": [
-    {
-      "name": "green bell",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "virgin",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "brown",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
     {
       "name": "olive",
       "pairs_with": "dhania",
@@ -157,27 +142,42 @@
       "strength": 1
     },
     {
-      "name": "fruit",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
       "name": "button",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "capsicum",
+      "name": "virgin",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "green bell",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "fruit",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "brown",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "tomatillos",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "shrimp shells",
+      "name": "tomato paste",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "lentil",
+      "name": "chicken bouillon",
       "pairs_with": "onion",
       "strength": 1
     }
@@ -189,12 +189,12 @@
       "strength": 1
     },
     {
-      "name": "carom",
+      "name": "finger",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "finger",
+      "name": "carom",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -204,12 +204,12 @@
       "strength": 1
     },
     {
-      "name": "cloves cardamom",
+      "name": "pudina",
       "pairs_with": "leaves",
       "strength": 1
     },
     {
-      "name": "pudina",
+      "name": "moringa",
       "pairs_with": "leaves",
       "strength": 1
     },
@@ -219,7 +219,7 @@
       "strength": 1
     },
     {
-      "name": "moringa",
+      "name": "cloves cardamom",
       "pairs_with": "leaves",
       "strength": 1
     },

@@ -5,97 +5,97 @@
       "name": "garam masala",
       "score": 32.18089307968302,
       "connects_a": [
-        "cumin",
-        "tomatoes",
-        "potatoes"
+        "cinnamon",
+        "vegetable oil",
+        "cumin"
       ],
       "connects_b": [
-        "peas",
+        "oil",
         "chili powder",
-        "oil"
+        "peas"
       ]
     },
     {
       "name": "tumeric",
       "score": 24.06793742519247,
       "connects_a": [
+        "cinnamon",
         "cumin",
-        "tomatoes",
-        "potatoes"
+        "onion"
       ],
       "connects_b": [
-        "peas",
+        "oil",
         "chili powder",
-        "oil"
+        "peas"
       ]
     },
     {
       "name": "cardamom",
       "score": 20.29931202144538,
       "connects_a": [
-        "cumin",
-        "cinnamon"
+        "cinnamon",
+        "cumin"
       ],
       "connects_b": [
-        "chili powder",
-        "oil",
-        "methi"
+        "dhania",
+        "methi",
+        "chili powder"
       ]
     },
     {
       "name": "mustard seeds",
       "score": 20.0155768681403,
       "connects_a": [
+        "vegetable oil",
         "cumin",
-        "tomatoes",
-        "potatoes"
+        "tomatoes"
       ],
       "connects_b": [
-        "peas",
+        "oil",
         "chili powder",
-        "oil"
+        "peas"
       ]
     },
     {
       "name": "coriander powder",
       "score": 18.035148427951754,
       "connects_a": [
+        "cinnamon",
         "cumin",
-        "tomatoes",
-        "garlic"
+        "onion"
       ],
       "connects_b": [
+        "oil",
         "chili powder",
-        "leaves",
-        "oil"
+        "leaves"
       ]
     },
     {
       "name": "chilies",
       "score": 16.00889505434042,
       "connects_a": [
-        "cumin",
+        "cinnamon",
         "tomatoes",
-        "potatoes"
+        "cumin"
       ],
       "connects_b": [
-        "peas",
+        "oil",
         "chili powder",
-        "oil"
+        "peas"
       ]
     },
     {
       "name": "cumin seeds",
       "score": 12.014806142352434,
       "connects_a": [
-        "cumin",
         "tomatoes",
+        "cumin",
         "potatoes"
       ],
       "connects_b": [
-        "peas",
+        "oil",
         "chili powder",
-        "oil"
+        "peas"
       ]
     },
     {
@@ -105,17 +105,17 @@
         "bell pepper"
       ],
       "connects_b": [
-        "beans",
-        "methi",
-        "powder"
+        "dhania",
+        "wheat",
+        "fenugreek"
       ]
     },
     {
       "name": "sprigs thyme",
       "score": 10.021274495718245,
       "connects_a": [
+        "leaves",
         "carrot",
-        "potatoes",
         "cloves"
       ],
       "connects_b": [
@@ -130,15 +130,40 @@
         "flour"
       ],
       "connects_b": [
-        "jeera coriander",
-        "oil",
-        "methi"
+        "dhania",
+        "wheat",
+        "jeera coriander"
       ]
     }
   ],
   "novel_from_a": [
     {
+      "name": "french",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
       "name": "olive",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "black",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "green bell",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "pepper powder",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "button",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -149,31 +174,6 @@
     },
     {
       "name": "french",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "green bell",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "black",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "button",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "pepper powder",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "almond",
       "pairs_with": "powder",
       "strength": 1
     },
@@ -183,12 +183,17 @@
       "strength": 1
     },
     {
-      "name": "french",
+      "name": "black",
       "pairs_with": "powder",
       "strength": 1
     }
   ],
   "novel_from_b": [
+    {
+      "name": "maida sooji",
+      "pairs_with": "flour",
+      "strength": 1
+    },
     {
       "name": "sugar whole",
       "pairs_with": "flour",
@@ -196,11 +201,6 @@
     },
     {
       "name": "carom",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "maida sooji",
       "pairs_with": "flour",
       "strength": 1
     },

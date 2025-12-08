@@ -5,55 +5,55 @@
       "name": "corn tortillas",
       "score": 68.2387121204581,
       "connects_a": [
-        "vegetable oil",
+        "onion",
         "cabbage",
-        "more"
+        "vegetable oil"
       ],
       "connects_b": [
-        "cilantro leaves",
+        "more",
         "jalapeno",
-        "jalapeno peppers"
+        "salsa"
       ]
     },
     {
       "name": "tomato paste",
       "score": 56.36135548756358,
       "connects_a": [
+        "carrot",
         "beef",
-        "thyme",
-        "carrot"
+        "cloves"
       ],
       "connects_b": [
-        "bell pepper",
         "cumin",
-        "onion"
+        "bell pepper",
+        "cloves"
       ]
     },
     {
       "name": "confectioners",
       "score": 54.28165797633385,
       "connects_a": [
-        "milk",
-        "2",
-        "purpose flour"
+        "egg",
+        "more",
+        "milk"
       ],
       "connects_b": [
-        "1",
-        "cream",
-        "butter"
+        "egg",
+        "more",
+        "cinnamon"
       ]
     },
     {
       "name": "at",
       "score": 54.21508898175742,
       "connects_a": [
-        "milk",
-        "purpose flour",
-        "cream"
+        "egg",
+        "more",
+        "milk"
       ],
       "connects_b": [
-        "1",
-        "cream",
+        "egg",
+        "more",
         "kosher sea salt"
       ]
     },
@@ -61,13 +61,13 @@
       "name": "vanilla extract",
       "score": 45.722019132350816,
       "connects_a": [
-        "coffee",
-        "milk",
-        "purpose flour"
+        "egg",
+        "raisins",
+        "buttermilk"
       ],
       "connects_b": [
-        "1",
-        "cream",
+        "egg",
+        "cinnamon",
         "butter"
       ]
     },
@@ -75,28 +75,28 @@
       "name": "sticks",
       "score": 45.15915269433451,
       "connects_a": [
-        "2",
-        "purpose flour",
+        "egg",
+        "raisins",
         "buttermilk"
       ],
       "connects_b": [
-        "1",
-        "butter",
-        "more"
+        "egg",
+        "more",
+        "cinnamon"
       ]
     },
     {
       "name": "whole milk",
       "score": 40.1171406925848,
       "connects_a": [
-        "2",
-        "purpose flour",
+        "egg",
+        "more",
         "vanilla extract"
       ],
       "connects_b": [
-        "kosher sea salt",
-        "butter",
-        "more"
+        "egg",
+        "more",
+        "cinnamon"
       ]
     },
     {
@@ -108,37 +108,37 @@
         "cloves"
       ],
       "connects_b": [
-        "cilantro leaves",
-        "cumin",
-        "corn tortillas"
+        "vegetable oil",
+        "flour tortillas",
+        "cumin"
       ]
     },
     {
       "name": "bay leaf",
       "score": 36.323983727736966,
       "connects_a": [
+        "carrot",
         "beef",
-        "thyme",
-        "carrot"
+        "thyme"
       ],
       "connects_b": [
-        "beans",
         "cumin",
-        "onion"
+        "chicken stock",
+        "oregano"
       ]
     },
     {
       "name": "garam masala",
       "score": 36.203504714643394,
       "connects_a": [
+        "onion",
         "vegetable oil",
-        "garlic",
-        "potatoes"
+        "garlic"
       ],
       "connects_b": [
-        "jalapeno peppers",
-        "cumin",
-        "onion"
+        "cinnamon",
+        "vegetable oil",
+        "cumin"
       ]
     }
   ],
@@ -159,22 +159,12 @@
       "strength": 1
     },
     {
-      "name": "sirloin",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
       "name": "inch piece",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "leg",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "bunch kale",
+      "name": "sirloin",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -184,44 +174,29 @@
       "strength": 1
     },
     {
+      "name": "bunch kale",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "leg",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
       "name": "slab bacon",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "!®",
+      "name": "cooking apples",
       "pairs_with": "butter",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "roasted tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "arugula leaves",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pecorino",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "eggplants",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "some",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "arugula",
+      "name": "squid",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -231,17 +206,42 @@
       "strength": 1
     },
     {
-      "name": "mussels",
+      "name": "some",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "porcini mushrooms",
+      "name": "fennel bulb",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "chorizo sausage",
+      "name": "eggplants",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "arugula",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pecorino",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "reggiano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "parmigiano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "couscous",
       "pairs_with": "olive oil",
       "strength": 1
     }

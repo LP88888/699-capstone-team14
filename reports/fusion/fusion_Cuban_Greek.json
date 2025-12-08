@@ -5,28 +5,28 @@
       "name": "oregano",
       "score": 96.53777499178102,
       "connects_a": [
-        "plantains",
-        "bell pepper",
-        "olives"
+        "olives",
+        "pork shoulder",
+        "bay leaf"
       ],
       "connects_b": [
-        "bell pepper",
-        "olives",
-        "cheese crumbles"
+        "cucumber",
+        "cheese crumbles",
+        "olives"
       ]
     },
     {
       "name": "cumin",
       "score": 73.23714735164614,
       "connects_a": [
-        "plantains",
         "dill pickles",
-        "bell pepper"
+        "pork shoulder",
+        "bay leaf"
       ],
       "connects_b": [
-        "bell pepper",
         "yogurt",
-        "tomatoes"
+        "bell pepper",
+        "mint"
       ]
     },
     {
@@ -34,27 +34,27 @@
       "score": 70.10528927213454,
       "connects_a": [
         "olives",
-        "tomatoes",
-        "oregano"
+        "lime",
+        "tomatoes"
       ],
       "connects_b": [
-        "cherry tomatoes",
+        "cheese crumbles",
         "olives",
-        "dill"
+        "kalamata"
       ]
     },
     {
       "name": "garam masala",
       "score": 63.35613325062594,
       "connects_a": [
-        "cumin",
         "bay leaf",
-        "tomatoes"
+        "vegetable oil",
+        "cumin"
       ],
       "connects_b": [
         "spinach",
-        "yogurt",
-        "tomatoes"
+        "cinnamon",
+        "lemon juice"
       ]
     },
     {
@@ -62,13 +62,13 @@
       "score": 60.11698073280289,
       "connects_a": [
         "olives",
-        "olive oil",
-        "tomatoes"
+        "mayonnaise",
+        "olive oil"
       ],
       "connects_b": [
-        "cherry tomatoes",
         "olives",
-        "wine vinegar"
+        "lemon juice",
+        "lemon"
       ]
     },
     {
@@ -76,26 +76,26 @@
       "score": 60.012704447242896,
       "connects_a": [
         "oregano",
-        "olives",
-        "tomatoes"
+        "tomatoes",
+        "olives"
       ],
       "connects_b": [
-        "cherry tomatoes",
-        "olives",
-        "dill"
+        "cucumber",
+        "spinach",
+        "olives"
       ]
     },
     {
       "name": "tomato paste",
       "score": 54.3484499344363,
       "connects_a": [
-        "bell pepper",
-        "cumin",
+        "wine",
+        "pork",
         "bay leaf"
       ],
       "connects_b": [
         "bell pepper",
-        "tomatoes",
+        "cloves",
         "parsley"
       ]
     },
@@ -105,12 +105,12 @@
       "connects_a": [
         "bell pepper",
         "olive oil",
-        "tomatoes"
+        "oregano"
       ],
       "connects_b": [
-        "bell pepper",
-        "wine vinegar",
-        "tomatoes"
+        "cucumber",
+        "kalamata",
+        "bell pepper"
       ]
     },
     {
@@ -119,12 +119,12 @@
       "connects_a": [
         "olives",
         "olive oil",
-        "tomatoes"
+        "oregano"
       ],
       "connects_b": [
-        "cherry tomatoes",
+        "cucumber",
         "olives",
-        "olive oil"
+        "lemon juice"
       ]
     },
     {
@@ -132,19 +132,19 @@
       "score": 50.034172712826155,
       "connects_a": [
         "olives",
-        "oregano",
-        "wine vinegar"
+        "mayonnaise",
+        "lime"
       ],
       "connects_b": [
-        "olives",
+        "cucumber",
         "cheese crumbles",
-        "kalamata olives"
+        "olives"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "crusty rolls",
+      "name": "chorizo sausage",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -164,13 +164,23 @@
       "strength": 1
     },
     {
+      "name": "crusty rolls",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "chipotle puree",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "chorizo sausage",
-      "pairs_with": "olive oil",
+      "name": "depending",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "broth",
+      "pairs_with": "cloves",
       "strength": 1
     },
     {
@@ -179,59 +189,24 @@
       "strength": 1
     },
     {
-      "name": "snapper fillets",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "serrano",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "pinch sugar",
+      "name": "chorizo sausage",
       "pairs_with": "cloves",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "roasted tomatoes",
+      "name": "linguini",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "kalamata olives",
+      "name": "romano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "petite",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "arugula leaves",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pecorino",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "eggplants",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "some",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "linguine",
+      "name": "pasta",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -241,7 +216,32 @@
       "strength": 1
     },
     {
+      "name": "reggiano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "parmigiano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "couscous",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "parma",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "squid",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "kalamata olives",
       "pairs_with": "olive oil",
       "strength": 1
     }

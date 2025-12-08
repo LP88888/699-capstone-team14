@@ -5,26 +5,26 @@
       "name": "can tomatoes",
       "score": 28.164805429073205,
       "connects_a": [
-        "freshly",
-        "bell pepper",
-        "mozzarella cheese"
+        "wine",
+        "optional",
+        "spaghetti"
       ],
       "connects_b": [
-        "(",
-        "onion"
+        "onion",
+        "("
       ]
     },
     {
       "name": "cans tomatoes",
       "score": 20.044428318272463,
       "connects_a": [
-        "pepper flakes",
-        "seasoning",
-        "optional"
+        "optional",
+        "carrot",
+        "onion"
       ],
       "connects_b": [
-        "leaves",
-        "onion"
+        "onion",
+        "leaves"
       ]
     },
     {
@@ -32,26 +32,26 @@
       "score": 18.073421400104678,
       "connects_a": [
         ")",
-        "seasoning",
-        "mozzarella cheese"
+        "parmigiano",
+        "pepper flakes"
       ],
       "connects_b": [
+        "beans",
         ")",
-        "(",
-        "beans"
+        "("
       ]
     },
     {
       "name": "bay leaf",
       "score": 12.107994575912322,
       "connects_a": [
-        "tomatoes",
+        "wine",
         "carrot",
         "parsley"
       ],
       "connects_b": [
-        "beans",
-        "onion"
+        "onion",
+        "beans"
       ]
     },
     {
@@ -59,26 +59,26 @@
       "score": 12.024371595917614,
       "connects_a": [
         "bell pepper",
-        "purpose flour",
+        "onion",
         "tomatoes"
       ],
       "connects_b": [
-        "leaves",
-        "onion"
+        "onion",
+        "leaves"
       ]
     },
     {
       "name": "coriander powder",
       "score": 12.023432285301169,
       "connects_a": [
-        "garlic",
+        "onion",
         "tomatoes",
-        "leaves"
+        "garlic"
       ],
       "connects_b": [
-        "leaves",
+        "onion",
         "oil",
-        "onion"
+        "leaves"
       ]
     },
     {
@@ -88,18 +88,18 @@
         "flour"
       ],
       "connects_b": [
+        "dhania",
         "dal",
-        "finger",
-        "oil"
+        "finger"
       ]
     },
     {
       "name": "ribs celery",
       "score": 10.072878907941721,
       "connects_a": [
-        "bell pepper",
-        "about",
-        "optional"
+        "wine",
+        "optional",
+        "carrot"
       ],
       "connects_b": [
         "onion"
@@ -109,9 +109,9 @@
       "name": "tomato paste",
       "score": 10.064527765636353,
       "connects_a": [
-        "bell pepper",
-        "tomatoes",
-        "carrot"
+        "wine",
+        "carrot",
+        "spaghetti"
       ],
       "connects_b": [
         "onion"
@@ -121,17 +121,22 @@
       "name": "beef stock",
       "score": 10.036815899714885,
       "connects_a": [
-        "flour",
+        "wine",
         "carrot",
-        "onion"
+        "parmigiano"
       ],
       "connects_b": [
-        "flour",
-        "onion"
+        "onion",
+        "flour"
       ]
     }
   ],
   "novel_from_a": [
+    {
+      "name": "masala",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
     {
       "name": "virgin",
       "pairs_with": "dhania",
@@ -143,7 +148,7 @@
       "strength": 1
     },
     {
-      "name": "powder amchur",
+      "name": "onions green",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -153,22 +158,12 @@
       "strength": 1
     },
     {
-      "name": "onions green",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "fruit",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "masala",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
       "name": "green bell",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "powder amchur",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -178,7 +173,12 @@
       "strength": 1
     },
     {
-      "name": "andouille",
+      "name": "fruit",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "navy beans",
       "pairs_with": "onion",
       "strength": 1
     }
@@ -190,12 +190,7 @@
       "strength": 1
     },
     {
-      "name": "pudina",
-      "pairs_with": "leaves",
-      "strength": 1
-    },
-    {
-      "name": "oil coriander",
+      "name": "salt coriander",
       "pairs_with": "leaves",
       "strength": 1
     },
@@ -205,7 +200,12 @@
       "strength": 1
     },
     {
-      "name": "salt coriander",
+      "name": "pudina",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
+      "name": "oil coriander",
       "pairs_with": "leaves",
       "strength": 1
     },
@@ -225,12 +225,12 @@
       "strength": 1
     },
     {
-      "name": "hing",
+      "name": "asafoetida hing",
       "pairs_with": ")",
       "strength": 1
     },
     {
-      "name": "asafoetida hing",
+      "name": "hing",
       "pairs_with": ")",
       "strength": 1
     }

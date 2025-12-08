@@ -5,70 +5,70 @@
       "name": "fish sauce",
       "score": 145.41576983835546,
       "connects_a": [
-        "scallions",
-        "noodles",
-        "hoisin sauce"
+        "oyster sauce",
+        "canola oil",
+        "pork"
       ],
       "connects_b": [
-        "cilantro leaves",
         "jalapeno",
-        "jalapeno peppers"
+        "vegetable oil",
+        "cilantro leaves"
       ]
     },
     {
       "name": "scallions",
       "score": 120.4417684405765,
       "connects_a": [
-        "noodles",
-        "hoisin sauce",
-        "rice vinegar"
+        "cabbage",
+        "oyster sauce",
+        "pork"
       ],
       "connects_b": [
-        "cilantro leaves",
         "jalapeno",
-        "rice"
+        "salsa",
+        "cilantro leaves"
       ]
     },
     {
       "name": "hoisin sauce",
       "score": 110.0841005791393,
       "connects_a": [
-        "rice vinegar",
-        "garlic",
-        "shaoxing"
+        "rice",
+        "oyster sauce",
+        "canola oil"
       ],
       "connects_b": [
-        "rice",
-        "jalapeno peppers",
-        "garlic"
+        "chicken breasts",
+        "cilantro",
+        "rice"
       ]
     },
     {
       "name": "sriracha",
       "score": 108.12780410303662,
       "connects_a": [
-        "scallions",
-        "noodles",
-        "hoisin sauce"
+        "oyster sauce",
+        "honey",
+        "ginger"
       ],
       "connects_b": [
         "cilantro leaves",
-        "lime juice",
-        "garlic"
+        "chicken breasts",
+        "cilantro"
       ]
     },
     {
       "name": "cabbage",
       "score": 105.40842967877491,
       "connects_a": [
-        "scallions",
-        "noodles",
-        "hoisin sauce"
+        "oyster sauce",
+        "canola oil",
+        "pork"
       ],
       "connects_b": [
+        "flour tortillas",
         "cilantro leaves",
-        "corn tortillas",
-        "flour tortillas"
+        "cilantro"
       ]
     },
     {
@@ -76,80 +76,95 @@
       "score": 102.35806818068716,
       "connects_a": [
         "chicken broth",
-        "vegetable oil",
-        "chicken breasts"
+        "canola oil",
+        "vegetable oil"
       ],
       "connects_b": [
-        "cilantro leaves",
+        "more",
         "jalapeno",
-        "jalapeno peppers"
+        "salsa"
       ]
     },
     {
       "name": "bean sprouts",
       "score": 102.21645410789404,
       "connects_a": [
-        "scallions",
-        "mushrooms",
-        "noodles"
+        "oyster sauce",
+        "canola oil",
+        "ginger"
       ],
       "connects_b": [
+        "vegetable oil",
         "cilantro leaves",
-        "lime juice",
-        "vegetable oil"
+        "chicken breasts"
       ]
     },
     {
       "name": "jalapeno peppers",
       "score": 98.09586538661888,
       "connects_a": [
-        "scallions",
-        "bell pepper",
-        "rice"
+        "rice",
+        "shrimp",
+        "peanut oil"
       ],
       "connects_b": [
-        "cilantro leaves",
-        "bell pepper",
-        "rice"
+        "tomatoes",
+        "salsa",
+        "flour tortillas"
       ]
     },
     {
       "name": "peanut oil",
       "score": 96.21696927350456,
       "connects_a": [
-        "scallions",
-        "mushrooms",
-        "noodles"
+        "cabbage",
+        "oyster sauce",
+        "ginger"
       ],
       "connects_b": [
-        "cilantro leaves",
         "jalapeno",
-        "rice"
+        "cilantro leaves",
+        "lime"
       ]
     },
     {
       "name": "rice vinegar",
       "score": 95.2177883599542,
       "connects_a": [
-        "scallions",
-        "noodles",
-        "hoisin sauce"
+        "rice",
+        "oyster sauce",
+        "canola oil"
       ],
       "connects_b": [
-        "rice",
-        "lime juice",
-        "chicken breasts"
+        "avocado",
+        "chicken breasts",
+        "cilantro"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "radicchio",
+      "name": "pasta",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "spaghetti",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
       "name": "anchovies",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "spun",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "turkey sausage",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -164,84 +179,69 @@
       "strength": 1
     },
     {
-      "name": "spun",
+      "name": "radicchio",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pasta",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "turkey sausage",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "spaghetti",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "to each",
+      "name": "inch piece",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "stalk lemongrass",
+      "name": "piece ginger",
       "pairs_with": "cloves",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
+      "name": "jalapeno chile",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "romano",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "serrano chili",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "ancho chile",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "reggiano",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "parmigiano",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "chipotles",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "hair pasta",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
       "name": "chipotle chile",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "herbes",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "roasted tomatoes",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "onion finely",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "tuttorosso",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "beef chuck",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "eggplants",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "some",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "seasoning blend",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "scotch bonnet",
+      "name": "chorizo sausage",
       "pairs_with": "cloves",
       "strength": 1
     }

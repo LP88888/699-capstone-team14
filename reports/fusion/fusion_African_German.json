@@ -5,110 +5,110 @@
       "name": "garam masala",
       "score": 98.55398505652924,
       "connects_a": [
-        "cumin seeds",
-        "cumin",
+        "ginger",
+        "tomato paste",
         "turmeric"
       ],
       "connects_b": [
+        "cinnamon",
         "bay leaf",
-        "potatoes",
-        "garlic"
+        "vegetable oil"
       ]
     },
     {
       "name": "tomato paste",
       "score": 63.406524923509025,
       "connects_a": [
-        "bell pepper",
+        "carrot",
         "cumin",
-        "turmeric"
+        "paprika"
       ],
       "connects_b": [
+        "wine",
         "bay leaf",
-        "carrot",
-        "parsley"
+        "carrot"
       ]
     },
     {
       "name": "ribs celery",
       "score": 54.39354610288529,
       "connects_a": [
-        "scallions",
-        "bell pepper",
-        "onion"
+        "tomato paste",
+        "carrot",
+        "bell pepper"
       ],
       "connects_b": [
+        "wine",
         "bay leaf",
-        "carrot",
-        "parsley"
+        "carrot"
       ]
     },
     {
       "name": "bay leaf",
       "score": 50.44997739963467,
       "connects_a": [
-        "cumin",
-        "turmeric",
-        "coriander seeds"
+        "tomato paste",
+        "carrot",
+        "cumin"
       ],
       "connects_b": [
-        "bacon",
+        "wine",
         "carrot",
-        "parsley"
+        "bacon"
       ]
     },
     {
       "name": "celery",
       "score": 48.11914764879769,
       "connects_a": [
-        "bell pepper",
-        "onion",
-        "tomatoes"
+        "tomato paste",
+        "carrot",
+        "paprika"
       ],
       "connects_b": [
-        "bacon",
         "bay leaf",
-        "carrot"
+        "carrot",
+        "bacon"
       ]
     },
     {
       "name": "sprigs thyme",
       "score": 48.10211757944757,
       "connects_a": [
-        "coarsely",
+        "tomato paste",
         "roughly",
         "carrot"
       ],
       "connects_b": [
-        "bay leaf",
-        "carrot",
-        "potatoes"
+        "wine",
+        "leaves",
+        "bay leaf"
       ]
     },
     {
       "name": "allspice",
       "score": 45.200493238408555,
       "connects_a": [
-        "coarsely",
-        "cumin",
-        "roughly"
+        "ginger",
+        "roughly",
+        "cinnamon"
       ],
       "connects_b": [
-        "bay leaf",
         "nutmeg",
-        "cloves"
+        "cinnamon",
+        "cider vinegar"
       ]
     },
     {
       "name": "palm",
       "score": 44.169308678586994,
       "connects_a": [
-        "scallions",
+        "cumin",
         "bell pepper",
-        "cumin"
+        "cloves"
       ],
       "connects_b": [
-        "cloves",
+        "onion",
         "olive oil",
         "parsley"
       ]
@@ -117,9 +117,9 @@
       "name": "chiles",
       "score": 42.20045181617278,
       "connects_a": [
-        "cumin seeds",
-        "coarsely",
-        "cilantro leaves"
+        "ginger",
+        "roughly",
+        "vegetable oil"
       ],
       "connects_b": [
         "2",
@@ -131,12 +131,12 @@
       "name": "peppercorns",
       "score": 40.26509982896944,
       "connects_a": [
-        "cumin seeds",
-        "coarsely",
-        "turmeric"
+        "roughly",
+        "turmeric",
+        "carrot"
       ],
       "connects_b": [
-        "bay leaf",
+        "cider vinegar",
         "wine",
         "carrot"
       ]
@@ -144,27 +144,12 @@
   ],
   "novel_from_a": [
     {
-      "name": "beefsteak tomatoes",
+      "name": "olives",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "kalamata olives",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "eggplants",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "canned tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "handful pine nuts",
+      "name": "couscous",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -174,7 +159,12 @@
       "strength": 1
     },
     {
-      "name": "olives",
+      "name": "kalamata olives",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "handful pine nuts",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -184,12 +174,22 @@
       "strength": 1
     },
     {
+      "name": "brussels sprouts",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cherry tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "mussels",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "chorizo",
+      "name": "beefsteak tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     }
@@ -198,16 +198,6 @@
     {
       "name": "capers",
       "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "beef chuck",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "ribs celery",
-      "pairs_with": "cloves",
       "strength": 1
     },
     {
@@ -221,27 +211,37 @@
       "strength": 1
     },
     {
-      "name": "sticks",
+      "name": "beef chuck",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "ribs celery",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "almond extract",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "raspberry jam",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "room temp",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "ice water",
+      "name": "muscovado sugar",
       "pairs_with": "butter",
       "strength": 1
     },
     {
       "name": "percent milk",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "confectioners",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "whole milk",
       "pairs_with": "butter",
       "strength": 1
     }

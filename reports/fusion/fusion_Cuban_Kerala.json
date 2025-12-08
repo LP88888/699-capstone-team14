@@ -5,42 +5,42 @@
       "name": "jalapeno peppers",
       "score": 40.039128729232196,
       "connects_a": [
-        "bell pepper",
-        "rice",
-        "beans"
+        "tomatoes",
+        "cumin",
+        "bell pepper"
       ],
       "connects_b": [
-        "cumin seeds",
+        "mango",
         "chili powder",
-        "mango"
+        "rice"
       ]
     },
     {
       "name": "cumin",
       "score": 36.61857367582307,
       "connects_a": [
-        "plantains",
         "dill pickles",
-        "bell pepper"
+        "pork shoulder",
+        "bay leaf"
       ],
       "connects_b": [
-        "cumin seeds",
         "chili powder",
-        "beans"
+        "beans",
+        "cumin seeds"
       ]
     },
     {
       "name": "garam masala",
       "score": 35.1978518059033,
       "connects_a": [
-        "cumin",
         "bay leaf",
-        "tomatoes"
+        "vegetable oil",
+        "cumin"
       ],
       "connects_b": [
-        "cumin seeds",
         "chili powder",
-        "oil"
+        "peas",
+        "onion"
       ]
     },
     {
@@ -48,13 +48,13 @@
       "score": 25.070768151242156,
       "connects_a": [
         "cumin",
-        "tomatoes",
-        "garlic"
+        "cilantro",
+        "onion"
       ],
       "connects_b": [
-        "cumin seeds",
         "chili powder",
-        "oil"
+        "peas",
+        "onion"
       ]
     },
     {
@@ -62,12 +62,12 @@
       "score": 25.048817261044103,
       "connects_a": [
         "cumin",
-        "tomatoes",
-        "garlic"
+        "onion",
+        "tomatoes"
       ],
       "connects_b": [
-        "cumin seeds",
         "chili powder",
+        "onion",
         "oil"
       ]
     },
@@ -75,106 +75,81 @@
       "name": "mango",
       "score": 24.168590592556953,
       "connects_a": [
+        "lime",
         "orange juice",
-        "lime juice",
-        "lime"
+        "cilantro"
       ],
       "connects_b": [
+        "dhania",
         "wheat",
-        "fenugreek",
-        "dhania"
+        "fenugreek"
       ]
     },
     {
       "name": "cilantro",
       "score": 24.139143647134645,
       "connects_a": [
+        "pork shoulder",
         "plantains",
-        "beans",
         "cumin"
       ],
       "connects_b": [
-        "cumin seeds",
         "chili powder",
-        "beans"
+        "beans",
+        "mango"
       ]
     },
     {
       "name": "turmeric",
       "score": 20.03876982370638,
       "connects_a": [
-        "cumin",
         "bay leaf",
-        "tomatoes"
+        "vegetable oil",
+        "cumin"
       ],
       "connects_b": [
-        "cumin seeds",
+        "oil",
         "chili powder",
-        "oil"
+        "peas"
       ]
     },
     {
       "name": "mustard seeds",
       "score": 20.0155768681403,
       "connects_a": [
+        "vegetable oil",
         "cumin",
-        "tomatoes",
-        "vegetable oil"
+        "cilantro"
       ],
       "connects_b": [
-        "cumin seeds",
+        "oil",
         "chili powder",
-        "oil"
+        "peas"
       ]
     },
     {
       "name": "bell",
       "score": 18.08168730193569,
       "connects_a": [
-        "bell pepper",
-        "beans"
+        "beans",
+        "bell pepper"
       ],
       "connects_b": [
-        "beans",
-        "powder",
-        "oil salt"
+        "dhania",
+        "wheat",
+        "fenugreek"
       ]
     }
   ],
   "novel_from_a": [
-    {
-      "name": "cardamom",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
     {
       "name": "dry",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "stock",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "lentils",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "beef chuck",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "cubanelle peppers",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "beef",
-      "pairs_with": "onion",
+      "name": "cardamom",
+      "pairs_with": "dhania",
       "strength": 1
     },
     {
@@ -188,7 +163,32 @@
       "strength": 1
     },
     {
-      "name": "sodium beef broth",
+      "name": "in juice",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "stalks celery",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "beef",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "celery ribs",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "chorizo sausage",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "corn tortillas",
       "pairs_with": "onion",
       "strength": 1
     }
@@ -200,32 +200,12 @@
       "strength": 1
     },
     {
-      "name": "oil coriander",
-      "pairs_with": "leaves",
-      "strength": 1
-    },
-    {
-      "name": "salt coriander",
-      "pairs_with": "leaves",
-      "strength": 1
-    },
-    {
-      "name": "cloves cardamom",
-      "pairs_with": "leaves",
-      "strength": 1
-    },
-    {
       "name": "pudina",
       "pairs_with": "leaves",
       "strength": 1
     },
     {
-      "name": "pudina salt",
-      "pairs_with": "leaves",
-      "strength": 1
-    },
-    {
-      "name": "leaves mint",
+      "name": "oil coriander",
       "pairs_with": "leaves",
       "strength": 1
     },
@@ -235,12 +215,32 @@
       "strength": 1
     },
     {
+      "name": "salt coriander",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
+      "name": "leaves mint",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
+      "name": "pudina salt",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
+      "name": "cloves cardamom",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
       "name": "noodles",
       "pairs_with": "vegetable oil",
       "strength": 1
     },
     {
-      "name": "pearl onions",
+      "name": "fish",
       "pairs_with": "bay leaf",
       "strength": 1
     }

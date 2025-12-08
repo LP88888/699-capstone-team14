@@ -5,55 +5,55 @@
       "name": "confectioners",
       "score": 63.32860097238949,
       "connects_a": [
-        "milk",
-        "1",
-        "purpose flour"
+        "egg",
+        "more",
+        "milk"
       ],
       "connects_b": [
-        "milk",
-        "2",
-        "purpose flour"
+        "egg",
+        "more",
+        "milk"
       ]
     },
     {
       "name": "vanilla extract",
       "score": 54.86642295882098,
       "connects_a": [
+        "egg",
         "milk",
-        "1",
-        "purpose flour"
+        "cinnamon"
       ],
       "connects_b": [
-        "coffee",
-        "milk",
-        "purpose flour"
+        "egg",
+        "raisins",
+        "buttermilk"
       ]
     },
     {
       "name": "at",
       "score": 54.21508898175742,
       "connects_a": [
-        "milk",
-        "1",
-        "purpose flour"
+        "egg",
+        "more",
+        "milk"
       ],
       "connects_b": [
-        "milk",
-        "purpose flour",
-        "cream"
+        "egg",
+        "more",
+        "milk"
       ]
     },
     {
       "name": "sticks",
       "score": 54.19098323320141,
       "connects_a": [
-        "1",
-        "purpose flour",
-        "butter"
+        "egg",
+        "more",
+        "cinnamon"
       ],
       "connects_b": [
-        "2",
-        "purpose flour",
+        "egg",
+        "raisins",
         "buttermilk"
       ]
     },
@@ -62,26 +62,26 @@
       "score": 48.3097332750545,
       "connects_a": [
         "bell pepper",
-        "tomatoes",
+        "cloves",
         "parsley"
       ],
       "connects_b": [
+        "carrot",
         "beef",
-        "thyme",
-        "carrot"
+        "cloves"
       ]
     },
     {
       "name": "ice water",
       "score": 42.21410005923615,
       "connects_a": [
-        "1",
-        "purpose flour",
-        "butter"
+        "egg",
+        "more",
+        "cinnamon"
       ],
       "connects_b": [
-        "purpose flour",
-        "flour",
+        "egg",
+        "more",
         "vanilla extract"
       ]
     },
@@ -89,13 +89,13 @@
       "name": "whole milk",
       "score": 40.1171406925848,
       "connects_a": [
-        "purpose flour",
-        "butter",
-        "more"
+        "egg",
+        "more",
+        "cinnamon"
       ],
       "connects_b": [
-        "2",
-        "purpose flour",
+        "egg",
+        "more",
         "vanilla extract"
       ]
     },
@@ -103,14 +103,14 @@
       "name": "filling",
       "score": 40.06143930228706,
       "connects_a": [
+        "egg",
         "milk",
-        "purpose flour",
-        "butter"
+        "cinnamon"
       ],
       "connects_b": [
+        "egg",
         "milk",
-        "purpose flour",
-        "flour"
+        "vanilla extract"
       ]
     },
     {
@@ -118,78 +118,78 @@
       "score": 36.203504714643394,
       "connects_a": [
         "spinach",
-        "yogurt",
-        "tomatoes"
+        "cinnamon",
+        "lemon juice"
       ],
       "connects_b": [
+        "onion",
         "vegetable oil",
-        "garlic",
-        "potatoes"
+        "garlic"
       ]
     },
     {
       "name": "oregano",
       "score": 36.20166562191788,
       "connects_a": [
-        "bell pepper",
-        "olives",
-        "cheese crumbles"
+        "cucumber",
+        "cheese crumbles",
+        "olives"
       ],
       "connects_b": [
         "2",
-        "beef",
-        "thyme"
+        "thyme",
+        "beef"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "roasted tomatoes",
+      "name": "linguini",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "beefsteak tomatoes",
+      "name": "romano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "kalamata olives",
+      "name": "pasta",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "petite",
+      "name": "reggiano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "arugula leaves",
+      "name": "parmigiano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pecorino",
+      "name": "couscous",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "montreal steak",
+      "name": "parma",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "eggplants",
+      "name": "squid",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "cubanelle peppers",
+      "name": "canned tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "some",
+      "name": "crusty bread",
       "pairs_with": "olive oil",
       "strength": 1
     }
@@ -206,12 +206,12 @@
       "strength": 1
     },
     {
-      "name": "bunch kale",
+      "name": "finely parsley",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "finely parsley",
+      "name": "bunch kale",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -221,12 +221,12 @@
       "strength": 1
     },
     {
-      "name": "!®",
+      "name": "cooking apples",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "believe",
+      "name": "!®",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -236,12 +236,12 @@
       "strength": 1
     },
     {
-      "name": "i",
+      "name": "veal stock",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "cooking apples",
+      "name": "i",
       "pairs_with": "butter",
       "strength": 1
     }

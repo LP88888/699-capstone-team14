@@ -5,14 +5,14 @@
       "name": "chile",
       "score": 85.36649032697521,
       "connects_a": [
+        "cucumber",
         "yogurt",
-        "grain sea salt",
         "mint"
       ],
       "connects_b": [
-        "cilantro leaves",
-        "noodles",
-        "soy sauce"
+        "chiles",
+        "canola oil",
+        "vegetable oil"
       ]
     },
     {
@@ -20,13 +20,13 @@
       "score": 72.40700942928679,
       "connects_a": [
         "spinach",
-        "yogurt",
-        "tomatoes"
+        "cinnamon",
+        "lemon juice"
       ],
       "connects_b": [
-        "coconut milk",
-        "onion",
-        "ginger"
+        "chiles",
+        "ginger",
+        "vegetable oil"
       ]
     },
     {
@@ -34,27 +34,27 @@
       "score": 69.67838971421199,
       "connects_a": [
         "cucumber",
-        "mint",
-        "chicken breasts"
+        "chicken breasts",
+        "mint"
       ],
       "connects_b": [
-        "thai basil",
-        "bean sprouts",
-        "scallions"
+        "shrimp",
+        "shallots",
+        "lime"
       ]
     },
     {
       "name": "corn tortillas",
       "score": 60.21062834158067,
       "connects_a": [
-        "tomatoes",
-        "oregano",
-        "more"
+        "more",
+        "chicken breasts",
+        "oregano"
       ],
       "connects_b": [
-        "cilantro leaves",
-        "onion",
-        "lime juice"
+        "chiles",
+        "canola oil",
+        "more"
       ]
     },
     {
@@ -66,37 +66,37 @@
         "wine vinegar"
       ],
       "connects_b": [
-        "scallions",
-        "coconut milk",
-        "noodles"
+        "shrimp",
+        "shallots",
+        "lime"
       ]
     },
     {
       "name": "cilantro",
       "score": 56.32466850998084,
       "connects_a": [
-        "mint",
-        "yogurt",
-        "chicken breasts"
+        "greek yogurt",
+        "chicken breasts",
+        "yogurt"
       ],
       "connects_b": [
-        "scallions",
-        "coconut milk",
-        "fish sauce"
+        "chiles",
+        "ginger",
+        "peanuts"
       ]
     },
     {
       "name": "cucumber",
       "score": 56.08423141770763,
       "connects_a": [
-        "cherry tomatoes",
+        "cheese crumbles",
         "olives",
-        "dill"
+        "kalamata"
       ],
       "connects_b": [
-        "bean sprouts",
         "lime",
-        "wine vinegar"
+        "bean sprouts",
+        "fish sauce"
       ]
     },
     {
@@ -104,27 +104,27 @@
       "score": 52.03975663741131,
       "connects_a": [
         "honey",
-        "garlic",
-        "cucumber"
+        "cucumber",
+        "chicken breasts"
       ],
       "connects_b": [
-        "scallions",
-        "noodles",
-        "soy sauce"
+        "canola oil",
+        "ginger",
+        "peanuts"
       ]
     },
     {
       "name": "cumin",
       "score": 48.82476490109743,
       "connects_a": [
-        "bell pepper",
         "yogurt",
-        "tomatoes"
+        "bell pepper",
+        "mint"
       ],
       "connects_b": [
-        "cilantro leaves",
-        "coconut milk",
-        "bell pepper"
+        "chiles",
+        "bell pepper",
+        "coconut milk"
       ]
     },
     {
@@ -133,48 +133,33 @@
       "connects_a": [
         "grain sea salt",
         "more",
-        "cloves"
+        "wine vinegar"
       ],
       "connects_b": [
-        "scallions",
-        "cilantro leaves",
-        "soy sauce"
+        "canola oil",
+        "more",
+        "carrot"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "roasted tomatoes",
+      "name": "romano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "petite",
+      "name": "head fennel",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "arugula leaves",
+      "name": "parma",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pecorino",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "montreal steak",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cubanelle peppers",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "some",
+      "name": "squid",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -184,19 +169,34 @@
       "strength": 1
     },
     {
-      "name": "capers",
+      "name": "[extra",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "[extra",
+      "name": "handful pine nuts",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "petite",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pepperoncini peppers",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "artichokes",
       "pairs_with": "olive oil",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "anchovy fillets",
+      "name": "littleneck clams",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -206,12 +206,12 @@
       "strength": 1
     },
     {
-      "name": "center cut",
+      "name": "anchovy fillets",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "littleneck clams",
+      "name": "center cut",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -221,27 +221,27 @@
       "strength": 1
     },
     {
-      "name": "serrano",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "scotch bonnet",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
       "name": "serrano chili",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "stalk lemongrass",
+      "name": "depending",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "cover",
+      "name": "broth",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "piece ginger",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "cardamom pods",
       "pairs_with": "cloves",
       "strength": 1
     }

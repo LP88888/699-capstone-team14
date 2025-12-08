@@ -5,69 +5,69 @@
       "name": "yellow onions",
       "score": 90.12435061986847,
       "connects_a": [
-        "cayenne pepper",
-        "2",
-        "beaten"
+        "wine",
+        "tomato paste",
+        "worcestershire sauce"
       ],
       "connects_b": [
-        "bell pepper",
-        "2",
-        "carrot"
+        "wine",
+        "carrot",
+        "paprika"
       ]
     },
     {
       "name": "tomato paste",
       "score": 81.52267490165445,
       "connects_a": [
-        "beef",
-        "cayenne pepper",
+        "wine",
+        "worcestershire sauce",
         "carrot"
       ],
       "connects_b": [
-        "bell pepper",
-        "cumin",
-        "tomatoes"
+        "wine",
+        "carrot",
+        "cumin"
       ]
     },
     {
       "name": "celery",
       "score": 70.17375698782998,
       "connects_a": [
-        "cayenne pepper",
-        "carrot",
-        "parsley"
+        "tomato paste",
+        "worcestershire sauce",
+        "carrot"
       ],
       "connects_b": [
-        "bell pepper",
-        "rice",
-        "shrimp"
+        "tomatoes",
+        "shrimp",
+        "carrot"
       ]
     },
     {
       "name": "confectioners",
       "score": 66.34424863774137,
       "connects_a": [
-        "milk",
-        "1",
-        "2"
+        "egg",
+        "nutmeg",
+        "more"
       ],
       "connects_b": [
-        "1",
-        "2",
-        "butter"
+        "egg",
+        "more",
+        "2"
       ]
     },
     {
       "name": "celery ribs",
       "score": 64.04896822792543,
       "connects_a": [
-        "beef",
-        "cayenne pepper",
-        "carrot"
+        "wine",
+        "tomato paste",
+        "worcestershire sauce"
       ],
       "connects_b": [
-        "bell pepper",
-        "rice",
+        "wine",
+        "tomatoes",
         "shrimp"
       ]
     },
@@ -75,41 +75,41 @@
       "name": "bay leaf",
       "score": 63.566971523539685,
       "connects_a": [
-        "beef",
-        "carrot",
-        "russet potatoes"
+        "wine",
+        "tomato paste",
+        "carrot"
       ],
       "connects_b": [
-        "cumin",
-        "chorizo",
-        "onion"
+        "wine",
+        "carrot",
+        "cumin"
       ]
     },
     {
       "name": "veal",
       "score": 60.16352877643147,
       "connects_a": [
-        "beef",
-        "milk",
-        "2"
+        "egg",
+        "wine",
+        "milk"
       ],
       "connects_b": [
-        "2",
-        "carrot",
-        "parsley"
+        "egg",
+        "wine",
+        "carrot"
       ]
     },
     {
       "name": "chorizo",
       "score": 60.1107346120163,
       "connects_a": [
-        "parsley",
-        "peas",
-        "cloves"
+        "wine",
+        "cloves",
+        "peas"
       ],
       "connects_b": [
-        "bell pepper",
-        "rice",
+        "wine",
+        "tomatoes",
         "olives"
       ]
     },
@@ -117,39 +117,39 @@
       "name": "ribs celery",
       "score": 56.40812188447363,
       "connects_a": [
-        "carrot",
-        "parsley",
+        "wine",
+        "tomato paste",
         "worcestershire sauce"
       ],
       "connects_b": [
-        "bell pepper",
+        "wine",
         "shrimp",
-        "onion"
+        "carrot"
       ]
     },
     {
       "name": "can tomatoes",
       "score": 56.32961085814641,
       "connects_a": [
-        "beef",
-        "parsley",
+        "wine",
+        "tomato paste",
         "worcestershire sauce"
       ],
       "connects_b": [
-        "coarsely",
-        "bell pepper",
-        "olives"
+        "wine",
+        "olives",
+        "cumin"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "cremini",
+      "name": "head fennel",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "arugula leaves",
+      "name": "cremini",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -159,8 +159,13 @@
       "strength": 1
     },
     {
-      "name": "head fennel",
+      "name": "arugula leaves",
       "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "head fennel",
+      "pairs_with": "cloves",
       "strength": 1
     },
     {
@@ -174,49 +179,39 @@
       "strength": 1
     },
     {
-      "name": "head fennel",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
       "name": "chocolate hazelnut spread",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "tomato concasse",
+      "name": "graham cracker crumbs",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "veal stock",
+      "name": "freshly nutmeg",
       "pairs_with": "butter",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "roasted tomatoes",
+      "name": "squid",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "eggplants",
+      "name": "chianti",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "some",
+      "name": "canned tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "grigio",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "arugula",
+      "name": "spaghetti",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -226,22 +221,27 @@
       "strength": 1
     },
     {
-      "name": "chorizo sausage",
+      "name": "risotto",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "romano",
+      "name": "anchovies",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "turkey sausage",
+      "name": "clam broth",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "for seasoning",
+      "name": "some",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pinch saffron",
       "pairs_with": "olive oil",
       "strength": 1
     }

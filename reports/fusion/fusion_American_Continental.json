@@ -5,56 +5,56 @@
       "name": "tomato paste",
       "score": 28.18067774378179,
       "connects_a": [
-        "bell pepper",
+        "carrot",
         "cumin",
-        "tomatoes"
+        "bell pepper"
       ],
       "connects_b": [
+        "oregano",
         "thyme",
-        "bell pepper",
-        "oregano"
+        "bell pepper"
       ]
     },
     {
       "name": "file powder",
       "score": 28.0568670571411,
       "connects_a": [
+        "vegetable oil",
         "bell pepper",
-        "purpose flour",
-        "tomatoes"
+        "onion"
       ],
       "connects_b": [
+        "onion",
         "thyme",
-        "bell pepper",
-        "leaves"
+        "bell pepper"
       ]
     },
     {
       "name": "garam masala",
       "score": 24.135669809762263,
       "connects_a": [
-        "cumin",
-        "tomatoes",
-        "potatoes"
+        "cinnamon",
+        "vegetable oil",
+        "cumin"
       ],
       "connects_b": [
+        "onion",
         "oil",
-        "potatoes",
-        "onion"
+        "potatoes"
       ]
     },
     {
       "name": "celery",
       "score": 24.059573824398846,
       "connects_a": [
+        "carrot",
         "bell pepper",
-        "tomatoes",
-        "carrot"
+        "parsley"
       ],
       "connects_b": [
+        "oregano",
         "thyme",
-        "bell pepper",
-        "oregano"
+        "bell pepper"
       ]
     },
     {
@@ -62,12 +62,12 @@
       "score": 24.053313981926955,
       "connects_a": [
         "optional",
-        "onion",
-        "carrot"
+        "carrot",
+        "cloves"
       ],
       "connects_b": [
         "oregano",
-        "onion",
+        "olive oil",
         "leaves"
       ]
     },
@@ -75,37 +75,37 @@
       "name": "ribs celery",
       "score": 21.153045706677613,
       "connects_a": [
-        "bell pepper",
-        "about",
-        "optional"
+        "optional",
+        "carrot",
+        "about"
       ],
       "connects_b": [
+        "onion",
         "thyme",
-        "bell pepper",
-        "onion"
+        "bell pepper"
       ]
     },
     {
       "name": "palm",
       "score": 21.080806414780156,
       "connects_a": [
-        "bell pepper",
         "cumin",
-        "onion"
+        "bell pepper",
+        "cloves"
       ],
       "connects_b": [
-        "bell pepper",
+        "onion",
         "olive oil",
-        "onion"
+        "bell pepper"
       ]
     },
     {
       "name": "bay leaf",
       "score": 20.179990959853868,
       "connects_a": [
+        "carrot",
         "cumin",
-        "tomatoes",
-        "carrot"
+        "parsley"
       ],
       "connects_b": [
         "oregano",
@@ -117,22 +117,22 @@
       "name": "confectioners",
       "score": 20.104317769012535,
       "connects_a": [
-        "milk",
-        "1",
-        "2"
+        "egg",
+        "more",
+        "milk"
       ],
       "connects_b": [
-        "almonds",
-        "cream"
+        "cream",
+        "almonds"
       ]
     },
     {
       "name": "can tomatoes",
       "score": 18.105946347261348,
       "connects_a": [
-        "bell pepper",
+        "optional",
         "cumin",
-        "optional"
+        "bell pepper"
       ],
       "connects_b": [
         "oregano",
@@ -143,47 +143,47 @@
   ],
   "novel_from_a": [
     {
-      "name": "radicchio",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "mussels",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "linguini",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "romano",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "for seasoning",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "morel mushrooms",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "roma",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pinenuts",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "salami",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "al dente",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "eggplants",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pecorino",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "parmigiano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "basil chiffonade",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "parma",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "by hand",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -195,22 +195,7 @@
   ],
   "novel_from_b": [
     {
-      "name": "flour all",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "ragi",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "sugar whole",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "carom",
+      "name": "seeds powder",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -225,7 +210,22 @@
       "strength": 1
     },
     {
-      "name": "seeds powder",
+      "name": "sugar whole",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "ragi",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "flour all",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "carom",
       "pairs_with": "flour",
       "strength": 1
     },

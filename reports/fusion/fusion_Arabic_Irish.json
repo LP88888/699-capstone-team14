@@ -5,97 +5,97 @@
       "name": "tomato paste",
       "score": 56.36135548756358,
       "connects_a": [
-        "cayenne",
-        "lamb",
-        "cumin"
+        "carrot",
+        "cumin",
+        "paprika"
       ],
       "connects_b": [
+        "carrot",
         "beef",
-        "thyme",
-        "carrot"
+        "cloves"
       ]
     },
     {
       "name": "garam masala",
       "score": 56.31656288944528,
       "connects_a": [
-        "cayenne",
-        "cumin",
-        "tomato"
+        "tomato paste",
+        "cinnamon",
+        "vegetable oil"
       ],
       "connects_b": [
+        "onion",
         "vegetable oil",
-        "garlic",
-        "potatoes"
+        "garlic"
       ]
     },
     {
       "name": "bay leaf",
       "score": 42.37798101569312,
       "connects_a": [
-        "cumin",
-        "tomato",
-        "carrot"
+        "tomato paste",
+        "carrot",
+        "cumin"
       ],
       "connects_b": [
+        "carrot",
         "beef",
-        "thyme",
-        "carrot"
+        "thyme"
       ]
     },
     {
       "name": "filling",
       "score": 40.06143930228706,
       "connects_a": [
+        "egg",
         "milk",
-        "flour",
-        "butter"
+        "cinnamon"
       ],
       "connects_b": [
+        "egg",
         "milk",
-        "purpose flour",
-        "flour"
+        "vanilla extract"
       ]
     },
     {
       "name": "vanilla extract",
       "score": 36.577615305880656,
       "connects_a": [
-        "butter",
-        "milk",
-        "egg"
+        "egg",
+        "cinnamon",
+        "milk"
       ],
       "connects_b": [
-        "coffee",
-        "milk",
-        "purpose flour"
+        "egg",
+        "raisins",
+        "buttermilk"
       ]
     },
     {
       "name": "confectioners",
       "score": 36.187771984222564,
       "connects_a": [
-        "butter",
-        "milk",
-        "egg"
+        "egg",
+        "cinnamon",
+        "milk"
       ],
       "connects_b": [
-        "milk",
-        "2",
-        "purpose flour"
+        "egg",
+        "more",
+        "milk"
       ]
     },
     {
       "name": "beef stock",
       "score": 36.13253723897358,
       "connects_a": [
-        "bread",
-        "flour",
-        "carrot"
+        "tomato paste",
+        "carrot",
+        "flour"
       ],
       "connects_b": [
+        "carrot",
         "beef",
-        "thyme",
         "flour"
       ]
     },
@@ -103,53 +103,53 @@
       "name": "yellow onions",
       "score": 36.04974024794739,
       "connects_a": [
-        "cayenne",
+        "tomato paste",
         "carrot",
-        "parsley"
+        "paprika"
       ],
       "connects_b": [
-        "2",
-        "thyme",
-        "carrot"
+        "carrot",
+        "kosher sea salt",
+        "2"
       ]
     },
     {
       "name": "veal",
       "score": 35.09539178625169,
       "connects_a": [
+        "egg",
         "milk",
-        "carrot",
-        "parsley"
+        "tomato paste"
       ],
       "connects_b": [
-        "beef",
+        "egg",
         "milk",
-        "2"
+        "carrot"
       ]
     },
     {
       "name": "celery",
       "score": 35.08687849391499,
       "connects_a": [
-        "cayenne",
+        "tomato paste",
         "carrot",
-        "parsley"
+        "paprika"
       ],
       "connects_b": [
-        "thyme",
         "carrot",
+        "thyme",
         "parsley"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "pizza",
+      "name": "cherry tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "cherry tomatoes",
+      "name": "pizza",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -164,7 +164,7 @@
       "strength": 1
     },
     {
-      "name": "garam masala",
+      "name": "lentil",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -179,7 +179,7 @@
       "strength": 1
     },
     {
-      "name": "lentil",
+      "name": "garam masala",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -196,17 +196,7 @@
   ],
   "novel_from_b": [
     {
-      "name": "sticks",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "room temp",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "!®",
+      "name": "and half",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -216,12 +206,17 @@
       "strength": 1
     },
     {
-      "name": "cake flour",
+      "name": "whole milk",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "believe",
+      "name": "cooking apples",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "!®",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -231,17 +226,22 @@
       "strength": 1
     },
     {
-      "name": "i",
+      "name": "almond flour",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "at",
+      "name": "room temp",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "cooking apples",
+      "name": "cold",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "veal stock",
       "pairs_with": "butter",
       "strength": 1
     }

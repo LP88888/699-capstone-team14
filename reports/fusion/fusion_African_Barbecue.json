@@ -5,171 +5,151 @@
       "name": "garam masala",
       "score": 154.87054794597452,
       "connects_a": [
-        "cumin seeds",
-        "cumin",
+        "ginger",
+        "tomato paste",
         "turmeric"
       ],
       "connects_b": [
-        "cumin",
-        "cayenne pepper",
-        "onion"
+        "ginger",
+        "vegetable oil",
+        "cumin"
       ]
     },
     {
       "name": "chiles",
       "score": 98.46772090440315,
       "connects_a": [
-        "cumin seeds",
-        "coarsely",
-        "cilantro leaves"
+        "ginger",
+        "roughly",
+        "vegetable oil"
       ],
       "connects_b": [
-        "cumin",
         "ginger",
-        "vegetable oil"
+        "vegetable oil",
+        "cumin"
       ]
     },
     {
       "name": "cumin",
       "score": 91.54643418955769,
       "connects_a": [
-        "cumin seeds",
-        "cilantro leaves",
+        "tomato paste",
+        "turmeric",
         "bell pepper"
       ],
       "connects_b": [
+        "paprika",
         "bell pepper",
-        "cayenne pepper",
-        "onion powder"
+        "garlic powder"
       ]
     },
     {
       "name": "tomato paste",
       "score": 90.58074989072718,
       "connects_a": [
-        "bell pepper",
+        "carrot",
         "cumin",
-        "turmeric"
+        "paprika"
       ],
       "connects_b": [
-        "bell pepper",
+        "worcestershire sauce",
         "cumin",
-        "cayenne pepper"
+        "barbecue sauce"
       ]
     },
     {
       "name": "celery",
       "score": 80.19857941466283,
       "connects_a": [
-        "bell pepper",
-        "onion",
-        "tomatoes"
+        "tomato paste",
+        "carrot",
+        "paprika"
       ],
       "connects_b": [
-        "bell pepper",
-        "cayenne pepper",
-        "onion powder"
+        "onion powder",
+        "worcestershire sauce",
+        "bell pepper"
       ]
     },
     {
       "name": "chili powder",
       "score": 72.83794529057336,
       "connects_a": [
-        "cumin seeds",
-        "cumin",
-        "turmeric"
+        "dhania",
+        "turmeric",
+        "cumin"
       ],
       "connects_b": [
+        "worcestershire sauce",
         "cumin",
-        "cayenne pepper",
-        "ketchup"
+        "paprika"
       ]
     },
     {
       "name": "turmeric",
       "score": 72.13957136534297,
       "connects_a": [
-        "cumin seeds",
-        "cilantro leaves",
-        "couscous"
+        "ginger",
+        "tomato paste",
+        "vegetable oil"
       ],
       "connects_b": [
-        "cumin",
-        "tomatoes",
-        "ginger"
+        "ginger",
+        "vegetable oil",
+        "cumin"
       ]
     },
     {
       "name": "chile",
       "score": 70.30181556339134,
       "connects_a": [
-        "cumin seeds",
-        "coarsely",
-        "cilantro leaves"
+        "roughly",
+        "vegetable oil",
+        "cumin"
       ],
       "connects_b": [
-        "soy sauce",
+        "vegetable oil",
         "cumin",
-        "grain sea salt"
+        "soy sauce"
       ]
     },
     {
       "name": "coriander",
       "score": 70.1809173254804,
       "connects_a": [
-        "cumin seeds",
-        "cilantro leaves",
-        "couscous"
+        "ginger",
+        "turmeric",
+        "cinnamon"
       ],
       "connects_b": [
+        "ginger",
         "cumin",
-        "cayenne pepper",
-        "garlic powder"
+        "paprika"
       ]
     },
     {
       "name": "andouille sausage",
       "score": 70.09265312569245,
       "connects_a": [
+        "tomato paste",
         "bell pepper",
-        "onion",
-        "tomatoes"
+        "chicken stock"
       ],
       "connects_b": [
-        "bell pepper",
-        "cayenne pepper",
-        "onion powder"
+        "onion powder",
+        "worcestershire sauce",
+        "bell pepper"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "beefsteak tomatoes",
+      "name": "olives",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "kalamata olives",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "montreal steak",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "eggplants",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "canned tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "handful pine nuts",
+      "name": "couscous",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -179,7 +159,12 @@
       "strength": 1
     },
     {
-      "name": "olives",
+      "name": "kalamata olives",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "handful pine nuts",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -189,17 +174,27 @@
       "strength": 1
     },
     {
+      "name": "brussels sprouts",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "montreal steak",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "mussels",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "beefsteak tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     }
   ],
   "novel_from_b": [
-    {
-      "name": "sandwich rolls",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
     {
       "name": "[extra",
       "pairs_with": "olive oil",
@@ -211,7 +206,12 @@
       "strength": 1
     },
     {
-      "name": "chipotle chile",
+      "name": "sandwich rolls",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "oregano leaves",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -221,12 +221,12 @@
       "strength": 1
     },
     {
-      "name": "oregano leaves",
+      "name": "chipotle chile",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "nutmeg",
+      "name": "gruyere cheese",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -236,7 +236,7 @@
       "strength": 1
     },
     {
-      "name": "gruyere cheese",
+      "name": "nutmeg",
       "pairs_with": "butter",
       "strength": 1
     },

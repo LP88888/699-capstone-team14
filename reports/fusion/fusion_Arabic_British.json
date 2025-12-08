@@ -5,13 +5,13 @@
       "name": "garam masala",
       "score": 98.55398505652924,
       "connects_a": [
-        "cayenne",
-        "cumin",
-        "tomato"
+        "tomato paste",
+        "cinnamon",
+        "vegetable oil"
       ],
       "connects_b": [
-        "cayenne pepper",
-        "potatoes",
+        "tomato paste",
+        "vegetable oil",
         "peas"
       ]
     },
@@ -19,13 +19,13 @@
       "name": "tomato paste",
       "score": 63.406524923509025,
       "connects_a": [
-        "cayenne",
-        "lamb",
-        "cumin"
+        "carrot",
+        "cumin",
+        "paprika"
       ],
       "connects_b": [
-        "beef",
-        "cayenne pepper",
+        "wine",
+        "worcestershire sauce",
         "carrot"
       ]
     },
@@ -33,133 +33,133 @@
       "name": "yellow onions",
       "score": 60.082900413245646,
       "connects_a": [
-        "cayenne",
+        "tomato paste",
         "carrot",
-        "parsley"
+        "paprika"
       ],
       "connects_b": [
-        "cayenne pepper",
-        "2",
-        "beaten"
+        "wine",
+        "tomato paste",
+        "worcestershire sauce"
       ]
     },
     {
       "name": "beef stock",
       "score": 54.198805858460375,
       "connects_a": [
-        "bread",
-        "flour",
-        "carrot"
+        "tomato paste",
+        "carrot",
+        "flour"
       ],
       "connects_b": [
-        "mushrooms",
-        "beef",
-        "flour"
+        "wine",
+        "worcestershire sauce",
+        "tomato paste"
       ]
     },
     {
       "name": "veal",
       "score": 50.13627398035956,
       "connects_a": [
+        "egg",
         "milk",
-        "carrot",
-        "parsley"
+        "tomato paste"
       ],
       "connects_b": [
-        "beef",
-        "milk",
-        "2"
+        "egg",
+        "wine",
+        "milk"
       ]
     },
     {
       "name": "bay leaf",
       "score": 49.440977851641975,
       "connects_a": [
-        "cumin",
-        "tomato",
-        "carrot"
+        "tomato paste",
+        "carrot",
+        "cumin"
       ],
       "connects_b": [
-        "beef",
-        "carrot",
-        "russet potatoes"
+        "wine",
+        "tomato paste",
+        "carrot"
       ]
     },
     {
       "name": "celery",
       "score": 49.12162989148098,
       "connects_a": [
-        "cayenne",
+        "tomato paste",
         "carrot",
-        "parsley"
+        "paprika"
       ],
       "connects_b": [
-        "cayenne pepper",
-        "carrot",
-        "parsley"
+        "tomato paste",
+        "worcestershire sauce",
+        "carrot"
       ]
     },
     {
       "name": "confectioners",
       "score": 44.22949909182758,
       "connects_a": [
-        "butter",
-        "milk",
-        "egg"
+        "egg",
+        "cinnamon",
+        "milk"
       ],
       "connects_b": [
-        "milk",
-        "1",
-        "2"
+        "egg",
+        "nutmeg",
+        "more"
       ]
     },
     {
       "name": "ice water",
       "score": 40.20390481832014,
       "connects_a": [
-        "butter",
+        "egg",
         "flour",
-        "egg"
+        "cinnamon"
       ],
       "connects_b": [
-        "1",
-        "purpose flour",
-        "beaten"
+        "egg",
+        "nutmeg",
+        "more"
       ]
     },
     {
       "name": "filling",
       "score": 40.06143930228706,
       "connects_a": [
+        "egg",
         "milk",
-        "flour",
-        "butter"
+        "cinnamon"
       ],
       "connects_b": [
+        "egg",
         "milk",
-        "purpose flour",
-        "flour"
+        "vanilla extract"
       ]
     }
   ],
   "novel_from_a": [
-    {
-      "name": "pizza",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
     {
       "name": "cherry tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "pine",
-      "pairs_with": "cloves",
+      "name": "pizza",
+      "pairs_with": "olive oil",
       "strength": 1
     },
     {
       "name": "sirloin",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "pine",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -169,7 +169,7 @@
       "strength": 1
     },
     {
-      "name": "garam masala",
+      "name": "lentil",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -179,7 +179,7 @@
       "strength": 1
     },
     {
-      "name": "lentil",
+      "name": "garam masala",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -189,39 +189,14 @@
       "strength": 1
     },
     {
-      "name": "pie crust",
+      "name": "applesauce",
       "pairs_with": "egg",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "sticks",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "tomato concasse",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "room temp",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "confectioners",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "freshly nutmeg",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "lobster stock",
+      "name": "and half",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -231,17 +206,42 @@
       "strength": 1
     },
     {
+      "name": "confectioners",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "whole milk",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "freshly nutmeg",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "room temp",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "cold",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "veal stock",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
       "name": "chocolate hazelnut spread",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "at",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "heavy cream",
+      "name": "graham cracker crumbs",
       "pairs_with": "butter",
       "strength": 1
     }

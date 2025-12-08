@@ -15,6 +15,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.cluster import KMeans
 from sklearn.metrics import classification_report, f1_score, silhouette_score, adjusted_rand_score
+from sklearn.utils import check_random_state
 
 from ..core import PipelineContext, StageResult
 from ..utils import stage_logger
@@ -32,6 +33,41 @@ def extract_top_features(model, vectorizer, class_labels, top_n=20):
                 "rank": rank + 1,
                 "feature": feature_names[idx],
                 "weight": float(coefs[idx])
+            })
+    return pd.DataFrame(rows)
+
+def _svd_variance_frame(svd: TruncatedSVD) -> pd.DataFrame:
+    """Return per-component and cumulative explained variance."""
+    var = np.asarray(svd.explained_variance_ratio_, dtype=float)
+    return pd.DataFrame({
+        "component": np.arange(1, len(var) + 1),
+        "explained_variance_ratio": var,
+        "cumulative_explained_variance": np.cumsum(var),
+    })
+
+def _svd_top_terms(svd: TruncatedSVD, vectorizer: TfidfVectorizer, *, top_n: int = 15) -> pd.DataFrame:
+    """Return top positive/negative terms per component for interpretability."""
+    feature_names = vectorizer.get_feature_names_out()
+    rows = []
+    for comp_idx, comp in enumerate(svd.components_):
+        order = np.argsort(comp)
+        top_pos = order[-top_n:][::-1]
+        top_neg = order[:top_n]
+        for rank, idx in enumerate(top_pos, 1):
+            rows.append({
+                "component": comp_idx + 1,
+                "direction": "positive",
+                "rank": rank,
+                "term": feature_names[idx],
+                "weight": float(comp[idx]),
+            })
+        for rank, idx in enumerate(top_neg, 1):
+            rows.append({
+                "component": comp_idx + 1,
+                "direction": "negative",
+                "rank": rank,
+                "term": feature_names[idx],
+                "weight": float(comp[idx]),
             })
     return pd.DataFrame(rows)
 
@@ -63,6 +99,7 @@ def run(context: PipelineContext, *, force: bool = False) -> StageResult:
     min_label_freq = int(params.get("min_label_freq", 10))
     max_label_samples = params.get("max_label_samples")
     parent_map_path = params.get("parent_map_path")
+    rng = check_random_state(42)
 
     corrections = {
         "mediteranean": "Mediterranean",
@@ -184,11 +221,32 @@ def run(context: PipelineContext, *, force: bool = False) -> StageResult:
     # Optional dimensionality reduction (sparse-friendly)
     use_svd = bool(params.get("use_svd", False))
     svd_components = int(params.get("svd_components", 300))
+    svd_top_terms_n = int(params.get("svd_top_terms", 15))
+    svd_scatter_samples = int(params.get("svd_scatter_samples", 5000))
     if use_svd:
         logger.info("Applying TruncatedSVD to %s components...", svd_components)
         svd = TruncatedSVD(n_components=svd_components, random_state=42)
         X_features = svd.fit_transform(X_tfidf)
         logger.info("TruncatedSVD explained variance (approx): %.4f", float(svd.explained_variance_ratio_.sum()))
+        # Persist variance curve + component loadings for downstream visuals
+        var_path = out_dir / "svd_variance.csv"
+        _svd_variance_frame(svd).to_csv(var_path, index=False)
+        terms_path = out_dir / "svd_components_top_terms.csv"
+        _svd_top_terms(svd, tfidf, top_n=svd_top_terms_n).to_csv(terms_path, index=False)
+        # Sample projections for interactive scatter plot
+        sample_n = min(svd_scatter_samples, X_features.shape[0])
+        proj_path = out_dir / "svd_projection_sample.csv"
+        if sample_n > 0:
+            sample_idx = rng.choice(X_features.shape[0], sample_n, replace=False)
+            svd_proj = {
+                "svd_1": X_features[sample_idx, 0],
+                "svd_2": X_features[sample_idx, 1],
+            }
+            if svd_components >= 3:
+                svd_proj["svd_3"] = X_features[sample_idx, 2]
+            svd_proj[cuisine_col] = y.iloc[sample_idx].to_numpy()
+            pd.DataFrame(svd_proj).to_csv(proj_path, index=False)
+        logger.info("Saved SVD variance, component loadings, and sampled projections to %s", out_dir)
     else:
         X_features = X_tfidf
     
@@ -277,8 +335,16 @@ def run(context: PipelineContext, *, force: bool = False) -> StageResult:
     })
     df_clusters.to_csv(out_dir / "cluster_assignments.csv", index=False)
 
-    return StageResult(name="analysis_baseline", status="success", outputs={
+    outputs = {
         "report": str(out_dir / "classification_report_logreg.csv"),
         "preds": str(out_dir / "y_pred_logreg.csv"),
-        "clusters": str(out_dir / "cluster_assignments.csv")
-    })
+        "clusters": str(out_dir / "cluster_assignments.csv"),
+    }
+    if use_svd:
+        outputs.update({
+            "svd_variance": str(var_path),
+            "svd_components": str(terms_path),
+            "svd_projection_sample": str(proj_path),
+        })
+
+    return StageResult(name="analysis_baseline", status="success", outputs=outputs)

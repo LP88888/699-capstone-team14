@@ -5,125 +5,125 @@
       "name": "chile",
       "score": 170.73298065395042,
       "connects_a": [
-        "cumin seeds",
+        "vegetable oil",
         "cumin",
-        "turmeric"
+        "garam masala"
       ],
       "connects_b": [
-        "cilantro leaves",
-        "noodles",
-        "soy sauce"
+        "chiles",
+        "canola oil",
+        "vegetable oil"
       ]
     },
     {
       "name": "chiles",
       "score": 154.73498999263353,
       "connects_a": [
-        "cumin seeds",
-        "cumin",
-        "turmeric"
+        "ginger",
+        "vegetable oil",
+        "cumin"
       ],
       "connects_b": [
-        "cilantro leaves",
-        "coconut milk",
-        "fish sauce"
+        "ginger",
+        "vegetable oil",
+        "peanut oil"
       ]
     },
     {
       "name": "cilantro",
       "score": 140.8116712749521,
       "connects_a": [
-        "cumin seeds",
-        "chili powder",
-        "mango"
+        "ginger",
+        "mango",
+        "cumin"
       ],
       "connects_b": [
-        "scallions",
-        "coconut milk",
-        "fish sauce"
+        "chiles",
+        "ginger",
+        "peanuts"
       ]
     },
     {
       "name": "ginger",
       "score": 137.47815961383438,
       "connects_a": [
-        "cumin seeds",
-        "turmeric",
-        "mustard seeds"
+        "cardamom",
+        "garam masala",
+        "yogurt"
       ],
       "connects_b": [
-        "scallions",
-        "coconut milk",
-        "noodles"
+        "chiles",
+        "canola oil",
+        "peanuts"
       ]
     },
     {
       "name": "garam masala",
       "score": 136.76879558865284,
       "connects_a": [
-        "cumin seeds",
-        "chili powder",
-        "cumin"
+        "ginger",
+        "cardamom",
+        "potatoes"
       ],
       "connects_b": [
-        "coconut milk",
-        "onion",
-        "ginger"
+        "chiles",
+        "ginger",
+        "vegetable oil"
       ]
     },
     {
       "name": "coconut milk",
       "score": 135.36220057938067,
       "connects_a": [
-        "cumin seeds",
+        "ginger",
         "mango",
         "cumin"
       ],
       "connects_b": [
-        "cilantro leaves",
-        "shrimp",
-        "fish sauce"
+        "chiles",
+        "ginger",
+        "shrimp"
       ]
     },
     {
       "name": "curry powder",
       "score": 100.04786474924762,
       "connects_a": [
-        "cumin seeds",
-        "cumin",
-        "turmeric"
+        "ginger",
+        "potatoes",
+        "cumin"
       ],
       "connects_b": [
-        "cilantro leaves",
-        "coconut milk",
-        "shrimp"
+        "ginger",
+        "shrimp",
+        "carrot"
       ]
     },
     {
       "name": "jalapeno peppers",
       "score": 90.08803964077244,
       "connects_a": [
-        "cumin seeds",
-        "chili powder",
-        "mango"
+        "mango",
+        "cumin",
+        "garam masala"
       ],
       "connects_b": [
-        "scallions",
-        "cilantro leaves",
-        "bell pepper"
+        "shrimp",
+        "peanut oil",
+        "fish sauce"
       ]
     },
     {
       "name": "chili pepper",
       "score": 90.0340977147443,
       "connects_a": [
-        "cumin seeds",
-        "chili powder",
-        "turmeric"
+        "ginger",
+        "garam masala",
+        "coriander"
       ],
       "connects_b": [
-        "coconut milk",
-        "soy sauce",
+        "ginger",
+        "peanut oil",
         "fish sauce"
       ]
     },
@@ -131,25 +131,50 @@
       "name": "turmeric",
       "score": 84.16283325956681,
       "connects_a": [
-        "cumin seeds",
-        "chili powder",
-        "cumin"
+        "ginger",
+        "cardamom",
+        "vegetable oil"
       ],
       "connects_b": [
-        "cilantro leaves",
-        "coconut milk",
-        "ginger"
+        "chiles",
+        "ginger",
+        "vegetable oil"
       ]
     }
   ],
   "novel_from_a": [
+    {
+      "name": "canned tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "finely oregano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pinch saffron",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cans chickpeas",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "petite",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
     {
       "name": "[extra",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "finely oregano",
+      "name": "lamb shanks",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -164,31 +189,6 @@
       "strength": 1
     },
     {
-      "name": "petite",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cans chickpeas",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "canned tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pinch saffron",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "lamb shanks",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "chipotle puree",
       "pairs_with": "olive oil",
       "strength": 1
@@ -196,37 +196,7 @@
   ],
   "novel_from_b": [
     {
-      "name": "to each",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "cover",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "reggiano",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "or finely",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "sirloin",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "mussels",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "tomatillos",
+      "name": "depending",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -236,12 +206,42 @@
       "strength": 1
     },
     {
-      "name": "littleneck clams",
+      "name": "reggiano",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "parmigiano",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "sirloin",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "tomatillos",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
       "name": "porcini mushrooms",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "littleneck clams",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "mussels",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "racks",
       "pairs_with": "cloves",
       "strength": 1
     }
