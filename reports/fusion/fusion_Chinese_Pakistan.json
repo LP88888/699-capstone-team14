@@ -5,56 +5,56 @@
       "name": "ginger",
       "score": 293.2867405095134,
       "connects_a": [
+        "shaoxing",
         "oyster sauce",
-        "canola oil",
-        "pork"
+        "soy sauce"
       ],
       "connects_b": [
-        "basmati rice",
-        "tumeric",
-        "cardamom"
+        "garam masala",
+        "turmeric",
+        "mustard seeds"
       ]
     },
     {
       "name": "garam masala",
       "score": 162.91577121589526,
       "connects_a": [
-        "ginger",
+        "garlic",
         "vegetable oil",
         "chicken breasts"
       ],
       "connects_b": [
-        "coriander",
-        "peas",
-        "chili powder"
+        "cinnamon sticks",
+        "tomatoes",
+        "cardamom"
       ]
     },
     {
       "name": "chili pepper",
       "score": 143.05417748009373,
       "connects_a": [
-        "ginger",
-        "rice vinegar",
-        "shaoxing"
+        "shaoxing",
+        "soy sauce",
+        "corn starch"
       ],
       "connects_b": [
-        "tumeric",
-        "ginger",
-        "garam masala"
+        "garam masala",
+        "turmeric",
+        "mustard seeds"
       ]
     },
     {
       "name": "cilantro",
       "score": 98.56816989246647,
       "connects_a": [
-        "ginger",
-        "rice vinegar",
-        "sodium soy sauce"
+        "scallions",
+        "sodium soy sauce",
+        "chicken breasts"
       ],
       "connects_b": [
-        "basmati rice",
-        "ginger",
-        "tumeric"
+        "garam masala",
+        "turmeric",
+        "mustard seeds"
       ]
     },
     {
@@ -62,27 +62,27 @@
       "score": 90.88485614897215,
       "connects_a": [
         "oyster sauce",
-        "canola oil",
-        "pork"
+        "soy sauce",
+        "scallions"
       ],
       "connects_b": [
-        "ginger",
+        "curry powder",
         "vegetable oil",
-        "curry powder"
+        "coconut milk"
       ]
     },
     {
       "name": "tumeric",
       "score": 90.25476534447176,
       "connects_a": [
-        "ginger",
+        "garlic",
         "chicken breasts",
-        "onion"
+        "ginger"
       ],
       "connects_b": [
-        "ginger",
-        "cardamom",
-        "cinnamon"
+        "garam masala",
+        "mustard seeds",
+        "cayenne pepper"
       ]
     },
     {
@@ -90,13 +90,13 @@
       "score": 88.37942527969199,
       "connects_a": [
         "oyster sauce",
-        "canola oil",
-        "rice vinegar"
+        "soy sauce",
+        "vegetable oil"
       ],
       "connects_b": [
-        "vegetable oil",
-        "cumin",
-        "garam masala"
+        "garam masala",
+        "turmeric",
+        "mustard seeds"
       ]
     },
     {
@@ -104,82 +104,47 @@
       "score": 88.24447662433012,
       "connects_a": [
         "oyster sauce",
-        "chicken broth",
-        "rice vinegar"
+        "soy sauce",
+        "scallions"
       ],
       "connects_b": [
-        "vegetable oil",
-        "curry powder",
-        "garam masala"
+        "garam masala",
+        "turmeric",
+        "curry powder"
       ]
     },
     {
       "name": "oyster sauce",
       "score": 88.05657690747782,
       "connects_a": [
-        "shrimp",
-        "mushrooms",
-        "chicken broth"
+        "shaoxing",
+        "scallions",
+        "sodium soy sauce"
       ],
       "connects_b": [
         "oil",
-        "vegetable oil",
-        "ginger"
+        "garlic",
+        "vegetable oil"
       ]
     },
     {
       "name": "coriander powder",
       "score": 80.15621523534114,
       "connects_a": [
-        "ginger",
-        "onion",
-        "oil"
+        "leaves",
+        "garlic",
+        "ginger"
       ],
       "connects_b": [
-        "ginger",
-        "tumeric",
-        "cinnamon"
+        "garam masala",
+        "turmeric",
+        "tomatoes"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "squid",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "spaghetti",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "anchovies",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "spun",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "fennel bulb",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "heads garlic",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "palm",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "radicchio",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -189,7 +154,42 @@
       "strength": 1
     },
     {
+      "name": "spun",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "baby arugula",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cherry tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "anchovies",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "palm",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pasta",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "heads garlic",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "fennel bulb",
       "pairs_with": "olive oil",
       "strength": 1
     }
@@ -201,7 +201,7 @@
       "strength": 1
     },
     {
-      "name": "lamb shanks",
+      "name": "saffron threads",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -211,22 +211,27 @@
       "strength": 1
     },
     {
-      "name": "saffron threads",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
       "name": "cardamom pods",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "paneer",
+      "name": "lamb shanks",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "kasuri methi",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "lamb shanks",
+      "name": "ginger paste",
+      "pairs_with": "onion",
+      "strength": 1
+    },
+    {
+      "name": "paneer",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -236,12 +241,7 @@
       "strength": 1
     },
     {
-      "name": "garam masala",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "okra",
+      "name": "kidney beans",
       "pairs_with": "onion",
       "strength": 1
     }

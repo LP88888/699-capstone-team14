@@ -5,23 +5,23 @@
       "name": "mango",
       "score": 42.29503353697467,
       "connects_a": [
-        "coconut milk",
-        "orange juice",
-        "cilantro"
+        "pineapple",
+        "lime juice",
+        "lime"
       ],
       "connects_b": [
-        "dhania",
-        "wheat",
-        "coconut"
+        "seeds",
+        "fenugreek",
+        "wheat"
       ]
     },
     {
       "name": "garam masala",
       "score": 40.22611634960377,
       "connects_a": [
-        "ginger",
-        "cinnamon",
-        "vegetable oil"
+        "garlic",
+        "vegetable oil",
+        "cinnamon"
       ],
       "connects_b": [
         "turmeric",
@@ -34,40 +34,40 @@
       "score": 36.538761638601684,
       "connects_a": [
         "cinnamon",
-        "cumin",
-        "ginger"
+        "ginger",
+        "allspice"
       ],
       "connects_b": [
-        "dhania",
-        "chili powder",
-        "peas"
+        "seeds",
+        "turmeric",
+        "chili powder"
       ]
     },
     {
       "name": "mustard seeds",
       "score": 36.028038362652545,
       "connects_a": [
-        "ginger",
         "vegetable oil",
-        "cumin"
+        "coconut milk",
+        "allspice"
       ],
       "connects_b": [
         "turmeric",
-        "coconut",
-        "chili powder"
+        "chili powder",
+        "peas"
       ]
     },
     {
       "name": "peanuts",
       "score": 35.3733945604355,
       "connects_a": [
-        "ginger",
-        "coconut milk",
+        "scallions",
+        "lime juice",
         "cilantro leaves"
       ],
       "connects_b": [
-        "dhania",
         "rai",
+        "gram",
         "coconut"
       ]
     },
@@ -75,81 +75,81 @@
       "name": "coconut milk",
       "score": 32.08585495214949,
       "connects_a": [
-        "ginger",
-        "cumin",
-        "cilantro leaves"
+        "rum",
+        "pineapple",
+        "lime juice"
       ],
       "connects_b": [
-        "coconut",
-        "mango",
-        "peanuts"
+        "peanuts",
+        "turmeric",
+        "mango"
       ]
     },
     {
       "name": "cumin seeds",
       "score": 30.03701535588108,
       "connects_a": [
-        "ginger",
-        "cumin",
-        "coconut milk"
+        "cilantro leaves",
+        "coconut milk",
+        "cumin"
       ],
       "connects_b": [
         "turmeric",
-        "coconut",
-        "chili powder"
+        "chili powder",
+        "peas"
       ]
     },
     {
       "name": "cilantro",
       "score": 28.16233425499042,
       "connects_a": [
-        "ginger",
-        "plantains",
-        "cumin"
+        "scallions",
+        "lime juice",
+        "lime"
       ],
       "connects_b": [
         "chili powder",
-        "mango",
-        "peanuts"
+        "peanuts",
+        "turmeric"
       ]
     },
     {
       "name": "coriander seeds",
       "score": 28.039383686518978,
       "connects_a": [
-        "honey",
-        "ginger",
-        "cinnamon"
+        "cilantro leaves",
+        "cinnamon",
+        "kosher sea salt"
       ],
       "connects_b": [
+        "chili powder",
         "oil",
-        "coconut",
-        "chili powder"
+        "turmeric"
       ]
     },
     {
       "name": "lime",
       "score": 27.070337917838604,
       "connects_a": [
-        "canola oil",
-        "cumin",
-        "coconut milk"
+        "rum",
+        "pineapple",
+        "scallions"
       ],
       "connects_b": [
-        "coconut",
+        "peanuts",
         "mango",
-        "peanuts"
+        "coconut"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "fruit",
+      "name": "baby",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "baby",
+      "name": "fruit",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -159,17 +159,22 @@
       "strength": 1
     },
     {
-      "name": "shortening",
+      "name": "cod",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "vanilla",
+      "name": "beef stock",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "white sugar",
+      "name": "cornmeal",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "buttermilk",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -179,17 +184,12 @@
       "strength": 1
     },
     {
-      "name": "semolina flour",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "cod",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
       "name": "yeast",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "white sugar",
       "pairs_with": "flour",
       "strength": 1
     }
@@ -211,17 +211,17 @@
       "strength": 1
     },
     {
+      "name": "coriander powder",
+      "pairs_with": "ginger",
+      "strength": 1
+    },
+    {
       "name": "chili pepper",
       "pairs_with": "ginger",
       "strength": 1
     },
     {
       "name": "spring onions",
-      "pairs_with": "ginger",
-      "strength": 1
-    },
-    {
-      "name": "coriander powder",
       "pairs_with": "ginger",
       "strength": 1
     },
@@ -236,12 +236,12 @@
       "strength": 1
     },
     {
-      "name": "maida sooji",
+      "name": "wheat",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "finger",
+      "name": "demerara",
       "pairs_with": "flour",
       "strength": 1
     }

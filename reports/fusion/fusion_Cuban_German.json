@@ -5,13 +5,13 @@
       "name": "tomato paste",
       "score": 63.406524923509025,
       "connects_a": [
-        "wine",
-        "pork",
-        "bay leaf"
+        "bell pepper",
+        "cloves",
+        "tomatoes"
       ],
       "connects_b": [
-        "wine",
-        "bay leaf",
+        "parsley",
+        "cloves",
         "carrot"
       ]
     },
@@ -19,13 +19,13 @@
       "name": "confectioners",
       "score": 52.2712261994326,
       "connects_a": [
-        "egg",
         "rum",
-        "butter"
+        "butter",
+        "egg"
       ],
       "connects_b": [
-        "egg",
-        "nutmeg",
+        "almonds",
+        "butter",
         "milk"
       ]
     },
@@ -33,13 +33,13 @@
       "name": "garam masala",
       "score": 49.27699252826462,
       "connects_a": [
-        "bay leaf",
-        "vegetable oil",
-        "cumin"
+        "tomatoes",
+        "garlic",
+        "vegetable oil"
       ],
       "connects_b": [
-        "cinnamon",
-        "bay leaf",
+        "lemon juice",
+        "garlic",
         "vegetable oil"
       ]
     },
@@ -47,13 +47,13 @@
       "name": "cabbage",
       "score": 48.186710710297106,
       "connects_a": [
-        "canola oil",
-        "pork",
-        "mayonnaise"
+        "mustard",
+        "lime juice",
+        "wine vinegar"
       ],
       "connects_b": [
-        "apples",
-        "cider vinegar",
+        "wine vinegar",
+        "bacon",
         "carrot"
       ]
     },
@@ -61,13 +61,13 @@
       "name": "celery",
       "score": 42.10425419269799,
       "connects_a": [
-        "tomatoes",
-        "bay leaf",
-        "bell pepper"
+        "rice",
+        "bell pepper",
+        "tomatoes"
       ],
       "connects_b": [
-        "bay leaf",
-        "carrot",
+        "parsley",
+        "garlic",
         "bacon"
       ]
     },
@@ -75,42 +75,42 @@
       "name": "can tomatoes",
       "score": 40.23543632724744,
       "connects_a": [
-        "wine",
-        "olives",
-        "bay leaf"
+        "bell pepper",
+        "cloves",
+        "olives"
       ],
       "connects_b": [
-        "wine",
-        "bay leaf",
-        "cloves"
+        "parsley",
+        "cloves",
+        "wine"
       ]
     },
     {
       "name": "chorizo",
       "score": 40.073823074677534,
       "connects_a": [
-        "wine",
-        "tomatoes",
-        "olives"
+        "rice",
+        "bell pepper",
+        "tomatoes"
       ],
       "connects_b": [
-        "wine",
-        "bay leaf",
-        "cloves"
+        "parsley",
+        "olive oil",
+        "wine"
       ]
     },
     {
       "name": "vanilla extract",
       "score": 36.577615305880656,
       "connects_a": [
-        "egg",
         "rum",
-        "butter"
+        "butter",
+        "egg"
       ],
       "connects_b": [
-        "egg",
-        "nutmeg",
-        "apples"
+        "almonds",
+        "butter",
+        "milk"
       ]
     },
     {
@@ -118,33 +118,38 @@
       "score": 36.028358761172036,
       "connects_a": [
         "wine",
-        "bay leaf",
-        "cumin"
+        "onion",
+        "oregano"
       ],
       "connects_b": [
-        "wine",
-        "bay leaf",
-        "carrot"
+        "parsley",
+        "carrot",
+        "onion"
       ]
     },
     {
       "name": "allspice",
       "score": 35.15593918542888,
       "connects_a": [
-        "bay leaf",
-        "cumin",
-        "cloves"
+        "rum",
+        "mustard",
+        "bay leaf"
       ],
       "connects_b": [
-        "nutmeg",
         "cinnamon",
-        "cider vinegar"
+        "cider vinegar",
+        "cloves"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "olives",
+      "name": "oregano leaves",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "chipotle puree",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -154,42 +159,37 @@
       "strength": 1
     },
     {
-      "name": "crusty bread",
+      "name": "cubanelle peppers",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "chorizo sausage",
+      "name": "mussels",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "hearts",
+      "name": "crusty rolls",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "[extra",
+      "name": "beefsteak tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "handful pine nuts",
+      "name": "plum tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "oregano leaves",
+      "name": "cherry tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "finely oregano",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "sandwich rolls",
+      "name": "arugula",
       "pairs_with": "olive oil",
       "strength": 1
     }
@@ -201,37 +201,22 @@
       "strength": 1
     },
     {
-      "name": "ribs celery",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
       "name": "veal",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "muscovado sugar",
+      "name": "ribs celery",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "graham cracker crumbs",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "percent milk",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "phyllo dough",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "cooking apples",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "corn syrup",
+      "name": "granny smith apples",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -241,7 +226,22 @@
       "strength": 1
     },
     {
-      "name": "raspberry jam",
+      "name": "phyllo dough",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "filling",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "dutch process",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "believe",
       "pairs_with": "butter",
       "strength": 1
     }

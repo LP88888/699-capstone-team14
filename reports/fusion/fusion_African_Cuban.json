@@ -5,56 +5,56 @@
       "name": "cumin",
       "score": 122.06191225274358,
       "connects_a": [
-        "tomato paste",
+        "chicken",
         "turmeric",
         "bell pepper"
       ],
       "connects_b": [
-        "dill pickles",
-        "pork shoulder",
-        "bay leaf"
+        "beans",
+        "bell pepper",
+        "dill pickles"
       ]
     },
     {
       "name": "garam masala",
       "score": 98.55398505652924,
       "connects_a": [
-        "ginger",
-        "tomato paste",
+        "lemon juice",
+        "chicken",
         "turmeric"
       ],
       "connects_b": [
-        "bay leaf",
-        "vegetable oil",
-        "cumin"
+        "tomatoes",
+        "garlic",
+        "vegetable oil"
       ]
     },
     {
       "name": "chiles",
       "score": 84.40090363234556,
       "connects_a": [
-        "ginger",
         "roughly",
-        "vegetable oil"
+        "turmeric",
+        "cloves"
       ],
       "connects_b": [
+        "lime juice",
         "vegetable oil",
-        "cumin",
-        "cloves"
+        "lime"
       ]
     },
     {
       "name": "tomato paste",
       "score": 81.52267490165445,
       "connects_a": [
-        "carrot",
-        "cumin",
-        "paprika"
+        "parsley",
+        "turmeric",
+        "bell pepper"
       ],
       "connects_b": [
-        "wine",
-        "pork",
-        "bay leaf"
+        "bell pepper",
+        "cloves",
+        "tomatoes"
       ]
     },
     {
@@ -62,26 +62,26 @@
       "score": 72.25275400989682,
       "connects_a": [
         "roughly",
-        "vegetable oil",
-        "cumin"
+        "tomatoes",
+        "cilantro leaves"
       ],
       "connects_b": [
-        "canola oil",
-        "vegetable oil",
-        "cumin"
+        "tomatoes",
+        "lime juice",
+        "vegetable oil"
       ]
     },
     {
       "name": "jalapeno peppers",
       "score": 72.07043171261796,
       "connects_a": [
-        "tomato paste",
-        "cumin",
+        "scallions",
+        "turmeric",
         "bell pepper"
       ],
       "connects_b": [
-        "tomatoes",
-        "cumin",
+        "beans",
+        "rice",
         "bell pepper"
       ]
     },
@@ -90,61 +90,81 @@
       "score": 70.30181556339134,
       "connects_a": [
         "roughly",
-        "vegetable oil",
-        "cumin"
+        "turmeric",
+        "cloves"
       ],
       "connects_b": [
-        "canola oil",
+        "lime juice",
         "vegetable oil",
-        "cumin"
+        "lime"
       ]
     },
     {
       "name": "can tomatoes",
       "score": 64.3766981235959,
       "connects_a": [
-        "tomato paste",
-        "cumin",
+        "parsley",
+        "chicken",
         "bell pepper"
       ],
       "connects_b": [
-        "wine",
-        "olives",
-        "bay leaf"
+        "bell pepper",
+        "cloves",
+        "olives"
       ]
     },
     {
       "name": "allspice",
       "score": 63.28069053377198,
       "connects_a": [
-        "ginger",
         "roughly",
-        "cinnamon"
+        "cloves",
+        "paprika"
       ],
       "connects_b": [
-        "bay leaf",
-        "cumin",
-        "cloves"
+        "rum",
+        "mustard",
+        "bay leaf"
       ]
     },
     {
       "name": "bay leaf",
       "score": 60.5399728795616,
       "connects_a": [
-        "tomato paste",
-        "carrot",
-        "cumin"
+        "parsley",
+        "turmeric",
+        "coriander seeds"
       ],
       "connects_b": [
-        "wine",
-        "cumin",
+        "beans",
+        "tomatoes",
         "oregano"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "couscous",
+      "name": "artichokes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "turkey sausage",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pinch saffron",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "fennel bulb",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "brussels sprouts",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -159,12 +179,7 @@
       "strength": 1
     },
     {
-      "name": "artichokes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "brussels sprouts",
+      "name": "cans chickpeas",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -174,29 +189,49 @@
       "strength": 1
     },
     {
-      "name": "pinch saffron",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "turkey sausage",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "fennel bulb",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "eggplants",
+      "name": "couscous",
       "pairs_with": "olive oil",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "canned tomatoes",
+      "name": "oregano leaves",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "capers",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "chipotle puree",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cubanelle peppers",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "crusty rolls",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "arugula",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "finely oregano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "hearts",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -207,41 +242,6 @@
     },
     {
       "name": "chorizo sausage",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "hearts",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "[extra",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "oregano leaves",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "finely oregano",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "sandwich rolls",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cubanelle peppers",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "capers",
       "pairs_with": "olive oil",
       "strength": 1
     }

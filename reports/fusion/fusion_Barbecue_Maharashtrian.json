@@ -5,9 +5,9 @@
       "name": "garam masala",
       "score": 55.31090998070518,
       "connects_a": [
-        "ginger",
-        "vegetable oil",
-        "cumin"
+        "lemon juice",
+        "cayenne pepper",
+        "tomatoes"
       ],
       "connects_b": [
         "turmeric",
@@ -19,27 +19,27 @@
       "name": "chili powder",
       "score": 45.523715806608344,
       "connects_a": [
+        "garlic powder",
         "worcestershire sauce",
-        "cumin",
-        "paprika"
+        "cayenne pepper"
       ],
       "connects_b": [
-        "dhania",
-        "jeera coriander",
-        "gram"
+        "turmeric",
+        "gram",
+        "jeera coriander"
       ]
     },
     {
       "name": "tumeric",
       "score": 32.09058323358996,
       "connects_a": [
-        "ginger",
-        "cumin",
-        "chicken breasts"
+        "cayenne pepper",
+        "tomatoes",
+        "garlic"
       ],
       "connects_b": [
-        "oil",
         "chili powder",
+        "oil",
         "peas"
       ]
     },
@@ -47,41 +47,41 @@
       "name": "cumin seeds",
       "score": 30.03701535588108,
       "connects_a": [
-        "ginger",
-        "cumin",
-        "cilantro"
+        "tomatoes",
+        "paprika",
+        "ginger"
       ],
       "connects_b": [
         "turmeric",
-        "coconut",
-        "chili powder"
+        "chili powder",
+        "peas"
       ]
     },
     {
       "name": "mustard seeds",
       "score": 30.02336530221045,
       "connects_a": [
-        "ginger",
+        "tomatoes",
         "vegetable oil",
-        "cumin"
+        "ginger"
       ],
       "connects_b": [
         "turmeric",
-        "coconut",
-        "chili powder"
+        "chili powder",
+        "peas"
       ]
     },
     {
       "name": "peanuts",
       "score": 25.26671040031107,
       "connects_a": [
-        "ginger",
         "soy sauce",
+        "lime",
         "chicken breasts"
       ],
       "connects_b": [
-        "dhania",
         "rai",
+        "gram",
         "coconut"
       ]
     },
@@ -89,55 +89,55 @@
       "name": "chili pepper",
       "score": 25.009471587428973,
       "connects_a": [
-        "ginger",
         "soy sauce",
+        "garlic",
         "chicken breasts"
       ],
       "connects_b": [
-        "coconut",
+        "turmeric",
         "chili powder",
-        "oil"
+        "peanuts"
       ]
     },
     {
       "name": "coconut milk",
       "score": 24.064391214112117,
       "connects_a": [
-        "ginger",
-        "cumin",
+        "pineapple",
+        "lime",
         "chicken breasts"
       ],
       "connects_b": [
-        "coconut",
-        "mango",
-        "peanuts"
+        "peanuts",
+        "turmeric",
+        "mango"
       ]
     },
     {
       "name": "coriander powder",
       "score": 24.046864570602338,
       "connects_a": [
-        "ginger",
-        "cumin",
-        "onion"
+        "leaves",
+        "tomatoes",
+        "garlic"
       ],
       "connects_b": [
-        "oil",
         "chili powder",
-        "turmeric"
+        "oil",
+        "leaves"
       ]
     },
     {
       "name": "turmeric",
       "score": 24.046523788447658,
       "connects_a": [
-        "ginger",
-        "vegetable oil",
-        "cumin"
+        "tomatoes",
+        "paprika",
+        "vegetable oil"
       ],
       "connects_b": [
+        "chili powder",
         "oil",
-        "coconut",
         "peas"
       ]
     }
@@ -154,27 +154,32 @@
       "strength": 1
     },
     {
-      "name": "worcestershire sauce",
+      "name": "onion powder",
       "pairs_with": "chili powder",
       "strength": 1
     },
     {
-      "name": "flour tortillas",
+      "name": "tomato sauce",
       "pairs_with": "chili powder",
       "strength": 1
     },
     {
-      "name": "barbecue sauce",
+      "name": "jalapeno peppers",
       "pairs_with": "chili powder",
       "strength": 1
     },
     {
-      "name": "cayenne pepper",
+      "name": "coriander seeds",
       "pairs_with": "chili powder",
       "strength": 1
     },
     {
-      "name": "cider vinegar",
+      "name": "ketchup",
+      "pairs_with": "chili powder",
+      "strength": 1
+    },
+    {
+      "name": "celery salt",
       "pairs_with": "chili powder",
       "strength": 1
     },
@@ -184,12 +189,7 @@
       "strength": 1
     },
     {
-      "name": "onion powder",
-      "pairs_with": "chili powder",
-      "strength": 1
-    },
-    {
-      "name": "chicken",
+      "name": "beer",
       "pairs_with": "chili powder",
       "strength": 1
     }
@@ -216,7 +216,7 @@
       "strength": 1
     },
     {
-      "name": "spring onions",
+      "name": "cardamom",
       "pairs_with": "ginger",
       "strength": 1
     },
@@ -226,7 +226,7 @@
       "strength": 1
     },
     {
-      "name": "cardamom",
+      "name": "spring onions",
       "pairs_with": "ginger",
       "strength": 1
     },
@@ -236,12 +236,12 @@
       "strength": 1
     },
     {
-      "name": "turmeric",
+      "name": "cardamom",
       "pairs_with": "cumin",
       "strength": 1
     },
     {
-      "name": "cardamom",
+      "name": "turmeric",
       "pairs_with": "cumin",
       "strength": 1
     }

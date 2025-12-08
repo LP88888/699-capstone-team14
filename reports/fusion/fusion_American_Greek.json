@@ -6,12 +6,12 @@
       "score": 80.15597431040385,
       "connects_a": [
         "lemon juice",
-        "dijon mustard",
+        "parsley",
         "lemon"
       ],
       "connects_b": [
-        "olives",
         "lemon juice",
+        "parsley",
         "lemon"
       ]
     },
@@ -20,40 +20,40 @@
       "score": 75.01588055905363,
       "connects_a": [
         "lemon juice",
-        "lemon",
-        "parsley"
+        "parsley",
+        "lemon"
       ],
       "connects_b": [
-        "cucumber",
-        "spinach",
-        "olives"
+        "parsley",
+        "lemon juice",
+        "lemon"
       ]
     },
     {
       "name": "garam masala",
       "score": 72.40700942928679,
       "connects_a": [
-        "cinnamon",
-        "vegetable oil",
-        "cumin"
+        "lemon juice",
+        "tomatoes",
+        "garlic"
       ],
       "connects_b": [
-        "spinach",
-        "cinnamon",
-        "lemon juice"
+        "lemon juice",
+        "tomatoes",
+        "garlic"
       ]
     },
     {
       "name": "confectioners",
       "score": 70.36511219154387,
       "connects_a": [
-        "egg",
-        "more",
+        "1",
+        "butter",
         "milk"
       ],
       "connects_b": [
-        "egg",
-        "more",
+        "1",
+        "butter",
         "milk"
       ]
     },
@@ -61,14 +61,14 @@
       "name": "oregano",
       "score": 60.336109369863145,
       "connects_a": [
-        "cumin",
         "bell pepper",
-        "2"
+        "tomatoes",
+        "wine vinegar"
       ],
       "connects_b": [
-        "cucumber",
+        "bell pepper",
         "cheese crumbles",
-        "olives"
+        "tomatoes"
       ]
     },
     {
@@ -76,26 +76,26 @@
       "score": 55.00386265765822,
       "connects_a": [
         "lemon juice",
-        "lemon",
-        "parsley"
+        "parsley",
+        "lemon"
       ],
       "connects_b": [
-        "cucumber",
-        "cheese crumbles",
-        "olives"
+        "lemon juice",
+        "parsley",
+        "cheese crumbles"
       ]
     },
     {
       "name": "at",
       "score": 54.21508898175742,
       "connects_a": [
-        "egg",
-        "more",
+        "1",
+        "butter",
         "milk"
       ],
       "connects_b": [
-        "egg",
-        "more",
+        "1",
+        "butter",
         "milk"
       ]
     },
@@ -103,14 +103,14 @@
       "name": "olives",
       "score": 50.0756512963738,
       "connects_a": [
-        "dijon mustard",
         "bell pepper",
+        "tomatoes",
         "olive oil"
       ],
       "connects_b": [
-        "cucumber",
-        "kalamata",
-        "bell pepper"
+        "bell pepper",
+        "tomatoes",
+        "kalamata olives"
       ]
     },
     {
@@ -119,32 +119,42 @@
       "connects_a": [
         "lemon juice",
         "lemon",
-        "olive oil"
+        "tomatoes"
       ],
       "connects_b": [
-        "cucumber",
-        "olives",
-        "lemon juice"
+        "lemon juice",
+        "lemon",
+        "tomatoes"
       ]
     },
     {
       "name": "ice water",
       "score": 48.244685781984174,
       "connects_a": [
-        "egg",
-        "more",
-        "cinnamon"
+        "1",
+        "butter",
+        "purpose flour"
       ],
       "connects_b": [
-        "egg",
-        "more",
-        "cinnamon"
+        "1",
+        "butter",
+        "purpose flour"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "salami",
+      "name": "cans chickpeas",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cannellini beans",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "crusty rolls",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -154,27 +164,12 @@
       "strength": 1
     },
     {
-      "name": "by hand",
+      "name": "pass",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "for seasoning",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "bucatini",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "turkey sausage",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "brussels sprouts",
+      "name": "bunch kale",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -184,7 +179,12 @@
       "strength": 1
     },
     {
-      "name": "cremini",
+      "name": "roma",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pimenton",
       "pairs_with": "olive oil",
       "strength": 1
     },

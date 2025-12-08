@@ -97,6 +97,13 @@ def run(context: PipelineContext, *, force: bool = False) -> StageResult:
     
     cuisine_col = data_cfg.get("cuisine_col", "cuisine_deduped")
     min_label_freq = int(params.get("min_label_freq", 10))
+    min_df = int(params.get("min_df", 5))
+    max_df_val = params.get("max_df", None)
+    max_df = float(max_df_val) if max_df_val is not None else None
+    ngram_min = int(params.get("ngram_min", 1))
+    ngram_max = int(params.get("ngram_max", 1))
+    apply_parent_for_training = bool(params.get("apply_parent_for_training", False))
+    cluster_use_parent_labels = bool(params.get("cluster_use_parent_labels", False))
     max_label_samples = params.get("max_label_samples")
     parent_map_path = params.get("parent_map_path")
     rng = check_random_state(42)
@@ -108,6 +115,18 @@ def run(context: PipelineContext, *, force: bool = False) -> StageResult:
         "middle eastern": "Middle Eastern",
         "east-asian": "East Asian",
         "east asian": "East Asian",
+        # Cajun synonyms
+        "cajun & creole": "Cajun",
+        "cajun and creole": "Cajun",
+        # Indian subregions collapsed to Indian
+        "karnataka": "Indian",
+        "kerala": "Indian",
+        "tamil nadu": "Indian",
+        "maharashtrian": "Indian",
+        "maharashtra": "Indian",
+        "gujarati": "Indian",
+        "goan": "Indian",
+        "jharkhand": "Indian",
     }
 
     def _normalize_whitespace(s: str) -> str:
@@ -192,8 +211,24 @@ def run(context: PipelineContext, *, force: bool = False) -> StageResult:
                 labels = labels_no_american
         return labels[0] if labels else ""
 
+    def to_parent_label(v: str) -> str:
+        """Map a cuisine to its parent using configured maps/aliases."""
+        if not parent_map_norm:
+            return str(v)
+        key = _norm(v)
+        parent = parent_map_norm.get(key, str(v))
+        parent_key = _norm(parent)
+        return parent_alias_norm.get(parent_key, parent)
+
     df[cuisine_col] = df[cuisine_col].apply(_to_label)
     df = df[df[cuisine_col] != ""]
+    # Strip stray bracket/brace/paren characters and drop any remaining noisy labels
+    df[cuisine_col] = df[cuisine_col].str.strip("[]{}() ")
+    df = df[~df[cuisine_col].str.contains(r"[\\[\\]{}]", regex=True)]
+
+    # Optional parent collapse before filtering/evaluation
+    if apply_parent_for_training and parent_map_norm:
+        df[cuisine_col] = df[cuisine_col].apply(to_parent_label)
 
     # Filter to labels with sufficient support
     label_counts = df[cuisine_col].value_counts()
@@ -211,11 +246,17 @@ def run(context: PipelineContext, *, force: bool = False) -> StageResult:
         except Exception as e:
             logger.warning("Failed to downsample labels: %s", e)
     y = df[cuisine_col]
+    y_parent_full = df[cuisine_col].apply(to_parent_label) if parent_map_norm else y
     logger.info("Label filtering: kept %s labels with at least %s examples", len(keep_labels), min_label_freq)
     
     # TF-IDF
     logger.info("Vectorizing...")
-    tfidf = TfidfVectorizer(max_features=params.get("max_features", 5000), min_df=5)
+    tfidf = TfidfVectorizer(
+        max_features=params.get("max_features", 5000),
+        min_df=min_df,
+        max_df=max_df,
+        ngram_range=(ngram_min, ngram_max),
+    )
     X_tfidf = tfidf.fit_transform(df["text"])
 
     # Optional dimensionality reduction (sparse-friendly)
@@ -250,8 +291,9 @@ def run(context: PipelineContext, *, force: bool = False) -> StageResult:
     else:
         X_features = X_tfidf
     
-    # Split
+    # Split (same seed across feature spaces to keep splits aligned)
     X_train, X_test, y_train, y_test = train_test_split(X_features, y, test_size=0.2, random_state=42)
+    X_train_tf, X_test_tf, y_train_tf, y_test_tf = train_test_split(X_tfidf, y, test_size=0.2, random_state=42)
     
     # 1. Logistic Regression
     logger.info("Training Logistic Regression...")
@@ -268,15 +310,8 @@ def run(context: PipelineContext, *, force: bool = False) -> StageResult:
     y_pred_clean = [_clean_label_scalar(v) for v in y_pred]
 
     # Parent-aware evaluation (do not replace original labels)
-    def to_parent(v):
-        if not parent_map_norm:
-            return str(v)
-        key = _norm(v)
-        parent = parent_map_norm.get(key, str(v))
-        parent_key = _norm(parent)
-        return parent_alias_norm.get(parent_key, parent)
-    y_true_parent = [to_parent(v) for v in y_true_clean]
-    y_pred_parent = [to_parent(v) for v in y_pred_clean]
+    y_true_parent = [to_parent_label(v) for v in y_true_clean]
+    y_pred_parent = [to_parent_label(v) for v in y_pred_clean]
 
     # Save Preds with parent mapping info
     preds_df = pd.DataFrame({
@@ -304,10 +339,14 @@ def run(context: PipelineContext, *, force: bool = False) -> StageResult:
         )
         pd.DataFrame(report_parent).T.to_csv(out_dir / "classification_report_logreg_parent.csv")
     
-    # Top Features (only when using raw TF-IDF for interpretability)
-    if not use_svd:
+    # Top Features (always from a TF-IDF model for interpretability)
+    if use_svd:
+        aux_clf = LogisticRegression(max_iter=500, n_jobs=-1, class_weight="balanced")
+        aux_clf.fit(X_train_tf, y_train_tf)
+        top_feat = extract_top_features(aux_clf, tfidf, aux_clf.classes_)
+    else:
         top_feat = extract_top_features(clf, tfidf, clf.classes_)
-        top_feat.to_csv(out_dir / "top_features_logreg.csv", index=False)
+    top_feat.to_csv(out_dir / "top_features_logreg.csv", index=False)
     
     # 2. Random Forest (Subsampled)
     logger.info("Training Random Forest (Subsampled)...")
@@ -327,13 +366,32 @@ def run(context: PipelineContext, *, force: bool = False) -> StageResult:
     k = params.get("kmeans_k", 20)
     kmeans = KMeans(n_clusters=k, n_init=5, random_state=42)
     clusters = kmeans.fit_predict(X_features)
+    # Cluster metrics (silhouette/ARI)
+    sil = None
+    ari = None
+    try:
+        sil = silhouette_score(X_features, clusters)
+    except Exception as e:
+        logger.warning("Silhouette score failed: %s", e)
+    try:
+        ari_labels = y_parent_full if (cluster_use_parent_labels and parent_map_norm) else y
+        ari = adjusted_rand_score(ari_labels, clusters)
+    except Exception as e:
+        logger.warning("ARI failed: %s", e)
     
     # Save Cluster Assignments
     df_clusters = pd.DataFrame({
         "cuisine": y,
+        "cuisine_parent": y_parent_full if parent_map_norm else y,
         "cluster": clusters
     })
     df_clusters.to_csv(out_dir / "cluster_assignments.csv", index=False)
+    pd.DataFrame([{
+        "kmeans_k": k,
+        "silhouette": sil,
+        "ari": ari,
+        "ari_label_space": "parent" if (cluster_use_parent_labels and parent_map_norm) else "child",
+    }]).to_csv(out_dir / "cluster_metrics.csv", index=False)
 
     outputs = {
         "report": str(out_dir / "classification_report_logreg.csv"),

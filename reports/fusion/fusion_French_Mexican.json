@@ -5,13 +5,13 @@
       "name": "confectioners",
       "score": 90.46942996055641,
       "connects_a": [
-        "egg",
-        "nutmeg",
-        "more"
+        "1",
+        "maple syrup",
+        "chocolate"
       ],
       "connects_b": [
-        "egg",
-        "more",
+        "1",
+        "butter",
         "cinnamon"
       ]
     },
@@ -19,13 +19,13 @@
       "name": "at",
       "score": 78.31068408476071,
       "connects_a": [
-        "egg",
-        "more",
-        "milk"
+        "1",
+        "maple syrup",
+        "chocolate"
       ],
       "connects_b": [
-        "egg",
-        "more",
+        "1",
+        "butter",
         "kosher sea salt"
       ]
     },
@@ -33,27 +33,27 @@
       "name": "vanilla extract",
       "score": 60.962692176467755,
       "connects_a": [
-        "egg",
-        "nutmeg",
-        "milk"
+        "1",
+        "maple syrup",
+        "chocolate"
       ],
       "connects_b": [
-        "egg",
-        "cinnamon",
-        "butter"
+        "1",
+        "butter",
+        "cinnamon"
       ]
     },
     {
       "name": "whole milk",
       "score": 60.17571103887719,
       "connects_a": [
-        "egg",
-        "nutmeg",
-        "more"
+        "maple syrup",
+        "chocolate",
+        "butter"
       ],
       "connects_b": [
-        "egg",
-        "more",
+        "butter",
+        "kosher sea salt",
         "cinnamon"
       ]
     },
@@ -61,13 +61,13 @@
       "name": "sticks",
       "score": 55.19451995974218,
       "connects_a": [
-        "egg",
-        "nutmeg",
-        "more"
+        "1",
+        "chocolate",
+        "butter"
       ],
       "connects_b": [
-        "egg",
-        "more",
+        "1",
+        "butter",
         "cinnamon"
       ]
     },
@@ -75,28 +75,28 @@
       "name": "garam masala",
       "score": 54.30525707196509,
       "connects_a": [
-        "bay leaf",
-        "cinnamon",
+        "lemon juice",
+        "garlic",
         "vegetable oil"
       ],
       "connects_b": [
-        "cinnamon",
-        "vegetable oil",
-        "cumin"
+        "tomatoes",
+        "garlic",
+        "vegetable oil"
       ]
     },
     {
       "name": "chiles",
       "score": 52.24817843907106,
       "connects_a": [
-        "2",
-        "vegetable oil",
-        "shallots"
+        "cloves",
+        "shallots",
+        "vegetable oil"
       ],
       "connects_b": [
-        "vegetable oil",
-        "flour tortillas",
-        "cumin"
+        "tomatillos",
+        "lime juice",
+        "vegetable oil"
       ]
     },
     {
@@ -108,8 +108,8 @@
         "more"
       ],
       "connects_b": [
-        "more",
         "jalapeno",
+        "tomatillos",
         "salsa"
       ]
     },
@@ -117,13 +117,13 @@
       "name": "ice water",
       "score": 50.25488102290018,
       "connects_a": [
-        "egg",
-        "nutmeg",
-        "more"
+        "1",
+        "butter",
+        "purpose flour"
       ],
       "connects_b": [
-        "egg",
-        "more",
+        "1",
+        "butter",
         "cinnamon"
       ]
     },
@@ -131,45 +131,45 @@
       "name": "tomato paste",
       "score": 49.31618605161813,
       "connects_a": [
-        "wine",
-        "bay leaf",
+        "parsley",
+        "cloves",
         "carrot"
       ],
       "connects_b": [
-        "cumin",
         "bell pepper",
-        "cloves"
+        "cloves",
+        "tomatoes"
       ]
     }
   ],
   "novel_from_a": [
-    {
-      "name": "head fennel",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "chianti",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "canned tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
     {
       "name": "spaghetti",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "salami",
+      "name": "turkey sausage",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "sandwich rolls",
+      "name": "cannellini",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "spun",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "baby arugula",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "grigio",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -179,49 +179,24 @@
       "strength": 1
     },
     {
-      "name": "anchovies",
+      "name": "roma",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "clam broth",
+      "name": "crusty bread",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "spun",
+      "name": "kalamata olives",
       "pairs_with": "olive oil",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "squid",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "finely oregano",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pass",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "for seasoning",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "arugula leaves",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "orzo pasta",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -231,12 +206,37 @@
       "strength": 1
     },
     {
+      "name": "orzo pasta",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "pecorino",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "serrano chili",
+      "name": "finely oregano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "squid",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pass",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "arugula leaves",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "fire",
       "pairs_with": "cloves",
       "strength": 1
     },

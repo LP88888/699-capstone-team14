@@ -5,28 +5,28 @@
       "name": "chiles",
       "score": 182.8686245367487,
       "connects_a": [
-        "ginger",
         "roughly",
-        "vegetable oil"
+        "turmeric",
+        "cloves"
       ],
       "connects_b": [
-        "vegetable oil",
-        "flour tortillas",
-        "cumin"
+        "tomatillos",
+        "lime juice",
+        "vegetable oil"
       ]
     },
     {
       "name": "cumin",
       "score": 152.57739031592948,
       "connects_a": [
-        "tomato paste",
+        "chicken",
         "turmeric",
         "bell pepper"
       ],
       "connects_b": [
+        "beans",
         "jalapeno",
-        "salsa",
-        "beans"
+        "tomatillos"
       ]
     },
     {
@@ -34,12 +34,12 @@
       "score": 136.4774242409162,
       "connects_a": [
         "roughly",
-        "vegetable oil",
-        "cumin"
+        "tomatoes",
+        "cilantro leaves"
       ],
       "connects_b": [
-        "more",
         "jalapeno",
+        "tomatillos",
         "salsa"
       ]
     },
@@ -47,56 +47,56 @@
       "name": "garam masala",
       "score": 126.71226650125188,
       "connects_a": [
-        "ginger",
-        "tomato paste",
+        "lemon juice",
+        "chicken",
         "turmeric"
       ],
       "connects_b": [
-        "cinnamon",
-        "vegetable oil",
-        "cumin"
+        "tomatoes",
+        "garlic",
+        "vegetable oil"
       ]
     },
     {
       "name": "jalapeno peppers",
       "score": 126.12325549708142,
       "connects_a": [
-        "tomato paste",
-        "cumin",
+        "scallions",
+        "turmeric",
         "bell pepper"
       ],
       "connects_b": [
-        "tomatoes",
-        "salsa",
-        "flour tortillas"
+        "beans",
+        "rice",
+        "corn"
       ]
     },
     {
       "name": "jalapeno",
       "score": 108.28303035858461,
       "connects_a": [
+        "scallions",
         "roughly",
-        "cumin",
-        "bell pepper"
+        "chicken"
       ],
       "connects_b": [
-        "salsa",
-        "flour tortillas",
-        "cumin"
+        "corn",
+        "tomatillos",
+        "bell pepper"
       ]
     },
     {
       "name": "cilantro",
       "score": 91.52758632871887,
       "connects_a": [
-        "ginger",
-        "cumin",
-        "coriander"
+        "scallions",
+        "turmeric",
+        "coriander seeds"
       ],
       "connects_b": [
+        "beans",
         "jalapeno",
-        "salsa",
-        "beans"
+        "tomatillos"
       ]
     },
     {
@@ -104,52 +104,67 @@
       "score": 90.38804858150317,
       "connects_a": [
         "roughly",
-        "vegetable oil",
-        "cumin"
+        "turmeric",
+        "cloves"
       ],
       "connects_b": [
+        "lime juice",
         "vegetable oil",
-        "flour tortillas",
-        "cumin"
+        "cilantro leaves"
       ]
     },
     {
       "name": "cilantro leaves",
       "score": 88.74661922009138,
       "connects_a": [
+        "scallions",
         "roughly",
-        "cumin",
-        "coriander"
+        "turmeric"
       ],
       "connects_b": [
         "jalapeno",
-        "salsa",
-        "flour tortillas"
+        "tomatillos",
+        "corn"
       ]
     },
     {
       "name": "tortilla chips",
       "score": 84.20319665585802,
       "connects_a": [
-        "vegetable oil",
-        "cumin",
-        "bell pepper"
+        "bell pepper",
+        "tomatoes",
+        "cilantro leaves"
       ],
       "connects_b": [
+        "beans",
         "jalapeno",
-        "salsa",
-        "vegetable oil"
+        "bell pepper"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "pinch saffron",
+      "name": "montreal steak",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "kalamata olives",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
       "name": "turkey sausage",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cans chickpeas",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pinch saffron",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -160,48 +175,38 @@
     },
     {
       "name": "montreal steak",
-      "pairs_with": "olive oil",
+      "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "cans chickpeas",
-      "pairs_with": "olive oil",
+      "name": "racks",
+      "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "kalamata olives",
-      "pairs_with": "olive oil",
+      "name": "scotch bonnet peppers",
+      "pairs_with": "cloves",
       "strength": 1
     },
     {
       "name": "serrano",
       "pairs_with": "cloves",
       "strength": 1
-    },
-    {
-      "name": "pinch saffron",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "slab bacon",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "leg",
-      "pairs_with": "cloves",
-      "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "finely oregano",
+      "name": "orzo pasta",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "some",
+      "name": "parmigiano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "grape tomatoes",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -216,32 +221,27 @@
       "strength": 1
     },
     {
-      "name": "reggiano",
+      "name": "romano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "parmigiano",
+      "name": "turn",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "chorizo sausage",
+      "name": "finely oregano",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "petite",
+      "name": "sherry vinegar",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "heads garlic",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pass",
+      "name": "porcini mushrooms",
       "pairs_with": "olive oil",
       "strength": 1
     }

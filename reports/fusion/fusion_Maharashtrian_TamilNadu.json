@@ -5,97 +5,97 @@
       "name": "dhania",
       "score": 675.9184732619491,
       "connects_a": [
-        "(",
-        "chili powder",
+        "semolina",
+        "hing",
         "peas"
       ],
       "connects_b": [
         "black",
-        "channa dal",
-        "leaves coriander"
+        "mullangi",
+        "hing"
       ]
     },
     {
       "name": "seeds",
       "score": 533.0610229345591,
       "connects_a": [
-        "dhania",
-        "(",
+        "semolina",
+        "hing",
         "wheat"
       ],
       "connects_b": [
-        "dhania",
         "black",
-        "channa dal"
+        "mullangi",
+        "hing"
       ]
     },
     {
       "name": "powder",
       "score": 499.0455584385998,
       "connects_a": [
-        "dhania",
-        "chilli coriander",
-        "wheat"
+        "semolina",
+        "wheat",
+        "mango"
       ],
       "connects_b": [
-        "dhania",
         "black",
-        "channa dal"
+        "mullangi",
+        "jeera whole"
       ]
     },
     {
       "name": "chilli",
       "score": 308.9498722209243,
       "connects_a": [
-        "dhania",
-        "wheat",
-        "rai"
+        "seeds",
+        "rai",
+        "chillies coriander"
       ],
       "connects_b": [
-        "dhania",
         "black",
-        "rai"
+        "leaves coriander",
+        "seeds"
       ]
     },
     {
       "name": "red",
       "score": 290.06431974021405,
       "connects_a": [
-        "dhania",
+        "seeds",
         "rai",
-        "salt coriander"
+        "chillies coriander"
       ],
       "connects_b": [
-        "dhania",
         "black",
-        "rai"
+        "salt coriander",
+        "seeds"
       ]
     },
     {
       "name": "dal",
       "score": 240.17784304681265,
       "connects_a": [
-        "dhania",
-        "wheat",
-        "rai"
+        "seeds",
+        "rai",
+        "oil salt"
       ],
       "connects_b": [
-        "dhania",
-        "rai",
-        "salt coriander"
+        "salt coriander",
+        "leaves coriander",
+        "seeds"
       ]
     },
     {
       "name": "fenugreek",
       "score": 224.66108669033372,
       "connects_a": [
-        "dhania",
-        "wheat",
-        "rai"
+        "seeds",
+        "rai",
+        "chillies coriander"
       ],
       "connects_b": [
-        "dhania",
         "black",
+        "seeds",
         "rai"
       ]
     },
@@ -103,63 +103,53 @@
       "name": "wheat",
       "score": 143.44109561444452,
       "connects_a": [
-        "dhania",
-        "mango",
-        "dal"
+        "seeds",
+        "bell",
+        "oil salt"
       ],
       "connects_b": [
-        "dhania",
-        "dal",
-        "finger"
+        "seeds",
+        "oil salt",
+        "til"
       ]
     },
     {
       "name": "powder red",
       "score": 128.0568799343827,
       "connects_a": [
-        "dhania",
-        "wheat",
-        "rai"
+        "seeds",
+        "rai",
+        "chillies coriander"
       ],
       "connects_b": [
-        "dhania",
+        "seeds",
         "rai",
-        "dal"
+        "oil salt"
       ]
     },
     {
       "name": "gram",
       "score": 110.04433018297843,
       "connects_a": [
-        "dhania",
-        "dal",
+        "seeds",
+        "til",
         "fenugreek"
       ],
       "connects_b": [
-        "dhania",
         "channa dal",
-        "dal"
+        "seeds",
+        "til"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "masala",
+      "name": "gram flour",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "powder coriander",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "chillies whole",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "badi",
+      "name": "olive",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -169,17 +159,17 @@
       "strength": 1
     },
     {
-      "name": "onions green",
+      "name": "brown",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "gram flour",
+      "name": "green bell",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "laung whole",
+      "name": "chillies whole",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -189,44 +179,24 @@
       "strength": 1
     },
     {
-      "name": "brown",
+      "name": "badi",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "onions green",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "laung whole",
       "pairs_with": "dhania",
       "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "sambar",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
       "name": "jeera whole",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "urad",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "gourd",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "onion coriander",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "oats",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "pepper powder",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -241,7 +211,37 @@
       "strength": 1
     },
     {
+      "name": "asafoetida green",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "sambar",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "oats",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
       "name": "seeds coriander",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "pepper powder",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "onion coriander",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "cloves cardamom",
       "pairs_with": "dhania",
       "strength": 1
     }

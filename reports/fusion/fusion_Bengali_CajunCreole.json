@@ -9,36 +9,36 @@
         "mustard"
       ],
       "connects_b": [
-        "chili sauce",
-        "celery",
-        "creole seasoning"
+        "andouille sausage",
+        "cajun seasoning",
+        "garlic powder"
       ]
     },
     {
       "name": "garam masala",
       "score": 28.15828144472264,
       "connects_a": [
-        "oil",
         "chili powder",
+        "oil",
         "peas"
       ],
       "connects_b": [
-        "vegetable oil",
-        "chicken breasts",
-        "cayenne pepper"
+        "cayenne pepper",
+        "tomatoes",
+        "garlic"
       ]
     },
     {
       "name": "chili powder",
       "score": 25.290953225893524,
       "connects_a": [
-        "dhania",
         "jeera coriander",
-        "methi"
+        "methi",
+        "oil"
       ],
       "connects_b": [
-        "worcestershire sauce",
         "garlic powder",
+        "worcestershire sauce",
         "cayenne pepper"
       ]
     },
@@ -50,9 +50,9 @@
         "mustard"
       ],
       "connects_b": [
-        "chili sauce",
-        "celery",
-        "creole seasoning"
+        "andouille sausage",
+        "cajun seasoning",
+        "garlic powder"
       ]
     },
     {
@@ -63,9 +63,9 @@
         "mustard"
       ],
       "connects_b": [
-        "chili sauce",
-        "celery",
-        "creole seasoning"
+        "andouille sausage",
+        "cajun seasoning",
+        "garlic powder"
       ]
     },
     {
@@ -76,8 +76,8 @@
         "mustard"
       ],
       "connects_b": [
-        "celery",
-        "creole seasoning",
+        "andouille sausage",
+        "garlic powder",
         "worcestershire sauce"
       ]
     },
@@ -85,14 +85,14 @@
       "name": "tumeric",
       "score": 20.056614520993726,
       "connects_a": [
-        "oil",
         "chili powder",
+        "oil",
         "peas"
       ],
       "connects_b": [
-        "chicken breasts",
         "cayenne pepper",
-        "onion"
+        "tomatoes",
+        "garlic"
       ]
     },
     {
@@ -102,21 +102,21 @@
         "leaves"
       ],
       "connects_b": [
-        "celery",
-        "onion powder",
-        "leaves"
+        "andouille sausage",
+        "okra",
+        "purpose flour"
       ]
     },
     {
       "name": "cumin",
       "score": 14.240556429486752,
       "connects_a": [
-        "chili powder",
-        "beans"
+        "beans",
+        "chili powder"
       ],
       "connects_b": [
-        "bell pepper",
         "garlic powder",
+        "bell pepper",
         "cayenne pepper"
       ]
     },
@@ -129,8 +129,8 @@
       ],
       "connects_b": [
         "chili sauce",
-        "worcestershire sauce",
-        "garlic powder"
+        "garlic powder",
+        "worcestershire sauce"
       ]
     }
   ],
@@ -156,13 +156,23 @@
       "strength": 1
     },
     {
+      "name": "bell",
+      "pairs_with": "bell pepper",
+      "strength": 1
+    },
+    {
       "name": "palm",
       "pairs_with": "bell pepper",
       "strength": 1
     },
     {
-      "name": "bell",
-      "pairs_with": "bell pepper",
+      "name": "sugar whole",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "wheat",
+      "pairs_with": "flour",
       "strength": 1
     },
     {
@@ -174,19 +184,24 @@
       "name": "finger",
       "pairs_with": "flour",
       "strength": 1
-    },
-    {
-      "name": "sugar whole",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "carom",
-      "pairs_with": "flour",
-      "strength": 1
     }
   ],
   "novel_from_b": [
+    {
+      "name": "cod",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "cornmeal",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "buttermilk",
+      "pairs_with": "flour",
+      "strength": 1
+    },
     {
       "name": "lard",
       "pairs_with": "flour",
@@ -198,32 +213,7 @@
       "strength": 1
     },
     {
-      "name": "cod",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "buttermilk",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "cornmeal",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
       "name": "oregano leaves",
-      "pairs_with": "leaves",
-      "strength": 1
-    },
-    {
-      "name": "sprigs thyme",
-      "pairs_with": "leaves",
-      "strength": 1
-    },
-    {
-      "name": "file powder",
       "pairs_with": "leaves",
       "strength": 1
     },
@@ -233,7 +223,17 @@
       "strength": 1
     },
     {
-      "name": "chili pepper",
+      "name": "file powder",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
+      "name": "sprigs thyme",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
+      "name": "tomato sauce",
       "pairs_with": "chili powder",
       "strength": 1
     }

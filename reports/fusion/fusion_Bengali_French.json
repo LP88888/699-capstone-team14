@@ -5,13 +5,13 @@
       "name": "cardamom",
       "score": 30.448968032168068,
       "connects_a": [
-        "dhania",
-        "methi",
+        "seeds",
+        "seeds cloves",
         "chili powder"
       ],
       "connects_b": [
-        "cinnamon",
         "nutmeg",
+        "cinnamon",
         "bay leaf"
       ]
     },
@@ -19,13 +19,13 @@
       "name": "garam masala",
       "score": 24.135669809762263,
       "connects_a": [
-        "oil",
         "chili powder",
+        "oil",
         "peas"
       ],
       "connects_b": [
-        "bay leaf",
-        "cinnamon",
+        "lemon juice",
+        "garlic",
         "vegetable oil"
       ]
     },
@@ -37,22 +37,22 @@
         "potatoes"
       ],
       "connects_b": [
-        "wine",
-        "bay leaf",
-        "carrot"
+        "bread",
+        "carrot",
+        "thyme"
       ]
     },
     {
       "name": "sprigs thyme",
       "score": 14.029784294005541,
       "connects_a": [
-        "leaves",
-        "potatoes"
+        "potatoes",
+        "leaves"
       ],
       "connects_b": [
-        "wine",
-        "bay leaf",
-        "carrot"
+        "shallots",
+        "lemon",
+        "leaves"
       ]
     },
     {
@@ -63,36 +63,36 @@
         "mustard"
       ],
       "connects_b": [
-        "nutmeg",
+        "kosher sea salt",
         "cinnamon",
-        "bay leaf"
+        "thyme"
       ]
     },
     {
       "name": "tumeric",
       "score": 12.033968712596234,
       "connects_a": [
-        "oil",
         "chili powder",
+        "oil",
         "peas"
       ],
       "connects_b": [
         "onion",
-        "cinnamon",
-        "garlic"
+        "garlic",
+        "cinnamon"
       ]
     },
     {
       "name": "coriander powder",
       "score": 12.023432285301169,
       "connects_a": [
-        "oil",
         "chili powder",
+        "oil",
         "leaves"
       ],
       "connects_b": [
-        "cinnamon",
         "onion",
+        "leaves",
         "garlic"
       ]
     },
@@ -103,18 +103,18 @@
         "flour"
       ],
       "connects_b": [
-        "egg",
-        "nutmeg",
-        "more"
+        "1",
+        "butter",
+        "purpose flour"
       ]
     },
     {
       "name": "carom",
       "score": 10.016921211824169,
       "connects_a": [
-        "dhania",
-        "wheat",
-        "jeera coriander"
+        "seeds",
+        "fenugreek",
+        "wheat"
       ],
       "connects_b": [
         "flour"
@@ -124,13 +124,13 @@
       "name": "coriander seeds",
       "score": 10.014065602328206,
       "connects_a": [
-        "oil",
-        "chili powder"
+        "chili powder",
+        "oil"
       ],
       "connects_b": [
-        "cinnamon",
-        "bay leaf",
-        "kosher sea salt"
+        "shallots",
+        "kosher sea salt",
+        "wine vinegar"
       ]
     }
   ],
@@ -146,12 +146,12 @@
       "strength": 1
     },
     {
-      "name": "oil coriander",
+      "name": "salt coriander",
       "pairs_with": "leaves",
       "strength": 1
     },
     {
-      "name": "water coriander",
+      "name": "oil coriander",
       "pairs_with": "leaves",
       "strength": 1
     },
@@ -161,7 +161,7 @@
       "strength": 1
     },
     {
-      "name": "salt coriander",
+      "name": "water coriander",
       "pairs_with": "leaves",
       "strength": 1
     },
@@ -173,37 +173,7 @@
   ],
   "novel_from_b": [
     {
-      "name": "onion coriander",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "leaves whole",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "olive",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "black",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "button",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "pepper powder",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "fruit",
+      "name": "french",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -213,12 +183,42 @@
       "strength": 1
     },
     {
-      "name": "french",
+      "name": "button",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "pudina",
+      "name": "olive",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "leaves whole",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "fruit",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "pepper powder",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "black",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "onion coriander",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "jeera chaat",
       "pairs_with": "powder",
       "strength": 1
     }

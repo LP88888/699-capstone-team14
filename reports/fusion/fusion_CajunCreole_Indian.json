@@ -5,41 +5,41 @@
       "name": "garam masala",
       "score": 119.67269614007122,
       "connects_a": [
-        "vegetable oil",
-        "chicken breasts",
-        "cayenne pepper"
+        "cayenne pepper",
+        "tomatoes",
+        "garlic"
       ],
       "connects_b": [
-        "ginger",
-        "cardamom",
-        "potatoes"
+        "turmeric",
+        "mustard seeds",
+        "tomatoes"
       ]
     },
     {
       "name": "cayenne",
       "score": 96.07329867996094,
       "connects_a": [
-        "hot sauce",
-        "celery",
-        "creole seasoning"
+        "rice",
+        "garlic powder",
+        "worcestershire sauce"
       ],
       "connects_b": [
-        "vegetable oil",
-        "cumin",
-        "garam masala"
+        "garam masala",
+        "turmeric",
+        "mustard seeds"
       ]
     },
     {
       "name": "tomato paste",
       "score": 84.54203323134537,
       "connects_a": [
-        "celery",
-        "worcestershire sauce",
-        "paprika"
+        "parsley",
+        "andouille sausage",
+        "okra"
       ],
       "connects_b": [
-        "cumin",
         "garam masala",
+        "turmeric",
         "cloves"
       ]
     },
@@ -47,65 +47,65 @@
       "name": "tumeric",
       "score": 75.21230445372647,
       "connects_a": [
-        "chicken breasts",
         "cayenne pepper",
-        "onion"
+        "tomatoes",
+        "garlic"
       ],
       "connects_b": [
-        "ginger",
-        "cardamom",
-        "cumin"
+        "garam masala",
+        "mustard seeds",
+        "tomatoes"
       ]
     },
     {
       "name": "file powder",
       "score": 75.15232247448509,
       "connects_a": [
-        "celery",
-        "onion powder",
-        "leaves"
+        "andouille sausage",
+        "okra",
+        "purpose flour"
       ],
       "connects_b": [
-        "vegetable oil",
-        "onion",
-        "tomatoes"
+        "leaves",
+        "tomatoes",
+        "garlic"
       ]
     },
     {
       "name": "cumin",
       "score": 71.20278214743375,
       "connects_a": [
-        "bell pepper",
         "garlic powder",
+        "bell pepper",
         "cayenne pepper"
       ],
       "connects_b": [
-        "cardamom",
         "garam masala",
-        "yogurt"
+        "turmeric",
+        "mustard seeds"
       ]
     },
     {
       "name": "paprika",
       "score": 70.66738268057948,
       "connects_a": [
-        "celery",
-        "creole seasoning",
+        "andouille sausage",
+        "garlic powder",
         "worcestershire sauce"
       ],
       "connects_b": [
-        "cumin",
         "garam masala",
-        "yogurt"
+        "turmeric",
+        "chili powder"
       ]
     },
     {
       "name": "celery",
       "score": 69.17127474514669,
       "connects_a": [
-        "worcestershire sauce",
-        "cajun seasoning",
-        "shrimp"
+        "parsley",
+        "andouille sausage",
+        "garlic powder"
       ],
       "connects_b": [
         "onion",
@@ -117,9 +117,9 @@
       "name": "andouille sausage",
       "score": 63.08338781312321,
       "connects_a": [
-        "worcestershire sauce",
-        "cajun seasoning",
-        "shrimp"
+        "tomatoes",
+        "garlic",
+        "onion powder"
       ],
       "connects_b": [
         "onion",
@@ -131,14 +131,14 @@
       "name": "chili powder",
       "score": 60.69828774214446,
       "connects_a": [
-        "worcestershire sauce",
         "garlic powder",
+        "worcestershire sauce",
         "cayenne pepper"
       ],
       "connects_b": [
         "dhania",
-        "cardamom",
-        "cumin"
+        "garam masala",
+        "turmeric"
       ]
     }
   ],
@@ -154,18 +154,13 @@
       "strength": 1
     },
     {
-      "name": "wheat spaghetti",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
       "name": "chorizo sausage",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "grits",
-      "pairs_with": "butter",
+      "name": "wheat spaghetti",
+      "pairs_with": "cloves",
       "strength": 1
     },
     {
@@ -174,17 +169,17 @@
       "strength": 1
     },
     {
-      "name": "corn tortillas",
+      "name": "grits",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "sodium beef broth",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "andouille",
-      "pairs_with": "onion",
-      "strength": 1
-    },
-    {
-      "name": "chicken base",
+      "name": "sandwich rolls",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -192,31 +187,21 @@
       "name": "navy beans",
       "pairs_with": "onion",
       "strength": 1
+    },
+    {
+      "name": "file powder",
+      "pairs_with": "onion",
+      "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "canned tomatoes",
+      "name": "arugula",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "finely oregano",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pinch saffron",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "fennel bulb",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "eggplants",
+      "name": "crusty bread",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -226,12 +211,17 @@
       "strength": 1
     },
     {
-      "name": "arugula",
+      "name": "pinch saffron",
       "pairs_with": "olive oil",
       "strength": 1
     },
     {
-      "name": "petite",
+      "name": "finely oregano",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "handful pine nuts",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -241,7 +231,17 @@
       "strength": 1
     },
     {
-      "name": "crusty bread",
+      "name": "canned tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pizza",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "chipotle puree",
       "pairs_with": "olive oil",
       "strength": 1
     }

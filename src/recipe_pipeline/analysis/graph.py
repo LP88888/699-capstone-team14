@@ -46,7 +46,8 @@ def _blend_colors(c1: str, c2: str) -> str:
     except Exception:
         return "#6b7280"
 
-
+# This was developed using an LLM to facilitate complex interactivity.
+# JavaScript/CSS/Html is outside the scope of the course and project.
 def _inject_focus_controls(html_text: str, fusions: list | None = None) -> str:
     """Add filtering controls, legend, and explanatory copy."""
     fusions_json = json.dumps(fusions or [])
@@ -541,6 +542,118 @@ def _inject_focus_controls(html_text: str, fusions: list | None = None) -> str:
     html_text = html_text.replace("<head>", "<head>" + layout_styles)
     return html_text.replace("<body>", "<body>" + selected_bar + panel).replace("</body>", script + "</body>")
 
+def _plot_cuisine_network_static(df_top, cuisine_counts, out_path: Path, *, parent_map=None, dedupe_map=None, min_shared=2, top_k=25):
+    """Generate a simple static PNG thumbnail of the cuisine similarity network (parent/child)."""
+    parent_map = parent_map or {}
+    dedupe_map = dedupe_map or {}
+
+    def _clean_label(raw: str) -> str:
+        t = str(raw).strip()
+        t = t.strip("[](){}\"' ")
+        t = re.sub(r"[,_]+", " ", t)
+        t = t.replace("-", " ").replace("_", " ")
+        t = re.sub(r"\s+", " ", t)
+        return t.strip()
+
+    def _norm(s: str) -> str:
+        return re.sub(r"\s+", " ", str(s).strip().lower())
+
+    parent_lookup = {_norm(k): str(v) for k, v in parent_map.items() if str(k).strip() and str(v).strip()}
+    def resolve_parent(label: str) -> str:
+        if not parent_lookup:
+            return label
+        return parent_lookup.get(_norm(label), label)
+
+    def _map_term(term: str) -> str | None:
+        raw = str(term).strip()
+        mapped = dedupe_map.get(raw.lower(), raw)
+        mapped = str(mapped).strip()
+        if not mapped:
+            return None
+        if mapped.lower() in _DROP_TOKENS or any(substr in mapped.lower() for substr in _DROP_SUBSTRINGS):
+            return None
+        return mapped
+
+    # Limit cuisines and terms
+    keep_cuisines = set(cuisine_counts.keys())
+    df_filtered = df_top.copy()
+    df_filtered["cuisine"] = df_filtered["cuisine"].map(_clean_label)
+    df_filtered = df_filtered[df_filtered["cuisine"].isin(keep_cuisines)]
+    if "rank" in df_filtered.columns:
+        df_filtered = df_filtered[df_filtered["rank"] <= top_k]
+
+    cuisine_to_terms = {}
+    for cuisine, group in df_filtered.groupby("cuisine"):
+        terms = set()
+        for r in group.itertuples():
+            mapped = _map_term(r.feature)
+            if mapped:
+                terms.add(mapped)
+        cuisine_to_terms[cuisine] = terms
+
+    cuisine_parents = {c: resolve_parent(c) for c in keep_cuisines} if parent_lookup else {}
+    parent_to_children = {}
+    for child, parent in cuisine_parents.items():
+        parent_to_children.setdefault(parent, []).append(child)
+
+    G = nx.Graph()
+    # Add cuisine nodes
+    for c in keep_cuisines:
+        count = cuisine_counts.get(c, 1)
+        parent = cuisine_parents.get(c)
+        G.add_node(c, count=count, parent=parent, kind="cuisine")
+    # Add parent nodes
+    for parent, children in parent_to_children.items():
+        support = sum(cuisine_counts.get(ch, 1) for ch in children)
+        G.add_node(f"parent::{parent}", count=support, parent=parent, kind="parent")
+        for ch in children:
+            G.add_edge(f"parent::{parent}", ch, weight=0.5)
+
+    # Add cuisine-cuisine edges based on shared terms
+    cuisines = list(keep_cuisines)
+    for i in range(len(cuisines)):
+        for j in range(i + 1, len(cuisines)):
+            c1, c2 = cuisines[i], cuisines[j]
+            shared = cuisine_to_terms.get(c1, set()) & cuisine_to_terms.get(c2, set())
+            if len(shared) >= min_shared:
+                G.add_edge(c1, c2, weight=len(shared))
+
+    # Colors
+    parents = sorted(set(cuisine_parents.values()))
+    palette = sns.color_palette("tab20", max(3, len(parents) or 3)).as_hex()
+    parent_colors = {p: palette[i % len(palette)] for i, p in enumerate(parents)}
+    default_color = "#6b7280"
+
+    pos = nx.spring_layout(G, seed=42, k=0.5)
+    plt.figure(figsize=(10, 9))
+
+    # Draw cuisines
+    cuisine_nodes = [n for n, d in G.nodes(data=True) if d.get("kind") == "cuisine"]
+    cuisine_colors = [parent_colors.get(G.nodes[n].get("parent"), default_color) for n in cuisine_nodes]
+    cuisine_sizes = [np.log1p(G.nodes[n].get("count", 1)) * 180 for n in cuisine_nodes]
+    nx.draw_networkx_nodes(G, pos, nodelist=cuisine_nodes, node_color=cuisine_colors, node_size=cuisine_sizes, edgecolors="white", linewidths=0.5, alpha=0.9)
+
+    # Draw parents
+    parent_nodes = [n for n, d in G.nodes(data=True) if d.get("kind") == "parent"]
+    if parent_nodes:
+        parent_colors_list = [parent_colors.get(n.replace("parent::", ""), "#111827") for n in parent_nodes]
+        parent_sizes = [np.log1p(G.nodes[n].get("count", 1)) * 220 for n in parent_nodes]
+        nx.draw_networkx_nodes(G, pos, nodelist=parent_nodes, node_color=parent_colors_list, node_size=parent_sizes, node_shape="s", edgecolors="#0f172a", linewidths=0.8, alpha=0.95)
+
+    # Edges
+    widths = [np.log1p(d.get("weight", 1)) for _, _, d in G.edges(data=True)]
+    nx.draw_networkx_edges(G, pos, width=widths, alpha=0.35, edge_color="#94a3b8")
+
+    # Labels
+    labels = {n: n.replace("parent::", "") for n in G.nodes()}
+    nx.draw_networkx_labels(G, pos, labels=labels, font_size=8, font_color="#0f172a")
+
+    plt.title("Cuisine Similarity Network (thumbnail)")
+    plt.axis("off")
+    plt.tight_layout()
+    plt.savefig(out_path, dpi=220)
+    plt.close()
+
 def plot_cuisine_network(df_top, cuisine_counts, out_path, *, min_shared=2, top_k=25, parent_map=None, dedupe_map=None, fusion_dir: str | Path | None = None):
     """Generate an interactive cuisine similarity graph using shared top features."""
     parent_map = parent_map or {}
@@ -637,6 +750,7 @@ def plot_cuisine_network(df_top, cuisine_counts, out_path, *, min_shared=2, top_
         parent_to_children.setdefault(parent, []).append(child)
 
     net = Network(height="720px", width="1080px", bgcolor="#f8f9fb", font_color="#1b1b1b", notebook=False, cdn_resources="in_line")
+    G = nx.Graph()
     net.force_atlas_2based(gravity=-40, central_gravity=0.03, spring_length=180, damping=0.68, overlap=0.6)
 
     # Color palette for nodes (parent-aware if available). Use a fixed, high-contrast palette to avoid similar blues.
@@ -710,6 +824,7 @@ def plot_cuisine_network(df_top, cuisine_counts, out_path, *, min_shared=2, top_
                 group=parent,
                 count=int(support),
             )
+            G.add_node(f"parent::{parent}", kind="parent", parent=parent, count=int(support))
 
     # Add cuisine nodes sized by support, colored by parent cluster when available
     for c in sorted(keep_cuisines):
@@ -737,10 +852,10 @@ def plot_cuisine_network(df_top, cuisine_counts, out_path, *, min_shared=2, top_
             count=int(count),
             parent=parent or "",
         )
+        G.add_node(c, kind="cuisine", parent=parent or "", count=int(count))
         # Manually store group to keep color applied (pyvis ignores color when group kwarg is passed)
         if parent:
             net.nodes[-1]["group"] = parent
-            net.node_map[c]["group"] = parent
 
     # Add edges based on shared features (count + summed weight)
     cuisines = list(keep_cuisines)
@@ -768,6 +883,7 @@ def plot_cuisine_network(df_top, cuisine_counts, out_path, *, min_shared=2, top_
                         title=title,
                         color=edge_color,
                     )
+                    G.add_edge(c1, c2, weight=len(shared))
                 else:
                     width_each = max(1.0, np.log1p(len(shared)) * 0.9)
                     color1 = parent_colors.get(p1, fallback_palette[hash(p1) % len(fallback_palette)])
@@ -781,6 +897,7 @@ def plot_cuisine_network(df_top, cuisine_counts, out_path, *, min_shared=2, top_
                         color=color1,
                         smooth={"type": "curvedCW", "roundness": 0.15},
                     )
+                    G.add_edge(c1, c2, weight=len(shared))
                     net.add_edge(
                         c2,
                         c1,
@@ -803,6 +920,7 @@ def plot_cuisine_network(df_top, cuisine_counts, out_path, *, min_shared=2, top_
                 title=f"{_esc(child)} belongs to {_esc(parent)}",
                 dashes=True,
             )
+            G.add_edge(f"parent::{parent}", child, weight=1)
 
         # Optional: parent-to-parent edges showing overlap of child feature spaces
         parent_list = list(parent_terms.keys())
@@ -827,6 +945,7 @@ def plot_cuisine_network(df_top, cuisine_counts, out_path, *, min_shared=2, top_
                         ),
                         dashes=True,
                     )
+                    G.add_edge(f"parent::{p1}", f"parent::{p2}", weight=len(shared))
 
     net.set_options(
         json.dumps(
@@ -868,6 +987,19 @@ def plot_cuisine_network(df_top, cuisine_counts, out_path, *, min_shared=2, top_
     net.conf = False
     net.html = _inject_focus_controls(net.generate_html(notebook=False), fusion_payload)
     Path(out_path).write_text(net.html, encoding="utf-8")
+    # Save basic node metrics (degree and betweenness)
+    bet = nx.betweenness_centrality(G, normalized=True)
+    rows = []
+    for node in G.nodes():
+        rows.append({
+            "node": node,
+            "degree": G.degree(node),
+            "betweenness": bet.get(node, 0.0),
+            "parent": G.nodes[node].get("parent", ""),
+            "kind": G.nodes[node].get("kind", "cuisine"),
+        })
+    metrics_path = Path(out_path).with_name("cuisine_network_metrics.csv")
+    pd.DataFrame(rows).to_csv(metrics_path, index=False)
 
 def run(context: PipelineContext, *, force: bool = False) -> StageResult:
     cfg = context.stage("analysis_graph")
@@ -947,6 +1079,12 @@ def run(context: PipelineContext, *, force: bool = False) -> StageResult:
         shutil.copy(html_path, public_dir / "index.html")
     except Exception as exc:
         logger.warning("Failed to copy cuisine network to public: %s", exc)
+    # Static thumbnail for reports
+    thumb_path = viz_dir / "cuisine_network.png"
+    try:
+        _plot_cuisine_network_static(df_top, cuisine_counts, thumb_path, parent_map=parent_map, dedupe_map=dedupe_map, min_shared=2, top_k=25)
+    except Exception as exc:
+        logger.warning("Failed to generate cuisine network thumbnail: %s", exc)
     
     # [cite_start]B. Distribution Plot [cite: 307]
     dist_path = viz_dir / "cuisine_distribution.png"

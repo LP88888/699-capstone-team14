@@ -10,23 +10,23 @@
         "potatoes"
       ],
       "connects_b": [
-        "coriander",
-        "peas",
-        "chili powder"
+        "cinnamon sticks",
+        "tomatoes",
+        "cardamom"
       ]
     },
     {
       "name": "cardamom",
       "score": 81.19724808578152,
       "connects_a": [
-        "dhania",
         "seeds",
-        "powder"
+        "powder",
+        "oil"
       ],
       "connects_b": [
-        "basmati rice",
-        "ginger",
-        "tumeric"
+        "garam masala",
+        "turmeric",
+        "cinnamon sticks"
       ]
     },
     {
@@ -38,23 +38,23 @@
         "potatoes"
       ],
       "connects_b": [
-        "ginger",
-        "cardamom",
-        "cinnamon"
+        "garam masala",
+        "mustard seeds",
+        "cayenne pepper"
       ]
     },
     {
       "name": "cumin",
       "score": 51.87631270741602,
       "connects_a": [
-        "oregano",
         "beans",
+        "oregano",
         "bell pepper"
       ],
       "connects_b": [
-        "basmati rice",
-        "tumeric",
-        "cardamom"
+        "garam masala",
+        "turmeric",
+        "mustard seeds"
       ]
     },
     {
@@ -66,23 +66,23 @@
         "leaves"
       ],
       "connects_b": [
-        "ginger",
-        "tumeric",
-        "cinnamon"
+        "garam masala",
+        "turmeric",
+        "tomatoes"
       ]
     },
     {
       "name": "dhania",
       "score": 43.674732118464405,
       "connects_a": [
-        "wheat",
-        "greek",
-        "finger"
+        "seeds",
+        "bell",
+        "oil salt"
       ],
       "connects_b": [
-        "cardamom",
         "chili powder",
-        "peas"
+        "peas",
+        "cardamom"
       ]
     },
     {
@@ -93,9 +93,9 @@
         "potatoes"
       ],
       "connects_b": [
-        "garam masala",
-        "coriander",
-        "peas"
+        "cinnamon sticks",
+        "tomatoes",
+        "cardamom"
       ]
     },
     {
@@ -106,9 +106,9 @@
         "potatoes"
       ],
       "connects_b": [
-        "garam masala",
-        "coriander",
-        "peas"
+        "cinnamon sticks",
+        "tomatoes",
+        "vegetable oil"
       ]
     },
     {
@@ -119,29 +119,49 @@
         "potatoes"
       ],
       "connects_b": [
-        "garam masala",
-        "chili powder",
-        "peas"
+        "cinnamon sticks",
+        "tomatoes",
+        "cardamom"
       ]
     },
     {
       "name": "bay leaf",
       "score": 36.323983727736966,
       "connects_a": [
-        "oregano",
+        "beans",
         "thyme",
-        "beans"
+        "oregano"
       ],
       "connects_b": [
-        "basmati rice",
-        "cardamom",
+        "garam masala",
+        "turmeric",
         "cinnamon sticks"
       ]
     }
   ],
   "novel_from_a": [
     {
+      "name": "cherry tomatoes",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
       "name": "arugula",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "crusty bread",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "handful pine nuts",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "pasta",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -157,31 +177,6 @@
     },
     {
       "name": "crusty bread",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "pasta",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "handful pine nuts",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "cherry tomatoes",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "reggiano",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "crusty bread",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -189,21 +184,16 @@
       "name": "black beans",
       "pairs_with": "cloves",
       "strength": 1
+    },
+    {
+      "name": "reggiano",
+      "pairs_with": "cloves",
+      "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "lamb shanks",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "petite",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "couscous",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -213,8 +203,13 @@
       "strength": 1
     },
     {
-      "name": "fenugreek",
-      "pairs_with": "dhania",
+      "name": "couscous",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "lamb shanks",
+      "pairs_with": "olive oil",
       "strength": 1
     },
     {
@@ -228,17 +223,22 @@
       "strength": 1
     },
     {
-      "name": "paneer",
+      "name": "fenugreek",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "kasuri methi",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "corn tortillas",
+      "name": "petite",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "lamb shanks",
+      "name": "chicken bouillon",
       "pairs_with": "onion",
       "strength": 1
     }

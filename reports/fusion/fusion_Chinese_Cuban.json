@@ -6,41 +6,41 @@
       "score": 120.46677677574276,
       "connects_a": [
         "oyster sauce",
-        "canola oil",
-        "pork"
+        "soy sauce",
+        "scallions"
       ],
       "connects_b": [
-        "canola oil",
-        "pork",
-        "mayonnaise"
+        "mustard",
+        "lime juice",
+        "wine vinegar"
       ]
     },
     {
       "name": "rice vinegar",
       "score": 114.26134603194504,
       "connects_a": [
-        "rice",
-        "oyster sauce",
-        "canola oil"
+        "scallions",
+        "sodium soy sauce",
+        "rice wine"
       ],
       "connects_b": [
-        "canola oil",
-        "pork",
-        "orange juice"
+        "rice",
+        "lime juice",
+        "canola oil"
       ]
     },
     {
       "name": "hoisin sauce",
       "score": 110.0841005791393,
       "connects_a": [
-        "rice",
-        "oyster sauce",
-        "canola oil"
+        "shaoxing",
+        "scallions",
+        "sodium soy sauce"
       ],
       "connects_b": [
-        "canola oil",
-        "pork",
-        "cilantro"
+        "rice",
+        "garlic",
+        "canola oil"
       ]
     },
     {
@@ -48,13 +48,13 @@
       "score": 109.06182737876658,
       "connects_a": [
         "oyster sauce",
-        "canola oil",
-        "pork"
+        "soy sauce",
+        "scallions"
       ],
       "connects_b": [
-        "canola oil",
-        "pork",
-        "vegetable oil"
+        "lime juice",
+        "vegetable oil",
+        "lime"
       ]
     },
     {
@@ -62,13 +62,13 @@
       "score": 102.21645410789404,
       "connects_a": [
         "oyster sauce",
-        "canola oil",
-        "ginger"
+        "soy sauce",
+        "scallions"
       ],
       "connects_b": [
-        "canola oil",
-        "vegetable oil",
-        "cilantro"
+        "lime juice",
+        "wine vinegar",
+        "vegetable oil"
       ]
     },
     {
@@ -76,12 +76,12 @@
       "score": 90.10650341919718,
       "connects_a": [
         "oyster sauce",
-        "honey",
-        "ginger"
+        "soy sauce",
+        "scallions"
       ],
       "connects_b": [
-        "mayonnaise",
-        "cilantro",
+        "garlic",
+        "lime juice",
         "lime"
       ]
     },
@@ -89,97 +89,62 @@
       "name": "snow peas",
       "score": 80.03683622855938,
       "connects_a": [
-        "cabbage",
-        "canola oil",
-        "ginger"
+        "soy sauce",
+        "scallions",
+        "rice"
       ],
       "connects_b": [
-        "canola oil",
-        "vegetable oil",
-        "bell pepper"
+        "rice",
+        "bell pepper",
+        "vegetable oil"
       ]
     },
     {
       "name": "flank steak",
       "score": 78.02924658923922,
       "connects_a": [
-        "ginger",
-        "rice vinegar",
-        "vegetable oil"
+        "soy sauce",
+        "scallions",
+        "rice"
       ],
       "connects_b": [
-        "vegetable oil",
-        "cumin",
-        "bell pepper"
+        "rice",
+        "bell pepper",
+        "lime"
       ]
     },
     {
       "name": "ginger",
       "score": 73.32168512737834,
       "connects_a": [
+        "shaoxing",
         "oyster sauce",
-        "canola oil",
-        "pork"
+        "soy sauce"
       ],
       "connects_b": [
-        "canola oil",
-        "garlic",
-        "cilantro"
+        "pork",
+        "cilantro",
+        "canola oil"
       ]
     },
     {
       "name": "sodium soy sauce",
       "score": 72.0607798228439,
       "connects_a": [
-        "cabbage",
         "oyster sauce",
-        "honey"
+        "scallions",
+        "rice"
       ],
       "connects_b": [
-        "rice",
-        "canola oil",
-        "cilantro"
+        "pork",
+        "cilantro",
+        "canola oil"
       ]
     }
   ],
   "novel_from_a": [
     {
-      "name": "pasta",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "squid",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
       "name": "spaghetti",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "petite",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "heads garlic",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "anchovies",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "spun",
-      "pairs_with": "olive oil",
-      "strength": 1
-    },
-    {
-      "name": "palm",
       "pairs_with": "olive oil",
       "strength": 1
     },
@@ -192,36 +157,51 @@
       "name": "fennel bulb",
       "pairs_with": "olive oil",
       "strength": 1
+    },
+    {
+      "name": "pasta",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "spun",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "baby arugula",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "cremini",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "petite",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "anchovies",
+      "pairs_with": "olive oil",
+      "strength": 1
+    },
+    {
+      "name": "radicchio",
+      "pairs_with": "olive oil",
+      "strength": 1
     }
   ],
   "novel_from_b": [
     {
-      "name": "chipotles",
+      "name": "beef chuck",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "saffron threads",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "crusty bread",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "chipotle chile",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "chorizo sausage",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "evoo",
+      "name": "allspice berries",
       "pairs_with": "cloves",
       "strength": 1
     },
@@ -231,17 +211,37 @@
       "strength": 1
     },
     {
-      "name": "finely oregano",
+      "name": "bunch cilantro",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "beef chuck",
+      "name": "chipotle puree",
       "pairs_with": "cloves",
       "strength": 1
     },
     {
-      "name": "montreal steak",
+      "name": "cotija cheese",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "evoo",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "2 medium",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "seasoning blend",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
+      "name": "chipotles",
       "pairs_with": "cloves",
       "strength": 1
     }

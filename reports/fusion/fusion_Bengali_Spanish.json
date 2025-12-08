@@ -5,23 +5,23 @@
       "name": "garam masala",
       "score": 28.15828144472264,
       "connects_a": [
-        "oil",
         "chili powder",
+        "oil",
         "peas"
       ],
       "connects_b": [
-        "cumin",
         "lemon juice",
-        "peas"
+        "tomatoes",
+        "garlic"
       ]
     },
     {
       "name": "dhania",
       "score": 21.837366059232203,
       "connects_a": [
-        "chili powder",
-        "peas",
-        "wheat"
+        "curd",
+        "wheat",
+        "powder salt"
       ],
       "connects_b": [
         "peas"
@@ -31,8 +31,8 @@
       "name": "cardamom",
       "score": 20.29931202144538,
       "connects_a": [
-        "dhania",
-        "methi",
+        "seeds",
+        "seeds cloves",
         "chili powder"
       ],
       "connects_b": [
@@ -44,9 +44,9 @@
       "name": "bell",
       "score": 20.090763668817434,
       "connects_a": [
-        "dhania",
-        "wheat",
-        "fenugreek"
+        "beans",
+        "seeds",
+        "oil salt"
       ],
       "connects_b": [
         "peas",
@@ -57,14 +57,14 @@
       "name": "tumeric",
       "score": 20.056614520993726,
       "connects_a": [
-        "oil",
         "chili powder",
+        "oil",
         "peas"
       ],
       "connects_b": [
-        "cumin",
-        "peas",
-        "onion"
+        "tomatoes",
+        "garlic",
+        "peas"
       ]
     },
     {
@@ -75,22 +75,22 @@
         "potatoes"
       ],
       "connects_b": [
-        "wine",
-        "tomatoes",
-        "chorizo"
+        "parsley",
+        "rice",
+        "tomatoes"
       ]
     },
     {
       "name": "cumin seeds",
       "score": 16.019741523136577,
       "connects_a": [
-        "oil",
         "chili powder",
+        "oil",
         "peas"
       ],
       "connects_b": [
-        "tomatoes",
         "peas",
+        "tomatoes",
         "cumin"
       ]
     },
@@ -98,41 +98,41 @@
       "name": "mustard seeds",
       "score": 16.01246149451224,
       "connects_a": [
-        "oil",
         "chili powder",
+        "oil",
         "peas"
       ],
       "connects_b": [
-        "tomatoes",
         "peas",
-        "cumin"
+        "tomatoes",
+        "wine vinegar"
       ]
     },
     {
       "name": "coriander powder",
       "score": 15.029290356626463,
       "connects_a": [
-        "oil",
         "chili powder",
+        "oil",
         "leaves"
       ],
       "connects_b": [
-        "cumin",
-        "onion",
-        "tomatoes"
+        "leaves",
+        "tomatoes",
+        "garlic"
       ]
     },
     {
       "name": "sprigs thyme",
       "score": 14.029784294005541,
       "connects_a": [
-        "leaves",
-        "potatoes"
+        "potatoes",
+        "leaves"
       ],
       "connects_b": [
-        "wine",
-        "carrot",
-        "cloves"
+        "lemon",
+        "leaves",
+        "wine"
       ]
     }
   ],
@@ -148,12 +148,12 @@
       "strength": 1
     },
     {
-      "name": "oil coriander",
+      "name": "salt coriander",
       "pairs_with": "leaves",
       "strength": 1
     },
     {
-      "name": "water coriander",
+      "name": "oil coriander",
       "pairs_with": "leaves",
       "strength": 1
     },
@@ -163,7 +163,7 @@
       "strength": 1
     },
     {
-      "name": "salt coriander",
+      "name": "water coriander",
       "pairs_with": "leaves",
       "strength": 1
     },
@@ -185,12 +185,12 @@
   ],
   "novel_from_b": [
     {
-      "name": "black",
+      "name": "fruit",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "fruit",
+      "name": "black",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -200,17 +200,12 @@
       "strength": 1
     },
     {
-      "name": "vanilla",
+      "name": "wondra",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "cold",
-      "pairs_with": "flour",
-      "strength": 1
-    },
-    {
-      "name": "ice water",
+      "name": "buttermilk",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -220,7 +215,7 @@
       "strength": 1
     },
     {
-      "name": "soda",
+      "name": "lard",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -230,7 +225,12 @@
       "strength": 1
     },
     {
-      "name": "filling",
+      "name": "cod",
+      "pairs_with": "flour",
+      "strength": 1
+    },
+    {
+      "name": "pinch cayenne",
       "pairs_with": "flour",
       "strength": 1
     }

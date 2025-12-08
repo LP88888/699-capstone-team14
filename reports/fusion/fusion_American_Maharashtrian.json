@@ -5,9 +5,9 @@
       "name": "garam masala",
       "score": 40.22611634960377,
       "connects_a": [
-        "cinnamon",
-        "vegetable oil",
-        "cumin"
+        "lemon juice",
+        "tomatoes",
+        "garlic"
       ],
       "connects_b": [
         "turmeric",
@@ -19,27 +19,27 @@
       "name": "mustard seeds",
       "score": 30.02336530221045,
       "connects_a": [
+        "tomatoes",
         "vegetable oil",
-        "cumin",
-        "tomatoes"
+        "wine vinegar"
       ],
       "connects_b": [
         "turmeric",
-        "coconut",
-        "chili powder"
+        "chili powder",
+        "peas"
       ]
     },
     {
       "name": "tumeric",
       "score": 24.06793742519247,
       "connects_a": [
-        "cinnamon",
-        "cumin",
-        "onion"
+        "tomatoes",
+        "garlic",
+        "cinnamon"
       ],
       "connects_b": [
-        "oil",
         "chili powder",
+        "oil",
         "peas"
       ]
     },
@@ -47,14 +47,14 @@
       "name": "coriander powder",
       "score": 24.046864570602338,
       "connects_a": [
-        "cinnamon",
-        "cumin",
-        "onion"
+        "leaves",
+        "tomatoes",
+        "garlic"
       ],
       "connects_b": [
-        "oil",
         "chili powder",
-        "turmeric"
+        "oil",
+        "leaves"
       ]
     },
     {
@@ -62,8 +62,8 @@
       "score": 20.011118817925528,
       "connects_a": [
         "cinnamon",
-        "tomatoes",
-        "cumin"
+        "potatoes",
+        "tomatoes"
       ],
       "connects_b": [
         "turmeric",
@@ -79,37 +79,37 @@
         "cumin"
       ],
       "connects_b": [
-        "dhania",
-        "chili powder",
-        "peas"
+        "seeds",
+        "turmeric",
+        "chili powder"
       ]
     },
     {
       "name": "cumin seeds",
       "score": 18.02220921352865,
       "connects_a": [
+        "potatoes",
         "tomatoes",
-        "cumin",
-        "potatoes"
+        "cumin"
       ],
       "connects_b": [
         "turmeric",
-        "coconut",
-        "chili powder"
+        "chili powder",
+        "peas"
       ]
     },
     {
       "name": "coriander seeds",
       "score": 16.02250496372513,
       "connects_a": [
-        "cinnamon",
-        "kosher sea salt",
-        "honey"
+        "honey",
+        "wine vinegar",
+        "kosher sea salt"
       ],
       "connects_b": [
+        "chili powder",
         "oil",
-        "coconut",
-        "chili powder"
+        "turmeric"
       ]
     },
     {
@@ -119,18 +119,18 @@
         "flour"
       ],
       "connects_b": [
-        "dhania",
-        "mango",
-        "dal"
+        "seeds",
+        "bell",
+        "oil salt"
       ]
     },
     {
       "name": "can tomatoes",
       "score": 12.070630898174231,
       "connects_a": [
-        "optional",
-        "cumin",
-        "bell pepper"
+        "parsley",
+        "bell pepper",
+        "cloves"
       ],
       "connects_b": [
         "chili powder",
@@ -150,16 +150,6 @@
       "strength": 1
     },
     {
-      "name": "oats",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "baby",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
       "name": "button",
       "pairs_with": "dhania",
       "strength": 1
@@ -170,12 +160,22 @@
       "strength": 1
     },
     {
+      "name": "baby",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "oats",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
       "name": "jeera whole",
       "pairs_with": "powder",
       "strength": 1
     },
     {
-      "name": "almond",
+      "name": "button",
       "pairs_with": "powder",
       "strength": 1
     },
@@ -185,7 +185,7 @@
       "strength": 1
     },
     {
-      "name": "button",
+      "name": "almond",
       "pairs_with": "powder",
       "strength": 1
     }
@@ -212,12 +212,12 @@
       "strength": 1
     },
     {
-      "name": "maida sooji",
+      "name": "pearl",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "pearl",
+      "name": "maida sooji",
       "pairs_with": "flour",
       "strength": 1
     },
@@ -237,7 +237,7 @@
       "strength": 1
     },
     {
-      "name": "oil coriander",
+      "name": "coriander powder",
       "pairs_with": "leaves",
       "strength": 1
     }

@@ -6,12 +6,12 @@
       "score": 64.68277862479634,
       "connects_a": [
         "oyster sauce",
-        "ginger",
-        "shrimp"
+        "soy sauce",
+        "scallions"
       ],
       "connects_b": [
-        "dhania",
         "rai",
+        "dhania",
         "dal"
       ]
     },
@@ -23,8 +23,8 @@
       ],
       "connects_b": [
         "black",
-        "channa dal",
-        "leaves coriander"
+        "mullangi",
+        "hing"
       ]
     },
     {
@@ -34,18 +34,18 @@
         "peanuts"
       ],
       "connects_b": [
-        "dhania",
         "black",
-        "rai"
+        "salt coriander",
+        "seeds"
       ]
     },
     {
       "name": "sesame seed",
       "score": 17.030151036338513,
       "connects_a": [
-        "cabbage",
         "oyster sauce",
-        "honey"
+        "soy sauce",
+        "scallions"
       ],
       "connects_b": [
         "til"
@@ -55,9 +55,9 @@
       "name": "oyster sauce",
       "score": 17.010929629853667,
       "connects_a": [
-        "ginger",
-        "peanuts",
-        "shrimp"
+        "soy sauce",
+        "scallions",
+        "sodium soy sauce"
       ],
       "connects_b": [
         "oil"
@@ -67,9 +67,9 @@
       "name": "corn starch",
       "score": 16.03175987671447,
       "connects_a": [
-        "cabbage",
         "oyster sauce",
-        "ginger"
+        "soy sauce",
+        "scallions"
       ],
       "connects_b": [
         "oil"
@@ -82,18 +82,18 @@
         "peanuts"
       ],
       "connects_b": [
-        "dhania",
-        "rai",
-        "salt coriander"
+        "salt coriander",
+        "leaves coriander",
+        "seeds"
       ]
     },
     {
       "name": "soy sauce",
       "score": 15.413742438474644,
       "connects_a": [
-        "cabbage",
         "oyster sauce",
-        "honey"
+        "scallions",
+        "rice"
       ],
       "connects_b": [
         "oil"
@@ -103,14 +103,14 @@
       "name": "mango",
       "score": 15.105369120348096,
       "connects_a": [
-        "lime",
         "cilantro",
-        "lime juice"
+        "lime juice",
+        "lime"
       ],
       "connects_b": [
-        "dhania",
+        "seeds",
         "fenugreek",
-        "seeds"
+        "powder"
       ]
     },
     {
@@ -118,8 +118,8 @@
       "score": 13.003353328922035,
       "connects_a": [
         "oyster sauce",
-        "honey",
-        "ginger"
+        "soy sauce",
+        "scallions"
       ],
       "connects_b": [
         "oil"
@@ -127,6 +127,16 @@
     }
   ],
   "novel_from_a": [
+    {
+      "name": "gram flour",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "green bell",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
     {
       "name": "onions green",
       "pairs_with": "dhania",
@@ -138,7 +148,7 @@
       "strength": 1
     },
     {
-      "name": "olive",
+      "name": "brown",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -148,12 +158,7 @@
       "strength": 1
     },
     {
-      "name": "virgin",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "green bell",
+      "name": "olive",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -163,17 +168,12 @@
       "strength": 1
     },
     {
-      "name": "brown",
+      "name": "virgin",
       "pairs_with": "dhania",
       "strength": 1
     },
     {
-      "name": "gram flour",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "tomatillos",
+      "name": "chicken bouillon",
       "pairs_with": "onion",
       "strength": 1
     }
@@ -185,17 +185,7 @@
       "strength": 1
     },
     {
-      "name": "murungai",
-      "pairs_with": "leaves",
-      "strength": 1
-    },
-    {
       "name": "pudina",
-      "pairs_with": "leaves",
-      "strength": 1
-    },
-    {
-      "name": "pudina salt",
       "pairs_with": "leaves",
       "strength": 1
     },
@@ -206,6 +196,16 @@
     },
     {
       "name": "cloves cardamom",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
+      "name": "murungai",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
+      "name": "pudina salt",
       "pairs_with": "leaves",
       "strength": 1
     },

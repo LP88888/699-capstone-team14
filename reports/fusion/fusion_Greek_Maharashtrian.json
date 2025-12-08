@@ -5,9 +5,9 @@
       "name": "garam masala",
       "score": 45.254380893304244,
       "connects_a": [
-        "spinach",
-        "cinnamon",
-        "lemon juice"
+        "lemon juice",
+        "tomatoes",
+        "garlic"
       ],
       "connects_b": [
         "turmeric",
@@ -19,27 +19,27 @@
       "name": "cardamom",
       "score": 27.404071228951263,
       "connects_a": [
-        "cinnamon",
         "greek yogurt",
-        "yogurt"
+        "yogurt",
+        "cinnamon"
       ],
       "connects_b": [
-        "dhania",
-        "chili powder",
-        "peas"
+        "seeds",
+        "turmeric",
+        "chili powder"
       ]
     },
     {
       "name": "tumeric",
       "score": 20.056614520993726,
       "connects_a": [
-        "cinnamon",
-        "chicken breasts",
-        "onion"
+        "tomatoes",
+        "garlic",
+        "cinnamon"
       ],
       "connects_b": [
-        "oil",
         "chili powder",
+        "oil",
         "peas"
       ]
     },
@@ -47,28 +47,28 @@
       "name": "coriander powder",
       "score": 20.039053808835284,
       "connects_a": [
-        "cinnamon",
-        "onion",
-        "tomatoes"
+        "leaves",
+        "tomatoes",
+        "garlic"
       ],
       "connects_b": [
-        "oil",
         "chili powder",
-        "turmeric"
+        "oil",
+        "leaves"
       ]
     },
     {
       "name": "coriander seeds",
       "score": 20.02813120465641,
       "connects_a": [
-        "honey",
         "cinnamon",
-        "yogurt"
+        "wine vinegar",
+        "grain sea salt"
       ],
       "connects_b": [
+        "chili powder",
         "oil",
-        "coconut",
-        "chili powder"
+        "turmeric"
       ]
     },
     {
@@ -81,8 +81,8 @@
       ],
       "connects_b": [
         "turmeric",
-        "coconut",
-        "chili powder"
+        "chili powder",
+        "peas"
       ]
     },
     {
@@ -95,35 +95,35 @@
       ],
       "connects_b": [
         "chili powder",
-        "mango",
-        "peanuts"
+        "peanuts",
+        "turmeric"
       ]
     },
     {
       "name": "olive",
       "score": 16.074482924509578,
       "connects_a": [
-        "cucumber",
+        "mint",
         "lemon juice",
         "yogurt"
       ],
       "connects_b": [
         "dhania",
         "wheat",
-        "chilli"
+        "bell"
       ]
     },
     {
       "name": "turmeric",
       "score": 16.031015858965105,
       "connects_a": [
-        "tomatoes",
         "greek yogurt",
+        "tomatoes",
         "yogurt"
       ],
       "connects_b": [
+        "chili powder",
         "oil",
-        "coconut",
         "peas"
       ]
     },
@@ -131,8 +131,8 @@
       "name": "coriander",
       "score": 15.038767998317228,
       "connects_a": [
+        "tomatoes",
         "cinnamon",
-        "yogurt",
         "mint"
       ],
       "connects_b": [
@@ -144,17 +144,7 @@
   ],
   "novel_from_a": [
     {
-      "name": "virgin",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "pepper powder",
-      "pairs_with": "dhania",
-      "strength": 1
-    },
-    {
-      "name": "fruit",
+      "name": "kabuli",
       "pairs_with": "dhania",
       "strength": 1
     },
@@ -164,8 +154,23 @@
       "strength": 1
     },
     {
-      "name": "kabuli",
+      "name": "fruit",
       "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "pepper powder",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "virgin",
+      "pairs_with": "dhania",
+      "strength": 1
+    },
+    {
+      "name": "kabuli",
+      "pairs_with": "powder",
       "strength": 1
     },
     {
@@ -174,22 +179,17 @@
       "strength": 1
     },
     {
-      "name": "kabuli",
-      "pairs_with": "powder",
-      "strength": 1
-    },
-    {
-      "name": "vanilla",
+      "name": "extract",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "cold",
+      "name": "buttermilk",
       "pairs_with": "flour",
       "strength": 1
     },
     {
-      "name": "ice water",
+      "name": "yeast",
       "pairs_with": "flour",
       "strength": 1
     }
@@ -211,17 +211,17 @@
       "strength": 1
     },
     {
-      "name": "oil coriander",
-      "pairs_with": "leaves",
-      "strength": 1
-    },
-    {
       "name": "coriander powder",
       "pairs_with": "leaves",
       "strength": 1
     },
     {
       "name": "salt coriander",
+      "pairs_with": "leaves",
+      "strength": 1
+    },
+    {
+      "name": "oil coriander",
       "pairs_with": "leaves",
       "strength": 1
     },

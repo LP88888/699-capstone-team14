@@ -5,13 +5,13 @@
       "name": "garam masala",
       "score": 98.55398505652924,
       "connects_a": [
-        "tomato paste",
-        "cinnamon",
-        "vegetable oil"
+        "lemon juice",
+        "tomato",
+        "chicken"
       ],
       "connects_b": [
-        "cinnamon",
-        "bay leaf",
+        "lemon juice",
+        "garlic",
         "vegetable oil"
       ]
     },
@@ -19,13 +19,13 @@
       "name": "confectioners",
       "score": 52.2712261994326,
       "connects_a": [
-        "egg",
         "cinnamon",
-        "milk"
+        "egg",
+        "butter"
       ],
       "connects_b": [
-        "egg",
-        "nutmeg",
+        "almonds",
+        "butter",
         "milk"
       ]
     },
@@ -33,13 +33,13 @@
       "name": "tomato paste",
       "score": 49.31618605161813,
       "connects_a": [
-        "carrot",
-        "cumin",
+        "parsley",
+        "lamb",
         "paprika"
       ],
       "connects_b": [
-        "wine",
-        "bay leaf",
+        "parsley",
+        "cloves",
         "carrot"
       ]
     },
@@ -47,41 +47,41 @@
       "name": "vanilla extract",
       "score": 48.770153741174205,
       "connects_a": [
-        "egg",
         "cinnamon",
-        "milk"
+        "egg",
+        "butter"
       ],
       "connects_b": [
-        "egg",
-        "nutmeg",
-        "apples"
+        "almonds",
+        "butter",
+        "milk"
       ]
     },
     {
       "name": "filling",
       "score": 45.069119215072945,
       "connects_a": [
-        "egg",
+        "butter",
         "milk",
         "cinnamon"
       ],
       "connects_b": [
-        "egg",
+        "butter",
         "milk",
-        "cinnamon"
+        "purpose flour"
       ]
     },
     {
       "name": "celery",
       "score": 42.10425419269799,
       "connects_a": [
-        "tomato paste",
-        "carrot",
-        "paprika"
+        "parsley",
+        "paprika",
+        "garlic"
       ],
       "connects_b": [
-        "bay leaf",
-        "carrot",
+        "parsley",
+        "garlic",
         "bacon"
       ]
     },
@@ -89,56 +89,56 @@
       "name": "room temp",
       "score": 40.02903828316117,
       "connects_a": [
-        "egg",
         "cinnamon",
-        "milk"
+        "egg",
+        "butter"
       ],
       "connects_b": [
-        "egg",
-        "nutmeg",
-        "milk"
+        "butter",
+        "milk",
+        "purpose flour"
       ]
     },
     {
       "name": "beef stock",
       "score": 36.13253723897358,
       "connects_a": [
-        "tomato paste",
-        "carrot",
-        "flour"
+        "bread",
+        "paprika",
+        "carrot"
       ],
       "connects_b": [
+        "carrot",
         "wine",
-        "bay leaf",
-        "carrot"
+        "onion"
       ]
     },
     {
       "name": "vanilla",
       "score": 36.04707637664889,
       "connects_a": [
-        "egg",
+        "cinnamon",
         "flour",
-        "cinnamon"
+        "milk"
       ],
       "connects_b": [
+        "milk",
         "egg",
-        "nutmeg",
-        "milk"
+        "cinnamon"
       ]
     },
     {
       "name": "almond extract",
       "score": 36.04006609022899,
       "connects_a": [
-        "egg",
         "cinnamon",
-        "milk"
+        "egg",
+        "butter"
       ],
       "connects_b": [
-        "egg",
-        "milk",
-        "cinnamon"
+        "almonds",
+        "butter",
+        "milk"
       ]
     }
   ],
@@ -154,6 +154,11 @@
       "strength": 1
     },
     {
+      "name": "harissa",
+      "pairs_with": "cloves",
+      "strength": 1
+    },
+    {
       "name": "sirloin",
       "pairs_with": "cloves",
       "strength": 1
@@ -164,17 +169,12 @@
       "strength": 1
     },
     {
-      "name": "harissa",
-      "pairs_with": "cloves",
-      "strength": 1
-    },
-    {
-      "name": "lentil",
+      "name": "tomato puree",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "tomato puree",
+      "name": "lentil",
       "pairs_with": "onion",
       "strength": 1
     },
@@ -184,12 +184,12 @@
       "strength": 1
     },
     {
-      "name": "garam masala",
+      "name": "okra",
       "pairs_with": "onion",
       "strength": 1
     },
     {
-      "name": "okra",
+      "name": "garam masala",
       "pairs_with": "onion",
       "strength": 1
     }
@@ -201,37 +201,12 @@
       "strength": 1
     },
     {
-      "name": "muscovado sugar",
+      "name": "graham cracker crumbs",
       "pairs_with": "butter",
       "strength": 1
     },
     {
-      "name": "percent milk",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "phyllo dough",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "confectioners",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "whole milk",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "cooking apples",
-      "pairs_with": "butter",
-      "strength": 1
-    },
-    {
-      "name": "corn syrup",
+      "name": "granny smith apples",
       "pairs_with": "butter",
       "strength": 1
     },
@@ -242,6 +217,31 @@
     },
     {
       "name": "room temp",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "phyllo dough",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "sticks",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "filling",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "dutch process",
+      "pairs_with": "butter",
+      "strength": 1
+    },
+    {
+      "name": "believe",
       "pairs_with": "butter",
       "strength": 1
     }

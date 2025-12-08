@@ -338,6 +338,10 @@ pipeline:
       cuisine_col: "cuisine_deduped"
     params:
       max_features: 10000
+      min_df: 5
+      max_df: 0.9
+      ngram_min: 1
+      ngram_max: 2
       use_svd: true
       svd_components: 300
       svd_top_terms: 15
@@ -347,6 +351,8 @@ pipeline:
       min_label_freq: 150
       parent_map_path: "./data/cuisine_normalized/cuisine_parent_map.json"
       max_label_samples: 1500
+      apply_parent_for_training: true
+      cluster_use_parent_labels: true
     output:
       reports_dir: "./reports/cuisines/baseline"
 
