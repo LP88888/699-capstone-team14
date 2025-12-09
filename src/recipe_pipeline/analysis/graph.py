@@ -191,7 +191,7 @@ def _inject_focus_controls(html_text: str, fusions: list | None = None) -> str:
           return;
         }
         const cleanLabel = (s) => String(s || "").replace(/parent::/gi, "").trim();
-        const cleanText = (s) => cleanLabel(String(s || "")).replace(/<br>/g, ", ").replace(/\s+,/g, ",").trim();
+        const cleanText = (s) => cleanLabel(String(s || "")).replace(/<br>/g, ", ").replace(/\\s+,/g, ",").trim();
         if(data.type === "edge"){
           const name = `${cleanLabel(data.from)} \u2194 ${cleanLabel(data.to)}`;
           titleEl.textContent = name;
