@@ -1,6 +1,8 @@
 
 from __future__ import annotations
 import json
+from collections import defaultdict
+import re
 from pathlib import Path
 from typing import Dict, Union
 import numpy as np
@@ -87,6 +89,23 @@ _DROP_TOKENS = {
 
 }
 _DROP_SUBSTRINGS = {"spoon", "baking", "ounce", "pound", "cup", "slice",}
+_PHRASE_NOISE_TOKENS = {
+    # Quantities / units
+    "slice", "slices", "sliced",
+    "chunk", "chunks", "chunky", "chunked",
+    "piece", "pieces",
+    "cup", "cups",
+    "tablespoon", "tablespoons", "tbsp",
+    "teaspoon", "teaspoons", "tsp",
+    "lb", "lbs", "pound", "pounds",
+    "oz", "ounce", "ounces",
+    "gram", "grams", "kg", "ml", "l", "liter", "liters",
+    "pinch",
+    # Forms / descriptors that are not the core ingredient
+    "powder", "powders", "powdered",
+}
+_DIGIT_RE = re.compile(r"^[0-9]+([./][0-9]+)?$")
+_UNIGRAM_CACHE: Dict[int, Dict[str, int]] = {}
 
 
 def _dedupe_preserve_order(tokens):
@@ -108,12 +127,66 @@ def _collapse_duplicate_words(text: str) -> str:
     return text
 
 
+def _build_unigram_frequency(mapping: Dict[str, str]) -> Dict[str, int]:
+    """
+    Build a unigram frequency map from mapping targets; helps choose the dominant
+    token when stripping noisy descriptors (e.g., 'chicken slices' -> 'chicken').
+    """
+    freq: Dict[str, int] = defaultdict(int)
+    for val in mapping.values():
+        for tok in str(val).lower().split():
+            freq[tok] += 1
+    return dict(freq)
+
+
+def _get_unigram_freq(mapping: Dict[str, str], fallback: Dict[str, int] | None = None) -> Dict[str, int]:
+    if not mapping:
+        return fallback or {}
+    key = id(mapping)
+    if key not in _UNIGRAM_CACHE:
+        _UNIGRAM_CACHE[key] = _build_unigram_frequency(mapping)
+    return _UNIGRAM_CACHE[key]
+
+
+def _strip_noise_tokens(parts: list[str], unigram_freq: Dict[str, int]) -> list[str]:
+    """
+    Remove measurement / non-food tokens from within a phrase and prefer the
+    most frequent remaining tokens.
+    """
+    kept: list[str] = []
+    for tok in parts:
+        lower = tok.lower()
+        if lower in _PHRASE_NOISE_TOKENS:
+            continue
+        if _DIGIT_RE.match(lower):
+            continue
+        kept.append(tok)
+
+    if not kept and parts:
+        kept = [parts[0]]
+
+    # Collapse consecutive duplicates case-insensitively
+    collapsed: list[str] = []
+    for tok in kept:
+        if collapsed and collapsed[-1].lower() == tok.lower():
+            continue
+        collapsed.append(tok)
+
+    if len(collapsed) > 1 and unigram_freq:
+        max_freq = max(unigram_freq.get(tok.lower(), 0) for tok in collapsed)
+        dominant = [tok for tok in collapsed if unigram_freq.get(tok.lower(), 0) == max_freq]
+        collapsed = dominant or collapsed
+
+    return collapsed
+
+
 def normalize_token_with_map(
     tok,
     mapping: Dict[str, str],
     *,
     collapse_duplicate_words: bool = False,
     canonicalizer=None,
+    unigram_freq: Dict[str, int] | None = None,
 ) -> str | None:
     """
     Apply a dedupe map to a token and drop obviously noisy tokens.
@@ -121,20 +194,36 @@ def normalize_token_with_map(
     - Applies an optional canonicalizer (e.g., plural → singular tweaks)
     - Looks up the token in the provided mapping (variant → canonical)
     - Optionally collapses duplicate single-word strings like "pepper pepper"
-    - Filters out known noisy tokens/substrings
+    - Filters out known noisy tokens/substrings and strips measurement/descriptive words
     """
     raw = canonicalizer(str(tok), mapping) if canonicalizer else str(tok)
+    freq_map = unigram_freq or _get_unigram_freq(mapping)
+
+    # Prefer curated map directly if present
+    mapped_direct = mapping.get(raw)
+    raw = mapped_direct if mapped_direct is not None else raw
+
     # Collapse immediate duplicate first/second tokens (e.g., "salt salt" -> "salt")
     parts = raw.split()
     if len(parts) >= 2 and parts[0] == parts[1]:
+        parts = [parts[0]]
         raw = parts[0]
+
+    # Strip obvious non-food words (units, counts, form descriptors)
+    if len(parts) > 1:
+        parts = _strip_noise_tokens(parts, freq_map)
+        if not parts:
+            return None
+        raw = " ".join(parts)
+
     # Drop overly long phrases that are likely junk (e.g., long prep notes)
     if len(parts) > 4:
         return None
-    mapped = mapping.get(
-        raw,
-        _collapse_duplicate_words(raw) if collapse_duplicate_words else raw,
-    )
+
+    mapped = mapping.get(raw, raw)
+    if collapse_duplicate_words:
+        mapped = _collapse_duplicate_words(mapped)
+
     mapped = str(mapped).strip()
     lower = mapped.lower()
     if not mapped:
@@ -187,6 +276,7 @@ def apply_map_to_parquet_streaming(
 ) -> None:
     if not isinstance(mapping, dict):
         mapping = load_jsonl_map(mapping)
+    unigram_freq = _get_unigram_freq(mapping)
 
     pf = pq.ParquetFile(str(in_path))
     writer = None
@@ -211,6 +301,7 @@ def apply_map_to_parquet_streaming(
                         mapping,
                         collapse_duplicate_words=collapse_duplicate_words,
                         canonicalizer=canonicalizer,
+                        unigram_freq=unigram_freq,
                     )
                     if mapped:
                         mapped_tokens.append(mapped)

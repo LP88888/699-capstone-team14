@@ -153,3 +153,29 @@ Logging targets (files + levels) are configured under the `logging` section of `
 Each stage writes intermediate and final artifacts to the locations defined in the same file (e.g., encoded parquet, dedupe maps, model directories).
 
 > **Tip:** If you want to keep old artifacts for debugging, disable the relevant cleanup flags in `pipeline.yaml` (`cleanup.enabled`, `stages.apply_cosine_map`, etc.).
+
+## Ingredient normalization & dedupe map
+
+- Canonical ingredient mappings live at `data/ingr_normalized/dedupe_map.jsonl` and are applied via `normalize_token_with_map` in `ingrnorm/dedupe_map.py`.
+- Built-in rules: collapse duplicate leading tokens (`salt salt` → `salt`), strip non-food form/measure tokens (`slice/sliced/slices`, `chunk/chunky`, `piece/pieces`, units/counts/numerics), and drop noisy tokens in `_DROP_TOKENS`.
+- Multi-word phrases keep the dominant ingredient token(s) using unigram frequencies from map targets after stripping noise (e.g., `chicken slices` → `chicken`, `flour cup` → `flour`).
+- After changing the map or rules, regenerate deduped ingredients (e.g., `recipes_data_clean.parquet`) by rerunning the apply-map stage:
+  ```sh
+  python -m recipe_pipeline.pipeline --stages ingredient_normalization --force
+  ```
+  Then rerun downstream stages that consume cleaned ingredients (encoding, PMI/graph, recommenders) so artifacts stay in sync.
+
+## GPU / CPU setup
+
+- GPU toggles live in `src/recipe_pipeline/config/pipeline.yaml`:
+  - `combine_raw.inference.use_gpu` (ingredient NER inference during ingestion)
+  - `ingredient_ner.inference.use_gpu` (second-pass inference)
+  Set these to `false` for CPU-only runs and consider lowering batch sizes if memory is tight.
+- GPU dependencies in `requirements.txt`: `torch==2.9.1` and `cupy-cuda12x==12.3.0` are CUDA builds. On CPU-only machines, skip those and install a CPU torch wheel instead:
+  ```sh
+  # install everything except the CUDA libs
+  pip install -r requirements.txt --no-deps
+  pip install torch==2.9.1+cpu -f https://download.pytorch.org/whl/cpu
+  ```
+  or remove/comment the `cupy-cuda12x` line and reinstall. Cupy is optional; if you skip it, ensure any code paths using cupy are disabled.
+-
