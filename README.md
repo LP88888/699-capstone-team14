@@ -2,6 +2,8 @@
 
 ```
 .
+├── data/
+│   ├── combined_raw_datasets_with_inference_encoded_with_cuisine_encoded.parquet
 ├── public/
 │   └── fusion/
 │       └── fusion_African_American.json
@@ -9,13 +11,10 @@
 │   ├── cuisine_network.html
 │   ├── index.html
 │   ├── ingredient_network.html
-├── data/
-│   ├── combined_raw_datasets_with_inference_encoded_with_cuisine_encoded.parquet
 ├── src/
 │   └── networks/
 │       └── phase1/
 │       └── phase2/
-│   └── recipe_pipeline.egg-info/
 │   └── recipe_pipeline/
 │       ├── analysis/
 │       ├── common/
@@ -35,9 +34,14 @@
 ```
 
 
-## Quickstart
+## Quickstart - do this first
 
 1) Create/activate a virtualenv (or your preferred env).
+   For virtualenv, after cloning this repo, in the same directory, run:
+   ```sh
+   python -m venv venv
+   venv\Scripts\Activate
+   ```
 2) Install the project in editable mode:
    ```sh
    pip install -r requirements.txt
@@ -65,7 +69,7 @@ For sensitive information (API keys, database credentials, etc.), create a `.env
 ## Unified Preprocess Pipeline
 
 All stage configuration lives in `src/recipe_pipeline/config/pipeline.yaml`.  
-The new runner wires those settings into the individual stage modules, so you do not have to juggle per‑script YAMLs.
+The runner wires those settings into the individual stage modules, so you do not have to juggle per‑script YAMLs.
 
 ### Discover available stages
 
