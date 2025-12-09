@@ -164,3 +164,18 @@ Each stage writes intermediate and final artifacts to the locations defined in t
   python -m recipe_pipeline.pipeline --stages ingredient_normalization --force
   ```
   Then rerun downstream stages that consume cleaned ingredients (encoding, PMI/graph, recommenders) so artifacts stay in sync.
+
+## GPU / CPU setup
+
+- GPU toggles live in `src/recipe_pipeline/config/pipeline.yaml`:
+  - `combine_raw.inference.use_gpu` (ingredient NER inference during ingestion)
+  - `ingredient_ner.inference.use_gpu` (second-pass inference)
+  Set these to `false` for CPU-only runs and consider lowering batch sizes if memory is tight.
+- GPU dependencies in `requirements.txt`: `torch==2.9.1` and `cupy-cuda12x==12.3.0` are CUDA builds. On CPU-only machines, skip those and install a CPU torch wheel instead:
+  ```sh
+  # install everything except the CUDA libs
+  pip install -r requirements.txt --no-deps
+  pip install torch==2.9.1+cpu -f https://download.pytorch.org/whl/cpu
+  ```
+  or remove/comment the `cupy-cuda12x` line and reinstall. Cupy is optional; if you skip it, ensure any code paths using cupy are disabled.
+-
