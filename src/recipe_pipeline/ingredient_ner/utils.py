@@ -1,3 +1,4 @@
+import os
 import ast
 import json
 import logging
@@ -9,6 +10,14 @@ from typing import Any, List, Optional, Tuple, Union
 import numpy as np
 import pandas as pd
 import spacy
+
+# Silence noisy CuPy CUDA path warnings on systems without CUDA_PATH set
+os.environ.setdefault("CUPY_DISABLE_CUDA_ENV_CHECK", "1")
+warnings.filterwarnings(
+    "ignore",
+    message="CUDA path could not be detected. Set CUDA_PATH environment variable if CuPy fails to load.",
+    category=UserWarning,
+)
 
 try:
     import pyarrow.parquet as pq
