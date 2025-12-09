@@ -103,7 +103,7 @@ pipeline:
     data:
       input_path: "./data/raw/wilmerarltstrmberg_data.csv"
       ner_col: "NER"
-      chunksize: 50000
+      chunksize: 100000
     cleanup:
       enabled: true
       paths:
@@ -129,15 +129,15 @@ pipeline:
       encode_ids: true
     sbert:
       model: "all-MiniLM-L6-v2"
-      threshold: 0.86
-      topk: 25
-      min_len: 2
+      threshold: 0.9         # tighten similarity to cut noisy merges
+      topk: 15               # fewer neighbors → stricter clusters
+      min_len: 3
       require_token_overlap: true
       block_generic_as_canon: true
       min_freq_for_vocab: 2
       spacy_model: "en_core_web_sm"
-      spacy_batch_size: 512
-      spacy_n_process: 1
+      spacy_batch_size: 1024
+      spacy_n_process: 8
     w2v:
       vector_size: 100
       window: 5
@@ -167,7 +167,7 @@ pipeline:
         enabled: true
         train_path: *normalized_baseline
         data_is_parquet: true
-        max_rows: 500000
+        max_rows: null
         text_col: null
         ner_list_col: "NER_clean"
         lexicon_json: null
@@ -183,8 +183,8 @@ pipeline:
         freeze_layers: 2
         use_amp: true
         early_stopping_patience: 2
-        batch_size: 1024
-        data_loader_workers: 0
+        batch_size: 768
+        data_loader_workers: 4
         max_train_docs: null
         out_dir: "./models/ingredient_ner_trf"
         model_dir: *ingredient_model_dir
@@ -257,15 +257,15 @@ pipeline:
       encode_ids: true
     sbert:
       model: "all-MiniLM-L6-v2"
-      threshold: 0.10
-      topk: 25
-      min_len: 2
+      threshold: 0.65        # previously too loose; tighten to reduce junk merges
+      topk: 15
+      min_len: 3
       require_token_overlap: true
       block_generic_as_canon: true
       min_freq_for_vocab: 1
       spacy_model: "en_core_web_sm"
-      spacy_batch_size: 512
-      spacy_n_process: 1
+      spacy_batch_size: 1024
+      spacy_n_process: 8
     w2v:
       vector_size: 100
       window: 5
@@ -311,7 +311,7 @@ pipeline:
         batch_size: 256
         eval_snapshot_max: 1500
         clear_cache_every: 200
-        data_loader_workers: 0
+        data_loader_workers: 4
         use_tok2vec_debug: false
         max_train_docs: null
         max_batch_items: 1024
@@ -325,9 +325,11 @@ pipeline:
     data:
       input_path: *cuisine_combined_encoded
       ingredients_col: "inferred_ingredients"
+      dedupe_map_path: *cosine_map
     params:
       min_count: 15
       min_pmi: 1.0
+      max_items_per_record: 60
     output:
       reports_dir: "./reports/pmi"
 

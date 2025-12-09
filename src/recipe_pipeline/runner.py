@@ -11,15 +11,19 @@ from .registry import STAGES, StageFn
 StageName = str
 
 PIPELINE_ORDER: List[StageName] = [
-    # "ingredient_normalization",
-    # "ingredient_ner_train",
-    # "combine_raw",
-    # "ingredient_ner_infer",
-    # "ingredient_post_map",
-    # "ingredient_encoding",
-    # "cuisine_normalization",
+    # Build ingredient map + encoder (feeds NER + downstream)
+    "ingredient_normalization",
+    "ingredient_ner_train",
+    # Prepare raw dataset and run inference
+    "combine_raw",
+    "ingredient_ner_infer",
+    "ingredient_post_map",
+    "ingredient_encoding",
+    # Clean/encode cuisines and train classifier
+    "cuisine_normalization",
+    "cuisine_classifier",
+    # Summaries + analysis (depend on cleaned/encoded data)
     "ingredients_summary",
-    # "cuisine_classifier",
     "analysis_baseline",
     "analysis_pmi",
     "analysis_graph",

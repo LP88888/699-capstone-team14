@@ -108,6 +108,44 @@ def _collapse_duplicate_words(text: str) -> str:
     return text
 
 
+def normalize_token_with_map(
+    tok,
+    mapping: Dict[str, str],
+    *,
+    collapse_duplicate_words: bool = False,
+    canonicalizer=None,
+) -> str | None:
+    """
+    Apply a dedupe map to a token and drop obviously noisy tokens.
+
+    - Applies an optional canonicalizer (e.g., plural → singular tweaks)
+    - Looks up the token in the provided mapping (variant → canonical)
+    - Optionally collapses duplicate single-word strings like "pepper pepper"
+    - Filters out known noisy tokens/substrings
+    """
+    raw = canonicalizer(str(tok), mapping) if canonicalizer else str(tok)
+    # Collapse immediate duplicate first/second tokens (e.g., "salt salt" -> "salt")
+    parts = raw.split()
+    if len(parts) >= 2 and parts[0] == parts[1]:
+        raw = parts[0]
+    # Drop overly long phrases that are likely junk (e.g., long prep notes)
+    if len(parts) > 4:
+        return None
+    mapped = mapping.get(
+        raw,
+        _collapse_duplicate_words(raw) if collapse_duplicate_words else raw,
+    )
+    mapped = str(mapped).strip()
+    lower = mapped.lower()
+    if not mapped:
+        return None
+    if lower in _DROP_TOKENS:
+        return None
+    if any(substr in lower for substr in _DROP_SUBSTRINGS):
+        return None
+    return mapped
+
+
 def load_jsonl_map(path: Union[str, Path]) -> Dict[str, str]:
     mapping: Dict[str, str] = {}
     p = Path(path)
@@ -145,25 +183,10 @@ def apply_map_to_parquet_streaming(
     dedupe_tokens: bool = False,
     collapse_duplicate_words: bool = False,
     canonicalizer=None,
+    max_tokens_per_record: int | None = 120,
 ) -> None:
     if not isinstance(mapping, dict):
         mapping = load_jsonl_map(mapping)
-
-    def _normalize_token(tok):
-        raw = canonicalizer(str(tok), mapping) if canonicalizer else str(tok)
-        mapped = mapping.get(
-            raw,
-            _collapse_duplicate_words(raw) if collapse_duplicate_words else raw,
-        )
-        mapped = str(mapped).strip()
-        lower = mapped.lower()
-        if not mapped:
-            return None
-        if lower in _DROP_TOKENS:
-            return None
-        if any(substr in lower for substr in _DROP_SUBSTRINGS):
-            return None
-        return mapped
 
     pf = pq.ParquetFile(str(in_path))
     writer = None
@@ -179,9 +202,16 @@ def apply_map_to_parquet_streaming(
                     cleaned_col.append([] if not isinstance(lst, (list, tuple)) else list(lst))
                     continue
                 tokens_in = list(lst) if not isinstance(lst, np.ndarray) else lst.tolist()
+                if max_tokens_per_record and len(tokens_in) > max_tokens_per_record:
+                    tokens_in = tokens_in[:max_tokens_per_record]
                 mapped_tokens = []
                 for tok in tokens_in:
-                    mapped = _normalize_token(tok)
+                    mapped = normalize_token_with_map(
+                        tok,
+                        mapping,
+                        collapse_duplicate_words=collapse_duplicate_words,
+                        canonicalizer=canonicalizer,
+                    )
                     if mapped:
                         mapped_tokens.append(mapped)
                 if dedupe_tokens:
