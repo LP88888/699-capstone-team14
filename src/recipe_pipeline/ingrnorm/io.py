@@ -3,10 +3,20 @@ from __future__ import annotations
 import ast, json
 from pathlib import Path
 from typing import List
+import logging
 import numpy as np
 import pandas as pd
 import pyarrow as pa
 import pyarrow.parquet as pq
+
+try:
+    import pyarrow.csv as pa_csv
+    _HAS_PACSV = True
+except Exception:
+    pa_csv = None
+    _HAS_PACSV = False
+
+logger = logging.getLogger(__name__)
 
 def parse_listish(v) -> list[str]:
     """Accept list/tuple/np.ndarray; try JSON/Python list in string; fallback to single-item list."""
@@ -40,12 +50,46 @@ def materialize_parquet_source(input_path: Path, ner_col: str, chunksize: int, t
         tmp_out.parent.mkdir(parents=True, exist_ok=True)
         schema = pa.schema([pa.field(ner_col, pa.list_(pa.string()))])
         writer = pq.ParquetWriter(str(tmp_out), schema, compression="zstd")
-        for chunk in pd.read_csv(input_path, chunksize=chunksize, dtype=str):
-            col = chunk[ner_col] if ner_col in chunk.columns else pd.Series([None] * len(chunk))
-            lists = [parse_listish(x) for x in col]
+
+        def _write(chunk_values):
+            lists = [parse_listish(x) for x in chunk_values]
             arr = pa.array(lists, type=pa.list_(pa.string()))
             tbl = pa.Table.from_arrays([arr], names=[ner_col])
             writer.write_table(tbl)
+
+        if _HAS_PACSV:
+            try:
+                block_size = max(int(chunksize or 250_000), 50_000)
+                read_opts = pa_csv.ReadOptions(block_size=block_size, use_threads=True)
+                convert_opts = pa_csv.ConvertOptions(include_columns=[ner_col])
+                reader = pa_csv.open_csv(str(input_path), read_options=read_opts, convert_options=convert_opts)
+                for batch in reader:
+                    _write(batch.column(0).to_pylist())
+                writer.close()
+                return tmp_out
+            except Exception as exc:
+                logger.warning("pyarrow.csv fast path failed (%s). Falling back to pandas reader.", exc)
+                writer.close()
+                tmp_out.unlink(missing_ok=True)
+                writer = pq.ParquetWriter(str(tmp_out), schema, compression="zstd")
+
+        read_kwargs = dict(chunksize=chunksize, dtype=str)
+        try:
+            reader = pd.read_csv(input_path, **read_kwargs)
+            for chunk in reader:
+                col = chunk[ner_col] if ner_col in chunk.columns else pd.Series([None] * len(chunk))
+                _write(col.tolist())
+        except pd.errors.ParserError as exc:
+            logger.warning(
+                "Failed to parse %s with default CSV reader (%s). Falling back to python engine with on_bad_lines='skip'.",
+                input_path,
+                exc,
+            )
+            read_kwargs.update({"engine": "python", "on_bad_lines": "skip"})
+            reader = pd.read_csv(input_path, **read_kwargs)
+            for chunk in reader:
+                col = chunk[ner_col] if ner_col in chunk.columns else pd.Series([None] * len(chunk))
+                _write(col.tolist())
         writer.close()
         return tmp_out
 
