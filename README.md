@@ -153,3 +153,14 @@ Logging targets (files + levels) are configured under the `logging` section of `
 Each stage writes intermediate and final artifacts to the locations defined in the same file (e.g., encoded parquet, dedupe maps, model directories).
 
 > **Tip:** If you want to keep old artifacts for debugging, disable the relevant cleanup flags in `pipeline.yaml` (`cleanup.enabled`, `stages.apply_cosine_map`, etc.).
+
+## Ingredient normalization & dedupe map
+
+- Canonical ingredient mappings live at `data/ingr_normalized/dedupe_map.jsonl` and are applied via `normalize_token_with_map` in `ingrnorm/dedupe_map.py`.
+- Built-in rules: collapse duplicate leading tokens (`salt salt` → `salt`), strip non-food form/measure tokens (`slice/sliced/slices`, `chunk/chunky`, `piece/pieces`, units/counts/numerics), and drop noisy tokens in `_DROP_TOKENS`.
+- Multi-word phrases keep the dominant ingredient token(s) using unigram frequencies from map targets after stripping noise (e.g., `chicken slices` → `chicken`, `flour cup` → `flour`).
+- After changing the map or rules, regenerate deduped ingredients (e.g., `recipes_data_clean.parquet`) by rerunning the apply-map stage:
+  ```sh
+  python -m recipe_pipeline.pipeline --stages ingredient_normalization --force
+  ```
+  Then rerun downstream stages that consume cleaned ingredients (encoding, PMI/graph, recommenders) so artifacts stay in sync.
