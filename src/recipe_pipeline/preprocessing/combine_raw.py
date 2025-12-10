@@ -177,11 +177,11 @@ def process_dataset(
         dropped_count = before_drop - len(result)
         if dropped_count > 0:
             logger.info(f"Dropped {dropped_count:,} rows without cuisine labels")
-        logger.info(f"Processed {csv_path.name}: {len(result):,} rows after drop")
+        logger.info(f"Processed {src_path.name}: {len(result):,} rows after drop")
         return result
 
     except Exception as e:
-        logger.exception(f"Error processing {csv_path.name}: {e}")
+        logger.exception(f"Error processing {src_path.name}: {e}")
         return None
 
 

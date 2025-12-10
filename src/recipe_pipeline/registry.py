@@ -9,6 +9,7 @@ from recipe_pipeline.preprocessing import cleanup_artifacts
 
 from .core import PipelineContext, StageResult
 from .preprocessing import (
+    download_kaggle_raw,
     combine_raw,
     cuisine_classifier,
     cuisine_normalization,
@@ -23,6 +24,7 @@ from .analysis import baseline, graph
 StageFn = Callable[[PipelineContext], StageResult]
 
 STAGES: Dict[str, StageFn] = {
+    "download": download_kaggle_raw.run,
     "combine_raw": combine_raw.run,
     "ingredient_normalization": ingredient_normalization.run,
     "ingredient_post_map": ingredient_post_map.run,

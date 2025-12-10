@@ -79,6 +79,25 @@ artifacts:
   cuisine_combined_encoded: &cuisine_combined_encoded "./data/combined_raw_datasets_with_inference_encoded_with_cuisine_encoded.parquet"
 
 pipeline:
+  download:
+    enabled: true            # set true to fetch Kaggle datasets before combining
+    kaggle_username: null     # optional, or rely on env KAGGLE_USERNAME / KAGGLE_KEY
+    kaggle_key: 
+    raw_dir: "./data/raw"
+    datasets:
+      - id: "ajitrajput/foodrecipes"
+        output: "ajitrajput_data.parquet"
+      - id: "sarthak71/food-recipes"
+        output: "sarthak71_data.parquet"
+      - id: "mfarazf/cuisine-dataset"
+        output: "mfarazf_data.parquet"
+      - id: "rumitpathare/indian-recipes"
+        output: "rumitpathare_data.parquet"
+      - id: "snehallokesh31096/recipe"
+        output: "snehallokesh31096_data.parquet"
+      - id: "alaknandaa/recipes-data-by-cuisine"
+        output: "alaknandaa_data.parquet"
+
   combine_raw:
     data_dir: "./data/raw"
     excluded_files:
@@ -90,7 +109,7 @@ pipeline:
     inference:
       enabled: false
       text_col: "ingredients"
-      batch_size: 500000
+      batch_size: 50000
       n_process: 1
       use_gpu: true
       out_base: *ner_predictions
@@ -105,7 +124,7 @@ pipeline:
       ner_col: "NER"
       chunksize: 500000
     cleanup:
-      enabled: true
+      enabled: false
       paths:
         - *normalized_baseline
         - *cosine_map
@@ -136,7 +155,7 @@ pipeline:
       block_generic_as_canon: true
       min_freq_for_vocab: 2
       spacy_model: "en_core_web_sm"
-      spacy_batch_size: 100000
+      spacy_batch_size: 50000
       spacy_n_process: 28
     w2v:
       vector_size: 100
@@ -167,15 +186,15 @@ pipeline:
         enabled: true
         train_path: *normalized_baseline
         data_is_parquet: true
-        max_rows: null
+        max_rows: 10000
         text_col: null
         ner_list_col: "NER_clean"
         lexicon_json: null
         random_seed: 42
         valid_fraction: 0.2
         shard_size: 2000
-        n_epochs: 3
-        lr: 3e-5
+        n_epochs: 2
+        lr: 2e-5
         dropout: 0.1
         transformer_model: "distilbert-base-uncased"
         window: 64
@@ -183,7 +202,7 @@ pipeline:
         freeze_layers: 2
         use_amp: true
         early_stopping_patience: 2
-        batch_size: 1024
+        batch_size: 50000
         data_loader_workers: 0
         max_train_docs: null
         out_dir: "./models/ingredient_ner_trf"
@@ -203,8 +222,8 @@ pipeline:
         ingredient_token_to_id: *ingredient_token_to_id
       inference:
         text_col: ingredients
-        batch_size: 1024
-        n_process: 1
+        batch_size: 1028
+        n_process: 1   # spaCy transformers inference: keep single process
         use_gpu: true
         sample_n: null
         sample_frac: null
@@ -264,7 +283,7 @@ pipeline:
       block_generic_as_canon: true
       min_freq_for_vocab: 1
       spacy_model: "en_core_web_sm"
-      spacy_batch_size: 5096
+      spacy_batch_size: 50000
       spacy_n_process: 28
     w2v:
       vector_size: 100
@@ -308,13 +327,13 @@ pipeline:
         freeze_layers: 2
         use_amp: true
         early_stopping_patience: 3
-        batch_size: 5096
+        batch_size: 1024       # keep micro-batch modest to avoid GPU OOM
         eval_snapshot_max: 1500
-        clear_cache_every: 200
-        data_loader_workers: 16
+        clear_cache_every: 50
+        data_loader_workers: 0
         use_tok2vec_debug: false
         max_train_docs: null
-        max_batch_items: 4096
+        max_batch_items: 1024
         min_label_freq: 100
         allowed_labels_path: *cuisine_id_to_token
         parent_map_path: "./data/cuisine_parent_map.json"

@@ -29,7 +29,12 @@ def sbert_dedupe(
     model = SentenceTransformer(model_name)
     X = model.encode(phrases, normalize_embeddings=True, show_progress_bar=True)
 
-    nn = NearestNeighbors(n_neighbors=min(topk + 1, len(phrases)), metric="cosine", algorithm="auto")
+    nn = NearestNeighbors(
+        n_neighbors=min(topk + 1, len(phrases)),
+        metric="cosine",
+        algorithm="auto",
+        n_jobs=-1,  # use all CPU cores
+    )
     nn.fit(X)
     dists, idxs = nn.kneighbors(X, return_distance=True)
 

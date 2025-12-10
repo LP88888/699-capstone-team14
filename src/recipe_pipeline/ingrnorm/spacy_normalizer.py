@@ -240,6 +240,20 @@ def apply_spacy_normalizer_to_parquet(
         n_process: Number of processes (0=auto, 1=single-threaded, >1=multiprocess)
                   Note: Multiprocessing may not work on Windows due to spawn method.
     """
+    # If GPU is active, spaCy + multiprocessing will try to spin up cupy in child
+    # processes and crash. Force single process when GPU is enabled.
+    try:
+        import spacy as _spacy
+        gpu_enabled = _spacy.prefer_gpu()
+    except Exception:
+        gpu_enabled = False
+
+    if gpu_enabled and n_process != 1:
+        logger.warning(
+            "[spacy_norm] GPU is enabled; forcing n_process=1 to avoid cupy initialization errors in multiprocessing."
+        )
+        n_process = 1
+
     normalizer = SpacyIngredientNormalizer(spacy_model, batch_size=batch_size, n_process=n_process)
     pf = pq.ParquetFile(str(in_parquet))
     out_parquet = Path(out_parquet)

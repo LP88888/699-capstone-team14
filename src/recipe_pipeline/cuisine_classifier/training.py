@@ -1,4 +1,5 @@
 import logging
+import os
 import random
 import warnings
 import time
@@ -456,6 +457,15 @@ def train_classifier_from_docbins(
 
     # Determine whether to use multi-worker DataLoader
     num_workers = getattr(_TRAIN, 'DATA_LOADER_WORKERS', 0)
+    if torch is not None and torch.cuda.is_available() and num_workers > 0:
+        logger.warning(
+            "Disabling DataLoader workers (%s) on GPU to avoid spaCy vector pickling errors; using single-threaded loader.",
+            num_workers,
+        )
+        num_workers = 0
+
+    # Silence HF tokenizers fork warnings
+    os.environ.setdefault("TOKENIZERS_PARALLELISM", "false")
     use_multiworker_loader = (
         DataLoader is not None and 
         IterableDataset is not None and 

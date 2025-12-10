@@ -16,9 +16,43 @@ from ingrnorm.w2v_dedupe import w2v_dedupe
 from ingrnorm.dedupe_map import apply_map_to_parquet_streaming, write_jsonl_map
 from ingrnorm.encoder import IngredientEncoder
 from ingrnorm.spacy_normalizer import SpacyIngredientNormalizer
+import pyarrow as pa
 
 from ..core import PipelineContext, StageResult
 from ..utils import stage_logger
+
+
+def _ensure_vocab_column(parquet_path: Path, source_col: str, target_col: str) -> Path:
+    """
+    Ensure `target_col` exists by copying `source_col` if missing.
+    Writes back to the same path (via temp) only when needed.
+    """
+    if source_col == target_col:
+        return parquet_path
+    pf = pq.ParquetFile(str(parquet_path))
+    if target_col in pf.schema_arrow.names:
+        return parquet_path
+
+    tmp = parquet_path.with_suffix(".tmp.parquet")
+    writer = None
+    for rg in range(pf.num_row_groups):
+        tbl = pf.read_row_group(rg)
+        if source_col not in tbl.column_names:
+            continue
+        cols = tbl.column_names
+        arrays = [tbl[col] for col in cols]
+        arrays.append(tbl[source_col])
+        names = list(cols) + [target_col]
+        out_tbl = pa.Table.from_arrays(arrays, names=names).replace_schema_metadata(None)
+        if writer is None:
+            writer = pq.ParquetWriter(str(tmp), out_tbl.schema, compression="zstd")
+        writer.write_table(out_tbl)
+    if writer is not None:
+        writer.close()
+        tmp.replace(parquet_path)
+    elif tmp.exists():
+        tmp.unlink()
+    return parquet_path
 
 def _cleanup_paths(cfg: dict, logger: logging.Logger, preserve_files: list[str] = None):
     """
@@ -213,10 +247,11 @@ def _run_stage1_spacy_normalization(
             out_path=str(baseline_parquet),
             mapping=mapping,
             list_col=ner_col,
-            out_col=list_col_for_vocab,
             collapse_duplicate_words=True,
             dedupe_tokens=True,
         )
+        # Ensure the vocab column exists (copy from ner_col if different)
+        _ensure_vocab_column(baseline_parquet, source_col=ner_col, target_col=list_col_for_vocab)
         logger.info("[stage1] global map application done")
 
         if src_parquet == tmp_raw_parquet and tmp_raw_parquet.exists():

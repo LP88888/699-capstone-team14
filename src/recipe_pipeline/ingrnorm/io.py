@@ -44,7 +44,23 @@ def materialize_parquet_source(input_path: Path, ner_col: str, chunksize: int, t
     """Ensure we have a Parquet file with a list<string> column `ner_col` from CSV/Excel/Parquet."""
     suffix = input_path.suffix.lower()
     if suffix == ".parquet":
-        return input_path
+        pf = pq.ParquetFile(str(input_path))
+        # If column is already list<string>, keep as-is
+        schema = pf.schema_arrow
+        if ner_col in schema.names:
+            field = schema.field(ner_col)
+            if pa.types.is_list(field.type) and pa.types.is_string(field.type.value_type):
+                return input_path
+        # Otherwise convert to list<string>
+        tmp_out.parent.mkdir(parents=True, exist_ok=True)
+        writer = pq.ParquetWriter(str(tmp_out), pa.schema([pa.field(ner_col, pa.list_(pa.string()))]), compression="zstd")
+        for batch in pf.iter_batches(columns=[ner_col]):
+            arr_in = batch.column(0).to_pylist()
+            lists = [parse_listish(x) for x in arr_in]
+            arr = pa.array(lists, type=pa.list_(pa.string()))
+            writer.write_table(pa.Table.from_arrays([arr], names=[ner_col]))
+        writer.close()
+        return tmp_out
 
     if suffix == ".csv":
         tmp_out.parent.mkdir(parents=True, exist_ok=True)

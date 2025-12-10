@@ -1,6 +1,7 @@
 """Preprocessing pipeline stages."""
 
 from . import (
+    download_kaggle_raw,
     combine_raw,
     cuisine_classifier,
     cuisine_normalization,
@@ -12,6 +13,7 @@ from . import (
 )
 
 __all__ = [
+    "download_kaggle_raw",
     "combine_raw",
     "cuisine_classifier",
     "cuisine_normalization",

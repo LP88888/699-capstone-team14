@@ -1,8 +1,10 @@
 from __future__ import annotations
 
+import logging
 import json
 from pathlib import Path
 from typing import Any, Optional, Dict, List, Tuple
+import time
 
 import pandas as pd
 
@@ -19,6 +21,8 @@ from tqdm import tqdm
 from .config import DATA, OUT
 from .utils import load_data, normalize_token, parse_listlike, join_with_offsets
 from .normalization import apply_dedupe, load_jsonl_map, load_encoder_maps
+
+logger = logging.getLogger(__name__)
 
 # Import spaCy normalizer for consistent normalization
 # This ensures inference uses the same normalization as the training pipeline
@@ -96,6 +100,54 @@ def _extract_ingredient_rows(
     return rows
 
 
+def _batch_normalize_phrases(
+    phrases: List[str], spacy_normalizer: Optional[Any]
+) -> List[Optional[str]]:
+    """
+    Normalize many ingredient spans in a single spaCy pipe pass.
+    
+    This avoids calling the normalizer per-entity, which is extremely slow
+    (hundreds of thousands of extra pipeline runs on larger datasets).
+    """
+    if not phrases:
+        return []
+
+    # Fast path: simple normalization when spaCy normalizer is disabled/unavailable
+    if spacy_normalizer is None:
+        return [normalize_token(p) for p in phrases]
+
+    cleaned = [
+        SpacyIngredientNormalizer.clean_raw_text(str(p)) if p is not None else ""
+        for p in phrases
+    ]
+    lowered = [c.strip().lower() for c in cleaned]
+    n_process = spacy_normalizer.n_process or 1
+
+    t0 = time.time()
+    docs = spacy_normalizer.nlp.pipe(
+        lowered,
+        batch_size=spacy_normalizer.batch_size,
+        n_process=max(n_process, 1),
+    )
+
+    norms: List[Optional[str]] = []
+    for raw_clean, doc in zip(cleaned, docs):
+        raw_clean = (raw_clean or "").strip()
+        if not raw_clean:
+            norms.append(None)
+            continue
+        norms.append(spacy_normalizer._normalize_doc(doc, raw_clean))
+
+    elapsed = time.time() - t0
+    logger.info(
+        "Normalized %s entity spans with spaCy normalizer in %.2fs (%.1f spans/sec)",
+        len(phrases),
+        elapsed,
+        len(phrases) / max(elapsed, 1e-6),
+    )
+    return norms
+
+
 def predict_normalize_encode_structured(
     nlp_dir: Path,
     data_path: Path,
@@ -128,6 +180,7 @@ def predict_normalize_encode_structured(
         raise FileNotFoundError(f"Model directory not found: {nlp_dir}")
 
     nlp = spacy.load(nlp_dir)
+    logger.info("Loaded trained spaCy model from %s", nlp_dir)
     
     # Initialize spaCy normalizer if requested (for consistent normalization with training)
     # CRITICAL: This ensures inference uses the same normalization as training pipeline
@@ -164,105 +217,129 @@ def predict_normalize_encode_structured(
     # The model is trained on individual ingredients, not joined lists
     raw_texts = df_in[text_col].astype(str).tolist()
     
-    wide_rows: List[Dict] = []
-    tall_records: List[Dict] = []
-
-    for i, raw_text in enumerate(
-        tqdm(raw_texts, total=len(raw_texts), desc="Infer (structured)")
-    ):
-        # Parse the input into individual ingredients
+    # Flatten ingredients across all rows for a single nlp.pipe call
+    flat_ing: List[str] = []
+    offsets: List[tuple[int, int]] = []  # (row_idx, ingredient_idx)
+    parsed_lists: List[List[str]] = []
+    for i, raw_text in enumerate(raw_texts):
         ingredients = parse_listlike(raw_text)
-        
-        # Handle "and" at the end (e.g., "salt, pepper and butter")
-        if len(ingredients) > 0:
+        if ingredients and isinstance(ingredients, list):
             last_ing = ingredients[-1]
-            if " and " in last_ing.lower():
-                # Split on " and " and add the parts
+            if isinstance(last_ing, str) and " and " in last_ing.lower():
                 parts = [p.strip() for p in last_ing.rsplit(" and ", 1)]
                 if len(parts) == 2 and parts[1]:
                     ingredients[-1] = parts[0]
                     ingredients.append(parts[1])
-        
-        # Initialize empty lists for this row
-        all_raw = []
-        all_clean = []
-        all_ids = []
-        all_rows = []
-        
-        # Run NER on each ingredient separately
-        if ingredients:
-            # Process all ingredients in a batch for efficiency
-            docs = list(nlp.pipe(ingredients, batch_size=batch_size, n_process=n_process))
-            
-            for ing_text, doc in zip(ingredients, docs):
-                # Extract entities from this ingredient's doc
-                rows = _extract_ingredient_rows(
-                    doc, dedupe=dedupe, tok2id=tok2id, spacy_normalizer=spacy_normalizer
-                )
-                
-                if rows:
-                    # If NER found entities, use them
-                    for r in rows:
-                        all_raw.append(r["raw"])
-                        if r["canonical"]:
-                            all_clean.append(r["canonical"])
-                        if tok2id:
-                            all_ids.append(r["id"] if r["id"] is not None else 0)
-                        all_rows.append(r)
-                else:
-                    # If NER found nothing, treat the whole ingredient text as the entity
-                    # This handles cases where the model doesn't detect anything
-                    norm_result = None
-                    if spacy_normalizer is not None:
-                        norm_result = spacy_normalizer._normalize_phrase(ing_text)
-                    norm = norm_result if norm_result else normalize_token(ing_text)
-                    canon = apply_dedupe(norm, dedupe)
-                    tok_id = tok2id.get(canon, 0) if tok2id else None
-                    
-                    all_raw.append(ing_text)
-                    if canon:
-                        all_clean.append(canon)
-                    if tok2id:
-                        all_ids.append(int(tok_id) if tok_id is not None else 0)
-                    all_rows.append({
-                        "raw": ing_text,
-                        "start": 0,
-                        "end": len(ing_text),
-                        "label": "INGREDIENT",
-                        "norm": norm,
-                        "canonical": canon,
-                        "id": int(tok_id) if tok_id is not None else None,
-                    })
-        
-        # Deduplicate clean list while preserving order
-        clean_list = _unique_preserve_order(all_clean)
-        
-        # wide entry (compact)
-        wide_entry: Dict = {
-            text_col: raw_text,  # Store original input format
-            "NER_raw": all_raw,
-            "NER_clean": clean_list,
-            "spans_json": json.dumps(all_rows, ensure_ascii=False),
-        }
-        if tok2id:
-            wide_entry["Ingredients"] = all_ids
-        wide_rows.append(wide_entry)
+        else:
+            ingredients = []
+        parsed_lists.append(ingredients)
+        for j, ing in enumerate(ingredients):
+            flat_ing.append(str(ing))
+            offsets.append((i, j))
 
-        # tall entries (one row per entity, great for QA/exploration)
-        for r in all_rows:
-            tall_records.append(
+    logger.info(
+        "Running NER on %s ingredient strings (batch_size=%s, n_process=%s)",
+        len(flat_ing),
+        batch_size,
+        n_process,
+    )
+    t0 = time.time()
+    docs_iter = nlp.pipe(flat_ing, batch_size=batch_size, n_process=n_process)
+
+    entity_records: List[Dict[str, Any]] = []
+    total_docs = 0
+    for ing_text, doc, (row_idx, _) in zip(flat_ing, docs_iter, offsets):
+        total_docs += 1
+        entities = [ent for ent in doc.ents if ent.label_ == "INGREDIENT"]
+        if entities:
+            for ent in entities:
+                entity_records.append(
+                    {
+                        "row_idx": row_idx,
+                        "raw": ent.text,
+                        "start": int(ent.start_char),
+                        "end": int(ent.end_char),
+                        "label": ent.label_,
+                    }
+                )
+        else:
+            # Fallback: treat the entire ingredient string as one entity
+            entity_records.append(
                 {
-                    "row_id": i,
-                    text_col: raw_text,  # Store original input format
-                    "ent_text": r["raw"],
-                    "start": r["start"],
-                    "end": r["end"],
-                    "label": r["label"],
-                    "norm": r["norm"],
-                    "canonical": r["canonical"],
-                    "id": r["id"],
+                    "row_idx": row_idx,
+                    "raw": ing_text,
+                    "start": 0,
+                    "end": len(ing_text),
+                    "label": "INGREDIENT",
                 }
             )
+
+    ner_elapsed = time.time() - t0
+    logger.info(
+        "NER pass done in %.2fs (%.1f docs/sec)",
+        ner_elapsed,
+        len(flat_ing) / max(ner_elapsed, 1e-6),
+    )
+
+    # Prepare holders
+    wide_rows: List[Dict] = []
+    tall_records: List[Dict] = []
+    row_raw: List[List[str]] = [[] for _ in raw_texts]
+    row_clean: List[List[str]] = [[] for _ in raw_texts]
+    row_ids: List[List[int]] = [[] for _ in raw_texts]
+    row_spans: List[List[Dict]] = [[] for _ in raw_texts]
+
+    # Normalize all extracted entities in a single batch to avoid repeated spaCy calls
+    norms = _batch_normalize_phrases(
+        [rec["raw"] for rec in entity_records], spacy_normalizer
+    )
+
+    for rec, norm in zip(entity_records, norms):
+        canon = apply_dedupe(norm, dedupe)
+        tok_id = tok2id.get(canon, 0) if tok2id else None
+        row_idx = rec["row_idx"]
+
+        row_raw[row_idx].append(rec["raw"])
+        if canon:
+            row_clean[row_idx].append(canon)
+        if tok2id:
+            row_ids[row_idx].append(int(tok_id) if tok_id is not None else 0)
+
+        span = {
+            "raw": rec["raw"],
+            "start": rec["start"],
+            "end": rec["end"],
+            "label": rec["label"],
+            "norm": norm,
+            "canonical": canon,
+            "id": int(tok_id) if tok_id is not None else None,
+        }
+        row_spans[row_idx].append(span)
+        tall_records.append(
+            {
+                "row_id": row_idx,
+                text_col: raw_texts[row_idx],
+                "ent_text": rec["raw"],
+                "start": rec["start"],
+                "end": rec["end"],
+                "label": rec["label"],
+                "norm": norm,
+                "canonical": canon,
+                "id": int(tok_id) if tok_id is not None else None,
+            }
+        )
+
+    for i, raw_text in enumerate(raw_texts):
+        clean_list = _unique_preserve_order(row_clean[i])
+        wide_entry: Dict = {
+            text_col: raw_text,
+            "NER_raw": row_raw[i],
+            "NER_clean": clean_list,
+            "spans_json": json.dumps(row_spans[i], ensure_ascii=False),
+        }
+        if tok2id:
+            wide_entry["Ingredients"] = row_ids[i]
+        wide_rows.append(wide_entry)
 
     df_wide = pd.DataFrame(wide_rows)
     df_tall = pd.DataFrame(tall_records)

@@ -132,16 +132,31 @@ def _load_parent_map(path: Optional[str | Path]) -> dict[str, str]:
     return {}
 
 
-def _collect_labels(df: pd.DataFrame, cuisine_col: str, allowed: Set[str], min_freq: int, parent_map: dict[str, str]) -> Tuple[List[str], Counter]:
-    """Collect normalized labels with optional allowlist and min frequency filter."""
+def _collect_labels(
+    df: pd.DataFrame,
+    cuisine_col: str,
+    allowed: Set[str],
+    min_freq: int,
+    parent_map: dict[str, str],
+) -> Tuple[List[str], Counter]:
+    """
+    Collect normalized labels with optional allowlist and min frequency filter.
+    
+    We normalize everything to lowercase to avoid case-mismatch between
+    deduped cuisines (often Title Case) and allowed labels (lowercase from id->token).
+    """
+    allowed_norm = {normalize_cuisine_label(lbl).lower() for lbl in allowed} if allowed else set()
+    parent_map_norm = {normalize_cuisine_label(k).lower(): normalize_cuisine_label(v).lower() for k, v in parent_map.items()} if parent_map else {}
+
     counts: Counter = Counter()
     for cuisine_val in df[cuisine_col]:
         cuisine = normalize_cuisine_label(cuisine_val)
         if not cuisine:
             continue
-        if parent_map:
-            cuisine = parent_map.get(cuisine, cuisine)
-        if allowed and cuisine not in allowed:
+        cuisine = cuisine.lower()
+        if parent_map_norm:
+            cuisine = parent_map_norm.get(cuisine, cuisine)
+        if allowed_norm and cuisine not in allowed_norm:
             continue
         counts[cuisine] += 1
 
@@ -152,22 +167,9 @@ def _collect_labels(df: pd.DataFrame, cuisine_col: str, allowed: Set[str], min_f
         len(counts),
         len(labels_sorted),
         min_freq,
-        "yes" if allowed else "no",
+        "yes" if allowed_norm else "no",
     )
     return labels_sorted, counts
-
-
-def _collect_labels(df: pd.DataFrame, cuisine_col: str) -> List[str]:
-    labels = set()
-    for val in df[cuisine_col]:
-        cuisine = normalize_cuisine_label(val)
-        if cuisine:
-            labels.add(cuisine)
-    all_labels = sorted(labels)
-    logger.info("Found %s unique cuisine labels (normalized)", len(all_labels))
-    if not all_labels:
-        raise ValueError(f"No cuisine labels found in column '{cuisine_col}'")
-    return all_labels
 
 
 # ----------------------------------------------------------------------------- 
@@ -185,14 +187,14 @@ def iter_docs_from_list_column(
     Keeps text short and ensures we only use normalized cuisine labels.
     """
     blank = spacy.blank("en")
-    label_set = set(all_labels)
+    label_set = {lbl.lower() for lbl in all_labels}
 
     for text_val, cuisine_val in tqdm(
         zip(df[text_col], df[cuisine_col]),
         total=len(df),
         desc="Streaming cuisine docs (per-ingredient)",
     ):
-        cuisine = normalize_cuisine_label(cuisine_val)
+        cuisine = normalize_cuisine_label(cuisine_val).lower()
         if not cuisine or cuisine not in label_set:
             continue
 

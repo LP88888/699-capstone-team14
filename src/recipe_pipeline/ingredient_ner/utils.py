@@ -63,8 +63,15 @@ def configure_device(use_gpu: bool = True) -> None:
     if torch.cuda.is_available():
         dev_name = torch.cuda.get_device_name(0)
         logger.info(f"[device] CUDA available. PyTorch will use GPU: {dev_name}")
-        # NOTE: We intentionally do NOT call spacy.require_gpu() here 
-        # to avoid conflicts with thinc/cupy if they aren't perfectly aligned.
+        # Nudge spaCy/Thinc to place transformer weights on GPU as well.
+        try:
+            import spacy as _spacy
+            if _spacy.prefer_gpu():
+                logger.info("[device] spaCy set to prefer GPU for transformers.")
+            else:
+                logger.info("[device] spaCy GPU preference returned False; transformers may stay on CPU.")
+        except Exception as exc:
+            logger.warning("[device] Could not set spaCy to GPU: %s", exc)
     else:
         logger.info("[device] CUDA not available. Using CPU.")
 
