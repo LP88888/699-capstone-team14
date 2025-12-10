@@ -3,7 +3,7 @@
 ```
 .
 ├── data/
-│   ├── combined_raw_datasets_with_inference_encoded_with_cuisine_encoded.parquet
+│   ├── cuisine_parent_map.json
 ├── public/
 │   └── fusion/
 │       └── fusion_African_American.json
@@ -176,4 +176,3 @@ Each stage writes intermediate and final artifacts to the locations defined in t
   pip install torch==2.9.1+cpu -f https://download.pytorch.org/whl/cpu
   ```
   or remove/comment the `cupy-cuda12x` line and reinstall. Cupy is optional; if you skip it, ensure any code paths using cupy are disabled.
--
