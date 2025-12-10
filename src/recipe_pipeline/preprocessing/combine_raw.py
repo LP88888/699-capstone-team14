@@ -49,21 +49,25 @@ def find_ingredients_column(df: pd.DataFrame, logger: logging.Logger) -> Optiona
 
 
 def process_dataset(
-    csv_path: Path,
+    src_path: Path,
     dataset_id: int,
     logger: logging.Logger,
     cuisine_default: str = "unknown",
     cuisine_vocab_path: Optional[Path] = None,
 ) -> Optional[pd.DataFrame]:
     try:
-        df = read_csv_with_fallback(csv_path, logger)
+        if src_path.suffix.lower() == ".parquet":
+            df = pd.read_parquet(src_path)
+            logger.info(f"Read {src_path.name} as parquet ({len(df):,} rows)")
+        else:
+            df = read_csv_with_fallback(src_path, logger)
         if df.empty:
-            logger.warning(f"{csv_path.name} is empty, skipping")
+            logger.warning(f"{src_path.name} is empty, skipping")
             return None
         df.columns = df.columns.str.lower()
         ing_col = find_ingredients_column(df, logger)
         if ing_col is None:
-            logger.error(f"Could not find ingredients column in {csv_path.name}, skipping")
+            logger.error(f"Could not find ingredients column in {src_path.name}, skipping")
             return None
 
         # Try to find cuisine column
@@ -104,7 +108,7 @@ def process_dataset(
             non_default = (cuisine_series != cuisine_default).sum()
             logger.info(f"Extracted cuisine values: {non_default:,} non-default out of {len(cuisine_series):,} rows")
         else:
-            logger.info(f"No cuisine column found in {csv_path.name}, using default: '{cuisine_default}'")
+            logger.info(f"No cuisine column found in {src_path.name}, using default: '{cuisine_default}'")
             cuisine_series = pd.Series([cuisine_default] * len(df), dtype=str)
 
         # Vectorized cuisine extraction for missing values
@@ -202,15 +206,15 @@ def run(
         logger.error(details)
         return StageResult(name="combine_raw", status="failed", details=details)
 
-    csv_files = sorted([f for f in data_dir.glob("*.csv") if f.name not in excluded])
-    logger.info("Found %s CSV files to process", len(csv_files))
+    files = sorted([f for f in data_dir.glob("*.*") if f.suffix.lower() in {".csv", ".parquet"} and f.name not in excluded])
+    logger.info("Found %s raw files to process", len(files))
 
     writer: Optional[pq.ParquetWriter] = None
     total_rows = 0
-    for dataset_id, csv_path in enumerate(csv_files, start=1):
-        logger.info("[%s/%s] Processing %s", dataset_id, len(csv_files), csv_path.name)
+    for dataset_id, src_path in enumerate(files, start=1):
+        logger.info("[%s/%s] Processing %s", dataset_id, len(files), src_path.name)
         df_processed = process_dataset(
-            csv_path,
+            src_path,
             dataset_id,
             logger,
             cuisine_default=cuisine_default,

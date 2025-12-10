@@ -52,12 +52,6 @@
    python -m recipe_pipeline
    ```
 
-
-## Environment Variables (.env)
-
-For sensitive information (API keys, database credentials, etc.), create a `.env` file in the root directory.
-
-
 4. **Add new libraries:**
 	 - When introducing new libraries, add them to `requirements.txt`.
 	 - To list installed packages:
@@ -69,7 +63,7 @@ For sensitive information (API keys, database credentials, etc.), create a `.env
 ## Unified Preprocess Pipeline
 
 All stage configuration lives in `src/recipe_pipeline/config/pipeline.yaml`.  
-The runner wires those settings into the individual stage modules, so you do not have to juggle per‑script YAMLs.
+The runner wires those settings into the individual stage modules, so you do not have to juggle per‑script YAMLs. Please ensure you configure these setttings according to your environment.
 
 ### Discover available stages
 

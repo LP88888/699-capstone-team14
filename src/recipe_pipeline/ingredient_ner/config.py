@@ -70,7 +70,8 @@ def _build_data_ns(cfg: Dict[str, Any]) -> SimpleNamespace:
     if not train_path_str:
         train_path_str = data_cfg.get("input_path")
     if not train_path_str:
-        train_path_str = "../data/raw/wilmerarltstrmberg_data.csv"
+        # Default to parquet version of the canonical raw dataset
+        train_path_str = "../data/raw/wilmerarltstrmberg_data.parquet"
     train_path = Path(train_path_str)
 
     # 2) parquet vs csv

@@ -82,9 +82,9 @@ pipeline:
   combine_raw:
     data_dir: "./data/raw"
     excluded_files:
-      - "wilmerarltstrmberg_data.csv"
-      - "sample_data.csv"
-      - "recipe_api_data.csv"
+      - "wilmerarltstrmberg_data.parquet"
+      - "sample_data.parquet"
+      - "recipe_api_data.parquet"
     output_path: "./data/combined_raw_datasets.parquet"
     cuisine_default: "unknown"
     inference:
@@ -101,7 +101,7 @@ pipeline:
 
   ingredient_normalization:
     data:
-      input_path: "./data/raw/wilmerarltstrmberg_data.csv"
+      input_path: "./data/raw/wilmerarltstrmberg_data.parquet"
       ner_col: "NER"
       chunksize: 500000
     cleanup:
@@ -156,7 +156,7 @@ pipeline:
   ingredient_ner:
     training:
       data:
-        input_path: "./data/raw/wilmerarltstrmberg_data.csv"
+        input_path: "./data/raw/wilmerarltstrmberg_data.parquet"
         ner_col: "NER_clean"
       output:
         cosine_map_path: *cosine_map
