@@ -90,7 +90,7 @@ pipeline:
     inference:
       enabled: false
       text_col: "ingredients"
-      batch_size: 500000
+      batch_size: 512
       n_process: 1
       use_gpu: true
       out_base: *ner_predictions
@@ -136,7 +136,7 @@ pipeline:
       block_generic_as_canon: true
       min_freq_for_vocab: 2
       spacy_model: "en_core_web_sm"
-      spacy_batch_size: 100000
+      spacy_batch_size: 2048
       spacy_n_process: 28
     w2v:
       vector_size: 100
@@ -184,7 +184,7 @@ pipeline:
         use_amp: true
         early_stopping_patience: 2
         batch_size: 1024
-        data_loader_workers: 0
+        data_loader_workers: 16
         max_train_docs: null
         out_dir: "./models/ingredient_ner_trf"
         model_dir: *ingredient_model_dir
@@ -203,7 +203,7 @@ pipeline:
         ingredient_token_to_id: *ingredient_token_to_id
       inference:
         text_col: ingredients
-        batch_size: 1024
+        batch_size: 512
         n_process: 1
         use_gpu: true
         sample_n: null
@@ -264,7 +264,7 @@ pipeline:
       block_generic_as_canon: true
       min_freq_for_vocab: 1
       spacy_model: "en_core_web_sm"
-      spacy_batch_size: 5096
+      spacy_batch_size: 2048
       spacy_n_process: 28
     w2v:
       vector_size: 100
@@ -308,7 +308,7 @@ pipeline:
         freeze_layers: 2
         use_amp: true
         early_stopping_patience: 3
-        batch_size: 5096
+        batch_size: 512
         eval_snapshot_max: 1500
         clear_cache_every: 200
         data_loader_workers: 16
@@ -317,7 +317,7 @@ pipeline:
         max_batch_items: 4096
         min_label_freq: 100
         allowed_labels_path: *cuisine_id_to_token
-        parent_map_path: "./data/cuisine_parent_map.json"
+        parent_map_path: "./data/cuisine_normalized/cuisine_parent_map.json"
         out_dir: "./models/cuisine_classifier_trf"
         model_dir: *cuisine_classifier_model_dir
   
@@ -351,7 +351,7 @@ pipeline:
       rf_max_samples: 20000
       kmeans_k: 10
       min_label_freq: 20
-      parent_map_path: "./data/cuisine_parent_map.json"
+      parent_map_path: "./data/cuisine_normalized/cuisine_parent_map.json"
       max_label_samples: 3000
       apply_parent_for_training: true
       cluster_use_parent_labels: true
